@@ -10,9 +10,9 @@
     <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
     <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/base.css?updated=1663657892">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/template.css?updated=1663657892">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
             <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
@@ -69,11 +69,26 @@
 
         <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
                                 <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
                         <ul class="phpdocumentor-list">
                                     <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
                             </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
                         </section>
     
     <section class="phpdocumentor-sidebar__category">
@@ -101,10 +116,151 @@
                 <h3>Table of Contents</h3>
         <table class="phpdocumentor-table_of_contents">
                             <tr>
+                    <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/admin/class-wcs-admin-reports.php">woocommerce-subscriptions/includes/admin/class-wcs-admin-reports.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-retention-rate.php">woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-retention-rate.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-by-customer.php">woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-by-customer.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-by-product.php">woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-by-product.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-events-by-date.php">woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-events-by-date.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-payment-retry.php">woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-payment-retry.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-upcoming-recurring-revenue.php">woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-upcoming-recurring-revenue.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/api/v1/class-wc-rest-subscriptions-v1-controller.php">woocommerce-subscriptions/includes/api/v1/class-wc-rest-subscriptions-v1-controller.php</a></td>
+                </tr>
+                            <tr>
                     <td class="phpdocumentor-cell"><a href="#woocommerce-subscriptions/includes/switching/class-wc-subscriptions-switcher.php">woocommerce-subscriptions/includes/switching/class-wc-subscriptions-switcher.php</a></td>
                 </tr>
                     </table>
         
+                    <a id="woocommerce-subscriptions/includes/admin/class-wcs-admin-reports.php"></a>
+            <h3><abbr title="woocommerce-subscriptions/includes/admin/class-wcs-admin-reports.php">class-wcs-admin-reports.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">204</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WCS-Admin-Reports.html#method_initialize_reports_path"><abbr title="\WCS_Admin_Reports::initialize_reports_path()">WCS_Admin_Reports::initialize_reports_path()</abbr></a></td>
+                            <td class="phpdocumentor-cell">in favor of autoloading</td>
+                        </tr>
+                                                </table>
+                    <a id="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-retention-rate.php"></a>
+            <h3><abbr title="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-retention-rate.php">class-wc-report-retention-rate.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">16</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WC-Report-Retention-Rate.html"><abbr title="\WC_Report_Retention_Rate">WC_Report_Retention_Rate</abbr></a></td>
+                            <td class="phpdocumentor-cell">in favor of WCS_Report_Retention_Rate</td>
+                        </tr>
+                                                </table>
+                    <a id="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-by-customer.php"></a>
+            <h3><abbr title="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-by-customer.php">class-wc-report-subscription-by-customer.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">14</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WC-Report-Subscription-By-Customer.html"><abbr title="\WC_Report_Subscription_By_Customer">WC_Report_Subscription_By_Customer</abbr></a></td>
+                            <td class="phpdocumentor-cell">in favor of WCS_Report_Subscription_By_Customer</td>
+                        </tr>
+                                                </table>
+                    <a id="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-by-product.php"></a>
+            <h3><abbr title="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-by-product.php">class-wc-report-subscription-by-product.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">15</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WC-Report-Subscription-By-Product.html"><abbr title="\WC_Report_Subscription_By_Product">WC_Report_Subscription_By_Product</abbr></a></td>
+                            <td class="phpdocumentor-cell">In favor of WCS_Report_Subscription_By_Product</td>
+                        </tr>
+                                                </table>
+                    <a id="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-events-by-date.php"></a>
+            <h3><abbr title="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-events-by-date.php">class-wc-report-subscription-events-by-date.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">15</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WC-Report-Subscription-Events-By-Date.html"><abbr title="\WC_Report_Subscription_Events_By_Date">WC_Report_Subscription_Events_By_Date</abbr></a></td>
+                            <td class="phpdocumentor-cell">In favor of WCS_Report_Subscription_Events_By_Date</td>
+                        </tr>
+                                                </table>
+                    <a id="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-payment-retry.php"></a>
+            <h3><abbr title="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-subscription-payment-retry.php">class-wc-report-subscription-payment-retry.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">14</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WC-Report-Subscription-Payment-Retry.html"><abbr title="\WC_Report_Subscription_Payment_Retry">WC_Report_Subscription_Payment_Retry</abbr></a></td>
+                            <td class="phpdocumentor-cell">In favor of WCS_Report_Subscription_Payment_Retry</td>
+                        </tr>
+                                                </table>
+                    <a id="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-upcoming-recurring-revenue.php"></a>
+            <h3><abbr title="woocommerce-subscriptions/includes/admin/reports/deprecated/class-wc-report-upcoming-recurring-revenue.php">class-wc-report-upcoming-recurring-revenue.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">15</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WC-Report-Upcoming-Recurring-Revenue.html"><abbr title="\WC_Report_Upcoming_Recurring_Revenue">WC_Report_Upcoming_Recurring_Revenue</abbr></a></td>
+                            <td class="phpdocumentor-cell">In favor of WCS_Report_Upcoming_Recurring_Revenue</td>
+                        </tr>
+                                                </table>
+                    <a id="woocommerce-subscriptions/includes/api/v1/class-wc-rest-subscriptions-v1-controller.php"></a>
+            <h3><abbr title="woocommerce-subscriptions/includes/api/v1/class-wc-rest-subscriptions-v1-controller.php">class-wc-rest-subscriptions-v1-controller.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">729</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WC-REST-Subscriptions-V1-Controller.html#method_prepare_subscription_args"><abbr title="\WC_REST_Subscriptions_V1_Controller::prepare_subscription_args()">WC_REST_Subscriptions_V1_Controller::prepare_subscription_args()</abbr></a></td>
+                            <td class="phpdocumentor-cell"></td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell">757</td>
+                            <td class="phpdocumentor-cell"><a href="../classes/WC-REST-Subscriptions-V1-Controller.html#method_update_schedule"><abbr title="\WC_REST_Subscriptions_V1_Controller::update_schedule()">WC_REST_Subscriptions_V1_Controller::update_schedule()</abbr></a></td>
+                            <td class="phpdocumentor-cell"></td>
+                        </tr>
+                                                </table>
                     <a id="woocommerce-subscriptions/includes/switching/class-wc-subscriptions-switcher.php"></a>
             <h3><abbr title="woocommerce-subscriptions/includes/switching/class-wc-subscriptions-switcher.php">class-wc-subscriptions-switcher.php</abbr></h3>
             <table>
@@ -213,7 +369,7 @@
 
     <footer class="phpdocumentor phpdocumentor-footer">
     <div class="phpdocumentor-section">
-        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:11 am.</span>
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
     </div>
 </footer>
 
@@ -225,7 +381,7 @@
             'searchIndex': '..\/js\/searchIndex.json'
         };
     </script>
-    <script src="../js/searchIndex.js?updated=1663657892"></script>
-    <script src="../js/search.js?updated=1663657892"></script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
 </body>
 </html>

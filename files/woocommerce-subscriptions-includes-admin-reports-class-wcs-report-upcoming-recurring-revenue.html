@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-report-upcoming-recurring-revenue.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Admin Report - Upcoming Recurring Revenue
+ *
+ * Display the renewal order count and revenue that will be processed for all currently active subscriptions
+ * for a given period of time in the future.
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Admin_Reports
+ * @category   Class
+ * @author     Prospress
+ * @since      2.1
+ */
+class WCS_Report_Upcoming_Recurring_Revenue extends WC_Admin_Report {
+
+	public $chart_colours = array();
+
+	public $order_ids_recurring_totals = null;
+
+	/**
+	 * Get the legend for the main chart sidebar
+	 * @return array
+	 */
+	public function get_chart_legend() {
+
+		$this-&gt;order_ids_recurring_totals = $this-&gt;get_data();
+
+		$total_renewal_revenue = 0;
+		$total_renewal_count = 0;
+
+		foreach ( $this-&gt;order_ids_recurring_totals as $r ) {
+
+			$subscription_ids    = explode( &#039;,&#039;, $r-&gt;subscription_ids );
+			$billing_intervals   = explode( &#039;,&#039;, $r-&gt;billing_intervals );
+			$billing_periods     = explode( &#039;,&#039;, $r-&gt;billing_periods );
+			$scheduled_ends      = explode( &#039;,&#039;, $r-&gt;scheduled_ends );
+			$subscription_totals = explode( &#039;,&#039;, $r-&gt;subscription_totals );
+
+			// Loop through each returned subscription ID and check if there are any more renewals in this period.
+			foreach ( $subscription_ids as $key =&gt; $subscription_id ) {
+
+				$next_payment_timestamp = strtotime( $r-&gt;scheduled_date );
+
+				//Remove the time part of the end date, if there is one
+				if ( &#039;0&#039; !== $scheduled_ends[ $key ] ) {
+					$scheduled_ends[ $key ] = date( &#039;Y-m-d&#039;, strtotime( $scheduled_ends[ $key ] ) );
+				}
+
+				// Keep calculating all the new payments until we hit the end date of the search
+				do {
+
+					$next_payment_timestamp = wcs_add_time( $billing_intervals[ $key ], $billing_periods[ $key ], $next_payment_timestamp );
+
+					// If there are more renewals add them to the existing object or create a new one
+					if ( $next_payment_timestamp &lt;= $this-&gt;end_date &amp;&amp; isset( $scheduled_ends[ $key ] ) &amp;&amp; ( 0 == $scheduled_ends[ $key ] || $next_payment_timestamp &lt; strtotime( $scheduled_ends[ $key ] ) ) ) {
+						$update_key = date( &#039;Y-m-d&#039;, $next_payment_timestamp );
+
+						if ( $next_payment_timestamp &gt;= $this-&gt;start_date ) {
+
+							if ( ! isset( $this-&gt;order_ids_recurring_totals[ $update_key ] ) ) {
+								$this-&gt;order_ids_recurring_totals[ $update_key ] = new stdClass();
+								$this-&gt;order_ids_recurring_totals[ $update_key ]-&gt;scheduled_date = $update_key;
+								$this-&gt;order_ids_recurring_totals[ $update_key ]-&gt;recurring_total = 0;
+								$this-&gt;order_ids_recurring_totals[ $update_key ]-&gt;total_renewals = 0;
+							}
+							$this-&gt;order_ids_recurring_totals[ $update_key ]-&gt;total_renewals  += 1;
+							$this-&gt;order_ids_recurring_totals[ $update_key ]-&gt;recurring_total += $subscription_totals[ $key ];
+						}
+					}
+				} while ( $next_payment_timestamp &lt;= $this-&gt;end_date &amp;&amp; isset( $scheduled_ends[ $key ] ) &amp;&amp; ( 0 == $scheduled_ends[ $key ] || $next_payment_timestamp &lt; strtotime( $scheduled_ends[ $key ] ) ) );
+			}
+		}
+
+		// Sum up the total revenue and total renewal count separately to avoid adding up multiple times.
+		foreach ( $this-&gt;order_ids_recurring_totals as $r ) {
+			if ( strtotime( $r-&gt;scheduled_date ) &gt;= $this-&gt;start_date &amp;&amp; strtotime( $r-&gt;scheduled_date ) &lt;= $this-&gt;end_date ) {
+
+				$total_renewal_revenue += $r-&gt;recurring_total;
+				$total_renewal_count   += $r-&gt;total_renewals;
+			}
+		}
+
+		$legend = array();
+
+		$this-&gt;average_sales = ( 0 != $total_renewal_count ? $total_renewal_revenue / $total_renewal_count : 0 );
+
+		$legend[] = array(
+			// translators: %s: formatted amount.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s renewal income in this period&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . wc_price( $total_renewal_revenue ) . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The sum of all the upcoming renewal orders, including items, fees, tax and shipping, for currently active subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;renewals_amount&#039;],
+			&#039;highlight_series&#039; =&gt; 1,
+		);
+		$legend[] = array(
+			// translators: %s: renewal count.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s renewal orders&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . $total_renewal_count . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of upcoming renewal orders, for currently active subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;renewals_count&#039;],
+			&#039;highlight_series&#039; =&gt; 0,
+		);
+		$legend[] = array(
+			// translators: %s: formatted amount.
+			&#039;title&#039; =&gt; sprintf( __( &#039;%s average renewal amount&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . wc_price( $this-&gt;average_sales ) . &#039;&lt;/strong&gt;&#039; ),
+			&#039;color&#039; =&gt; $this-&gt;chart_colours[&#039;renewals_average&#039;],
+		);
+
+		return $legend;
+	}
+
+	/**
+	 * Get report data.
+	 * @return stdClass
+	 */
+	public function get_data( $args = array() ) {
+		global $wpdb;
+
+		$default_args = array(
+			&#039;no_cache&#039; =&gt; false,
+		);
+
+		$args = apply_filters( &#039;wcs_reports_upcoming_recurring_revenue_args&#039;, $args );
+		$args = wp_parse_args( $args, $default_args );
+
+		// Query based on whole days, not minutes/hours so that we can cache the query for at least 24 hours
+		$base_query = $wpdb-&gt;prepare(
+			&quot;SELECT
+				DATE(ms.meta_value) as scheduled_date,
+				SUM(mo.meta_value) as recurring_total,
+				COUNT(mo.meta_value) as total_renewals,
+				group_concat(p.ID) as subscription_ids,
+				group_concat(mi.meta_value) as billing_intervals,
+				group_concat(mp.meta_value) as billing_periods,
+				group_concat(me.meta_value) as scheduled_ends,
+				group_concat(mo.meta_value) as subscription_totals
+					FROM {$wpdb-&gt;prefix}posts p
+				LEFT JOIN {$wpdb-&gt;prefix}postmeta ms
+					ON p.ID = ms.post_id
+				LEFT JOIN {$wpdb-&gt;prefix}postmeta mo
+					ON p.ID = mo.post_id
+				LEFT JOIN {$wpdb-&gt;prefix}postmeta mi
+					ON p.ID = mi.post_id
+				LEFT JOIN {$wpdb-&gt;prefix}postmeta mp
+					ON p.ID = mp.post_id
+				LEFT JOIN {$wpdb-&gt;prefix}postmeta me
+					ON p.ID = me.post_id
+			WHERE p.post_type = &#039;shop_subscription&#039;
+				AND p.post_status = &#039;wc-active&#039;
+				AND mo.meta_key = &#039;_order_total&#039;
+				AND ms.meta_key = &#039;_schedule_next_payment&#039;
+				AND ( ( ms.meta_value &lt; &#039;%s&#039; AND me.meta_value = 0 ) OR ( me.meta_value &gt; &#039;%s&#039; AND ms.meta_value &lt; &#039;%s&#039; ) )
+				AND mi.meta_key = &#039;_billing_interval&#039;
+				AND mp.meta_key = &#039;_billing_period&#039;
+				AND me.meta_key = &#039;_schedule_end &#039;
+			GROUP BY {$this-&gt;group_by_query}
+			ORDER BY ms.meta_value ASC&quot;,
+			date( &#039;Y-m-d&#039;, strtotime( &#039;+1 DAY&#039;, $this-&gt;end_date ) ),
+			date( &#039;Y-m-d&#039;, $this-&gt;start_date ),
+			date( &#039;Y-m-d&#039;, strtotime( &#039;+1 DAY&#039;, $this-&gt;end_date ) )
+		);
+
+		$cached_results = get_transient( strtolower( get_class( $this ) ) );
+		$query_hash     = md5( $base_query );
+
+		if ( $args[&#039;no_cache&#039;] || false === $cached_results || ! isset( $cached_results[ $query_hash ] ) ) {
+			$wpdb-&gt;query( &#039;SET SESSION SQL_BIG_SELECTS=1&#039; );
+			$cached_results[ $query_hash ] = apply_filters( &#039;wcs_reports_upcoming_recurring_revenue_data&#039;, $wpdb-&gt;get_results( $base_query, OBJECT_K ), $args );
+			set_transient( strtolower( get_class( $this ) ), $cached_results, WEEK_IN_SECONDS );
+		}
+
+		return $cached_results[ $query_hash ];
+	}
+
+	/**
+	 * Output the report
+	 */
+	public function output_report() {
+
+		$ranges = array(
+			&#039;year&#039;       =&gt; __( &#039;Next 12 Months&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;month&#039;      =&gt; __( &#039;Next 30 Days&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;last_month&#039; =&gt; __( &#039;Next Month&#039;, &#039;woocommerce-subscriptions&#039; ), // misnomer to match historical reports keys, handy for caching
+			&#039;7day&#039;       =&gt; __( &#039;Next 7 Days&#039;, &#039;woocommerce-subscriptions&#039; ),
+		);
+
+		$this-&gt;chart_colours = array(
+			&#039;renewals_amount&#039;  =&gt; &#039;#1abc9c&#039;,
+			&#039;renewals_count&#039;   =&gt; &#039;#e67e22&#039;,
+			&#039;renewals_average&#039; =&gt; &#039;#d4d9dc&#039;,
+		);
+
+		$current_range = $this-&gt;get_current_range();
+
+		$this-&gt;calculate_current_range( $current_range );
+
+		include( WC()-&gt;plugin_path() . &#039;/includes/admin/views/html-report-by-date.php&#039; );
+
+	}
+
+	/**
+	 * Output an export link
+	 */
+	public function get_export_button() {
+		?&gt;
+		&lt;a
+			href=&quot;#&quot;
+			download=&quot;report-&lt;?php echo esc_attr( $this-&gt;get_current_range() ); ?&gt;-&lt;?php echo esc_attr( date_i18n( &#039;Y-m-d&#039;, current_time( &#039;timestamp&#039; ) ) ); ?&gt;.csv&quot;
+			class=&quot;export_csv&quot;
+			data-export=&quot;chart&quot;
+			data-xaxes=&quot;&lt;?php esc_attr_e( &#039;Date&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&quot;
+			data-exclude_series=&quot;2&quot;
+			data-groupby=&quot;&lt;?php echo esc_attr( $this-&gt;chart_groupby ); ?&gt;&quot;
+		&gt;
+			&lt;?php esc_html_e( &#039;Export CSV&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+		&lt;/a&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Get the main chart
+	 * @return string
+	 */
+	public function get_main_chart() {
+		global $wp_locale;
+
+		// Prepare data for report
+		$renewal_amounts     = $this-&gt;prepare_chart_data( $this-&gt;order_ids_recurring_totals, &#039;scheduled_date&#039;, &#039;recurring_total&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$renewal_counts      = $this-&gt;prepare_chart_data( $this-&gt;order_ids_recurring_totals, &#039;scheduled_date&#039;, &#039;total_renewals&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+
+		$chart_data = array(
+			&#039;renewal_amounts&#039; =&gt; array_values( $renewal_amounts ),
+			&#039;renewal_counts&#039;  =&gt; array_values( $renewal_counts ),
+		);
+
+		?&gt;
+		&lt;div id=&quot;woocommerce_subscriptions_upcoming_recurring_revenue_chart&quot; class=&quot;chart-container&quot;&gt;
+			&lt;div class=&quot;chart-placeholder main&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;script type=&quot;text/javascript&quot;&gt;
+
+			var main_chart;
+
+			jQuery(function(){
+				var order_data = JSON.parse( &#039;&lt;?php echo json_encode( $chart_data ); ?&gt;&#039; );
+				var drawGraph = function( highlight ) {
+					var series = [
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Renewals count&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.renewal_counts,
+							yaxis: 1,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;renewals_count&#039;] ); ?&gt;&#039;,
+							points: { show: true, radius: 5, lineWidth: 3, fillColor: &#039;#fff&#039;, fill: true },
+							lines: { show: true, lineWidth: 4, fill: false },
+							shadowSize: 0
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Renewals amount&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.renewal_amounts,
+							yaxis: 2,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;renewals_amount&#039;] ); ?&gt;&#039;,
+							points: { show: true, radius: 5, lineWidth: 3, fillColor: &#039;#fff&#039;, fill: true },
+							lines: { show: true, lineWidth: 4, fill: false },
+							shadowSize: 0,
+							prepend_tooltip: &quot;&lt;?php echo esc_js( get_woocommerce_currency_symbol() ); ?&gt;&quot;
+						}
+					];
+
+					if ( highlight !== &#039;undefined&#039; &amp;&amp; series[ highlight ] ) {
+						highlight_series = series[ highlight ];
+
+						highlight_series.color = &#039;#9c5d90&#039;;
+
+						if ( highlight_series.bars )
+							highlight_series.bars.fillColor = &#039;#9c5d90&#039;;
+
+						if ( highlight_series.lines ) {
+							highlight_series.lines.lineWidth = 5;
+						}
+					}
+
+					main_chart = jQuery.plot(
+						jQuery(&#039;.chart-placeholder.main&#039;),
+						series,
+						{
+							legend: {
+								show: false
+							},
+							grid: {
+								color: &#039;#aaa&#039;,
+								borderColor: &#039;transparent&#039;,
+								borderWidth: 0,
+								hoverable: true
+							},
+							xaxes: [ {
+								color: &#039;#aaa&#039;,
+								position: &quot;bottom&quot;,
+								tickColor: &#039;transparent&#039;,
+								mode: &quot;time&quot;,
+								timeformat: &quot;&lt;?php echo esc_js( ( $this-&gt;chart_groupby == &#039;day&#039; ? &#039;%d %b&#039; : &#039;%b&#039; ) ); ?&gt;&quot;,
+								monthNames: &lt;?php echo json_encode( array_values( $wp_locale-&gt;month_abbrev ) ) ?&gt;,
+								tickLength: 1,
+								minTickSize: [1, &quot;&lt;?php echo esc_js( $this-&gt;chart_groupby ); ?&gt;&quot;],
+								font: {
+									color: &quot;#aaa&quot;
+								}
+							} ],
+							yaxes: [
+								{
+									min: 0,
+									minTickSize: 1,
+									tickDecimals: 0,
+									color: &#039;#d4d9dc&#039;,
+									font: {
+										color: &quot;#aaa&quot;
+									}
+								},
+								{
+									position: &quot;right&quot;,
+									min: 0,
+									tickDecimals: 2,
+									tickFormatter: function (tick) {
+										// Localise and format axis labels
+										return jQuery.wcs_format_money(tick,0);
+									},
+									alignTicksWithAxis: 1,
+									color: &#039;transparent&#039;,
+									font: {
+										color: &quot;#aaa&quot;
+									}
+								}
+							],
+						}
+					);
+
+					jQuery(&#039;.chart-placeholder&#039;).trigger( &#039;resize&#039; );
+				}
+
+				drawGraph();
+
+				jQuery(&#039;.highlight_series&#039;).on( &#039;hover&#039;,
+					function() {
+						drawGraph( jQuery(this).data(&#039;series&#039;) );
+					},
+					function() {
+						drawGraph();
+					}
+				);
+			});
+		&lt;/script&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Get the current range and calculate the start and end dates
+	 *
+	 * @param  string $current_range
+	 */
+	public function calculate_current_range( $current_range ) {
+		switch ( $current_range ) {
+			case &#039;custom&#039;:
+				$this-&gt;start_date = strtotime( sanitize_text_field( $_GET[&#039;start_date&#039;] ) );
+				$this-&gt;end_date   = strtotime( &#039;midnight&#039;, strtotime( sanitize_text_field( $_GET[&#039;end_date&#039;] ) ) );
+
+				if ( ! $this-&gt;end_date ) {
+					$this-&gt;end_date = current_time( &#039;timestamp&#039; );
+				}
+
+				$interval = 0;
+				$min_date = $this-&gt;start_date;
+				while ( ( $min_date = wcs_add_months( $min_date, &#039;1&#039; ) ) &lt;= $this-&gt;end_date ) {
+					$interval ++;
+				}
+
+				// 3 months max for day view
+				if ( $interval &gt;= 3 ) {
+					$this-&gt;chart_groupby  = &#039;month&#039;;
+				} else {
+					$this-&gt;chart_groupby  = &#039;day&#039;;
+				}
+			break;
+			case &#039;year&#039;:
+				$this-&gt;start_date    = strtotime( &#039;now&#039;, current_time( &#039;timestamp&#039; ) );
+				$this-&gt;end_date      = strtotime( &#039;last day&#039;, strtotime( &#039;+1 YEAR&#039;, current_time( &#039;timestamp&#039; ) ) );
+				$this-&gt;chart_groupby = &#039;month&#039;;
+			break;
+			case &#039;last_month&#039;: // misnomer to match historical reports keys, handy for caching
+				$this-&gt;start_date     = strtotime( date( &#039;Y-m-01&#039;, wcs_add_months( current_time( &#039;timestamp&#039; ), &#039;1&#039; ) ) );
+				$this-&gt;end_date       = strtotime( date( &#039;Y-m-t&#039;, $this-&gt;start_date ) );
+				$this-&gt;chart_groupby  = &#039;day&#039;;
+			break;
+			case &#039;month&#039;:
+				$this-&gt;start_date    = strtotime( &#039;now&#039;, current_time( &#039;timestamp&#039; ) );
+				$this-&gt;end_date      = wcs_add_months( current_time( &#039;timestamp&#039; ), &#039;1&#039; );
+				$this-&gt;chart_groupby = &#039;day&#039;;
+			break;
+			case &#039;7day&#039;:
+				$this-&gt;start_date    = strtotime( &#039;now&#039;, current_time( &#039;timestamp&#039; ) );
+				$this-&gt;end_date      = strtotime( &#039;+7 days&#039;, current_time( &#039;timestamp&#039; ) );
+				$this-&gt;chart_groupby = &#039;day&#039;;
+			break;
+		}
+
+		// Group by
+		switch ( $this-&gt;chart_groupby ) {
+			case &#039;day&#039;:
+				$this-&gt;group_by_query = &#039;YEAR(ms.meta_value), MONTH(ms.meta_value), DAY(ms.meta_value)&#039;;
+				$this-&gt;chart_interval = ceil( max( 0, ( $this-&gt;end_date - $this-&gt;start_date ) / ( 60 * 60 * 24 ) ) );
+				$this-&gt;barwidth       = 60 * 60 * 24 * 1000;
+			break;
+			case &#039;month&#039;:
+				$this-&gt;group_by_query = &#039;YEAR(ms.meta_value), MONTH(ms.meta_value), DAY(ms.meta_value)&#039;;
+				$this-&gt;chart_interval = 0;
+				$min_date             = $this-&gt;start_date;
+				while ( ( $min_date = wcs_add_months( $min_date, &#039;1&#039; ) ) &lt;= $this-&gt;end_date ) {
+					$this-&gt;chart_interval ++;
+				}
+				$this-&gt;barwidth = 60 * 60 * 24 * 7 * 4 * 1000;
+			break;
+		}
+	}
+
+	/**
+	 * Helper function to get the report&#039;s current range
+	 */
+	protected function get_current_range() {
+		$current_range = ! empty( $_GET[&#039;range&#039;] ) ? sanitize_text_field( $_GET[&#039;range&#039;] ) : &#039;7day&#039;;
+
+		if ( ! in_array( $current_range, array( &#039;custom&#039;, &#039;year&#039;, &#039;month&#039;, &#039;last_month&#039;, &#039;7day&#039; ) ) ) {
+			$current_range = &#039;7day&#039;;
+		}
+
+		return $current_range;
+	}
+
+	/**
+	 * Clears the cached query results.
+	 *
+	 * @since 3.0.10
+	 */
+	public function clear_cache() {
+		delete_transient( strtolower( get_class( $this ) ) );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

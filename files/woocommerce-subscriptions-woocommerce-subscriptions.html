@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">woocommerce-subscriptions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_add_woocommerce_inbox_variant">
+        add_woocommerce_inbox_variant()
+        <a href="#function_add_woocommerce_inbox_variant" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/woocommerce-subscriptions.php"><a href="../files/woocommerce-subscriptions-woocommerce-subscriptions.html#source-view.179">woocommerce-subscriptions/woocommerce-subscriptions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">179</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">add_woocommerce_inbox_variant</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+    
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_init_autoloader">
+        wcs_init_autoloader()
+        <a href="#function_wcs_init_autoloader" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/woocommerce-subscriptions.php"><a href="../files/woocommerce-subscriptions-woocommerce-subscriptions.html#source-view.199">woocommerce-subscriptions/woocommerce-subscriptions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">199</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Load and set up the Autoloader</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_init_autoloader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="../classes/WCS-Autoloader.html"><abbr title="\WCS_Autoloader">WCS_Autoloader</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>If the <code class="prettyprint">woocommerce-subscriptions-core</code> plugin is active, setup the autoloader using this plugin directory
+as the base file path for loading subscription core classes.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">4.0.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Plugin Name: WooCommerce Subscriptions
+ * Plugin URI: https://www.woocommerce.com/products/woocommerce-subscriptions/
+ * Description: Sell products and services with recurring payments in your WooCommerce Store.
+ * Author: WooCommerce
+ * Author URI: https://woocommerce.com/
+ * Version: 4.5.1
+ *
+ * WC requires at least: 4.4
+ * WC tested up to: 6.5.0
+ * Woo: 27147:6115e6d7e297b623a169fdcf5728b224
+ *
+ * Copyright 2019 WooCommerce
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ *
+ * @package WooCommerce Subscriptions
+ * @author  WooCommerce.
+ * @since   1.0
+ */
+
+/**
+ * Required functions
+ */
+if ( ! function_exists( &#039;woothemes_queue_update&#039; ) || ! function_exists( &#039;is_woocommerce_active&#039; ) ) {
+	require_once dirname( __FILE__ ) . &#039;/woo-includes/woo-functions.php&#039;;
+}
+
+/**
+ * Check if WooCommerce is active and at the required minimum version, and if it isn&#039;t, disable Subscriptions.
+ *
+ * @since 1.0
+ */
+if ( ! is_woocommerce_active() || version_compare( get_option( &#039;woocommerce_db_version&#039; ), WC_Subscriptions::$wc_minimum_supported_version, &#039;&lt;&#039; ) ) {
+	add_action( &#039;admin_notices&#039;, &#039;WC_Subscriptions::woocommerce_inactive_notice&#039; );
+	return;
+}
+
+// Subscribe to automated translations.
+add_action( &#039;woocommerce_translations_updates_for_woocommerce-subscriptions&#039;, &#039;__return_true&#039; );
+
+// Load and set up the Autoloader
+$wcs_autoloader = wcs_init_autoloader();
+
+/**
+ * The main subscriptions class.
+ *
+ * @since 1.0
+ */
+class WC_Subscriptions {
+
+	/** @var string */
+	public static $name = &#039;subscription&#039;;
+
+	/** @var string */
+	public static $activation_transient = &#039;woocommerce_subscriptions_activated&#039;;
+
+	/** @var string */
+	public static $plugin_file = __FILE__;
+
+	/** @var string */
+	public static $version = &#039;4.5.1&#039;;
+
+	/** @var string */
+	public static $wc_minimum_supported_version = &#039;4.4&#039;;
+
+	/** @var WCS_Cache_Manager */
+	public static $cache;
+
+	/** @var WCS_Autoloader */
+	protected static $autoloader;
+
+	/**
+	 * Set up the class, including it&#039;s hooks &amp; filters, when the file is loaded.
+	 *
+	 * @since 1.0
+	 *
+	 * @param WCS_Autoloader $autoloader Autoloader instance.
+	 */
+	public static function init( $autoloader = null ) {
+		$plugin           = new WC_Subscriptions_Plugin( $autoloader );
+		self::$cache      = $plugin-&gt;cache;
+		self::$autoloader = $plugin-&gt;get_autoloader();
+	}
+
+	/*
+	 * Plugin House Keeping
+	 */
+
+	/**
+	 * Called when WooCommerce is inactive or running and out-of-date version to display an inactive notice.
+	 *
+	 * @since 1.2
+	 */
+	public static function woocommerce_inactive_notice() {
+		if ( current_user_can( &#039;activate_plugins&#039; ) ) {
+			$admin_notice_content = &#039;&#039;;
+
+			if ( ! is_woocommerce_active() ) {
+				$install_url = wp_nonce_url(
+					add_query_arg(
+						array(
+							&#039;action&#039; =&gt; &#039;install-plugin&#039;,
+							&#039;plugin&#039; =&gt; &#039;woocommerce&#039;,
+						),
+						admin_url( &#039;update.php&#039; )
+					),
+					&#039;install-plugin_woocommerce&#039;
+				);
+
+				// translators: 1$-2$: opening and closing &lt;strong&gt; tags, 3$-4$: link tags, takes to woocommerce plugin on wp.org, 5$-6$: opening and closing link tags, leads to plugins.php in admin
+				$admin_notice_content = sprintf( esc_html__( &#039;%1$sWooCommerce Subscriptions is inactive.%2$s The %3$sWooCommerce plugin%4$s must be active for WooCommerce Subscriptions to work. Please %5$sinstall &amp; activate WooCommerce &amp;raquo;%6$s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039;, &#039;&lt;/strong&gt;&#039;, &#039;&lt;a href=&quot;http://wordpress.org/extend/plugins/woocommerce/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039;, &#039;&lt;a href=&quot;&#039; . esc_url( $install_url ) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; );
+			} elseif ( version_compare( get_option( &#039;woocommerce_db_version&#039; ), self::$wc_minimum_supported_version, &#039;&lt;&#039; ) ) {
+				// translators: 1$-2$: opening and closing &lt;strong&gt; tags, 3$: minimum supported WooCommerce version, 4$-5$: opening and closing link tags, leads to plugin admin
+				$admin_notice_content = sprintf( esc_html__( &#039;%1$sWooCommerce Subscriptions is inactive.%2$s This version of Subscriptions requires WooCommerce %3$s or newer. Please %4$supdate WooCommerce to version %3$s or newer &amp;raquo;%5$s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039;, &#039;&lt;/strong&gt;&#039;, self::$wc_minimum_supported_version, &#039;&lt;a href=&quot;&#039; . esc_url( admin_url( &#039;plugins.php&#039; ) ) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; );
+			}
+
+			if ( $admin_notice_content ) {
+				echo &#039;&lt;div class=&quot;error&quot;&gt;&#039;;
+				echo &#039;&lt;p&gt;&#039; . wp_kses_post( $admin_notice_content ) . &#039;&lt;/p&gt;&#039;;
+				echo &#039;&lt;/div&gt;&#039;;
+			}
+		}
+	}
+
+	/* Deprecated Functions */
+
+	/**
+	 * Handle deprecation function calls.
+	 *
+	 * @since 4.0.0
+	 *
+	 * @param string $function  The name of the method being called.
+	 * @param array  $arguments An array containing the parameters passed to the method.
+	 *
+	 * @return mixed The value returned from a deprecated function replacement or null.
+	 */
+	public static function __callStatic( $method, $arguments ) {
+		static $deprecation_handler = null;
+
+		// Initialise the handler if we dont have one already.
+		if ( ! $deprecation_handler ) {
+			$deprecation_handler = new WC_Subscriptions_Deprecation_Handler();
+		}
+
+		if ( $deprecation_handler-&gt;is_deprecated( $method ) ) {
+			$deprecation_handler-&gt;trigger_notice( $method );
+
+			return $deprecation_handler-&gt;call_replacement( $method, $arguments );
+		} else {
+			// Trigger an error consistant with PHP if the function called doesn&#039;t exist.
+			$class = __CLASS__;
+			$trace = debug_backtrace();
+			$file  = $trace[0][&#039;file&#039;];
+			$line  = $trace[0][&#039;line&#039;];
+			trigger_error( &quot;Call to undefined method $class::$method() in $file on line $line&quot;, E_USER_ERROR ); //phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped
+		}
+	}
+}
+
+/**
+ * Add woocommerce_inbox_variant for the Remote Inbox Notification.
+ *
+ * P2 post can be found at https://wp.me/paJDYF-1uJ.
+ */
+if ( ! function_exists( &#039;add_woocommerce_inbox_variant&#039; ) ) {
+	function add_woocommerce_inbox_variant() {
+		$config_name = &#039;woocommerce_inbox_variant_assignment&#039;;
+		if ( false === get_option( $config_name, false ) ) {
+			update_option( $config_name, wp_rand( 1, 12 ) );
+		}
+	}
+}
+add_action( &#039;woocommerce_subscriptions_upgraded&#039;, &#039;add_woocommerce_inbox_variant&#039;, 10 );
+register_activation_hook( __FILE__, &#039;add_woocommerce_inbox_variant&#039; );
+
+
+/**
+ * Load and set up the Autoloader
+ *
+ * If the `woocommerce-subscriptions-core` plugin is active, setup the autoloader using this plugin directory
+ * as the base file path for loading subscription core classes.
+ *
+ * @since 4.0.0
+ * @return WCS_Autoloader
+ */
+function wcs_init_autoloader() {
+	if ( ! function_exists( &#039;is_plugin_active&#039; ) ) {
+		include_once ABSPATH . &#039;wp-admin/includes/plugin.php&#039;;
+	}
+
+	$wcs_core_plugin_slug = &#039;woocommerce-subscriptions-core/woocommerce-subscriptions-core.php&#039;;
+	$is_wcs_core_active   = ( isset( $_GET[&#039;action&#039;], $_GET[&#039;plugin&#039;] ) &amp;&amp; &#039;activate&#039; === $_GET[&#039;action&#039;] &amp;&amp; $wcs_core_plugin_slug === $_GET[&#039;plugin&#039;] ) || is_plugin_active( $wcs_core_plugin_slug ); //phpcs:ignore WordPress.Security.NonceVerification.Recommended
+	$wcs_core_path        = $is_wcs_core_active ? WP_PLUGIN_DIR . &#039;/woocommerce-subscriptions-core/&#039; : dirname( __FILE__ ) . &#039;/vendor/woocommerce/subscriptions-core/&#039;;
+
+	require_once $wcs_core_path . &#039;includes/class-wcs-core-autoloader.php&#039;;
+	require_once dirname( __FILE__ ) . &#039;/includes/class-wcs-autoloader.php&#039;;
+
+	$wcs_autoloader = new WCS_Autoloader( $wcs_core_path );
+	$wcs_autoloader-&gt;register();
+
+	return $wcs_autoloader;
+}
+
+WC_Subscriptions::init( $wcs_autoloader );
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

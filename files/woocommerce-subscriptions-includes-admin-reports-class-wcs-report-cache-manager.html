@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsClasses.html">WooCommerceSubscriptionsClasses</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-report-cache-manager.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Report Cache Manager
+ *
+ * Update report data caches on appropriate events, like renewal order payment.
+ *
+ * @class    WCS_Cache_Manager
+ * @since    2.1
+ * @package  WooCommerce Subscriptions/Classes
+ * @category Class
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+} // Exit if accessed directly
+
+class WCS_Report_Cache_Manager {
+
+	/**
+	 * Array of event =&gt; report classes to determine which reports need to be updated on certain events.
+	 *
+	 * The index for each report&#039;s class is specified as its used later to determine when to schedule the report and we want
+	 * it to be consistently at the same time, regardless of the hook which triggered the cache update. The indexes are based
+	 * on the order of the reports in the menu on the WooCommerce &gt; Reports &gt; Subscriptions screen, which is why the indexes
+	 * are not sequential (because not all reports need caching).
+	 *
+	 */
+	private $update_events_and_classes = array(
+		&#039;woocommerce_subscriptions_reports_schedule_cache_updates&#039; =&gt; array( // a custom hook that can be called to schedule a full cache update, used by WC_Subscriptions_Upgrader
+			0 =&gt; &#039;WCS_Report_Dashboard&#039;,
+			1 =&gt; &#039;WCS_Report_Subscription_Events_By_Date&#039;,
+			2 =&gt; &#039;WCS_Report_Upcoming_Recurring_Revenue&#039;,
+			4 =&gt; &#039;WCS_Report_Subscription_By_Product&#039;,
+			5 =&gt; &#039;WCS_Report_Subscription_By_Customer&#039;,
+		),
+		&#039;woocommerce_subscription_payment_complete&#039;  =&gt; array( // this hook takes care of renewal, switch and initial payments
+			0 =&gt; &#039;WCS_Report_Dashboard&#039;,
+			1 =&gt; &#039;WCS_Report_Subscription_Events_By_Date&#039;,
+			5 =&gt; &#039;WCS_Report_Subscription_By_Customer&#039;,
+		),
+		&#039;woocommerce_subscriptions_switch_completed&#039; =&gt; array(
+			1 =&gt; &#039;WCS_Report_Subscription_Events_By_Date&#039;,
+		),
+		&#039;woocommerce_subscription_status_changed&#039;    =&gt; array(
+			0 =&gt; &#039;WCS_Report_Dashboard&#039;,
+			1 =&gt; &#039;WCS_Report_Subscription_Events_By_Date&#039;, // we really only need cancelled, expired and active status here, but we&#039;ll use a more generic hook for convenience
+			5 =&gt; &#039;WCS_Report_Subscription_By_Customer&#039;,
+		),
+		&#039;woocommerce_subscription_status_active&#039;     =&gt; array(
+			2 =&gt; &#039;WCS_Report_Upcoming_Recurring_Revenue&#039;,
+		),
+		&#039;woocommerce_new_order_item&#039;                 =&gt; array(
+			4 =&gt; &#039;WCS_Report_Subscription_By_Product&#039;,
+		),
+		&#039;woocommerce_update_order_item&#039;              =&gt; array(
+			4 =&gt; &#039;WCS_Report_Subscription_By_Product&#039;,
+		),
+	);
+
+	/**
+	 * Record of all the report classes to need to have the cache updated during this request. Prevents duplicate updates in the same request for different events.
+	 */
+	private $reports_to_update = array();
+
+	/**
+	 * The hook name to use for our WP-Cron entry for updating report cache.
+	 */
+	private $cron_hook = &#039;wcs_report_update_cache&#039;;
+
+	/**
+	 * The hook name to use for our WP-Cron entry for updating report cache.
+	 */
+	protected $use_large_site_cache;
+
+	/**
+	 * Attach callbacks to manage cache updates
+	 *
+	 * @since 2.1
+	 */
+	public function __construct() {
+
+		// Use the old hooks
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+
+			$hooks = array(
+				&#039;woocommerce_order_add_product&#039;  =&gt; &#039;woocommerce_new_order_item&#039;,
+				&#039;woocommerce_order_edit_product&#039; =&gt; &#039;woocommerce_update_order_item&#039;,
+			);
+
+			foreach ( $hooks as $old_hook =&gt; $new_hook ) {
+				$this-&gt;update_events_and_classes[ $old_hook ] = $this-&gt;update_events_and_classes[ $new_hook ];
+				unset( $this-&gt;update_events_and_classes[ $new_hook ] ); // New hooks aren&#039;t called, so no need to attach to them
+			}
+		}
+
+		add_action( $this-&gt;cron_hook, array( $this, &#039;update_cache&#039; ), 10, 1 );
+
+		foreach ( $this-&gt;update_events_and_classes as $event_hook =&gt; $report_classes ) {
+			add_action( $event_hook, array( $this, &#039;set_reports_to_update&#039; ), 10 );
+		}
+
+		add_action( &#039;shutdown&#039;, array( $this, &#039;schedule_cache_updates&#039; ), 10 );
+
+		// Notify store owners that report data can be out-of-date
+		add_action( &#039;admin_notices&#039;, array( $this, &#039;admin_notices&#039; ), 0 );
+
+		// Add system status information.
+		add_filter( &#039;wcs_system_status&#039;, array( $this, &#039;add_system_status_info&#039; ) );
+
+		add_action( &#039;woocommerce_subscriptions_upgraded&#039;, array( $this, &#039;transfer_large_site_cache_option&#039; ), 10, 2 );
+	}
+
+	/**
+	 * Check if the given hook has reports associated with it, and if so, add them to our $this-&gt;reports_to_update
+	 * property so we know to schedule an event to update their cache at the end of the request.
+	 *
+	 * This function is attached as a callback on the events in the $update_events_and_classes property.
+	 *
+	 * @since 2.1
+	 * @return null
+	 */
+	public function set_reports_to_update() {
+		if ( isset( $this-&gt;update_events_and_classes[ current_filter() ] ) ) {
+			$this-&gt;reports_to_update = array_unique( array_merge( $this-&gt;reports_to_update, $this-&gt;update_events_and_classes[ current_filter() ] ) );
+		}
+	}
+
+	/**
+	 * At the end of the request, schedule cache updates for any events that occured during this request.
+	 *
+	 * For large sites, cache updates are run only once per day to avoid overloading the DB where the queries are very resource intensive
+	 * (as reported during beta testing in https://github.com/Prospress/woocommerce-subscriptions/issues/1732). We do this at 4am in the
+	 * site&#039;s timezone, which helps avoid running the queries during busy periods and also runs them after all the renewals for synchronised
+	 * subscriptions should have finished for the day (which begins at 3am and rarely takes more than 1 hours of processing to get through
+	 * an entire queue).
+	 *
+	 * This function is attached as a callback on &#039;shutdown&#039; and will schedule cache updates for any reports found to need updates by
+	 * @see $this-&gt;set_reports_to_update().
+	 *
+	 * @since 2.1
+	 */
+	public function schedule_cache_updates() {
+
+		if ( ! empty( $this-&gt;reports_to_update ) ) {
+
+			// On large sites, we want to run the cache update once at 4am in the site&#039;s timezone
+			if ( $this-&gt;use_large_site_cache() ) {
+
+				$cache_update_timestamp = $this-&gt;get_large_site_cache_update_timestamp();
+
+				// Schedule one update event for each class to avoid updating cache more than once for the same class for different events
+				foreach ( $this-&gt;reports_to_update as $index =&gt; $report_class ) {
+
+					$cron_args = array( &#039;report_class&#039; =&gt; $report_class );
+
+					if ( false === as_next_scheduled_action( $this-&gt;cron_hook, $cron_args ) ) {
+						// Use the index to space out caching of each report to make them 15 minutes apart so that on large sites, where we assume they&#039;ll get a request at least once every few minutes, we don&#039;t try to update the caches of all reports in the same request
+						as_schedule_single_action( $cache_update_timestamp + 15 * MINUTE_IN_SECONDS * ( $index + 1 ), $this-&gt;cron_hook, $cron_args );
+					}
+				}
+			} else { // Otherwise, run it 10 minutes after the last cache invalidating event
+
+				// Schedule one update event for each class to avoid updating cache more than once for the same class for different events
+				foreach ( $this-&gt;reports_to_update as $index =&gt; $report_class ) {
+
+					$cron_args = array( &#039;report_class&#039; =&gt; $report_class );
+
+					if ( false !== as_next_scheduled_action( $this-&gt;cron_hook, $cron_args ) ) {
+						as_unschedule_action( $this-&gt;cron_hook, $cron_args );
+					}
+
+					// Use the index to space out caching of each report to make them 5 minutes apart so that on large sites, where we assume they&#039;ll get a request at least once every few minutes, we don&#039;t try to update the caches of all reports in the same request
+					as_schedule_single_action( gmdate( &#039;U&#039; ) + MINUTE_IN_SECONDS * ( $index + 1 ) * 5, $this-&gt;cron_hook, $cron_args );
+				}
+			}
+		}
+	}
+
+	/**
+	 * Update the cache data for a given report, as specified with $report_class, by call it&#039;s get_data() method.
+	 *
+	 * @since 2.1
+	 * @return null
+	 */
+	public function update_cache( $report_class ) {
+		/**
+		 * Filter whether Report Cache Updates are enabled.
+		 *
+		 * @param bool   $enabled      Whether report updates are enabled.
+		 * @param string $report_class The report class to use.
+		 */
+		if ( ! apply_filters( &#039;wcs_report_cache_updates_enabled&#039;, &#039;yes&#039; === get_option( &#039;woocommerce_subscriptions_cache_updates_enabled&#039;, &#039;yes&#039; ), $report_class ) ) {
+			return;
+		}
+
+		// Validate the report class
+		$valid_report_class = false;
+
+		foreach ( $this-&gt;update_events_and_classes as $event_hook =&gt; $report_classes ) {
+			if ( in_array( $report_class, $report_classes ) ) {
+				$valid_report_class = true;
+				break;
+			}
+		}
+
+		if ( false === $valid_report_class ) {
+			return;
+		}
+
+		// Hook our error catcher.
+		add_action( &#039;shutdown&#039;, array( $this, &#039;catch_unexpected_shutdown&#039; ) );
+
+		// Load report class dependencies
+		require_once( ABSPATH . &#039;wp-admin/includes/class-wp-list-table.php&#039; );
+		require_once( WC()-&gt;plugin_path() . &#039;/includes/admin/reports/class-wc-admin-report.php&#039; );
+
+		$reflector = new ReflectionMethod( $report_class, &#039;get_data&#039; );
+
+		// Some report classes extend WP_List_Table which has a constructor using methods not available on WP-Cron (and unable to be loaded with a __doing_it_wrong() notice), so they have a static get_data() method and do not need to be instantiated
+		if ( $reflector-&gt;isStatic() ) {
+			call_user_func( array( $report_class, &#039;clear_cache&#039; ) );
+			call_user_func( array( $report_class, &#039;get_data&#039; ), array( &#039;no_cache&#039; =&gt; true ) );
+		} else {
+			$report = new $report_class();
+			$report-&gt;clear_cache();
+
+			// Classes with a non-static get_data() method can be displayed for different time series, so we need to update the cache for each of those ranges
+			foreach ( array( &#039;year&#039;, &#039;last_month&#039;, &#039;month&#039;, &#039;7day&#039; ) as $range ) {
+				$report-&gt;calculate_current_range( $range );
+				$report-&gt;get_data( array( &#039;no_cache&#039; =&gt; true ) );
+			}
+		}
+
+		// Remove our error catcher.
+		remove_action( &#039;shutdown&#039;, array( $this, &#039;catch_unexpected_shutdown&#039; ) );
+	}
+
+	/**
+	 * Boolean flag to check whether to use a the large site cache method or not, which is determined based on the number of
+	 * subscriptions and orders on the site (using arbitrary counts).
+	 *
+	 * @since 2.1
+	 * @return bool
+	 */
+	protected function use_large_site_cache() {
+
+		if ( null === $this-&gt;use_large_site_cache ) {
+			$this-&gt;use_large_site_cache = wcs_is_large_site();
+		}
+
+		return apply_filters( &#039;wcs_report_use_large_site_cache&#039;, $this-&gt;use_large_site_cache );
+	}
+
+	/**
+	 * Make it clear to store owners that data for some reports can be out-of-date.
+	 *
+	 * @since 2.1
+	 */
+	public function admin_notices() {
+
+		$screen       = get_current_screen();
+		$wc_screen_id = sanitize_title( __( &#039;WooCommerce&#039;, &#039;woocommerce-subscriptions&#039; ) );
+
+		if ( in_array( $screen-&gt;id, apply_filters( &#039;woocommerce_reports_screen_ids&#039;, array( $wc_screen_id . &#039;_page_wc-reports&#039;, &#039;dashboard&#039; ) ) ) &amp;&amp; isset( $_GET[&#039;tab&#039;] ) &amp;&amp; &#039;subscriptions&#039; == $_GET[&#039;tab&#039;] &amp;&amp; ( ! isset( $_GET[&#039;report&#039;] ) || in_array( $_GET[&#039;report&#039;], array( &#039;subscription_events_by_date&#039;, &#039;upcoming_recurring_revenue&#039;, &#039;subscription_by_product&#039;, &#039;subscription_by_customer&#039; ) ) ) &amp;&amp; $this-&gt;use_large_site_cache() ) {
+			wcs_add_admin_notice( __( &#039;Please note: data for this report is cached. The data displayed may be out of date by up to 24 hours. The cache is updated each morning at 4am in your site\&#039;s timezone.&#039;, &#039;woocommerce-subscriptions&#039; ) );
+		}
+	}
+
+	/**
+	 * Handle error instances that lead to an unexpected shutdown.
+	 *
+	 * This attempts to detect if there was an error, and proactively prevent errors
+	 * from piling up.
+	 *
+	 * @author Jeremy Pry
+	 */
+	public function catch_unexpected_shutdown() {
+		$error = error_get_last();
+		if ( null === $error || ! isset( $error[&#039;type&#039;] ) ) {
+			return;
+		}
+
+		// Check for the error types that matter to us.
+		if ( $error[&#039;type&#039;] &amp; ( E_ERROR | E_PARSE | E_COMPILE_ERROR | E_USER_ERROR | E_RECOVERABLE_ERROR ) ) {
+			$failures = get_option( &#039;woocommerce_subscriptions_cache_updates_failures&#039;, 0 );
+			$failures++;
+			update_option( &#039;woocommerce_subscriptions_cache_updates_failures&#039;, $failures, false );
+
+			/**
+			 * Filter the allowed number of detected failures before we turn off cache updates.
+			 *
+			 * @param int $threshold The failure count threshold.
+			 */
+			if ( $failures &gt; apply_filters( &#039;woocommerce_subscriptions_cache_updates_failures_threshold&#039;, 2 ) ) {
+				update_option( &#039;woocommerce_subscriptions_cache_updates_enabled&#039;, &#039;no&#039;, false );
+			}
+		}
+	}
+
+	/**
+	 * Add system status information to include failure count and cache update status.
+	 *
+	 * @author Jeremy Pry
+	 *
+	 * @param array $data Existing status data.
+	 *
+	 * @return array Filtered status data.
+	 */
+	public function add_system_status_info( $data ) {
+		$cache_enabled = ( &#039;yes&#039; === get_option( &#039;woocommerce_subscriptions_cache_updates_enabled&#039;, &#039;yes&#039; ) );
+		$failures      = get_option( &#039;woocommerce_subscriptions_cache_updates_failures&#039;, 0 );
+		$new_data      = array(
+			&#039;wcs_report_cache_enabled&#039;  =&gt; array(
+				&#039;name&#039;    =&gt; _x( &#039;Report Cache Enabled&#039;, &#039;Whether the Report Cache has been enabled&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;label&#039;   =&gt; &#039;Report Cache Enabled&#039;,
+				&#039;note&#039;    =&gt; $cache_enabled ? __( &#039;Yes&#039;, &#039;woocommerce-subscriptions&#039; ) : __( &#039;No&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;success&#039; =&gt; $cache_enabled,
+			),
+			&#039;wcs_cache_update_failures&#039; =&gt; array(
+				&#039;name&#039;    =&gt; __( &#039;Cache Update Failures&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;label&#039;   =&gt; &#039;Cache Update Failures&#039;,
+				/* translators: %d refers to the number of times we have detected cache update failures */
+				&#039;note&#039;    =&gt; sprintf( _n( &#039;%d failures&#039;, &#039;%d failure&#039;, $failures, &#039;woocommerce-subscriptions&#039; ), $failures ),
+				&#039;success&#039; =&gt; 0 === $failures,
+			),
+		);
+
+		$data = array_merge( $data, $new_data );
+
+		return $data;
+	}
+
+	/**
+	 * Get the scheduled update cache time for large sites.
+	 *
+	 * @return int The timestamp of the next occurring 4 am in the site&#039;s timezone converted to UTC.
+	 */
+	protected function get_large_site_cache_update_timestamp() {
+		// Get the timestamp for 4 am in the site&#039;s timezone converted to the UTC equivalent.
+		$cache_update_timestamp = wc_string_to_timestamp( &#039;4 am&#039;, current_time( &#039;timestamp&#039; ) ) - wc_timezone_offset();
+
+		// PHP doesn&#039;t support a &quot;next 4am&quot; time format equivalent, so we need to manually handle getting 4am from earlier today (which will always happen when this is run after 4am and before midnight in the site&#039;s timezone)
+		if ( $cache_update_timestamp &lt;= gmdate( &#039;U&#039; ) ) {
+			$cache_update_timestamp += DAY_IN_SECONDS;
+		}
+
+		return $cache_update_timestamp;
+	}
+
+	/**
+	 * Transfers the &#039;wcs_report_use_large_site_cache&#039; option to the new &#039;wcs_is_large_site&#039; option.
+	 *
+	 * In 3.0.7 we introduced a more general use option, &#039;wcs_is_large_site&#039;, replacing the need for one specifically
+	 * for report caching. This function migrates the existing option value if it was previously set.
+	 *
+	 * @since 3.0.7
+	 *
+	 * @param string $new_version      The new Subscriptions plugin version.
+	 * @param string $previous_version The version of Subscriptions prior to upgrade.
+	 */
+	public function transfer_large_site_cache_option( $new_version, $previous_version ) {
+
+		// Check if the plugin upgrade is from a version prior to the option being deprecated (before 3.0.7).
+		if ( version_compare( $previous_version, &#039;3.0.7&#039;, &#039;&lt;&#039; ) &amp;&amp; false !== get_option( &#039;wcs_report_use_large_site_cache&#039; ) ) {
+			update_option( &#039;wcs_is_large_site&#039;, &#039;yes&#039;, false );
+			delete_option( &#039;wcs_report_use_large_site_cache&#039; );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

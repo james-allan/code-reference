@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS.html">WCS</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS-Early.html">Early</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS-Early-Renewal.html">Renewal</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-cart-early-renewal.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Implement renewing a subscription early via the cart.
+ *
+ * @class      WCS_Cart_Early_Renewal
+ * @package    WooCommerce Subscriptions
+ * @subpackage WCS_Early_Renewal
+ * @category   Class
+ * @since      2.3.0
+ */
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_Cart_Early_Renewal extends WCS_Cart_Renewal {
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 */
+	public function __construct() {
+
+		// Add the renew now button to the view subscription page.
+		add_filter( &#039;wcs_view_subscription_actions&#039;, array( $this, &#039;add_renew_now_action&#039; ), 10, 2 );
+
+		// Check if a user is requesting to create an early renewal order for a subscription.
+		add_action( &#039;template_redirect&#039;, array( $this, &#039;maybe_setup_cart&#039; ), 100 );
+
+		add_action( &#039;woocommerce_checkout_create_order&#039;, array( $this, &#039;copy_subscription_meta_to_order&#039; ), 90 );
+		// Record early renewal payments.
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			add_action( &#039;woocommerce_checkout_order_processed&#039;, array( $this, &#039;maybe_record_early_renewal&#039; ), 100, 2 );
+		} else {
+			add_action( &#039;woocommerce_checkout_create_order&#039;, array( $this, &#039;add_early_renewal_metadata_to_order&#039; ), 100, 2 );
+			if ( class_exists( &#039;Automattic\WooCommerce\Blocks\Package&#039; ) ) {
+				if ( version_compare( \Automattic\WooCommerce\Blocks\Package::get_version(), &#039;7.2.0&#039;, &#039;&gt;=&#039; ) ) {
+					add_action( &#039;woocommerce_store_api_checkout_update_order_meta&#039;, array( $this, &#039;add_early_renewal_metadata_to_order&#039; ), 100, 1 );
+				} elseif ( version_compare( \Automattic\WooCommerce\Blocks\Package::get_version(), &#039;6.3.0&#039;, &#039;&gt;=&#039; ) ) {
+					add_action( &#039;woocommerce_blocks_checkout_update_order_meta&#039;, array( $this, &#039;add_early_renewal_metadata_to_order&#039; ), 100, 1 );
+				} else {
+					add_action( &#039;__experimental_woocommerce_blocks_checkout_update_order_meta&#039;, array( $this, &#039;add_early_renewal_metadata_to_order&#039; ), 100, 1 );
+				}
+			}
+		}
+
+		// Process early renewal by making sure subscription&#039;s dates are updated.
+		add_action( &#039;subscriptions_activated_for_order&#039;, array( $this, &#039;maybe_update_dates&#039; ) );
+
+		// Handle early renewal orders that are cancelled.
+		add_action( &#039;woocommerce_order_status_cancelled&#039;, array( $this, &#039;maybe_reactivate_subscription&#039; ), 100, 2 );
+
+		// Add a subscription note to record early renewal order.
+		add_action( &#039;woocommerce_checkout_update_order_meta&#039;, array( $this, &#039;add_note_to_record_early_renewal&#039; ) );
+
+		// After the renewal order is created on checkout, set the renewal order cart item data now that we have an order. Must be hooked on before WCS_Cart_Renewal-&gt;set_order_item_id(), in order for the line item ID set by that function to be correct.
+		add_action( &#039;woocommerce_checkout_update_order_meta&#039;, array( $this, &#039;set_cart_item_renewal_order_data&#039; ), 5 );
+
+		// Allow customers to cancel early renewal orders from their my account page.
+		add_filter( &#039;woocommerce_my_account_my_orders_actions&#039;, array( $this, &#039;add_cancel_order_action&#039; ), 15, 2 );
+		add_action( &#039;wp_loaded&#039;, array( $this, &#039;allow_early_renewal_order_cancellation&#039; ), 10, 3 );
+
+		// Handles early renew of password-protected products.
+		add_action( &#039;wcs_before_early_renewal_setup_cart_subscription&#039;, &#039;wcs_allow_protected_products_to_renew&#039; );
+		add_action( &#039;wcs_after_early_renewal_setup_cart_subscription&#039;, &#039;wcs_disallow_protected_product_add_to_cart_validation&#039; );
+	}
+
+	/**
+	 * Adds a &quot;Renew Now&quot; button to the &quot;View Subscription&quot; page.
+	 *
+	 * @param array $actions The $subscription_key =&gt; $actions array with all actions that will be displayed for a subscription on the &quot;View Subscription&quot; page.
+	 * @param WC_Subscription $subscription The current subscription being viewed.
+	 * @since 2.3.0
+	 * @return array $actions The subscription actions with the &quot;Renew Now&quot; action added if it&#039;s permitted.
+	 */
+	public function add_renew_now_action( $actions, $subscription ) {
+
+		if ( wcs_can_user_renew_early( $subscription ) &amp;&amp; $subscription-&gt;payment_method_supports( &#039;subscription_date_changes&#039; ) &amp;&amp; $subscription-&gt;has_status( &#039;active&#039; ) ) {
+
+			$actions[&#039;subscription_renewal_early&#039;] = array(
+				&#039;url&#039;  =&gt; wcs_get_early_renewal_url( $subscription ),
+				&#039;name&#039; =&gt; __( &#039;Renew now&#039;, &#039;woocommerce-subscriptions&#039; ),
+			);
+		}
+
+		return $actions;
+	}
+
+	/**
+	 * Check if a payment is being made on an early renewal order.
+	 */
+	public function maybe_setup_cart() {
+		if ( ! isset( $_GET[&#039;subscription_renewal_early&#039;] ) ) {
+			return;
+		}
+
+		$subscription = wcs_get_subscription( absint( $_GET[&#039;subscription_renewal_early&#039;] ) );
+		$redirect_to  = get_permalink( wc_get_page_id( &#039;myaccount&#039; ) );
+
+		if ( empty( $subscription ) ) {
+
+			wc_add_notice( __( &#039;That subscription does not exist. Has it been deleted?&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+
+		} elseif ( ! current_user_can( &#039;subscribe_again&#039;, $subscription-&gt;get_id() ) ) {
+
+			wc_add_notice( __( &quot;That doesn&#039;t appear to be one of your subscriptions.&quot;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+
+		} elseif ( ! wcs_can_user_renew_early( $subscription ) ) {
+
+			wc_add_notice( __( &#039;You can not renew this subscription early. Please contact us if you need assistance.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+
+		} else {
+
+			do_action( &#039;wcs_before_early_renewal_setup_cart_subscription&#039;, $subscription );
+
+			wc_add_notice( __( &#039;Complete checkout to renew now.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;success&#039; );
+
+			$this-&gt;setup_cart( $subscription, array(
+				&#039;subscription_id&#039;            =&gt; $subscription-&gt;get_id(),
+				&#039;subscription_renewal_early&#039; =&gt; true,
+				&#039;renewal_order_id&#039;           =&gt; $subscription-&gt;get_id(),
+			), &#039;all_items_required&#039; );
+
+			do_action( &#039;wcs_after_early_renewal_setup_cart_subscription&#039;, $subscription );
+
+			$redirect_to = wc_get_checkout_url();
+		}
+
+		wp_safe_redirect( $redirect_to );
+		exit;
+	}
+
+	/**
+	 * Records an early renewal against order created on checkout (only for WooCommerce &lt; 3.0).
+	 *
+	 * @param int $order_id The post_id of a shop_order post/WC_Order object.
+	 * @param array $posted_data The data posted on checkout.
+	 * @since 2.3.0
+	 */
+	public function maybe_record_early_renewal( $order_id, $posted_data ) {
+		if ( ! wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			wcs_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Cart_Early_Renewal::add_early_renewal_metadata_to_order( $order, $posted_data )&#039; );
+		}
+
+		$cart_item = $this-&gt;cart_contains();
+
+		if ( ! $cart_item ) {
+			return;
+		}
+
+		// Get the subscription.
+		$subscription = wcs_get_subscription( $cart_item[ $this-&gt;cart_item_key ][&#039;subscription_id&#039;] );
+
+		// Mark this order as a renewal.
+		update_post_meta( $order_id, &#039;_subscription_renewal&#039;, $subscription-&gt;get_id() );
+
+		// Mark this order as an early renewal.
+		update_post_meta( $order_id, &#039;_subscription_renewal_early&#039;, $subscription-&gt;get_id() );
+
+		// Put the subscription on hold until payment is complete.
+		$subscription-&gt;update_status( &#039;on-hold&#039;, _x( &#039;Customer requested to renew early:&#039;, &#039;used in order note as reason for why subscription status changed&#039;, &#039;woocommerce-subscriptions&#039; ) );
+	}
+
+	/**
+	 * Copies the metadata from the subscription to the order created on checkout.
+	 *
+	 * @param WC_Order $order The WC Order object.
+	 *
+	 * @since 2.5.2
+	 */
+	public function copy_subscription_meta_to_order( $order ) {
+		if ( $this-&gt;cart_contains() ) {
+			// Get the subscription.
+			$subscription = $this-&gt;get_order();
+
+			if ( $subscription ) {
+				// Copy all meta, excluding core properties (totals etc), from the subscription to new renewal order
+				add_filter( &#039;wcs_renewal_order_meta&#039;, array( $this, &#039;exclude_core_order_meta_properties&#039; ) );
+				wcs_copy_order_meta( $subscription, $order, &#039;renewal_order&#039; );
+				remove_filter( &#039;wcs_renewal_order_meta&#039;, array( $this, &#039;exclude_core_order_meta_properties&#039; ) );
+			}
+		}
+	}
+
+	/**
+	 * Adds the early renewal metadata to the order created on checkout.
+	 *
+	 * @param WC_Order $order The WC Order object.
+	 * @param array $data The data posted on checkout.
+	 * @since 2.3.0
+	 */
+	public function add_early_renewal_metadata_to_order( $order, $data = array() ) {
+
+		$cart_item = $this-&gt;cart_contains();
+		if ( ! $cart_item ) {
+			return;
+		}
+
+		// Get the subscription.
+		$subscription = wcs_get_subscription( $cart_item[ $this-&gt;cart_item_key ][&#039;subscription_id&#039;] );
+
+		// Mark this order as a renewal.
+		$order-&gt;update_meta_data( &#039;_subscription_renewal&#039;, $subscription-&gt;get_id() );
+
+		// Mark this order as an early renewal.
+		$order-&gt;update_meta_data( &#039;_subscription_renewal_early&#039;, $subscription-&gt;get_id() );
+
+		// Put the subscription on hold until payment is complete.
+		$subscription-&gt;update_status( &#039;on-hold&#039;, _x( &#039;Customer requested to renew early:&#039;, &#039;used in order note as reason for why subscription status changed&#039;, &#039;woocommerce-subscriptions&#039; ) );
+	}
+
+	/**
+	 * Update the next payment and end dates on a subscription to extend them and account
+	 * for early renewal.
+	 *
+	 * @param int $order_id The WC Order ID which contains an early renewal.
+	 * @since 2.3.0
+	 */
+	public function maybe_update_dates( $order_id ) {
+
+		$order = wc_get_order( $order_id );
+
+		if ( ! $order || ! wcs_order_contains_early_renewal( $order ) ) {
+			return;
+		}
+
+		$subscription_id = wcs_get_objects_property( $order, &#039;subscription_renewal_early&#039; );
+		$subscription    = wcs_get_subscription( $subscription_id );
+
+		if ( ! $subscription ) {
+			return;
+		}
+
+		wcs_update_dates_after_early_renewal( $subscription, $order );
+	}
+
+	/**
+	 * Reactivates an on hold subscription when an early renewal order
+	 * is cancelled by the user.
+	 *
+	 * @param int $order_id The WC Order ID which contains an early renewal.
+	 * @since 2.3.0
+	 */
+	public function maybe_reactivate_subscription( $order_id ) {
+
+		// Get the order and make sure we have one.
+		$order = wc_get_order( $order_id );
+
+		if ( wcs_order_contains_early_renewal( $order ) ) {
+
+			// Get the subscription and make sure we have one.
+			$subscription = wcs_get_subscription( wcs_get_objects_property( $order, &#039;subscription_renewal_early&#039; ) );
+
+			if ( ! $subscription || ! $subscription-&gt;has_status( &#039;on-hold&#039; ) ) {
+				return;
+			}
+
+			// Make sure the next payment date isn&#039;t in the past.
+			if ( strtotime( $subscription-&gt;get_date( &#039;next_payment&#039; ) ) &lt; time() ) {
+				return;
+			}
+
+			// Reactivate the subscription.
+			$subscription-&gt;update_status( &#039;active&#039; );
+		}
+	}
+
+	/**
+	 * Checks the cart to see if it contains a subscription renewal item.
+	 *
+	 * @see    wcs_cart_contains_early_renewal().
+	 * @return bool|array The cart item containing the renewal, else false.
+	 * @since  2.3.0
+	 */
+	protected function cart_contains() {
+		return wcs_cart_contains_early_renewal();
+	}
+
+	/**
+	 * Get the subscription object used to construct the early renewal cart.
+	 *
+	 * @param  array The resubscribe cart item.
+	 * @return WC_Subscription The subscription object.
+	 * @since  2.3.0
+	 */
+	protected function get_order( $cart_item = &#039;&#039; ) {
+
+		$subscription = false;
+
+		if ( empty( $cart_item ) ) {
+			$cart_item = $this-&gt;cart_contains();
+		}
+
+		if ( false !== $cart_item &amp;&amp; isset( $cart_item[ $this-&gt;cart_item_key ] ) ) {
+			$subscription = wcs_get_subscription( $cart_item[ $this-&gt;cart_item_key ][&#039;subscription_id&#039;] );
+		}
+
+		return $subscription;
+	}
+
+	/**
+	 * Add a note to the subscription to record the creation of the early renewal order.
+	 *
+	 * @param int $order_id The order ID created on checkout.
+	 * @since 2.3.0
+	 */
+	public function add_note_to_record_early_renewal( $order_id ) {
+
+		$cart_item = $this-&gt;cart_contains();
+
+		if ( ! $cart_item ) {
+			return;
+		}
+
+		$order        = wc_get_order( $order_id );
+		$subscription = wcs_get_subscription( $cart_item[ $this-&gt;cart_item_key ][&#039;subscription_id&#039;] );
+
+		if ( wcs_is_order( $order ) &amp;&amp; wcs_is_subscription( $subscription ) ) {
+			// translators: %s: order ID.
+			$order_number = sprintf( _x( &#039;#%s&#039;, &#039;hash before order number&#039;, &#039;woocommerce-subscriptions&#039; ), $order-&gt;get_order_number() );
+
+			// translators: %s: order ID (linked to details page).
+			$subscription-&gt;add_order_note( sprintf( __( &#039;Order %s created to record early renewal.&#039;, &#039;woocommerce-subscriptions&#039; ), sprintf( &#039;&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt; &#039;, esc_url( wcs_get_edit_post_link( $order_id ) ), $order_number ) ) );
+		}
+	}
+
+	/**
+	 * Set the renewal order ID in early renewal order cart items.
+	 *
+	 * Hooked onto the &#039;woocommerce_checkout_update_order_meta&#039; hook after the renewal order has been
+	 * created on checkout. Required so the line item ID set by @see WCS_Cart_Renewal-&gt;set_order_item_id()
+	 * matches the order.
+	 *
+	 * @param int $order_id The WC Order ID created on checkout.
+	 * @since 2.3.0
+	 */
+	public function set_cart_item_renewal_order_data( $order_id ) {
+
+		if ( ! wcs_cart_contains_early_renewal() ) {
+			return;
+		}
+
+		foreach ( WC()-&gt;cart-&gt;cart_contents as $key =&gt; &amp;$cart_item ) {
+			if ( isset( $cart_item[ $this-&gt;cart_item_key ] ) &amp;&amp; ! empty( $cart_item[ $this-&gt;cart_item_key ][&#039;subscription_renewal_early&#039;] ) ) {
+				$cart_item[ $this-&gt;cart_item_key ][&#039;renewal_order_id&#039;] = $order_id;
+			}
+		}
+	}
+
+	/**
+	 * Ensure customers can cancel early renewal orders.
+	 *
+	 * Renewal orders are usually not cancellable because @see WCS_Cart_Renewal::filter_my_account_my_orders_actions() prevents it.
+	 * In the case of early renewals, the customer has opted for early renewal and so should be able to cancel it in order to reactivate their subscription.
+	 *
+	 * @param array $actions A list of actions customers can make on an order from their My Account page
+	 * @param WC_Order $order The order the list of actions relate to.
+	 * @return array $actions
+	 * @since 2.3.0
+	 */
+	public static function add_cancel_order_action( $actions, $order ) {
+
+		if ( ! isset( $actions[&#039;cancel&#039;] ) &amp;&amp; wcs_order_contains_early_renewal( $order ) &amp;&amp; in_array( $order-&gt;get_status(), apply_filters( &#039;woocommerce_valid_order_statuses_for_cancel&#039;, array( &#039;pending&#039;, &#039;failed&#039; ), $order ) ) ) {
+			$redirect = wc_get_page_permalink( &#039;myaccount&#039; );
+
+			// Redirect the customer back to the view subscription page if that is where they cancel the order from.
+			if ( wcs_is_view_subscription_page() ) {
+				global $wp;
+				$subscription = wcs_get_subscription( $wp-&gt;query_vars[&#039;view-subscription&#039;] );
+
+				if ( wcs_is_subscription( $subscription ) ) {
+					$redirect = $subscription-&gt;get_view_order_url();
+				}
+			}
+
+			$actions[&#039;cancel&#039;] = array(
+				&#039;url&#039;  =&gt; $order-&gt;get_cancel_order_url( $redirect ),
+				&#039;name&#039; =&gt; __( &#039;Cancel&#039;, &#039;woocommerce-subscriptions&#039; ),
+			);
+		}
+
+		return $actions;
+	}
+
+	/**
+	 * Allow customers to cancel early renewal orders from their account page.
+	 *
+	 * Renewal orders are usually not cancellable because @see WC_Subscriptions_Renewal_Order::prevent_cancelling_renewal_orders() prevents the request from being processed.
+	 * In the case of early renewals, the customer has opted for early renewal and so should be able to cancel it in order to reactivate their subscription.
+	 *
+	 * @since 2.3.0
+	 */
+	public static function allow_early_renewal_order_cancellation() {
+		if ( isset( $_GET[&#039;cancel_order&#039;] ) &amp;&amp; isset( $_GET[&#039;order_id&#039;] ) &amp;&amp; isset( $_GET[&#039;_wpnonce&#039;] ) &amp;&amp; wp_verify_nonce( $_GET[&#039;_wpnonce&#039;], &#039;woocommerce-cancel_order&#039; ) ) {
+			$order_id = absint( $_GET[&#039;order_id&#039;] );
+			$order    = wc_get_order( $order_id );
+
+			if ( wcs_order_contains_early_renewal( $order ) ) {
+				remove_action( &#039;wp_loaded&#039;, &#039;WC_Subscriptions_Renewal_Order::prevent_cancelling_renewal_orders&#039;, 19 );
+			}
+		}
+	}
+
+	/**
+	 * Excludes core order meta properties from the meta copied from the subscription.
+	 *
+	 * Attached to the dynamic hook &#039;wcs_renewal_order_meta&#039; which is triggered by wcs_copy_order_meta
+	 * when copying meta from the subscription to the early renewal order.
+	 *
+	 * @since 2.5.6
+	 *
+	 * @param array $order_meta The meta keys and values to copy from the subscription to the early renewal order.
+	 * @return array The subscription meta to copy to the early renewal order.
+	 */
+	public function exclude_core_order_meta_properties( $order_meta ) {
+
+		// Additional meta keys to exclude. These are in addition to the meta keys already excluded by wcs_copy_order_meta().
+		$excluded_meta_keys = array(
+			&#039;_customer_user&#039;          =&gt; 1,
+			&#039;_order_currency&#039;         =&gt; 1,
+			&#039;_prices_include_tax&#039;     =&gt; 1,
+			&#039;_order_version&#039;          =&gt; 1,
+			&#039;_shipping_first_name&#039;    =&gt; 1,
+			&#039;_shipping_last_name&#039;     =&gt; 1,
+			&#039;_shipping_company&#039;       =&gt; 1,
+			&#039;_shipping_address_1&#039;     =&gt; 1,
+			&#039;_shipping_address_2&#039;     =&gt; 1,
+			&#039;_shipping_city&#039;          =&gt; 1,
+			&#039;_shipping_state&#039;         =&gt; 1,
+			&#039;_shipping_postcode&#039;      =&gt; 1,
+			&#039;_shipping_country&#039;       =&gt; 1,
+			&#039;_shipping_address_index&#039; =&gt; 1,
+			&#039;_billing_first_name&#039;     =&gt; 1,
+			&#039;_billing_last_name&#039;      =&gt; 1,
+			&#039;_billing_company&#039;        =&gt; 1,
+			&#039;_billing_address_1&#039;      =&gt; 1,
+			&#039;_billing_address_2&#039;      =&gt; 1,
+			&#039;_billing_city&#039;           =&gt; 1,
+			&#039;_billing_state&#039;          =&gt; 1,
+			&#039;_billing_postcode&#039;       =&gt; 1,
+			&#039;_billing_country&#039;        =&gt; 1,
+			&#039;_billing_email&#039;          =&gt; 1,
+			&#039;_billing_phone&#039;          =&gt; 1,
+			&#039;_billing_address_index&#039;  =&gt; 1,
+			&#039;is_vat_exempt&#039;           =&gt; 1,
+			&#039;_customer_ip_address&#039;    =&gt; 1,
+			&#039;_customer_user_agent&#039;    =&gt; 1,
+			&#039;_cart_discount&#039;          =&gt; 1,
+			&#039;_cart_discount_tax&#039;      =&gt; 1,
+			&#039;_order_shipping&#039;         =&gt; 1,
+			&#039;_order_shipping_tax&#039;     =&gt; 1,
+			&#039;_order_tax&#039;              =&gt; 1,
+			&#039;_order_total&#039;            =&gt; 1,
+		);
+
+		foreach ( $order_meta as $index =&gt; $meta ) {
+			if ( isset( $excluded_meta_keys[ $meta[&#039;meta_key&#039;] ] ) ) {
+				unset( $order_meta[ $index ] );
+			}
+		}
+
+		return $order_meta;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

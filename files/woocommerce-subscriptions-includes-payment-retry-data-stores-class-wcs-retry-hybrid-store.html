@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS.html">WCS</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS-Retry.html">Retry</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS-Retry-Store.html">Store</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-retry-hybrid-store.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Hybrid wrapper around post and database store.
+ *
+ * @package        WooCommerce Subscriptions
+ * @subpackage     WCS_Retry_Store
+ * @category       Class
+ * @author         Prospress
+ * @since          2.4
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+} // Exit if accessed directly
+
+class WCS_Retry_Hybrid_Store extends WCS_Retry_Store {
+	/**
+	 * Where we&#039;re saving/migrating our data.
+	 *
+	 * @var WCS_Retry_Store
+	 */
+	private $database_store;
+
+	/**
+	 * Where the data comes from.
+	 *
+	 * @var WCS_Retry_Store
+	 */
+	private $post_store;
+
+	/**
+	 * Our migration class.
+	 *
+	 * @var WCS_Migrator
+	 */
+	private $migrator;
+
+	/**
+	 * Setup the class, if required
+	 *
+	 * @since 2.4
+	 */
+	public function init() {
+		$this-&gt;database_store = WCS_Retry_Stores::get_database_store();
+		$this-&gt;post_store     = WCS_Retry_Stores::get_post_store();
+
+		$migrator_class = apply_filters( &#039;wcs_retry_retry_migrator_class&#039;, &#039;WCS_Retry_Migrator&#039; );
+		$this-&gt;migrator = new $migrator_class( $this-&gt;post_store, $this-&gt;database_store, new WC_Logger() );
+	}
+
+	/**
+	 * Save the details of a retry to the database
+	 *
+	 * @param WCS_Retry $retry Retry to save.
+	 *
+	 * @return int the retry&#039;s ID
+	 * @since 2.4
+	 */
+	public function save( WCS_Retry $retry ) {
+		$retry_id = $retry-&gt;get_id();
+		if ( $this-&gt;migrator-&gt;should_migrate_entry( $retry_id ) ) {
+			$retry_id = $this-&gt;migrator-&gt;migrate_entry( $retry_id );
+		}
+
+		return $this-&gt;database_store-&gt;save( new WCS_Retry( array(
+			&#039;id&#039;       =&gt; $retry_id,
+			&#039;order_id&#039; =&gt; $retry-&gt;get_order_id(),
+			&#039;status&#039;   =&gt; $retry-&gt;get_status(),
+			&#039;date_gmt&#039; =&gt; $retry-&gt;get_date_gmt(),
+			&#039;rule_raw&#039; =&gt; $retry-&gt;get_rule()-&gt;get_raw_data(),
+		) ) );
+	}
+
+	/**
+	 * Get the details of a retry from the database, and migrates when necessary.
+	 *
+	 * @param int $retry_id Retry we want to get.
+	 *
+	 * @return WCS_Retry
+	 * @since 2.4
+	 */
+	public function get_retry( $retry_id ) {
+		if ( $this-&gt;migrator-&gt;should_migrate_entry( $retry_id ) ) {
+			$retry_id = $this-&gt;migrator-&gt;migrate_entry( $retry_id );
+		}
+
+		return $this-&gt;database_store-&gt;get_retry( $retry_id );
+	}
+
+	/**
+	 * Deletes a retry.
+	 *
+	 * @param int $retry_id
+	 *
+	 * @return bool
+	 * @since 2.4
+	 */
+	public function delete_retry( $retry_id ) {
+		if ( $this-&gt;migrator-&gt;should_migrate_entry( $retry_id ) ) {
+			return $this-&gt;migrator-&gt;delete_source_store_entry( $retry_id );
+		}
+
+		return $this-&gt;database_store-&gt;delete_retry( $retry_id );
+	}
+
+	/**
+	 * Get a set of retries from the database
+	 *
+	 * @param array  $args   A set of filters:
+	 *                       &#039;status&#039;: filter to only retries of a certain status, either &#039;pending&#039;, &#039;processing&#039;, &#039;failed&#039; or &#039;complete&#039;. Default: &#039;any&#039;, which will return all retries.
+	 *                       &#039;date_query&#039;: array of dates to filter retries to those that occur &#039;after&#039; or &#039;before&#039; a certain date (or between those two dates). Should be a MySQL formated date/time string.
+	 *                       &#039;orderby&#039;: Order by which property?
+	 *                       &#039;order&#039;: Order in ASC/DESC.
+	 *                       &#039;order_id&#039;: filter retries to those which belong to a certain order ID.
+	 *                       &#039;limit&#039;: How many retries we want to get.
+	 * @param string $return Defines in which format return the entries. options:
+	 *                       &#039;objects&#039;: Returns an array of WCS_Retry objects
+	 *                       &#039;ids&#039;: Returns an array of ids.
+	 *
+	 * @return array An array of WCS_Retry objects or ids.
+	 * @since 2.4
+	 */
+	public function get_retries( $args = array(), $return = &#039;objects&#039; ) {
+		$source_store_retries = $this-&gt;post_store-&gt;get_retries( $args, $return );
+
+		foreach ( $source_store_retries as $source_store_retry_id =&gt; $source_store_retry ) {
+			if ( $this-&gt;migrator-&gt;should_migrate_entry( $source_store_retry_id ) ) {
+				$this-&gt;migrator-&gt;migrate_entry( $source_store_retry_id );
+			}
+		}
+
+		return $this-&gt;database_store-&gt;get_retries( $args, $return );
+	}
+
+	/**
+	 * Get the IDs of all retries from the database for a given order
+	 *
+	 * @param int $order_id order we want to look for.
+	 *
+	 * @return array
+	 * @since 2.4
+	 */
+	public function get_retry_ids_for_order( $order_id ) {
+		$source_store_retries = $this-&gt;post_store-&gt;get_retry_ids_for_order( $order_id );
+
+		foreach ( $source_store_retries as $source_store_retry_id ) {
+			if ( $this-&gt;migrator-&gt;should_migrate_entry( $source_store_retry_id ) ) {
+				$this-&gt;migrator-&gt;migrate_entry( $source_store_retry_id );
+			}
+		}
+
+		return $this-&gt;database_store-&gt;get_retry_ids_for_order( $order_id );
+	}
+
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

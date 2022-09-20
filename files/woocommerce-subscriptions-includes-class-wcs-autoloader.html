@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WC.html">WC</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WC-Subscriptions.html">Subscriptions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-autoloader.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Autoloader.
+ *
+ * @package WC_Subscriptions
+ */
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+class WCS_Autoloader extends WCS_Core_Autoloader {
+
+	/**
+	 * Whether to use the legacy API classes.
+	 *
+	 * @var bool
+	 */
+	protected $legacy_api = false;
+
+	/**
+	 * The classes the Subscriptions plugin has ownership of.
+	 *
+	 * Note: needs to be lowercase.
+	 *
+	 * @var array
+	 */
+	private $classes = array(
+		&#039;wc_subscriptions_plugin&#039;                   =&gt; true,
+		&#039;wc_subscriptions_switcher&#039;                 =&gt; true,
+		&#039;wcs_cart_switch&#039;                           =&gt; true,
+		&#039;wcs_switch_totals_calculator&#039;              =&gt; true,
+		&#039;wcs_switch_cart_item&#039;                      =&gt; true,
+		&#039;wcs_add_cart_item&#039;                         =&gt; true,
+		&#039;wc_order_item_pending_switch&#039;              =&gt; true,
+		&#039;wcs_manual_renewal_manager&#039;                =&gt; true,
+		&#039;wcs_customer_suspension_manager&#039;           =&gt; true,
+		&#039;wcs_drip_downloads_manager&#039;                =&gt; true,
+		&#039;wcs_zero_initial_payment_checkout_manager&#039; =&gt; true,
+		&#039;wcs_meta_box_payment_retries&#039;              =&gt; true,
+		&#039;wcs_limited_recurring_coupon_manager&#039;      =&gt; true,
+		&#039;wcs_call_to_action_button_text_manager&#039;    =&gt; true,
+		&#039;wcs_subscriber_role_manager&#039;               =&gt; true,
+		&#039;wc_subscriptions_payment_gateways&#039;         =&gt; true,
+		&#039;wcs_api&#039;                                   =&gt; true,
+		&#039;wcs_webhooks&#039;                              =&gt; true,
+		&#039;wcs_auth&#039;                                  =&gt; true,
+		&#039;wcs_upgrade_notice_manager&#039;                =&gt; true,
+	);
+
+	/**
+	 * The substrings of the classes that the Subscriptions plugin has ownership of.
+	 *
+	 * @var array
+	 */
+	private $class_substrings = array(
+		&#039;wc_reports&#039;,
+		&#039;report&#039;,
+		&#039;retry&#039;,
+		&#039;early_renewal&#039;,
+		&#039;rest_subscription&#039;,
+		&#039;wc_api_subscriptions&#039;,
+	);
+
+	/**
+	 * Gets the class&#039;s base path.
+	 *
+	 * If the a class is one the plugin is responsible for, we return the plugin&#039;s path. Otherwise we let the library handle it.
+	 *
+	 * @since 4.0.0
+	 * @return string
+	 */
+	public function get_class_base_path( $class ) {
+		if ( $this-&gt;is_plugin_class( $class ) ) {
+			return dirname( WC_Subscriptions::$plugin_file );
+		}
+
+		return parent::get_class_base_path( $class );
+	}
+
+	/**
+	 * Get the relative path for the class location.
+	 *
+	 * @param string $class The class name.
+	 * @return string The relative path (from the plugin root) to the class file.
+	 */
+	protected function get_relative_class_path( $class ) {
+		if ( ! $this-&gt;is_plugin_class( $class ) ) {
+			return parent::get_relative_class_path( $class );
+		}
+
+		$path = &#039;/includes&#039;;
+
+		if ( stripos( $class, &#039;switch&#039; ) !== false || &#039;wcs_add_cart_item&#039; === $class ) {
+			$path .= &#039;/switching&#039;;
+		} elseif ( false !== strpos( $class, &#039;wc_report&#039; ) ) {
+			$path .= &#039;/admin/reports/deprecated&#039;;
+		} elseif ( false !== strpos( $class, &#039;wcs_report&#039; ) ) {
+			$path .= &#039;/admin/reports&#039;;
+		} elseif ( false !== strpos( $class, &#039;retry&#039; ) || false !== strpos( $class, &#039;retries&#039; ) ) {
+			$path .= $this-&gt;get_payment_retry_class_relative_path( $class );
+		} elseif ( false !== strpos( $class, &#039;admin&#039; ) ) {
+			$path .= &#039;/admin&#039;;
+		} elseif ( false !== strpos( $class, &#039;early&#039; ) ) {
+			$path .= &#039;/early-renewal&#039;;
+		} elseif ( false !== strpos( $class, &#039;gateways&#039; ) ) {
+			$path .= &#039;/gateways&#039;;
+		} elseif ( false !== strpos( $class, &#039;rest&#039; ) ) {
+			$path .= $this-&gt;legacy_api ? &#039;/api/legacy&#039; : $this-&gt;get_rest_api_directory( $class );
+		} elseif ( false !== strpos( $class, &#039;api&#039; ) &amp;&amp; &#039;wcs_api&#039; !== $class ) {
+			$path .= &#039;/api/legacy&#039;;
+		}
+
+		return trailingslashit( $path );
+	}
+
+	/**
+	 * Determine whether we should autoload a given class.
+	 *
+	 * @param string $class The class name.
+	 * @return bool
+	 */
+	protected function should_autoload( $class ) {
+		static $legacy = array(
+			&#039;wc_order_item_pending_switch&#039;         =&gt; 1,
+			&#039;wc_report_retention_rate&#039;             =&gt; 1,
+			&#039;wc_report_upcoming_recurring_revenue&#039; =&gt; 1,
+		);
+
+		return isset( $legacy[ $class ] ) ? true : parent::should_autoload( $class );
+
+	}
+
+	/**
+	 * Is the given class found in the Subscriptions plugin
+	 *
+	 * @since 4.0.0
+	 * @param string $class
+	 * @return bool
+	 */
+	private function is_plugin_class( $class ) {
+		if ( isset( $this-&gt;classes[ $class ] ) ) {
+			return true;
+		}
+
+		foreach ( $this-&gt;class_substrings as $substring ) {
+			if ( false !== stripos( $class, $substring ) ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * Gets a retry class&#039;s relative path.
+	 *
+	 * @param string $class The retry class being loaded.
+	 * @return string The relative path to the retry class.
+	 */
+	private function get_payment_retry_class_relative_path( $class ) {
+		$relative_path = &#039;/payment-retry&#039;;
+
+		if ( false !== strpos( $class, &#039;admin&#039; ) || false !== strpos( $class, &#039;meta_box&#039; ) ) {
+			$relative_path .= &#039;/admin&#039;;
+		} elseif ( false !== strpos( $class, &#039;email&#039; ) ) {
+			$relative_path .= &#039;/emails&#039;;
+		} elseif ( false !== strpos( $class, &#039;store&#039; ) ) {
+			$relative_path .= &#039;/data-stores&#039;;
+		}
+
+		return $relative_path;
+	}
+
+	/**
+	 * Determine if the class is one of our abstract classes.
+	 *
+	 * @param string $class The class name.
+	 * @return bool
+	 */
+	protected function is_class_abstract( $class ) {
+		static $abstracts = array(
+			&#039;wcs_retry_store&#039; =&gt; true,
+		);
+
+		return isset( $abstracts[ $class ] ) || parent::is_class_abstract( $class );
+	}
+
+	/**
+	 * Set whether the legacy API should be used.
+	 *
+	 * @author Jeremy Pry
+	 *
+	 * @param bool $use_legacy_api Whether to use the legacy API classes.
+	 *
+	 * @return $this
+	 */
+	public function use_legacy_api( $use_legacy_api ) {
+		$this-&gt;legacy_api = (bool) $use_legacy_api;
+
+		return $this;
+	}
+
+	/**
+	 * Gets the correct subdirectory for a version of the a REST API class.
+	 *
+	 * @param string $class The rest API class name.
+	 * @return string The subdirectory for a rest API class.
+	 */
+	protected function get_rest_api_directory( $class ) {
+		$directory = &#039;/api&#039;;
+
+		// Check for an API version in the class name.
+		preg_match( &#039;/v\d/&#039;, $class, $matches );
+
+		if ( ! empty( $matches ) ) {
+			$directory .= &quot;/{$matches[0]}&quot;;
+		}
+
+		return $directory;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-report-subscription-payment-retry.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Admin Report - Subscription Events by Date
+ *
+ * Creates the subscription admin reports area.
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Admin_Reports
+ * @category   Class
+ * @author     Prospress
+ * @since      2.1
+ */
+class WCS_Report_Subscription_Payment_Retry extends WC_Admin_Report {
+
+	private $chart_colours = array();
+
+	private $report_data;
+
+	/**
+	 * Get report data
+	 * @return array
+	 */
+	public function get_report_data() {
+
+		if ( empty( $this-&gt;report_data ) ) {
+			$this-&gt;query_report_data();
+		}
+
+		return $this-&gt;report_data;
+	}
+
+	/**
+	 * Get all data needed for this report and store in the class
+	 */
+	private function query_report_data() {
+		global $wpdb;
+
+		// Convert from Decimal format(eg. 11.5) to a suitable format(eg. +11:30) for CONVERT_TZ() of SQL query.
+		$offset  = get_option( &#039;gmt_offset&#039; );
+		$site_timezone = sprintf( &#039;%+02d:%02d&#039;, (int) $offset, ( $offset - floor( $offset ) ) * 60 );
+		$retry_date_in_local_time = $wpdb-&gt;prepare( &quot;CONVERT_TZ(retries.date_gmt, &#039;+00:00&#039;, %s)&quot;, $site_timezone );
+
+		// We need to compute this on our own since &#039;group_by_query&#039; from the parent class uses posts table column names.
+		switch ( $this-&gt;chart_groupby ) {
+			case &#039;day&#039;:
+				$this-&gt;group_by_query = &quot;YEAR({$retry_date_in_local_time}), MONTH({$retry_date_in_local_time}), DAY({$retry_date_in_local_time})&quot;;
+				break;
+			case &#039;month&#039;:
+				$this-&gt;group_by_query = &quot;YEAR({$retry_date_in_local_time}), MONTH({$retry_date_in_local_time})&quot;;
+				break;
+		}
+
+		$this-&gt;report_data = new stdClass;
+
+		$query_start_date = get_gmt_from_date( date( &#039;Y-m-d H:i:s&#039;, $this-&gt;start_date ) );
+		$query_end_date   = get_gmt_from_date( date( &#039;Y-m-d H:i:s&#039;, wcs_strtotime_dark_knight( &#039;+1 day&#039;, $this-&gt;end_date ) ) );
+
+		// Get the sum of order totals for completed retries (i.e. retries which eventually succeeded in processing the failed payment)
+		$renewal_query = $wpdb-&gt;prepare(
+			&quot;
+			SELECT COUNT(DISTINCT retries.retry_id) as count, MIN(retries.date_gmt) AS retry_date_gmt, MIN({$retry_date_in_local_time}) AS retry_date, SUM(meta_order_total.meta_value) AS renewal_totals
+				FROM {$wpdb-&gt;posts} AS orders
+				INNER JOIN {$wpdb-&gt;prefix}wcs_payment_retries AS retries ON ( orders.ID = retries.order_id )
+				LEFT JOIN {$wpdb-&gt;postmeta} AS meta_order_total ON ( orders.ID = meta_order_total.post_id AND meta_order_total.meta_key = &#039;_order_total&#039; )
+			WHERE retries.status = &#039;complete&#039;
+				AND retries.date_gmt &gt;= %s
+				AND retries.date_gmt &lt; %s
+			GROUP BY {$this-&gt;group_by_query}
+			ORDER BY retry_date_gmt ASC
+			&quot;,
+			$query_start_date,
+			$query_end_date
+		);
+
+		$this-&gt;report_data-&gt;renewal_data = $wpdb-&gt;get_results( $renewal_query );
+
+		// Get the counts for all retries, grouped by day or month and status
+		$retry_query = $wpdb-&gt;prepare(
+			&quot;
+			SELECT COUNT(DISTINCT retries.retry_id) AS count, retries.status AS status, MIN(retries.date_gmt) AS retry_date_gmt, MIN({$retry_date_in_local_time}) AS retry_date
+				FROM {$wpdb-&gt;prefix}wcs_payment_retries AS retries
+			WHERE retries.status IN ( &#039;complete&#039;, &#039;failed&#039;, &#039;pending&#039; )
+			  AND retries.date_gmt &gt;= %s
+			  AND retries.date_gmt &lt; %s
+			GROUP BY {$this-&gt;group_by_query}, status
+			ORDER BY retry_date_gmt ASC
+			&quot;,
+			$query_start_date,
+			$query_end_date
+		);
+
+		$this-&gt;report_data-&gt;retry_data = $wpdb-&gt;get_results( $retry_query );
+
+		// Total up the query data
+		$this-&gt;report_data-&gt;retry_failed_count   = absint( array_sum( wp_list_pluck( wp_list_filter( $this-&gt;report_data-&gt;retry_data, array( &#039;status&#039; =&gt; &#039;failed&#039; ) ), &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;retry_success_count  = absint( array_sum( wp_list_pluck( wp_list_filter( $this-&gt;report_data-&gt;retry_data, array( &#039;status&#039; =&gt; &#039;complete&#039; ) ), &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;retry_pending_count  = absint( array_sum( wp_list_pluck( wp_list_filter( $this-&gt;report_data-&gt;retry_data, array( &#039;status&#039; =&gt; &#039;pending&#039; ) ), &#039;count&#039; ) ) );
+
+		$this-&gt;report_data-&gt;renewal_total_count  = absint( array_sum( wp_list_pluck( $this-&gt;report_data-&gt;renewal_data, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;renewal_total_amount = array_sum( wp_list_pluck( $this-&gt;report_data-&gt;renewal_data, &#039;renewal_totals&#039; ) );
+	}
+
+	/**
+	 * Get the legend for the main chart sidebar
+	 * @return array
+	 */
+	public function get_chart_legend() {
+		$legend = array();
+		$data   = $this-&gt;get_report_data();
+
+		$legend[] = array(
+			// translators: %s: formatted amount.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s renewal revenue recovered&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . wc_price( $data-&gt;renewal_total_amount ) . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The total amount of revenue, including tax and shipping, recovered with the failed payment retry system for renewal orders with a failed payment.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;renewal_total&#039;],
+			&#039;highlight_series&#039; =&gt; 3,
+		);
+
+		$legend[] = array(
+			// translators: %s: renewal count.
+			&#039;title&#039;       =&gt; sprintf( __( &#039;%s renewal orders&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . $data-&gt;renewal_total_count . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039; =&gt; __( &#039;The number of renewal orders which had a failed payment use the retry system.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;       =&gt; $this-&gt;chart_colours[&#039;renewal_count&#039;],
+		);
+
+		$legend[] = array(
+			// translators: %s: retry count.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s retry attempts succeeded&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . $data-&gt;retry_success_count . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of renewal payment retries for this period which were able to process the payment which had previously failed one or more times.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;retry_success_count&#039;],
+			&#039;highlight_series&#039; =&gt; 0,
+		);
+
+		$legend[] = array(
+			// translators: %s: retry count.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s retry attempts failed&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . $data-&gt;retry_failed_count . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of renewal payment retries for this period which did not result in a successful payment.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;retry_failure_count&#039;],
+			&#039;highlight_series&#039; =&gt; 1,
+		);
+
+		$legend[] = array(
+			// translators: %s: retry count.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s retry attempts pending&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . $data-&gt;retry_pending_count . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of renewal payment retries not yet processed.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;retry_pending_count&#039;],
+			&#039;highlight_series&#039; =&gt; 2,
+		);
+
+		return $legend;
+	}
+
+	/**
+	 * Output the report
+	 */
+	public function output_report() {
+
+		$ranges = array(
+			&#039;year&#039;       =&gt; __( &#039;Year&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;last_month&#039; =&gt; __( &#039;Last Month&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;month&#039;      =&gt; __( &#039;This Month&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;7day&#039;       =&gt; __( &#039;Last 7 Days&#039;, &#039;woocommerce-subscriptions&#039; ),
+		);
+
+		$this-&gt;chart_colours = array(
+			&#039;retry_success_count&#039; =&gt; &#039;#5cc488&#039;,
+			&#039;retry_failure_count&#039; =&gt; &#039;#e74c3c&#039;,
+			&#039;retry_pending_count&#039; =&gt; &#039;#dbe1e3&#039;,
+			&#039;renewal_count&#039;       =&gt; &#039;#b1d4ea&#039;,
+			&#039;renewal_total&#039;       =&gt; &#039;#3498db&#039;,
+		);
+
+		$current_range = ! empty( $_GET[&#039;range&#039;] ) ? sanitize_text_field( $_GET[&#039;range&#039;] ) : &#039;7day&#039;;
+
+		if ( ! in_array( $current_range, array( &#039;custom&#039;, &#039;year&#039;, &#039;last_month&#039;, &#039;month&#039;, &#039;7day&#039; ) ) ) {
+			$current_range = &#039;7day&#039;;
+		}
+
+		$this-&gt;calculate_current_range( $current_range );
+
+		include( WC()-&gt;plugin_path() . &#039;/includes/admin/views/html-report-by-date.php&#039; );
+	}
+
+	/**
+	 * Output an export link
+	 */
+	public function get_export_button() {
+		$current_range = ! empty( $_GET[&#039;range&#039;] ) ? sanitize_text_field( $_GET[&#039;range&#039;] ) : &#039;7day&#039;;
+		?&gt;
+		&lt;a
+			href=&quot;#&quot;
+			download=&quot;report-&lt;?php echo esc_attr( $current_range ); ?&gt;-&lt;?php echo esc_attr( date_i18n( &#039;Y-m-d&#039;, current_time( &#039;timestamp&#039; ) ) ); ?&gt;.csv&quot;
+			class=&quot;export_csv&quot;
+			data-export=&quot;chart&quot;
+			data-xaxes=&quot;&lt;?php esc_attr_e( &#039;Date&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&quot;
+			data-exclude_series=&quot;2&quot;
+			data-groupby=&quot;&lt;?php echo esc_attr( $this-&gt;chart_groupby ); ?&gt;&quot;
+		&gt;
+			&lt;?php esc_attr_e( &#039;Export CSV&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+		&lt;/a&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Get the main chart
+	 *
+	 * @return string
+	 */
+	public function get_main_chart() {
+		global $wp_locale;
+
+		// Prepare data for report
+		$retry_count         = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;retry_data, &#039;retry_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$retry_success_count = $this-&gt;prepare_chart_data( wp_list_filter( $this-&gt;report_data-&gt;retry_data, array( &#039;status&#039; =&gt; &#039;complete&#039; ) ), &#039;retry_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$retry_failure_count = $this-&gt;prepare_chart_data( wp_list_filter( $this-&gt;report_data-&gt;retry_data, array( &#039;status&#039; =&gt; &#039;failed&#039; ) ), &#039;retry_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$retry_pending_count = $this-&gt;prepare_chart_data( wp_list_filter( $this-&gt;report_data-&gt;retry_data, array( &#039;status&#039; =&gt; &#039;pending&#039; ) ), &#039;retry_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+
+		$renewal_count       = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;renewal_data, &#039;retry_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$renewal_amount      = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;renewal_data, &#039;retry_date&#039;, &#039;renewal_totals&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+
+		// Encode in json format
+		$chart_data = array(
+			&#039;retry_count&#039;         =&gt; array_values( $retry_count ),
+			&#039;retry_success_count&#039; =&gt; array_values( $retry_success_count ),
+			&#039;retry_failure_count&#039; =&gt; array_values( $retry_failure_count ),
+			&#039;retry_pending_count&#039; =&gt; array_values( $retry_pending_count ),
+			&#039;renewal_count&#039;       =&gt; array_values( $renewal_count ),
+			&#039;renewal_amount&#039;      =&gt; array_map( array( $this, &#039;round_chart_totals&#039; ), array_values( $renewal_amount ) ),
+		);
+
+		$timeformat = ( $this-&gt;chart_groupby == &#039;day&#039; ? &#039;%d %b&#039; : &#039;%b&#039; );
+
+		?&gt;
+		&lt;div id=&quot;woocommerce_subscriptions_payment_retry_chart&quot; class=&quot;chart-container&quot;&gt;
+			&lt;div class=&quot;chart-placeholder main&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;script type=&quot;text/javascript&quot;&gt;
+
+			var main_chart;
+
+			jQuery(function(){
+				var chart_data = JSON.parse( &#039;&lt;?php echo json_encode( $chart_data ); ?&gt;&#039; );
+
+				var drawGraph = function( highlight ) {
+					var series = [
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Successful retries&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: chart_data.retry_success_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;retry_success_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								fillColor: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;retry_success_count&#039;] ); ?&gt;&#039;,
+								order: 1,
+								fill: true,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.33,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Failed retries&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: chart_data.retry_failure_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;retry_failure_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								fillColor: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;retry_failure_count&#039;] ); ?&gt;&#039;,
+								order: 2,
+								fill: true,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.33,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Pending retries&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: chart_data.retry_pending_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;retry_pending_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								fillColor: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;retry_pending_count&#039;] ); ?&gt;&#039;,
+								order: 3,
+								fill: true,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.33,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Recovered Renewal Revenue&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: chart_data.renewal_amount,
+							yaxis: 2,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;renewal_total&#039;] ); ?&gt;&#039;,
+							points: {
+								show: true,
+								radius: 6,
+								lineWidth: 4,
+								fillColor: &#039;#fff&#039;,
+								fill: true
+							},
+							lines: {
+								show: true,
+								lineWidth: 5,
+								fill: false
+							},
+							shadowSize: 0,
+							&lt;?php echo wp_kses_post( $this-&gt;get_currency_tooltip() ); ?&gt;
+						},
+					];
+
+					if ( highlight !== &#039;undefined&#039; &amp;&amp; series[ highlight ] ) {
+						highlight_series = series[ highlight ];
+
+						highlight_series.color = &#039;#9c5d90&#039;;
+
+						if ( highlight_series.bars ) {
+							highlight_series.bars.fillColor = &#039;#9c5d90&#039;;
+						}
+
+						if ( highlight_series.lines ) {
+							highlight_series.lines.lineWidth = 5;
+						}
+					}
+
+					main_chart = jQuery.plot(
+						jQuery(&#039;.chart-placeholder.main&#039;),
+						series,
+						{
+							legend: {
+								show: false
+							},
+							grid: {
+								color: &#039;#aaa&#039;,
+								borderColor: &#039;transparent&#039;,
+								borderWidth: 0,
+								hoverable: true
+							},
+							xaxes: [ {
+								color: &#039;#aaa&#039;,
+								position: &quot;bottom&quot;,
+								tickColor: &#039;transparent&#039;,
+								mode: &quot;time&quot;,
+								timeformat: &quot;&lt;?php echo esc_js( $timeformat ) ?&gt;&quot;,
+								monthNames: &lt;?php echo json_encode( array_values( $wp_locale-&gt;month_abbrev ) ) ?&gt;,
+								tickLength: 1,
+								minTickSize: [1, &quot;&lt;?php echo esc_js( $this-&gt;chart_groupby ); ?&gt;&quot;],
+								font: {
+									color: &quot;#aaa&quot;
+								}
+							} ],
+							yaxes: [
+								{
+									min: 0,
+									minTickSize: 1,
+									tickDecimals: 0,
+									color: &#039;#d4d9dc&#039;,
+									font: { color: &quot;#aaa&quot; }
+								},
+								{
+									position: &quot;right&quot;,
+									min: 0,
+									tickDecimals: 2,
+									tickFormatter: function (tick) {
+										// Localise and format axis labels
+										return jQuery.wcs_format_money(tick,0);
+									},
+									alignTicksWithAxis: 1,
+									color: &#039;transparent&#039;,
+									font: { color: &quot;#aaa&quot; }
+								}
+							],
+							stack: true,
+						}
+					);
+
+					jQuery(&#039;.chart-placeholder&#039;).trigger( &#039;resize&#039; );
+				}
+
+				drawGraph();
+
+				jQuery(&#039;.highlight_series&#039;).on( &#039;hover&#039;,
+					function() {
+						drawGraph( jQuery(this).data(&#039;series&#039;) );
+					},
+					function() {
+						drawGraph();
+					}
+				);
+			});
+		&lt;/script&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Round our totals correctly.
+	 * @param  string $amount
+	 * @return string
+	 */
+	private function round_chart_totals( $amount ) {
+		if ( is_array( $amount ) ) {
+			return array( $amount[0], wc_format_decimal( $amount[1], wc_get_price_decimals() ) );
+		} else {
+			return wc_format_decimal( $amount, wc_get_price_decimals() );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

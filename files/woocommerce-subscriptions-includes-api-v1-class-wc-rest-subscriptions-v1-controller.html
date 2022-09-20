@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-RestApi.html">RestApi</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-rest-subscriptions-v1-controller.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * REST API Subscriptions controller
+ *
+ * Handles requests to the /subscriptions endpoint.
+ *
+ * @package WooCommerce Subscriptions\Rest Api
+ * @author  WooCommerce
+ * @since   2.1.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+/**
+ * REST API Subscriptions controller class.
+ *
+ * @package WooCommerce_Subscriptions/API
+ * @extends WC_REST_Orders_Controller
+ */
+class WC_REST_Subscriptions_V1_Controller extends WC_REST_Orders_V1_Controller {
+
+	/**
+	 * Route base.
+	 *
+	 * @var string
+	 */
+	protected $rest_base = &#039;subscriptions&#039;;
+
+	/**
+	 * Post type.
+	 *
+	 * @var string
+	 */
+	protected $post_type = &#039;shop_subscription&#039;;
+
+	/**
+	 * Initialize subscription actions and filters
+	 */
+	public function __construct() {
+		add_filter( &#039;woocommerce_rest_prepare_shop_subscription&#039;, array( $this, &#039;filter_get_subscription_response&#039; ), 10, 3 );
+
+		add_filter( &#039;woocommerce_rest_shop_subscription_query&#039;, array( $this, &#039;query_args&#039; ), 10, 2 );
+	}
+
+	/**
+	 * Register the routes for subscriptions.
+	 */
+	public function register_routes() {
+		parent::register_routes();
+
+		register_rest_route( $this-&gt;namespace, &#039;/&#039; . $this-&gt;rest_base . &#039;/(?P&lt;id&gt;[\d]+)/orders&#039;, array(
+			array(
+				&#039;methods&#039;             =&gt; WP_REST_Server::READABLE,
+				&#039;callback&#039;            =&gt; array( $this, &#039;get_subscription_orders&#039; ),
+				&#039;permission_callback&#039; =&gt; array( $this, &#039;get_items_permissions_check&#039; ),
+				&#039;args&#039;                =&gt; $this-&gt;get_collection_params(),
+			),
+			&#039;schema&#039; =&gt; array( $this, &#039;get_public_item_schema&#039; ),
+		) );
+
+		register_rest_route( $this-&gt;namespace, &#039;/&#039; . $this-&gt;rest_base . &#039;/statuses&#039;, array(
+			array(
+				&#039;methods&#039;             =&gt; WP_REST_Server::READABLE,
+				&#039;callback&#039;            =&gt; array( $this, &#039;get_statuses&#039; ),
+				&#039;permission_callback&#039; =&gt; &#039;__return_true&#039;,
+			),
+			&#039;schema&#039; =&gt; array( $this, &#039;get_public_item_schema&#039; ),
+		) );
+	}
+
+	/**
+	 * Filter WC_REST_Orders_Controller::get_item response for subscription post types
+	 *
+	 * @since 2.1
+	 * @param WP_REST_Response $response
+	 * @param WP_POST $post
+	 * @param WP_REST_Request $request
+	 */
+	public function filter_get_subscription_response( $response, $post, $request ) {
+		$decimal_places = is_null( $request[&#039;dp&#039;] ) ? wc_get_price_decimals() : absint( $request[&#039;dp&#039;] );
+
+		if ( ! empty( $post-&gt;post_type ) &amp;&amp; ! empty( $post-&gt;ID ) &amp;&amp; &#039;shop_subscription&#039; == $post-&gt;post_type ) {
+			$subscription = wcs_get_subscription( $post-&gt;ID );
+
+			$response-&gt;data[&#039;billing_period&#039;]   = $subscription-&gt;get_billing_period();
+			$response-&gt;data[&#039;billing_interval&#039;] = $subscription-&gt;get_billing_interval();
+
+			// Send resubscribe data
+			$resubscribed_subscriptions                  = array_filter( $subscription-&gt;get_related_orders( &#039;ids&#039;, &#039;resubscribe&#039; ), &#039;wcs_is_subscription&#039; );
+			$response-&gt;data[&#039;resubscribed_from&#039;]         = strval( wcs_get_objects_property( $subscription, &#039;subscription_resubscribe&#039; ) );
+			$response-&gt;data[&#039;resubscribed_subscription&#039;] = strval( reset( $resubscribed_subscriptions ) ); // Subscriptions can only be resubscribed to once so return the first and only element.
+
+			foreach ( array( &#039;start&#039;, &#039;trial_end&#039;, &#039;next_payment&#039;, &#039;end&#039; ) as $date_type ) {
+				$date = $subscription-&gt;get_date( $date_type );
+				$response-&gt;data[ $date_type . &#039;_date&#039; ] = ( ! empty( $date ) ) ? wc_rest_prepare_date_response( $date ) : &#039;&#039;;
+			}
+
+			// v1 API includes some date types in site time, include those dates in UTC as well.
+			$response-&gt;data[&#039;date_completed_gmt&#039;] = wc_rest_prepare_date_response( $subscription-&gt;get_date_completed() );
+			$response-&gt;data[&#039;date_paid_gmt&#039;]      = wc_rest_prepare_date_response( $subscription-&gt;get_date_paid() );
+			$response-&gt;data[&#039;removed_line_items&#039;] = array();
+
+			// Include removed line items of a subscription
+			foreach ( $subscription-&gt;get_items( &#039;line_item_removed&#039; ) as $item_id =&gt; $item ) {
+				$product      = $item-&gt;get_product();
+				$product_id   = 0;
+				$variation_id = 0;
+				$product_sku  = null;
+
+				// Check if the product exists.
+				if ( is_object( $product ) ) {
+					$product_id   = $item-&gt;get_product_id();
+					$variation_id = $item-&gt;get_variation_id();
+					$product_sku  = $product-&gt;get_sku();
+				}
+
+				$item_meta = array();
+
+				$hideprefix = &#039;true&#039; === $request[&#039;all_item_meta&#039;] ? null : &#039;_&#039;;
+
+				foreach ( $item-&gt;get_formatted_meta_data( $hideprefix, true ) as $meta_key =&gt; $formatted_meta ) {
+					$item_meta[] = array(
+						&#039;key&#039;   =&gt; $formatted_meta-&gt;key,
+						&#039;label&#039; =&gt; $formatted_meta-&gt;display_key,
+						&#039;value&#039; =&gt; wc_clean( $formatted_meta-&gt;display_value ),
+					);
+				}
+
+				$line_item = array(
+					&#039;id&#039;           =&gt; $item_id,
+					&#039;name&#039;         =&gt; $item[&#039;name&#039;],
+					&#039;sku&#039;          =&gt; $product_sku,
+					&#039;product_id&#039;   =&gt; (int) $product_id,
+					&#039;variation_id&#039; =&gt; (int) $variation_id,
+					&#039;quantity&#039;     =&gt; wc_stock_amount( $item[&#039;qty&#039;] ),
+					&#039;tax_class&#039;    =&gt; ! empty( $item[&#039;tax_class&#039;] ) ? $item[&#039;tax_class&#039;] : &#039;&#039;,
+					&#039;price&#039;        =&gt; wc_format_decimal( $subscription-&gt;get_item_total( $item, false, false ), $decimal_places ),
+					&#039;subtotal&#039;     =&gt; wc_format_decimal( $subscription-&gt;get_line_subtotal( $item, false, false ), $decimal_places ),
+					&#039;subtotal_tax&#039; =&gt; wc_format_decimal( $item[&#039;line_subtotal_tax&#039;], $decimal_places ),
+					&#039;total&#039;        =&gt; wc_format_decimal( $subscription-&gt;get_line_total( $item, false, false ), $decimal_places ),
+					&#039;total_tax&#039;    =&gt; wc_format_decimal( $item[&#039;line_tax&#039;], $decimal_places ),
+					&#039;taxes&#039;        =&gt; array(),
+					&#039;meta&#039;         =&gt; $item_meta,
+				);
+
+				$item_line_taxes = maybe_unserialize( $item[&#039;line_tax_data&#039;] );
+				if ( isset( $item_line_taxes[&#039;total&#039;] ) ) {
+					$line_tax = array();
+
+					foreach ( $item_line_taxes[&#039;total&#039;] as $tax_rate_id =&gt; $tax ) {
+						$line_tax[ $tax_rate_id ] = array(
+							&#039;id&#039;       =&gt; $tax_rate_id,
+							&#039;total&#039;    =&gt; $tax,
+							&#039;subtotal&#039; =&gt; &#039;&#039;,
+						);
+					}
+
+					foreach ( $item_line_taxes[&#039;subtotal&#039;] as $tax_rate_id =&gt; $tax ) {
+						$line_tax[ $tax_rate_id ][&#039;subtotal&#039;] = $tax;
+					}
+
+					$line_item[&#039;taxes&#039;] = array_values( $line_tax );
+				}
+
+				$response-&gt;data[&#039;removed_line_items&#039;][] = $line_item;
+			}
+		}
+
+		return $response;
+	}
+
+	/**
+	 * Sets the order_total value on the subscription after WC_REST_Orders_Controller::create_order
+	 * calls calculate_totals(). This allows store admins to create a recurring payment via the api
+	 * without needing to attach a product to the subscription.
+	 *
+	 * @since 2.1
+	 * @param WP_REST_Request $request
+	 */
+	protected function create_order( $request ) {
+		try {
+			if ( ! is_null( $request[&#039;customer_id&#039;] ) &amp;&amp; 0 !== $request[&#039;customer_id&#039;] &amp;&amp; false === get_user_by( &#039;id&#039;, $request[&#039;customer_id&#039;] ) ) {
+				throw new WC_REST_Exception( &#039;woocommerce_rest_invalid_customer_id&#039;, __( &#039;Customer ID is invalid.&#039;, &#039;woocommerce-subscriptions&#039; ), 400 );
+			}
+
+			// If the start date is not set in the request, set its default to now
+			if ( ! isset( $request[&#039;start_date&#039;] ) ) {
+				$request[&#039;start_date&#039;] = gmdate( &#039;Y-m-d H:i:s&#039; );
+			}
+
+			// prepare all subscription data from the request
+			$subscription = $this-&gt;prepare_item_for_database( $request );
+			$subscription-&gt;set_created_via( &#039;rest-api&#039; );
+			$subscription-&gt;set_prices_include_tax( &#039;yes&#039; === get_option( &#039;woocommerce_prices_include_tax&#039; ) );
+			$subscription-&gt;calculate_totals();
+
+			// allow the order total to be overriden (i.e. if you want to have a subscription with no order items but a flat $10.00 recurring payment )
+			if ( isset( $request[&#039;order_total&#039;] ) ) {
+				$subscription-&gt;set_total( wc_format_decimal( $request[&#039;order_total&#039;], get_option( &#039;woocommerce_price_num_decimals&#039; ) ) );
+			}
+
+			// Store the post meta on the subscription after it&#039;s saved, this is to avoid compat. issue with the filters in WC_Subscription::set_payment_method_meta() expecting the $subscription to have an ID (therefore it needs to be called after the WC_Subscription has been saved)
+			$payment_data = ( ! empty( $request[&#039;payment_details&#039;] ) ) ? $request[&#039;payment_details&#039;] : array();
+			if ( empty( $payment_data[&#039;payment_details&#039;][&#039;method_id&#039;] ) &amp;&amp; ! empty( $request[&#039;payment_method&#039;] ) ) {
+				$payment_data[&#039;method_id&#039;] = $request[&#039;payment_method&#039;];
+			}
+
+			$this-&gt;update_payment_method( $subscription, $payment_data );
+
+			$subscription-&gt;save();
+
+			// Handle set paid.
+			if ( true === $request[&#039;set_paid&#039;] ) {
+				$subscription-&gt;payment_complete( $request[&#039;transaction_id&#039;] );
+			}
+
+			do_action( &#039;wcs_api_subscription_created&#039;, $subscription-&gt;get_id() );
+
+			return $subscription-&gt;get_id();
+		} catch ( WC_Data_Exception $e ) {
+			return new WP_Error( $e-&gt;getErrorCode(), $e-&gt;getMessage(), $e-&gt;getErrorData() );
+		} catch ( WC_REST_Exception $e ) {
+			return new WP_Error( $e-&gt;getErrorCode(), $e-&gt;getMessage(), array( &#039;status&#039; =&gt; $e-&gt;getCode() ) );
+		}
+	}
+
+	/**
+	 * Overrides WC_REST_Orders_Controller::update_order to update subscription specific meta
+	 * calls parent::update_order to update the rest.
+	 *
+	 * @since 2.1
+	 * @param WP_REST_Request $request
+	 * @param WP_POST $post
+	 */
+	protected function update_order( $request ) {
+		try {
+			$subscription = $this-&gt;prepare_item_for_database( $request );
+
+			// If any line items have changed, recalculate subscription totals.
+			if ( isset( $request[&#039;line_items&#039;] ) || isset( $request[&#039;shipping_lines&#039;] ) || isset( $request[&#039;fee_lines&#039;] ) || isset( $request[&#039;coupon_lines&#039;] ) ) {
+				$subscription-&gt;calculate_totals();
+			}
+
+			// allow the order total to be overriden (i.e. if you want to have a subscription with no order items but a flat $10.00 recurring payment )
+			if ( isset( $request[&#039;order_total&#039;] ) ) {
+				$subscription-&gt;set_total( wc_format_decimal( $request[&#039;order_total&#039;], get_option( &#039;woocommerce_price_num_decimals&#039; ) ) );
+			}
+
+			$subscription-&gt;save();
+
+			// Update the post meta on the subscription after it&#039;s saved, this is to avoid compat. issue with the filters in WC_Subscription::set_payment_method_meta() expecting the $subscription to have an ID (therefore it needs to be called after the WC_Subscription has been saved)
+			$payment_data = ( ! empty( $request[&#039;payment_details&#039;] ) ) ? $request[&#039;payment_details&#039;] : array();
+			$existing_payment_method_id = $subscription-&gt;get_payment_method();
+
+			if ( empty( $payment_data[&#039;method_id&#039;] ) &amp;&amp; isset( $request[&#039;payment_method&#039;] ) ) {
+				$payment_data[&#039;method_id&#039;] = $request[&#039;payment_method&#039;];
+
+			} elseif ( ! empty( $existing_payment_method_id ) ) {
+				$payment_data[&#039;method_id&#039;] = $existing_payment_method_id;
+			}
+
+			if ( isset( $payment_data[&#039;method_id&#039;] ) ) {
+				$this-&gt;update_payment_method( $subscription, $payment_data, true );
+			}
+
+			// Handle set paid.
+			if ( $subscription-&gt;needs_payment() &amp;&amp; true === $request[&#039;set_paid&#039;] ) {
+				$subscription-&gt;payment_complete();
+			}
+
+			do_action( &#039;wcs_api_subscription_updated&#039;, $subscription-&gt;get_id() );
+
+			return $subscription-&gt;get_id();
+		} catch ( WC_Data_Exception $e ) {
+			return new WP_Error( $e-&gt;getErrorCode(), $e-&gt;getMessage(), $e-&gt;getErrorData() );
+		} catch ( WC_REST_Exception $e ) {
+			return new WP_Error( $e-&gt;getErrorCode(), $e-&gt;getMessage(), array( &#039;status&#039; =&gt; $e-&gt;getCode() ) );
+		}
+	}
+
+	/**
+	 * Get subscription orders
+	 *
+	 * @since 2.1
+	 * @param WP_REST_Request $request
+	 * @return WP_Error|WP_REST_Response $response
+	 */
+	public function get_subscription_orders( $request ) {
+		$id = (int) $request[&#039;id&#039;];
+
+		if ( empty( $id ) || ! wcs_is_subscription( $id ) ) {
+			return new WP_Error( &#039;woocommerce_rest_invalid_shop_subscription_id&#039;, __( &#039;Invalid subscription id.&#039;, &#039;woocommerce-subscriptions&#039; ), array( &#039;status&#039; =&gt; 404 ) );
+		}
+
+		$this-&gt;post_type     = &#039;shop_order&#039;;
+		$subscription        = wcs_get_subscription( $id );
+		$subscription_orders = $subscription-&gt;get_related_orders();
+
+		$orders = array();
+
+		foreach ( $subscription_orders as $order_id ) {
+			$post = get_post( $order_id );
+
+			// Validate that the order can be loaded before trying to generate a response object for it.
+			$order = wc_get_order( $order_id );
+
+			if ( ! $order || ! wc_rest_check_post_permissions( $this-&gt;post_type, &#039;read&#039;, $post-&gt;ID ) ) {
+				continue;
+			}
+
+			$response = $this-&gt;prepare_item_for_response( $post, $request );
+
+			foreach ( array( &#039;parent&#039;, &#039;renewal&#039;, &#039;switch&#039; ) as $order_type ) {
+				if ( wcs_order_contains_subscription( $order_id, $order_type ) ) {
+					$response-&gt;data[&#039;order_type&#039;] = $order_type . &#039;_order&#039;;
+					break;
+				}
+			}
+
+			$orders[] = $this-&gt;prepare_response_for_collection( $response );
+		}
+
+		$response = rest_ensure_response( $orders );
+		$response-&gt;header( &#039;X-WP-Total&#039;, count( $orders ) );
+		$response-&gt;header( &#039;X-WP-TotalPages&#039;, 1 );
+
+		return apply_filters( &#039;wcs_rest_subscription_orders_response&#039;, $response, $request );
+	}
+
+	/**
+	 * Get subscription statuses
+	 *
+	 * @since 2.1
+	 */
+	public function get_statuses() {
+		return rest_ensure_response( wcs_get_subscription_statuses() );
+	}
+
+	/**
+	 * Overrides WC_REST_Orders_Controller::get_order_statuses() so that subscription statuses are
+	 * validated correctly in WC_REST_Orders_Controller::get_collection_params()
+	 *
+	 * @since 2.1
+	 */
+	protected function get_order_statuses() {
+		$subscription_statuses = array();
+
+		foreach ( array_keys( wcs_get_subscription_statuses() ) as $status ) {
+			$subscription_statuses[] = str_replace( &#039;wc-&#039;, &#039;&#039;, $status );
+		}
+		return $subscription_statuses;
+	}
+
+	/**
+	 * Validate and update payment method on a subscription
+	 *
+	 * @since 2.1
+	 * @param WC_Subscription $subscription
+	 * @param array $data
+	 * @param bool $updating
+	 */
+	public function update_payment_method( $subscription, $data, $updating = false ) {
+		$payment_method = ( ! empty( $data[&#039;method_id&#039;] ) ) ? $data[&#039;method_id&#039;] : &#039;&#039;;
+
+		try {
+			if ( $updating &amp;&amp; ! array_key_exists( $payment_method, WCS_Change_Payment_Method_Admin::get_valid_payment_methods( $subscription ) ) ) {
+				throw new Exception( __( &#039;Gateway does not support admin changing the payment method on a Subscription.&#039;, &#039;woocommerce-subscriptions&#039; ) );
+			}
+
+			$payment_method_meta = apply_filters( &#039;woocommerce_subscription_payment_meta&#039;, array(), $subscription );
+
+			// Reload the subscription to update the meta values.
+			// In particular, the update_post_meta() called while _stripe_card_id is updated to _stripe_source_id
+			$subscription = wcs_get_subscription( $subscription-&gt;get_id() );
+
+			if ( isset( $payment_method_meta[ $payment_method ] ) ) {
+				$payment_method_meta = $payment_method_meta[ $payment_method ];
+
+				if ( ! empty( $payment_method_meta ) ) {
+
+					foreach ( $payment_method_meta as $meta_table =&gt; &amp;$meta ) {
+						if ( ! is_array( $meta ) ) {
+							continue;
+						}
+
+						foreach ( $meta as $meta_key =&gt; &amp;$meta_data ) {
+
+							if ( isset( $data[ $meta_table ][ $meta_key ] ) ) {
+								$meta_data[&#039;value&#039;] = $data[ $meta_table ][ $meta_key ];
+							}
+						}
+					}
+				}
+			}
+
+			$subscription-&gt;set_payment_method( $payment_method, $payment_method_meta );
+
+			// Save the subscription to reflect the new values
+			$subscription-&gt;save();
+
+		} catch ( Exception $e ) {
+			$subscription-&gt;set_payment_method();
+			$subscription-&gt;save();
+			// translators: 1$: gateway id, 2$: error message
+			throw new WC_REST_Exception( &#039;woocommerce_rest_invalid_payment_data&#039;, sprintf( __( &#039;Subscription payment method could not be set to %1$s with error message: %2$s&#039;, &#039;woocommerce-subscriptions&#039; ), $payment_method, $e-&gt;getMessage() ), 400 );
+		}
+	}
+
+	/**
+	 * Prepare a single subscription for create.
+	 *
+	 * @param  WP_REST_Request $request Request object.
+	 * @return WP_Error|WC_Subscription $data Object.
+	 */
+	protected function prepare_item_for_database( $request ) {
+		$id           = isset( $request[&#039;id&#039;] ) ? absint( $request[&#039;id&#039;] ) : 0;
+		$subscription = new WC_Subscription( $id );
+		$schema       = $this-&gt;get_item_schema();
+		$data_keys    = array_keys( array_filter( $schema[&#039;properties&#039;], array( $this, &#039;filter_writable_props&#039; ) ) );
+
+		$dates_to_update = array();
+
+		// Handle all writable props
+		foreach ( $data_keys as $key ) {
+			$value = $request[ $key ];
+
+			if ( ! is_null( $value ) ) {
+				switch ( $key ) {
+					case &#039;billing&#039;:
+					case &#039;shipping&#039;:
+						$this-&gt;update_address( $subscription, $value, $key );
+						break;
+					case &#039;line_items&#039;:
+					case &#039;shipping_lines&#039;:
+					case &#039;fee_lines&#039;:
+					case &#039;coupon_lines&#039;:
+						if ( is_array( $value ) ) {
+							foreach ( $value as $item ) {
+								if ( is_array( $item ) ) {
+									if ( $this-&gt;item_is_null( $item ) || ( isset( $item[&#039;quantity&#039;] ) &amp;&amp; 0 === $item[&#039;quantity&#039;] ) ) {
+										$subscription-&gt;remove_item( $item[&#039;id&#039;] );
+									} else {
+										$this-&gt;set_item( $subscription, $key, $item );
+									}
+								}
+							}
+						}
+						break;
+					case &#039;transition_status&#039;:
+						$subscription-&gt;update_status( $value );
+						break;
+					case &#039;start_date&#039;:
+					case &#039;trial_end_date&#039;:
+					case &#039;next_payment_date&#039;:
+					case &#039;end_date&#039;:
+						$dates_to_update[ $key ] = $value;
+						break;
+					default:
+						if ( is_callable( array( $subscription, &quot;set_{$key}&quot; ) ) ) {
+							$subscription-&gt;{&quot;set_{$key}&quot;}( $value );
+						}
+						break;
+				}
+			}
+		}
+
+		$subscription-&gt;save();
+
+		try {
+			if ( ! empty( $dates_to_update ) ) {
+				$subscription-&gt;update_dates( $dates_to_update );
+			}
+		} catch ( Exception $e ) {
+			// translators: placeholder is an error message.
+			throw new WC_REST_Exception( &#039;woocommerce_rest_cannot_update_subscription_dates&#039;, sprintf( __( &#039;Updating subscription dates errored with message: %s&#039;, &#039;woocommerce-subscriptions&#039; ), $e-&gt;getMessage() ), 400 );
+		}
+
+		/**
+		 * Filter the data for the insert.
+		 *
+		 * The dynamic portion of the hook name, $this-&gt;post_type, refers to post_type of the post being
+		 * prepared for the response.
+		 *
+		 * @param WC_Subscription    $subscription   The subscription object.
+		 * @param WP_REST_Request    $request        Request object.
+		 */
+		return apply_filters( &quot;woocommerce_rest_pre_insert_{$this-&gt;post_type}&quot;, $subscription, $request );
+	}
+
+	/**
+	 * Adds additional item schema information for subscription requests
+	 *
+	 * @since 2.1
+	 */
+	public function get_item_schema() {
+		$schema = parent::get_item_schema();
+
+		$subscriptions_schema = array(
+			&#039;transition_status&#039;         =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;The status to transition the subscription to. Unlike the &quot;status&quot; param, this will calculate and update the subscription dates.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;string&#039;,
+				&#039;enum&#039;        =&gt; $this-&gt;get_order_statuses(),
+				&#039;context&#039;     =&gt; array( &#039;edit&#039; ),
+			),
+			&#039;billing_interval&#039;          =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;The number of billing periods between subscription renewals.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;integer&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+			),
+			&#039;billing_period&#039;            =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Billing period for the subscription.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;string&#039;,
+				&#039;enum&#039;        =&gt; array_keys( wcs_get_subscription_period_strings() ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+			),
+			&#039;payment_details&#039;           =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Subscription payment details.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;object&#039;,
+				&#039;context&#039;     =&gt; array( &#039;edit&#039; ),
+				&#039;properties&#039;  =&gt; array(
+					&#039;method_id&#039; =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Payment gateway ID.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;edit&#039; ),
+					),
+				),
+			),
+			&#039;start_date&#039;                =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The subscription&#039;s start date.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;date-time&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+			),
+			&#039;trial_end_date&#039;            =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The subscription&#039;s trial date&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;date-time&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+			),
+			&#039;next_payment_date&#039;         =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The subscription&#039;s next payment date.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;date-time&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+			),
+			&#039;end_date&#039;                  =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The subscription&#039;s end date.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;date-time&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+			),
+			&#039;resubscribed_from&#039;         =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The subscription&#039;s original subscription ID if this is a resubscribed subscription.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;string&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;resubscribed_subscription&#039; =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The subscription&#039;s resubscribed subscription ID.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;string&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;date_completed_gmt&#039;        =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The date the subscription&#039;s latest order was completed, in GMT.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;date-time&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;date_paid_gmt&#039;             =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The date the subscription&#039;s latest order was paid, in GMT.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;date-time&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;removed_line_items&#039;        =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Removed line items data.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;array&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;items&#039;       =&gt; array(
+					&#039;type&#039;       =&gt; &#039;object&#039;,
+					&#039;properties&#039; =&gt; array(
+						&#039;id&#039;           =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Item ID.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;integer&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+							&#039;readonly&#039;    =&gt; true,
+						),
+						&#039;name&#039;         =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Product name.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;mixed&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+							&#039;readonly&#039;    =&gt; true,
+						),
+						&#039;sku&#039;          =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Product SKU.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;string&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+							&#039;readonly&#039;    =&gt; true,
+						),
+						&#039;product_id&#039;   =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Product ID.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;mixed&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						),
+						&#039;variation_id&#039; =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Variation ID, if applicable.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;integer&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						),
+						&#039;quantity&#039;     =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Quantity ordered.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;integer&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						),
+						&#039;tax_class&#039;    =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Tax class of product.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;string&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+							&#039;readonly&#039;    =&gt; true,
+						),
+						&#039;price&#039;        =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Product price.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;string&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+							&#039;readonly&#039;    =&gt; true,
+						),
+						&#039;subtotal&#039;     =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Line subtotal (before discounts).&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;string&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						),
+						&#039;subtotal_tax&#039; =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Line subtotal tax (before discounts).&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;string&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						),
+						&#039;total&#039;        =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Line total (after discounts).&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;string&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						),
+						&#039;total_tax&#039;    =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Line total tax (after discounts).&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;string&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						),
+						&#039;taxes&#039;        =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Line taxes.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;array&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+							&#039;readonly&#039;    =&gt; true,
+							&#039;items&#039;       =&gt; array(
+								&#039;type&#039;       =&gt; &#039;object&#039;,
+								&#039;properties&#039; =&gt; array(
+									&#039;id&#039;       =&gt; array(
+										&#039;description&#039; =&gt; __( &#039;Tax rate ID.&#039;, &#039;woocommerce-subscriptions&#039; ),
+										&#039;type&#039;        =&gt; &#039;integer&#039;,
+										&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+										&#039;readonly&#039;    =&gt; true,
+									),
+									&#039;total&#039;    =&gt; array(
+										&#039;description&#039; =&gt; __( &#039;Tax total.&#039;, &#039;woocommerce-subscriptions&#039; ),
+										&#039;type&#039;        =&gt; &#039;string&#039;,
+										&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+										&#039;readonly&#039;    =&gt; true,
+									),
+									&#039;subtotal&#039; =&gt; array(
+										&#039;description&#039; =&gt; __( &#039;Tax subtotal.&#039;, &#039;woocommerce-subscriptions&#039; ),
+										&#039;type&#039;        =&gt; &#039;string&#039;,
+										&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+										&#039;readonly&#039;    =&gt; true,
+									),
+								),
+							),
+						),
+						&#039;meta&#039;         =&gt; array(
+							&#039;description&#039; =&gt; __( &#039;Removed line item meta data.&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;type&#039;        =&gt; &#039;array&#039;,
+							&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+							&#039;readonly&#039;    =&gt; true,
+							&#039;items&#039;       =&gt; array(
+								&#039;type&#039;       =&gt; &#039;object&#039;,
+								&#039;properties&#039; =&gt; array(
+									&#039;key&#039;   =&gt; array(
+										&#039;description&#039; =&gt; __( &#039;Meta key.&#039;, &#039;woocommerce-subscriptions&#039; ),
+										&#039;type&#039;        =&gt; &#039;string&#039;,
+										&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+										&#039;readonly&#039;    =&gt; true,
+									),
+									&#039;label&#039; =&gt; array(
+										&#039;description&#039; =&gt; __( &#039;Meta label.&#039;, &#039;woocommerce-subscriptions&#039; ),
+										&#039;type&#039;        =&gt; &#039;string&#039;,
+										&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+										&#039;readonly&#039;    =&gt; true,
+									),
+									&#039;value&#039; =&gt; array(
+										&#039;description&#039; =&gt; __( &#039;Meta value.&#039;, &#039;woocommerce-subscriptions&#039; ),
+										&#039;type&#039;        =&gt; &#039;mixed&#039;,
+										&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+										&#039;readonly&#039;    =&gt; true,
+									),
+								),
+							),
+						),
+					),
+				),
+			),
+		);
+
+		$schema[&#039;properties&#039;] += $subscriptions_schema;
+		return $schema;
+	}
+
+	/**
+	 * Deprecated functions
+	 */
+
+	/**
+	 * Prepare subscription data for create.
+	 *
+	 * Now that we override WC_REST_Orders_V1_Controller::prepare_item_for_database() function,
+	 * we no longer need to prepare these args
+	 *
+	 * @since 2.1
+	 * @param stdClass $data
+	 * @param WP_REST_Request $request Request object.
+	 * @return stdClass
+	 * @deprecated 2.2
+	 */
+	public function prepare_subscription_args( $data, $request ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.2&#039; );
+
+		$data-&gt;billing_interval = $request[&#039;billing_interval&#039;];
+		$data-&gt;billing_period   = $request[&#039;billing_period&#039;];
+
+		foreach ( array( &#039;start&#039;, &#039;trial_end&#039;, &#039;end&#039;, &#039;next_payment&#039; ) as $date_type ) {
+			if ( ! empty( $request[ $date_type . &#039;_date&#039; ] ) ) {
+				$date_type_key = ( &#039;start&#039; === $date_type ) ? &#039;date_created&#039; : $date_type . &#039;_date&#039;;
+				$data-&gt;{$date_type_key} = $request[ $date_type . &#039;_date&#039; ];
+			}
+		}
+
+		$data-&gt;payment_details = ! empty( $request[&#039;payment_details&#039;] ) ? $request[&#039;payment_details&#039;] : &#039;&#039;;
+		$data-&gt;payment_method  = ! empty( $request[&#039;payment_method&#039;] ) ? $request[&#039;payment_method&#039;] : &#039;&#039;;
+
+		return $data;
+	}
+
+	/**
+	 * Update or set the subscription schedule with the request data.
+	 *
+	 *
+	 * @since 2.1
+	 * @param WC_Subscription $subscription
+	 * @param array $data
+	 * @deprecated 2.2
+	 */
+	public function update_schedule( $subscription, $data ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.2&#039;, &#039;WC_REST_Subscriptions_Controller::prepare_item_for_database() now prepares the billing interval/period and dates&#039; );
+
+		if ( isset( $data[&#039;billing_interval&#039;] ) ) {
+			$subscription-&gt;set_billing_interval( absint( $data[&#039;billing_interval&#039;] ) );
+		}
+
+		if ( ! empty( $data[&#039;billing_period&#039;] ) ) {
+			$subscription-&gt;set_billing_period( $data[&#039;billing_period&#039;] );
+		}
+
+		try {
+			$dates_to_update = array();
+
+			foreach ( array( &#039;start&#039;, &#039;trial_end&#039;, &#039;end&#039;, &#039;next_payment&#039; ) as $date_type ) {
+				if ( isset( $data[ $date_type . &#039;_date&#039; ] ) ) {
+					$date_type_key = ( &#039;start&#039; === $date_type ) ? &#039;date_created&#039; : $date_type;
+					$dates_to_update[ $date_type_key ] = $data[ $date_type . &#039;_date&#039; ];
+				}
+			}
+
+			if ( ! empty( $dates_to_update ) ) {
+				$subscription-&gt;update_dates( $dates_to_update );
+			}
+		} catch ( Exception $e ) {
+			// translators: placeholder is an error message.
+			throw new WC_REST_Exception( &#039;woocommerce_rest_cannot_update_subscription_dates&#039;, sprintf( __( &#039;Updating subscription dates errored with message: %s&#039;, &#039;woocommerce-subscriptions&#039; ), $e-&gt;getMessage() ), 400 );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

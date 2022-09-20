@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-report-subscription-by-customer.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Admin Report - Subscriptions by customer
+ *
+ * Creates the subscription admin reports area.
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Admin_Reports
+ * @category   Class
+ * @author     Prospress
+ * @since      2.1
+ */
+class WCS_Report_Subscription_By_Customer extends WP_List_Table {
+
+	private $totals;
+
+	/**
+	 * Constructor.
+	 */
+	public function __construct() {
+		parent::__construct( array(
+			&#039;singular&#039; =&gt; __( &#039;Customer&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;plural&#039;   =&gt; __( &#039;Customers&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;ajax&#039;     =&gt; false,
+		) );
+	}
+
+	/**
+	 * No subscription products found text.
+	 */
+	public function no_items() {
+		esc_html_e( &#039;No customers found.&#039;, &#039;woocommerce-subscriptions&#039; );
+	}
+
+	/**
+	 * Output the report.
+	 */
+	public function output_report() {
+
+		$this-&gt;prepare_items();
+		echo &#039;&lt;div id=&quot;poststuff&quot; class=&quot;woocommerce-reports-wide&quot;&gt;&#039;;
+		echo &#039;	&lt;div id=&quot;postbox-container-1&quot; class=&quot;postbox-container&quot; style=&quot;width: 280px;&quot;&gt;&lt;div class=&quot;postbox&quot; style=&quot;padding: 10px;&quot;&gt;&#039;;
+		echo &#039;	&lt;h3&gt;&#039; . esc_html__( &#039;Customer Totals&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/h3&gt;&#039;;
+		echo &#039;	&lt;p&gt;&lt;strong&gt;&#039; . esc_html__( &#039;Total Subscribers&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/strong&gt;: &#039; . esc_html( $this-&gt;totals-&gt;total_customers ) . wcs_help_tip( __( &#039;The number of unique customers with a subscription of any status other than pending or trashed.&#039;, &#039;woocommerce-subscriptions&#039; ) ) . &#039;&lt;br /&gt;&#039;;
+		echo &#039;	&lt;strong&gt;&#039; . esc_html__( &#039;Active Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/strong&gt;: &#039; . esc_html( $this-&gt;totals-&gt;active_subscriptions ) . wcs_help_tip( __( &#039;The total number of subscriptions with a status of active or pending cancellation.&#039;, &#039;woocommerce-subscriptions&#039; ) ) . &#039;&lt;br /&gt;&#039;;
+		echo &#039;	&lt;strong&gt;&#039; . esc_html__( &#039;Total Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/strong&gt;: &#039; . esc_html( $this-&gt;totals-&gt;total_subscriptions ) . wcs_help_tip( __( &#039;The total number of subscriptions with a status other than pending or trashed.&#039;, &#039;woocommerce-subscriptions&#039; ) ) . &#039;&lt;br /&gt;&#039;;
+		echo &#039;	&lt;strong&gt;&#039; . esc_html__( &#039;Total Subscription Orders&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/strong&gt;: &#039; . esc_html( $this-&gt;totals-&gt;initial_order_count + $this-&gt;totals-&gt;renewal_switch_count ) . wcs_help_tip( __( &#039;The total number of sign-up, switch and renewal orders placed with your store with a paid status (i.e. processing or complete).&#039;, &#039;woocommerce-subscriptions&#039; ) ) . &#039;&lt;br /&gt;&#039;;
+		echo &#039;	&lt;strong&gt;&#039; . esc_html__( &#039;Average Lifetime Value&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/strong&gt;: &#039;;
+		echo wp_kses_post( wc_price( $this-&gt;totals-&gt;total_customers &gt; 0 ? ( ( $this-&gt;totals-&gt;initial_order_total + $this-&gt;totals-&gt;renewal_switch_total ) / $this-&gt;totals-&gt;total_customers ) : 0 ) );
+		echo wcs_help_tip( __( &#039;The average value of all customers\&#039; sign-up, switch and renewal orders.&#039;, &#039;woocommerce-subscriptions&#039; ) ) . &#039;&lt;/p&gt;&#039;;
+		echo &#039;&lt;/div&gt;&lt;/div&gt;&#039;;
+		$this-&gt;display();
+		echo &#039;&lt;/div&gt;&#039;;
+
+	}
+
+	/**
+	 * Get column value.
+	 *
+	 * @param WP_User $user
+	 * @param string $column_name
+	 * @return string
+	 */
+	public function column_default( $user, $column_name ) {
+		global $wpdb;
+
+		switch ( $column_name ) {
+
+			case &#039;customer_name&#039;:
+				$user_info = get_userdata( $user-&gt;customer_id );
+				return &#039;&lt;a href=&quot;&#039; . get_edit_user_link( $user-&gt;customer_id ) . &#039;&quot;&gt;&#039; . $user_info-&gt;user_email . &#039;&lt;/a&gt;&#039;;
+
+			case &#039;active_subscription_count&#039;:
+				return $user-&gt;active_subscriptions;
+
+			case &#039;total_subscription_count&#039;:
+				return sprintf( &#039;&lt;a href=&quot;%s%d&quot;&gt;%d&lt;/a&gt;&#039;, admin_url( &#039;edit.php?post_type=shop_subscription&amp;_customer_user=&#039; ), $user-&gt;customer_id, $user-&gt;total_subscriptions );
+
+			case &#039;total_subscription_order_count&#039;:
+				return sprintf( &#039;&lt;a href=&quot;%s%d&quot;&gt;%d&lt;/a&gt;&#039;, admin_url( &#039;edit.php?post_type=shop_order&amp;_paid_subscription_orders_for_customer_user=&#039; ), $user-&gt;customer_id, $user-&gt;initial_order_count + $user-&gt;renewal_switch_count );
+
+			case &#039;customer_lifetime_value&#039;:
+				return wc_price( $user-&gt;initial_order_total + $user-&gt;renewal_switch_total );
+
+		}
+
+		return &#039;&#039;;
+	}
+
+	/**
+	 * Get columns.
+	 *
+	 * @return array
+	 */
+	public function get_columns() {
+		$columns = array(
+			&#039;customer_name&#039;                  =&gt; __( &#039;Customer&#039;, &#039;woocommerce-subscriptions&#039; ),
+			// translators: %s: help tip.
+			&#039;active_subscription_count&#039;      =&gt; sprintf( __( &#039;Active Subscriptions %s&#039;, &#039;woocommerce-subscriptions&#039; ), wcs_help_tip( __( &#039;The number of subscriptions this customer has with a status of active or pending cancellation.&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+			// translators: %s: help tip.
+			&#039;total_subscription_count&#039;       =&gt; sprintf( __( &#039;Total Subscriptions %s&#039;, &#039;woocommerce-subscriptions&#039; ), wcs_help_tip( __( &#039;The number of subscriptions this customer has with a status other than pending or trashed.&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+			// translators: %s: help tip.
+			&#039;total_subscription_order_count&#039; =&gt; sprintf( __( &#039;Total Subscription Orders %s&#039;, &#039;woocommerce-subscriptions&#039; ), wcs_help_tip( __( &#039;The number of sign-up, switch and renewal orders this customer has placed with your store with a paid status (i.e. processing or complete).&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+			// translators: %s: help tip.
+			&#039;customer_lifetime_value&#039;        =&gt; sprintf( __( &#039;Lifetime Value from Subscriptions %s&#039;, &#039;woocommerce-subscriptions&#039; ), wcs_help_tip( __( &#039;The total value of this customer\&#039;s sign-up, switch and renewal orders.&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+		);
+
+		return $columns;
+	}
+
+	/**
+	 * Prepare subscription list items.
+	 */
+	public function prepare_items() {
+		global $wpdb;
+
+		$this-&gt;_column_headers = array( $this-&gt;get_columns(), array(), $this-&gt;get_sortable_columns() );
+		$current_page          = absint( $this-&gt;get_pagenum() );
+		$per_page              = absint( apply_filters( &#039;wcs_reports_customers_per_page&#039;, 20 ) );
+		$offset                = absint( ( $current_page - 1 ) * $per_page );
+
+		$this-&gt;totals = self::get_data();
+
+		$customer_query = apply_filters( &#039;wcs_reports_current_customer_query&#039;,
+			&quot;SELECT customer_ids.meta_value as customer_id,
+					COUNT(subscription_posts.ID) as total_subscriptions,
+					COALESCE( SUM(parent_total.meta_value), 0) as initial_order_total,
+					COUNT(DISTINCT parent_order.ID) as initial_order_count,
+					SUM(CASE
+							WHEN subscription_posts.post_status
+								IN  ( &#039;wc-&quot; . implode( &quot;&#039;,&#039;wc-&quot;, apply_filters( &#039;wcs_reports_active_statuses&#039;, array( &#039;active&#039;, &#039;pending-cancel&#039; ) ) ) . &quot;&#039; ) THEN 1
+							ELSE 0
+							END) AS active_subscriptions
+				FROM {$wpdb-&gt;posts} subscription_posts
+				INNER JOIN {$wpdb-&gt;postmeta} customer_ids
+					ON customer_ids.post_id = subscription_posts.ID
+					AND customer_ids.meta_key = &#039;_customer_user&#039;
+				LEFT JOIN {$wpdb-&gt;posts} parent_order
+					ON parent_order.ID = subscription_posts.post_parent
+					AND parent_order.post_status IN ( &#039;wc-&quot; . implode( &quot;&#039;,&#039;wc-&quot;, apply_filters( &#039;woocommerce_reports_paid_order_statuses&#039;, array( &#039;completed&#039;, &#039;processing&#039; ) ) ) . &quot;&#039; )
+				LEFT JOIN {$wpdb-&gt;postmeta} parent_total
+					ON parent_total.post_id = parent_order.ID
+					AND parent_total.meta_key = &#039;_order_total&#039;
+				WHERE subscription_posts.post_type = &#039;shop_subscription&#039;
+					AND subscription_posts.post_status NOT IN (&#039;wc-pending&#039;, &#039;trash&#039;)
+				GROUP BY customer_ids.meta_value
+				ORDER BY customer_id DESC
+				LIMIT {$offset}, {$per_page}&quot; );
+
+		$this-&gt;items = $wpdb-&gt;get_results( $customer_query );
+
+		// Now get each customer&#039;s renewal and switch total
+		$customer_renewal_switch_total_query = apply_filters( &#039;wcs_reports_current_customer_renewal_switch_total_query&#039;,
+			&quot;SELECT
+				customer_ids.meta_value as customer_id,
+				COALESCE( SUM(renewal_switch_totals.meta_value), 0) as renewal_switch_total,
+				COUNT(DISTINCT renewal_order_posts.ID) as renewal_switch_count
+				FROM {$wpdb-&gt;postmeta} renewal_order_ids
+				INNER JOIN {$wpdb-&gt;posts} subscription_posts
+					ON renewal_order_ids.meta_value = subscription_posts.ID
+					AND subscription_posts.post_type = &#039;shop_subscription&#039;
+					AND subscription_posts.post_status NOT IN (&#039;wc-pending&#039;, &#039;trash&#039;)
+				INNER JOIN {$wpdb-&gt;postmeta} customer_ids
+					ON renewal_order_ids.meta_value = customer_ids.post_id
+					AND customer_ids.meta_key = &#039;_customer_user&#039;
+					AND customer_ids.meta_value IN (&#039;&quot; . implode( &quot;&#039;,&#039;&quot;, wp_list_pluck( $this-&gt;items, &#039;customer_id&#039; ) ) . &quot;&#039; )
+				INNER JOIN {$wpdb-&gt;posts} renewal_order_posts
+					ON renewal_order_ids.post_id = renewal_order_posts.ID
+					AND renewal_order_posts.post_status IN ( &#039;wc-&quot; . implode( &quot;&#039;,&#039;wc-&quot;, apply_filters( &#039;woocommerce_reports_paid_order_statuses&#039;, array( &#039;completed&#039;, &#039;processing&#039; ) ) ) . &quot;&#039; )
+				LEFT JOIN {$wpdb-&gt;postmeta} renewal_switch_totals
+					ON renewal_switch_totals.post_id = renewal_order_ids.post_id
+					AND renewal_switch_totals.meta_key = &#039;_order_total&#039;
+			WHERE renewal_order_ids.meta_key = &#039;_subscription_renewal&#039;
+				OR renewal_order_ids.meta_key = &#039;_subscription_switch&#039;
+			GROUP BY customer_id
+			ORDER BY customer_id&quot;
+		);
+
+		$customer_renewal_switch_totals = $wpdb-&gt;get_results( $customer_renewal_switch_total_query, OBJECT_K );
+
+		foreach ( $this-&gt;items as $index =&gt; $item ) {
+			if ( isset( $customer_renewal_switch_totals[ $item-&gt;customer_id ] ) ) {
+				$this-&gt;items[ $index ]-&gt;renewal_switch_total = $customer_renewal_switch_totals[ $item-&gt;customer_id ]-&gt;renewal_switch_total;
+				$this-&gt;items[ $index ]-&gt;renewal_switch_count = $customer_renewal_switch_totals[ $item-&gt;customer_id ]-&gt;renewal_switch_count;
+			} else {
+				$this-&gt;items[ $index ]-&gt;renewal_switch_total = $this-&gt;items[ $index ]-&gt;renewal_switch_count = 0;
+			}
+		}
+
+		/**
+		 * Pagination.
+		 */
+		$this-&gt;set_pagination_args( array(
+			&#039;total_items&#039; =&gt; $this-&gt;totals-&gt;total_customers,
+			&#039;per_page&#039;    =&gt; $per_page,
+			&#039;total_pages&#039; =&gt; ceil( $this-&gt;totals-&gt;total_customers / $per_page ),
+		) );
+
+	}
+
+	/**
+	* Gather totals for customers
+	*/
+	public static function get_data( $args = array() ) {
+		global $wpdb;
+
+		$default_args = array(
+			&#039;no_cache&#039;     =&gt; false,
+			&#039;order_status&#039; =&gt; apply_filters( &#039;woocommerce_reports_paid_order_statuses&#039;, array( &#039;completed&#039;, &#039;processing&#039; ) ),
+		);
+
+		$args = apply_filters( &#039;wcs_reports_customer_total_args&#039;, $args );
+		$args = wp_parse_args( $args, $default_args );
+
+		$total_query = apply_filters( &#039;wcs_reports_customer_total_query&#039;,
+			&quot;SELECT COUNT( DISTINCT customer_ids.meta_value) as total_customers,
+					COUNT(subscription_posts.ID) as total_subscriptions,
+					COALESCE( SUM(parent_total.meta_value), 0) as initial_order_total,
+					COUNT(DISTINCT parent_order.ID) as initial_order_count,
+					COALESCE(SUM(CASE
+							WHEN subscription_posts.post_status
+								IN  ( &#039;wc-&quot; . implode( &quot;&#039;,&#039;wc-&quot;, apply_filters( &#039;wcs_reports_active_statuses&#039;, array( &#039;active&#039;, &#039;pending-cancel&#039; ) ) ) . &quot;&#039; ) THEN 1
+							ELSE 0
+							END), 0) AS active_subscriptions
+				FROM {$wpdb-&gt;posts} subscription_posts
+				INNER JOIN {$wpdb-&gt;postmeta} customer_ids
+					ON customer_ids.post_id = subscription_posts.ID
+					AND customer_ids.meta_key = &#039;_customer_user&#039;
+				LEFT JOIN {$wpdb-&gt;posts} parent_order
+					ON parent_order.ID = subscription_posts.post_parent
+					AND parent_order.post_status IN ( &#039;wc-&quot; . implode( &quot;&#039;,&#039;wc-&quot;, $args[&#039;order_status&#039;] ) . &quot;&#039; )
+				LEFT JOIN {$wpdb-&gt;postmeta} parent_total
+					ON parent_total.post_id = parent_order.ID
+					AND parent_total.meta_key = &#039;_order_total&#039;
+				WHERE subscription_posts.post_type = &#039;shop_subscription&#039;
+				AND subscription_posts.post_status NOT IN (&#039;wc-pending&#039;, &#039;trash&#039;)
+		&quot;);
+
+		$cached_results = get_transient( strtolower( __CLASS__ ) );
+		$query_hash     = md5( $total_query );
+
+		if ( $args[&#039;no_cache&#039;] || false === $cached_results || ! isset( $cached_results[ $query_hash ] ) ) {
+			// Enable big selects for reports
+			$wpdb-&gt;query( &#039;SET SESSION SQL_BIG_SELECTS=1&#039; );
+			$cached_results[ $query_hash ] = apply_filters( &#039;wcs_reports_customer_total_data&#039;, $wpdb-&gt;get_row( $total_query ) );
+			set_transient( strtolower( __CLASS__ ), $cached_results, WEEK_IN_SECONDS );
+		}
+
+		$customer_totals = $cached_results[ $query_hash ];
+
+		$renewal_switch_total_query = apply_filters( &#039;wcs_reports_customer_total_renewal_switch_query&#039;,
+			&quot;SELECT COALESCE( SUM(renewal_switch_totals.meta_value), 0) as renewal_switch_total,
+				COUNT(DISTINCT renewal_order_posts.ID) as renewal_switch_count
+				FROM {$wpdb-&gt;postmeta} renewal_order_ids
+				INNER JOIN {$wpdb-&gt;posts} subscription_posts
+					ON renewal_order_ids.meta_value = subscription_posts.ID
+					AND subscription_posts.post_type = &#039;shop_subscription&#039;
+					AND subscription_posts.post_status NOT IN (&#039;wc-pending&#039;, &#039;trash&#039;)
+				INNER JOIN {$wpdb-&gt;posts} renewal_order_posts
+					ON renewal_order_ids.post_id = renewal_order_posts.ID
+					AND renewal_order_posts.post_status IN ( &#039;wc-&quot; . implode( &quot;&#039;,&#039;wc-&quot;, $args[&#039;order_status&#039;] ) . &quot;&#039; )
+				LEFT JOIN {$wpdb-&gt;postmeta} renewal_switch_totals
+					ON renewal_switch_totals.post_id = renewal_order_ids.post_id
+					AND renewal_switch_totals.meta_key = &#039;_order_total&#039;
+			WHERE renewal_order_ids.meta_key = &#039;_subscription_renewal&#039;
+			OR renewal_order_ids.meta_key = &#039;_subscription_switch&#039;&quot;
+		);
+
+		$query_hash = md5( $renewal_switch_total_query );
+
+		if ( $args[&#039;no_cache&#039;] || false === $cached_results || ! isset( $cached_results[ $query_hash ] ) ) {
+			// Enable big selects for reports
+			$wpdb-&gt;query( &#039;SET SESSION SQL_BIG_SELECTS=1&#039; );
+			$cached_results[ $query_hash ] = apply_filters( &#039;wcs_reports_customer_total_renewal_switch_data&#039;, $wpdb-&gt;get_row( $renewal_switch_total_query ) );
+			set_transient( strtolower( __CLASS__ ), $cached_results, WEEK_IN_SECONDS );
+		}
+
+		$customer_totals-&gt;renewal_switch_total = $cached_results[ $query_hash ]-&gt;renewal_switch_total;
+		$customer_totals-&gt;renewal_switch_count = $cached_results[ $query_hash ]-&gt;renewal_switch_count;
+
+		return $customer_totals;
+	}
+
+	/**
+	 * Clears the cached report data.
+	 *
+	 * @since 3.0.10
+	 */
+	public static function clear_cache() {
+		delete_transient( strtolower( __CLASS__ ) );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-webhooks.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Webhook class
+ *
+ * This class introduces webhooks to, storing and retrieving webhook data from the associated
+ * `shop_webhook` custom post type, as well as delivery logs from the `webhook_delivery`
+ * comment type.
+ *
+ * Subscription Webhooks are enqueued to their associated actions, delivered, and logged.
+ *
+ * @author      Prospress
+ * @category    Webhooks
+ * @since       2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_Webhooks {
+
+	/**
+	 * Setup webhook for subscriptions
+	 *
+	 * @since 2.0
+	 */
+	public static function init() {
+
+		add_filter( &#039;woocommerce_webhook_topic_hooks&#039;, __CLASS__ . &#039;::add_topics&#039;, 20, 2 );
+
+		add_filter( &#039;woocommerce_webhook_payload&#039;, __CLASS__ . &#039;::create_payload&#039;, 10, 4 );
+
+		add_filter( &#039;woocommerce_valid_webhook_resources&#039;, __CLASS__ . &#039;::add_resource&#039;, 10, 1 );
+
+		add_filter( &#039;woocommerce_valid_webhook_events&#039;, __CLASS__ . &#039;::add_event&#039;, 10, 1 );
+
+		add_action( &#039;woocommerce_checkout_subscription_created&#039;, __CLASS__ . &#039;::add_subscription_created_callback&#039;, 10, 1 );
+
+		add_action( &#039;woocommerce_subscription_date_updated&#039;, __CLASS__ . &#039;::add_subscription_updated_callback&#039;, 10, 1 );
+
+		add_action( &#039;woocommerce_subscriptions_switch_completed&#039;, __CLASS__ . &#039;::add_subscription_switched_callback&#039;, 10, 1 );
+
+		add_filter( &#039;woocommerce_webhook_topics&#039;, __CLASS__ . &#039;::add_topics_admin_menu&#039;, 10, 1 );
+
+		add_filter( &#039;wcs_new_order_created&#039;, __CLASS__ . &#039;::add_subscription_created_order_callback&#039;, 10, 1 );
+
+	}
+
+	/**
+	 * Trigger `order.create` every time an order is created by Subscriptions.
+	 *
+	 * @param WC_Order $order WC_Order Object
+	 */
+	public static function add_subscription_created_order_callback( $order ) {
+
+		do_action( &#039;wcs_webhook_order_created&#039;, wcs_get_objects_property( $order, &#039;id&#039; ) );
+
+		return $order;
+	}
+
+	/**
+	 * Add Subscription webhook topics
+	 *
+	 * @param array $topic_hooks
+	 * @since 2.0
+	 */
+	public static function add_topics( $topic_hooks, $webhook ) {
+
+		switch ( $webhook-&gt;get_resource() ) {
+			case &#039;order&#039;:
+				$topic_hooks[&#039;order.created&#039;][] = &#039;wcs_webhook_order_created&#039;;
+				break;
+
+			case &#039;subscription&#039;:
+				$topic_hooks = apply_filters( &#039;woocommerce_subscriptions_webhook_topics&#039;, array(
+					&#039;subscription.created&#039;  =&gt; array(
+						&#039;wcs_api_subscription_created&#039;,
+						&#039;wcs_webhook_subscription_created&#039;,
+						&#039;woocommerce_process_shop_subscription_meta&#039;,
+					),
+					&#039;subscription.updated&#039;  =&gt; array(
+						&#039;wcs_api_subscription_updated&#039;,
+						&#039;woocommerce_subscription_status_changed&#039;,
+						&#039;wcs_webhook_subscription_updated&#039;,
+						&#039;woocommerce_process_shop_subscription_meta&#039;,
+					),
+					&#039;subscription.deleted&#039;  =&gt; array(
+						&#039;woocommerce_subscription_trashed&#039;,
+						&#039;woocommerce_subscription_deleted&#039;,
+						&#039;woocommerce_api_delete_subscription&#039;,
+					),
+					&#039;subscription.switched&#039; =&gt; array(
+						&#039;wcs_webhook_subscription_switched&#039;,
+					),
+				), $webhook );
+				break;
+		}
+
+		return $topic_hooks;
+	}
+
+	/**
+	 * Add Subscription topics to the Webhooks dropdown menu in when creating a new webhook.
+	 *
+	 * @since 2.0
+	 */
+	public static function add_topics_admin_menu( $topics ) {
+
+		$front_end_topics = array(
+			&#039;subscription.created&#039;  =&gt; __( &#039; Subscription created&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;subscription.updated&#039;  =&gt; __( &#039; Subscription updated&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;subscription.deleted&#039;  =&gt; __( &#039; Subscription deleted&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;subscription.switched&#039; =&gt; __( &#039; Subscription switched&#039;, &#039;woocommerce-subscriptions&#039; ),
+		);
+
+		return array_merge( $topics, $front_end_topics );
+	}
+
+	/**
+	 * Setup payload for subscription webhook delivery.
+	 *
+	 * @since 2.0
+	 */
+	public static function create_payload( $payload, $resource, $resource_id, $id ) {
+
+		if ( &#039;subscription&#039; == $resource &amp;&amp; empty( $payload ) &amp;&amp; wcs_is_subscription( $resource_id ) ) {
+			$webhook      = new WC_Webhook( $id );
+			$current_user = get_current_user_id();
+
+			wp_set_current_user( $webhook-&gt;get_user_id() );
+
+			switch ( $webhook-&gt;get_api_version() ) {
+				case &#039;legacy_v3&#039;:
+					WC()-&gt;api-&gt;WC_API_Subscriptions-&gt;register_routes( array() );
+					$payload = WC()-&gt;api-&gt;WC_API_Subscriptions-&gt;get_subscription( $resource_id );
+					break;
+				case &#039;wp_api_v1&#039;:
+				case &#039;wp_api_v2&#039;:
+					// There is no v2 subscritpion endpoint support so they fall back to v1.
+					$request    = new WP_REST_Request( &#039;GET&#039; );
+					$controller = new WC_REST_Subscriptions_v1_Controller();
+
+					$request-&gt;set_param( &#039;id&#039;, $resource_id );
+					$result  = $controller-&gt;get_item( $request );
+					$payload = isset( $result-&gt;data ) ? $result-&gt;data : array();
+
+					break;
+				case &#039;wp_api_v3&#039;:
+					$payload = wc()-&gt;api-&gt;get_endpoint_data( &quot;/wc/v3/subscriptions/{$resource_id}&quot; );
+					break;
+			}
+
+			wp_set_current_user( $current_user );
+		}
+
+		return $payload;
+	}
+
+	/**
+	 * Add webhook resource for subscription.
+	 *
+	 * @param array $resources
+	 * @since 2.0
+	 */
+	public static function add_resource( $resources ) {
+
+		$resources[] = &#039;subscription&#039;;
+
+		return $resources;
+	}
+
+	/**
+	 * Add webhook event for subscription switched.
+	 *
+	 * @param array $events
+	 * @since 2.1
+	 */
+	public static function add_event( $events ) {
+
+		$events[] = &#039;switched&#039;;
+
+		return $events;
+	}
+
+	/**
+	 * Call a &quot;subscription created&quot; action hook with the first parameter being a subscription id so that it can be used
+	 * for webhooks.
+	 *
+	 * @since 2.0
+	 */
+	public static function add_subscription_created_callback( $subscription ) {
+		do_action( &#039;wcs_webhook_subscription_created&#039;, $subscription-&gt;get_id() );
+	}
+
+	/**
+	 * Call a &quot;subscription updated&quot; action hook with a subscription id as the first parameter to be used for webhooks payloads.
+	 *
+	 * @since 2.0
+	 */
+	public static function add_subscription_updated_callback( $subscription ) {
+		do_action( &#039;wcs_webhook_subscription_updated&#039;, $subscription-&gt;get_id() );
+	}
+
+	/**
+	 * For each switched subscription in an order, call a &quot;subscription switched&quot; action hook with a subscription id as the first parameter to be used for webhooks payloads.
+	 *
+	 * @since 2.1
+	 */
+	public static function add_subscription_switched_callback( $order ) {
+		$switched_subscriptions = wcs_get_subscriptions_for_switch_order( $order );
+		foreach ( array_keys( $switched_subscriptions ) as $subscription_id ) {
+			do_action( &#039;wcs_webhook_subscription_switched&#039;, $subscription_id );
+		}
+	}
+
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

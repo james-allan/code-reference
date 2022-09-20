@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-report-retention-rate.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Admin Report - Retention Rate
+ *
+ * Find the number of periods between when each subscription is created and ends or ended
+ * then plot all subscriptions using this data to provide a curve of retention rates.
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Admin_Reports
+ * @category   Class
+ * @author     Prospress
+ * @since      2.1
+ */
+class WCS_Report_Retention_Rate extends WC_Admin_Report {
+
+	public $chart_colours = array();
+
+	private $report_data;
+
+	/**
+	 * Get report data
+	 *
+	 * @since 2.1
+	 * @return array
+	 */
+	public function get_report_data() {
+		if ( empty( $this-&gt;report_data ) ) {
+			$this-&gt;query_report_data();
+		}
+		return $this-&gt;report_data;
+	}
+
+	/**
+	 * Get the number of periods each subscription has between sign-up and end.
+	 *
+	 * This function uses a new &quot;living&quot; and &quot;age&quot; terminology to refer to the time between when a subscription
+	 * is created and when it ends (i.e. expires or is cancelled). The function can&#039;t use &quot;active&quot; because the
+	 * subscription may not have been active all of that time. Instead, it may have been on-hold for part of it.
+	 *
+	 * @since 2.1
+	 * @return null
+	 */
+	private function query_report_data() {
+		global $wpdb;
+
+		$this-&gt;report_data = new stdClass;
+
+		// First, let&#039;s find the age of the longest living subscription in days
+		$oldest_subscription_age_in_days = $wpdb-&gt;get_var( $wpdb-&gt;prepare(
+			&quot;SELECT MAX(DATEDIFF(CAST(postmeta.meta_value AS DATETIME),posts.post_date_gmt)) as age_in_days
+			 FROM {$wpdb-&gt;prefix}posts posts
+				LEFT JOIN {$wpdb-&gt;prefix}postmeta postmeta ON posts.ID = postmeta.post_id
+			 WHERE posts.post_type = &#039;shop_subscription&#039;
+				AND postmeta.meta_key = %s
+				AND postmeta.meta_value &lt;&gt; &#039;0&#039;
+			 ORDER BY age_in_days DESC
+			 LIMIT 1&quot;,
+			wcs_get_date_meta_key( &#039;end&#039; )
+		) );
+
+		// Now determine what interval to use based on that length
+		if ( $oldest_subscription_age_in_days &gt; 365 ) {
+			$this-&gt;report_data-&gt;interval_period = &#039;month&#039;;
+		} elseif ( $oldest_subscription_age_in_days &gt; 182 ) {
+			$this-&gt;report_data-&gt;interval_period = &#039;week&#039;;
+		} else {
+			$this-&gt;report_data-&gt;interval_period = &#039;day&#039;;
+		}
+
+		// Use the number of days in the chosen interval period to determine how many periods between each start/end date
+		$days_in_interval_period = wcs_get_days_in_cycle( $this-&gt;report_data-&gt;interval_period, 1 );
+
+		// Find the number of these periods in the longest living subscription
+		$oldest_subscription_age = floor( $oldest_subscription_age_in_days / $days_in_interval_period );
+
+		// Now get all subscriptions, not just those that have ended, and find out how long they have lived (or if they haven&#039;t ended yet, consider them as being alive for one period longer than the longest living subsription)
+		$base_query = $wpdb-&gt;prepare(
+			&quot;SELECT
+				IF(COALESCE(cancelled_date.meta_value,end_date.meta_value) &lt;&gt; &#039;0&#039;,CEIL(DATEDIFF(CAST(COALESCE(cancelled_date.meta_value,end_date.meta_value) AS DATETIME),posts.post_date_gmt)/%d),%d) as periods_active,
+				COUNT(posts.ID) as count
+			 FROM {$wpdb-&gt;prefix}posts posts
+				LEFT JOIN {$wpdb-&gt;prefix}postmeta cancelled_date
+					ON posts.ID = cancelled_date.post_id
+					AND cancelled_date.meta_key = %s
+					AND cancelled_date.meta_value &lt;&gt; &#039;0&#039;
+				LEFT JOIN {$wpdb-&gt;prefix}postmeta end_date
+					ON posts.ID = end_date.post_id
+					AND end_date.meta_key = %s
+			 WHERE posts.post_type = &#039;shop_subscription&#039;
+				AND posts.post_status NOT IN( &#039;wc-pending&#039;, &#039;trash&#039; )
+			 GROUP BY periods_active
+			 ORDER BY periods_active ASC&quot;,
+			$days_in_interval_period,
+			( $oldest_subscription_age + 1 ), // Consider living subscriptions as being alive for one period longer than the longest living subsription
+			wcs_get_date_meta_key( &#039;cancelled&#039; ), // If a subscription has a cancelled date, use that to determine a more accurate lifetime
+			wcs_get_date_meta_key( &#039;end&#039; ) // Otherwise, we want to use the end date for subscritions that have expired
+		);
+
+		$subscription_ages = $wpdb-&gt;get_results( $base_query, OBJECT_K );
+
+		$this-&gt;report_data-&gt;total_subscriptions  = $this-&gt;report_data-&gt;unended_subscriptions = absint( array_sum( wp_list_pluck( $subscription_ages, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;living_subscriptions = array();
+
+		// At day zero, no subscriptions have ended
+		$this-&gt;report_data-&gt;living_subscriptions[0] = $this-&gt;report_data-&gt;total_subscriptions;
+
+		// Fill out the report data to provide a smooth curve
+		for ( $i = 0; $i &lt;= $oldest_subscription_age; $i++ ) {
+
+			// We want to push the the array keys ahead by one to make sure out the 0 index represents the total subscriptions
+			$periods_after_sign_up = $i + 1;
+
+			// Only reduce the number of living subscriptions when we have a new number for a given period as that indicates a new set of subscriptions have ended
+			if ( isset( $subscription_ages[ $i ] ) ) {
+				$this-&gt;report_data-&gt;living_subscriptions[ $periods_after_sign_up ] = $this-&gt;report_data-&gt;living_subscriptions[ $i ] - $subscription_ages[ $i ]-&gt;count;
+				$this-&gt;report_data-&gt;unended_subscriptions                         -= $subscription_ages[ $i ]-&gt;count;
+			} else {
+				$this-&gt;report_data-&gt;living_subscriptions[ $periods_after_sign_up ] = $this-&gt;report_data-&gt;living_subscriptions[ $i ];
+			}
+		}
+	}
+
+	/**
+	 * Output the report
+	 *
+	 * Use a custom report as we don&#039;t need the date filters provided by the WooCommerce html-report-by-date.php template.
+	 *
+	 * @since 2.1
+	 * @return null
+	 */
+	public function output_report() {
+		include( WC_Subscriptions_Plugin::instance()-&gt;get_plugin_directory( &#039;includes/admin/views/html-report-by-period.php&#039; ) );
+	}
+
+	/**
+	 * Output the HTML and JavaScript to plot the chart
+	 *
+	 * @since 2.1
+	 * @return null
+	 */
+	public function get_main_chart() {
+
+		$this-&gt;get_report_data();
+
+		$data_to_plot = array();
+
+		foreach ( $this-&gt;report_data-&gt;living_subscriptions as $periods_since_sign_up =&gt; $living_subscription_count ) {
+			$data_to_plot[] = array(
+				absint( $periods_since_sign_up ),
+				absint( $living_subscription_count ),
+			);
+		}
+
+		switch ( $this-&gt;report_data-&gt;interval_period ) {
+			case &#039;day&#039;:
+				$x_axes_label = _x( &#039;Number of days after sign-up&#039;, &#039;X axis label on retention rate graph&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+			case &#039;week&#039;:
+				$x_axes_label = _x( &#039;Number of weeks after sign-up&#039;, &#039;X axis label on retention rate graph&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+			case &#039;month&#039;:
+				$x_axes_label = _x( &#039;Number of months after sign-up&#039;, &#039;X axis label on retention rate graph&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+		}
+
+		?&gt;
+		&lt;div class=&quot;chart-container&quot; id=&quot;woocommerce_subscriptions_retention_chart&quot;&gt;
+			&lt;div class=&quot;chart-placeholder main&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;script type=&quot;text/javascript&quot;&gt;
+
+			var main_chart;
+
+			jQuery(function(){
+				var subscription_lifespans = JSON.parse( &#039;&lt;?php echo json_encode( $data_to_plot ); ?&gt;&#039; ),
+					unended_subscriptions  = &lt;?php echo esc_js( $this-&gt;report_data-&gt;unended_subscriptions ); ?&gt;;
+
+				var drawGraph = function( highlight ) {
+
+					var series = [
+						{
+							data: subscription_lifespans,
+							color: &#039;#5da5da&#039;,
+							points: { show: true, radius: 4, lineWidth: 3, fillColor: &#039;#efefef&#039;, fill: true },
+							lines: { show: true, lineWidth: 4, fill: false },
+							shadowSize: 0
+						},
+					];
+
+					main_chart = jQuery.plot(
+						jQuery(&#039;.chart-placeholder.main&#039;),
+						series,
+						{
+							legend: {
+								show: false
+							},
+							axisLabels: {
+								show: true
+							},
+							grid: {
+								color: &#039;#aaa&#039;,
+								borderColor: &#039;transparent&#039;,
+								borderWidth: 0,
+								hoverable: true,
+								markings: [ {
+									xaxis: { from: 1, to: 1 },
+									yaxis: { from: 1, to: 1 },
+									color: &quot;#ccc&quot;
+								} ]
+							},
+							xaxes: [ {
+								color: &#039;#aaa&#039;,
+								position: &quot;bottom&quot;,
+								tickDecimals: 0,
+								axisLabel: &quot;&lt;?php echo esc_js( $x_axes_label ); ?&gt;&quot;,
+								axisLabelPadding: 18,
+								font: {
+									color: &quot;#aaa&quot;
+								}
+							} ],
+							yaxes: [ {
+								min: unended_subscriptions - 1, // exaggerate change by only plotting between total subscription count and unended count
+								minTickSize: 1,
+								tickDecimals: 0,
+								color: &#039;#d4d9dc&#039;,
+								axisLabel: &quot;&lt;?php echo esc_js( __( &#039;Unended Subscription Count&#039;, &#039;woocommerce-subscriptions&#039; ) ); ?&gt;&quot;,
+								axisLabelPadding: 18,
+								font: {
+									color: &quot;#aaa&quot;
+								}
+							} ],
+						}
+					);
+
+					jQuery(&#039;.chart-placeholder&#039;).trigger( &#039;resize&#039; );
+				}
+
+				drawGraph();
+			});
+		&lt;/script&gt;
+		&lt;?php
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

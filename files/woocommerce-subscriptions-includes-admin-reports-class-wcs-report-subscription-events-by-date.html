@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-report-subscription-events-by-date.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Admin Report - Subscription Events by Date
+ *
+ * Display important historical data for subscription revenue and events, like switches and cancellations.
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Admin_Reports
+ * @category   Class
+ * @author     Prospress
+ * @since      2.1
+ */
+class WCS_Report_Subscription_Events_By_Date extends WC_Admin_Report {
+
+	public $chart_colours = array();
+
+	private $report_data;
+
+	private $generating_report;
+
+	/**
+	 * Sets the query hash for saving the results to enable listing later.
+	 *
+	 * @since 2.6.0
+	 * @param array $query The report query clause array.
+	 * @return array $query
+	 */
+	public function set_query_hash( $query ) {
+
+		if ( in_array( $this-&gt;generating_report, array( &#039;new_subscriptions&#039;, &#039;renewals&#039;, &#039;resubscribes&#039;, &#039;switches&#039; ) ) ) {
+			$this-&gt;report_data-&gt;{$this-&gt;generating_report . &#039;_query_hash&#039;} = md5( &#039;get_results&#039; . implode( &#039; &#039;, $query ) );
+		}
+
+		return $query;
+	}
+
+	/**
+	 * Get report data
+	 * @return array
+	 */
+	public function get_report_data() {
+
+		if ( empty( $this-&gt;report_data ) ) {
+			$this-&gt;get_data();
+		}
+
+		return $this-&gt;report_data;
+	}
+
+	/**
+	 * Get all data needed for this report and store in the class
+	 */
+	public function get_data( $args = array() ) {
+		global $wpdb;
+
+		$update_cache = false;
+		$default_args = array(
+			&#039;no_cache&#039;     =&gt; false,
+			&#039;order_status&#039; =&gt; apply_filters( &#039;woocommerce_reports_order_statuses&#039;, array( &#039;completed&#039;, &#039;processing&#039;, &#039;on-hold&#039; ) ),
+		);
+
+		$args = apply_filters( &#039;wcs_reports_subscription_events_args&#039;, $args );
+		$args = wp_parse_args( $args, $default_args );
+
+		$query_end_date = date( &#039;Y-m-d&#039;, strtotime( &#039;+1 DAY&#039;, $this-&gt;end_date ) );
+		$offset         = get_option( &#039;gmt_offset&#039; );
+
+		// Convert from Decimal format(eg. 11.5) to a suitable format(eg. +11:30) for CONVERT_TZ() of SQL query.
+		$site_timezone = sprintf( &#039;%+02d:%02d&#039;, (int) $offset, ( $offset - floor( $offset ) ) * 60 );
+
+		$this-&gt;report_data = new stdClass;
+
+		// While generating report data via get_order_report_data(), hook in to set the query hash so we can cache the results.
+		add_filter( &#039;woocommerce_reports_get_order_report_query&#039;, array( $this, &#039;set_query_hash&#039; ) );
+
+		$this-&gt;generating_report                   = &#039;new_subscriptions&#039;;
+		$this-&gt;report_data-&gt;new_subscriptions_data = (array) $this-&gt;get_order_report_data(
+			array(
+				&#039;data&#039;         =&gt; array(
+					&#039;ID&#039;        =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;COUNT&#039;,
+						&#039;name&#039;     =&gt; &#039;count&#039;,
+						&#039;distinct&#039; =&gt; true,
+					),
+					&#039;id&#039;        =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;GROUP_CONCAT&#039;,
+						&#039;name&#039;     =&gt; &#039;subscription_ids&#039;,
+						&#039;distinct&#039; =&gt; true,
+					),
+					&#039;post_date&#039; =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;&#039;,
+						&#039;name&#039;     =&gt; &#039;post_date&#039;,
+					),
+				),
+				&#039;where&#039;        =&gt; array(
+					&#039;post_status&#039; =&gt; array(
+						&#039;key&#039;      =&gt; &#039;post_status&#039;,
+						&#039;operator&#039; =&gt; &#039;NOT IN&#039;,
+						&#039;value&#039;    =&gt; array( &#039;trash&#039;, &#039;auto-draft&#039; ),
+					),
+				),
+				&#039;group_by&#039;     =&gt; $this-&gt;group_by_query,
+				&#039;order_status&#039; =&gt; array(),
+				&#039;order_by&#039;     =&gt; &#039;post_date ASC&#039;,
+				&#039;query_type&#039;   =&gt; &#039;get_results&#039;,
+				&#039;filter_range&#039; =&gt; true,
+				&#039;order_types&#039;  =&gt; array( &#039;shop_subscription&#039; ),
+				&#039;nocache&#039;      =&gt; $args[&#039;no_cache&#039;],
+			)
+		);
+
+		$this-&gt;generating_report         = &#039;renewals&#039;;
+		$this-&gt;report_data-&gt;renewal_data = (array) $this-&gt;get_order_report_data(
+			array(
+				&#039;data&#039;         =&gt; array(
+					&#039;ID&#039;                    =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;COUNT&#039;,
+						&#039;name&#039;     =&gt; &#039;count&#039;,
+						&#039;distinct&#039; =&gt; true,
+					),
+					&#039;id&#039;                    =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;GROUP_CONCAT&#039;,
+						&#039;name&#039;     =&gt; &#039;order_ids&#039;,
+						&#039;distinct&#039; =&gt; true,
+					),
+					&#039;post_date&#039;             =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;&#039;,
+						&#039;name&#039;     =&gt; &#039;post_date&#039;,
+					),
+					&#039;_subscription_renewal&#039; =&gt; array(
+						&#039;type&#039;     =&gt; &#039;meta&#039;,
+						&#039;function&#039; =&gt; &#039;&#039;,
+						&#039;name&#039;     =&gt; &#039;renewal_orders&#039;,
+					),
+					&#039;_order_total&#039;          =&gt; array(
+						&#039;type&#039;      =&gt; &#039;meta&#039;,
+						&#039;function&#039;  =&gt; &#039;SUM&#039;,
+						&#039;name&#039;      =&gt; &#039;renewal_totals&#039;,
+						&#039;join_type&#039; =&gt; &#039;LEFT&#039;,   // To avoid issues if there is no renewal_total meta
+					),
+				),
+				&#039;where&#039;        =&gt; array(
+					&#039;post_status&#039; =&gt; array(
+						&#039;key&#039;      =&gt; &#039;post_status&#039;,
+						&#039;operator&#039; =&gt; &#039;NOT IN&#039;,
+						&#039;value&#039;    =&gt; array( &#039;trash&#039;, &#039;auto-draft&#039; ),
+					),
+				),
+				&#039;group_by&#039;     =&gt; $this-&gt;group_by_query,
+				&#039;order_status&#039; =&gt; $args[&#039;order_status&#039;],
+				&#039;order_by&#039;     =&gt; &#039;post_date ASC&#039;,
+				&#039;query_type&#039;   =&gt; &#039;get_results&#039;,
+				&#039;filter_range&#039; =&gt; true,
+				&#039;order_types&#039;  =&gt; wc_get_order_types( &#039;order-count&#039; ),
+				&#039;nocache&#039;      =&gt; $args[&#039;no_cache&#039;],
+			)
+		);
+
+		$this-&gt;generating_report             = &#039;resubscribes&#039;;
+		$this-&gt;report_data-&gt;resubscribe_data = (array) $this-&gt;get_order_report_data(
+			array(
+				&#039;data&#039;         =&gt; array(
+					&#039;ID&#039;                        =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;COUNT&#039;,
+						&#039;name&#039;     =&gt; &#039;count&#039;,
+						&#039;distinct&#039; =&gt; true,
+					),
+					&#039;id&#039;                        =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;GROUP_CONCAT&#039;,
+						&#039;name&#039;     =&gt; &#039;order_ids&#039;,
+						&#039;distinct&#039; =&gt; true,
+					),
+					&#039;post_date&#039;                 =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;&#039;,
+						&#039;name&#039;     =&gt; &#039;post_date&#039;,
+					),
+					&#039;_subscription_resubscribe&#039; =&gt; array(
+						&#039;type&#039;     =&gt; &#039;meta&#039;,
+						&#039;function&#039; =&gt; &#039;&#039;,
+						&#039;name&#039;     =&gt; &#039;resubscribe_orders&#039;,
+					),
+					&#039;_order_total&#039;              =&gt; array(
+						&#039;type&#039;      =&gt; &#039;meta&#039;,
+						&#039;function&#039;  =&gt; &#039;SUM&#039;,
+						&#039;name&#039;      =&gt; &#039;resubscribe_totals&#039;,
+						&#039;join_type&#039; =&gt; &#039;LEFT&#039;, // To avoid issues if there is no resubscribe_total meta
+					),
+				),
+				&#039;where&#039;        =&gt; array(
+					&#039;post_status&#039; =&gt; array(
+						&#039;key&#039;      =&gt; &#039;post_status&#039;,
+						&#039;operator&#039; =&gt; &#039;NOT IN&#039;,
+						&#039;value&#039;    =&gt; array( &#039;trash&#039;, &#039;auto-draft&#039; ),
+					),
+				),
+				&#039;group_by&#039;     =&gt; $this-&gt;group_by_query,
+				&#039;order_status&#039; =&gt; $args[&#039;order_status&#039;],
+				&#039;order_by&#039;     =&gt; &#039;post_date ASC&#039;,
+				&#039;query_type&#039;   =&gt; &#039;get_results&#039;,
+				&#039;filter_range&#039; =&gt; true,
+				&#039;order_types&#039;  =&gt; wc_get_order_types( &#039;order-count&#039; ),
+				&#039;nocache&#039;      =&gt; $args[&#039;no_cache&#039;],
+			)
+		);
+
+		$this-&gt;generating_report        = &#039;switches&#039;;
+		$this-&gt;report_data-&gt;switch_data = (array) $this-&gt;get_order_report_data(
+			array(
+				&#039;data&#039;         =&gt; array(
+					&#039;ID&#039;                   =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;COUNT&#039;,
+						&#039;name&#039;     =&gt; &#039;count&#039;,
+						&#039;distinct&#039; =&gt; true,
+					),
+					&#039;id&#039;                   =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;GROUP_CONCAT&#039;,
+						&#039;name&#039;     =&gt; &#039;order_ids&#039;,
+						&#039;distinct&#039; =&gt; true,
+					),
+					&#039;post_date&#039;            =&gt; array(
+						&#039;type&#039;     =&gt; &#039;post_data&#039;,
+						&#039;function&#039; =&gt; &#039;&#039;,
+						&#039;name&#039;     =&gt; &#039;post_date&#039;,
+					),
+					&#039;_subscription_switch&#039; =&gt; array(
+						&#039;type&#039;     =&gt; &#039;meta&#039;,
+						&#039;function&#039; =&gt; &#039;&#039;,
+						&#039;name&#039;     =&gt; &#039;switch_orders&#039;,
+					),
+					&#039;_order_total&#039;         =&gt; array(
+						&#039;type&#039;      =&gt; &#039;meta&#039;,
+						&#039;function&#039;  =&gt; &#039;SUM&#039;,
+						&#039;name&#039;      =&gt; &#039;switch_totals&#039;,
+						&#039;join_type&#039; =&gt; &#039;LEFT&#039;,   // To avoid issues if there is no switch_total meta
+					),
+				),
+				&#039;where&#039;        =&gt; array(
+					&#039;post_status&#039; =&gt; array(
+						&#039;key&#039;      =&gt; &#039;post_status&#039;,
+						&#039;operator&#039; =&gt; &#039;NOT IN&#039;,
+						&#039;value&#039;    =&gt; array( &#039;trash&#039;, &#039;auto-draft&#039; ),
+					),
+				),
+				&#039;group_by&#039;     =&gt; $this-&gt;group_by_query,
+				&#039;order_status&#039; =&gt; $args[&#039;order_status&#039;],
+				&#039;order_by&#039;     =&gt; &#039;post_date ASC&#039;,
+				&#039;query_type&#039;   =&gt; &#039;get_results&#039;,
+				&#039;filter_range&#039; =&gt; true,
+				&#039;order_types&#039;  =&gt; wc_get_order_types( &#039;order-count&#039; ),
+				&#039;nocache&#039;      =&gt; $args[&#039;no_cache&#039;],
+			)
+		);
+
+		// We&#039;ve finished generating report data via get_order_report_data() so unhook our query hash flagging function.
+		unset( $this-&gt;generating_report );
+		remove_filter( &#039;woocommerce_reports_get_order_report_query&#039;, array( $this, &#039;set_query_hash&#039; ) );
+
+		$cached_results = get_transient( strtolower( get_class( $this ) ) );
+
+		// Check if we need to update the cache with the query results from the figures generated by get_order_report_data().
+		foreach ( array( &#039;new_subscriptions&#039; =&gt; &#039;new_subscriptions&#039;, &#039;renewals&#039; =&gt; &#039;renewal&#039;, &#039;resubscribes&#039; =&gt; &#039;resubscribe&#039;, &#039;switches&#039; =&gt; &#039;switch&#039; ) as $report =&gt; $property_key ) { // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+			$query_hash = $this-&gt;report_data-&gt;{&quot;{$report}_query_hash&quot;};
+			if ( ! isset( $cached_results[ $query_hash ] ) ) {
+				$cached_results[ $query_hash ] = $this-&gt;report_data-&gt;{&quot;{$property_key}_data&quot;};
+				$update_cache = true;
+			}
+		}
+
+		/*
+		 * New subscription orders
+		 */
+		$query = $wpdb-&gt;prepare(
+			&quot;SELECT SUM(subscriptions.count) as count,
+				order_posts.post_date as post_date,
+				SUM(order_total_post_meta.meta_value) as signup_totals,
+				GROUP_CONCAT( DISTINCT subscriptions.ids ) as subscription_ids
+			FROM {$wpdb-&gt;posts} AS order_posts
+			INNER JOIN (
+				SELECT COUNT(DISTINCT(subscription_posts.ID)) as count,
+					subscription_posts.post_parent as order_id,
+					GROUP_CONCAT( subscription_posts.ID ) as ids
+					FROM {$wpdb-&gt;posts} as subscription_posts
+				WHERE subscription_posts.post_type = &#039;shop_subscription&#039;
+					AND subscription_posts.post_date &gt;= %s
+					AND subscription_posts.post_date &lt; %s
+					AND subscription_posts.post_status NOT IN ( &#039;trash&#039;, &#039;auto-draft&#039; )
+				GROUP BY order_id
+			) AS subscriptions ON subscriptions.order_id = order_posts.ID
+			LEFT JOIN {$wpdb-&gt;postmeta} AS order_total_post_meta
+				ON order_posts.ID = order_total_post_meta.post_id
+			WHERE  order_posts.post_type IN ( &#039;&quot; . implode( &quot;&#039;,&#039;&quot;, wc_get_order_types( &#039;order-count&#039; ) ) . &quot;&#039; )
+				AND order_posts.post_status IN ( &#039;wc-&quot; . implode( &quot;&#039;,&#039;wc-&quot;, $args[&#039;order_status&#039;] ) . &quot;&#039; )
+				AND order_posts.post_date &gt;= %s
+				AND order_posts.post_date &lt; %s
+				AND order_total_post_meta.meta_key = &#039;_order_total&#039;
+			GROUP BY YEAR(order_posts.post_date), MONTH(order_posts.post_date), DAY(order_posts.post_date)
+			ORDER BY post_date ASC&quot;,
+			date( &#039;Y-m-d&#039;, $this-&gt;start_date ),
+			$query_end_date,
+			date( &#039;Y-m-d&#039;, $this-&gt;start_date ),
+			$query_end_date
+		);
+
+		$query_hash = md5( $query );
+
+		if ( $args[&#039;no_cache&#039;] || false === $cached_results || ! isset( $cached_results[ $query_hash ] ) ) {
+			$wpdb-&gt;query( &#039;SET SESSION SQL_BIG_SELECTS=1&#039; );
+			$cached_results[ $query_hash ] = apply_filters( &#039;wcs_reports_subscription_events_sign_up_data&#039;, (array) $wpdb-&gt;get_results( $query ), $args );
+			$update_cache = true;
+		}
+
+		$this-&gt;report_data-&gt;signup_data = $cached_results[ $query_hash ];
+
+		$this-&gt;report_data-&gt;signup_orders_query_hash = $query_hash;
+
+		/*
+		 * Subscribers by date
+		 */
+		$query = $wpdb-&gt;prepare(
+			&quot;SELECT searchdate.Date as date, COUNT( DISTINCT wcsubs.ID) as count, GROUP_CONCAT( DISTINCT wcsubs.ID ) as subscription_ids
+				FROM (
+					SELECT DATE(last_thousand_days.Date) as Date
+					FROM (
+						SELECT DATE(%s) - INTERVAL(units.digit + (10 * tens.digit) + (100 * hundreds.digit)) DAY as Date
+						FROM (
+							SELECT 0 AS digit UNION ALL SELECT 1 UNION ALL SELECT 2
+							UNION ALL SELECT 3 UNION ALL SELECT 4
+							UNION ALL SELECT 5 UNION ALL SELECT 6
+							UNION ALL SELECT 7 UNION ALL SELECT 8
+							UNION ALL SELECT 9
+						) as units
+						CROSS JOIN (
+							SELECT 0 AS digit UNION ALL SELECT 1 UNION ALL SELECT 2
+							UNION ALL SELECT 3 UNION ALL SELECT 4
+							UNION ALL SELECT 5 UNION ALL SELECT 6
+							UNION ALL SELECT 7 UNION ALL SELECT 8
+							UNION ALL SELECT 9
+						) as tens
+						CROSS JOIN (
+							SELECT 0 AS digit UNION ALL SELECT 1 UNION ALL SELECT 2
+							UNION ALL SELECT 3 UNION ALL SELECT 4
+							UNION ALL SELECT 5 UNION ALL SELECT 6
+							UNION ALL SELECT 7 UNION ALL SELECT 8
+							UNION ALL SELECT 9
+						) AS hundreds
+					) last_thousand_days
+					WHERE last_thousand_days.Date &gt;= %s AND last_thousand_days.Date &lt;= %s
+				) searchdate,
+					{$wpdb-&gt;posts} AS wcsubs,
+					{$wpdb-&gt;postmeta} AS wcsmeta
+					WHERE wcsubs.ID = wcsmeta.post_id AND wcsmeta.meta_key = &#039;%s&#039;
+						AND DATE( wcsubs.post_date ) &lt;= searchdate.Date
+						AND wcsubs.post_type IN ( &#039;shop_subscription&#039; )
+						AND wcsubs.post_status NOT IN( &#039;auto-draft&#039; )
+						AND (
+							DATE( CONVERT_TZ( wcsmeta.meta_value , &#039;+00:00&#039;, %s ) ) &gt;= searchdate.Date
+							OR wcsmeta.meta_value = 0
+							OR wcsmeta.meta_value IS NULL
+						)
+					GROUP BY searchdate.Date
+					ORDER BY searchdate.Date ASC&quot;,
+			$query_end_date,
+			date( &#039;Y-m-d&#039;, $this-&gt;start_date ),
+			$query_end_date,
+			wcs_get_date_meta_key( &#039;end&#039; ),
+			$site_timezone
+		);
+
+		$query_hash = md5( $query );
+
+		if ( $args[&#039;no_cache&#039;] || false === $cached_results || ! isset( $cached_results[ $query_hash ] ) ) {
+			$wpdb-&gt;query( &#039;SET SESSION SQL_BIG_SELECTS=1&#039; );
+			$cached_results[ $query_hash ] = apply_filters( &#039;wcs_reports_subscription_events_subscriber_count_data&#039;, (array) $wpdb-&gt;get_results( $query ), $args );
+			$update_cache = true;
+		}
+
+		$this-&gt;report_data-&gt;subscriber_counts = $cached_results[ $query_hash ];
+		$this-&gt;report_data-&gt;current_subscriptions_query_hash = $query_hash;
+
+		/*
+		 * Subscription cancellations
+		 */
+		$query = $wpdb-&gt;prepare(
+			&quot;SELECT COUNT( DISTINCT wcsubs.ID ) as count, CONVERT_TZ( wcsmeta_cancel.meta_value, &#039;+00:00&#039;, &#039;{$site_timezone}&#039; ) as cancel_date, GROUP_CONCAT( DISTINCT wcsubs.ID ) as subscription_ids
+				FROM {$wpdb-&gt;posts} as wcsubs
+				JOIN {$wpdb-&gt;postmeta} AS wcsmeta_cancel
+					ON wcsubs.ID = wcsmeta_cancel.post_id
+					AND wcsmeta_cancel.meta_key = %s
+					AND wcsubs.post_status NOT IN ( &#039;trash&#039;, &#039;auto-draft&#039; )
+				GROUP BY YEAR( cancel_date ), MONTH( cancel_date ), DAY( cancel_date )
+				HAVING cancel_date BETWEEN %s AND %s
+				ORDER BY wcsmeta_cancel.meta_value ASC&quot;,
+			wcs_get_date_meta_key( &#039;cancelled&#039; ),
+			date( &#039;Y-m-d&#039;, $this-&gt;start_date ),
+			$query_end_date
+		);
+
+		$query_hash = md5( $query );
+
+		if ( $args[&#039;no_cache&#039;] || false === $cached_results || ! isset( $cached_results[ $query_hash ] ) ) {
+			$wpdb-&gt;query( &#039;SET SESSION SQL_BIG_SELECTS=1&#039; );
+			$cached_results[ $query_hash ] = apply_filters( &#039;wcs_reports_subscription_events_cancel_count_data&#039;, (array) $wpdb-&gt;get_results( $query ), $args );
+			$update_cache = true;
+		}
+
+		$this-&gt;report_data-&gt;cancel_counts = $cached_results[ $query_hash ];
+
+		$this-&gt;report_data-&gt;cancelled_subscriptions_query_hash = $query_hash;
+
+		/*
+		 * Subscriptions ended
+		 */
+		$query = $wpdb-&gt;prepare(
+			&quot;SELECT COUNT( DISTINCT wcsubs.ID ) as count, CONVERT_TZ( wcsmeta_end.meta_value, &#039;+00:00&#039;, &#039;{$site_timezone}&#039; ) as end_date, GROUP_CONCAT( DISTINCT wcsubs.ID ) as subscription_ids
+				FROM {$wpdb-&gt;posts} as wcsubs
+				JOIN {$wpdb-&gt;postmeta} AS wcsmeta_end
+					ON wcsubs.ID = wcsmeta_end.post_id
+						AND wcsmeta_end.meta_key = %s
+						AND wcsubs.post_status NOT IN ( &#039;trash&#039;, &#039;auto-draft&#039; )
+				GROUP BY YEAR( end_date ), MONTH( end_date ), DAY( end_date )
+				HAVING end_date BETWEEN %s AND %s
+				ORDER BY wcsmeta_end.meta_value ASC&quot;,
+			wcs_get_date_meta_key( &#039;end&#039; ),
+			date( &#039;Y-m-d&#039;, $this-&gt;start_date ),
+			$query_end_date
+		);
+
+		$query_hash = md5( $query );
+
+		if ( $args[&#039;no_cache&#039;] || false === $cached_results || ! isset( $cached_results[ $query_hash ] ) ) {
+			$wpdb-&gt;query( &#039;SET SESSION SQL_BIG_SELECTS=1&#039; );
+			$cached_results[ $query_hash ] = apply_filters( &#039;wcs_reports_subscription_events_ended_count_data&#039;, (array) $wpdb-&gt;get_results( $query ), $args );
+			$update_cache = true;
+		}
+
+		$this-&gt;report_data-&gt;ended_counts = $cached_results[ $query_hash ];
+
+		$this-&gt;report_data-&gt;ended_subscriptions_query_hash = $query_hash;
+
+		// Total up the query data
+		$this-&gt;report_data-&gt;signup_orders_total_amount          = array_sum( wp_list_pluck( $this-&gt;report_data-&gt;signup_data, &#039;signup_totals&#039; ) );
+		$this-&gt;report_data-&gt;renewal_orders_total_amount         = array_sum( wp_list_pluck( $this-&gt;report_data-&gt;renewal_data, &#039;renewal_totals&#039; ) );
+		$this-&gt;report_data-&gt;resubscribe_orders_total_amount     = array_sum( wp_list_pluck( $this-&gt;report_data-&gt;resubscribe_data, &#039;resubscribe_totals&#039; ) );
+		$this-&gt;report_data-&gt;switch_orders_total_amount          = array_sum( wp_list_pluck( $this-&gt;report_data-&gt;switch_data, &#039;switch_totals&#039; ) );
+		$this-&gt;report_data-&gt;new_subscription_total_count        = absint( array_sum( wp_list_pluck( $this-&gt;report_data-&gt;new_subscriptions_data, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;signup_orders_total_count           = absint( array_sum( wp_list_pluck( $this-&gt;report_data-&gt;signup_data, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;renewal_orders_total_count          = absint( array_sum( wp_list_pluck( $this-&gt;report_data-&gt;renewal_data, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;resubscribe_orders_total_count      = absint( array_sum( wp_list_pluck( $this-&gt;report_data-&gt;resubscribe_data, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;switch_orders_total_count           = absint( array_sum( wp_list_pluck( $this-&gt;report_data-&gt;switch_data, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;total_subscriptions_cancelled       = absint( array_sum( wp_list_pluck( $this-&gt;report_data-&gt;cancel_counts, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;total_subscriptions_ended           = absint( array_sum( wp_list_pluck( $this-&gt;report_data-&gt;ended_counts, &#039;count&#039; ) ) );
+		$this-&gt;report_data-&gt;total_subscriptions_at_period_end   = $this-&gt;report_data-&gt;subscriber_counts ? absint( end( $this-&gt;report_data-&gt;subscriber_counts )-&gt;count ) : 0;
+		$this-&gt;report_data-&gt;total_subscriptions_at_period_start = isset( $this-&gt;report_data-&gt;subscriber_counts[0]-&gt;count ) ? absint( $this-&gt;report_data-&gt;subscriber_counts[0]-&gt;count ) : 0;
+
+		if ( $update_cache ) {
+			set_transient( strtolower( get_class( $this ) ), $cached_results, WEEK_IN_SECONDS );
+
+			// Remove this class from the list of classes WC updates on shutdown. Introduced in WC 3.7
+			if ( ! wcs_is_woocommerce_pre( &#039;3.7&#039; ) ) {
+				unset( WC_Admin_Report::$transients_to_update[ strtolower( get_class( $this ) ) ] );
+			}
+		}
+	}
+
+	/**
+	 * Get the legend for the main chart sidebar
+	 *
+	 * @return array
+	 */
+	public function get_chart_legend() {
+		$legend = array();
+		$data   = $this-&gt;get_report_data();
+		$tracks_id = &#039;report_subscription_events_by_date_&#039;;
+
+		$legend[] = array(
+			// translators: %s: formatted total amount.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s signup revenue in this period&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . wc_price( $data-&gt;signup_orders_total_amount ) . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The sum of all subscription parent orders, including other items, fees, tax and shipping.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;signup_total&#039;],
+			&#039;highlight_series&#039; =&gt; 8,
+		);
+
+		$legend[] = array(
+			// translators: %s: formatted total amount.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s renewal revenue in this period&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . wc_price( $data-&gt;renewal_orders_total_amount ) . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The sum of all renewal orders including tax and shipping.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;renewal_total&#039;],
+			&#039;highlight_series&#039; =&gt; 10,
+		);
+
+		$legend[] = array(
+			// translators: %s: formatted total amount.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s resubscribe revenue in this period&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . wc_price( $data-&gt;resubscribe_orders_total_amount ) . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The sum of all resubscribe orders including tax and shipping.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;resubscribe_total&#039;],
+			&#039;highlight_series&#039; =&gt; 9,
+		);
+
+		$legend[] = array(
+			// translators: %s: formatted total amount.
+			&#039;title&#039;            =&gt; sprintf( __( &#039;%s switch revenue in this period&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039; . wc_price( $data-&gt;switch_orders_total_amount ) . &#039;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;The sum of all switch orders including tax and shipping.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;switch_total&#039;],
+			&#039;highlight_series&#039; =&gt; 11,
+		);
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf(
+				// translators: 2: link opening tag, 1: subscription count and closing tag.
+				__( &#039;%2$s %1$s new subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt; &lt;span class=&quot;woocommerce-subscriptions-count count&quot;&gt;&#039; . $this-&gt;report_data-&gt;new_subscription_total_count . &#039;&lt;/span&gt; &lt;/strong&gt; &lt;/a&gt;&#039;,
+				&#039;&lt;a href=&quot;&#039; .
+				esc_url(
+					add_query_arg(
+						array(
+							&#039;post_type&#039;               =&gt; &#039;shop_subscription&#039;,
+							&#039;_subscriptions_list_key&#039; =&gt; $this-&gt;report_data-&gt;new_subscriptions_query_hash,
+							&#039;_report&#039;                 =&gt; strtolower( get_class( $this ) ),
+						),
+						admin_url( &#039;edit.php&#039; )
+					)
+				) . &#039;&quot; id=&quot;&#039; . $tracks_id . &#039;new&quot;&gt;&#039;
+			),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of subscriptions created during this period, either by being manually created, imported or a customer placing an order. This includes orders pending payment.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;new_count&#039;],
+			&#039;highlight_series&#039; =&gt; 1,
+		);
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf(
+				// translators: 2: link opening tag, 1: subscription count and closing tag.
+				__( &#039;%2$s %1$s subscription signups&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt; &lt;span class=&quot;woocommerce-subscriptions-count count&quot;&gt;&#039; . $this-&gt;report_data-&gt;signup_orders_total_count . &#039;&lt;/strong&gt; &lt;/a&gt;&#039;,
+				&#039;&lt;a href=&quot;&#039; .
+				esc_url(
+					add_query_arg(
+						array(
+							&#039;post_type&#039;               =&gt; &#039;shop_subscription&#039;,
+							&#039;_subscriptions_list_key&#039; =&gt; $this-&gt;report_data-&gt;signup_orders_query_hash,
+							&#039;_report&#039;                 =&gt; strtolower( get_class( $this ) ),
+						),
+						admin_url( &#039;edit.php&#039; )
+					)
+				) . &#039;&quot; id=&quot;&#039; . $tracks_id . &#039;signups&quot;&gt;&#039;
+			),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of subscriptions purchased in parent orders created during this period. This represents the new subscriptions created by customers placing an order via checkout.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;signup_count&#039;],
+			&#039;highlight_series&#039; =&gt; 2,
+		);
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf(
+				// translators: 2: link opening tag, 1: subscription count and closing tag.
+				__( &#039;%2$s %1$s subscription resubscribes&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt; &lt;span class=&quot;woocommerce-subscriptions-count count&quot;&gt;&#039; . $this-&gt;report_data-&gt;resubscribe_orders_total_count . &#039;&lt;/strong&gt; &lt;/a&gt;&#039;,
+				&#039;&lt;a href=&quot;&#039; .
+				esc_url(
+					add_query_arg(
+						array(
+							&#039;post_type&#039;        =&gt; &#039;shop_order&#039;,
+							&#039;_orders_list_key&#039; =&gt; $this-&gt;report_data-&gt;resubscribes_query_hash,
+							&#039;_report&#039;          =&gt; strtolower( get_class( $this ) ),
+						),
+						admin_url( &#039;edit.php&#039; )
+					)
+				) . &#039;&quot; id=&quot;&#039; . $tracks_id . &#039;resubscribes&quot;&gt;&#039;
+			),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of resubscribe orders processed during this period.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;resubscribe_count&#039;],
+			&#039;highlight_series&#039; =&gt; 3,
+		);
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf(
+				// translators: 2: link opening tag, 1: subscription count and closing tag.
+				__( &#039;%2$s %1$s subscription renewals&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt; &lt;span class=&quot;woocommerce-subscriptions-count count&quot;&gt;&#039; . $this-&gt;report_data-&gt;renewal_orders_total_count . &#039;&lt;/strong&gt; &lt;/a&gt;&#039;,
+				&#039;&lt;a href=&quot;&#039; .
+				esc_url(
+					add_query_arg(
+						array(
+							&#039;post_type&#039;        =&gt; &#039;shop_order&#039;,
+							&#039;_orders_list_key&#039; =&gt; $this-&gt;report_data-&gt;renewals_query_hash,
+							&#039;_report&#039;          =&gt; strtolower( get_class( $this ) ),
+						),
+						admin_url( &#039;edit.php&#039; )
+					)
+				) . &#039;&quot; id=&quot;&#039; . $tracks_id . &#039;renewals&quot;&gt;&#039;
+			),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of renewal orders processed during this period.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;renewal_count&#039;],
+			&#039;highlight_series&#039; =&gt; 4,
+		);
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf(
+				// translators: 2: link opening tag, 1: subscription count and closing tag.
+				__( &#039;%2$s %1$s subscription switches&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt; &lt;span class=&quot;woocommerce-subscriptions-count count&quot;&gt;&#039; . $this-&gt;report_data-&gt;switch_orders_total_count . &#039;&lt;/strong&gt; &lt;/a&gt;&#039;,
+				&#039;&lt;a href=&quot;&#039; .
+				esc_url(
+					add_query_arg(
+						array(
+							&#039;post_type&#039;        =&gt; &#039;shop_order&#039;,
+							&#039;_orders_list_key&#039; =&gt; $this-&gt;report_data-&gt;switches_query_hash,
+							&#039;_report&#039;          =&gt; strtolower( get_class( $this ) ),
+						),
+						admin_url( &#039;edit.php&#039; )
+					)
+				) . &#039;&quot; id=&quot;&#039; . $tracks_id . &#039;switches&quot;&gt;&#039;
+			),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of subscriptions upgraded, downgraded or cross-graded during this period.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;switch_count&#039;],
+			&#039;highlight_series&#039; =&gt; 0,
+		);
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf(
+				// translators: 2: link opening tag, 1: subscription count and closing tag.
+				__( &#039;%2$s %1$s subscription cancellations&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt; &lt;span class=&quot;woocommerce-subscriptions-count count&quot;&gt;&#039; . $this-&gt;report_data-&gt;total_subscriptions_cancelled . &#039;&lt;/strong&gt; &lt;/a&gt;&#039;,
+				&#039;&lt;a href=&quot;&#039; .
+				esc_url(
+					add_query_arg(
+						array(
+							&#039;post_type&#039;               =&gt; &#039;shop_subscription&#039;,
+							&#039;_subscriptions_list_key&#039; =&gt; $this-&gt;report_data-&gt;cancelled_subscriptions_query_hash,
+							&#039;_report&#039;                 =&gt; strtolower( get_class( $this ) ),
+						),
+						admin_url( &#039;edit.php&#039; )
+					)
+				) . &#039;&quot; id=&quot;&#039; . $tracks_id . &#039;cancellations&quot;&gt;&#039;
+			),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of subscriptions cancelled by the customer or store manager during this period.  The pre-paid term may not yet have ended during this period.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;cancel_count&#039;],
+			&#039;highlight_series&#039; =&gt; 7,
+		);
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf(
+				// translators: 2: link opening tag, 1: subscription count and closing tag.
+				__( &#039;%2$s %1$s ended subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt; &lt;span class=&quot;woocommerce-subscriptions-count count&quot;&gt;&#039; . $this-&gt;report_data-&gt;total_subscriptions_ended . &#039;&lt;/strong&gt; &lt;/a&gt;&#039;,
+				&#039;&lt;a href=&quot;&#039; .
+				esc_url(
+					add_query_arg(
+						array(
+							&#039;post_type&#039;               =&gt; &#039;shop_subscription&#039;,
+							&#039;_subscriptions_list_key&#039; =&gt; $this-&gt;report_data-&gt;ended_subscriptions_query_hash,
+							&#039;_report&#039;                 =&gt; strtolower( get_class( $this ) ),
+						),
+						admin_url( &#039;edit.php&#039; )
+					)
+				) . &#039;&quot; id=&quot;&#039; . $tracks_id . &#039;ended&quot;&gt;&#039;
+			),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of subscriptions which have either expired or reached the end of the prepaid term if it was previously cancelled.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;ended_count&#039;],
+			&#039;highlight_series&#039; =&gt; 6,
+		);
+
+		// For the subscriptions count we only need to display the subscriptions included on the last day of the report period so pass the last cache key. The array keys are integers so using max() returns the last array key.
+		$data_key = $this-&gt;report_data-&gt;subscriber_counts ? max( array_keys( $this-&gt;report_data-&gt;subscriber_counts ) ) : false;
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf(
+				// translators: 2: link opening tag, 1: subscription count and closing tag.
+				__( &#039;%2$s %1$s current subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt; &lt;span class=&quot;woocommerce-subscriptions-count count&quot;&gt;&#039; . $this-&gt;report_data-&gt;total_subscriptions_at_period_end . &#039;&lt;/strong&gt; &lt;/a&gt;&#039;,
+				&#039;&lt;a href=&quot;&#039; .
+				esc_url(
+					add_query_arg(
+						array(
+							&#039;post_type&#039;               =&gt; &#039;shop_subscription&#039;,
+							&#039;_subscriptions_list_key&#039; =&gt; $this-&gt;report_data-&gt;current_subscriptions_query_hash,
+							&#039;_report&#039;                 =&gt; strtolower( get_class( $this ) ),
+							&#039;_data_key&#039;               =&gt; $data_key,
+						),
+						admin_url( &#039;edit.php&#039; )
+					)
+				) . &#039;&quot; id=&quot;&#039; . $tracks_id . &#039;current&quot;&gt;&#039;
+			),
+			&#039;placeholder&#039;      =&gt; __( &#039;The number of subscriptions during this period with an end date in the future and a status other than pending.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;subscriber_count&#039;],
+			&#039;highlight_series&#039; =&gt; 5,
+		);
+
+		$subscription_change_count = ( $data-&gt;total_subscriptions_at_period_end - $data-&gt;total_subscriptions_at_period_start &gt; 0 ) ? &#039;+&#039; . ( $data-&gt;total_subscriptions_at_period_end - $data-&gt;total_subscriptions_at_period_start ) : ( $data-&gt;total_subscriptions_at_period_end - $data-&gt;total_subscriptions_at_period_start );
+
+		if ( 0 === $data-&gt;total_subscriptions_at_period_start ) {
+			$subscription_change_percent = &#039;&amp;#x221e;%&#039;; // infinite percentage increase if the starting subs is 0.
+		} elseif ( $data-&gt;total_subscriptions_at_period_end - $data-&gt;total_subscriptions_at_period_start &gt;= 0 ) {
+			$subscription_change_percent = &#039;+&#039; . number_format( ( ( ( $data-&gt;total_subscriptions_at_period_end - $data-&gt;total_subscriptions_at_period_start ) / $data-&gt;total_subscriptions_at_period_start ) * 100 ), 2 ) . &#039;%&#039;;
+		} else {
+			$subscription_change_percent = number_format( ( ( ( $data-&gt;total_subscriptions_at_period_end - $data-&gt;total_subscriptions_at_period_start ) / $data-&gt;total_subscriptions_at_period_start ) * 100 ), 2 ) . &#039;%&#039;;
+		}
+
+		if ( $data-&gt;total_subscriptions_at_period_end - $data-&gt;total_subscriptions_at_period_start &gt;= 0 ) {
+			// translators: %s: subscription net gain (with percentage).
+			$legend_title = __( &#039;%s net subscription gain&#039;, &#039;woocommerce-subscriptions&#039; );
+		} else {
+			// translators: %s: subscription net loss (with percentage).
+			$legend_title = __( &#039;%s net subscription loss&#039;, &#039;woocommerce-subscriptions&#039; );
+		}
+
+		$legend[] = array(
+			&#039;title&#039;            =&gt; sprintf( $legend_title, &#039;&lt;strong&gt;&#039; . $subscription_change_count . &#039; &lt;span style=&quot;font-size:65%;&quot;&gt;(&#039; . $subscription_change_percent . &#039;)&lt;/span&gt;&lt;/strong&gt;&#039; ),
+			&#039;placeholder&#039;      =&gt; __( &#039;Change in subscriptions between the start and end of the period.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;color&#039;            =&gt; $this-&gt;chart_colours[&#039;subscriber_change&#039;],
+			&#039;highlight_series&#039; =&gt; 5,
+		);
+
+		return $legend;
+	}
+
+	/**
+	 * Output the report
+	 */
+	public function output_report() {
+
+		$ranges = array(
+			&#039;year&#039;       =&gt; __( &#039;Year&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;last_month&#039; =&gt; __( &#039;Last Month&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;month&#039;      =&gt; __( &#039;This Month&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;7day&#039;       =&gt; __( &#039;Last 7 Days&#039;, &#039;woocommerce-subscriptions&#039; ),
+		);
+
+		$this-&gt;chart_colours = array(
+			&#039;signup_total&#039;      =&gt; &#039;#439ad9&#039;,
+			&#039;renewal_total&#039;     =&gt; &#039;#b1d4ea&#039;,
+			&#039;resubscribe_total&#039; =&gt; &#039;#7ab7e2&#039;,
+			&#039;switch_total&#039;      =&gt; &#039;#a7b7f1&#039;,
+			&#039;new_count&#039;         =&gt; &#039;#9adbb5&#039;,
+			&#039;signup_count&#039;      =&gt; &#039;#5cc488&#039;,
+			&#039;resubscribe_count&#039; =&gt; &#039;#449163&#039;,
+			&#039;renewal_count&#039;     =&gt; &#039;#b9e6cc&#039;,
+			&#039;switch_count&#039;      =&gt; &#039;#f1c40f&#039;,
+			&#039;cancel_count&#039;      =&gt; &#039;#e74c3c&#039;,
+			&#039;ended_count&#039;       =&gt; &#039;#f8ccc7&#039;,
+			&#039;subscriber_count&#039;  =&gt; &#039;#ecf0f1&#039;,
+			&#039;subscriber_change&#039; =&gt; &#039;#ecf0f1&#039;,
+		);
+
+		$current_range = ! empty( $_GET[&#039;range&#039;] ) ? sanitize_text_field( $_GET[&#039;range&#039;] ) : &#039;7day&#039;;
+
+		if ( ! in_array( $current_range, array( &#039;custom&#039;, &#039;year&#039;, &#039;last_month&#039;, &#039;month&#039;, &#039;7day&#039; ) ) ) {
+			$current_range = &#039;7day&#039;;
+		}
+
+		$this-&gt;calculate_current_range( $current_range );
+
+		include( WC()-&gt;plugin_path() . &#039;/includes/admin/views/html-report-by-date.php&#039; );
+	}
+
+	/**
+	 * Output an export link
+	 */
+	public function get_export_button() {
+		$current_range = ! empty( $_GET[&#039;range&#039;] ) ? sanitize_text_field( $_GET[&#039;range&#039;] ) : &#039;7day&#039;;
+		?&gt;
+		&lt;a
+			href=&quot;#&quot;
+			download=&quot;report-&lt;?php echo esc_attr( $current_range ); ?&gt;-&lt;?php echo esc_attr( date_i18n( &#039;Y-m-d&#039;, current_time( &#039;timestamp&#039; ) ) ); ?&gt;.csv&quot;
+			class=&quot;export_csv&quot;
+			data-export=&quot;chart&quot;
+			data-xaxes=&quot;&lt;?php esc_attr_e( &#039;Date&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&quot;
+			data-exclude_series=&quot;2&quot;
+			data-groupby=&quot;&lt;?php echo esc_attr( $this-&gt;chart_groupby ); ?&gt;&quot;
+		&gt;
+			&lt;?php esc_attr_e( &#039;Export CSV&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+		&lt;/a&gt;
+		&lt;?php
+	}
+
+
+	/**
+	 * Get the main chart
+	 *
+	 * @return string
+	 */
+	public function get_main_chart() {
+		global $wp_locale;
+
+		// Prepare data for report
+		$signup_orders_amount      = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;signup_data, &#039;post_date&#039;, &#039;signup_totals&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$renewal_orders_amount     = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;renewal_data, &#039;post_date&#039;, &#039;renewal_totals&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$resubscribe_orders_amount = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;resubscribe_data, &#039;post_date&#039;, &#039;resubscribe_totals&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$switch_orders_amount      = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;switch_data, &#039;post_date&#039;, &#039;switch_totals&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$new_subscriptions_count   = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;new_subscriptions_data, &#039;post_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$signup_orders_count       = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;signup_data, &#039;post_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$renewal_orders_count      = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;renewal_data, &#039;post_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$resubscribe_orders_count  = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;resubscribe_data, &#039;post_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$switch_orders_count       = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;switch_data, &#039;post_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$subscriber_count          = $this-&gt;prepare_chart_data_daily_average( $this-&gt;report_data-&gt;subscriber_counts, &#039;date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$cancel_count              = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;cancel_counts, &#039;cancel_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+		$ended_count               = $this-&gt;prepare_chart_data( $this-&gt;report_data-&gt;ended_counts, &#039;end_date&#039;, &#039;count&#039;, $this-&gt;chart_interval, $this-&gt;start_date, $this-&gt;chart_groupby );
+
+		// Encode in json format
+		$chart_data = array(
+			&#039;signup_orders_amount&#039;      =&gt; array_map( array( $this, &#039;round_chart_totals&#039; ), array_values( $signup_orders_amount ) ),
+			&#039;renewal_orders_amount&#039;     =&gt; array_map( array( $this, &#039;round_chart_totals&#039; ), array_values( $renewal_orders_amount ) ),
+			&#039;resubscribe_orders_amount&#039; =&gt; array_map( array( $this, &#039;round_chart_totals&#039; ), array_values( $resubscribe_orders_amount ) ),
+			&#039;switch_orders_amount&#039;      =&gt; array_map( array( $this, &#039;round_chart_totals&#039; ), array_values( $switch_orders_amount ) ),
+			&#039;new_subscriptions_count&#039;   =&gt; array_values( $new_subscriptions_count ),
+			&#039;signup_orders_count&#039;       =&gt; array_values( $signup_orders_count ),
+			&#039;renewal_orders_count&#039;      =&gt; array_values( $renewal_orders_count ),
+			&#039;resubscribe_orders_count&#039;  =&gt; array_values( $resubscribe_orders_count ),
+			&#039;switch_orders_count&#039;       =&gt; array_values( $switch_orders_count ),
+			&#039;subscriber_count&#039;          =&gt; array_values( $subscriber_count ),
+			&#039;cancel_count&#039;              =&gt; array_values( $cancel_count ),
+			&#039;ended_count&#039;               =&gt; array_values( $ended_count ),
+		);
+
+		$timeformat = ( $this-&gt;chart_groupby == &#039;day&#039; ? &#039;%d %b&#039; : &#039;%b&#039; );
+
+		?&gt;
+		&lt;div class=&quot;chart-container&quot;&gt;
+			&lt;div class=&quot;chart-placeholder main&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;script type=&quot;text/javascript&quot;&gt;
+
+			var main_chart;
+
+			jQuery(function(){
+				var order_data = JSON.parse( &#039;&lt;?php echo json_encode( $chart_data ); ?&gt;&#039; );
+				var drawGraph = function( highlight ) {
+					var series = [
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Switched subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.switch_orders_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;switch_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								fillColor: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;switch_count&#039;] ); ?&gt;&#039;,
+								order: 0,
+								fill: true,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.25,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;New Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.new_subscriptions_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;new_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								fillColor: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;new_count&#039;] ); ?&gt;&#039;,
+								order: 1,
+								fill: true,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.25,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Subscriptions signups&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.signup_orders_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;signup_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								order: 1,
+								fill: 0.5,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.25,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Number of resubscribes&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.resubscribe_orders_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;resubscribe_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								order: 1,
+								fill: 0.5,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.25,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Number of renewals&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.renewal_orders_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;renewal_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								fillColor: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;renewal_count&#039;] ); ?&gt;&#039;,
+								order: 2,
+								fill: true,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.25,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.subscriber_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;subscriber_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								fillColor: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;subscriber_count&#039;] ); ?&gt;&#039;,
+								order: 3,
+								fill: true,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.25,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Subscriptions Ended&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.ended_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;ended_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								fillColor: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;ended_count&#039;] ); ?&gt;&#039;,
+								order: 3,
+								fill: true,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.25,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Cancellations&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.cancel_count,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;cancel_count&#039;] ); ?&gt;&#039;,
+							bars: {
+								order: 3,
+								fill: 0.5,
+								show: true,
+								lineWidth: 0,
+								barWidth: &lt;?php echo esc_js( $this-&gt;barwidth ); ?&gt; * 0.25,
+								align: &#039;center&#039;
+							},
+							shadowSize: 0,
+							hoverable: false,
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Signup Totals&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.signup_orders_amount,
+							yaxis: 2,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;signup_total&#039;] ); ?&gt;&#039;,
+							points: {
+								show: true,
+								radius: 5,
+								lineWidth: 5,
+								fillColor: &#039;#fff&#039;,
+								fill: true
+							},
+							lines: {
+								show: true,
+								lineWidth: 4,
+								fill: false
+							},
+							shadowSize: 0,
+							&lt;?php echo wp_kses_post( $this-&gt;get_currency_tooltip() ); ?&gt;
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Resubscribe Totals&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.resubscribe_orders_amount,
+							yaxis: 2,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;resubscribe_total&#039;] ); ?&gt;&#039;,
+							points: {
+								show: true,
+								radius: 5,
+								lineWidth: 4,
+								fillColor: &#039;#fff&#039;,
+								fill: true
+							},
+							lines: {
+								show: true,
+								lineWidth: 5,
+								fill: false
+							},
+							shadowSize: 0,
+							&lt;?php echo wp_kses_post( $this-&gt;get_currency_tooltip() ); ?&gt;
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Renewal Totals&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.renewal_orders_amount,
+							yaxis: 2,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;renewal_total&#039;] ); ?&gt;&#039;,
+							points: {
+								show: true,
+								radius: 5,
+								lineWidth: 4,
+								fillColor: &#039;#fff&#039;,
+								fill: true
+							},
+							lines: {
+								show: true,
+								lineWidth: 5,
+								fill: false
+							},
+							shadowSize: 0,
+							&lt;?php echo wp_kses_post( $this-&gt;get_currency_tooltip() ); ?&gt;
+						},
+						{
+							label: &quot;&lt;?php echo esc_js( __( &#039;Switch Totals&#039;, &#039;woocommerce-subscriptions&#039; ) ) ?&gt;&quot;,
+							data: order_data.switch_orders_amount,
+							yaxis: 2,
+							color: &#039;&lt;?php echo esc_js( $this-&gt;chart_colours[&#039;switch_total&#039;] ); ?&gt;&#039;,
+							points: {
+								show: true,
+								radius: 5,
+								lineWidth: 4,
+								fillColor: &#039;#fff&#039;,
+								fill: true
+							},
+							lines: {
+								show: true,
+								lineWidth: 5,
+								fill: false
+							},
+							shadowSize: 0,
+							&lt;?php echo wp_kses_post( $this-&gt;get_currency_tooltip() ); ?&gt;
+						},
+					];
+
+					if ( highlight !== &#039;undefined&#039; &amp;&amp; series[ highlight ] ) {
+						highlight_series = series[ highlight ];
+
+						highlight_series.color = &#039;#9c5d90&#039;;
+
+						if ( highlight_series.bars ) {
+							highlight_series.bars.fillColor = &#039;#9c5d90&#039;;
+						}
+
+						if ( highlight_series.lines ) {
+							highlight_series.lines.lineWidth = 5;
+						}
+					}
+
+					main_chart = jQuery.plot(
+						jQuery(&#039;.chart-placeholder.main&#039;),
+						series,
+						{
+							legend: {
+								show: false
+							},
+							grid: {
+								color: &#039;#aaa&#039;,
+								borderColor: &#039;transparent&#039;,
+								borderWidth: 0,
+								hoverable: true
+							},
+							xaxes: [ {
+								color: &#039;#aaa&#039;,
+								position: &quot;bottom&quot;,
+								tickColor: &#039;transparent&#039;,
+								mode: &quot;time&quot;,
+								timeformat: &quot;&lt;?php echo esc_js( $timeformat ) ?&gt;&quot;,
+								monthNames: &lt;?php echo json_encode( array_values( $wp_locale-&gt;month_abbrev ) ) ?&gt;,
+								tickLength: 1,
+								minTickSize: [1, &quot;&lt;?php echo esc_js( $this-&gt;chart_groupby ); ?&gt;&quot;],
+								font: {
+									color: &quot;#aaa&quot;
+								}
+							} ],
+							yaxes: [
+								{
+									min: 0,
+									minTickSize: 1,
+									tickDecimals: 0,
+									color: &#039;#d4d9dc&#039;,
+									font: { color: &quot;#aaa&quot; }
+								},
+								{
+									position: &quot;right&quot;,
+									min: 0,
+									tickDecimals: 2,
+									tickFormatter: function (tick) {
+										// Localise and format axis labels
+										return jQuery.wcs_format_money(tick,0);
+									},
+									alignTicksWithAxis: 1,
+									color: &#039;transparent&#039;,
+									font: { color: &quot;#aaa&quot; }
+								}
+							],
+							stack: true,
+						}
+					);
+
+					jQuery(&#039;.chart-placeholder&#039;).trigger( &#039;resize&#039; );
+				}
+
+				drawGraph();
+
+				jQuery(&#039;.highlight_series&#039;).on( &#039;hover&#039;,
+					function() {
+						drawGraph( jQuery(this).data(&#039;series&#039;) );
+					},
+					function() {
+						drawGraph();
+					}
+				);
+			});
+		&lt;/script&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Round our totals correctly.
+	 * @param  string $amount
+	 * @return string
+	 */
+	private function round_chart_totals( $amount ) {
+		if ( is_array( $amount ) ) {
+			return array( $amount[0], wc_format_decimal( $amount[1], wc_get_price_decimals() ) );
+		} else {
+			return wc_format_decimal( $amount, wc_get_price_decimals() );
+		}
+	}
+
+	/**
+	 * Put data with post_date&#039;s into an array of times averaged by day
+	 *
+	 * If the data is grouped by day already, we can just call @see $this-&gt;prepare_chart_data() otherwise,
+	 * we need to figure out how many days in each period and average the aggregate over that count.
+	 *
+	 * @param  array $data array of your data
+	 * @param  string $date_key key for the &#039;date&#039; field. e.g. &#039;post_date&#039;
+	 * @param  string $data_key key for the data you are charting
+	 * @param  int $interval
+	 * @param  string $start_date
+	 * @param  string $group_by
+	 * @return array
+	 */
+	private function prepare_chart_data_daily_average( $data, $date_key, $data_key, $interval, $start_date, $group_by ) {
+
+		$prepared_data = array();
+
+		if ( &#039;day&#039; == $group_by ) {
+
+			$prepared_data = $this-&gt;prepare_chart_data( $data, $date_key, $data_key, $interval, $start_date, $group_by );
+
+		} else {
+
+			// Ensure all days (or months) have values first in this range
+			for ( $i = 0; $i &lt;= $interval; $i ++ ) {
+
+				$time = strtotime( date( &#039;Ym&#039;, strtotime( &quot;+{$i} MONTH&quot;, $start_date ) ) . &#039;01&#039; ) . &#039;000&#039;;
+
+				if ( ! isset( $prepared_data[ $time ] ) ) {
+					$prepared_data[ $time ] = array(
+						esc_js( $time ),
+						0,
+						&#039;count&#039; =&gt; 0,
+					);
+				}
+			}
+
+			foreach ( $data as $days_data ) {
+
+				$time = strtotime( date( &#039;Ym&#039;, strtotime( $days_data-&gt;$date_key ) ) . &#039;01&#039; ) . &#039;000&#039;;
+
+				if ( ! isset( $prepared_data[ $time ] ) ) {
+					continue;
+				}
+
+				if ( $data_key ) {
+					$prepared_data[ $time ][1] += $days_data-&gt;$data_key;
+				} else {
+					$prepared_data[ $time ][1] ++;
+				}
+
+				$prepared_data[ $time ][&#039;count&#039;]++;
+			}
+
+			foreach ( $prepared_data as $time =&gt; $aggregated_data ) {
+				if ( 0 === $aggregated_data[&#039;count&#039;] ) {
+					$prepared_data[ $time ][1] = 0;
+				} else {
+					$prepared_data[ $time ][1] = round( $prepared_data[ $time ][1] / $aggregated_data[&#039;count&#039;] );
+				}
+				unset( $prepared_data[ $time ][&#039;count&#039;] );
+			}
+		}
+
+		return $prepared_data;
+	}
+
+	/**
+	 * Clears the cached report data.
+	 *
+	 * @since 3.0.10
+	 */
+	public function clear_cache() {
+		delete_transient( strtolower( get_class( $this ) ) );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

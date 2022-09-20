@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-plugin.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions setup
+ *
+ * @package WooCommerce Subscriptions
+ * @since   4.0.0
+ */
+
+defined( &#039;ABSPATH&#039; ) || exit;
+
+class WC_Subscriptions_Plugin extends WC_Subscriptions_Core_Plugin {
+
+	/**
+	 * Initialise the WC Subscriptions plugin.
+	 *
+	 * @since 4.0.0
+	 */
+	public function init() {
+		parent::init();
+		WC_Subscriptions_Switcher::init();
+		new WCS_Cart_Switch();
+		WCS_Manual_Renewal_Manager::init();
+		WCS_Customer_Suspension_Manager::init();
+		WCS_Drip_Downloads_Manager::init();
+		WCS_Zero_Initial_Payment_Checkout_Manager::init();
+		WCS_Retry_Manager::init();
+		WCS_Early_Renewal_Modal_Handler::init();
+		WCS_Limited_Recurring_Coupon_Manager::init();
+		WCS_Call_To_Action_Button_Text_Manager::init();
+		WCS_Subscriber_Role_Manager::init();
+		WCS_Upgrade_Notice_Manager::init();
+
+		add_action( &#039;admin_enqueue_scripts&#039;, array( $this, &#039;maybe_show_welcome_message&#039; ) );
+	}
+
+	/**
+	 * Initialises classes which need to be loaded after other plugins have loaded.
+	 *
+	 * Hooked onto &#039;plugins_loaded&#039; by @see WC_Subscriptions_Core_Plugin::init()
+	 *
+	 * @since 4.0.0
+	 */
+	public function init_version_dependant_classes() {
+		parent::init_version_dependant_classes();
+		WCS_API::init();
+		new WCS_Auth();
+		WCS_Webhooks::init();
+		new WCS_Admin_Reports();
+		new WCS_Report_Cache_Manager();
+
+		if ( class_exists( &#039;WCS_Early_Renewal&#039; ) ) {
+			$notice = new WCS_Admin_Notice( &#039;error&#039; );
+
+			// translators: 1-2: opening/closing &lt;b&gt; tags, 3: Subscriptions version.
+			$notice-&gt;set_simple_content( sprintf( __( &#039;%1$sWarning!%2$s We can see the %1$sWooCommerce Subscriptions Early Renewal%2$s plugin is active. Version %3$s of %1$sWooCommerce Subscriptions%2$s comes with that plugin\&#039;s functionality packaged into the core plugin. Please deactivate WooCommerce Subscriptions Early Renewal to avoid any conflicts.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;b&gt;&#039;, &#039;&lt;/b&gt;&#039;, $this-&gt;get_plugin_version() ) );
+			$notice-&gt;set_actions(
+				array(
+					array(
+						&#039;name&#039; =&gt; __( &#039;Installed Plugins&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;url&#039;  =&gt; admin_url( &#039;plugins.php&#039; ),
+					),
+				)
+			);
+
+			$notice-&gt;display();
+		} else {
+			WCS_Early_Renewal_Manager::init();
+
+			require_once $this-&gt;get_plugin_directory( &#039;includes/early-renewal/wcs-early-renewal-functions.php&#039; );
+
+			if ( WCS_Early_Renewal_Manager::is_early_renewal_enabled() ) {
+				new WCS_Cart_Early_Renewal();
+			}
+		}
+	}
+
+	/**
+	 * Gets the plugin&#039;s directory url.
+	 *
+	 * @since 4.0.0
+	 * @param string $path Optional. The path to append.
+	 * @return string
+	 */
+	public function get_plugin_directory_url( $path = &#039;&#039; ) {
+		return plugin_dir_url( WC_Subscriptions::$plugin_file ) . $path;
+	}
+
+	/**
+	 * Gets the plugin&#039;s directory.
+	 *
+	 * @since 4.0.0
+	 * @param string $path Optional. The path to append.
+	 * @return string
+	 */
+	public function get_plugin_directory( $path = &#039;&#039; ) {
+		return plugin_dir_path( WC_Subscriptions::$plugin_file ) . $path;
+	}
+
+	/**
+	 * Gets the activation transient name.
+	 *
+	 * @since 4.0.0
+	 * @return string The transient name used to record when the plugin was activated.
+	*/
+	public function get_activation_transient() {
+		return WC_Subscriptions::$activation_transient;
+	}
+
+	/**
+	 * Gets the product type name.
+	 *
+	 * @since 4.0.0
+	 * @return string The product type name.
+	 */
+	public function get_product_type_name() {
+		return WC_Subscriptions::$name;
+	}
+
+	/**
+	 * Gets the plugin&#039;s version
+	 *
+	 * @since 4.0.0
+	 * @return string The plugin version.
+	 */
+	public function get_plugin_version() {
+		return WC_Subscriptions::$version;
+	}
+
+	/**
+	 * Gets the plugin file name
+	 *
+	 * @since 4.0.0
+	 * @return string The plugin file
+	 */
+	public function get_plugin_file() {
+		return WC_Subscriptions::$plugin_file;
+	}
+
+	/**
+	 * Gets the Payment Gateways handler class
+	 *
+	 * @since 4.0.0
+	 * @return string
+	 */
+	public function get_gateways_handler_class() {
+		return &#039;WC_Subscriptions_Payment_Gateways&#039;;
+	}
+
+
+	/**
+	 * Adds welcome message after activating the plugin
+	 */
+	public function maybe_show_welcome_message() {
+		$plugin_has_just_been_activated = (bool) get_transient( WC_Subscriptions_Core_Plugin::instance()-&gt;get_activation_transient() );
+
+		// Maybe add the admin notice.
+		if ( $plugin_has_just_been_activated ) {
+
+			$woocommerce_plugin_dir_file = WC_Subscriptions_Admin::get_woocommerce_plugin_dir_file();
+
+			// check if subscription products exist in the store.
+			$subscription_product = wc_get_products(
+				array(
+					&#039;type&#039;   =&gt; array( &#039;subscription&#039;, &#039;variable-subscription&#039; ),
+					&#039;limit&#039;  =&gt; 1,
+					&#039;return&#039; =&gt; &#039;ids&#039;,
+				)
+			);
+
+			if ( ! empty( $woocommerce_plugin_dir_file ) &amp;&amp; 0 === count( $subscription_product ) ) {
+
+				wp_enqueue_style( &#039;woocommerce-activation&#039;, plugins_url( &#039;/assets/css/activation.css&#039;, $woocommerce_plugin_dir_file ), [], WC_Subscriptions_Core_Plugin::instance()-&gt;get_plugin_version() );
+
+				if ( ! isset( $_GET[&#039;page&#039;] ) || &#039;wcs-about&#039; !== $_GET[&#039;page&#039;] ) {
+					add_action( &#039;admin_notices&#039;, array( $this, &#039;admin_installed_notice&#039; ) );
+				}
+			}
+			delete_transient( WC_Subscriptions_Core_Plugin::instance()-&gt;get_activation_transient() );
+		}
+	}
+
+	/**
+	 * Outputs a welcome message. Called when the Subscriptions extension is activated.
+	 *
+	 * @since 1.0
+	 */
+	public function admin_installed_notice() {
+		?&gt;
+		&lt;div id=&quot;message&quot; class=&quot;updated woocommerce-message wc-connect woocommerce-subscriptions-activated&quot;&gt;
+			&lt;div class=&quot;squeezer&quot;&gt;
+				&lt;h4&gt;
+					&lt;?php
+					echo wp_kses(
+						sprintf(
+							// translators: $1-$2: opening and closing &lt;strong&gt; tags, $3-$4: opening and closing &lt;em&gt; tags.
+							__(
+								&#039;%1$sWooCommerce Subscriptions Installed%2$s &amp;#8211; %3$sYou\&#039;re ready to start selling subscriptions!%4$s&#039;,
+								&#039;woocommerce-subscriptions&#039;
+							),
+							&#039;&lt;strong&gt;&#039;,
+							&#039;&lt;/strong&gt;&#039;,
+							&#039;&lt;em&gt;&#039;,
+							&#039;&lt;/em&gt;&#039;
+						),
+						[
+							&#039;strong&#039; =&gt; true,
+							&#039;em&#039;     =&gt; true,
+						]
+					);
+					?&gt;
+				&lt;/h4&gt;
+
+				&lt;p class=&quot;submit&quot;&gt;
+					&lt;a href=&quot;&lt;?php echo esc_url( WC_Subscriptions_Admin::add_subscription_url() ); ?&gt;&quot; class=&quot;button button-primary&quot;&gt;&lt;?php esc_html_e( &#039;Add a Subscription Product&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+					&lt;a href=&quot;&lt;?php echo esc_url( WC_Subscriptions_Admin::settings_tab_url() ); ?&gt;&quot; class=&quot;docs button button-primary&quot;&gt;&lt;?php esc_html_e( &#039;Settings&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+					&lt;a href=&quot;https://twitter.com/share&quot; class=&quot;twitter-share-button&quot; data-url=&quot;http://www.woocommerce.com/products/woocommerce-subscriptions/&quot; data-text=&quot;Woot! I can sell subscriptions with #WooCommerce&quot; data-via=&quot;WooCommerce&quot; data-size=&quot;large&quot;&gt;Tweet&lt;/a&gt;
+					&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;?php
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

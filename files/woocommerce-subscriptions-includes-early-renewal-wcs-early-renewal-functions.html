@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-early-renewal-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_cart_contains_early_renewal">
+        wcs_cart_contains_early_renewal()
+        <a href="#function_wcs_cart_contains_early_renewal" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/includes/early-renewal/wcs-early-renewal-functions.php"><a href="../files/woocommerce-subscriptions-includes-early-renewal-wcs-early-renewal-functions.html#source-view.21">woocommerce-subscriptions/includes/early-renewal/wcs-early-renewal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks the cart to see if it contains an early subscription renewal.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_cart_contains_early_renewal</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.3.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_can_user_renew_early">
+        wcs_can_user_renew_early()
+        <a href="#function_wcs_can_user_renew_early" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/includes/early-renewal/wcs-early-renewal-functions.php"><a href="../files/woocommerce-subscriptions-includes-early-renewal-wcs-early-renewal-functions.html#source-view.40">woocommerce-subscriptions/includes/early-renewal/wcs-early-renewal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks if a user can renew an active subscription early.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_can_user_renew_early</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|<abbr title="\WC_Subscription">WC_Subscription</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|<abbr title="\WC_Subscription">WC_Subscription</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Post ID of a 'shop_subscription' post, or instance of a WC_Subscription object.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of a user.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.3.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_early_renewal_url">
+        wcs_get_early_renewal_url()
+        <a href="#function_wcs_get_early_renewal_url" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/includes/early-renewal/wcs-early-renewal-functions.php"><a href="../files/woocommerce-subscriptions-includes-early-renewal-wcs-early-renewal-functions.html#source-view.105">woocommerce-subscriptions/includes/early-renewal/wcs-early-renewal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns a URL for early renewal of a subscription.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_early_renewal_url</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|<abbr title="\WC_Subscription">WC_Subscription</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|<abbr title="\WC_Subscription">WC_Subscription</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>WC_Subscription ID, or instance of a WC_Subscription object.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.3.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_update_dates_after_early_renewal">
+        wcs_update_dates_after_early_renewal()
+        <a href="#function_wcs_update_dates_after_early_renewal" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/includes/early-renewal/wcs-early-renewal-functions.php"><a href="../files/woocommerce-subscriptions-includes-early-renewal-wcs-early-renewal-functions.html#source-view.131">woocommerce-subscriptions/includes/early-renewal/wcs-early-renewal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Update the subscription dates after processing an early renewal.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_update_dates_after_early_renewal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Subscription">WC_Subscription</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$early_renewal</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Subscription">WC_Subscription</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The subscription to update.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$early_renewal</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The early renewal.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.6.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Early Renewal functions.
+ *
+ * @author   Prospress
+ * @category Core
+ * @package  WooCommerce Subscriptions/Functions
+ * @since    2.3.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * Checks the cart to see if it contains an early subscription renewal.
+ *
+ * @return bool|array The cart item containing the early renewal, else false.
+ * @since  2.3.0
+ */
+function wcs_cart_contains_early_renewal() {
+
+	$cart_item = wcs_cart_contains_renewal();
+
+	if ( $cart_item &amp;&amp; ! empty( $cart_item[&#039;subscription_renewal&#039;][&#039;subscription_renewal_early&#039;] ) ) {
+		return $cart_item;
+	}
+
+	return false;
+}
+
+/**
+ * Checks if a user can renew an active subscription early.
+ *
+ * @param int|WC_Subscription $subscription Post ID of a &#039;shop_subscription&#039; post, or instance of a WC_Subscription object.
+ * @param int $user_id The ID of a user.
+ * @since 2.3.0
+ * @return bool Whether the user can renew a subscription early.
+ */
+function wcs_can_user_renew_early( $subscription, $user_id = 0 ) {
+	$subscription = wcs_get_subscription( $subscription );
+	$user_id      = ! empty( $user_id ) ? $user_id : get_current_user_id();
+	$reason       = &#039;&#039;;
+
+	// Check for all the normal reasons a subscription can&#039;t be renewed early.
+	if ( ! $subscription ) {
+		$reason = &#039;not_a_subscription&#039;;
+	} elseif ( ! $subscription-&gt;has_status( array( &#039;active&#039; ) ) ) {
+		$reason = &#039;subscription_not_active&#039;;
+	} elseif ( 0.0 === floatval( $subscription-&gt;get_total() ) ) {
+		$reason = &#039;subscription_zero_total&#039;;
+	} elseif ( $subscription-&gt;get_time( &#039;trial_end&#039; ) &gt; gmdate( &#039;U&#039; ) ) {
+		$reason = &#039;subscription_still_in_free_trial&#039;;
+	} elseif ( ! $subscription-&gt;get_time( &#039;next_payment&#039; ) ) {
+		$reason = &#039;subscription_no_next_payment&#039;;
+	} elseif ( ! $subscription-&gt;payment_method_supports( &#039;subscription_date_changes&#039; ) ) {
+		$reason = &#039;payment_method_not_supported&#039;;
+	} elseif (
+		WC_Subscriptions_Synchroniser::subscription_contains_synced_product( $subscription ) &amp;&amp;
+		/**
+		 * Determine whether a subscription with Synchronized products can be renewed early.
+		 *
+		 * @param bool            $can_renew_early Whether the subscription can be renewed early.
+		 * @param WC_Subscription $subscription    The subscription to be renewed early.
+		 */
+		! boolval( apply_filters( &#039;wcs_allow_synced_product_early_renewal&#039;, false, $subscription ) )
+	) {
+		$reason = &#039;subscription_contains_synced_product&#039;;
+	}
+
+	// Make sure all line items still exist.
+	foreach ( $subscription-&gt;get_items() as $line_item ) {
+		$product = wc_get_product( wcs_get_canonical_product_id( $line_item ) );
+
+		if ( false === $product ) {
+			$reason = &#039;line_item_no_longer_exists&#039;;
+			break;
+		}
+	}
+
+	// Non-empty $reason means we can&#039;t renew early.
+	$can_renew_early = empty( $reason );
+
+	/**
+	 * Allow third-parties to filter whether the customer can renew a subscription early.
+	 *
+	 * @since 2.3.0
+	 *
+	 * @param bool            $can_renew_early Whether early renewal is permitted.
+	 * @param WC_Subscription $subscription    The subscription being renewed early.
+	 * @param int             $user_id         The user&#039;s ID.
+	 * @param string          $reason          The reason why the subscription cannot be renewed early. Empty
+	 *                                         string if the subscription can be renewed early.
+	 */
+	return apply_filters( &#039;woocommerce_subscriptions_can_user_renew_early&#039;, $can_renew_early, $subscription, $user_id, $reason );
+}
+
+/**
+ * Returns a URL for early renewal of a subscription.
+ *
+ * @param  int|WC_Subscription $subscription WC_Subscription ID, or instance of a WC_Subscription object.
+ * @return string The early renewal URL.
+ * @since  2.3.0
+ */
+function wcs_get_early_renewal_url( $subscription ) {
+	$subscription_id = is_a( $subscription, &#039;WC_Subscription&#039; ) ? $subscription-&gt;get_id() : absint( $subscription );
+
+	$url = add_query_arg( array(
+		&#039;subscription_renewal_early&#039; =&gt; $subscription_id,
+		&#039;subscription_renewal&#039;       =&gt; &#039;true&#039;,
+	), get_permalink( wc_get_page_id( &#039;myaccount&#039; ) ) );
+
+	/**
+	 * Allow third-parties to filter the early renewal URL.
+	 *
+	 * @since 2.3.0
+	 * @param string $url The early renewal URL.
+	 * @param int    $subscription_id The ID of the subscription to renew to.
+	 */
+	return apply_filters( &#039;woocommerce_subscriptions_get_early_renewal_url&#039;, $url, $subscription_id );
+}
+
+/**
+ * Update the subscription dates after processing an early renewal.
+ *
+ * @since 2.6.0
+ *
+ * @param WC_Subscription $subscription The subscription to update.
+ * @param WC_Order $early_renewal       The early renewal.
+ */
+function wcs_update_dates_after_early_renewal( $subscription, $early_renewal ) {
+	$dates_to_update = WCS_Early_Renewal_Manager::get_dates_to_update( $subscription );
+
+	if ( ! empty( $dates_to_update ) ) {
+		// translators: %s: order ID.
+		$order_number = sprintf( _x( &#039;#%s&#039;, &#039;hash before order number&#039;, &#039;woocommerce-subscriptions&#039; ), $early_renewal-&gt;get_order_number() );
+		$order_link   = sprintf( &#039;&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;&#039;, esc_url( wcs_get_edit_post_link( $early_renewal-&gt;get_id() ) ), $order_number );
+
+		try {
+			$subscription-&gt;update_dates( $dates_to_update );
+
+			// translators: placeholder contains a link to the order&#039;s edit screen.
+			$subscription-&gt;add_order_note( sprintf( __( &#039;Customer successfully renewed early with order %s.&#039;, &#039;woocommerce-subscriptions&#039; ), $order_link ) );
+		} catch ( Exception $e ) {
+			// translators: placeholder contains a link to the order&#039;s edit screen.
+			$subscription-&gt;add_order_note( sprintf( __( &#039;Failed to update subscription dates after customer renewed early with order %s.&#039;, &#039;woocommerce-subscriptions&#039; ), $order_link ) );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>

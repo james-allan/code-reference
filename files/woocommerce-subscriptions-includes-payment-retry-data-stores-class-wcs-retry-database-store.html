@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663659953">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663659953">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS.html">WCS</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS-Retry.html">Retry</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS-Retry-Store.html">Store</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-retry-database-store.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Store retry details in the WordPress custom table.
+ *
+ * @package        WooCommerce Subscriptions
+ * @subpackage     WCS_Retry_Store
+ * @category       Class
+ * @author         Prospress
+ * @since          2.4
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+} // Exit if accessed directly
+
+class WCS_Retry_Database_Store extends WCS_Retry_Store {
+
+	/**
+	 * Custom table name we&#039;re using to store our retries data.
+	 *
+	 * @var string
+	 */
+	const TABLE_NAME = &#039;wcs_payment_retries&#039;;
+
+	/**
+	 * Init method.
+	 */
+	public function init() {
+		add_filter( &#039;date_query_valid_columns&#039;, array( $this, &#039;add_date_valid_column&#039; ) );
+	}
+
+	/**
+	 * Save the details of a retry to the database
+	 *
+	 * @param WCS_Retry $retry the Retry we want to save.
+	 *
+	 * @return int the retry&#039;s ID
+	 * @since 2.4
+	 */
+	public function save( WCS_Retry $retry ) {
+		global $wpdb;
+
+		$query_data   = array(
+			&#039;order_id&#039; =&gt; $retry-&gt;get_order_id(),
+			&#039;status&#039;   =&gt; $retry-&gt;get_status(),
+			&#039;date_gmt&#039; =&gt; $retry-&gt;get_date_gmt(),
+			&#039;rule_raw&#039; =&gt; wp_json_encode( $retry-&gt;get_rule()-&gt;get_raw_data() ),
+		);
+		$query_format = array(
+			&#039;%d&#039;,
+			&#039;%s&#039;,
+			&#039;%s&#039;,
+			&#039;%s&#039;,
+		);
+
+		if ( $retry-&gt;get_id() &gt; 0 ) {
+			$query_data[&#039;retry_id&#039;] = $retry-&gt;get_id();
+			$query_format[]         = &#039;%d&#039;;
+		}
+
+		if ( $retry-&gt;get_id() &amp;&amp; $this-&gt;get_retry( $retry-&gt;get_id() ) ) {
+			$wpdb-&gt;update(
+				$this-&gt;get_full_table_name(),
+				$query_data,
+				array( &#039;retry_id&#039; =&gt; $retry-&gt;get_id() ),
+				$query_format
+			);
+
+			$retry_id = absint( $retry-&gt;get_id() );
+		} else {
+			$wpdb-&gt;insert(
+				$this-&gt;get_full_table_name(),
+				$query_data,
+				$query_format
+			);
+
+			$retry_id = absint( $wpdb-&gt;insert_id );
+		}
+
+		return $retry_id;
+	}
+
+	/**
+	 * Get the details of a retry from the database
+	 *
+	 * @param int $retry_id The retry we want to get.
+	 *
+	 * @return null|WCS_Retry
+	 * @since 2.4
+	 */
+	public function get_retry( $retry_id ) {
+		global $wpdb;
+
+		$retry     = null;
+		$raw_retry = $wpdb-&gt;get_row(
+			$wpdb-&gt;prepare(
+				&quot;SELECT * FROM {$this-&gt;get_full_table_name()} WHERE retry_id = %d LIMIT 1&quot;,
+				$retry_id
+			)
+		);
+
+		if ( $raw_retry ) {
+			$retry = new WCS_Retry( array(
+				&#039;id&#039;       =&gt; $raw_retry-&gt;retry_id,
+				&#039;order_id&#039; =&gt; $raw_retry-&gt;order_id,
+				&#039;status&#039;   =&gt; $raw_retry-&gt;status,
+				&#039;date_gmt&#039; =&gt; $raw_retry-&gt;date_gmt,
+				&#039;rule_raw&#039; =&gt; json_decode( $raw_retry-&gt;rule_raw ),
+			) );
+		}
+
+		return $retry;
+	}
+
+	/**
+	 * Deletes a retry.
+	 *
+	 * @param int $retry_id
+	 *
+	 * @return bool
+	 * @since 2.4
+	 */
+	public function delete_retry( $retry_id ) {
+		global $wpdb;
+
+		return (bool) $wpdb-&gt;delete( $this-&gt;get_full_table_name(), array( &#039;retry_id&#039; =&gt; $retry_id ), array( &#039;%d&#039; ) );
+	}
+
+	/**
+	 * Get a set of retries from the database
+	 *
+	 * @param array  $args   A set of filters:
+	 *                       &#039;status&#039;: filter to only retries of a certain status, either &#039;pending&#039;, &#039;processing&#039;, &#039;failed&#039; or &#039;complete&#039;. Default: &#039;any&#039;, which will return all retries.
+	 *                       &#039;date_query&#039;: array of dates to filter retries to those that occur &#039;after&#039; or &#039;before&#039; a certain date (or between those two dates). Should be a MySQL formated date/time string.
+	 *                       &#039;orderby&#039;: Order by which property?
+	 *                       &#039;order&#039;: Order in ASC/DESC.
+	 *                       &#039;order_id&#039;: filter retries to those which belong to a certain order ID.
+	 *                       &#039;limit&#039;: How many retries we want to get.
+	 * @param string $return Defines in which format return the entries. options:
+	 *                       &#039;objects&#039;: Returns an array of WCS_Retry objects
+	 *                       &#039;ids&#039;: Returns an array of ids.
+	 *
+	 * @return array An array of WCS_Retry objects or ids.
+	 * @since 2.4
+	 */
+	public function get_retries( $args = array(), $return = &#039;objects&#039; ) {
+		global $wpdb;
+
+		$args = wp_parse_args( $args, array(
+			&#039;status&#039;     =&gt; &#039;any&#039;,
+			&#039;date_query&#039; =&gt; array(),
+			&#039;orderby&#039;    =&gt; &#039;date_gmt&#039;,
+			&#039;order&#039;      =&gt; &#039;DESC&#039;,
+			&#039;order_id&#039;   =&gt; false,
+			&#039;limit&#039;      =&gt; -1,
+		) );
+
+		// Map the internal properties to the database column names.
+		if ( strtolower( $args[&#039;orderby&#039;] ) === &#039;id&#039; ) {
+			$args[&#039;orderby&#039;] = &#039;retry_id&#039;;
+		} elseif ( strtolower( $args[&#039;orderby&#039;] ) === &#039;date&#039; ) {
+			$args[&#039;orderby&#039;] = &#039;date_gmt&#039;;
+		}
+
+		$where = &#039; WHERE 1=1&#039;;
+
+		if ( &#039;any&#039; !== $args[&#039;status&#039;] ) {
+			$where .= $wpdb-&gt;prepare(
+				&#039; AND status = %s&#039;,
+				$args[&#039;status&#039;]
+			);
+		}
+
+		if ( absint( $args[&#039;order_id&#039;] ) ) {
+			$where .= $wpdb-&gt;prepare( &#039; AND order_id = %d&#039;, $args[&#039;order_id&#039;] );
+		}
+
+		if ( ! empty( $args[&#039;date_query&#039;] ) ) {
+			$date_query = new WP_Date_Query( $args[&#039;date_query&#039;], &#039;date_gmt&#039; );
+			$where     .= $date_query-&gt;get_sql();
+		}
+
+		$orderby = sprintf( &#039; ORDER BY %s&#039;, sanitize_sql_orderby( &quot;{$args[&#039;orderby&#039;]} {$args[&#039;order&#039;]}&quot; ) );
+		$limit   = ( $args[&#039;limit&#039;] &gt; 0 ) ? $wpdb-&gt;prepare( &#039; LIMIT %d&#039;, $args[&#039;limit&#039;] ) : &#039;&#039;;
+
+		$raw_retries = $wpdb-&gt;get_results( &quot;SELECT * FROM {$this-&gt;get_full_table_name()} $where $orderby $limit&quot; );
+		$retries     = array();
+
+		foreach ( $raw_retries as $raw_retry ) {
+			if ( &#039;ids&#039; === $return ) {
+				$retries[ $raw_retry-&gt;retry_id ] = $raw_retry-&gt;retry_id;
+			} else {
+				$retries[ $raw_retry-&gt;retry_id ] = new WCS_Retry( array(
+					&#039;id&#039;       =&gt; $raw_retry-&gt;retry_id,
+					&#039;order_id&#039; =&gt; $raw_retry-&gt;order_id,
+					&#039;status&#039;   =&gt; $raw_retry-&gt;status,
+					&#039;date_gmt&#039; =&gt; $raw_retry-&gt;date_gmt,
+					&#039;rule_raw&#039; =&gt; json_decode( $raw_retry-&gt;rule_raw ),
+				) );
+			}
+		}
+
+		return $retries;
+	}
+
+	/**
+	 * Adds our table column to WP_Date_Query valid columns.
+	 *
+	 * @param array $columns Columns array we want to modify.
+	 *
+	 * @return array
+	 * @since 2.4
+	 */
+	public function add_date_valid_column( $columns ) {
+		$columns[] = &#039;date_gmt&#039;;
+
+		return $columns;
+	}
+
+	/**
+	 * Returns our table name with no prefix.
+	 *
+	 * @return string
+	 * @since 2.4
+	 */
+	public static function get_table_name() {
+		return self::TABLE_NAME;
+	}
+
+	/**
+	 * Returns the table name with prefix.
+	 *
+	 * @return string
+	 * @since 2.4
+	 */
+	public static function get_full_table_name() {
+		global $wpdb;
+
+		return $wpdb-&gt;prefix . self::TABLE_NAME;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 20th, 2022 at 07:45 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663659953"></script>
+    <script src="../js/search.js?updated=1663659953"></script>
+</body>
+</html>
