@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-cart-validator.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Cart Validator Class
+ *
+ * Validates the Cart contents
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Cart_Validator
+ * @category   Class
+ * @since      2.6.0
+ */
+class WC_Subscriptions_Cart_Validator {
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 */
+	public static function init() {
+
+		add_filter( &#039;woocommerce_add_to_cart_validation&#039;, array( __CLASS__, &#039;maybe_empty_cart&#039; ), 10, 5 );
+		add_filter( &#039;woocommerce_cart_loaded_from_session&#039;, array( __CLASS__, &#039;validate_cart_contents_for_mixed_checkout&#039; ), 10 );
+		add_filter( &#039;woocommerce_add_to_cart_validation&#039;, array( __CLASS__, &#039;can_add_subscription_product_to_cart&#039; ), 10, 6 );
+
+	}
+
+	/**
+	 * When a subscription is added to the cart, remove other products/subscriptions to
+	 * work with PayPal Standard, which only accept one subscription per checkout.
+	 *
+	 * If multiple purchase flag is set, allow them to be added at the same time.
+	 *
+	 * @since 2.6.0
+	 */
+	public static function maybe_empty_cart( $valid, $product_id, $quantity, $variation_id = &#039;&#039;, $variations = array() ) {
+		$is_subscription                 = WC_Subscriptions_Product::is_subscription( $product_id );
+		$cart_contains_subscription      = WC_Subscriptions_Cart::cart_contains_subscription();
+		$payment_gateways_handler        = WC_Subscriptions_Core_Plugin::instance()-&gt;get_gateways_handler_class();
+		$multiple_subscriptions_possible = $payment_gateways_handler::one_gateway_supports( &#039;multiple_subscriptions&#039; );
+		$manual_renewals_enabled         = wcs_is_manual_renewal_enabled();
+		$canonical_product_id            = ! empty( $variation_id ) ? $variation_id : $product_id;
+
+		if ( $is_subscription &amp;&amp; &#039;yes&#039; !== get_option( WC_Subscriptions_Admin::$option_prefix . &#039;_multiple_purchase&#039;, &#039;no&#039; ) ) {
+
+			// Generate a cart item key from variation and cart item data - which may be added by other plugins
+			$cart_item_data = (array) apply_filters( &#039;woocommerce_add_cart_item_data&#039;, array(), $product_id, $variation_id, $quantity );
+			$cart_item_id   = WC()-&gt;cart-&gt;generate_cart_id( $product_id, $variation_id, $variations, $cart_item_data );
+			$product        = wc_get_product( $product_id );
+
+			// If the product is sold individually or if the cart doesn&#039;t already contain this product, empty the cart.
+			if ( ( $product &amp;&amp; $product-&gt;is_sold_individually() ) || ! WC()-&gt;cart-&gt;find_product_in_cart( $cart_item_id ) ) {
+				WC()-&gt;cart-&gt;empty_cart();
+			}
+		} elseif ( $is_subscription &amp;&amp; wcs_cart_contains_renewal() &amp;&amp; ! $multiple_subscriptions_possible &amp;&amp; ! $manual_renewals_enabled ) {
+
+			WC_Subscriptions_Cart::remove_subscriptions_from_cart();
+
+			wc_add_notice( __( &#039;A subscription renewal has been removed from your cart. Multiple subscriptions can not be purchased at the same time.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;notice&#039; );
+
+		} elseif ( $is_subscription &amp;&amp; $cart_contains_subscription &amp;&amp; ! $multiple_subscriptions_possible &amp;&amp; ! $manual_renewals_enabled &amp;&amp; ! WC_Subscriptions_Cart::cart_contains_product( $canonical_product_id ) ) {
+
+			WC_Subscriptions_Cart::remove_subscriptions_from_cart();
+
+			wc_add_notice( __( &#039;A subscription has been removed from your cart. Due to payment gateway restrictions, different subscription products can not be purchased at the same time.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;notice&#039; );
+
+		} elseif ( $cart_contains_subscription &amp;&amp; &#039;yes&#039; !== get_option( WC_Subscriptions_Admin::$option_prefix . &#039;_multiple_purchase&#039;, &#039;no&#039; ) ) {
+
+			WC_Subscriptions_Cart::remove_subscriptions_from_cart();
+
+			wc_add_notice( __( &#039;A subscription has been removed from your cart. Products and subscriptions can not be purchased at the same time.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;notice&#039; );
+
+			// Redirect to cart page to remove subscription &amp; notify shopper
+			add_filter( &#039;woocommerce_add_to_cart_fragments&#039;, array( __CLASS__, &#039;redirect_ajax_add_to_cart&#039; ) );
+		}
+
+		return $valid;
+	}
+
+	/**
+	 * This checks cart items for mixed checkout.
+	 *
+	 * @param $cart WC_Cart the one we got from session
+	 * @return WC_Cart $cart
+	 *
+	 * @since 2.6.0
+	 */
+	public static function validate_cart_contents_for_mixed_checkout( $cart ) {
+
+		// When mixed checkout is enabled
+		if ( $cart-&gt;cart_contents &amp;&amp; &#039;yes&#039; === get_option( WC_Subscriptions_Admin::$option_prefix . &#039;_multiple_purchase&#039;, &#039;no&#039; ) ) {
+			return $cart;
+		}
+
+		if ( ! WC_Subscriptions_Cart::cart_contains_subscription() &amp;&amp; ! wcs_cart_contains_renewal() ) {
+			return $cart;
+		}
+
+		foreach ( $cart-&gt;cart_contents as $key =&gt; $item ) {
+
+			// If two different subscription products are in the cart
+			// or a non-subscription product is found in the cart containing subscriptions
+			// ( maybe because of carts merge while logging in )
+			if ( ! WC_Subscriptions_Product::is_subscription( $item[&#039;data&#039;] ) ||
+				WC_Subscriptions_Cart::cart_contains_other_subscription_products( wcs_get_canonical_product_id( $item[&#039;data&#039;] ) ) ) {
+				// remove the subscriptions from the cart
+				WC_Subscriptions_Cart::remove_subscriptions_from_cart();
+
+				// and add an appropriate notice
+				wc_add_notice( __( &#039;Your cart has been emptied of subscription products. Only one subscription product can be purchased at a time.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;notice&#039; );
+
+				// Redirect to cart page to remove subscription &amp; notify shopper
+				add_filter( &#039;woocommerce_add_to_cart_fragments&#039;, array( __CLASS__, &#039;redirect_ajax_add_to_cart&#039; ) );
+
+				break;
+			}
+		}
+
+		return $cart;
+	}
+
+	/**
+	 * Don&#039;t allow new subscription products to be added to the cart if it contains a subscription renewal already.
+	 *
+	 * @since 2.6.0
+	 */
+	public static function can_add_subscription_product_to_cart( $can_add, $product_id, $quantity, $variation_id = &#039;&#039;, $variations = array(), $item_data = array() ) {
+
+		if ( $can_add &amp;&amp; ! isset( $item_data[&#039;subscription_renewal&#039;] ) &amp;&amp; wcs_cart_contains_renewal() &amp;&amp; WC_Subscriptions_Product::is_subscription( $product_id ) ) {
+
+			wc_add_notice( __( &#039;That subscription product can not be added to your cart as it already contains a subscription renewal.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+			$can_add = false;
+		}
+
+		return $can_add;
+	}
+
+	/**
+	 * Adds the required cart AJAX args and filter callbacks to cause an error and redirect the customer.
+	 *
+	 * Attached by @see WC_Subscriptions_Cart_Validator::validate_cart_contents_for_mixed_checkout() and
+	 * @see WC_Subscriptions_Cart_Validator::maybe_empty_cart() when the store has multiple subscription
+	 * purcahses disabled, the cart already contains products and the customer adds a new item or logs in
+	 * causing a cart merge.
+	 *
+	 * @since 4.0.0
+	 *
+	 * @param array  $fragments The add to cart AJAX args.
+	 * @return array $fragments
+	 */
+	public static function add_to_cart_ajax_redirect( $fragments ) {
+		$fragments[&#039;error&#039;]       = true;
+		$fragments[&#039;product_url&#039;] = wc_get_cart_url();
+
+		# Force error on add_to_cart() to redirect
+		add_filter( &#039;woocommerce_add_to_cart_validation&#039;, &#039;__return_false&#039;, 10 );
+		add_filter( &#039;woocommerce_cart_redirect_after_error&#039;, &#039;wc_get_cart_url&#039;, 10, 2 );
+		do_action( &#039;wc_ajax_add_to_cart&#039; );
+
+		return $fragments;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html">GatewaysPayPal</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-paypal-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_paypal_id">
+        wcs_get_paypal_id()
+        <a href="#function_wcs_get_paypal_id" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-gateways-paypal-includes-wcs-paypal-functions.html#source-view.23">woocommerce-subscriptions/vendor/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns a PayPal Subscription ID or Billing Agreement ID use to process payment for a given subscription or order.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_paypal_id</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_set_paypal_id">
+        wcs_set_paypal_id()
+        <a href="#function_wcs_set_paypal_id" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-gateways-paypal-includes-wcs-paypal-functions.html#source-view.39">woocommerce-subscriptions/vendor/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Stores a PayPal Standard Subscription ID or Billing Agreement ID in the post meta of a given order and the user meta of the order&#039;s user.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_set_paypal_id</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paypal_subscription_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$paypal_subscription_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_is_paypal_profile_a">
+        wcs_is_paypal_profile_a()
+        <a href="#function_wcs_is_paypal_profile_a" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-gateways-paypal-includes-wcs-paypal-functions.html#source-view.67">woocommerce-subscriptions/vendor/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks if a given profile ID is of a certain type.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_is_paypal_profile_a</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$profile_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$profile_type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>PayPal offers many different profile IDs that can be used for recurring payments, including:</p>
+<ul>
+<li>Express Checkout Billing Agreement IDs for Reference Transactios</li>
+<li>Express Checkout Recurring Payment profile IDs</li>
+<li>PayPal Standard Subscription IDs</li>
+<li>outdated PayPal Standard Subscription IDs (for accounts prior to 2009 that have not been upgraded).</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$profile_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A PayPal Standard Subscription ID or Express Checkout Billing Agreement ID</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$profile_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A type of profile ID, can be 'billing_agreement' or 'old_id'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_paypal_item_name">
+        wcs_get_paypal_item_name()
+        <a href="#function_wcs_get_paypal_item_name" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-gateways-paypal-includes-wcs-paypal-functions.html#source-view.87">woocommerce-subscriptions/vendor/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Limit the length of item names to be within the allowed 127 character range.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_paypal_item_name</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item_name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$item_name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_calculate_paypal_trial_periods_until">
+        wcs_calculate_paypal_trial_periods_until()
+        <a href="#function_wcs_calculate_paypal_trial_periods_until" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-gateways-paypal-includes-wcs-paypal-functions.html#source-view.100">woocommerce-subscriptions/vendor/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Takes a timestamp for a date in the future and calculates the number of days between now and then</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_calculate_paypal_trial_periods_until</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$future_timestamp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$future_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_is_paypal_api_page">
+        wcs_is_paypal_api_page()
+        <a href="#function_wcs_is_paypal_api_page" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-gateways-paypal-includes-wcs-paypal-functions.html#source-view.166">woocommerce-subscriptions/vendor/subscriptions-core/includes/gateways/paypal/includes/wcs-paypal-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">166</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check if the $_SERVER global has PayPal WC-API endpoint URL slug in its &#039;REQUEST_URI&#039; value</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_is_paypal_api_page</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>In some cases, we need tdo be able to check if we're on the PayPal API page before $wp's query vars are setup,
+like from WC_Subscriptions_Product::is_purchasable() and WC_Product_Subscription_Variation::is_purchasable(),
+both of which are called within WC_Cart::get_cart_from_session(), which is run before query vars are setup.</p>
+</section>
+
+    
+    
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions PayPal Functions
+ *
+ * Helper functions to check for data types etc.
+ *
+ * @package     WooCommerce Subscriptions
+ * @subpackage  Gateways/PayPal
+ * @author      Brent Shepherd
+ * @since       2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * Returns a PayPal Subscription ID or Billing Agreement ID use to process payment for a given subscription or order.
+ *
+ * @param int The ID of a WC_Order or WC_Subscription object
+ * @since 2.0
+ */
+function wcs_get_paypal_id( $order ) {
+
+	if ( ! is_object( $order ) ) {
+		$order = wc_get_order( $order );
+	}
+
+	return wcs_get_objects_property( $order, &#039;_paypal_subscription_id&#039; );
+}
+
+/**
+ * Stores a PayPal Standard Subscription ID or Billing Agreement ID in the post meta of a given order and the user meta of the order&#039;s user.
+ *
+ * @param int|object A WC_Order or WC_Subscription object or the ID of a WC_Order or WC_Subscription object
+ * @param string A PayPal Standard Subscription ID or Express Checkout Billing Agreement ID
+ * @since 2.0
+ */
+function wcs_set_paypal_id( $order, $paypal_subscription_id ) {
+
+	if ( ! is_object( $order ) ) {
+		$order = wc_get_order( $order );
+	}
+
+	if ( wcs_is_paypal_profile_a( $paypal_subscription_id, &#039;billing_agreement&#039; ) ) {
+		if ( ! in_array( $paypal_subscription_id, get_user_meta( $order-&gt;get_user_id(), &#039;_paypal_subscription_id&#039;, false ) ) ) {
+			add_user_meta( $order-&gt;get_user_id(), &#039;_paypal_subscription_id&#039;, $paypal_subscription_id );
+		}
+	}
+
+	wcs_set_objects_property( $order, &#039;paypal_subscription_id&#039;, $paypal_subscription_id );
+}
+
+/**
+ * Checks if a given profile ID is of a certain type.
+ *
+ * PayPal offers many different profile IDs that can be used for recurring payments, including:
+ * - Express Checkout Billing Agreement IDs for Reference Transactios
+ * - Express Checkout Recurring Payment profile IDs
+ * - PayPal Standard Subscription IDs
+ * - outdated PayPal Standard Subscription IDs (for accounts prior to 2009 that have not been upgraded).
+ *
+ * @param string $profile_id A PayPal Standard Subscription ID or Express Checkout Billing Agreement ID
+ * @param string $profile_type A type of profile ID, can be &#039;billing_agreement&#039; or &#039;old_id&#039;.
+ * @since 2.0
+ */
+function wcs_is_paypal_profile_a( $profile_id, $profile_type ) {
+
+	if ( &#039;billing_agreement&#039; === $profile_type &amp;&amp; &#039;B-&#039; == substr( $profile_id, 0, 2 ) ) {
+		$is_a = true;
+	} elseif ( &#039;out_of_date_id&#039; === $profile_type &amp;&amp; &#039;S-&#039; == substr( $profile_id, 0, 2 ) ) {
+		$is_a = true;
+	} else {
+		$is_a = false;
+	}
+
+	return apply_filters( &#039;woocommerce_subscriptions_is_paypal_profile_a_&#039; . $profile_type, $is_a, $profile_id );
+}
+
+/**
+ * Limit the length of item names to be within the allowed 127 character range.
+ *
+ * @param  string $item_name
+ * @return string
+ * @since 2.0
+ */
+function wcs_get_paypal_item_name( $item_name ) {
+
+	if ( strlen( $item_name ) &gt; 127 ) {
+		$item_name = substr( $item_name, 0, 124 ) . &#039;...&#039;;
+	}
+	return html_entity_decode( $item_name, ENT_NOQUOTES, &#039;UTF-8&#039; );
+}
+
+/**
+ * Takes a timestamp for a date in the future and calculates the number of days between now and then
+ *
+ * @since 2.0
+ */
+function wcs_calculate_paypal_trial_periods_until( $future_timestamp ) {
+
+	$seconds_until_next_payment = $future_timestamp - gmdate( &#039;U&#039; );
+	$days_until_next_payment    = ceil( $seconds_until_next_payment / ( 60 * 60 * 24 ) );
+
+	if ( $days_until_next_payment &lt;= 90 ) { // Can&#039;t be more than 90 days free trial
+
+		$first_trial_length = $days_until_next_payment;
+		$first_trial_period = &#039;D&#039;;
+
+		$second_trial_length = 0;
+		$second_trial_period = &#039;D&#039;;
+
+	} else { // We need to use a second trial period
+
+		if ( $days_until_next_payment &gt; 365 * 2 ) { // We need to use years because PayPal has a maximum of 24 months
+
+			$first_trial_length = floor( $days_until_next_payment / 365 );
+			$first_trial_period = &#039;Y&#039;;
+
+			$second_trial_length = $days_until_next_payment % 365;
+			$second_trial_period = &#039;D&#039;;
+
+		} elseif ( $days_until_next_payment &gt; 365 ) { // Less than two years but more than one, use months
+
+			$first_trial_length = floor( $days_until_next_payment / 30 );
+			$first_trial_period = &#039;M&#039;;
+
+			$days_remaining = $days_until_next_payment % 30;
+
+			if ( $days_remaining &lt;= 90 ) { // We can use days
+				$second_trial_length = $days_remaining;
+				$second_trial_period = &#039;D&#039;;
+			} else { // We need to use weeks
+				$second_trial_length = floor( $days_remaining / 7 );
+				$second_trial_period = &#039;W&#039;;
+			}
+		} else {  // We need to use weeks
+
+			$first_trial_length = floor( $days_until_next_payment / 7 );
+			$first_trial_period = &#039;W&#039;;
+
+			$second_trial_length = $days_until_next_payment % 7;
+			$second_trial_period = &#039;D&#039;;
+
+		}
+	}
+
+	return array(
+		&#039;first_trial_length&#039;  =&gt; $first_trial_length,
+		&#039;first_trial_period&#039;  =&gt; $first_trial_period,
+		&#039;second_trial_length&#039; =&gt; $second_trial_length,
+		&#039;second_trial_period&#039; =&gt; $second_trial_period,
+	);
+}
+
+/**
+ * Check if the $_SERVER global has PayPal WC-API endpoint URL slug in its &#039;REQUEST_URI&#039; value
+ *
+ * In some cases, we need tdo be able to check if we&#039;re on the PayPal API page before $wp&#039;s query vars are setup,
+ * like from WC_Subscriptions_Product::is_purchasable() and WC_Product_Subscription_Variation::is_purchasable(),
+ * both of which are called within WC_Cart::get_cart_from_session(), which is run before query vars are setup.
+ *
+ * @return 2.0.13
+ * @return bool
+ **/
+function wcs_is_paypal_api_page() {
+	return ( false !== strpos( $_SERVER[&#039;REQUEST_URI&#039;], &#039;wc-api/wcs_paypal&#039; ) );
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

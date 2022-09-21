@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-subscription-data-store-cpt.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+/**
+ * Subscription Data Store: Stored in CPT.
+ *
+ * Extends WC_Order_Data_Store_CPT to make sure subscription related meta data is read/updated.
+ *
+ * @version  2.2.0
+ * @category Class
+ * @author   Prospress
+ */
+class WCS_Subscription_Data_Store_CPT extends WC_Order_Data_Store_CPT implements WC_Object_Data_Store_Interface, WC_Order_Data_Store_Interface {
+
+	/**
+	 * Define subscription specific data which augments the meta of an order.
+	 *
+	 * The meta keys here determine the prop data that needs to be manually set. We can&#039;t use
+	 * the $internal_meta_keys property from WC_Order_Data_Store_CPT because we want its value
+	 * too, so instead we create our own and merge it into $internal_meta_keys in __construct.
+	 *
+	 * @since 2.2.0
+	 * @var array
+	 */
+	protected $subscription_internal_meta_keys = array(
+		&#039;_schedule_trial_end&#039;,
+		&#039;_schedule_next_payment&#039;,
+		&#039;_schedule_cancelled&#039;,
+		&#039;_schedule_end&#039;,
+		&#039;_schedule_payment_retry&#039;,
+		&#039;_subscription_switch_data&#039;,
+		&#039;_schedule_start&#039;,
+	);
+
+	/**
+	 * Array of subscription specific data which augments the meta of an order in the form meta_key =&gt; prop_key
+	 *
+	 * Used to read/update props on the subscription.
+	 *
+	 * @since 2.2.0
+	 * @var array
+	 */
+	protected $subscription_meta_keys_to_props = array(
+		&#039;_billing_period&#039;           =&gt; &#039;billing_period&#039;,
+		&#039;_billing_interval&#039;         =&gt; &#039;billing_interval&#039;,
+		&#039;_suspension_count&#039;         =&gt; &#039;suspension_count&#039;,
+		&#039;_cancelled_email_sent&#039;     =&gt; &#039;cancelled_email_sent&#039;,
+		&#039;_requires_manual_renewal&#039;  =&gt; &#039;requires_manual_renewal&#039;,
+		&#039;_trial_period&#039;             =&gt; &#039;trial_period&#039;,
+
+		&#039;_schedule_trial_end&#039;       =&gt; &#039;schedule_trial_end&#039;,
+		&#039;_schedule_next_payment&#039;    =&gt; &#039;schedule_next_payment&#039;,
+		&#039;_schedule_cancelled&#039;       =&gt; &#039;schedule_cancelled&#039;,
+		&#039;_schedule_end&#039;             =&gt; &#039;schedule_end&#039;,
+		&#039;_schedule_payment_retry&#039;   =&gt; &#039;schedule_payment_retry&#039;,
+		&#039;_schedule_start&#039;           =&gt; &#039;schedule_start&#039;,
+
+		&#039;_subscription_switch_data&#039; =&gt; &#039;switch_data&#039;,
+	);
+
+	/**
+	 * Constructor.
+	 */
+	public function __construct() {
+
+		// Register any custom date types as internal meta keys and props.
+		foreach ( wcs_get_subscription_date_types() as $date_type =&gt; $date_name ) {
+			// The last payment date is derived from other sources and shouldn&#039;t be stored on a subscription.
+			if ( &#039;last_payment&#039; === $date_type ) {
+				continue;
+			}
+
+			$meta_key = wcs_get_date_meta_key( $date_type );
+
+			// Skip any dates which are already core date types. We don&#039;t want custom date types to override them.
+			if ( isset( $this-&gt;subscription_meta_keys_to_props[ $meta_key ] ) ) {
+				continue;
+			}
+
+			$this-&gt;subscription_meta_keys_to_props[ $meta_key ] = wcs_maybe_prefix_key( $date_type, &#039;schedule_&#039; );
+			$this-&gt;subscription_internal_meta_keys[]            = $meta_key;
+		}
+
+		// Exclude the subscription related meta data we set and manage manually from the objects &quot;meta&quot; data
+		$this-&gt;internal_meta_keys = array_merge( $this-&gt;internal_meta_keys, $this-&gt;subscription_internal_meta_keys );
+	}
+
+	/**
+	 * Create a new subscription in the database.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @since 2.2.0
+	 */
+	public function create( &amp;$subscription ) {
+		parent::create( $subscription );
+		do_action( &#039;woocommerce_new_subscription&#039;, $subscription-&gt;get_id() );
+	}
+
+	/**
+	 * Returns an array of meta for an object.
+	 *
+	 * Ignore meta data that we don&#039;t want accessible on the object via meta APIs.
+	 *
+	 * @since  2.3.0
+	 * @param  WC_Data $object
+	 * @return array
+	 */
+	public function read_meta( &amp;$object ) {
+		$meta_data = parent::read_meta( $object );
+
+		$props_to_ignore = $this-&gt;get_props_to_ignore();
+
+		foreach ( $meta_data as $index =&gt; $meta_object ) {
+			if ( array_key_exists( $meta_object-&gt;meta_key, $props_to_ignore ) ) {
+				unset( $meta_data[ $index ] );
+			}
+		}
+
+		return $meta_data;
+	}
+
+	/**
+	 * Read subscription data.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @param object $post_object
+	 * @since 2.2.0
+	 */
+	protected function read_order_data( &amp;$subscription, $post_object ) {
+
+		// Set all order meta data, as well as data defined by WC_Subscription::$extra_keys which has corresponding setter methods
+		parent::read_order_data( $subscription, $post_object );
+
+		$props_to_set = $dates_to_set = array();
+
+		foreach ( $this-&gt;subscription_meta_keys_to_props as $meta_key =&gt; $prop_key ) {
+			if ( 0 === strpos( $prop_key, &#039;schedule&#039; ) || in_array( $meta_key, $this-&gt;subscription_internal_meta_keys ) ) {
+
+				$meta_value = get_post_meta( $subscription-&gt;get_id(), $meta_key, true );
+
+				// Dates are set via update_dates() to make sure relationships between dates are validated
+				if ( 0 === strpos( $prop_key, &#039;schedule&#039; ) ) {
+					$date_type = str_replace( &#039;schedule_&#039;, &#039;&#039;, $prop_key );
+
+					if ( &#039;start&#039; === $date_type &amp;&amp; ! $meta_value ) {
+						$meta_value = $subscription-&gt;get_date( &#039;date_created&#039; );
+					}
+
+					$dates_to_set[ $date_type ] = ( false == $meta_value ) ? 0 : $meta_value;
+				} else {
+					$props_to_set[ $prop_key ] = $meta_value;
+				}
+			}
+		}
+
+		/**
+		 * WC 3.5.0 and our 2.4.0 post author upgrade scripts didn&#039;t account for subscriptions created manually by admin users with a user ID not equal to 1.
+		 * This resulted in those subscription post author columns not being updated and so linked to the admin user who created them, not the customer.
+		 *
+		 * To make sure all subscriptions are linked to the correct customer, we revert to the previous behavior of
+		 * getting the customer user from post meta.
+		 * The fix is only applied on WC 3.5.0 because 3.5.1 brought back the old way (pre 3.5.0) of getting the
+		 * customer ID for orders.
+		 *
+		 * @see https://github.com/Prospress/woocommerce-subscriptions/issues/3036
+		 */
+		if ( &#039;3.5.0&#039; === WC()-&gt;version ) {
+			$props_to_set[&#039;customer_id&#039;] = get_post_meta( $subscription-&gt;get_id(), &#039;_customer_user&#039;, true );
+		}
+
+		$subscription-&gt;update_dates( $dates_to_set );
+		$subscription-&gt;set_props( $props_to_set );
+	}
+
+	/**
+	 * Update subscription in the database.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @since 2.2.0
+	 */
+	public function update( &amp;$subscription ) {
+
+		// We don&#039;t want to call parent here becuase WC_Order_Data_Store_CPT includes a JIT setting of the paid date which is not needed for subscriptions, and also very resource intensive
+		Abstract_WC_Order_Data_Store_CPT::update( $subscription );
+
+		// We used to call parent::update() above, which triggered this hook, so we trigger it manually here for backward compatibilty (and to improve compatibility with 3rd party code which may run validation or additional operations on it which should also be applied to a subscription)
+		do_action( &#039;woocommerce_update_order&#039;, $subscription-&gt;get_id() );
+
+		do_action( &#039;woocommerce_update_subscription&#039;, $subscription-&gt;get_id() );
+	}
+
+	/**
+	 * Update post meta for a subscription based on it&#039;s settings in the WC_Subscription class.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @since 2.2.0
+	 */
+	protected function update_post_meta( &amp;$subscription ) {
+
+		$updated_props = array();
+
+		foreach ( $this-&gt;get_props_to_update( $subscription, $this-&gt;subscription_meta_keys_to_props ) as $meta_key =&gt; $prop ) {
+			$meta_value = ( &#039;schedule_&#039; == substr( $prop, 0, 9 ) ) ? $subscription-&gt;get_date( $prop ) : $subscription-&gt;{&quot;get_$prop&quot;}( &#039;edit&#039; );
+
+			// Store as a string of the boolean for backward compatibility (yep, it&#039;s gross)
+			if ( &#039;requires_manual_renewal&#039; === $prop ) {
+				$meta_value = $meta_value ? &#039;true&#039; : &#039;false&#039;;
+			}
+
+			update_post_meta( $subscription-&gt;get_id(), $meta_key, $meta_value );
+			$updated_props[] = $prop;
+		}
+
+		do_action( &#039;woocommerce_subscription_object_updated_props&#039;, $subscription, $updated_props );
+
+		parent::update_post_meta( $subscription );
+	}
+
+	/**
+	 * Get amount refunded for all related orders.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @return string
+	 * @since 2.2.0
+	 */
+	public function get_total_refunded( $subscription ) {
+
+		$total = 0;
+
+		foreach ( $subscription-&gt;get_related_orders( &#039;all&#039; ) as $order ) {
+			$total += parent::get_total_refunded( $order );
+		}
+
+		return $total;
+	}
+
+	/**
+	 * Get the total tax refunded for all related orders.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @return float
+	 * @since 2.2.0
+	 */
+	public function get_total_tax_refunded( $subscription ) {
+
+		$total = 0;
+
+		foreach ( $subscription-&gt;get_related_orders() as $order ) {
+			$total += parent::get_total_tax_refunded( $order );
+		}
+
+		return abs( $total );
+	}
+
+	/**
+	 * Get the total shipping refunded for all related orders.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @return float
+	 * @since 2.2.0
+	 */
+	public function get_total_shipping_refunded( $subscription ) {
+
+		$total = 0;
+
+		foreach ( $subscription-&gt;get_related_orders( &#039;all&#039; ) as $order ) {
+			$total += parent::get_total_shipping_refunded( $order );
+		}
+
+		return abs( $total );
+	}
+
+	/**
+	 * Return count of subscriptions with type.
+	 *
+	 * @param  string $type
+	 * @return int
+	 * @since 2.2.0
+	 */
+	public function get_order_count( $status ) {
+		global $wpdb;
+		return absint( $wpdb-&gt;get_var( $wpdb-&gt;prepare( &quot;SELECT COUNT( * ) FROM {$wpdb-&gt;posts} WHERE post_type = &#039;shop_subscription&#039; AND post_status = %s&quot;, $status ) ) );
+	}
+
+	/**
+	 * Get all subscriptions matching the passed in args.
+	 *
+	 * @see    wc_get_orders()
+	 * @param  array $args
+	 * @return array of orders
+	 * @since 2.2.0
+	 */
+	public function get_orders( $args = array() ) {
+
+		$parent_args = $args = wp_parse_args( $args, array(
+			&#039;type&#039;   =&gt; &#039;shop_subscription&#039;,
+			&#039;return&#039; =&gt; &#039;objects&#039;,
+		) );
+
+		// We only want IDs from the parent method
+		$parent_args[&#039;return&#039;] = &#039;ids&#039;;
+
+		$subscriptions = wc_get_orders( $parent_args );
+
+		if ( isset( $args[&#039;paginate&#039;] ) &amp;&amp; $args[&#039;paginate&#039;] ) {
+
+			if ( &#039;objects&#039; === $args[&#039;return&#039;] ) {
+				$return = array_map( &#039;wcs_get_subscription&#039;, $subscriptions-&gt;orders );
+			} else {
+				$return = $subscriptions-&gt;orders;
+			}
+
+			return (object) array(
+				&#039;orders&#039;        =&gt; $return,
+				&#039;total&#039;         =&gt; $subscriptions-&gt;total,
+				&#039;max_num_pages&#039; =&gt; $subscriptions-&gt;max_num_pages,
+			);
+
+		} else {
+
+			if ( &#039;objects&#039; === $args[&#039;return&#039;] ) {
+				$return = array_map( &#039;wcs_get_subscription&#039;, $subscriptions );
+			} else {
+				$return = $subscriptions;
+			}
+
+			return $return;
+		}
+	}
+
+	/**
+	 * Update subscription dates in the database.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @return array The date properties saved to the database in the format: array( $prop_name =&gt; DateTime Object )
+	 * @since 2.2.6
+	 */
+	public function save_dates( $subscription ) {
+		$saved_dates    = array();
+		$changes        = $subscription-&gt;get_changes();
+		$date_meta_keys = array(
+			&#039;_schedule_trial_end&#039;,
+			&#039;_schedule_next_payment&#039;,
+			&#039;_schedule_cancelled&#039;,
+			&#039;_schedule_end&#039;,
+			&#039;_schedule_payment_retry&#039;,
+			&#039;_schedule_start&#039;,
+		);
+
+		// Add any custom date types to the date meta keys we need to save.
+		foreach ( wcs_get_subscription_date_types() as $date_type =&gt; $date_name ) {
+			if ( &#039;last_payment&#039; === $date_type ) {
+				continue;
+			}
+
+			$date_meta_key = wcs_get_date_meta_key( $date_type );
+
+			if ( ! in_array( $date_meta_key, $date_meta_keys ) ) {
+				$date_meta_keys[] = $date_meta_key;
+			}
+		}
+
+		$date_meta_keys_to_props = array_intersect_key( $this-&gt;subscription_meta_keys_to_props, array_flip( $date_meta_keys ) );
+
+		// Save the changes to scheduled dates
+		foreach ( $this-&gt;get_props_to_update( $subscription, $date_meta_keys_to_props ) as $meta_key =&gt; $prop ) {
+			update_post_meta( $subscription-&gt;get_id(), $meta_key, $subscription-&gt;get_date( $prop ) );
+			$saved_dates[ $prop ] = wcs_get_datetime_from( $subscription-&gt;get_time( $prop ) );
+		}
+
+		$post_data = array();
+
+		// Save any changes to the created date
+		if ( isset( $changes[&#039;date_created&#039;] ) ) {
+			$post_data[&#039;post_date&#039;]      = gmdate( &#039;Y-m-d H:i:s&#039;, $subscription-&gt;get_date_created( &#039;edit&#039; )-&gt;getOffsetTimestamp() );
+			$post_data[&#039;post_date_gmt&#039;]  = gmdate( &#039;Y-m-d H:i:s&#039;, $subscription-&gt;get_date_created( &#039;edit&#039; )-&gt;getTimestamp() );
+			$saved_dates[&#039;date_created&#039;] = $subscription-&gt;get_date_created();
+		}
+
+		// Save any changes to the modified date
+		if ( isset( $changes[&#039;date_modified&#039;] ) ) {
+			$post_data[&#039;post_modified&#039;]     = gmdate( &#039;Y-m-d H:i:s&#039;, $subscription-&gt;get_date_modified( &#039;edit&#039; )-&gt;getOffsetTimestamp() );
+			$post_data[&#039;post_modified_gmt&#039;] = gmdate( &#039;Y-m-d H:i:s&#039;, $subscription-&gt;get_date_modified( &#039;edit&#039; )-&gt;getTimestamp() );
+			$saved_dates[&#039;date_modified&#039;]   = $subscription-&gt;get_date_modified();
+		}
+
+		if ( ! empty( $post_data ) ) {
+			$post_data[&#039;ID&#039;] = $subscription-&gt;get_id();
+			wp_update_post( $post_data );
+		}
+
+		return $saved_dates;
+	}
+
+	/**
+	 * Get the props to update, and remove order meta data that isn&#039;t used on a subscription.
+	 *
+	 * Important for performance, because it avoids calling getters/setters on props that don&#039;t need
+	 * to be get/set, which in the case for get_date_paid(), or get_date_completed(), can be quite
+	 * resource intensive as it requires doing a related orders query. Also just avoids filling up the
+	 * post meta table more than is needed.
+	 *
+	 * @param  WC_Data $object              The WP_Data object (WC_Coupon for coupons, etc).
+	 * @param  array   $meta_key_to_props   A mapping of meta keys =&gt; prop names.
+	 * @param  string  $meta_type           The internal WP meta type (post, user, etc).
+	 * @return array                        A mapping of meta keys =&gt; prop names, filtered by ones that should be updated.
+	 */
+	protected function get_props_to_update( $object, $meta_key_to_props, $meta_type = &#039;post&#039; ) {
+		$props_to_update = parent::get_props_to_update( $object, $meta_key_to_props, $meta_type );
+		$props_to_ignore = $this-&gt;get_props_to_ignore();
+
+		foreach ( $props_to_ignore as $meta_key =&gt; $prop ) {
+			unset( $props_to_update[ $meta_key ] );
+		}
+
+		return $props_to_update;
+	}
+
+	/**
+	 * Get the props set on a subscription which we don&#039;t want used on a subscription, which may be
+	 * inherited order meta data, or other values using the post meta data store but not as props.
+	 *
+	 * @return array A mapping of meta keys =&gt; prop names
+	 */
+	protected function get_props_to_ignore() {
+
+		$props_to_ignore = array(
+			&#039;_transaction_id&#039; =&gt; &#039;transaction_id&#039;,
+			&#039;_date_completed&#039; =&gt; &#039;date_completed&#039;,
+			&#039;_date_paid&#039;      =&gt; &#039;date_paid&#039;,
+			&#039;_cart_hash&#039;      =&gt; &#039;cart_hash&#039;,
+		);
+
+		return apply_filters( &#039;wcs_subscription_data_store_props_to_ignore&#039;, $props_to_ignore, $this );
+	}
+
+	/**
+	 * Search subscription data for a term and returns subscription ids
+	 *
+	 * @param string $term Term to search
+	 * @return array of subscription ids
+	 * @since 2.3.0
+	 */
+	public function search_subscriptions( $term ) {
+		global $wpdb;
+
+		$subscription_ids = array();
+
+		$search_fields = array_map( &#039;wc_clean&#039;, apply_filters( &#039;woocommerce_shop_subscription_search_fields&#039;, array(
+			&#039;_order_key&#039;,
+			&#039;_billing_address_index&#039;,
+			&#039;_shipping_address_index&#039;,
+			&#039;_billing_email&#039;,
+		) ) );
+
+		if ( is_numeric( $term ) ) {
+			$subscription_ids[] = absint( $term );
+		}
+
+		if ( ! empty( $search_fields ) ) {
+
+			$subscription_ids = array_unique( array_merge(
+				$wpdb-&gt;get_col(
+					$wpdb-&gt;prepare( &quot;
+						SELECT DISTINCT p1.post_id
+						FROM {$wpdb-&gt;postmeta} p1
+						WHERE p1.meta_value LIKE &#039;%%%s%%&#039;&quot;, $wpdb-&gt;esc_like( wc_clean( $term ) ) ) . &quot; AND p1.meta_key IN (&#039;&quot; . implode( &quot;&#039;,&#039;&quot;, array_map( &#039;esc_sql&#039;, $search_fields ) ) . &quot;&#039;)&quot;
+				),
+				$wpdb-&gt;get_col(
+					$wpdb-&gt;prepare( &quot;
+						SELECT order_id
+						FROM {$wpdb-&gt;prefix}woocommerce_order_items as order_items
+						WHERE order_item_name LIKE &#039;%%%s%%&#039;
+						&quot;,
+						$wpdb-&gt;esc_like( wc_clean( $term ) )
+					)
+				),
+				$wpdb-&gt;get_col(
+					$wpdb-&gt;prepare( &quot;
+						SELECT p1.ID
+						FROM {$wpdb-&gt;posts} p1
+						INNER JOIN {$wpdb-&gt;postmeta} p2 ON p1.ID = p2.post_id
+						INNER JOIN {$wpdb-&gt;users} u ON p2.meta_value = u.ID
+						WHERE u.user_email LIKE &#039;%%%s%%&#039;
+						AND p2.meta_key = &#039;_customer_user&#039;
+						AND p1.post_type = &#039;shop_subscription&#039;
+						&quot;,
+						esc_attr( $term )
+					)
+				),
+				$subscription_ids
+			) );
+		}
+
+		return apply_filters( &#039;woocommerce_shop_subscription_search_results&#039;, $subscription_ids, $term, $search_fields );
+	}
+
+	/**
+	 * Get the user IDs for customers who have a subscription.
+	 *
+	 * @since 3.4.3
+	 * @return array The user IDs.
+	 */
+	public function get_subscription_customer_ids() {
+		global $wpdb;
+
+		return $wpdb-&gt;get_col(
+			&quot;SELECT DISTINCT meta_value
+			FROM {$wpdb-&gt;postmeta} AS subscription_meta INNER JOIN {$wpdb-&gt;posts} AS posts ON subscription_meta.post_id = posts.ID
+			WHERE subscription_meta.meta_key = &#039;_customer_user&#039; AND posts.post_type = &#039;shop_subscription&#039;&quot;
+		);
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

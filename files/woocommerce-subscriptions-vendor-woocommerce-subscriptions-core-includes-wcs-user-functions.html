@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-user-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_make_user_active">
+        wcs_make_user_active()
+        <a href="#function_wcs_make_user_active" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.20">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Give a user the Subscription&#039;s default subscriber role</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_make_user_active</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_make_user_inactive">
+        wcs_make_user_inactive()
+        <a href="#function_wcs_make_user_inactive" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.29">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Give a user the Subscription&#039;s default subscriber&#039;s inactive role</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_make_user_inactive</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_maybe_make_user_inactive">
+        wcs_maybe_make_user_inactive()
+        <a href="#function_wcs_maybe_make_user_inactive" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.38">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Give a user the Subscription&#039;s default subscriber&#039;s inactive role if they do not have an active subscription</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_maybe_make_user_inactive</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_maybe_make_user_inactive_for">
+        wcs_maybe_make_user_inactive_for()
+        <a href="#function_wcs_maybe_make_user_inactive_for" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.51">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Wrapper for wcs_maybe_make_user_inactive() that accepts a subscription instead of a user ID.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_maybe_make_user_inactive_for</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Handy for hooks that pass a subscription object.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.9</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_update_users_role">
+        wcs_update_users_role()
+        <a href="#function_wcs_update_users_role" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.68">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Update a user&#039;s role to a special subscription&#039;s role</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_update_users_role</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$role_new</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\WP_User">WP_User</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of a user</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$role_new</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The special name assigned to the role by Subscriptions, one of 'default_subscriber_role', 'default_inactive_role' or 'default_cancelled_role'</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_new_user_role_names">
+        wcs_get_new_user_role_names()
+        <a href="#function_wcs_get_new_user_role_names" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.104">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Gets default new and old role names if the new role is &#039;default_subscriber_role&#039;. Otherwise returns role_new and an
+empty string.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_new_user_role_names</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$role_new</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$role_new</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>string the new role of the user</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_user_has_subscription">
+        wcs_user_has_subscription()
+        <a href="#function_wcs_user_has_subscription" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.133">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check if a user has a subscription, optionally to a specific product and/or with a certain status.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_user_has_subscription</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$product_id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;any&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) The ID of a user in the store. If left empty, the current user's ID will be used.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$product_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) The ID of a product in the store. If left empty, the function will see if the user has any subscription.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$status</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;any&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) A valid subscription status string or array. If left empty, the function will see if the user has a subscription of any status.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_users_subscriptions">
+        wcs_get_users_subscriptions()
+        <a href="#function_wcs_get_users_subscriptions" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.172">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">172</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Gets all the active and inactive subscriptions for a user, as specified by $user_id</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_users_subscriptions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) The id of the user whose subscriptions you want. Defaults to the currently logged in user.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_users_subscription_ids">
+        wcs_get_users_subscription_ids()
+        <a href="#function_wcs_get_users_subscription_ids" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.212">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">212</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get subscription IDs for the given user.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_users_subscription_ids</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of the user whose subscriptions you want.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <section class="phpdocumentor-description"><p>Jeremy Pry</p>
+</section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_cached_user_subscription_ids">
+        wcs_get_cached_user_subscription_ids()
+        <a href="#function_wcs_get_cached_user_subscription_ids" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.226">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">226</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get subscription IDs for a user using caching.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_cached_user_subscription_ids</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of the user whose subscriptions you want.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <section class="phpdocumentor-description"><p>Jeremy Pry</p>
+</section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_users_change_status_link">
+        wcs_get_users_change_status_link()
+        <a href="#function_wcs_get_users_change_status_link" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.246">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">246</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return a link for subscribers to change the status of their subscription, as specified with $status parameter</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_users_change_status_link</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$current_status</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A subscription's post ID</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$status</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A subscription's post ID</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$current_status</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A subscription's current status</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_can_user_put_subscription_on_hold">
+        wcs_can_user_put_subscription_on_hold()
+        <a href="#function_wcs_can_user_put_subscription_on_hold" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.275">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">275</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check if a given user (or the currently logged in user) has permission to put a subscription on hold.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_can_user_put_subscription_on_hold</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>By default, a store manager can put all subscriptions on hold, while other users can only suspend their own subscriptions.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An instance of a WC_Snbscription object or ID representing a 'shop_subscription' post</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_all_user_actions_for_subscription">
+        wcs_get_all_user_actions_for_subscription()
+        <a href="#function_wcs_get_all_user_actions_for_subscription" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.301">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">301</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Retrieve available actions that a user can perform on the subscription</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_all_user_actions_for_subscription</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The subscription.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The user.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_user_has_capability">
+        wcs_user_has_capability()
+        <a href="#function_wcs_user_has_capability" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.344">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">344</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks if a user has a certain capability</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_user_has_capability</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allcaps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$caps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$allcaps</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$caps</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$args</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">access</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <section class="phpdocumentor-description"><p>public</p>
+</section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_grant_shop_manager_editable_roles">
+        wcs_grant_shop_manager_editable_roles()
+        <a href="#function_wcs_grant_shop_manager_editable_roles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.423">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">423</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Grants shop managers the capability to edit subscribers.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_grant_shop_manager_editable_roles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$roles</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$roles</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The user roles shop managers can edit.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">3.0.4</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscriber_role">
+        wcs_get_subscriber_role()
+        <a href="#function_wcs_get_subscriber_role" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.437">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">437</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Gets the subscriber role.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscriber_role</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">4.0.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_inactive_subscriber_role">
+        wcs_get_inactive_subscriber_role()
+        <a href="#function_wcs_get_inactive_subscriber_role" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-user-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-user-functions.html#source-view.452">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-user-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">452</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Gets the inactive subscriber role.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_inactive_subscriber_role</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">4.0.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions User Functions
+ *
+ * @author Prospress
+ * @category Core
+ * @package WooCommerce Subscriptions/Functions
+ * @version     2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * Give a user the Subscription&#039;s default subscriber role
+ *
+ * @since 2.0
+ */
+function wcs_make_user_active( $user_id ) {
+	wcs_update_users_role( $user_id, &#039;default_subscriber_role&#039; );
+}
+
+/**
+ * Give a user the Subscription&#039;s default subscriber&#039;s inactive role
+ *
+ * @since 2.0
+ */
+function wcs_make_user_inactive( $user_id ) {
+	wcs_update_users_role( $user_id, &#039;default_inactive_role&#039; );
+}
+
+/**
+ * Give a user the Subscription&#039;s default subscriber&#039;s inactive role if they do not have an active subscription
+ *
+ * @since 2.0
+ */
+function wcs_maybe_make_user_inactive( $user_id ) {
+	if ( ! wcs_user_has_subscription( $user_id, &#039;&#039;, &#039;active&#039; ) ) {
+		wcs_update_users_role( $user_id, &#039;default_inactive_role&#039; );
+	}
+}
+
+/**
+ * Wrapper for wcs_maybe_make_user_inactive() that accepts a subscription instead of a user ID.
+ * Handy for hooks that pass a subscription object.
+ *
+ * @since 2.2.9
+ * @param WC_Subscription|WC_Order
+ */
+function wcs_maybe_make_user_inactive_for( $subscription ) {
+	wcs_maybe_make_user_inactive( $subscription-&gt;get_user_id() );
+}
+add_action( &#039;woocommerce_subscription_status_failed&#039;, &#039;wcs_maybe_make_user_inactive_for&#039;, 10, 1 );
+add_action( &#039;woocommerce_subscription_status_on-hold&#039;, &#039;wcs_maybe_make_user_inactive_for&#039;, 10, 1 );
+add_action( &#039;woocommerce_subscription_status_cancelled&#039;, &#039;wcs_maybe_make_user_inactive_for&#039;, 10, 1 );
+add_action( &#039;woocommerce_subscription_status_switched&#039;, &#039;wcs_maybe_make_user_inactive_for&#039;, 10, 1 );
+add_action( &#039;woocommerce_subscription_status_expired&#039;, &#039;wcs_maybe_make_user_inactive_for&#039;, 10, 1 );
+
+/**
+ * Update a user&#039;s role to a special subscription&#039;s role
+ *
+ * @param int $user_id The ID of a user
+ * @param string $role_new The special name assigned to the role by Subscriptions, one of &#039;default_subscriber_role&#039;, &#039;default_inactive_role&#039; or &#039;default_cancelled_role&#039;
+ * @return WP_User The user with the new role.
+ * @since 2.0
+ */
+function wcs_update_users_role( $user_id, $role_new ) {
+
+	$user = new WP_User( $user_id );
+
+	// Never change an admin&#039;s role to avoid locking out admins testing the plugin
+	if ( ! empty( $user-&gt;roles ) &amp;&amp; in_array( &#039;administrator&#039;, $user-&gt;roles ) ) {
+		return;
+	}
+
+	// Allow plugins to prevent Subscriptions from handling roles
+	if ( ! apply_filters( &#039;woocommerce_subscriptions_update_users_role&#039;, true, $user, $role_new ) ) {
+		return;
+	}
+
+	$roles = wcs_get_new_user_role_names( $role_new );
+
+	$role_new = $roles[&#039;new&#039;];
+	$role_old = $roles[&#039;old&#039;];
+
+	if ( ! empty( $role_old ) ) {
+		$user-&gt;remove_role( $role_old );
+	}
+
+	$user-&gt;add_role( $role_new );
+
+	do_action( &#039;woocommerce_subscriptions_updated_users_role&#039;, $role_new, $user, $role_old );
+	return $user;
+}
+
+/**
+ * Gets default new and old role names if the new role is &#039;default_subscriber_role&#039;. Otherwise returns role_new and an
+ * empty string.
+ *
+ * @param $role_new string the new role of the user
+ * @return array with keys &#039;old&#039; and &#039;new&#039;.
+ */
+function wcs_get_new_user_role_names( $role_new ) {
+	$default_subscriber_role = wcs_get_subscriber_role();
+	$default_cancelled_role  = wcs_get_inactive_subscriber_role();
+	$role_old = &#039;&#039;;
+
+	if ( &#039;default_subscriber_role&#039; == $role_new ) {
+		$role_old = $default_cancelled_role;
+		$role_new = $default_subscriber_role;
+	} elseif ( in_array( $role_new, array( &#039;default_inactive_role&#039;, &#039;default_cancelled_role&#039; ) ) ) {
+		$role_old = $default_subscriber_role;
+		$role_new = $default_cancelled_role;
+	}
+
+	return array(
+		&#039;new&#039; =&gt; $role_new,
+		&#039;old&#039; =&gt; $role_old,
+	);
+}
+
+/**
+ * Check if a user has a subscription, optionally to a specific product and/or with a certain status.
+ *
+ * @param int $user_id (optional) The ID of a user in the store. If left empty, the current user&#039;s ID will be used.
+ * @param int $product_id (optional) The ID of a product in the store. If left empty, the function will see if the user has any subscription.
+ * @param mixed $status (optional) A valid subscription status string or array. If left empty, the function will see if the user has a subscription of any status.
+ * @since 2.0
+ *
+ * @return bool
+ */
+function wcs_user_has_subscription( $user_id = 0, $product_id = &#039;&#039;, $status = &#039;any&#039; ) {
+
+	$subscriptions = wcs_get_users_subscriptions( $user_id );
+
+	$has_subscription = false;
+
+	if ( empty( $product_id ) ) { // Any subscription
+
+		if ( ! empty( $status ) &amp;&amp; &#039;any&#039; != $status ) { // We need to check for a specific status
+			foreach ( $subscriptions as $subscription ) {
+				if ( $subscription-&gt;has_status( $status ) ) {
+					$has_subscription = true;
+					break;
+				}
+			}
+		} elseif ( ! empty( $subscriptions ) ) {
+			$has_subscription = true;
+		}
+	} else {
+
+		foreach ( $subscriptions as $subscription ) {
+			if ( $subscription-&gt;has_product( $product_id ) &amp;&amp; ( empty( $status ) || &#039;any&#039; == $status || $subscription-&gt;has_status( $status ) ) ) {
+				$has_subscription = true;
+				break;
+			}
+		}
+	}
+
+	return apply_filters( &#039;wcs_user_has_subscription&#039;, $has_subscription, $user_id, $product_id, $status );
+}
+
+/**
+ * Gets all the active and inactive subscriptions for a user, as specified by $user_id
+ *
+ * @param int $user_id (optional) The id of the user whose subscriptions you want. Defaults to the currently logged in user.
+ * @since 2.0
+ *
+ * @return WC_Subscription[]
+ */
+function wcs_get_users_subscriptions( $user_id = 0 ) {
+	if ( 0 === $user_id || empty( $user_id ) ) {
+		$user_id = get_current_user_id();
+	}
+
+	$subscriptions = array();
+
+	if ( has_filter( &#039;wcs_pre_get_users_subscriptions&#039; ) ) {
+		wcs_deprecated_function( &#039;The &quot;wcs_pre_get_users_subscriptions&quot; hook should no longer be used. A persistent caching layer is now in place. Because of this, &quot;wcs_pre_get_users_subscriptions&quot;&#039;, &#039;2.3.0&#039; );
+		$filtered_subscriptions = apply_filters( &#039;wcs_pre_get_users_subscriptions&#039;, $subscriptions, $user_id );
+
+		if ( is_array( $filtered_subscriptions ) ) {
+			$subscriptions = $filtered_subscriptions;
+		}
+	}
+
+	if ( empty( $subscriptions ) &amp;&amp; 0 !== $user_id &amp;&amp; ! empty( $user_id ) ) {
+		$subscription_ids = WCS_Customer_Store::instance()-&gt;get_users_subscription_ids( $user_id );
+
+		foreach ( $subscription_ids as $subscription_id ) {
+			$subscription = wcs_get_subscription( $subscription_id );
+
+			if ( $subscription ) {
+				$subscriptions[ $subscription_id ] = $subscription;
+			}
+		}
+	}
+
+	return apply_filters( &#039;wcs_get_users_subscriptions&#039;, $subscriptions, $user_id );
+}
+
+/**
+ * Get subscription IDs for the given user.
+ *
+ * @author Jeremy Pry
+ *
+ * @param int $user_id The ID of the user whose subscriptions you want.
+ *
+ * @return array Array of Subscription IDs.
+ */
+function wcs_get_users_subscription_ids( $user_id ) {
+	wcs_deprecated_function( __FUNCTION__, &#039;2.3.0&#039;, &#039;WCS_Customer_Store::instance()-&gt;get_users_subscription_ids()&#039; );
+	return WCS_Customer_Store::instance()-&gt;get_users_subscription_ids( $user_id );
+}
+
+/**
+ * Get subscription IDs for a user using caching.
+ *
+ * @author Jeremy Pry
+ *
+ * @param int $user_id The ID of the user whose subscriptions you want.
+ *
+ * @return array Array of subscription IDs.
+ */
+function wcs_get_cached_user_subscription_ids( $user_id = 0 ) {
+	wcs_deprecated_function( __FUNCTION__, &#039;2.3.0&#039;, &#039;WCS_Customer_Store::instance()-&gt;get_users_subscription_ids()&#039; );
+
+	$user_id = absint( $user_id );
+
+	if ( 0 === $user_id ) {
+		$user_id = get_current_user_id();
+	}
+
+	return WCS_Customer_Store::instance()-&gt;get_users_subscription_ids( $user_id );
+}
+
+/**
+ * Return a link for subscribers to change the status of their subscription, as specified with $status parameter
+ *
+ * @param int $subscription_id A subscription&#039;s post ID
+ * @param string $status A subscription&#039;s post ID
+ * @param string $current_status A subscription&#039;s current status
+ * @since 1.0
+ */
+function wcs_get_users_change_status_link( $subscription_id, $status, $current_status = &#039;&#039; ) {
+
+	if ( &#039;&#039; === $current_status ) {
+		$subscription = wcs_get_subscription( $subscription_id );
+
+		if ( $subscription instanceof WC_Subscription ) {
+			$current_status = $subscription-&gt;get_status();
+		}
+	}
+
+	$action_link = add_query_arg(
+		array(
+			&#039;subscription_id&#039;        =&gt; $subscription_id,
+			&#039;change_subscription_to&#039; =&gt; $status,
+		)
+	);
+	$action_link = wp_nonce_url( $action_link, $subscription_id . $current_status );
+
+	return apply_filters( &#039;wcs_users_change_status_link&#039;, $action_link, $subscription_id, $status );
+}
+
+/**
+ * Check if a given user (or the currently logged in user) has permission to put a subscription on hold.
+ *
+ * By default, a store manager can put all subscriptions on hold, while other users can only suspend their own subscriptions.
+ *
+ * @param int|WC_Subscription $subscription An instance of a WC_Snbscription object or ID representing a &#039;shop_subscription&#039; post
+ * @since 2.0
+ */
+function wcs_can_user_put_subscription_on_hold( $subscription, $user = &#039;&#039; ) {
+	$user_can_suspend = false;
+
+	if ( empty( $user ) ) {
+		$user = wp_get_current_user();
+	} elseif ( is_int( $user ) ) {
+		$user = get_user_by( &#039;id&#039;, $user );
+	}
+
+	if ( user_can( $user, &#039;manage_woocommerce&#039; ) ) { // Admin, so can always suspend a subscription
+		$user_can_suspend = true;
+	}
+
+	return apply_filters( &#039;wcs_can_user_put_subscription_on_hold&#039;, $user_can_suspend, $subscription, $user );
+}
+
+/**
+ * Retrieve available actions that a user can perform on the subscription
+ *
+ * @since 2.0
+ *
+ * @param WC_Subscription $subscription The subscription.
+ * @param int             $user_id      The user.
+ *
+ * @return array
+ */
+function wcs_get_all_user_actions_for_subscription( $subscription, $user_id ) {
+
+	$actions = array();
+
+	if ( user_can( $user_id, &#039;edit_shop_subscription_status&#039;, $subscription-&gt;get_id() ) ) {
+		$current_status = $subscription-&gt;get_status();
+
+		if ( $subscription-&gt;can_be_updated_to( &#039;active&#039; ) &amp;&amp; ! $subscription-&gt;needs_payment() ) {
+			$actions[&#039;reactivate&#039;] = array(
+				&#039;url&#039;  =&gt; wcs_get_users_change_status_link( $subscription-&gt;get_id(), &#039;active&#039;, $current_status ),
+				&#039;name&#039; =&gt; __( &#039;Reactivate&#039;, &#039;woocommerce-subscriptions&#039; ),
+			);
+		}
+
+		if ( wcs_can_user_resubscribe_to( $subscription, $user_id ) &amp;&amp; false == $subscription-&gt;can_be_updated_to( &#039;active&#039; ) ) {
+			$actions[&#039;resubscribe&#039;] = array(
+				&#039;url&#039;  =&gt; wcs_get_users_resubscribe_link( $subscription ),
+				&#039;name&#039; =&gt; __( &#039;Resubscribe&#039;, &#039;woocommerce-subscriptions&#039; ),
+			);
+		}
+
+		// Show button for subscriptions which can be cancelled and which may actually require cancellation (i.e. has a future payment)
+		$next_payment = $subscription-&gt;get_time( &#039;next_payment&#039; );
+		if ( $subscription-&gt;can_be_updated_to( &#039;cancelled&#039; ) &amp;&amp; ( ! $subscription-&gt;is_one_payment() &amp;&amp; ( $subscription-&gt;has_status( &#039;on-hold&#039; ) &amp;&amp; empty( $next_payment ) ) || $next_payment &gt; 0 ) ) {
+			$actions[&#039;cancel&#039;] = array(
+				&#039;url&#039;  =&gt; wcs_get_users_change_status_link( $subscription-&gt;get_id(), &#039;cancelled&#039;, $current_status ),
+				&#039;name&#039; =&gt; _x( &#039;Cancel&#039;, &#039;an action on a subscription&#039;, &#039;woocommerce-subscriptions&#039; ),
+			);
+		}
+	}
+
+	return apply_filters( &#039;wcs_view_subscription_actions&#039;, $actions, $subscription, $user_id );
+}
+
+/**
+ * Checks if a user has a certain capability
+ *
+ * @access public
+ * @param array $allcaps
+ * @param array $caps
+ * @param array $args
+ * @return array
+ */
+function wcs_user_has_capability( $allcaps, $caps, $args ) {
+	if ( isset( $caps[0] ) ) {
+		switch ( $caps[0] ) {
+			case &#039;edit_shop_subscription_payment_method&#039;:
+				$user_id  = $args[1];
+				$subscription = wcs_get_subscription( $args[2] );
+
+				if ( $subscription &amp;&amp; $user_id === $subscription-&gt;get_user_id() ) {
+					$allcaps[&#039;edit_shop_subscription_payment_method&#039;] = true;
+				}
+			break;
+			case &#039;edit_shop_subscription_status&#039;:
+				$user_id  = $args[1];
+				$subscription = wcs_get_subscription( $args[2] );
+
+				if ( $user_id === $subscription-&gt;get_user_id() ) {
+					$allcaps[&#039;edit_shop_subscription_status&#039;] = true;
+				}
+			break;
+			case &#039;edit_shop_subscription_line_items&#039;:
+				$user_id  = $args[1];
+				$subscription = wcs_get_subscription( $args[2] );
+
+				if ( $user_id === $subscription-&gt;get_user_id() ) {
+					$allcaps[&#039;edit_shop_subscription_line_items&#039;] = true;
+				}
+			break;
+			case &#039;switch_shop_subscription&#039;:
+				$user_id  = $args[1];
+				$subscription = wcs_get_subscription( $args[2] );
+
+				if ( $user_id === $subscription-&gt;get_user_id() ) {
+					$allcaps[&#039;switch_shop_subscription&#039;] = true;
+				}
+			break;
+			case &#039;subscribe_again&#039;:
+				$user_id  = $args[1];
+				$subscription = wcs_get_subscription( $args[2] );
+
+				if ( $user_id === $subscription-&gt;get_user_id() ) {
+					$allcaps[&#039;subscribe_again&#039;] = true;
+				}
+			break;
+			case &#039;pay_for_order&#039;:
+				$user_id = $args[1];
+				$order   = wc_get_order( $args[2] );
+
+				if ( $order &amp;&amp; wcs_order_contains_subscription( $order, &#039;any&#039; ) ) {
+
+					if ( $user_id === $order-&gt;get_user_id() ) {
+						$allcaps[&#039;pay_for_order&#039;] = true;
+					} else {
+						unset( $allcaps[&#039;pay_for_order&#039;] );
+					}
+				}
+			break;
+			case &#039;toggle_shop_subscription_auto_renewal&#039;:
+				$user_id      = $args[1];
+				$subscription = wcs_get_subscription( $args[2] );
+
+				if ( $subscription &amp;&amp; $user_id === $subscription-&gt;get_user_id() ) {
+					$allcaps[&#039;toggle_shop_subscription_auto_renewal&#039;] = true;
+				} else {
+					unset( $allcaps[&#039;toggle_shop_subscription_auto_renewal&#039;] );
+				}
+			break;
+		}
+	}
+	return $allcaps;
+}
+add_filter( &#039;user_has_cap&#039;, &#039;wcs_user_has_capability&#039;, 15, 3 );
+
+/**
+ * Grants shop managers the capability to edit subscribers.
+ *
+ * @since 3.0.4
+ * @param array $roles The user roles shop managers can edit.
+ * @return array The list of roles editable by shop managers.
+ */
+function wcs_grant_shop_manager_editable_roles( $roles ) {
+	$roles[] = wcs_get_subscriber_role();
+	return $roles;
+}
+
+add_filter( &#039;woocommerce_shop_manager_editable_roles&#039;, &#039;wcs_grant_shop_manager_editable_roles&#039; );
+
+/**
+ * Gets the subscriber role.
+ *
+ * @since 4.0.0
+ *
+ * @return string The role to apply to subscribers.
+ */
+function wcs_get_subscriber_role() {
+	if ( class_exists( &#039;WCS_Subscriber_Role_Manager&#039; ) ) {
+		return WCS_Subscriber_Role_Manager::get_subscriber_role();
+	}
+
+	return &#039;subscriber&#039;;
+}
+
+/**
+ * Gets the inactive subscriber role.
+ *
+ * @since 4.0.0
+ *
+ * @return string The role to apply to inactive subscribers.
+ */
+function wcs_get_inactive_subscriber_role() {
+	if ( class_exists( &#039;WCS_Subscriber_Role_Manager&#039; ) ) {
+		return WCS_Subscriber_Role_Manager::get_inactive_subscriber_role();
+	}
+
+	return &#039;customer&#039;;
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

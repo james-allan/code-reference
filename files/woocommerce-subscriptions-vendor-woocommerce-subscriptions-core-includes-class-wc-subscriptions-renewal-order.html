@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-renewal-order.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Renewal Order Class
+ *
+ * Provides an API for creating and handling renewal orders.
+ *
+ * @package WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Order
+ * @category Class
+ * @author Brent Shepherd
+ * @since 1.2
+ */
+class WC_Subscriptions_Renewal_Order {
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 *
+	 * @since 1.0
+	 */
+	public static function init() {
+
+		// Trigger special hook when payment is completed on renewal orders
+		add_action( &#039;woocommerce_payment_complete&#039;, array( __CLASS__, &#039;trigger_renewal_payment_complete&#039; ), 10 );
+
+		// When a renewal order&#039;s status changes, check if a corresponding subscription&#039;s status should be changed by marking it as paid (we can&#039;t use the &#039;woocommerce_payment_complete&#039; here because it&#039;s not triggered by all payment gateways)
+		add_action( &#039;woocommerce_order_status_changed&#039;, array( __CLASS__, &#039;maybe_record_subscription_payment&#039; ), 10, 3 );
+
+		add_filter( &#039;wcs_renewal_order_created&#039;, array( __CLASS__, &#039;add_order_note&#039; ), 10, 2 );
+
+		// Prevent customers from cancelling renewal orders. Needs to be hooked before WC_Form_Handler::cancel_order() (20)
+		add_action( &#039;wp_loaded&#039;, array( __CLASS__, &#039;prevent_cancelling_renewal_orders&#039; ), 19, 3 );
+
+		// Don&#039;t copy switch order item meta to renewal order items
+		add_filter( &#039;wcs_new_order_items&#039;, array( __CLASS__, &#039;remove_switch_item_meta_keys&#039; ), 10, 1 );
+	}
+
+	/* Helper functions */
+
+	/**
+	 * Trigger a special hook for payments on a completed renewal order.
+	 *
+	 * @since 1.5.4
+	 */
+	public static function trigger_renewal_payment_complete( $order_id ) {
+		if ( wcs_order_contains_renewal( $order_id ) ) {
+			do_action( &#039;woocommerce_renewal_order_payment_complete&#039;, $order_id );
+		}
+	}
+
+	/**
+	 * Check if a given renewal order was created to replace a failed renewal order.
+	 *
+	 * @since 1.5.12
+	 * @param int ID of the renewal order you want to check against
+	 * @return mixed If the renewal order did replace a failed order, the ID of the fail order, else false
+	 */
+	public static function get_failed_order_replaced_by( $renewal_order_id ) {
+		global $wpdb;
+
+		$failed_order_id = $wpdb-&gt;get_var( $wpdb-&gt;prepare( &quot;SELECT post_id FROM $wpdb-&gt;postmeta WHERE meta_key = &#039;_failed_order_replaced_by&#039; AND meta_value = %s&quot;, $renewal_order_id ) );
+
+		return ( null === $failed_order_id ) ? false : $failed_order_id;
+	}
+
+	/**
+	 * Whenever a renewal order&#039;s status is changed, check if a corresponding subscription&#039;s status should be changed
+	 *
+	 * This function is hooked to &#039;woocommerce_order_status_changed&#039;, rather than &#039;woocommerce_payment_complete&#039;, to ensure
+	 * subscriptions are updated even if payment is processed by a manual payment gateways (which would never trigger the
+	 * &#039;woocommerce_payment_complete&#039; hook) or by some other means that circumvents that hook.
+	 *
+	 * @since 2.0
+	 */
+	public static function maybe_record_subscription_payment( $order_id, $orders_old_status, $orders_new_status ) {
+
+		if ( ! wcs_order_contains_renewal( $order_id ) ) {
+			return;
+		}
+
+		$subscriptions        = wcs_get_subscriptions_for_renewal_order( $order_id );
+		$was_activated        = false;
+		$order                = wc_get_order( $order_id );
+		$order_completed      = in_array( $orders_new_status, array( apply_filters( &#039;woocommerce_payment_complete_order_status&#039;, &#039;processing&#039;, $order_id, $order ), &#039;processing&#039;, &#039;completed&#039; ) );
+		$order_needed_payment = in_array( $orders_old_status, apply_filters( &#039;woocommerce_valid_order_statuses_for_payment&#039;, array( &#039;pending&#039;, &#039;on-hold&#039;, &#039;failed&#039; ), $order ) );
+
+		if ( $order_completed &amp;&amp; $order_needed_payment ) {
+
+			if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+				$update_post_data  = array(
+					&#039;ID&#039;            =&gt; $order_id,
+					&#039;post_date&#039;     =&gt; current_time( &#039;mysql&#039;, 0 ),
+					&#039;post_date_gmt&#039; =&gt; current_time( &#039;mysql&#039;, 1 ),
+				);
+
+				wp_update_post( $update_post_data );
+				update_post_meta( $order_id, &#039;_paid_date&#039;, current_time( &#039;mysql&#039; ) );
+			} else {
+
+				$current_time = current_time( &#039;timestamp&#039;, 1 );
+
+				// Prior to WC 3.0, we need to update the post date (i.e. the date created) to have a reliable representation of the paid date (both because it was in GMT and because it was always set). That&#039;s not needed in WC 3.0, but some plugins and store owners still rely on it being updated, so we want to make it possible to update it with 3.0 also.
+				if ( apply_filters( &#039;wcs_renewal_order_payment_update_date_created&#039;, false, $order, $subscriptions ) ) {
+					$order-&gt;set_date_created( $current_time );
+				}
+
+				// In WC 3.0, only the paid date prop represents the paid date, the post date isn&#039;t used anymore, also the paid date is stored and referenced as a MySQL date string in site timezone and a GMT timestamp
+				$order-&gt;set_date_paid( $current_time );
+				$order-&gt;save();
+			}
+		}
+
+		foreach ( $subscriptions as $subscription ) {
+
+			// Do we need to activate a subscription?
+			if ( $order_completed &amp;&amp; ! $subscription-&gt;has_status( wcs_get_subscription_ended_statuses() ) &amp;&amp; ! $subscription-&gt;has_status( &#039;active&#039; ) ) {
+
+				// Included here because calling payment_complete sets the retry status to &#039;cancelled&#039;
+				$is_failed_renewal_order = &#039;failed&#039; === $orders_old_status;
+				$is_failed_renewal_order = apply_filters( &#039;woocommerce_subscriptions_is_failed_renewal_order&#039;, $is_failed_renewal_order, $order_id, $orders_old_status );
+
+				if ( $order_needed_payment ) {
+					$subscription-&gt;payment_complete();
+					$was_activated = true;
+				}
+
+				if ( $is_failed_renewal_order ) {
+					do_action( &#039;woocommerce_subscriptions_paid_for_failed_renewal_order&#039;, wc_get_order( $order_id ), $subscription );
+				}
+			} elseif ( &#039;failed&#039; == $orders_new_status ) {
+				$subscription-&gt;payment_failed();
+			}
+		}
+
+		if ( $was_activated ) {
+			do_action( &#039;subscriptions_activated_for_order&#039;, $order_id );
+		}
+	}
+
+	/**
+	 * Add order note to subscription to record the renewal order
+	 *
+	 * @param WC_Order|int $renewal_order
+	 * @param WC_Subscription|int $subscription
+	 * @since 2.0
+	 */
+	public static function add_order_note( $renewal_order, $subscription ) {
+		if ( ! is_object( $subscription ) ) {
+			$subscription = wcs_get_subscription( $subscription );
+		}
+
+		if ( ! is_object( $renewal_order ) ) {
+			$renewal_order = wc_get_order( $renewal_order );
+		}
+
+		if ( is_a( $renewal_order, &#039;WC_Order&#039; ) &amp;&amp; wcs_is_subscription( $subscription ) ) {
+
+			// translators: %s: order number.
+			$order_number = sprintf( _x( &#039;#%s&#039;, &#039;hash before order number&#039;, &#039;woocommerce-subscriptions&#039; ), $renewal_order-&gt;get_order_number() );
+
+			// translators: placeholder is order ID
+			$subscription-&gt;add_order_note( sprintf( __( &#039;Order %s created to record renewal.&#039;, &#039;woocommerce-subscriptions&#039; ), sprintf( &#039;&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt; &#039;, esc_url( wcs_get_edit_post_link( wcs_get_objects_property( $renewal_order, &#039;id&#039; ) ) ), $order_number ) ) );
+		}
+
+		return $renewal_order;
+	}
+
+	/**
+	 * Do not allow customers to cancel renewal orders.
+	 *
+	 * @since 2.0
+	 */
+	public static function prevent_cancelling_renewal_orders() {
+		if ( isset( $_GET[&#039;cancel_order&#039;] ) &amp;&amp; isset( $_GET[&#039;order&#039;] ) &amp;&amp; isset( $_GET[&#039;order_id&#039;] ) ) {
+
+			$order_id = absint( $_GET[&#039;order_id&#039;] );
+			$order    = wc_get_order( $order_id );
+			$redirect = $_GET[&#039;redirect&#039;];
+
+			if ( wcs_order_contains_renewal( $order ) ) {
+				remove_action( &#039;wp_loaded&#039;, &#039;WC_Form_Handler::cancel_order&#039;, 20 );
+				wc_add_notice( __( &#039;Subscription renewal orders cannot be cancelled.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;notice&#039; );
+
+				if ( $redirect ) {
+					wp_safe_redirect( $redirect );
+					exit;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Removes switch line item meta data so it isn&#039;t copied to renewal order line items
+	 *
+	 * @since 2.0.16
+	 * @param array $order_items
+	 * @return array $order_items
+	 */
+	public static function remove_switch_item_meta_keys( $order_items ) {
+
+		$switched_order_item_keys = array(
+			&#039;_switched_subscription_sign_up_fee_prorated&#039; =&gt; &#039;&#039;,
+			&#039;_switched_subscription_price_prorated&#039;       =&gt; &#039;&#039;,
+			&#039;_switched_subscription_item_id&#039;              =&gt; &#039;&#039;,
+		);
+
+		foreach ( $order_items as $order_item_id =&gt; $item ) {
+			if ( is_callable( array( $item, &#039;delete_meta_data&#039; ) ) ) { // WC 3.0+
+				foreach ( $switched_order_item_keys as $switch_meta_key =&gt; $value ) {
+					$item-&gt;delete_meta_data( $switch_meta_key );
+				}
+			} else { // WC 2.6
+				$order_items[ $order_item_id ][&#039;item_meta&#039;] = array_diff_key( $item[&#039;item_meta&#039;], $switched_order_item_keys );
+			}
+		}
+
+		return $order_items;
+	}
+
+	/* Deprecated functions */
+
+	/**
+	 * Generate an order to record an automatic subscription payment.
+	 *
+	 * This function is hooked to the &#039;process_subscription_payment&#039; which is fired when a payment gateway calls
+	 * the @see WC_Subscriptions_Manager::process_subscription_payment() function. Because manual payments will
+	 * also call this function, the function only generates a renewal order if the @see WC_Order::payment_complete()
+	 * will be called for the renewal order.
+	 *
+	 * @param int $user_id The id of the user who purchased the subscription
+	 * @param string $subscription_key A subscription key of the form created by @see WC_Subscriptions_Manager::get_subscription_key()
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function generate_paid_renewal_order( $user_id, $subscription_key ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_create_renewal_order( WC_Subscription $subscription )&#039; );
+		$subscription  = wcs_get_subscription_from_key( $subscription_key );
+		$renewal_order = wcs_create_renewal_order( $subscription );
+		$renewal_order-&gt;payment_complete();
+		return wcs_get_objects_property( $renewal_order, &#039;id&#039; );
+	}
+
+	/**
+	 * Generate an order to record a subscription payment failure.
+	 *
+	 * This function is hooked to the &#039;processed_subscription_payment_failure&#039; hook called when a payment
+	 * gateway calls the @see WC_Subscriptions_Manager::process_subscription_payment_failure()
+	 *
+	 * @param int $user_id The id of the user who purchased the subscription
+	 * @param string $subscription_key A subscription key of the form created by @see WC_Subscriptions_Manager::get_subscription_key()
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function generate_failed_payment_renewal_order( $user_id, $subscription_key ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_create_renewal_order( WC_Subscription $subscription )&#039; );
+		$renewal_order = wcs_create_renewal_order( wcs_get_subscription_from_key( $subscription_key ) );
+		$renewal_order-&gt;update_status( &#039;failed&#039; );
+		return wcs_get_objects_property( $renewal_order, &#039;id&#039; );
+	}
+
+	/**
+	 * Generate an order to record a subscription payment.
+	 *
+	 * This function is hooked to the scheduled subscription payment hook to create a pending
+	 * order for each scheduled subscription payment.
+	 *
+	 * When a payment gateway calls the @see WC_Subscriptions_Manager::process_subscription_payment()
+	 * @see WC_Order::payment_complete() will be called for the renewal order.
+	 *
+	 * @param int $user_id The id of the user who purchased the subscription
+	 * @param string $subscription_key A subscription key of the form created by @see WC_Subscriptions_Manager::get_subscription_key()
+	 * @since 1.2
+	 */
+	public static function maybe_generate_manual_renewal_order( $user_id, $subscription_key ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, __CLASS__ . &#039;::maybe_create_manual_renewal_order( WC_Subscription $subscription )&#039; );
+		self::maybe_create_manual_renewal_order( wcs_get_subscription_from_key( $subscription_key ) );
+	}
+
+	/**
+	 * Get the ID of the parent order for a subscription renewal order.
+	 *
+	 * Deprecated because a subscription&#039;s details are now stored in a WC_Subscription object, not the
+	 * parent order.
+	 *
+	 * @param WC_Order|int $order The WC_Order object or ID of a WC_Order order.
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function get_parent_order_id( $renewal_order ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_get_subscriptions_for_renewal_order()&#039; );
+
+		$parent_order = self::get_parent_order( $renewal_order );
+
+		return ( null === $parent_order ) ? null : wcs_get_objects_property( $parent_order, &#039;id&#039; );
+	}
+
+	/**
+	 * Get the parent order for a subscription renewal order.
+	 *
+	 * Deprecated because a subscription&#039;s details are now stored in a WC_Subscription object, not the
+	 * parent order.
+	 *
+	 * @param WC_Order|int $order The WC_Order object or ID of a WC_Order order.
+	 * @since 1.2
+	 * @deprecated 2.0 self::get_parent_subscription() is the better function to use now as a renewal order
+	 */
+	public static function get_parent_order( $renewal_order ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_get_subscriptions_for_renewal_order()&#039; );
+
+		if ( ! is_object( $renewal_order ) ) {
+			$renewal_order = new WC_Order( $renewal_order );
+		}
+
+		$subscriptions = wcs_get_subscriptions_for_renewal_order( $renewal_order );
+		$subscription  = array_pop( $subscriptions );
+
+		if ( false == $subscription-&gt;get_parent_id() ) { // There is no original order
+			$parent_order = null;
+		} else {
+			$parent_order = $subscription-&gt;get_parent();
+		}
+
+		return apply_filters( &#039;woocommerce_subscriptions_parent_order&#039;, $parent_order, $renewal_order );
+	}
+
+	/**
+	 * Returns the number of renewals for a given parent order
+	 *
+	 * @param int $order_id The ID of a WC_Order object.
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function get_renewal_order_count( $order_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WC_Subscription::get_related_orders()&#039; );
+
+		$subscriptions_for_order = wcs_get_subscriptions_for_order( $order_id, array( &#039;order_type&#039; =&gt; &#039;parent&#039; ) );
+
+		if ( ! empty( $subscriptions_for_order ) ) {
+
+			$subscription = array_pop( $subscriptions_for_order );
+			$all_orders   = $subscription-&gt;get_related_orders();
+
+			$renewal_order_count = count( $all_orders );
+
+			// Don&#039;t include the initial order (if any)
+			if ( $subscription-&gt;get_parent_id() ) {
+				$renewal_order_count -= 1;
+			}
+		} else {
+			$renewal_order_count = 0;
+		}
+
+		return apply_filters( &#039;woocommerce_subscriptions_renewal_order_count&#039;, $renewal_order_count, $order_id );
+	}
+
+	/**
+	 * Returns a URL including required parameters for an authenticated user to renew a subscription
+	 *
+	 * Deprecated because the use of a $subscription_key is deprecated.
+	 *
+	 * @param string $subscription_key A subscription key of the form created by @see WC_Subscriptions_Manager::get_subscription_key()
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function get_users_renewal_link( $subscription_key, $role = &#039;parent&#039; ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_get_users_resubscribe_link( $subscription )&#039; );
+		return wcs_get_users_resubscribe_link( wcs_get_subscription_from_key( $subscription_key ) );
+	}
+
+	/**
+	 * Returns a URL including required parameters for an authenticated user to renew a subscription by product ID.
+	 *
+	 * Deprecated because the use of a $subscription_key is deprecated.
+	 *
+	 * @param string $subscription_key A subscription key of the form created by @see WC_Subscriptions_Manager::get_subscription_key()
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function get_users_renewal_link_for_product( $product_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_get_users_resubscribe_link_for_product( $subscription )&#039; );
+		return wcs_get_users_resubscribe_link_for_product( $product_id );
+	}
+
+	/**
+	 * Check if a given subscription can be renewed.
+	 *
+	 * Deprecated because the use of a $subscription_key is deprecated.
+	 *
+	 * @param string $subscription_key A subscription key of the form created by @see WC_Subscriptions_Manager::get_subscription_key()
+	 * @param int $user_id The ID of the user who owns the subscriptions. Although this parameter is optional, if you have the User ID you should pass it to improve performance.
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function can_subscription_be_renewed( $subscription_key, $user_id = &#039;&#039; ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_can_user_resubscribe_to( $subscription, $user_id )&#039; );
+		return wcs_can_user_resubscribe_to( wcs_get_subscription_from_key( $subscription_key ), $user_id );
+	}
+
+	/**
+	 * Checks if the current request is by a user to renew their subscription, and if it is
+	 * set up a subscription renewal via the cart for the product/variation that is being renewed.
+	 *
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function maybe_create_renewal_order_for_user() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Cart_Renewal::maybe_setup_resubscribe_via_cart()&#039; );
+	}
+
+	/**
+	 * When restoring the cart from the session, if the cart item contains addons, but is also
+	 * a subscription renewal, do not adjust the price because the original order&#039;s price will
+	 * be used, and this includes the addons amounts.
+	 *
+	 * @since 1.5.5
+	 * @deprecated 2.0
+	 */
+	public static function product_addons_adjust_price( $adjust_price, $cart_item ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Cart_Renewal::product_addons_adjust_price()&#039; );
+	}
+
+	/**
+	 * Created a new order for renewing a subscription product based on the details of a previous order.
+	 *
+	 * @param WC_Order|int $order The WC_Order object or ID of the order for which the a new order should be created.
+	 * @param string $product_id The ID of the subscription product in the order which needs to be added to the new order.
+	 * @param array $args (optional) An array of name =&gt; value flags:
+	 *         &#039;new_order_role&#039; string A flag to indicate whether the new order should become the master order for the subscription. Accepts either &#039;parent&#039; or &#039;child&#039;. Defaults to &#039;parent&#039; - replace the existing order.
+	 *         &#039;checkout_renewal&#039; bool Indicates if invoked from an interactive cart/checkout session and certain order items are not set, like taxes, shipping as they need to be set in teh calling function, like @see WC_Subscriptions_Checkout::filter_woocommerce_create_order(). Default false.
+	 *         &#039;failed_order_id&#039; int For checkout_renewal true, indicates order id being replaced
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function generate_renewal_order( $original_order, $product_id, $args = array() ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_create_renewal_order() or wcs_create_resubscribe_order()&#039; );
+
+		if ( ! wcs_order_contains_subscription( $original_order, &#039;parent&#039; ) ) {
+			return false;
+		}
+
+		$args = wp_parse_args(
+			$args,
+			array(
+				&#039;new_order_role&#039;   =&gt; &#039;parent&#039;,
+				&#039;checkout_renewal&#039; =&gt; false,
+			)
+		);
+
+		$subscriptions = wcs_get_subscriptions_for_order( $original_order, array( &#039;order_type&#039; =&gt; &#039;parent&#039; ) );
+		$subscription  = array_shift( $subscriptions );
+
+		if ( &#039;parent&#039; == $args[&#039;new_order_role&#039;] ) {
+			$new_order = wcs_create_resubscribe_order( $subscription );
+		} else {
+			$new_order = wcs_create_renewal_order( $subscription );
+		}
+
+		return wcs_get_objects_property( $new_order, &#039;id&#039; );
+	}
+
+	/**
+	 * If a product is being marked as not purchasable because it is limited and the customer has a subscription,
+	 * but the current request is to resubscribe to the subscription, then mark it as purchasable.
+	 *
+	 * @since 1.5
+	 * @deprecated 2.0
+	 */
+	public static function is_purchasable( $is_purchasable, $product ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Cart_Renewal::is_purchasable()&#039; );
+		return $is_purchasable;
+	}
+
+	/**
+	 * Check if a given order is a subscription renewal order and optionally, if it is a renewal order of a certain role.
+	 *
+	 * @param WC_Order|int $order The WC_Order object or ID of a WC_Order order.
+	 * @param array $args (optional) An array of name =&gt; value flags:
+	 *         &#039;order_role&#039; string (optional) A specific role to check the order against. Either &#039;parent&#039; or &#039;child&#039;.
+	 *         &#039;via_checkout&#039; Indicates whether to check if the renewal order was via the cart/checkout process.
+	 * @since 1.2
+	 */
+	public static function is_renewal( $order, $args = array() ) {
+
+		$args = wp_parse_args(
+			$args,
+			array(
+				&#039;order_role&#039;   =&gt; &#039;&#039;,
+				&#039;via_checkout&#039; =&gt; false,
+			)
+		);
+
+		$is_resubscribe_order = wcs_order_contains_resubscribe( $order );
+		$is_renewal_order     = wcs_order_contains_renewal( $order );
+
+		if ( empty( $args[&#039;new_order_role&#039;] ) ) {
+			_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_order_contains_resubscribe( $order ) and wcs_order_contains_renewal( $order )&#039; );
+			return ( $is_resubscribe_order || $is_renewal_order );
+		} elseif ( &#039;parent&#039; == $args[&#039;new_order_role&#039;] ) {
+			_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_order_contains_resubscribe( $order )&#039; );
+			return $is_resubscribe_order;
+		} else {
+			_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_order_contains_renewal( $order )&#039; );
+			return $is_renewal_order;
+		}
+	}
+
+	/**
+	 * Returns the renewal orders for a given parent order
+	 *
+	 * @param int $order_id The ID of a WC_Order object.
+	 * @param string $output (optional) How you&#039;d like the result. Can be &#039;ID&#039; for IDs only or &#039;WC_Order&#039; for order objects.
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function get_renewal_orders( $order_id, $output = &#039;ID&#039; ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WC_Subscription::get_related_orders()&#039; );
+
+		$subscriptions = wcs_get_subscriptions_for_order( $order_id, array( &#039;order_type&#039; =&gt; &#039;parent&#039; ) );
+		$subscription  = array_shift( $subscriptions );
+
+		if ( &#039;WC_Order&#039; == $output ) {
+
+			$renewal_orders = $subscription-&gt;get_related_orders( &#039;all&#039;, &#039;renewal&#039; );
+
+		} else {
+
+			$renewal_orders = $subscription-&gt;get_related_orders( &#039;ids&#039;, &#039;renewal&#039; );
+
+		}
+
+		return apply_filters( &#039;woocommerce_subscriptions_renewal_orders&#039;, $renewal_orders, $order_id );
+	}
+
+	/**
+	 * Flag payment of manual renewal orders.
+	 *
+	 * This is particularly important to ensure renewals of limited subscriptions can be completed.
+	 *
+	 * @since 1.5.5
+	 * @deprecated 2.0
+	 */
+	public static function get_checkout_payment_url( $pay_url, $order ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Cart_Renewal::get_checkout_payment_url() or WCS_Cart_Resubscribe::get_checkout_payment_url()&#039; );
+		return $pay_url;
+	}
+
+	/**
+	 * Process a renewal payment when a customer has completed the payment for a renewal payment which previously failed.
+	 *
+	 * @since 1.3
+	 * @deprecated 2.0
+	 */
+	public static function maybe_process_failed_renewal_order_payment( $order_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Cart_Renewal::maybe_change_subscription_status( $order_id, $orders_old_status, $orders_new_status )&#039; );
+	}
+
+	/**
+	 * If the payment for a renewal order has previously failed and is then paid, then the
+	 * @see WC_Subscriptions_Manager::process_subscription_payments_on_order() function would
+	 * never be called. This function makes sure it is called.
+	 *
+	 * @param WC_Order|int $order A WC_Order object or ID of a WC_Order order.
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function process_failed_renewal_order_payment( $order_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+		if ( wcs_order_contains_renewal( $order_id ) ) {
+
+			$subscriptions = wcs_get_subscriptions_for_renewal_order( $order_id );
+			$subscription  = array_pop( $subscriptions );
+
+			if ( $subscription-&gt;is_manual() ) {
+				add_action( &#039;woocommerce_payment_complete&#039;, __CLASS__ . &#039;::process_subscription_payment_on_child_order&#039;, 10, 1 );
+			}
+		}
+	}
+
+	/**
+	 * Records manual payment of a renewal order against a subscription.
+	 *
+	 * @param WC_Order|int $order A WC_Order object or ID of a WC_Order order.
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function maybe_record_renewal_order_payment( $order_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+		if ( wcs_order_contains_renewal( $order_id ) ) {
+
+			$subscriptions = wcs_get_subscriptions_for_renewal_order( $order_id );
+			$subscription  = array_pop( $subscriptions );
+
+			if ( $subscription-&gt;is_manual() ) {
+				self::process_subscription_payment_on_child_order( $order_id );
+			}
+		}
+	}
+
+	/**
+	 * Records manual payment of a renewal order against a subscription.
+	 *
+	 * @param WC_Order|int $order A WC_Order object or ID of a WC_Order order.
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function maybe_record_renewal_order_payment_failure( $order_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+		if ( wcs_order_contains_renewal( $order_id ) ) {
+
+			$subscriptions = wcs_get_subscriptions_for_renewal_order( $order_id );
+			$subscription  = array_pop( $subscriptions );
+
+			if ( $subscription-&gt;is_manual() ) {
+				self::process_subscription_payment_on_child_order( $order_id, &#039;failed&#039; );
+			}
+		}
+	}
+
+	/**
+	 * If the payment for a renewal order has previously failed and is then paid, we need to make sure the
+	 * subscription payment function is called.
+	 *
+	 * @param int $user_id The id of the user who purchased the subscription
+	 * @param string $subscription_key A subscription key of the form created by @see WC_Subscriptions_Manager::get_subscription_key()
+	 * @since 1.2
+	 * @deprecated 2.0
+	 */
+	public static function process_subscription_payment_on_child_order( $order_id, $payment_status = &#039;completed&#039; ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+
+		if ( wcs_order_contains_renewal( $order_id ) ) {
+
+			$subscriptions = wcs_get_subscriptions_for_renewal_order( $order_id );
+
+			foreach ( $subscriptions as $subscription ) {
+
+				if ( &#039;failed&#039; == $payment_status ) {
+
+					$subscription-&gt;payment_failed();
+
+				} else {
+
+					$subscription-&gt;payment_complete();
+
+					$subscription-&gt;update_status( &#039;active&#039; );
+				}
+			}
+		}
+	}
+
+	/**
+	 * Adds a renewal orders section to the Related Orders meta box displayed on subscription orders.
+	 *
+	 * @deprecated 2.0
+	 * @since 1.2
+	 */
+	public static function renewal_orders_meta_box_section( $order, $post ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Trigger a hook when a subscription suspended due to a failed renewal payment is reactivated
+	 *
+	 * @since 1.3
+	 */
+	public static function trigger_processed_failed_renewal_order_payment_hook( $user_id, $subscription_key ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, __CLASS__ . &#039;::maybe_record_subscription_payment( $order_id, $orders_old_status, $orders_new_status )&#039; );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

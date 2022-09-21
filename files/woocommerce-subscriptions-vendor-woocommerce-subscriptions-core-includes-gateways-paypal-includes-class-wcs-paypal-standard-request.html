@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html">GatewaysPayPal</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-paypal-standard-request.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions PayPal Standard Request Class.
+ *
+ * Generates URL parameters to send to PayPal to create a subscription with PayPal Standard
+ *
+ * @package     WooCommerce Subscriptions
+ * @subpackage  Gateways/PayPal
+ * @category    Class
+ * @author      Prospress
+ * @since       2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_PayPal_Standard_Request {
+
+	/**
+	 * Get PayPal Args for passing to PP
+	 *
+	 * Based on the HTML Variables documented here: https://developer.paypal.com/webapps/developer/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/#id08A6HI00JQU
+	 *
+	 * @param WC_Order $order
+	 * @return array
+	 */
+	public static function get_paypal_args( $paypal_args, $order ) {
+
+		$is_payment_change = WC_Subscriptions_Change_Payment_Gateway::$is_request_to_change_payment;
+		$order_contains_failed_renewal = false;
+
+		// Payment method changes act on the subscription not the original order
+		if ( $is_payment_change ) {
+
+			$subscription = wcs_get_subscription( wcs_get_objects_property( $order, &#039;id&#039; ) );
+			$order        = $subscription-&gt;get_parent();
+
+			// We need the subscription&#039;s total
+			if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+				remove_filter( &#039;woocommerce_order_amount_total&#039;, &#039;WC_Subscriptions_Change_Payment_Gateway::maybe_zero_total&#039;, 11 );
+			} else {
+				remove_filter( &#039;woocommerce_subscription_get_total&#039;, &#039;WC_Subscriptions_Change_Payment_Gateway::maybe_zero_total&#039;, 11 );
+			}
+		} else {
+
+			// Otherwise the order is the $order
+			if ( $cart_item = wcs_cart_contains_failed_renewal_order_payment() || false !== WC_Subscriptions_Renewal_Order::get_failed_order_replaced_by( wcs_get_objects_property( $order, &#039;id&#039; ) ) ) {
+				$subscriptions                 = wcs_get_subscriptions_for_renewal_order( $order );
+				$order_contains_failed_renewal = true;
+			} else {
+				$subscriptions                 = wcs_get_subscriptions_for_order( $order );
+			}
+
+			// Only one subscription allowed per order with PayPal
+			$subscription = array_pop( $subscriptions );
+		}
+
+		if ( $order_contains_failed_renewal || ( ! empty( $subscription ) &amp;&amp; $subscription-&gt;get_total() &gt; 0 &amp;&amp; ! wcs_is_manual_renewal_required() ) ) {
+
+			// It&#039;s a subscription
+			$paypal_args[&#039;cmd&#039;] = &#039;_xclick-subscriptions&#039;;
+
+			foreach ( $subscription-&gt;get_items() as $item ) {
+				if ( $item[&#039;qty&#039;] &gt; 1 ) {
+					$item_names[] = $item[&#039;qty&#039;] . &#039; x &#039; . wcs_get_paypal_item_name( $item[&#039;name&#039;] );
+				} elseif ( $item[&#039;qty&#039;] &gt; 0 ) {
+					$item_names[] = wcs_get_paypal_item_name( $item[&#039;name&#039;] );
+				}
+			}
+
+			// Subscription imported or manually added via admin so doesn&#039;t have a parent order
+			if ( empty( $order ) ) {
+				// translators: 1$: subscription ID, 2$: names of items, comma separated
+				$paypal_args[&#039;item_name&#039;] = wcs_get_paypal_item_name( sprintf( _x( &#039;Subscription %1$s - %2$s&#039;, &#039;item name sent to paypal&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription-&gt;get_order_number(), implode( &#039;, &#039;, $item_names ) ) );
+			} else {
+				// translators: 1$: subscription ID, 2$: order ID, 3$: names of items, comma separated
+				$paypal_args[&#039;item_name&#039;] = wcs_get_paypal_item_name( sprintf( _x( &#039;Subscription %1$s (Order %2$s) - %3$s&#039;, &#039;item name sent to paypal&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription-&gt;get_order_number(), $order-&gt;get_order_number(), implode( &#039;, &#039;, $item_names ) ) );
+			}
+
+			$unconverted_periods = array(
+				&#039;billing_period&#039; =&gt; $subscription-&gt;get_billing_period(),
+				&#039;trial_period&#039;   =&gt; $subscription-&gt;get_trial_period(),
+			);
+
+			$converted_periods = array();
+
+			// Convert period strings into PayPay&#039;s format
+			foreach ( $unconverted_periods as $key =&gt; $period ) {
+				switch ( strtolower( $period ) ) {
+					case &#039;day&#039;:
+						$converted_periods[ $key ] = &#039;D&#039;;
+						break;
+					case &#039;week&#039;:
+						$converted_periods[ $key ] = &#039;W&#039;;
+						break;
+					case &#039;year&#039;:
+						$converted_periods[ $key ] = &#039;Y&#039;;
+						break;
+					case &#039;month&#039;:
+					default:
+						$converted_periods[ $key ] = &#039;M&#039;;
+						break;
+				}
+			}
+
+			$price_per_period       = $subscription-&gt;get_total();
+			$subscription_interval  = $subscription-&gt;get_billing_interval();
+			$start_timestamp        = $subscription-&gt;get_time( &#039;date_created&#039; );
+			$trial_end_timestamp    = $subscription-&gt;get_time( &#039;trial_end&#039; );
+			$next_payment_timestamp = $subscription-&gt;get_time( &#039;next_payment&#039; );
+
+			$is_synced_subscription = WC_Subscriptions_Synchroniser::subscription_contains_synced_product( $subscription-&gt;get_id() );
+			$is_early_resubscribe   = false;
+
+			if ( $resubscribe_cart_item = wcs_cart_contains_resubscribe() ) {
+				$resubscribed_subscription = wcs_get_subscription( $resubscribe_cart_item[&#039;subscription_resubscribe&#039;][&#039;subscription_id&#039;] );
+				$is_early_resubscribe      = wcs_is_subscription( $resubscribed_subscription ) &amp;&amp; $resubscribed_subscription-&gt;has_status( &#039;pending-cancel&#039; );
+			}
+
+			if ( $is_synced_subscription ) {
+				$length_from_timestamp = $next_payment_timestamp;
+			} elseif ( $trial_end_timestamp &gt; 0 ) {
+				$length_from_timestamp = $trial_end_timestamp;
+			} else {
+				$length_from_timestamp = $start_timestamp;
+			}
+
+			$subscription_length = wcs_estimate_periods_between( $length_from_timestamp, $subscription-&gt;get_time( &#039;end&#039; ), $subscription-&gt;get_billing_period() );
+
+			$subscription_installments = $subscription_length / $subscription_interval;
+
+			$initial_payment = ( $is_payment_change ) ? 0 : $order-&gt;get_total();
+
+			if ( $order_contains_failed_renewal || $is_payment_change ) {
+
+				if ( $is_payment_change ) {
+					// Add a nonce to the order ID to avoid &quot;This invoice has already been paid&quot; error when changing payment method to PayPal when it was previously PayPal
+					$suffix = &#039;-wcscpm-&#039; . wp_create_nonce();
+				} else {
+					// Failed renewal order, append a descriptor and renewal order&#039;s ID
+					$suffix = &#039;-wcsfrp-&#039; . wcs_get_objects_property( $order, &#039;id&#039; );
+				}
+
+				$parent_order = $subscription-&gt;get_parent();
+
+				// Change the &#039;invoice&#039; and the &#039;custom&#039; values to be for the original order (if there is one)
+				if ( false === $parent_order ) {
+					// No original order so we need to use the subscriptions values instead
+					$order_number = ltrim( $subscription-&gt;get_order_number(), _x( &#039;#&#039;, &#039;hash before the order number. Used as a character to remove from the actual order number&#039;, &#039;woocommerce-subscriptions&#039; ) ) . &#039;-subscription&#039;;
+					$order_id_key = array(
+						&#039;order_id&#039;  =&gt; $subscription-&gt;get_id(),
+						&#039;order_key&#039; =&gt; $subscription-&gt;get_order_key(),
+					);
+				} else {
+					$order_number = ltrim( $parent_order-&gt;get_order_number(), _x( &#039;#&#039;, &#039;hash before the order number. Used as a character to remove from the actual order number&#039;, &#039;woocommerce-subscriptions&#039; ) );
+					$order_id_key = array(
+						&#039;order_id&#039;  =&gt; wcs_get_objects_property( $parent_order, &#039;id&#039; ),
+						&#039;order_key&#039; =&gt; wcs_get_objects_property( $parent_order, &#039;order_key&#039; ),
+					);
+				}
+
+				// Set the invoice details to the original order&#039;s invoice but also append a special string and this renewal orders ID so that we can match it up as a failed renewal order payment later
+				$paypal_args[&#039;invoice&#039;] = WCS_PayPal::get_option( &#039;invoice_prefix&#039; ) . $order_number . $suffix;
+				$paypal_args[&#039;custom&#039;]  = wcs_json_encode(
+					array_merge(
+						$order_id_key,
+						array(
+							&#039;subscription_id&#039;  =&gt; $subscription-&gt;get_id(),
+							&#039;subscription_key&#039; =&gt; $subscription-&gt;get_order_key(),
+						)
+					)
+				);
+
+			} else {
+
+				// Store the subscription ID in the args sent to PayPal so we can access them later
+				$paypal_args[&#039;custom&#039;] = wcs_json_encode(
+					array(
+						&#039;order_id&#039;         =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+						&#039;order_key&#039;        =&gt; wcs_get_objects_property( $order, &#039;order_key&#039; ),
+						&#039;subscription_id&#039;  =&gt; $subscription-&gt;get_id(),
+						&#039;subscription_key&#039; =&gt; $subscription-&gt;get_order_key(),
+					)
+				);
+			}
+
+			if ( $order_contains_failed_renewal ) {
+
+				$subscription_trial_length = 0;
+				$subscription_installments = max( $subscription_installments - $subscription-&gt;get_payment_count(), 0 );
+
+			// If we&#039;re changing the payment date or switching subs, we need to set the trial period to the next payment date &amp; installments to be the number of installments left
+			} elseif ( $is_payment_change || $is_synced_subscription || $is_early_resubscribe ) {
+
+				$next_payment_timestamp = $subscription-&gt;get_time( &#039;next_payment&#039; );
+
+				// When the subscription is on hold
+				if ( false != $next_payment_timestamp &amp;&amp; ! empty( $next_payment_timestamp ) ) {
+
+					$trial_until = wcs_calculate_paypal_trial_periods_until( $next_payment_timestamp );
+
+					$subscription_trial_length = $trial_until[&#039;first_trial_length&#039;];
+					$converted_periods[&#039;trial_period&#039;] = $trial_until[&#039;first_trial_period&#039;];
+
+					$second_trial_length = $trial_until[&#039;second_trial_length&#039;];
+					$second_trial_period = $trial_until[&#039;second_trial_period&#039;];
+
+				} else {
+
+					$subscription_trial_length = 0;
+
+				}
+
+				// If this is a payment change, we need to account for completed payments on the number of installments owing
+				if ( $is_payment_change &amp;&amp; $subscription_length &gt; 0 ) {
+					$subscription_installments = max( $subscription_installments - $subscription-&gt;get_payment_count(), 0 );
+				}
+			} else {
+
+				$subscription_trial_length = wcs_estimate_periods_between( $start_timestamp, $trial_end_timestamp, $subscription-&gt;get_trial_period() );
+
+			}
+
+			if ( $subscription_trial_length &gt; 0 ) { // Specify a free trial period
+
+				$paypal_args[&#039;a1&#039;] = ( $initial_payment &gt; 0 ) ? $initial_payment : 0;
+
+				// Trial period length
+				$paypal_args[&#039;p1&#039;] = $subscription_trial_length;
+
+				// Trial period
+				$paypal_args[&#039;t1&#039;] = $converted_periods[&#039;trial_period&#039;];
+
+				// We need to use a second trial period before we have more than 90 days until the next payment
+				if ( isset( $second_trial_length ) &amp;&amp; $second_trial_length &gt; 0 ) {
+					$paypal_args[&#039;a2&#039;] = 0.01; // Alas, although it&#039;s undocumented, PayPal appears to require a non-zero value in order to allow a second trial period
+					$paypal_args[&#039;p2&#039;] = $second_trial_length;
+					$paypal_args[&#039;t2&#039;] = $second_trial_period;
+				}
+			} elseif ( $initial_payment != $price_per_period ) { // No trial period, but initial amount includes a sign-up fee and/or other items, so charge it as a separate period
+
+				if ( 1 == $subscription_installments ) {
+					$param_number = 3;
+				} else {
+					$param_number = 1;
+				}
+
+				$paypal_args[ &#039;a&#039; . $param_number ] = $initial_payment;
+
+				// Sign Up interval
+				$paypal_args[ &#039;p&#039; . $param_number ] = $subscription_interval;
+
+				// Sign Up unit of duration
+				$paypal_args[ &#039;t&#039; . $param_number ] = $converted_periods[&#039;billing_period&#039;];
+
+			}
+
+			// We have a recurring payment
+			if ( ! isset( $param_number ) || 1 == $param_number ) {
+
+				// Subscription price
+				$paypal_args[&#039;a3&#039;] = $price_per_period;
+
+				// Subscription duration
+				$paypal_args[&#039;p3&#039;] = $subscription_interval;
+
+				// Subscription period
+				$paypal_args[&#039;t3&#039;] = $converted_periods[&#039;billing_period&#039;];
+
+			}
+
+			// Recurring payments
+			if ( 1 == $subscription_installments || ( $initial_payment != $price_per_period &amp;&amp; 0 == $subscription_trial_length &amp;&amp; 2 == $subscription_installments ) ) {
+
+				// Non-recurring payments
+				$paypal_args[&#039;src&#039;] = 0;
+
+			} else {
+
+				$paypal_args[&#039;src&#039;] = 1;
+
+				if ( $subscription_installments &gt; 0 ) {
+
+					// An initial period is being used to charge a sign-up fee
+					if ( $initial_payment != $price_per_period &amp;&amp; 0 == $subscription_trial_length ) {
+						$subscription_installments--;
+					}
+
+					$paypal_args[&#039;srt&#039;] = $subscription_installments;
+
+				}
+			}
+
+			// Don&#039;t reattempt failed payments, instead let Subscriptions handle the failed payment
+			$paypal_args[&#039;sra&#039;] = 0;
+
+			// Force return URL so that order description &amp; instructions display
+			$paypal_args[&#039;rm&#039;] = 2;
+
+			// Reattach the filter we removed earlier
+			if ( $is_payment_change ) {
+				if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+					add_filter( &#039;woocommerce_order_amount_total&#039;, &#039;WC_Subscriptions_Change_Payment_Gateway::maybe_zero_total&#039;, 11, 2 );
+				} else {
+					add_filter( &#039;woocommerce_subscription_get_total&#039;, &#039;WC_Subscriptions_Change_Payment_Gateway::maybe_zero_total&#039;, 11, 2 );
+				}
+			}
+		}
+
+		return $paypal_args;
+	}
+
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

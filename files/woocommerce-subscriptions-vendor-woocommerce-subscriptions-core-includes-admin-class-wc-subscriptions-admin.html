@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-admin.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Admin Class
+ *
+ * Adds a Subscription setting tab and saves subscription settings. Adds a Subscriptions Management page. Adds
+ * Welcome messages and pointers to streamline learning process for new users.
+ *
+ * @package WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Admin
+ * @category Class
+ * @author Brent Shepherd
+ * @since 1.0
+ */
+class WC_Subscriptions_Admin {
+
+	/**
+	 * The WooCommerce settings tab name
+	 *
+	 * @since 1.0
+	 */
+	public static $tab_name = &#039;subscriptions&#039;;
+
+	/**
+	 * The prefix for subscription settings
+	 *
+	 * @since 1.0
+	 */
+	public static $option_prefix = &#039;woocommerce_subscriptions&#039;;
+
+	/**
+	 * Store an instance of the list table
+	 *
+	 * @since 1.4.6
+	 */
+	private static $subscriptions_list_table;
+
+	/**
+	 * Store an instance of the list table
+	 *
+	 * @since 2.0
+	 */
+	private static $found_related_orders = false;
+
+	/**
+	 * Is meta boxes saved once?
+	 *
+	 * @var boolean
+	 * @since 2.2.0
+	 */
+	private static $saved_product_meta = false;
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 *
+	 * @since 1.0
+	 */
+	public static function init() {
+
+		// Add subscriptions to the product select box
+		add_filter( &#039;product_type_selector&#039;, __CLASS__ . &#039;::add_subscription_products_to_select&#039; );
+
+		// Special handling of downloadable and virtual products on the WooCommerce &gt; Products screen.
+		add_filter( &#039;product_type_selector&#039;, array( __CLASS__, &#039;add_downloadable_and_virtual_filters&#039; ) );
+		add_filter( &#039;request&#039;, array( __CLASS__, &#039;modify_downloadable_and_virtual_product_queries&#039; ), 11 );
+
+		// Add subscription pricing fields on edit product page
+		add_action( &#039;woocommerce_product_options_general_product_data&#039;, __CLASS__ . &#039;::subscription_pricing_fields&#039; );
+
+		// Add listener to clear our own transients when WooCommerce -&gt; Clear Transients is
+		// triggered from the admin panel
+		add_action( &#039;woocommerce_page_wc-status&#039;, __CLASS__ . &#039;::clear_subscriptions_transients&#039; );
+
+		// Add subscription shipping options on edit product page
+		add_action( &#039;woocommerce_product_options_shipping&#039;, __CLASS__ . &#039;::subscription_shipping_fields&#039; );
+
+		// And also on the variations section
+		add_action( &#039;woocommerce_product_after_variable_attributes&#039;, __CLASS__ . &#039;::variable_subscription_pricing_fields&#039;, 10, 3 );
+
+		// Add bulk edit actions for variable subscription products
+		add_action( &#039;woocommerce_variable_product_bulk_edit_actions&#039;, __CLASS__ . &#039;::variable_subscription_bulk_edit_actions&#039;, 10 );
+
+		// Save subscription meta when a subscription product is changed via bulk edit
+		add_action( &#039;woocommerce_product_bulk_edit_save&#039;, __CLASS__ . &#039;::bulk_edit_save_subscription_meta&#039;, 10 );
+
+		// Save subscription meta only when a subscription product is saved, can&#039;t run on the &quot;&#039;woocommerce_process_product_meta_&#039; . $product_type&quot; action because we need to override some WC defaults
+		add_action( &#039;save_post&#039;, __CLASS__ . &#039;::save_subscription_meta&#039;, 11 );
+		add_action( &#039;save_post&#039;, __CLASS__ . &#039;::save_variable_subscription_meta&#039;, 11 );
+
+		// Save variable subscription meta
+		add_action( &#039;woocommerce_process_product_meta_variable-subscription&#039;, __CLASS__ . &#039;::process_product_meta_variable_subscription&#039; );
+		add_action( &#039;woocommerce_save_product_variation&#039;, __CLASS__ . &#039;::save_product_variation&#039;, 20, 2 );
+
+		add_action( &#039;woocommerce_subscription_pre_update_status&#039;, __CLASS__ . &#039;::check_customer_is_set&#039;, 10, 3 );
+
+		add_action( &#039;product_variation_linked&#039;, __CLASS__ . &#039;::set_variation_meta_defaults_on_bulk_add&#039; );
+
+		add_filter( &#039;woocommerce_settings_tabs_array&#039;, __CLASS__ . &#039;::add_subscription_settings_tab&#039;, 50 );
+
+		add_action( &#039;woocommerce_settings_subscriptions&#039;, __CLASS__ . &#039;::subscription_settings_page&#039; );
+
+		add_action( &#039;woocommerce_update_options_&#039; . self::$tab_name, __CLASS__ . &#039;::update_subscription_settings&#039; );
+
+		add_filter( &#039;manage_users_columns&#039;, __CLASS__ . &#039;::add_user_columns&#039;, 11, 1 );
+
+		add_filter( &#039;manage_users_custom_column&#039;, __CLASS__ . &#039;::user_column_values&#039;, 11, 3 ); // Fire after default to avoid being broken by plugins #doing_it_wrong
+
+		add_action( &#039;admin_enqueue_scripts&#039;, __CLASS__ . &#039;::enqueue_styles_scripts&#039; );
+
+		add_action( &#039;woocommerce_admin_field_informational&#039;, __CLASS__ . &#039;::add_informational_admin_field&#039; );
+
+		add_filter( &#039;posts_where&#039;, array( __CLASS__, &#039;filter_orders&#039; ) );
+
+		add_filter( &#039;posts_where&#039;, array( __CLASS__, &#039;filter_orders_and_subscriptions_from_list&#039; ) );
+
+		add_filter( &#039;posts_where&#039;, array( __CLASS__, &#039;filter_paid_subscription_orders_for_user&#039; ) );
+
+		add_action( &#039;admin_notices&#039;, __CLASS__ . &#039;::display_renewal_filter_notice&#039; );
+
+		add_shortcode( &#039;subscriptions&#039;, __CLASS__ . &#039;::do_subscriptions_shortcode&#039; );
+
+		add_filter( &#039;set-screen-option&#039;, __CLASS__ . &#039;::set_manage_subscriptions_screen_option&#039;, 10, 3 );
+
+		add_filter( &#039;woocommerce_payment_gateways_setting_columns&#039;, array( __CLASS__, &#039;payment_gateways_renewal_column&#039; ) );
+
+		add_action( &#039;woocommerce_payment_gateways_setting_column_renewals&#039;, array( __CLASS__, &#039;payment_gateways_renewal_support&#039; ) );
+
+		// Do not display formatted order total on the Edit Order administration screen
+		add_filter( &#039;woocommerce_get_formatted_order_total&#039;, __CLASS__ . &#039;::maybe_remove_formatted_order_total_filter&#039;, 0, 2 );
+
+		add_action( &#039;woocommerce_payment_gateways_settings&#039;, __CLASS__ . &#039;::add_recurring_payment_gateway_information&#039;, 10, 1 );
+
+		// Change text for when order items cannot be edited
+		wcs_add_woocommerce_dependent_action( &#039;woocommerce_admin_order_totals_after_total&#039;, array( __CLASS__, &#039;maybe_attach_gettext_callback&#039; ), &#039;4.0.0&#039;, &#039;&gt;&#039; );
+		wcs_add_woocommerce_dependent_action( &#039;woocommerce_admin_order_totals_after_refunded&#039;, array( __CLASS__, &#039;maybe_attach_gettext_callback&#039; ), &#039;4.0.0&#039;, &#039;&lt;&#039; );
+
+		// Unhook gettext callback to prevent extra call impact
+		add_action( &#039;woocommerce_order_item_add_action_buttons&#039;, __CLASS__ . &#039;::maybe_unattach_gettext_callback&#039;, 10, 1 );
+
+		// Add a reminder on the enable guest checkout setting that subscriptions still require an account
+		add_filter( &#039;woocommerce_payment_gateways_settings&#039;, array( __CLASS__, &#039;add_guest_checkout_setting_note&#039; ), 10, 1 );
+		add_filter( &#039;woocommerce_account_settings&#039;, array( __CLASS__, &#039;add_guest_checkout_setting_note&#039; ), 10, 1 );
+
+		// Validate the product type change before other product changes are saved.
+		add_action( &#039;woocommerce_process_product_meta&#039;, array( __CLASS__, &#039;validate_product_type_change&#039; ), 5 );
+
+		// Allow admin to enable account creation specifically for subscription purchases.
+		add_filter( &#039;woocommerce_account_settings&#039;, array( __CLASS__, &#039;add_registration_for_subscription_purchases_setting&#039; ), 10, 1 );
+
+		// Prevent variations from being deleted if switching from a variable product type to a variable product type.
+		add_filter( &#039;woocommerce_delete_variations_on_product_type_change&#039;, array( __CLASS__, &#039;maybe_keep_variations&#039; ), 10, 4 );
+	}
+
+	/**
+	 * Clear all transients data we have when the WooCommerce::Tools::Clear Transients action is
+	 * triggered.
+	 *
+	 * @since 2.1.1
+	 *
+	 * @return null
+	 */
+	public static function clear_subscriptions_transients() {
+		global $wpdb;
+		if ( empty( $_GET[&#039;action&#039;] ) || empty( $_REQUEST[&#039;_wpnonce&#039;] ) || ! wp_verify_nonce( $_REQUEST[&#039;_wpnonce&#039;], &#039;debug_action&#039; ) ) {
+			return;
+		}
+
+		if ( wc_clean( $_GET[&#039;action&#039;] ) === &#039;clear_transients&#039; ) {
+			$transients_to_delete = array(
+				&#039;wc_report_subscription_by_product&#039;,
+				&#039;wc_report_subscription_by_customer&#039;,
+				&#039;wc_report_subscription_events_by_date&#039;,
+				&#039;wcs_report_subscription_by_product&#039;,
+				&#039;wcs_report_subscription_by_customer&#039;,
+				&#039;wcs_report_subscription_events_by_date&#039;,
+				&#039;wcs_report_upcoming_recurring_revenue&#039;,
+			);
+
+			// Get all related order and subscription ranges transients
+			$results = $wpdb-&gt;get_col( &quot;SELECT DISTINCT `option_name`
+				FROM `$wpdb-&gt;options`
+				WHERE `option_name` LIKE &#039;%wcs-related-orders-to-%&#039; OR `option_name` LIKE &#039;%wcs-sub-ranges-%&#039;&quot; );
+
+			foreach ( $results as $column ) {
+				$name = explode( &#039;transient_&#039;, $column, 2 );
+				$transients_to_delete[] = $name[1];
+			}
+
+			foreach ( $transients_to_delete as $transient_to_delete ) {
+				delete_transient( $transient_to_delete );
+			}
+		}
+	}
+
+
+	/**
+	 * Add the &#039;subscriptions&#039; product type to the WooCommerce product type select box.
+	 *
+	 * @param array Array of Product types &amp; their labels, excluding the Subscription product type.
+	 * @return array Array of Product types &amp; their labels, including the Subscription product type.
+	 * @since 1.0
+	 */
+	public static function add_subscription_products_to_select( $product_types ) {
+
+		$product_types[&#039;subscription&#039;]          = __( &#039;Simple subscription&#039;, &#039;woocommerce-subscriptions&#039; );
+		$product_types[&#039;variable-subscription&#039;] = __( &#039;Variable subscription&#039;, &#039;woocommerce-subscriptions&#039; );
+
+		return $product_types;
+	}
+
+	/**
+	 * Add options for downloadable and virtual subscription products to the product type selector on the WooCommerce products screen.
+	 *
+	 * @param  array $product_types
+	 * @return array
+	 * @since 2.5.1
+	 */
+	public static function add_downloadable_and_virtual_filters( $product_types ) {
+		global $typenow;
+
+		if ( ! is_admin() || ! doing_action( &#039;restrict_manage_posts&#039; ) || &#039;product&#039; !== $typenow ) {
+			return $product_types;
+		}
+
+		$product_options = array_reverse(
+			array(
+				&#039;downloadable_subscription&#039; =&gt; ( is_rtl() ? &#039;&amp;larr;&#039; : &#039;&amp;rarr;&#039; ) . &#039; &#039; . __( &#039;Downloadable&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;virtual_subscription&#039;      =&gt; ( is_rtl() ? &#039;&amp;larr;&#039; : &#039;&amp;rarr;&#039; ) . &#039; &#039; . __( &#039;Virtual&#039;, &#039;woocommerce-subscriptions&#039; ),
+			)
+		);
+		foreach ( $product_options as $key =&gt; $label ) {
+			$product_types = wcs_array_insert_after( &#039;subscription&#039;, $product_types, $key, $label );
+		}
+
+		return $product_types;
+	}
+
+	/**
+	 * Modifies the main query on the WooCommerce products screen to correctly handle filtering by virtual and downloadable
+	 * product types.
+	 *
+	 * @param  array $query_vars
+	 * @return array $query_vars
+	 * @since  2.5.1
+	 */
+	public static function modify_downloadable_and_virtual_product_queries( $query_vars ) {
+		global $pagenow, $typenow;
+
+		if ( ! is_admin() || &#039;edit.php&#039; !== $pagenow || &#039;product&#039; !== $typenow ) {
+			return $query_vars;
+		}
+
+		$current_product_type = isset( $_REQUEST[&#039;product_type&#039;] ) ? wc_clean( wp_unslash( $_REQUEST[&#039;product_type&#039;] ) ) : false;
+
+		if ( ! $current_product_type ) {
+			return $query_vars;
+		}
+
+		if ( in_array( $current_product_type, array( &#039;downloadable&#039;, &#039;virtual&#039; ) ) &amp;&amp; ! isset( $query_vars[&#039;tax_query&#039;] ) ) {
+			// Do not include subscriptions when the default &quot;Downloadable&quot; or &quot;Virtual&quot; query for simple products is being executed.
+			$query_vars[&#039;tax_query&#039;] = array(
+				array(
+					&#039;taxonomy&#039; =&gt; &#039;product_type&#039;,
+					&#039;terms&#039;    =&gt; array( &#039;subscription&#039; ),
+					&#039;field&#039;    =&gt; &#039;slug&#039;,
+					&#039;operator&#039; =&gt; &#039;NOT IN&#039;,
+				),
+			);
+		} elseif ( in_array( $current_product_type, array( &#039;downloadable_subscription&#039;, &#039;virtual_subscription&#039; ) ) ) {
+			// Limit query to subscription products when the &quot;Downloadable&quot; or &quot;Virtual&quot; choices under &quot;Simple Subscription&quot; are being used.
+			$query_vars[&#039;meta_value&#039;] = &#039;yes&#039;;
+			$query_vars[&#039;meta_key&#039;] = &#039;_&#039; . str_replace( &#039;_subscription&#039;, &#039;&#039;, $current_product_type );
+			$query_vars[&#039;product_type&#039;] = &#039;subscription&#039;;
+		}
+
+		return $query_vars;
+	}
+
+	/**
+	 * Output the subscription specific pricing fields on the &quot;Edit Product&quot; admin page.
+	 *
+	 * @since 1.0
+	 */
+	public static function subscription_pricing_fields() {
+		global $post;
+
+		$chosen_price        = get_post_meta( $post-&gt;ID, &#039;_subscription_price&#039;, true );
+		$chosen_interval     = get_post_meta( $post-&gt;ID, &#039;_subscription_period_interval&#039;, true );
+		$chosen_trial_length = WC_Subscriptions_Product::get_trial_length( $post-&gt;ID );
+		$chosen_trial_period = WC_Subscriptions_Product::get_trial_period( $post-&gt;ID );
+
+		$price_tooltip = __( &#039;Choose the subscription price, billing interval and period.&#039;, &#039;woocommerce-subscriptions&#039; );
+		// translators: placeholder is trial period validation message if passed an invalid value (e.g. &quot;Trial period can not exceed 4 weeks&quot;)
+		$trial_tooltip = sprintf( _x( &#039;An optional period of time to wait before charging the first recurring payment. Any sign up fee will still be charged at the outset of the subscription. %s&#039;, &#039;Trial period field tooltip on Edit Product administration screen&#039;, &#039;woocommerce-subscriptions&#039; ), self::get_trial_period_validation_message() );
+
+		// Set month as the default billing period
+		if ( ! $chosen_period = get_post_meta( $post-&gt;ID, &#039;_subscription_period&#039;, true ) ) {
+			$chosen_period = &#039;month&#039;;
+		}
+
+		echo &#039;&lt;div class=&quot;options_group subscription_pricing show_if_subscription hidden&quot;&gt;&#039;;
+
+		// Subscription Price, Interval and Period
+		?&gt;&lt;p class=&quot;form-field _subscription_price_fields _subscription_price_field&quot;&gt;
+			&lt;label for=&quot;_subscription_price&quot;&gt;
+				&lt;?php
+				// translators: %s: currency symbol.
+				printf( esc_html__( &#039;Subscription price (%s)&#039;, &#039;woocommerce-subscriptions&#039; ), esc_html( get_woocommerce_currency_symbol() ) );
+				?&gt;
+			&lt;/label&gt;
+			&lt;span class=&quot;wrap&quot;&gt;
+				&lt;input type=&quot;text&quot; id=&quot;_subscription_price&quot; name=&quot;_subscription_price&quot; class=&quot;wc_input_price wc_input_subscription_price&quot; placeholder=&quot;&lt;?php echo esc_attr_x( &#039;e.g. 5.90&#039;, &#039;example price&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&quot; step=&quot;any&quot; min=&quot;0&quot; value=&quot;&lt;?php echo esc_attr( wc_format_localized_price( $chosen_price ) ); ?&gt;&quot; /&gt;
+				&lt;label for=&quot;_subscription_period_interval&quot; class=&quot;wcs_hidden_label&quot;&gt;&lt;?php esc_html_e( &#039;Subscription interval&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/label&gt;
+				&lt;select id=&quot;_subscription_period_interval&quot; name=&quot;_subscription_period_interval&quot; class=&quot;wc_input_subscription_period_interval&quot;&gt;
+				&lt;?php foreach ( wcs_get_subscription_period_interval_strings() as $value =&gt; $label ) { ?&gt;
+					&lt;option value=&quot;&lt;?php echo esc_attr( $value ); ?&gt;&quot; &lt;?php selected( $value, $chosen_interval, true ) ?&gt;&gt;&lt;?php echo esc_html( $label ); ?&gt;&lt;/option&gt;
+				&lt;?php } ?&gt;
+				&lt;/select&gt;
+				&lt;label for=&quot;_subscription_period&quot; class=&quot;wcs_hidden_label&quot;&gt;&lt;?php esc_html_e( &#039;Subscription period&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/label&gt;
+				&lt;select id=&quot;_subscription_period&quot; name=&quot;_subscription_period&quot; class=&quot;wc_input_subscription_period last&quot; &gt;
+				&lt;?php foreach ( wcs_get_subscription_period_strings() as $value =&gt; $label ) { ?&gt;
+					&lt;option value=&quot;&lt;?php echo esc_attr( $value ); ?&gt;&quot; &lt;?php selected( $value, $chosen_period, true ) ?&gt;&gt;&lt;?php echo esc_html( $label ); ?&gt;&lt;/option&gt;
+				&lt;?php } ?&gt;
+				&lt;/select&gt;
+			&lt;/span&gt;
+			&lt;?php echo wcs_help_tip( $price_tooltip ); ?&gt;
+		&lt;/p&gt;&lt;?php
+
+		// Subscription Length
+		woocommerce_wp_select(
+			array(
+				&#039;id&#039;          =&gt; &#039;_subscription_length&#039;,
+				&#039;class&#039;       =&gt; &#039;wc_input_subscription_length select short&#039;,
+				&#039;label&#039;       =&gt; __( &#039;Expire after&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;options&#039;     =&gt; wcs_get_subscription_ranges( $chosen_period ),
+				&#039;desc_tip&#039;    =&gt; true,
+				&#039;description&#039; =&gt; __( &#039;Automatically expire the subscription after this length of time. This length is in addition to any free trial or amount of time provided before a synchronised first renewal date.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			)
+		);
+
+		// Sign-up Fee
+		woocommerce_wp_text_input( array(
+			&#039;id&#039;                =&gt; &#039;_subscription_sign_up_fee&#039;,
+			// Keep wc_input_subscription_intial_price for backward compatibility.
+			&#039;class&#039;             =&gt; &#039;wc_input_subscription_intial_price wc_input_subscription_initial_price wc_input_price  short&#039;,
+			// translators: %s is a currency symbol / code
+			&#039;label&#039;             =&gt; sprintf( __( &#039;Sign-up fee (%s)&#039;, &#039;woocommerce-subscriptions&#039; ), get_woocommerce_currency_symbol() ),
+			&#039;placeholder&#039;       =&gt; _x( &#039;e.g. 9.90&#039;, &#039;example price&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;description&#039;       =&gt; __( &#039;Optionally include an amount to be charged at the outset of the subscription. The sign-up fee will be charged immediately, even if the product has a free trial or the payment dates are synced.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;desc_tip&#039;          =&gt; true,
+			&#039;type&#039;              =&gt; &#039;text&#039;,
+			&#039;data_type&#039;         =&gt; &#039;price&#039;,
+			&#039;custom_attributes&#039; =&gt; array(
+				&#039;step&#039; =&gt; &#039;any&#039;,
+				&#039;min&#039;  =&gt; &#039;0&#039;,
+			),
+		) );
+
+		// Trial Length
+		?&gt;&lt;p class=&quot;form-field _subscription_trial_length_field&quot;&gt;
+			&lt;label for=&quot;_subscription_trial_length&quot;&gt;&lt;?php esc_html_e( &#039;Free trial&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/label&gt;
+			&lt;span class=&quot;wrap&quot;&gt;
+				&lt;input type=&quot;text&quot; id=&quot;_subscription_trial_length&quot; name=&quot;_subscription_trial_length&quot; class=&quot;wc_input_subscription_trial_length&quot; value=&quot;&lt;?php echo esc_attr( $chosen_trial_length ); ?&gt;&quot; /&gt;
+				&lt;label for=&quot;_subscription_trial_period&quot; class=&quot;wcs_hidden_label&quot;&gt;&lt;?php esc_html_e( &#039;Subscription Trial Period&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/label&gt;
+				&lt;select id=&quot;_subscription_trial_period&quot; name=&quot;_subscription_trial_period&quot; class=&quot;wc_input_subscription_trial_period last&quot; &gt;
+					&lt;?php foreach ( wcs_get_available_time_periods() as $value =&gt; $label ) { ?&gt;
+						&lt;option value=&quot;&lt;?php echo esc_attr( $value ); ?&gt;&quot; &lt;?php selected( $value, $chosen_trial_period, true ) ?&gt;&gt;&lt;?php echo esc_html( $label ); ?&gt;&lt;/option&gt;
+					&lt;?php } ?&gt;
+				&lt;/select&gt;
+			&lt;/span&gt;
+			&lt;?php echo wcs_help_tip( $trial_tooltip ); ?&gt;
+		&lt;/p&gt;&lt;?php
+
+		do_action( &#039;woocommerce_subscriptions_product_options_pricing&#039; );
+
+		wp_nonce_field( &#039;wcs_subscription_meta&#039;, &#039;_wcsnonce&#039; );
+
+		echo &#039;&lt;/div&gt;&#039;;
+		echo &#039;&lt;div class=&quot;show_if_subscription clear&quot;&gt;&lt;/div&gt;&#039;;
+	}
+
+	/**
+	 * Output subscription shipping options on the &quot;Edit Product&quot; admin screen
+	 *
+	 * @since 2.0
+	 */
+	public static function subscription_shipping_fields() {
+		global $post;
+
+		echo &#039;&lt;/div&gt;&#039;;
+		echo &#039;&lt;div class=&quot;options_group subscription_one_time_shipping show_if_subscription show_if_variable-subscription hidden&quot;&gt;&#039;;
+
+		// Only one Subscription per customer
+		woocommerce_wp_checkbox( array(
+			&#039;id&#039;          =&gt; &#039;_subscription_one_time_shipping&#039;,
+			&#039;label&#039;       =&gt; __( &#039;One time shipping&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;description&#039; =&gt; __( &#039;Shipping for subscription products is normally charged on the initial order and all renewal orders. Enable this to only charge shipping once on the initial order. Note: for this setting to be enabled the subscription must not have a free trial or a synced renewal date.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;desc_tip&#039;    =&gt; true,
+		) );
+
+		do_action( &#039;woocommerce_subscriptions_product_options_shipping&#039; );
+
+	}
+
+	/**
+	 * Output advanced subscription options on the &quot;Edit Product&quot; admin screen
+	 * @deprecated 2.1
+	 * @since 1.3.5
+	 */
+	public static function subscription_advanced_fields() {
+		_deprecated_function( __METHOD__, &#039;2.1&#039;, &#039;WCS_Limiter::admin_edit_product_fields()&#039; );
+	}
+
+	/**
+	 * Output the subscription specific pricing fields on the &quot;Edit Product&quot; admin page.
+	 *
+	 * @since 1.3
+	 */
+	public static function variable_subscription_pricing_fields( $loop, $variation_data, $variation ) {
+		global $thepostid;
+
+		// When called via Ajax
+		if ( ! function_exists( &#039;woocommerce_wp_text_input&#039; ) ) {
+			require_once( WC()-&gt;plugin_path() . &#039;/admin/post-types/writepanels/writepanels-init.php&#039; );
+		}
+
+		if ( ! isset( $thepostid ) ) {
+			$thepostid = $variation-&gt;post_parent;
+		}
+
+		$variation_product = wc_get_product( $variation );
+		$billing_period    = WC_Subscriptions_Product::get_period( $variation_product );
+
+		if ( empty( $billing_period ) ) {
+			$billing_period = &#039;month&#039;;
+		}
+
+		include( WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/admin/html-variation-price.php&#039; ) );
+
+		wp_nonce_field( &#039;wcs_subscription_variations&#039;, &#039;_wcsnonce_save_variations&#039;, false );
+
+		do_action( &#039;woocommerce_variable_subscription_pricing&#039;, $loop, $variation_data, $variation );
+	}
+
+	/**
+	 * Output extra options in the Bulk Edit select box for editing Subscription terms.
+	 *
+	 * @since 1.3
+	 */
+	public static function variable_subscription_bulk_edit_actions() {
+		global $post;
+
+		if ( WC_Subscriptions_Product::is_subscription( $post-&gt;ID ) ) : ?&gt;
+			&lt;optgroup label=&quot;&lt;?php esc_attr_e( &#039;Subscription pricing&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&quot;&gt;
+				&lt;option value=&quot;variable_subscription_sign_up_fee&quot;&gt;&lt;?php esc_html_e( &#039;Subscription sign-up fee&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/option&gt;
+				&lt;option value=&quot;variable_subscription_period_interval&quot;&gt;&lt;?php esc_html_e( &#039;Subscription billing interval&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/option&gt;
+				&lt;option value=&quot;variable_subscription_period&quot;&gt;&lt;?php esc_html_e( &#039;Subscription period&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/option&gt;
+				&lt;option value=&quot;variable_subscription_length&quot;&gt;&lt;?php esc_html_e( &#039;Expire after&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/option&gt;
+				&lt;option value=&quot;variable_subscription_trial_length&quot;&gt;&lt;?php esc_html_e( &#039;Free trial length&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/option&gt;
+				&lt;option value=&quot;variable_subscription_trial_period&quot;&gt;&lt;?php esc_html_e( &#039;Free trial period&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/option&gt;
+			&lt;/optgroup&gt;
+		&lt;?php endif;
+	}
+
+	/**
+	 * Save meta data for simple subscription product type when the &quot;Edit Product&quot; form is submitted.
+	 *
+	 * @param array Array of Product types &amp; their labels, excluding the Subscription product type.
+	 * @return array Array of Product types &amp; their labels, including the Subscription product type.
+	 * @since 1.0
+	 */
+	public static function save_subscription_meta( $post_id ) {
+
+		if ( empty( $_POST[&#039;_wcsnonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_subscription_meta&#039; ) || false === self::is_subscription_product_save_request( $post_id, apply_filters( &#039;woocommerce_subscription_product_types&#039;, array( WC_Subscriptions_Core_Plugin::instance()-&gt;get_product_type_name() ) ) ) ) {
+			return;
+		}
+
+		$subscription_price = isset( $_REQUEST[&#039;_subscription_price&#039;] ) ? wc_format_decimal( $_REQUEST[&#039;_subscription_price&#039;] ) : &#039;&#039;;
+		$sale_price         = wc_format_decimal( $_REQUEST[&#039;_sale_price&#039;] );
+
+		update_post_meta( $post_id, &#039;_subscription_price&#039;, $subscription_price );
+
+		// Set sale details - these are ignored by WC core for the subscription product type
+		update_post_meta( $post_id, &#039;_regular_price&#039;, $subscription_price );
+		update_post_meta( $post_id, &#039;_sale_price&#039;, $sale_price );
+
+		$site_offset = get_option( &#039;gmt_offset&#039; ) * 3600;
+
+		// Save the timestamps in UTC time, the way WC does it.
+		$date_from = ( ! empty( $_POST[&#039;_sale_price_dates_from&#039;] ) ) ? wcs_date_to_time( $_POST[&#039;_sale_price_dates_from&#039;] ) - $site_offset : &#039;&#039;;
+		$date_to   = ( ! empty( $_POST[&#039;_sale_price_dates_to&#039;] ) ) ? wcs_date_to_time( $_POST[&#039;_sale_price_dates_to&#039;] ) - $site_offset : &#039;&#039;;
+
+		$now = gmdate( &#039;U&#039; );
+
+		if ( ! empty( $date_to ) &amp;&amp; empty( $date_from ) ) {
+			$date_from = $now;
+		}
+
+		update_post_meta( $post_id, &#039;_sale_price_dates_from&#039;, $date_from );
+		update_post_meta( $post_id, &#039;_sale_price_dates_to&#039;, $date_to );
+
+		// Update price if on sale
+		if ( &#039;&#039; !== $sale_price &amp;&amp; ( ( empty( $date_to ) &amp;&amp; empty( $date_from ) ) || ( $date_from &lt; $now &amp;&amp; ( empty( $date_to ) || $date_to &gt; $now ) ) ) ) {
+			$price = $sale_price;
+		} else {
+			$price = $subscription_price;
+		}
+
+		update_post_meta( $post_id, &#039;_price&#039;, stripslashes( $price ) );
+
+		// Make sure trial period is within allowable range
+		$subscription_ranges = wcs_get_subscription_ranges();
+
+		$max_trial_length = count( $subscription_ranges[ $_POST[&#039;_subscription_trial_period&#039;] ] ) - 1;
+
+		$_POST[&#039;_subscription_trial_length&#039;] = absint( $_POST[&#039;_subscription_trial_length&#039;] );
+
+		if ( $_POST[&#039;_subscription_trial_length&#039;] &gt; $max_trial_length ) {
+			$_POST[&#039;_subscription_trial_length&#039;] = $max_trial_length;
+		}
+
+		update_post_meta( $post_id, &#039;_subscription_trial_length&#039;, $_POST[&#039;_subscription_trial_length&#039;] );
+
+		$_REQUEST[&#039;_subscription_sign_up_fee&#039;]       = wc_format_decimal( $_REQUEST[&#039;_subscription_sign_up_fee&#039;] );
+		$_REQUEST[&#039;_subscription_one_time_shipping&#039;] = isset( $_REQUEST[&#039;_subscription_one_time_shipping&#039;] ) ? &#039;yes&#039; : &#039;no&#039;;
+
+		$subscription_fields = array(
+			&#039;_subscription_sign_up_fee&#039;,
+			&#039;_subscription_period&#039;,
+			&#039;_subscription_period_interval&#039;,
+			&#039;_subscription_length&#039;,
+			&#039;_subscription_trial_period&#039;,
+			&#039;_subscription_limit&#039;,
+			&#039;_subscription_one_time_shipping&#039;,
+		);
+
+		foreach ( $subscription_fields as $field_name ) {
+			if ( isset( $_REQUEST[ $field_name ] ) ) {
+				update_post_meta( $post_id, $field_name, stripslashes( $_REQUEST[ $field_name ] ) );
+			}
+		}
+
+		// To prevent running this function on multiple save_post triggered events per update. Similar to WC_Admin_Meta_Boxes:$saved_meta_boxes implementation.
+		self::$saved_product_meta = true;
+	}
+
+	/**
+	 * Save meta data for variable subscription product type when the &quot;Edit Product&quot; form is submitted.
+	 *
+	 * @param array Array of Product types &amp; their labels, excluding the Subscription product type.
+	 * @return array Array of Product types &amp; their labels, including the Subscription product type.
+	 * @since 2.0
+	 */
+	public static function save_variable_subscription_meta( $post_id ) {
+
+		if ( empty( $_POST[&#039;_wcsnonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_subscription_meta&#039; ) || false === self::is_subscription_product_save_request( $post_id, apply_filters( &#039;woocommerce_subscription_variable_product_types&#039;, array( &#039;variable-subscription&#039; ) ) ) ) {
+			return;
+		}
+
+		if ( isset( $_REQUEST[&#039;_subscription_limit&#039;] ) ) {
+			update_post_meta( $post_id, &#039;_subscription_limit&#039;, stripslashes( $_REQUEST[&#039;_subscription_limit&#039;] ) );
+		}
+
+		update_post_meta( $post_id, &#039;_subscription_one_time_shipping&#039;, stripslashes( isset( $_REQUEST[&#039;_subscription_one_time_shipping&#039;] ) ? &#039;yes&#039; : &#039;no&#039; ) );
+
+		// To prevent running this function on multiple save_post triggered events per update. Similar to WC_Admin_Meta_Boxes:$saved_meta_boxes implementation.
+		self::$saved_product_meta = true;
+	}
+
+	/**
+	 * Calculate and set a simple subscription&#039;s prices when edited via the bulk edit
+	 *
+	 * @param object $product An instance of a WC_Product_* object.
+	 * @return null
+	 * @since 1.3.9
+	 */
+	public static function bulk_edit_save_subscription_meta( $product ) {
+
+		if ( ! $product-&gt;is_type( &#039;subscription&#039; ) ) {
+			return;
+		}
+
+		$price_changed = false;
+
+		$old_regular_price = $product-&gt;get_regular_price();
+		$old_sale_price    = $product-&gt;get_sale_price();
+
+		if ( ! empty( $_REQUEST[&#039;change_regular_price&#039;] ) ) {
+
+			$change_regular_price = absint( $_REQUEST[&#039;change_regular_price&#039;] );
+			$regular_price = esc_attr( stripslashes( $_REQUEST[&#039;_regular_price&#039;] ) );
+
+			switch ( $change_regular_price ) {
+				case 1:
+					$new_price = $regular_price;
+				break;
+				case 2:
+					if ( strstr( $regular_price, &#039;%&#039; ) ) {
+						$percent = str_replace( &#039;%&#039;, &#039;&#039;, $regular_price ) / 100;
+						$new_price = $old_regular_price + ( $old_regular_price * $percent );
+					} else {
+						$new_price = $old_regular_price + $regular_price;
+					}
+				break;
+				case 3:
+					if ( strstr( $regular_price, &#039;%&#039; ) ) {
+						$percent = str_replace( &#039;%&#039;, &#039;&#039;, $regular_price ) / 100;
+						$new_price = $old_regular_price - ( $old_regular_price * $percent );
+					} else {
+						$new_price = $old_regular_price - $regular_price;
+					}
+				break;
+			}
+
+			if ( isset( $new_price ) &amp;&amp; $new_price != $old_regular_price ) {
+				$price_changed = true;
+				wcs_set_objects_property( $product, &#039;regular_price&#039;, $new_price );
+				wcs_set_objects_property( $product, &#039;subscription_price&#039;, $new_price );
+			}
+		}
+
+		if ( ! empty( $_REQUEST[&#039;change_sale_price&#039;] ) ) {
+
+			$change_sale_price = absint( $_REQUEST[&#039;change_sale_price&#039;] );
+			$sale_price = esc_attr( stripslashes( $_REQUEST[&#039;_sale_price&#039;] ) );
+
+			switch ( $change_sale_price ) {
+				case 1:
+					$new_price = $sale_price;
+				break;
+				case 2:
+					if ( strstr( $sale_price, &#039;%&#039; ) ) {
+						$percent = str_replace( &#039;%&#039;, &#039;&#039;, $sale_price ) / 100;
+						$new_price = $old_sale_price + ( $old_sale_price * $percent );
+					} else {
+						$new_price = $old_sale_price + $sale_price;
+					}
+				break;
+				case 3:
+					if ( strstr( $sale_price, &#039;%&#039; ) ) {
+						$percent = str_replace( &#039;%&#039;, &#039;&#039;, $sale_price ) / 100;
+						$new_price = $old_sale_price - ( $old_sale_price * $percent );
+					} else {
+						$new_price = $old_sale_price - $sale_price;
+					}
+				break;
+				case 4:
+					if ( strstr( $sale_price, &#039;%&#039; ) ) {
+						$percent = str_replace( &#039;%&#039;, &#039;&#039;, $sale_price ) / 100;
+						$new_price = $product-&gt;get_regular_price() - ( $product-&gt;get_regular_price() * $percent );
+					} else {
+						$new_price = $product-&gt;get_regular_price() - $sale_price;
+					}
+				break;
+			}
+
+			if ( isset( $new_price ) &amp;&amp; $new_price != $old_sale_price ) {
+				$price_changed = true;
+				wcs_set_objects_property( $product, &#039;sale_price&#039;, $new_price );
+			}
+		}
+
+		if ( $price_changed ) {
+			wcs_set_objects_property( $product, &#039;sale_price_dates_from&#039;, &#039;&#039; );
+			wcs_set_objects_property( $product, &#039;sale_price_dates_to&#039;, &#039;&#039; );
+
+			if ( $product-&gt;get_regular_price() &lt; $product-&gt;get_sale_price() ) {
+				wcs_set_objects_property( $product, &#039;sale_price&#039;, &#039;&#039; );
+			}
+
+			if ( $product-&gt;get_sale_price() ) {
+				wcs_set_objects_property( $product, &#039;price&#039;, $product-&gt;get_sale_price() );
+			} else {
+				wcs_set_objects_property( $product, &#039;price&#039;, $product-&gt;get_regular_price() );
+			}
+		}
+	}
+
+	/**
+	 * Save a variable subscription&#039;s details when the edit product page is submitted for a variable
+	 * subscription product type (or the bulk edit product is saved).
+	 *
+	 * @param int $post_id ID of the parent WC_Product_Variable_Subscription
+	 * @return null
+	 * @since 1.3
+	 */
+	public static function process_product_meta_variable_subscription( $post_id ) {
+
+		if ( ! WC_Subscriptions_Product::is_subscription( $post_id ) || empty( $_POST[&#039;_wcsnonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_subscription_meta&#039; ) ) {
+			return;
+		}
+
+		// Make sure WooCommerce calculates correct prices
+		$_POST[&#039;variable_regular_price&#039;] = isset( $_POST[&#039;variable_subscription_price&#039;] ) ? $_POST[&#039;variable_subscription_price&#039;] : 0;
+
+		// Sync the min variation price
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			$variable_subscription = wc_get_product( $post_id );
+			$variable_subscription-&gt;variable_product_sync();
+		} else {
+			WC_Product_Variable::sync( $post_id );
+		}
+	}
+
+	/**
+	 * Save meta info for subscription variations
+	 *
+	 * @param int $variation_id
+	 * @param int $i
+	 * return void
+	 * @since 2.0
+	 */
+	public static function save_product_variation( $variation_id, $index ) {
+
+		if ( ! WC_Subscriptions_Product::is_subscription( $variation_id ) || empty( $_POST[&#039;_wcsnonce_save_variations&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce_save_variations&#039;], &#039;wcs_subscription_variations&#039; ) ) {
+			return;
+		}
+
+		if ( isset( $_POST[&#039;variable_subscription_sign_up_fee&#039;][ $index ] ) ) {
+			$subscription_sign_up_fee = wc_format_decimal( $_POST[&#039;variable_subscription_sign_up_fee&#039;][ $index ] );
+			update_post_meta( $variation_id, &#039;_subscription_sign_up_fee&#039;, $subscription_sign_up_fee );
+		}
+
+		if ( isset( $_POST[&#039;variable_subscription_price&#039;][ $index ] ) ) {
+			$subscription_price = wc_format_decimal( $_POST[&#039;variable_subscription_price&#039;][ $index ] );
+			update_post_meta( $variation_id, &#039;_subscription_price&#039;, $subscription_price );
+			update_post_meta( $variation_id, &#039;_regular_price&#039;, $subscription_price );
+		}
+
+		// Make sure trial period is within allowable range
+		$subscription_ranges = wcs_get_subscription_ranges();
+		$max_trial_length    = count( $subscription_ranges[ $_POST[&#039;variable_subscription_trial_period&#039;][ $index ] ] ) - 1;
+
+		$_POST[&#039;variable_subscription_trial_length&#039;][ $index ] = absint( $_POST[&#039;variable_subscription_trial_length&#039;][ $index ] );
+
+		if ( $_POST[&#039;variable_subscription_trial_length&#039;][ $index ] &gt; $max_trial_length ) {
+			$_POST[&#039;variable_subscription_trial_length&#039;][ $index ] = $max_trial_length;
+		}
+
+		// Work around a WPML bug which means &#039;variable_subscription_trial_period&#039; is not set when using &quot;Edit Product&quot; as the product translation interface
+		if ( $_POST[&#039;variable_subscription_trial_length&#039;][ $index ] &lt; 0 ) {
+			$_POST[&#039;variable_subscription_trial_length&#039;][ $index ] = 0;
+		}
+
+		$subscription_fields = array(
+			&#039;_subscription_period&#039;,
+			&#039;_subscription_period_interval&#039;,
+			&#039;_subscription_length&#039;,
+			&#039;_subscription_trial_period&#039;,
+			&#039;_subscription_trial_length&#039;,
+		);
+
+		foreach ( $subscription_fields as $field_name ) {
+			if ( isset( $_POST[ &#039;variable&#039; . $field_name ][ $index ] ) ) {
+				update_post_meta( $variation_id, $field_name, wc_clean( $_POST[ &#039;variable&#039; . $field_name ][ $index ] ) );
+			}
+		}
+	}
+
+	/**
+	 * Make sure when saving a subscription via the admin to activate it, it has a valid customer set on it.
+	 *
+	 * When you click &quot;Add New Subscription&quot;, the status is already going to be pending to begin with. This will prevent
+	 * changing the status to anything else besides pending if no customer is specified, or the customer specified is
+	 * not a valid WP_User.
+	 *
+	 * Hooked into `woocommerce_subscription_pre_update_status`
+	 *
+	 * @param string $old_status Previous status of the subscription in update_status
+	 * @param string $new_status New status of the subscription in update_status
+	 * @param WC_Subscription $subscription The subscription being saved
+	 *
+	 * @return null
+	 * @throws Exception in case there was no user found / there&#039;s no customer attached to it
+	 */
+	public static function check_customer_is_set( $old_status, $new_status, $subscription ) {
+		global $post;
+
+		if ( is_admin() &amp;&amp; &#039;active&#039; == $new_status &amp;&amp; isset( $_POST[&#039;woocommerce_meta_nonce&#039;] ) &amp;&amp; wp_verify_nonce( $_POST[&#039;woocommerce_meta_nonce&#039;], &#039;woocommerce_save_data&#039; ) &amp;&amp; isset( $_POST[&#039;customer_user&#039;] ) &amp;&amp; ! empty( $post ) &amp;&amp; &#039;shop_subscription&#039; === $post-&gt;post_type ) {
+
+			$user = new WP_User( absint( $_POST[&#039;customer_user&#039;] ) );
+
+			if ( 0 === $user-&gt;ID ) {
+				// translators: %s: subscription status.
+				throw new Exception( sprintf( __( &#039;Unable to change subscription status to &quot;%s&quot;. Please assign a customer to the subscription to activate it.&#039;, &#039;woocommerce-subscriptions&#039; ), $new_status ) );
+			}
+		}
+	}
+
+	/**
+	 * Set default values for subscription dropdown fields when bulk adding variations to fix issue #1342
+	 *
+	 * @param int $variation_id ID the post_id of the variation being added
+	 * @return null
+	 */
+	public static function set_variation_meta_defaults_on_bulk_add( $variation_id ) {
+
+		if ( ! empty( $variation_id ) ) {
+			update_post_meta( $variation_id, &#039;_subscription_period&#039;, &#039;month&#039; );
+			update_post_meta( $variation_id, &#039;_subscription_period_interval&#039;, &#039;1&#039; );
+			update_post_meta( $variation_id, &#039;_subscription_length&#039;, &#039;0&#039; );
+			update_post_meta( $variation_id, &#039;_subscription_trial_period&#039;, &#039;month&#039; );
+		}
+	}
+
+	/**
+	 * Adds all necessary admin styles.
+	 *
+	 * @param array Array of Product types &amp; their labels, excluding the Subscription product type.
+	 * @return array Array of Product types &amp; their labels, including the Subscription product type.
+	 * @since 1.0
+	 */
+	public static function enqueue_styles_scripts() {
+		global $post;
+
+		// Get admin screen id
+		$screen = get_current_screen();
+
+		$is_woocommerce_screen = in_array( $screen-&gt;id, array( &#039;product&#039;, &#039;edit-shop_order&#039;, &#039;shop_order&#039;, &#039;edit-shop_subscription&#039;, &#039;shop_subscription&#039;, &#039;users&#039;, &#039;woocommerce_page_wc-settings&#039; ) );
+
+		if ( $is_woocommerce_screen ) {
+
+			$dependencies = array( &#039;jquery&#039; );
+
+			$woocommerce_admin_script_handle     = &#039;wc-admin-meta-boxes&#039;;
+			$trashing_subscription_order_warning = __( &#039;Trashing this order will also trash the subscriptions purchased with the order.&#039;, &#039;woocommerce-subscriptions&#039; );
+
+			if ( $screen-&gt;id == &#039;product&#039; ) {
+				$dependencies[] = $woocommerce_admin_script_handle;
+				$dependencies[] = &#039;wc-admin-product-meta-boxes&#039;;
+				$dependencies[] = &#039;wc-admin-variation-meta-boxes&#039;;
+
+				$script_params = array(
+					&#039;productType&#039;                 =&gt; WC_Subscriptions_Core_Plugin::instance()-&gt;get_product_type_name(),
+					&#039;trialPeriodSingular&#039;         =&gt; wcs_get_available_time_periods(),
+					&#039;trialPeriodPlurals&#039;          =&gt; wcs_get_available_time_periods( &#039;plural&#039; ),
+					&#039;subscriptionLengths&#039;         =&gt; wcs_get_subscription_ranges(),
+					&#039;trialTooLongMessages&#039;        =&gt; self::get_trial_period_validation_message( &#039;separate&#039; ),
+					&#039;bulkEditPeriodMessage&#039;       =&gt; __( &#039;Enter the new period, either day, week, month or year:&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;bulkEditLengthMessage&#039;       =&gt; __( &#039;Enter a new length (e.g. 5):&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;bulkEditIntervalhMessage&#039;    =&gt; __( &#039;Enter a new interval as a single number (e.g. to charge every 2nd month, enter 2):&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;bulkDeleteOptionLabel&#039;       =&gt; __( &#039;Delete all variations without a subscription&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;oneTimeShippingCheckNonce&#039;   =&gt; wp_create_nonce( &#039;one_time_shipping&#039; ),
+					&#039;productHasSubscriptions&#039;     =&gt; ! wcs_is_large_site() &amp;&amp; wcs_get_subscriptions_for_product( $post-&gt;ID, &#039;ids&#039;, array( &#039;limit&#039; =&gt; 1 ) ) ? &#039;yes&#039; : &#039;no&#039;,
+					&#039;productTypeWarning&#039;          =&gt; self::get_change_product_type_warning(),
+					&#039;isLargeSite&#039;                 =&gt; wcs_is_large_site(),
+					&#039;nonce&#039;                       =&gt; wp_create_nonce( &#039;wc_subscriptions_admin&#039; ),
+					&#039;variationDeleteErrorMessage&#039; =&gt; __( &#039;An error occurred determining if that variation can be deleted. Please try again.&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;variationDeleteFailMessage&#039;  =&gt; __( &#039;That variation can not be removed because it is associated with active subscriptions. To remove this variation, please cancel and delete the subscriptions for it.&#039;, &#039;woocommerce-subscriptions&#039; ),
+
+				);
+			} elseif ( &#039;edit-shop_order&#039; == $screen-&gt;id ) {
+				$script_params = array(
+					&#039;bulkTrashWarning&#039; =&gt; __( &quot;You are about to trash one or more orders which contain a subscription.\n\nTrashing the orders will also trash the subscriptions purchased with these orders.&quot;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;trashWarning&#039;     =&gt; $trashing_subscription_order_warning,
+				);
+			} elseif ( &#039;shop_order&#039; == $screen-&gt;id ) {
+				$dependencies[] = $woocommerce_admin_script_handle;
+				$dependencies[] = &#039;wc-admin-order-meta-boxes&#039;;
+
+				if ( wcs_is_woocommerce_pre( &#039;2.6&#039; ) ) {
+					$dependencies[] = &#039;wc-admin-order-meta-boxes-modal&#039;;
+				}
+
+				$script_params = array(
+					&#039;trashWarning&#039;      =&gt; $trashing_subscription_order_warning,
+					&#039;changeMetaWarning&#039; =&gt; __( &quot;WARNING: Bad things are about to happen!\n\nThe payment gateway used to purchase this subscription does not support modifying a subscription&#039;s details.\n\nChanges to the billing period, recurring discount, recurring tax or recurring total may not be reflected in the amount charged by the payment gateway.&quot;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;removeItemWarning&#039; =&gt; __( &#039;You are deleting a subscription item. You will also need to manually cancel and trash the subscription on the Manage Subscriptions screen.&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;roundAtSubtotal&#039;   =&gt; esc_attr( get_option( &#039;woocommerce_tax_round_at_subtotal&#039; ) ),
+					&#039;EditOrderNonce&#039;    =&gt; wp_create_nonce( &#039;woocommerce-subscriptions&#039; ),
+					&#039;postId&#039;            =&gt; $post-&gt;ID,
+				);
+			} elseif ( &#039;users&#039; == $screen-&gt;id ) {
+				$script_params = array(
+					&#039;deleteUserWarning&#039; =&gt; __( &quot;Warning: Deleting a user will also delete the user&#039;s subscriptions. The user&#039;s orders will remain but be reassigned to the &#039;Guest&#039; user.\n\nDo you want to continue to delete this user and any associated subscriptions?&quot;, &#039;woocommerce-subscriptions&#039; ),
+				);
+			} elseif ( &#039;woocommerce_page_wc-settings&#039; === $screen-&gt;id ) {
+				$script_params = array(
+					&#039;enablePayPalWarning&#039; =&gt; __( &#039;PayPal Standard has a number of limitations and does not support all subscription features.&#039;, &#039;woocommerce-subscriptions&#039; ) . &quot;\n\n&quot; . __( &#039;Because of this, it is not recommended as a payment method for Subscriptions unless it is the only available option for your country.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				);
+			}
+
+			$script_params[&#039;ajaxLoaderImage&#039;] = WC()-&gt;plugin_url() . &#039;/assets/images/ajax-loader.gif&#039;;
+			$script_params[&#039;ajaxUrl&#039;]         = admin_url( &#039;admin-ajax.php&#039; );
+			$script_params[&#039;isWCPre24&#039;]       = var_export( wcs_is_woocommerce_pre( &#039;2.4&#039; ), true );
+
+			wp_enqueue_script( &#039;woocommerce_subscriptions_admin&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/js/admin/admin.js&#039; ), $dependencies, filemtime( WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;assets/js/admin/admin.js&#039; ) ) );
+			wp_localize_script( &#039;woocommerce_subscriptions_admin&#039;, &#039;WCSubscriptions&#039;, apply_filters( &#039;woocommerce_subscriptions_admin_script_parameters&#039;, $script_params ) );
+
+			// Maybe add the pointers for first timers
+			if ( isset( $_GET[&#039;subscription_pointers&#039;] ) &amp;&amp; self::show_user_pointers() ) {
+
+				$dependencies[] = &#039;wp-pointer&#039;;
+
+				$pointer_script_params = array(
+					// translators: placeholders are for HTML tags. They are 1$: &quot;&lt;h3&gt;&quot;, 2$: &quot;&lt;/h3&gt;&quot;, 3$: &quot;&lt;p&gt;&quot;, 4$: &quot;&lt;em&gt;&quot;, 5$: &quot;&lt;/em&gt;&quot;, 6$: &quot;&lt;em&gt;&quot;, 7$: &quot;&lt;/em&gt;&quot;, 8$: &quot;&lt;/p&gt;&quot;
+					&#039;typePointerContent&#039;  =&gt; sprintf( _x( &#039;%1$sChoose Subscription%2$s%3$sThe WooCommerce Subscriptions extension adds two new subscription product types - %4$sSimple subscription%5$s and %6$sVariable subscription%7$s.%8$s&#039;, &#039;used in admin pointer script params in javascript as type pointer content&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;h3&gt;&#039;, &#039;&lt;/h3&gt;&#039;, &#039;&lt;p&gt;&#039;, &#039;&lt;em&gt;&#039;, &#039;&lt;/em&gt;&#039;, &#039;&lt;em&gt;&#039;, &#039;&lt;/em&gt;&#039;, &#039;&lt;/p&gt;&#039; ),
+					// translators: placeholders are for HTML tags. They are 1$: &quot;&lt;h3&gt;&quot;, 2$: &quot;&lt;/h3&gt;&quot;, 3$: &quot;&lt;p&gt;&quot;, 4$: &quot;&lt;/p&gt;&quot;
+					&#039;pricePointerContent&#039; =&gt; sprintf( _x( &#039;%1$sSet a Price%2$s%3$sSubscription prices are a little different to other product prices. For a subscription, you can set a billing period, length, sign-up fee and free trial.%4$s&#039;, &#039;used in admin pointer script params in javascript as price pointer content&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;h3&gt;&#039;, &#039;&lt;/h3&gt;&#039;, &#039;&lt;p&gt;&#039;, &#039;&lt;/p&gt;&#039; ),
+				);
+
+				wp_enqueue_script( &#039;woocommerce_subscriptions_admin_pointers&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/js/admin/admin-pointers.js&#039; ), $dependencies, WC_Subscriptions_Core_Plugin::instance()-&gt;get_plugin_version() );
+
+				wp_localize_script( &#039;woocommerce_subscriptions_admin_pointers&#039;, &#039;WCSPointers&#039;, apply_filters( &#039;woocommerce_subscriptions_admin_pointer_script_parameters&#039;, $pointer_script_params ) );
+
+				wp_enqueue_style( &#039;wp-pointer&#039; );
+			}
+		}
+
+		if ( $is_woocommerce_screen || &#039;edit-product&#039; == $screen-&gt;id || ( isset( $_GET[&#039;page&#039;], $_GET[&#039;tab&#039;] ) &amp;&amp; &#039;wc-reports&#039; === $_GET[&#039;page&#039;] &amp;&amp; &#039;subscriptions&#039; === $_GET[&#039;tab&#039;] ) ) {
+			wp_enqueue_style( &#039;woocommerce_admin_styles&#039;, WC()-&gt;plugin_url() . &#039;/assets/css/admin.css&#039;, array(), WC_Subscriptions_Core_Plugin::instance()-&gt;get_plugin_version() );
+			wp_enqueue_style( &#039;woocommerce_subscriptions_admin&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/css/admin.css&#039; ), array( &#039;woocommerce_admin_styles&#039; ), WC_Subscriptions_Core_Plugin::instance()-&gt;get_plugin_version() );
+		}
+
+		if ( in_array( $screen-&gt;id, array( &#039;shop_order&#039;, &#039;edit-shop_subscription&#039;, &#039;shop_subscription&#039; ) ) &amp;&amp; wcs_is_woocommerce_pre( &#039;3.3&#039; ) ) {
+			wp_enqueue_style( &#039;wc_subscriptions_statuses_admin&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/css/admin-order-statuses.css&#039; ), array( &#039;woocommerce_admin_styles&#039; ), WC_Subscriptions_Core_Plugin::instance()-&gt;get_plugin_version() );
+		}
+	}
+
+	/**
+	 * Add the &quot;Active Subscriber?&quot; column to the User&#039;s admin table
+	 */
+	public static function add_user_columns( $columns ) {
+
+		if ( current_user_can( &#039;manage_woocommerce&#039; ) ) {
+			// Move Active Subscriber before Orders for aesthetics
+			$last_column = array_slice( $columns, -1, 1, true );
+			array_pop( $columns );
+			$columns[&#039;woocommerce_active_subscriber&#039;] = __( &#039;Active subscriber?&#039;, &#039;woocommerce-subscriptions&#039; );
+			$columns += $last_column;
+		}
+
+		return $columns;
+	}
+
+	/**
+	 * Hooked to the users table to display a check mark if a given user has an active subscription.
+	 *
+	 * @param string $value The string to output in the column specified with $column_name
+	 * @param string $column_name The string key for the current column in an admin table
+	 * @param int $user_id The ID of the user to which this row relates
+	 * @return string $value A check mark if the column is the active_subscriber column and the user has an active subscription.
+	 * @since 1.0
+	 */
+	public static function user_column_values( $value, $column_name, $user_id ) {
+
+		if ( &#039;woocommerce_active_subscriber&#039; == $column_name ) {
+			if ( wcs_user_has_subscription( $user_id, &#039;&#039;, &#039;active&#039; ) ) {
+				$value = &#039;&lt;div class=&quot;active-subscriber&quot;&gt;&lt;/div&gt;&#039;;
+			} else {
+				$value = &#039;&lt;div class=&quot;inactive-subscriber&quot;&gt;-&lt;/div&gt;&#039;;
+			}
+		}
+
+		return $value;
+	}
+
+
+	/**
+	 * Outputs the Subscription Management admin page with a sortable @see WC_Subscriptions_List_Table used to
+	 * display all the subscriptions that have been purchased.
+	 *
+	 * @uses WC_Subscriptions_List_Table
+	 * @since 1.0
+	 */
+	public static function subscriptions_management_page() {
+
+		$subscriptions_table = self::get_subscriptions_list_table();
+		$subscriptions_table-&gt;prepare_items(); ?&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+	&lt;div id=&quot;icon-woocommerce&quot; class=&quot;icon32-woocommerce-users icon32&quot;&gt;&lt;br/&gt;&lt;/div&gt;
+	&lt;h2&gt;&lt;?php esc_html_e( &#039;Manage Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h2&gt;
+	&lt;?php $subscriptions_table-&gt;messages(); ?&gt;
+	&lt;?php $subscriptions_table-&gt;views(); ?&gt;
+	&lt;form id=&quot;subscriptions-search&quot; action=&quot;&quot; method=&quot;get&quot;&gt;&lt;?php // Don&#039;t send all the subscription meta across ?&gt;
+		&lt;?php $subscriptions_table-&gt;search_box( __( &#039;Search Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;subscription&#039; ); ?&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;page&quot; value=&quot;subscriptions&quot; /&gt;
+		&lt;?php if ( isset( $_REQUEST[&#039;status&#039;] ) ) { ?&gt;
+			&lt;input type=&quot;hidden&quot; name=&quot;status&quot; value=&quot;&lt;?php echo esc_attr( $_REQUEST[&#039;status&#039;] ); ?&gt;&quot; /&gt;
+		&lt;?php } ?&gt;
+	&lt;/form&gt;
+	&lt;form id=&quot;subscriptions-filter&quot; action=&quot;&quot; method=&quot;get&quot;&gt;
+		&lt;?php $subscriptions_table-&gt;display(); ?&gt;
+	&lt;/form&gt;
+&lt;/div&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Outputs the screen options on the Subscription Management admin page.
+	 *
+	 * @since 1.3.1
+	 */
+	public static function add_manage_subscriptions_screen_options() {
+		add_screen_option(
+			&#039;per_page&#039;,
+			array(
+				&#039;label&#039;   =&gt; __( &#039;Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;default&#039; =&gt; 10,
+				&#039;option&#039;  =&gt; self::$option_prefix . &#039;_admin_per_page&#039;,
+			)
+		);
+	}
+
+	/**
+	 * Sets the correct value for screen options on the Subscription Management admin page.
+	 *
+	 * @since 1.3.1
+	 */
+	public static function set_manage_subscriptions_screen_option( $status, $option, $value ) {
+
+		if ( self::$option_prefix . &#039;_admin_per_page&#039; == $option ) {
+			return $value;
+		}
+
+		return $status;
+	}
+
+	/**
+	 * Returns the columns for the Manage Subscriptions table, specifically used for adding the
+	 * show/hide column screen options.
+	 *
+	 * @since 1.3.1
+	 */
+	public static function get_subscription_table_columns( $columns ) {
+
+		$subscriptions_table = self::get_subscriptions_list_table();
+
+		return array_merge( $subscriptions_table-&gt;get_columns(), $columns );
+	}
+
+	/**
+	 * Returns the columns for the Manage Subscriptions table, specifically used for adding the
+	 * show/hide column screen options.
+	 *
+	 * @since 1.3.1
+	 */
+	public static function get_subscriptions_list_table() {
+
+		if ( ! isset( self::$subscriptions_list_table ) ) {
+			self::$subscriptions_list_table = new WC_Subscriptions_List_Table();
+		}
+
+		return self::$subscriptions_list_table;
+	}
+
+	/**
+	 * Uses the WooCommerce options API to save settings via the @see woocommerce_update_options() function.
+	 *
+	 * @uses woocommerce_update_options()
+	 * @uses self::get_settings()
+	 * @since 1.0
+	 */
+	public static function update_subscription_settings() {
+
+		if ( empty( $_POST[&#039;_wcsnonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_subscription_settings&#039; ) ) {
+			return;
+		}
+
+		// Make sure automatic payments are on when manual renewals are switched off
+		if ( ! isset( $_POST[ self::$option_prefix . &#039;_accept_manual_renewals&#039; ] ) &amp;&amp; isset( $_POST[ self::$option_prefix . &#039;_turn_off_automatic_payments&#039; ] ) ) {
+			unset( $_POST[ self::$option_prefix . &#039;_turn_off_automatic_payments&#039; ] );
+		}
+
+		$settings         = self::get_settings();
+		$defaults_to_find = array(
+			self::$option_prefix . &#039;_add_to_cart_button_text&#039; =&gt; &#039;&#039;,
+			self::$option_prefix . &#039;_order_button_text&#039;       =&gt; &#039;&#039;, // phpcs:ignore WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned
+		);
+
+		// Add the $_POST[ &#039;woocommerce_subscriptions_allow_switching&#039; ] value
+		if ( isset( $_POST[ self::$option_prefix . &#039;_allow_switching_variable&#039; ] ) || isset( $_POST[ self::$option_prefix . &#039;_allow_switching_grouped&#039; ] ) ) {
+
+			$value = array();
+
+			if ( ! empty( $_POST[ self::$option_prefix . &#039;_allow_switching_variable&#039; ] ) ) {
+				$value[] = &#039;variable&#039;;
+				unset( $_POST[ self::$option_prefix . &#039;_allow_switching_variable&#039; ] );
+			}
+
+			if ( ! empty( $_POST[ self::$option_prefix . &#039;_allow_switching_grouped&#039; ] ) ) {
+				$value[] = &#039;grouped&#039;;
+				unset( $_POST[ self::$option_prefix . &#039;_allow_switching_grouped&#039; ] );
+			}
+
+			$_POST[ self::$option_prefix . &#039;_allow_switching&#039; ] = implode( &#039;_&#039;, $value );
+
+		} else {
+			$_POST[ self::$option_prefix . &#039;_allow_switching&#039; ] = &#039;no&#039;;
+		}
+
+		foreach ( $settings as $setting ) {
+			if ( ! isset( $setting[&#039;id&#039;], $setting[&#039;default&#039;], $defaults_to_find[ $setting[&#039;id&#039;] ], $_POST[ $setting[&#039;id&#039;] ] ) ) {
+				continue;
+			}
+
+			// Set the setting to its default if no value has been submitted.
+			if ( &#039;&#039; === wc_clean( $_POST[ $setting[&#039;id&#039;] ] ) ) {
+				$_POST[ $setting[&#039;id&#039;] ] = $setting[&#039;default&#039;];
+			}
+
+			unset( $defaults_to_find[ $setting[&#039;id&#039;] ] );
+
+			// If all defaults have been found, exit.
+			if ( ! count( $defaults_to_find ) ) {
+				break;
+			}
+		}
+
+		// Add extra switching options, if any.
+		$extra_switching_options = (array) apply_filters( &#039;woocommerce_subscriptions_allow_switching_options&#039;, array() );
+
+		foreach ( $extra_switching_options as $option ) {
+
+			if ( empty( $option[&#039;id&#039;] ) || empty( $option[&#039;label&#039;] ) ) {
+				continue;
+			}
+
+			// Add to $settings to be natively saved.
+			$settings[] = array(
+				&#039;id&#039;   =&gt; WC_Subscriptions_Admin::$option_prefix . &#039;_allow_switching_&#039; . $option[&#039;id&#039;],
+				&#039;type&#039; =&gt; &#039;checkbox&#039;, // This will sanitize value to yes/no.
+			);
+		}
+
+		woocommerce_update_options( $settings );
+	}
+
+	/**
+	 * Uses the WooCommerce admin fields API to output settings via the @see woocommerce_admin_fields() function.
+	 *
+	 * @uses woocommerce_admin_fields()
+	 * @uses self::get_settings()
+	 * @since 1.0
+	 */
+	public static function subscription_settings_page() {
+		woocommerce_admin_fields( self::get_settings() );
+		wp_nonce_field( &#039;wcs_subscription_settings&#039;, &#039;_wcsnonce&#039;, false );
+	}
+
+	/**
+	 * Add the Subscriptions settings tab to the WooCommerce settings tabs array.
+	 *
+	 * @param array $settings_tabs Array of WooCommerce setting tabs &amp; their labels, excluding the Subscription tab.
+	 * @return array $settings_tabs Array of WooCommerce setting tabs &amp; their labels, including the Subscription tab.
+	 * @since 1.0
+	 */
+	public static function add_subscription_settings_tab( $settings_tabs ) {
+
+		$settings_tabs[ self::$tab_name ] = __( &#039;Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; );
+
+		return $settings_tabs;
+	}
+
+	/**
+	 * Sets default values for all the WooCommerce Subscription options. Called on plugin activation.
+	 *
+	 * @see WC_Subscriptions::activate_woocommerce_subscriptions
+	 * @since 1.0
+	 */
+	public static function add_default_settings() {
+		foreach ( self::get_settings() as $setting ) {
+			if ( isset( $setting[&#039;default&#039;] ) ) {
+				add_option( $setting[&#039;id&#039;], $setting[&#039;default&#039;] );
+			}
+		}
+	}
+
+	/**
+	 * Deteremines if the subscriptions settings have been setup.
+	 *
+	 * @since 4.0.0
+	 * @return bool Whether any subscription settings exist.
+	 */
+	public static function has_settings() {
+		foreach ( self::get_settings() as $setting ) {
+			if ( get_option( $setting[&#039;id&#039;], false ) !== false ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * Get all the settings for the Subscriptions extension in the format required by the @see woocommerce_admin_fields() function.
+	 *
+	 * @return array Array of settings in the format required by the @see woocommerce_admin_fields() function.
+	 * @since 1.0
+	 */
+	public static function get_settings() {
+
+		return apply_filters( &#039;woocommerce_subscription_settings&#039;, array(
+
+			array(
+				&#039;name&#039; =&gt; _x( &#039;Miscellaneous&#039;, &#039;options section heading&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039; =&gt; &#039;title&#039;,
+				&#039;desc&#039; =&gt; &#039;&#039;,
+				&#039;id&#039;   =&gt; self::$option_prefix . &#039;_miscellaneous&#039;,
+			),
+
+			array(
+				&#039;name&#039;     =&gt; __( &#039;Mixed Checkout&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;desc&#039;     =&gt; __( &#039;Allow multiple subscriptions and products to be purchased simultaneously.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;id&#039;       =&gt; self::$option_prefix . &#039;_multiple_purchase&#039;,
+				&#039;default&#039;  =&gt; &#039;no&#039;,
+				&#039;type&#039;     =&gt; &#039;checkbox&#039;,
+				&#039;desc_tip&#039; =&gt; __( &#039;Allow a subscription product to be purchased with other products and subscriptions in the same transaction.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			),
+
+			array(
+				&#039;type&#039; =&gt; &#039;sectionend&#039;,
+				&#039;id&#039;   =&gt; self::$option_prefix . &#039;_miscellaneous&#039;,
+			),
+		) );
+
+	}
+
+	/**
+	 * Displays instructional information for a WooCommerce setting.
+	 *
+	 * @since 1.0
+	 */
+	public static function add_informational_admin_field( $field_details ) {
+
+		if ( isset( $field_details[&#039;name&#039;] ) &amp;&amp; $field_details[&#039;name&#039;] ) {
+			echo &#039;&lt;h3&gt;&#039; . esc_html( $field_details[&#039;name&#039;] ) . &#039;&lt;/h3&gt;&#039;;
+		}
+
+		if ( isset( $field_details[&#039;desc&#039;] ) &amp;&amp; $field_details[&#039;desc&#039;] ) {
+			echo wp_kses_post( wpautop( wptexturize( $field_details[&#039;desc&#039;] ) ) );
+		}
+	}
+
+	/**
+	 * Checks whether a user should be shown pointers or not, based on whether a user has previously dismissed pointers.
+	 *
+	 * @since 1.0
+	 */
+	public static function show_user_pointers() {
+		// Get dismissed pointers
+		$dismissed = explode( &#039;,&#039;, (string) get_user_meta( get_current_user_id(), &#039;dismissed_wp_pointers&#039;, true ) );
+
+		// Pointer has been dismissed
+		if ( in_array( &#039;wcs_pointer&#039;, $dismissed ) ) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	/**
+	 * Returns a URL for adding/editing a subscription, which special parameters to define whether pointers should be shown.
+	 *
+	 * The &#039;select_subscription&#039; flag is picked up by JavaScript to set the value of the product type to &quot;Subscription&quot;.
+	 *
+	 * @since 1.0
+	 */
+	public static function add_subscription_url( $show_pointers = true ) {
+		$add_subscription_url = admin_url( &#039;post-new.php?post_type=product&amp;select_subscription=true&#039; );
+
+		if ( true == $show_pointers ) {
+			$add_subscription_url = add_query_arg( &#039;subscription_pointers&#039;, &#039;true&#039;, $add_subscription_url );
+		}
+
+		return $add_subscription_url;
+	}
+
+	/**
+	 * Searches through the list of active plugins to find WooCommerce. Just in case
+	 * WooCommerce resides in a folder other than /woocommerce/
+	 *
+	 * @since 1.0
+	 */
+	public static function get_woocommerce_plugin_dir_file() {
+
+		$woocommerce_plugin_file = &#039;&#039;;
+
+		foreach ( get_option( &#039;active_plugins&#039;, array() ) as $plugin ) {
+			if ( substr( $plugin, strlen( &#039;/woocommerce.php&#039; ) * -1 ) === &#039;/woocommerce.php&#039; ) {
+				$woocommerce_plugin_file = $plugin;
+				break;
+			}
+		}
+
+		return $woocommerce_plugin_file;
+	}
+
+	/**
+	 * Filter the &quot;Orders&quot; list to show only orders associated with a specific subscription.
+	 *
+	 * @param string $where
+	 * @return string
+	 * @since 2.0
+	 */
+	public static function filter_orders( $where ) {
+		global $typenow, $wpdb;
+
+		if ( is_admin() &amp;&amp; &#039;shop_order&#039; === $typenow ) {
+
+			if ( isset( $_GET[&#039;_subscription_related_orders&#039;] ) &amp;&amp; $_GET[&#039;_subscription_related_orders&#039;] &gt; 0 ) {
+
+				$subscription_id = absint( $_GET[&#039;_subscription_related_orders&#039;] );
+
+				$subscription = wcs_get_subscription( $subscription_id );
+
+				if ( ! wcs_is_subscription( $subscription ) ) {
+					// translators: placeholder is a number
+					wcs_add_admin_notice( sprintf( __( &#039;We can\&#039;t find a subscription with ID #%d. Perhaps it was deleted?&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription_id ), &#039;error&#039; );
+					$where .= &quot; AND {$wpdb-&gt;posts}.ID = 0&quot;;
+				} else {
+					self::$found_related_orders = true;
+					$where .= sprintf( &quot; AND {$wpdb-&gt;posts}.ID IN (%s)&quot;, implode( &#039;,&#039;, array_map( &#039;absint&#039;, array_unique( $subscription-&gt;get_related_orders( &#039;ids&#039; ) ) ) ) );
+				}
+			}
+		}
+
+		return $where;
+	}
+
+	/**
+	 * Filters the Admin orders and subscriptions table results based on a list of IDs returned by a report query.
+	 *
+	 * @since 2.6.2
+	 *
+	 * @param string $where The query WHERE clause.
+	 * @return string $where
+	 */
+	public static function filter_orders_and_subscriptions_from_list( $where ) {
+		global $typenow, $wpdb;
+
+		if ( ! is_admin() || ! in_array( $typenow, array( &#039;shop_subscription&#039;, &#039;shop_order&#039; ) ) || ! isset( $_GET[&#039;_report&#039;] ) ) {
+			return $where;
+		}
+
+		// Map the order or subscription type to their respective keys and type key.
+		$object_type      = &#039;shop_order&#039; === $typenow ? &#039;order&#039; : &#039;subscription&#039;;
+		$cache_report_key = isset( $_GET[ &quot;_{$object_type}s_list_key&quot; ] ) ? $_GET[ &quot;_{$object_type}s_list_key&quot; ] : &#039;&#039;;
+
+		// If the report key or report arg is empty exit early.
+		if ( empty( $cache_report_key ) || empty( $_GET[&#039;_report&#039;] ) ) {
+			$where .= &quot; AND {$wpdb-&gt;posts}.ID = 0&quot;;
+			return $where;
+		}
+
+		$cache = get_transient( $_GET[&#039;_report&#039;] );
+
+		// Display an admin notice if we cannot find the report data requested.
+		if ( ! isset( $cache[ $cache_report_key ] ) ) {
+			$admin_notice = new WCS_Admin_Notice( &#039;error&#039; );
+			$admin_notice-&gt;set_simple_content( sprintf(
+				/* translators: Placeholders are opening and closing link tags. */
+				__( &#039;We weren\&#039;t able to locate the set of report results you requested. Please regenerate the link from the %1$sSubscription Reports screen%2$s.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;a href=&quot;&#039; . esc_url( admin_url( &#039;admin.php?page=wc-reports&amp;tab=subscriptions&amp;report=subscription_events_by_date&#039; ) ) . &#039;&quot;&gt;&#039;,
+				&#039;&lt;/a&gt;&#039;
+			) );
+			$admin_notice-&gt;display();
+
+			$where .= &quot; AND {$wpdb-&gt;posts}.ID = 0&quot;;
+			return $where;
+		}
+
+		$results = $cache[ $cache_report_key ];
+
+		// The current subscriptions count report will include the specific result (the subscriptions active on the last day) that should be used to generate the subscription list.
+		if ( ! empty( $_GET[&#039;_data_key&#039;] ) &amp;&amp; isset( $results[ (int) $_GET[&#039;_data_key&#039;] ] ) ) {
+			$results = array( $results[ (int) $_GET[&#039;_data_key&#039;] ] );
+		}
+
+		$ids = explode( &#039;,&#039;, implode( &#039;,&#039;, wp_list_pluck( $results, &quot;{$object_type}_ids&quot;, true ) ) );
+
+		// $format = &#039;%d, %d, %d, %d, %d, [...]&#039;
+		$format = implode( &#039;, &#039;, array_fill( 0, count( $ids ), &#039;%d&#039; ) );
+		$where .= $wpdb-&gt;prepare( &quot; AND {$wpdb-&gt;posts}.ID IN ($format)&quot;, $ids );
+
+		return $where;
+	}
+
+	/**
+	 * Filter the &quot;Orders&quot; list to show only paid subscription orders for a particular user
+	 *
+	 * @param string $where
+	 * @return string
+	 * @since 2.5.3
+	 */
+	public static function filter_paid_subscription_orders_for_user( $where ) {
+		global $typenow, $wpdb;
+
+		if ( ! is_admin() || &#039;shop_order&#039; !== $typenow || ! isset( $_GET[&#039;_paid_subscription_orders_for_customer_user&#039;] ) || 0 == $_GET[&#039;_paid_subscription_orders_for_customer_user&#039;] ) {
+			return $where;
+		}
+
+		$user_id = $_GET[&#039;_paid_subscription_orders_for_customer_user&#039;];
+
+		// Unset the GET arg so that it doesn&#039;t interfere with the query for user&#039;s subscriptions.
+		unset( $_GET[&#039;_paid_subscription_orders_for_customer_user&#039;] );
+
+		$users_subscriptions = wcs_get_users_subscriptions( $user_id );
+
+		$users_subscription_orders = array();
+
+		foreach ( $users_subscriptions as $subscription ) {
+			$users_subscription_orders = array_merge( $users_subscription_orders, $subscription-&gt;get_related_orders( &#039;ids&#039; ) );
+		}
+
+		if ( empty( $users_subscription_orders ) ) {
+			wcs_add_admin_notice( sprintf( __( &#039;We can\&#039;t find a paid subscription order for this user.&#039;, &#039;woocommerce-subscriptions&#039; ) ), &#039;error&#039; );
+			$where .= &quot; AND {$wpdb-&gt;posts}.ID = 0&quot;;
+		} else {
+			// Orders with paid status
+			$where .= $wpdb-&gt;prepare( &quot; AND {$wpdb-&gt;posts}.post_status IN ( &#039;wc-processing&#039;, &#039;wc-completed&#039; )&quot; );
+			$where .= sprintf( &quot; AND {$wpdb-&gt;posts}.ID IN (%s)&quot;, implode( &#039;,&#039;, array_unique( $users_subscription_orders ) ) );
+		}
+
+		return $where;
+	}
+
+	/**
+	 * Display a notice indicating that the &quot;Orders&quot; list is filtered.
+	 * @see self::filter_orders()
+	 */
+	public static function display_renewal_filter_notice() {
+
+		global $wp_version;
+
+		$query_arg = &#039;_subscription_related_orders&#039;;
+
+		if ( isset( $_GET[ $query_arg ] ) &amp;&amp; $_GET[ $query_arg ] &gt; 0 &amp;&amp; true === self::$found_related_orders ) {
+
+			$initial_order = wc_get_order( absint( $_GET[ $query_arg ] ) );
+
+			if ( version_compare( $wp_version, &#039;4.2&#039;, &#039;&lt;&#039; ) ) {
+				echo &#039;&lt;div class=&quot;updated&quot;&gt;&lt;p&gt;&#039;;
+				printf(
+					&#039;&lt;a href=&quot;%1$s&quot; class=&quot;close-subscriptions-search&quot;&gt;&amp;times;&lt;/a&gt;&#039;,
+					esc_url( remove_query_arg( $query_arg ) )
+				);
+				// translators: placeholders are opening link tag, ID of sub, and closing link tag
+				printf( esc_html__( &#039;Showing orders for %1$sSubscription %2$s%3$s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;&#039; . esc_url( get_edit_post_link( absint( $_GET[ $query_arg ] ) ) ) . &#039;&quot;&gt;&#039;, esc_html( $initial_order-&gt;get_order_number() ), &#039;&lt;/a&gt;&#039; );
+				echo &#039;&lt;/p&gt;&#039;;
+			} else {
+				echo &#039;&lt;div class=&quot;updated dismiss-subscriptions-search&quot;&gt;&lt;p&gt;&#039;;
+				// translators: placeholders are opening link tag, ID of sub, and closing link tag
+				printf( esc_html__( &#039;Showing orders for %1$sSubscription %2$s%3$s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;&#039; . esc_url( get_edit_post_link( absint( $_GET[ $query_arg ] ) ) ) . &#039;&quot;&gt;&#039;, esc_html( $initial_order-&gt;get_order_number() ), &#039;&lt;/a&gt;&#039; );
+				echo &#039;&lt;/p&gt;&#039;;
+				printf(
+					&#039;&lt;a href=&quot;%1$s&quot; class=&quot;notice-dismiss&quot;&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;Dismiss this notice.&lt;/span&gt;&lt;/a&gt;&#039;,
+					esc_url( remove_query_arg( $query_arg ) )
+				);
+			}
+
+			echo &#039;&lt;/div&gt;&#039;;
+		}
+	}
+
+	/**
+	 * Returns either a string or array of strings describing the allowable trial period range
+	 * for a subscription.
+	 *
+	 * @since 1.0
+	 */
+	public static function get_trial_period_validation_message( $form = &#039;combined&#039; ) {
+
+		$subscription_ranges = wcs_get_subscription_ranges();
+
+		if ( &#039;combined&#039; == $form ) {
+			// translators: number of 1$: days, 2$: weeks, 3$: months, 4$: years
+			$error_message = sprintf( __( &#039;The trial period can not exceed: %1$s, %2$s, %3$s or %4$s.&#039;, &#039;woocommerce-subscriptions&#039; ), array_pop( $subscription_ranges[&#039;day&#039;] ), array_pop( $subscription_ranges[&#039;week&#039;] ), array_pop( $subscription_ranges[&#039;month&#039;] ), array_pop( $subscription_ranges[&#039;year&#039;] ) );
+		} else {
+			$error_message = array();
+			foreach ( wcs_get_available_time_periods() as $period =&gt; $string ) {
+				// translators: placeholder is a time period (e.g. &quot;4 weeks&quot;)
+				$error_message[ $period ] = sprintf( __( &#039;The trial period can not exceed %s.&#039;, &#039;woocommerce-subscriptions&#039; ), array_pop( $subscription_ranges[ $period ] ) );
+			}
+		}
+
+		return apply_filters( &#039;woocommerce_subscriptions_trial_period_validation_message&#039;, $error_message );
+	}
+
+	/**
+	 * Callback for the [subscriptions] shortcode that displays subscription names for a particular user.
+	 *
+	 * @param array $attributes Shortcode attributes.
+	 * @return string
+	 */
+	public static function do_subscriptions_shortcode( $attributes ) {
+		$attributes = shortcode_atts(
+			array(
+				&#039;user_id&#039; =&gt; 0,
+				&#039;status&#039;  =&gt; &#039;active&#039;,
+			),
+			$attributes,
+			&#039;subscriptions&#039;
+		);
+
+		$subscriptions = wcs_get_users_subscriptions( $attributes[&#039;user_id&#039;] );
+
+		// Limit subscriptions to the appropriate status if it&#039;s not &quot;any&quot; or &quot;all&quot;.
+		if ( &#039;all&#039; !== $attributes[&#039;status&#039;] &amp;&amp; &#039;any&#039; !== $attributes[&#039;status&#039;] ) {
+			/** @var WC_Subscription $subscription */
+			foreach ( $subscriptions as $index =&gt; $subscription ) {
+				if ( ! $subscription-&gt;has_status( $attributes[&#039;status&#039;] ) ) {
+					unset( $subscriptions[ $index ] );
+				}
+			}
+		}
+
+		// Load the subscription template, and return its content using Output Buffering.
+		ob_start();
+		wc_get_template(
+			&#039;myaccount/my-subscriptions.php&#039;,
+			array(
+				&#039;subscriptions&#039; =&gt; $subscriptions,
+				&#039;user_id&#039;       =&gt; $attributes[&#039;user_id&#039;],
+			),
+			&#039;&#039;,
+			WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; )
+		);
+
+		return ob_get_clean();
+	}
+
+	/**
+	 * Adds Subscriptions specific details to the WooCommerce System Status report.
+	 *
+	 * @param array $attributes Shortcode attributes.
+	 * @return array
+	 */
+	public static function add_system_status_items( $debug_data ) {
+		_deprecated_function( __METHOD__, &#039;2.2.2&#039;, __CLASS__ . &#039;::render_system_status_items()&#039; );
+
+		$is_wcs_debug = defined( &#039;WCS_DEBUG&#039; ) ? WCS_DEBUG : false;
+
+		$debug_data[&#039;wcs_debug&#039;] = array(
+			&#039;name&#039;    =&gt; _x( &#039;WCS_DEBUG&#039;, &#039;label that indicates whether debugging is turned on for the plugin&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;note&#039;    =&gt; ( $is_wcs_debug ) ? __( &#039;Yes&#039;, &#039;woocommerce-subscriptions&#039; ) : __( &#039;No&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;success&#039; =&gt; $is_wcs_debug ? 0 : 1,
+		);
+
+		$debug_data[&#039;wcs_staging&#039;] = array(
+			&#039;name&#039;    =&gt; _x( &#039;Subscriptions Mode&#039;, &#039;Live or Staging, Label on WooCommerce -&gt; System Status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;note&#039;    =&gt; &#039;&lt;strong&gt;&#039; . ( ( WCS_Staging::is_duplicate_site() ) ? _x( &#039;Staging&#039;, &#039;refers to staging site&#039;, &#039;woocommerce-subscriptions&#039; ) : _x( &#039;Live&#039;, &#039;refers to live site&#039;, &#039;woocommerce-subscriptions&#039; ) ) . &#039;&lt;/strong&gt;&#039;,
+			&#039;success&#039; =&gt; ( WCS_Staging::is_duplicate_site() ) ? 0 : 1,
+		);
+
+		return $debug_data;
+	}
+
+	/**
+	 * A WooCommerce version aware function for getting the Subscriptions admin settings
+	 * tab URL.
+	 *
+	 * @since 1.4.5
+	 * @return string
+	 */
+	public static function settings_tab_url() {
+
+		$settings_tab_url = admin_url( &#039;admin.php?page=wc-settings&amp;tab=subscriptions&#039; );
+
+		return apply_filters( &#039;woocommerce_subscriptions_settings_tab_url&#039;, $settings_tab_url );
+	}
+
+	/**
+	 * Add a column to the Payment Gateway table to show whether the gateway supports automated renewals.
+	 *
+	 * @param array $header
+	 *
+	 * @since 2.5.3
+	 * @return array
+	 */
+	public static function payment_gateways_renewal_column( $header ) {
+		$header_new = array_slice( $header, 0, count( $header ) - 1, true ) + array( &#039;renewals&#039; =&gt; __( &#039;Automatic Recurring Payments&#039;, &#039;woocommerce-subscriptions&#039; ) ) // Ideally, we could add a link to the docs here, but the title is passed through esc_html()
+			+ array_slice( $header, count( $header ) - 1, count( $header ) - ( count( $header ) - 1 ), true );
+
+		return $header_new;
+	}
+
+	/**
+	 * Add a column to the Payment Gateway table to show whether the gateway supports automated renewals.
+	 *
+	 * @since      1.5
+	 * @deprecated 2.5.3
+	 * @return string
+	 */
+	public static function payment_gateways_rewewal_column( $header ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.5.3&#039;, &#039;WC_Subscriptions_Admin::payment_gateways_renewal_column( $header )&#039; );
+
+		return self::payment_gateways_renewal_column( $header );
+	}
+
+	/**
+	 * Check whether the payment gateway passed in supports automated renewals or not.
+	 * Automatically flag support for Paypal since it is included with subscriptions.
+	 * Display in the Payment Gateway column.
+	 *
+	 * @param WC_Payment_Gateway $gateway
+	 *
+	 * @since 2.5.3
+	 */
+	public static function payment_gateways_renewal_support( $gateway ) {
+		$payment_gateways_handler = WC_Subscriptions_Core_Plugin::instance()-&gt;get_gateways_handler_class();
+
+		echo &#039;&lt;td class=&quot;renewals&quot;&gt;&#039;;
+		if ( $payment_gateways_handler::gateway_supports_subscriptions( $gateway ) ) {
+			$status_html = &#039;&lt;span class=&quot;status-enabled tips&quot; data-tip=&quot;&#039; . esc_attr__( &#039;Supports automatic renewal payments.&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&quot;&gt;&#039; . esc_html__( &#039;Yes&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/span&gt;&#039;;
+		} else {
+			$status_html = &#039;-&#039;;
+		}
+
+		$allowed_html                     = wp_kses_allowed_html( &#039;post&#039; );
+		$allowed_html[&#039;span&#039;][&#039;data-tip&#039;] = true;
+
+		/**
+		 * Automatic Renewal Payments Support Status HTML Filter.
+		 *
+		 * @since 2.0
+		 *
+		 * @param string              $status_html
+		 * @param \WC_Payment_Gateway $gateway
+		 */
+		echo wp_kses( apply_filters( &#039;woocommerce_payment_gateways_renewal_support_status_html&#039;, $status_html, $gateway ), $allowed_html );
+
+		echo &#039;&lt;/td&gt;&#039;;
+	}
+
+	/**
+	 * Check whether the payment gateway passed in supports automated renewals or not.
+	 * Automatically flag support for Paypal since it is included with subscriptions.
+	 * Display in the Payment Gateway column.
+	 *
+	 * @since      1.5
+	 * @deprecated 2.5.3
+	 */
+	public static function payment_gateways_rewewal_support( $gateway ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.5.3&#039;, &#039;WC_Subscriptions_Admin::payment_gateways_renewal_support( $gateway )&#039; );
+
+		return self::payment_gateways_renewal_support( $gateway );
+	}
+
+	/**
+	 * Do not display formatted order total on the Edit Order administration screen
+	 *
+	 * @since 1.5.17
+	 */
+	public static function maybe_remove_formatted_order_total_filter( $formatted_total, $order ) {
+
+		// Check if we&#039;re on the Edit Order screen - get_current_screen() only exists on admin pages so order of operations matters here
+		if ( is_admin() &amp;&amp; function_exists( &#039;get_current_screen&#039; ) ) {
+
+			$screen = get_current_screen();
+
+			if ( is_object( $screen ) &amp;&amp; &#039;shop_order&#039; == $screen-&gt;id ) {
+				remove_filter( &#039;woocommerce_get_formatted_order_total&#039;, &#039;WC_Subscriptions_Order::get_formatted_order_total&#039;, 10 );
+			}
+		}
+
+		return $formatted_total;
+	}
+
+	/**
+	 * Only attach the gettext callback when on admin shop subscription screen
+	 *
+	 * @since 2.2.7
+	 */
+	public static function maybe_attach_gettext_callback() {
+
+		if ( is_admin() &amp;&amp; function_exists( &#039;get_current_screen&#039; ) ) {
+			$screen = get_current_screen();
+
+			if ( is_object( $screen ) &amp;&amp; &#039;shop_subscription&#039; === $screen-&gt;id ) {
+				add_filter( &#039;gettext&#039;, array( __CLASS__, &#039;change_order_item_editable_text&#039; ), 10, 3 );
+			}
+		}
+	}
+
+	/**
+	 * Only unattach the gettext callback when it was attached
+	 *
+	 * @since 2.2.7
+	 */
+	public static function maybe_unattach_gettext_callback() {
+
+		if ( is_admin() &amp;&amp; function_exists( &#039;get_current_screen&#039; ) ) {
+			$screen = get_current_screen();
+
+			if ( is_object( $screen ) &amp;&amp; &#039;shop_subscription&#039; === $screen-&gt;id ) {
+				remove_filter( &#039;gettext&#039;, array( __CLASS__, &#039;change_order_item_editable_text&#039; ), 10 );
+			}
+		}
+	}
+
+
+	/**
+	* When subscription items not editable (such as due to the payment gateway not supporting modifications),
+	* change the text to explain why
+	*
+	* @since 2.2.7
+	*/
+	public static function change_order_item_editable_text( $translated_text, $text, $domain ) {
+
+		switch ( $text ) {
+			case &#039;This order is no longer editable.&#039;:
+				$translated_text = __( &#039;Subscription items can no longer be edited.&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+
+			case &#039;To edit this order change the status back to &quot;Pending&quot;&#039;:
+				$translated_text = __( &#039;This subscription is no longer editable because the payment gateway does not allow modification of recurring amounts.&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+		}
+
+		return $translated_text;
+	}
+
+	/**
+	 * Add recurring payment gateway information after the Settings-&gt;Payments-&gt;Payment Methods table.
+	 * This includes information about manual renewals and a warning if no payment gateway which supports automatic recurring payments is enabled/setup correctly.
+	 *
+	 * @since 2.1
+	 */
+	public static function add_recurring_payment_gateway_information( $settings ) {
+		$available_gateways_description = &#039;&#039;;
+		$payment_gateways_handler       = WC_Subscriptions_Core_Plugin::instance()-&gt;get_gateways_handler_class();
+
+		if ( ! $payment_gateways_handler::one_gateway_supports( &#039;subscriptions&#039; ) ) {
+			// translators: $1-2: opening and closing tags of a link that takes to Woo marketplace / Stripe product page
+			$available_gateways_description = sprintf( __( &#039;No payment gateways capable of processing automatic subscription payments are enabled. If you would like to process automatic payments, we recommend the %1$sfree Stripe extension%2$s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&lt;a href=&quot;https://www.woocommerce.com/products/stripe/&quot;&gt;&#039;, &#039;&lt;/a&gt;&lt;/strong&gt;&#039; );
+		}
+
+		$recurring_payment_settings = apply_filters(
+			&#039;woocommerce_subscriptions_admin_recurring_payment_information&#039;,
+			array(
+				array(
+					&#039;name&#039; =&gt; __( &#039;Recurring Payments&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;desc&#039; =&gt; $available_gateways_description,
+					&#039;id&#039;   =&gt; WC_Subscriptions_Admin::$option_prefix . &#039;_payment_gateways_available&#039;,
+					&#039;type&#039; =&gt; &#039;informational&#039;,
+				),
+
+				array(
+					// translators: placeholders are opening and closing link tags
+					&#039;desc&#039; =&gt; sprintf( __( &#039;Payment gateways which don\&#039;t support automatic recurring payments can be used to process %1$smanual subscription renewal payments%2$s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;http://docs.woocommerce.com/document/subscriptions/renewal-process/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ),
+					&#039;id&#039;   =&gt; WC_Subscriptions_Admin::$option_prefix . &#039;_payment_gateways_additional&#039;,
+					&#039;type&#039; =&gt; &#039;informational&#039;,
+				),
+			),
+			self::$option_prefix
+		);
+
+		$insert_index = array_search(
+			array(
+				&#039;type&#039; =&gt; &#039;sectionend&#039;,
+				&#039;id&#039;   =&gt; &#039;payment_gateways_options&#039;,
+			),
+			$settings
+		);
+
+		// reconstruct the settings array, inserting the new settings after the payment gatways table
+		$checkout_settings = array();
+
+		foreach ( $settings as $key =&gt; $value ) {
+
+			$checkout_settings[ $key ] = $value;
+			unset( $settings[ $key ] );
+
+			if ( $key == $insert_index ) {
+				$checkout_settings = array_merge( $checkout_settings, $recurring_payment_settings, $settings );
+				break;
+			}
+		}
+
+		return $checkout_settings;
+	}
+
+	/**
+	 * Check if subscription product meta data should be saved for the current request.
+	 *
+	 * @param array Array of product types.
+	 * @since 2.2.9
+	 */
+	private static function is_subscription_product_save_request( $post_id, $product_types ) {
+
+		if ( self::$saved_product_meta ) {
+			$is_subscription_product_save_request = false;
+		} elseif ( empty( $_POST[&#039;_wcsnonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_subscription_meta&#039; ) ) {
+			$is_subscription_product_save_request = false;
+		} elseif ( ! isset( $_POST[&#039;product-type&#039;] ) || ! in_array( $_POST[&#039;product-type&#039;], $product_types ) ) {
+			$is_subscription_product_save_request = false;
+		} elseif ( empty( $_POST[&#039;post_ID&#039;] ) || $_POST[&#039;post_ID&#039;] != $post_id ) {
+			$is_subscription_product_save_request = false;
+		} else {
+			$is_subscription_product_save_request = true;
+		}
+
+		return apply_filters( &#039;wcs_admin_is_subscription_product_save_request&#039;, $is_subscription_product_save_request, $post_id, $product_types );
+	}
+
+	/**
+	 * Insert a setting or an array of settings after another specific setting by its ID.
+	 *
+	 * @since 2.2.20
+	 * @param array  $settings                The original list of settings. Passed by reference.
+	 * @param string $insert_after_setting_id The setting id to insert the new setting after.
+	 * @param array  $new_setting             The new setting to insert. Can be a single setting or an array of settings.
+	 * @param string $insert_type             The type of insert to perform. Can be &#039;single_setting&#039; or &#039;multiple_settings&#039;. Optional. Defaults to a single setting insert.
+	 * @param string $insert_after            The setting type to insert the new settings after. Optional. Default is &#039;first&#039; - the setting will be inserted after the first occuring setting with the matching ID (no specific type). Pass a setting type (like &#039;sectionend&#039;) to insert after a setting type.
+	 */
+	public static function insert_setting_after( &amp;$settings, $insert_after_setting_id, $new_setting, $insert_type = &#039;single_setting&#039;, $insert_after = &#039;first&#039; ) {
+		if ( ! is_array( $settings ) ) {
+			return;
+		}
+
+		$original_settings = $settings;
+		$settings          = array();
+		$inserted          = false;
+
+		foreach ( $original_settings as $setting ) {
+			$settings[] = $setting;
+
+			if ( $inserted ) {
+				continue;
+			}
+
+			if ( &#039;first&#039; !== $insert_after &amp;&amp; isset( $setting[&#039;type&#039;] ) &amp;&amp; $setting[&#039;type&#039;] !== $insert_after ) {
+				continue;
+			}
+
+			if ( isset( $setting[&#039;id&#039;] ) &amp;&amp; $insert_after_setting_id === $setting[&#039;id&#039;] ) {
+				if ( &#039;single_setting&#039; === $insert_type ) {
+					$settings[] = $new_setting;
+				} else {
+					$settings = array_merge( $settings, $new_setting );
+				}
+
+				$inserted = true;
+			}
+		}
+
+		return $inserted;
+	}
+
+	/**
+	 * Add a reminder on the enable guest checkout setting that subscriptions still require an account
+	 * @since 2.3.0
+	 * @param array $settings The list of settings
+	 */
+	public static function add_guest_checkout_setting_note( $settings ) {
+		$is_wc_pre_3_4_0 = wcs_is_woocommerce_pre( &#039;3.4.0&#039; );
+		$current_filter  = current_filter();
+
+		if ( ( $is_wc_pre_3_4_0 &amp;&amp; &#039;woocommerce_payment_gateways_settings&#039; !== $current_filter ) || ( ! $is_wc_pre_3_4_0 &amp;&amp; &#039;woocommerce_account_settings&#039; !== $current_filter ) ) {
+			return $settings;
+		}
+
+		if ( ! is_array( $settings ) ) {
+			return $settings;
+		}
+
+		foreach ( $settings as &amp;$value ) {
+			if ( isset( $value[&#039;id&#039;] ) &amp;&amp; &#039;woocommerce_enable_guest_checkout&#039; === $value[&#039;id&#039;] ) {
+				$value[&#039;desc_tip&#039;]  = ! empty( $value[&#039;desc_tip&#039;] ) ? $value[&#039;desc_tip&#039;] . &#039; &#039; : &#039;&#039;;
+				$value[&#039;desc_tip&#039;] .= __( &#039;Note that purchasing a subscription still requires an account.&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+			}
+		}
+		return $settings;
+	}
+
+	/**
+	 * Gets the product type warning message displayed for products associated with subscriptions
+	 *
+	 * @since 3.0.7
+	 * @return string The change product type warning message.
+	 */
+	private static function get_change_product_type_warning() {
+		return __( &#039;The product type can not be changed because this product is associated with subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; );
+	}
+
+	/**
+	 * Validates the product type change before other product data is saved.
+	 *
+	 * Subscription products associated with subscriptions cannot be changed. Doing so
+	 * can cause issues. For example when customers who try to manually renew where the subscription
+	 * products are placed in the cart.
+	 *
+	 * @since 3.0.7
+	 * @param int $product_id The product ID being saved.
+	 */
+	public static function validate_product_type_change( $product_id ) {
+
+		if ( empty( $_POST[&#039;woocommerce_meta_nonce&#039;] ) || ! wp_verify_nonce( wp_unslash( $_POST[&#039;woocommerce_meta_nonce&#039;] ), &#039;woocommerce_save_data&#039; ) || empty( $_POST[&#039;product-type&#039;] ) ) {
+			return;
+		}
+
+		$current_product_type = WC_Product_Factory::get_product_type( $product_id );
+
+		// Only validate subscription product type changes.
+		if ( &#039;subscription&#039; !== $current_product_type &amp;&amp; &#039;variable-subscription&#039; !== $current_product_type ) {
+			return;
+		}
+
+		$new_product_type = sanitize_title( wp_unslash( $_POST[&#039;product-type&#039;] ) );
+
+		// Display an error and don&#039;t save the product if the type is changing and it&#039;s linked to subscriptions.
+		if ( $new_product_type !== $current_product_type &amp;&amp; (bool) wcs_get_subscriptions_for_product( $product_id, &#039;ids&#039;, array( &#039;limit&#039; =&gt; 1 ) ) ) {
+			wcs_add_admin_notice( self::get_change_product_type_warning(), &#039;error&#039; );
+			wp_safe_redirect( get_admin_url( null, &quot;post.php?post={$product_id}&amp;action=edit&quot; ) );
+			exit;
+		}
+	}
+
+	/**
+	 * Adds a setting to allow customer registration on checkout specifically for subscription purchases.
+	 *
+	 * If the store allows registration on the checkout, this setting is hidden because that higher level
+	 * setting overrides any need for a specific subscription setting.
+	 *
+	 * This setting allows stores to enable users to create an account when purchasing a subscription, but
+	 * not allow an account to be created when they are making one off/standard purchases.
+	 *
+	 * @since 3.1.0
+	 *
+	 * @param array $settings The Accounts &amp; Privacy settings.
+	 * @return array $settings.
+	 */
+	public static function add_registration_for_subscription_purchases_setting( $settings ) {
+
+		self::insert_setting_after( $settings, &#039;woocommerce_enable_signup_and_login_from_checkout&#039;, array(
+			&#039;id&#039;              =&gt; &#039;woocommerce_enable_signup_from_checkout_for_subscriptions&#039;,
+			&#039;name&#039;            =&gt; __( &#039;Allow subscription customers to create an account during checkout&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;desc&#039;            =&gt; __( &#039;Allow subscription customers to create an account during checkout&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;default&#039;         =&gt; &#039;yes&#039;,
+			&#039;type&#039;            =&gt; &#039;checkbox&#039;,
+			&#039;checkboxgroup&#039;   =&gt; &#039;&#039;,
+			&#039;autoload&#039;        =&gt; false,
+		) );
+
+		return $settings;
+	}
+
+	/**
+	 * Renders the Subscription information in the WC status page
+	 */
+	public static function render_system_status_items() {
+		_deprecated_function( __METHOD__, &#039;2.3&#039;, &#039;WCS_Admin_System_Status::render_system_status_items()&#039; );
+		WCS_Admin_System_Status::render_system_status_items();
+	}
+
+	/**
+	 * Outputs the contents of the &quot;Renewal Orders&quot; meta box.
+	 *
+	 * @param object $post Current post data.
+	 */
+	public static function related_orders_meta_box( $post ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Meta_Box_Related_Orders::output()&#039; );
+		WCS_Meta_Box_Related_Orders::output( $post );
+	}
+
+	/**
+	 * Add users with subscriptions to the &quot;Customers&quot; report in WooCommerce -&gt; Reports.
+	 *
+	 * @param WP_User_Query $user_query
+	 */
+	public static function add_subscribers_to_customers( $user_query ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Set a translation safe screen ID for Subcsription
+	 *
+	 * @since 1.3.3
+	 */
+	public static function set_admin_screen_id() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Once we have set a correct admin page screen ID, we can use it for adding the Manage Subscriptions table&#039;s columns.
+	 *
+	 * @since 1.3.3
+	 */
+	public static function add_subscriptions_table_column_filter() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Filter the &quot;Orders&quot; list to show only renewal orders associated with a specific parent order.
+	 *
+	 * @param array $request
+	 * @return array
+	 */
+	public static function filter_orders_by_renewal_parent( $request ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+		return $request;
+	}
+
+	/**
+	 * Registers the &quot;Renewal Orders&quot; meta box for the &quot;Edit Order&quot; page.
+	 * @deprecated 2.0
+	 */
+	public static function add_meta_boxes() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Admin_Meta_Boxes::add_meta_boxes()&#039; );
+	}
+
+	/**
+	 * Output the metabox
+	 */
+	public static function recurring_totals_meta_box( $post ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Filters the Admin orders table results based on a list of IDs returned by a report query.
+	 *
+	 * @deprecated 2.6.2
+	 *
+	 * @param string $where The query WHERE clause.
+	 * @return string $where
+	 * @since 2.6.0
+	 */
+	public static function filter_orders_from_list( $where ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.6.2&#039;, &#039;WC_Subscriptions_Admin::filter_orders_and_subscriptions_from_list( $where )&#039; );
+
+		return WC_Subscriptions_Admin::filter_orders_and_subscriptions_from_list( $where );
+	}
+
+	/**
+	 * Filters the Admin subscriptions table results based on a list of IDs returned by a report query.
+	 *
+	 * @deprecated 2.6.2
+	 *
+	 * @param string $where The query WHERE clause.
+	 * @return string
+	 * @since 2.6.0
+	 */
+	public static function filter_subscriptions_from_list( $where ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.6.2&#039;, &#039;WC_Subscriptions_Admin::filter_orders_and_subscriptions_from_list( $where )&#039; );
+
+		return WC_Subscriptions_Admin::filter_orders_and_subscriptions_from_list( $where );
+	}
+
+	/**
+	 * Prevents variations from being deleted if switching from a variable product type to a subscription variable product type (and vice versa).
+	 *
+	 * @since 3.0.14
+	 *
+	 * @param bool       $delete_variations A boolean value of true will delete the variations.
+	 * @param WC_Product $product           Product data.
+	 * @return string    $from              Origin type.
+	 * @param string     $to                New type.
+	 *
+	 * @return bool Whehter the variations should be deleted.
+	 */
+	public static function maybe_keep_variations( $delete_variations, $product, $from, $to ) {
+
+		if ( ( &#039;variable&#039; === $from &amp;&amp; &#039;variable-subscription&#039; === $to ) || ( &#039;variable-subscription&#039; === $from &amp;&amp; &#039;variable&#039; === $to ) ) {
+			$delete_variations = false;
+		}
+
+		return $delete_variations;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

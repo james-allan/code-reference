@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-order-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscriptions_for_order">
+        wcs_get_subscriptions_for_order()
+        <a href="#function_wcs_get_subscriptions_for_order" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.32">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get the subscription related to an order, if any.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscriptions_for_order</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An instance of a WC_Order object or the ID of an order</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$args</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A set of name value pairs to filter the returned value.
+'subscriptions_per_page' The number of subscriptions to return. Default set to -1 to return all.
+'offset' An optional number of subscription to displace or pass over. Default 0.
+'orderby' The field which the subscriptions should be ordered by. Can be 'start_date', 'trial_end_date', 'end_date', 'status' or 'order_id'. Defaults to 'start_date'.
+'order' The order of the values returned. Can be 'ASC' or 'DESC'. Defaults to 'DESC'
+'customer_id' The user ID of a customer on the site.
+'product_id' The post ID of a WC_Product_Subscription, WC_Product_Variable_Subscription or WC_Product_Subscription_Variation object
+'order_id' The post ID of a shop_order post/WC_Order object which was used to create the subscription
+'subscription_status' Any valid subscription status. Can be 'any', 'active', 'cancelled', 'on-hold', 'expired', 'pending' or 'trash'. Defaults to 'any'.
+'order_type' Get subscriptions for the any order type in this array. Can include 'any', 'parent', 'renewal' or 'switch', defaults to parent.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_copy_order_address">
+        wcs_copy_order_address()
+        <a href="#function_wcs_copy_order_address" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.95">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Copy the billing, shipping or all addresses from one order to another (including custom order types, like the
+WC_Subscription order type).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_copy_order_address</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_order</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to_order</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$address_type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;all&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\WC_Order">WC_Order</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from_order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The WC_Order object to copy the address from.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$to_order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The WC_Order object to copy the address to.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$address_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;all&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The address type to copy, can be 'shipping', 'billing' or 'all'</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_copy_order_meta">
+        wcs_copy_order_meta()
+        <a href="#function_wcs_copy_order_meta" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.144">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">144</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Utility function to copy order meta between two orders. Originally intended to copy meta between
+first order and subscription object, then between subscription and renewal orders.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_copy_order_meta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_order</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to_order</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;subscription&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>The hooks used here in those cases are</p>
+<ul>
+<li>wcs_subscription_meta_query</li>
+<li>wcs_subscription_meta</li>
+<li>wcs_renewal_order_meta_query</li>
+<li>wcs_renewal_order_meta</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from_order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Order to copy meta from</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$to_order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Order to copy meta to</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;subscription&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>type of copy</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_create_order_from_subscription">
+        wcs_create_order_from_subscription()
+        <a href="#function_wcs_create_order_from_subscription" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.221">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">221</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Function to create an order from a subscription. It can be used for a renewal or for a resubscribe
+order creation. It is the common in both of those instances.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_create_order_from_subscription</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\WC_Order">WC_Order</abbr>|<abbr title="\WP_Error">WP_Error</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Subscription we're basing the order off of</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Type of new order. Default values are 'renewal_order'|'resubscribe_order'</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_new_order_title">
+        wcs_get_new_order_title()
+        <a href="#function_wcs_get_new_order_title" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.290">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">290</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Function to create a post title based on the type and the current date and time for new orders. By
+default it&#039;s either renewal or resubscribe orders.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_new_order_title</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>type of new order. By default 'renewal_order'|'resubscribe_order'</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_validate_new_order_type">
+        wcs_validate_new_order_type()
+        <a href="#function_wcs_validate_new_order_type" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.322">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">322</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Utility function to check type. Filterable. Rejects if not in allowed new order types, rejects
+if not actually string.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_validate_new_order_type</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|<abbr title="\WP_Error">WP_Error</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>type of new order</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_order_address">
+        wcs_get_order_address()
+        <a href="#function_wcs_get_order_address" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.341">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">341</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Wrapper function to get the address from an order / subscription in array format</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_order_address</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$address_type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;shipping&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The order / subscription we want to get the order from</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$address_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;shipping&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>shipping|billing. Default is shipping</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_order_contains_subscription">
+        wcs_order_contains_subscription()
+        <a href="#function_wcs_order_contains_subscription" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.385">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">385</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks an order to see if it contains a subscription.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_order_contains_subscription</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order_type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array(&#039;parent&#039;, &#039;resubscribe&#039;, &#039;switch&#039;)</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A WC_Order object or the ID of the order which the subscription was purchased in.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array(&#039;parent&#039;, &#039;resubscribe&#039;, &#039;switch&#039;)</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Can include 'parent', 'renewal', 'resubscribe' and/or 'switch'. Defaults to 'parent', 'resubscribe' and 'switch' orders.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_orders">
+        wcs_get_subscription_orders()
+        <a href="#function_wcs_get_subscription_orders" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.425">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">425</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get all the orders that relate to a subscription in some form (rather than only the orders associated with
+a specific subscription).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_orders</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$return_fields</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;ids&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order_type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;parent&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$return_fields</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;ids&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The columns to return, either 'all' or 'ids'</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;parent&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Can include 'any', 'parent', 'renewal', 'resubscribe' and/or 'switch'. Defaults to 'parent'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.1</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_order_item">
+        wcs_get_order_item()
+        <a href="#function_wcs_get_order_item" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.514">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">514</span>
+</aside>
+
+        <p class="phpdocumentor-summary">A wrapper for getting a specific item from an order or subscription.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_order_item</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\WC_Order_Item">WC_Order_Item</abbr>|array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>WooCommerce has a wc_add_order_item() function, wc_update_order_item() function and wc_delete_order_item() function,
+but no <code class="prettyprint">wc_get_order_item()</code> function, so we need to add our own (for now).</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$item_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of an order item</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The order or order object the item belongs to.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_update_order_item_type">
+        wcs_update_order_item_type()
+        <a href="#function_wcs_update_order_item_type" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.544">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">544</span>
+</aside>
+
+        <p class="phpdocumentor-summary">A wrapper for wc_update_order_item() which consistently deletes the cached item after update, unlike WC.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_update_order_item_type</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$new_type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order_or_subscription_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$item_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of an order item</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$new_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The new type to set as the 'order_item_type' value on the order item.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order_or_subscription_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The order or subscription ID the line item belongs to - optional. Deletes the order item cache if provided.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.12</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_order_item_meta">
+        wcs_get_order_item_meta()
+        <a href="#function_wcs_get_order_item_meta" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.561">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">561</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get an instance of WC_Order_Item_Meta for an order item</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_order_item_meta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$product</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\WC_Order_Item_Meta">WC_Order_Item_Meta</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$item</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$product</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_order_item_name">
+        wcs_get_order_item_name()
+        <a href="#function_wcs_get_order_item_name" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.574">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">574</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Create a string representing an order item&#039;s name and optionally include attributes.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_order_item_name</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order_item</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$include</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order_item</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An order item.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$include</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_line_item_name">
+        wcs_get_line_item_name()
+        <a href="#function_wcs_get_line_item_name" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.635">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">635</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get the full name for a order/subscription line item, including the items non hidden meta
+(i.e. attributes), as a flat string.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_line_item_name</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$line_item</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$line_item</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_display_item_meta">
+        wcs_display_item_meta()
+        <a href="#function_wcs_display_item_meta" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.692">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">692</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Display item meta data in a version compatible way.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_display_item_meta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Item">WC_Item</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$item</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Item">WC_Item</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_display_item_downloads">
+        wcs_display_item_downloads()
+        <a href="#function_wcs_display_item_downloads" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.708">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">708</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Display item download links in a version compatible way.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_display_item_downloads</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Item">WC_Item</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$item</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Item">WC_Item</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_copy_order_item">
+        wcs_copy_order_item()
+        <a href="#function_wcs_copy_order_item" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.725">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">725</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Copy the order item data and meta data from one item to another.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_copy_order_item</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order_Item">WC_Order_Item</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_item</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order_Item">WC_Order_Item</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$to_item</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from_item</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order_Item">WC_Order_Item</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The order item to copy data from</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$to_item</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order_Item">WC_Order_Item</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The order item to copy data to</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_order_contains_manual_subscription">
+        wcs_order_contains_manual_subscription()
+        <a href="#function_wcs_order_contains_manual_subscription" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.813">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">813</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks an order to see if it contains a manual subscription.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_order_contains_manual_subscription</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order_type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;any&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The WC_Order object or ID to get related subscriptions from.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;any&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The order relationship type(s). Can be single string or an array of order types. Optional. Default is 'any'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.4.3</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_copy_payment_method_to_order">
+        wcs_copy_payment_method_to_order()
+        <a href="#function_wcs_copy_payment_method_to_order" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.834">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">834</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Copy payment method from a subscription to an order.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_copy_payment_method_to_order</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.4.3</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_minutes_since_order_created">
+        wcs_minutes_since_order_created()
+        <a href="#function_wcs_minutes_since_order_created" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.859">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">859</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns how many minutes ago the order was created.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_minutes_since_order_created</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.5.3</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_seconds_since_order_created">
+        wcs_seconds_since_order_created()
+        <a href="#function_wcs_seconds_since_order_created" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.874">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">874</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns how many seconds ago the order was created.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_seconds_since_order_created</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.5.3</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_find_matching_line_item">
+        wcs_find_matching_line_item()
+        <a href="#function_wcs_find_matching_line_item" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.889">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">889</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Finds a corresponding subscription line item on an order.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_find_matching_line_item</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Abstract_Order">WC_Abstract_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order_Item">WC_Order_Item</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription_item</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$match_type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;match_product_ids&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\WC_Order_Item">WC_Order_Item</abbr>|bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Abstract_Order">WC_Abstract_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The order object to look for the item in.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription_item</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order_Item">WC_Order_Item</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The line item on the the subscription to find on the order.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$match_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;match_product_ids&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional. The type of comparison to make. Can be 'match_product_ids' to compare product|variation IDs or 'match_attributes' to also compare by item attributes on top of matching product IDs. Default 'match_product_ids'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.6.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_order_contains_product">
+        wcs_order_contains_product()
+        <a href="#function_wcs_order_contains_product" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.925">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">925</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks if an order contains a product.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_order_contains_product</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Product">WC_Product</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$product</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An order object</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$product</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Product">WC_Product</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A product object</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.6.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_order_contains_early_renewal">
+        wcs_order_contains_early_renewal()
+        <a href="#function_wcs_order_contains_early_renewal" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-order-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-order-functions.html#source-view.946">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-order-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">946</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check if a given order is a subscription renewal order.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_order_contains_early_renewal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The WC_Order object or ID of a WC_Order order.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.3.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Order Functions
+ *
+ * @author   Prospress
+ * @category Core
+ * @package  WooCommerce Subscriptions/Functions
+ * @version  2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * Get the subscription related to an order, if any.
+ *
+ * @param WC_Order|int $order An instance of a WC_Order object or the ID of an order
+ * @param array $args A set of name value pairs to filter the returned value.
+ *    &#039;subscriptions_per_page&#039; The number of subscriptions to return. Default set to -1 to return all.
+ *    &#039;offset&#039; An optional number of subscription to displace or pass over. Default 0.
+ *    &#039;orderby&#039; The field which the subscriptions should be ordered by. Can be &#039;start_date&#039;, &#039;trial_end_date&#039;, &#039;end_date&#039;, &#039;status&#039; or &#039;order_id&#039;. Defaults to &#039;start_date&#039;.
+ *    &#039;order&#039; The order of the values returned. Can be &#039;ASC&#039; or &#039;DESC&#039;. Defaults to &#039;DESC&#039;
+ *    &#039;customer_id&#039; The user ID of a customer on the site.
+ *    &#039;product_id&#039; The post ID of a WC_Product_Subscription, WC_Product_Variable_Subscription or WC_Product_Subscription_Variation object
+ *    &#039;order_id&#039; The post ID of a shop_order post/WC_Order object which was used to create the subscription
+ *    &#039;subscription_status&#039; Any valid subscription status. Can be &#039;any&#039;, &#039;active&#039;, &#039;cancelled&#039;, &#039;on-hold&#039;, &#039;expired&#039;, &#039;pending&#039; or &#039;trash&#039;. Defaults to &#039;any&#039;.
+ *    &#039;order_type&#039; Get subscriptions for the any order type in this array. Can include &#039;any&#039;, &#039;parent&#039;, &#039;renewal&#039; or &#039;switch&#039;, defaults to parent.
+ * @return WC_Subscription[] Subscription details in post_id =&gt; WC_Subscription form.
+ * @since  2.0
+ */
+function wcs_get_subscriptions_for_order( $order, $args = array() ) {
+
+	$subscriptions = array();
+
+	if ( ! is_a( $order, &#039;WC_Order&#039; ) ) {
+		$order = wc_get_order( $order );
+	}
+
+	if ( ! is_a( $order, &#039;WC_Order&#039; ) ) {
+		return $subscriptions;
+	}
+
+	$args = wp_parse_args(
+		$args,
+		array(
+			&#039;subscriptions_per_page&#039; =&gt; -1,
+			&#039;order_type&#039;             =&gt; array( &#039;parent&#039;, &#039;switch&#039; ),
+		)
+	);
+
+	// Accept either an array or string (to make it more convenient for singular types, like &#039;parent&#039; or &#039;any&#039;)
+	if ( ! is_array( $args[&#039;order_type&#039;] ) ) {
+		$args[&#039;order_type&#039;] = array( $args[&#039;order_type&#039;] );
+	}
+
+	$get_all = in_array( &#039;any&#039;, $args[&#039;order_type&#039;] );
+
+	if ( $get_all || in_array( &#039;parent&#039;, $args[&#039;order_type&#039;] ) ) {
+
+		$get_subscriptions_args = array_merge( $args, array(
+			&#039;order_id&#039; =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+		) );
+
+		$subscriptions = wcs_get_subscriptions( $get_subscriptions_args );
+	}
+
+	$all_relation_types = WCS_Related_Order_Store::instance()-&gt;get_relation_types();
+	$relation_types     = $get_all ? $all_relation_types : array_intersect( $all_relation_types, $args[&#039;order_type&#039;] );
+
+	foreach ( $relation_types as $relation_type ) {
+
+		$subscription_ids = WCS_Related_Order_Store::instance()-&gt;get_related_subscription_ids( $order, $relation_type );
+
+		foreach ( $subscription_ids as $subscription_id ) {
+			if ( wcs_is_subscription( $subscription_id ) ) {
+				$subscriptions[ $subscription_id ] = wcs_get_subscription( $subscription_id );
+			}
+		}
+	}
+
+	return $subscriptions;
+}
+
+/**
+ * Copy the billing, shipping or all addresses from one order to another (including custom order types, like the
+ * WC_Subscription order type).
+ *
+ * @param WC_Order $to_order The WC_Order object to copy the address to.
+ * @param WC_Order $from_order The WC_Order object to copy the address from.
+ * @param string $address_type The address type to copy, can be &#039;shipping&#039;, &#039;billing&#039; or &#039;all&#039;
+ * @return WC_Order The WC_Order object with the new address set.
+ * @since  2.0
+ */
+function wcs_copy_order_address( $from_order, $to_order, $address_type = &#039;all&#039; ) {
+
+	if ( in_array( $address_type, array( &#039;shipping&#039;, &#039;all&#039; ) ) ) {
+		$to_order-&gt;set_address( array(
+			&#039;first_name&#039; =&gt; wcs_get_objects_property( $from_order, &#039;shipping_first_name&#039; ),
+			&#039;last_name&#039;  =&gt; wcs_get_objects_property( $from_order, &#039;shipping_last_name&#039; ),
+			&#039;company&#039;    =&gt; wcs_get_objects_property( $from_order, &#039;shipping_company&#039; ),
+			&#039;address_1&#039;  =&gt; wcs_get_objects_property( $from_order, &#039;shipping_address_1&#039; ),
+			&#039;address_2&#039;  =&gt; wcs_get_objects_property( $from_order, &#039;shipping_address_2&#039; ),
+			&#039;city&#039;       =&gt; wcs_get_objects_property( $from_order, &#039;shipping_city&#039; ),
+			&#039;state&#039;      =&gt; wcs_get_objects_property( $from_order, &#039;shipping_state&#039; ),
+			&#039;postcode&#039;   =&gt; wcs_get_objects_property( $from_order, &#039;shipping_postcode&#039; ),
+			&#039;country&#039;    =&gt; wcs_get_objects_property( $from_order, &#039;shipping_country&#039; ),
+		), &#039;shipping&#039; );
+	}
+
+	if ( in_array( $address_type, array( &#039;billing&#039;, &#039;all&#039; ) ) ) {
+		$to_order-&gt;set_address( array(
+			&#039;first_name&#039; =&gt; wcs_get_objects_property( $from_order, &#039;billing_first_name&#039; ),
+			&#039;last_name&#039;  =&gt; wcs_get_objects_property( $from_order, &#039;billing_last_name&#039; ),
+			&#039;company&#039;    =&gt; wcs_get_objects_property( $from_order, &#039;billing_company&#039; ),
+			&#039;address_1&#039;  =&gt; wcs_get_objects_property( $from_order, &#039;billing_address_1&#039; ),
+			&#039;address_2&#039;  =&gt; wcs_get_objects_property( $from_order, &#039;billing_address_2&#039; ),
+			&#039;city&#039;       =&gt; wcs_get_objects_property( $from_order, &#039;billing_city&#039; ),
+			&#039;state&#039;      =&gt; wcs_get_objects_property( $from_order, &#039;billing_state&#039; ),
+			&#039;postcode&#039;   =&gt; wcs_get_objects_property( $from_order, &#039;billing_postcode&#039; ),
+			&#039;country&#039;    =&gt; wcs_get_objects_property( $from_order, &#039;billing_country&#039; ),
+			&#039;email&#039;      =&gt; wcs_get_objects_property( $from_order, &#039;billing_email&#039; ),
+			&#039;phone&#039;      =&gt; wcs_get_objects_property( $from_order, &#039;billing_phone&#039; ),
+		), &#039;billing&#039; );
+	}
+
+	return apply_filters( &#039;woocommerce_subscriptions_copy_order_address&#039;, $to_order, $from_order, $address_type );
+}
+
+/**
+ * Utility function to copy order meta between two orders. Originally intended to copy meta between
+ * first order and subscription object, then between subscription and renewal orders.
+ *
+ * The hooks used here in those cases are
+ * - wcs_subscription_meta_query
+ * - wcs_subscription_meta
+ * - wcs_renewal_order_meta_query
+ * - wcs_renewal_order_meta
+ *
+ * @param  WC_Order $from_order Order to copy meta from
+ * @param  WC_Order $to_order   Order to copy meta to
+ * @param  string $type type of copy
+ */
+function wcs_copy_order_meta( $from_order, $to_order, $type = &#039;subscription&#039; ) {
+	global $wpdb;
+
+	if ( ! is_a( $from_order, &#039;WC_Abstract_Order&#039; ) || ! is_a( $to_order, &#039;WC_Abstract_Order&#039; ) ) {
+		throw new InvalidArgumentException( _x( &#039;Invalid data. Orders expected aren\&#039;t orders.&#039;, &#039;In wcs_copy_order_meta error message. Refers to origin and target order objects.&#039;, &#039;woocommerce-subscriptions&#039; ) );
+	}
+
+	if ( ! is_string( $type ) ) {
+		throw new InvalidArgumentException( _x( &#039;Invalid data. Type of copy is not a string.&#039;, &#039;Refers to the type of the copy being performed: &quot;copy_order&quot;, &quot;subscription&quot;, &quot;renewal_order&quot;, &quot;resubscribe_order&quot;&#039;, &#039;woocommerce-subscriptions&#039; ) );
+	}
+
+	if ( ! in_array( $type, array( &#039;subscription&#039;, &#039;parent&#039;, &#039;renewal_order&#039;, &#039;resubscribe_order&#039; ) ) ) {
+		$type = &#039;copy_order&#039;;
+	}
+
+	$meta_query = $wpdb-&gt;prepare(
+		&quot;SELECT `meta_key`, `meta_value`
+		 FROM {$wpdb-&gt;postmeta}
+		 WHERE `post_id` = %d
+		 AND `meta_key` NOT LIKE &#039;_schedule_%%&#039;
+		 AND `meta_key` NOT IN (
+			 &#039;_paid_date&#039;,
+			 &#039;_date_paid&#039;,
+			 &#039;_completed_date&#039;,
+			 &#039;_date_completed&#039;,
+			 &#039;_edit_last&#039;,
+			 &#039;_subscription_switch_data&#039;,
+			 &#039;_order_key&#039;,
+			 &#039;_edit_lock&#039;,
+			 &#039;_wc_points_earned&#039;,
+			 &#039;_transaction_id&#039;,
+			 &#039;_billing_interval&#039;,
+			 &#039;_billing_period&#039;,
+			 &#039;_subscription_resubscribe&#039;,
+			 &#039;_subscription_renewal&#039;,
+			 &#039;_subscription_switch&#039;,
+			 &#039;_payment_method&#039;,
+			 &#039;_payment_method_title&#039;,
+			 &#039;_suspension_count&#039;,
+			 &#039;_requires_manual_renewal&#039;,
+			 &#039;_cancelled_email_sent&#039;,
+			 &#039;_trial_period&#039;,
+			 &#039;_created_via&#039;,
+			 &#039;_order_stock_reduced&#039;
+		 )&quot;,
+		wcs_get_objects_property( $from_order, &#039;id&#039; )
+	);
+
+	if ( in_array( $type, array( &#039;renewal_order&#039;, &#039;parent&#039; ) ) ) {
+		$meta_query .= &quot; AND `meta_key` NOT LIKE &#039;_download_permissions_granted&#039; &quot;;
+	}
+
+	// Allow extensions to add/remove order meta
+	$meta_query = apply_filters( &#039;wcs_&#039; . $type . &#039;_meta_query&#039;, $meta_query, $to_order, $from_order );
+	$meta       = $wpdb-&gt;get_results( $meta_query, &#039;ARRAY_A&#039; );
+	$meta       = apply_filters( &#039;wcs_&#039; . $type . &#039;_meta&#039;, $meta, $to_order, $from_order );
+
+	// Pre WC 3.0 we need to save each meta individually, post 3.0 we can save the object once
+	$save = wcs_is_woocommerce_pre( &#039;3.0&#039; ) ? &#039;save&#039; : &#039;set_prop_only&#039;;
+
+	foreach ( $meta as $meta_item ) {
+		wcs_set_objects_property( $to_order, $meta_item[&#039;meta_key&#039;], maybe_unserialize( $meta_item[&#039;meta_value&#039;] ), $save, &#039;&#039;, &#039;omit_key_prefix&#039; );
+	}
+
+	if ( is_callable( array( $to_order, &#039;save&#039; ) ) ) {
+		$to_order-&gt;save();
+	}
+}
+
+/**
+ * Function to create an order from a subscription. It can be used for a renewal or for a resubscribe
+ * order creation. It is the common in both of those instances.
+ *
+ * @param  WC_Subscription|int $subscription Subscription we&#039;re basing the order off of
+ * @param  string $type        Type of new order. Default values are &#039;renewal_order&#039;|&#039;resubscribe_order&#039;
+ * @return WC_Order|WP_Error New order or error object.
+ */
+function wcs_create_order_from_subscription( $subscription, $type ) {
+
+	$type = wcs_validate_new_order_type( $type );
+
+	if ( is_wp_error( $type ) ) {
+		return $type;
+	}
+
+	try {
+		$transaction = new WCS_SQL_Transaction();
+		$transaction-&gt;start();
+
+		if ( ! is_object( $subscription ) ) {
+			$subscription = wcs_get_subscription( $subscription );
+		}
+
+		$new_order = wc_create_order( array(
+			&#039;customer_id&#039;   =&gt; $subscription-&gt;get_user_id(),
+			&#039;customer_note&#039; =&gt; $subscription-&gt;get_customer_note(),
+			&#039;created_via&#039;   =&gt; &#039;subscription&#039;,
+		) );
+
+		wcs_copy_order_meta( $subscription, $new_order, $type );
+
+		// Copy over line items and allow extensions to add/remove items or item meta
+		$items = apply_filters( &#039;wcs_new_order_items&#039;, $subscription-&gt;get_items( array( &#039;line_item&#039;, &#039;fee&#039;, &#039;shipping&#039;, &#039;tax&#039;, &#039;coupon&#039; ) ), $new_order, $subscription );
+		$items = apply_filters( &quot;wcs_{$type}_items&quot;, $items, $new_order, $subscription );
+
+		foreach ( $items as $item ) {
+			$item_name = apply_filters( &#039;wcs_new_order_item_name&#039;, $item-&gt;get_name(), $item, $subscription );
+			$item_name = apply_filters( &quot;wcs_{$type}_item_name&quot;, $item_name, $item, $subscription );
+
+			// Create order line item on the renewal order
+			$order_item_id = wc_add_order_item( $new_order-&gt;get_id(), array(
+				&#039;order_item_name&#039; =&gt; $item_name,
+				&#039;order_item_type&#039; =&gt; $item-&gt;get_type(),
+			) );
+
+			$order_item = $new_order-&gt;get_item( $order_item_id );
+
+			wcs_copy_order_item( $item, $order_item );
+			$order_item-&gt;save();
+
+			// If the line item we&#039;re adding is a product line item and that product still exists, set any applicable backorder meta.
+			if ( $item-&gt;is_type( &#039;line_item&#039; ) &amp;&amp; $item-&gt;get_product() ) {
+				$order_item-&gt;set_backorder_meta();
+				$order_item-&gt;save();
+			}
+		}
+
+		// If we got here, the subscription was created without problems
+		$transaction-&gt;commit();
+
+		return apply_filters( &#039;wcs_new_order_created&#039;, $new_order, $subscription, $type );
+
+	} catch ( Exception $e ) {
+		// There was an error adding the subscription
+		$transaction-&gt;rollback();
+		return new WP_Error( &#039;new-order-error&#039;, $e-&gt;getMessage() );
+	}
+}
+
+/**
+ * Function to create a post title based on the type and the current date and time for new orders. By
+ * default it&#039;s either renewal or resubscribe orders.
+ *
+ * @param  string $type type of new order. By default &#039;renewal_order&#039;|&#039;resubscribe_order&#039;
+ * @return string       new title for a post
+ */
+function wcs_get_new_order_title( $type ) {
+	wcs_deprecated_function( __FUNCTION__, &#039;2.2.0&#039; );
+
+	$type = wcs_validate_new_order_type( $type );
+
+	// translators: placeholders are strftime() strings.
+	$order_date = strftime( _x( &#039;%b %d, %Y @ %I:%M %p&#039;, &#039;Used in subscription post title. &quot;Subscription renewal order - &lt;this&gt;&quot;&#039;, &#039;woocommerce-subscriptions&#039; ) ); // phpcs:ignore WordPress.WP.I18n.UnorderedPlaceholdersText
+
+	switch ( $type ) {
+		case &#039;renewal_order&#039;:
+			// translators: placeholder is a date.
+			$title = sprintf( __( &#039;Subscription Renewal Order &amp;ndash; %s&#039;, &#039;woocommerce-subscriptions&#039; ), $order_date );
+			break;
+		case &#039;resubscribe_order&#039;:
+			// translators: placeholder is a date.
+			$title = sprintf( __( &#039;Resubscribe Order &amp;ndash; %s&#039;, &#039;woocommerce-subscriptions&#039; ), $order_date );
+			break;
+		default:
+			$title = &#039;&#039;;
+			break;
+	}
+
+	return apply_filters( &#039;wcs_new_order_title&#039;, $title, $type, $order_date );
+}
+
+/**
+ * Utility function to check type. Filterable. Rejects if not in allowed new order types, rejects
+ * if not actually string.
+ *
+ * @param  string $type type of new order
+ * @return string|WP_Error the same type thing if no problems are found, or WP_Error.
+ */
+function wcs_validate_new_order_type( $type ) {
+	if ( ! is_string( $type ) ) {
+		return new WP_Error( &#039;order_from_subscription_type_type&#039;, sprintf( __( &#039;$type passed to the function was not a string.&#039;, &#039;woocommerce-subscriptions&#039; ), $type ) );
+	}
+
+	if ( ! in_array( $type, apply_filters( &#039;wcs_new_order_types&#039;, array( &#039;renewal_order&#039;, &#039;resubscribe_order&#039;, &#039;parent&#039; ) ) ) ) {
+		// translators: placeholder is an order type.
+		return new WP_Error( &#039;order_from_subscription_type&#039;, sprintf( __( &#039;&quot;%s&quot; is not a valid new order type.&#039;, &#039;woocommerce-subscriptions&#039; ), $type ) );
+	}
+
+	return $type;
+}
+
+/**
+ * Wrapper function to get the address from an order / subscription in array format
+ * @param  WC_Order $order The order / subscription we want to get the order from
+ * @param  string $address_type shipping|billing. Default is shipping
+ * @return array
+ */
+function wcs_get_order_address( $order, $address_type = &#039;shipping&#039; ) {
+	if ( ! is_a( $order, &#039;WC_Abstract_Order&#039; ) ) {
+		return array();
+	}
+
+	if ( &#039;billing&#039; == $address_type ) {
+		$address = array(
+			&#039;first_name&#039; =&gt; wcs_get_objects_property( $order, &#039;billing_first_name&#039; ),
+			&#039;last_name&#039;  =&gt; wcs_get_objects_property( $order, &#039;billing_last_name&#039; ),
+			&#039;company&#039;    =&gt; wcs_get_objects_property( $order, &#039;billing_company&#039; ),
+			&#039;address_1&#039;  =&gt; wcs_get_objects_property( $order, &#039;billing_address_1&#039; ),
+			&#039;address_2&#039;  =&gt; wcs_get_objects_property( $order, &#039;billing_address_2&#039; ),
+			&#039;city&#039;       =&gt; wcs_get_objects_property( $order, &#039;billing_city&#039; ),
+			&#039;state&#039;      =&gt; wcs_get_objects_property( $order, &#039;billing_state&#039; ),
+			&#039;postcode&#039;   =&gt; wcs_get_objects_property( $order, &#039;billing_postcode&#039; ),
+			&#039;country&#039;    =&gt; wcs_get_objects_property( $order, &#039;billing_country&#039; ),
+			&#039;email&#039;      =&gt; wcs_get_objects_property( $order, &#039;billing_email&#039; ),
+			&#039;phone&#039;      =&gt; wcs_get_objects_property( $order, &#039;billing_phone&#039; ),
+		);
+	} else {
+		$address = array(
+			&#039;first_name&#039; =&gt; wcs_get_objects_property( $order, &#039;shipping_first_name&#039; ),
+			&#039;last_name&#039;  =&gt; wcs_get_objects_property( $order, &#039;shipping_last_name&#039; ),
+			&#039;company&#039;    =&gt; wcs_get_objects_property( $order, &#039;shipping_company&#039; ),
+			&#039;address_1&#039;  =&gt; wcs_get_objects_property( $order, &#039;shipping_address_1&#039; ),
+			&#039;address_2&#039;  =&gt; wcs_get_objects_property( $order, &#039;shipping_address_2&#039; ),
+			&#039;city&#039;       =&gt; wcs_get_objects_property( $order, &#039;shipping_city&#039; ),
+			&#039;state&#039;      =&gt; wcs_get_objects_property( $order, &#039;shipping_state&#039; ),
+			&#039;postcode&#039;   =&gt; wcs_get_objects_property( $order, &#039;shipping_postcode&#039; ),
+			&#039;country&#039;    =&gt; wcs_get_objects_property( $order, &#039;shipping_country&#039; ),
+		);
+	}
+
+	return apply_filters( &#039;wcs_get_order_address&#039;, $address, $address_type, $order );
+}
+
+/**
+ * Checks an order to see if it contains a subscription.
+ *
+ * @param mixed $order A WC_Order object or the ID of the order which the subscription was purchased in.
+ * @param array|string $order_type Can include &#039;parent&#039;, &#039;renewal&#039;, &#039;resubscribe&#039; and/or &#039;switch&#039;. Defaults to &#039;parent&#039;, &#039;resubscribe&#039; and &#039;switch&#039; orders.
+ * @return bool True if the order contains a subscription that belongs to any of the given order types, otherwise false.
+ * @since 2.0
+ */
+function wcs_order_contains_subscription( $order, $order_type = array( &#039;parent&#039;, &#039;resubscribe&#039;, &#039;switch&#039; ) ) {
+
+	// Accept either an array or string (to make it more convenient for singular types, like &#039;parent&#039; or &#039;any&#039;)
+	if ( ! is_array( $order_type ) ) {
+		$order_type = array( $order_type );
+	}
+
+	if ( ! is_a( $order, &#039;WC_Abstract_Order&#039; ) ) {
+		$order = wc_get_order( $order );
+	}
+
+	$contains_subscription = false;
+	$get_all               = in_array( &#039;any&#039;, $order_type );
+
+	if ( ( in_array( &#039;parent&#039;, $order_type ) || $get_all ) &amp;&amp; count( wcs_get_subscriptions_for_order( wcs_get_objects_property( $order, &#039;id&#039; ), array( &#039;order_type&#039; =&gt; &#039;parent&#039; ) ) ) &gt; 0 ) {
+		$contains_subscription = true;
+
+	} elseif ( ( in_array( &#039;renewal&#039;, $order_type ) || $get_all ) &amp;&amp; wcs_order_contains_renewal( $order ) ) {
+		$contains_subscription = true;
+
+	} elseif ( ( in_array( &#039;resubscribe&#039;, $order_type ) || $get_all ) &amp;&amp; wcs_order_contains_resubscribe( $order ) ) {
+		$contains_subscription = true;
+
+	} elseif ( ( in_array( &#039;switch&#039;, $order_type ) || $get_all ) &amp;&amp; wcs_order_contains_switch( $order ) ) {
+		$contains_subscription = true;
+
+	}
+
+	return $contains_subscription;
+}
+
+/**
+ * Get all the orders that relate to a subscription in some form (rather than only the orders associated with
+ * a specific subscription).
+ *
+ * @param string $return_fields The columns to return, either &#039;all&#039; or &#039;ids&#039;
+ * @param array|string $order_type Can include &#039;any&#039;, &#039;parent&#039;, &#039;renewal&#039;, &#039;resubscribe&#039; and/or &#039;switch&#039;. Defaults to &#039;parent&#039;.
+ * @return array The orders that relate to a subscription, if any. Will contain either as just IDs or WC_Order objects depending on $return_fields value.
+ * @since 2.1
+ */
+function wcs_get_subscription_orders( $return_fields = &#039;ids&#039;, $order_type = &#039;parent&#039; ) {
+	global $wpdb;
+
+	// Accept either an array or string (to make it more convenient for singular types, like &#039;parent&#039; or &#039;any&#039;)
+	if ( ! is_array( $order_type ) ) {
+		$order_type = array( $order_type );
+	}
+
+	$any_order_type = in_array( &#039;any&#039;, $order_type );
+	$return_fields  = ( &#039;ids&#039; == $return_fields ) ? $return_fields : &#039;all&#039;;
+
+	$orders    = array();
+	$order_ids = array();
+
+	if ( $any_order_type || in_array( &#039;parent&#039;, $order_type ) ) {
+		$order_ids = array_merge( $order_ids, $wpdb-&gt;get_col(
+			&quot;SELECT DISTINCT post_parent FROM {$wpdb-&gt;posts}
+			 WHERE post_type = &#039;shop_subscription&#039;
+			 AND post_parent &lt;&gt; 0&quot;
+		) );
+	}
+
+	if ( $any_order_type || in_array( &#039;renewal&#039;, $order_type ) || in_array( &#039;resubscribe&#039;, $order_type ) || in_array( &#039;switch&#039;, $order_type ) ) {
+
+		$meta_query = array(
+			&#039;relation&#039; =&gt; &#039;OR&#039;,
+		);
+
+		if ( $any_order_type || in_array( &#039;renewal&#039;, $order_type ) ) {
+			$meta_query[] = array(
+				&#039;key&#039;     =&gt; &#039;_subscription_renewal&#039;,
+				&#039;compare&#039; =&gt; &#039;EXISTS&#039;,
+			);
+		}
+
+		if ( $any_order_type || in_array( &#039;switch&#039;, $order_type ) ) {
+			$meta_query[] = array(
+				&#039;key&#039;     =&gt; &#039;_subscription_switch&#039;,
+				&#039;compare&#039; =&gt; &#039;EXISTS&#039;,
+			);
+		}
+
+		// $any_order_type handled by &#039;parent&#039; query above as all resubscribe orders are all parent orders
+		if ( in_array( &#039;resubscribe&#039;, $order_type ) &amp;&amp; ! in_array( &#039;parent&#039;, $order_type ) ) {
+			$meta_query[] = array(
+				&#039;key&#039;     =&gt; &#039;_subscription_resubscribe&#039;,
+				&#039;compare&#039; =&gt; &#039;EXISTS&#039;,
+			);
+		}
+
+		if ( count( $meta_query ) &gt; 1 ) {
+			$order_ids = array_merge( $order_ids, get_posts( array(
+				&#039;posts_per_page&#039; =&gt; -1,
+				&#039;post_type&#039;      =&gt; &#039;shop_order&#039;,
+				&#039;post_status&#039;    =&gt; &#039;any&#039;,
+				&#039;fields&#039;         =&gt; &#039;ids&#039;,
+				&#039;orderby&#039;        =&gt; &#039;ID&#039;,
+				&#039;order&#039;          =&gt; &#039;DESC&#039;,
+				&#039;meta_query&#039;     =&gt; $meta_query,
+			) ) );
+		}
+	}
+
+	if ( &#039;all&#039; == $return_fields ) {
+		foreach ( $order_ids as $order_id ) {
+			$orders[ $order_id ] = wc_get_order( $order_id );
+		}
+	} else {
+		foreach ( $order_ids as $order_id ) {
+			$orders[ $order_id ] = $order_id;
+		}
+	}
+
+	return apply_filters( &#039;wcs_get_subscription_orders&#039;, $orders, $return_fields, $order_type );
+}
+
+/**
+ * A wrapper for getting a specific item from an order or subscription.
+ *
+ * WooCommerce has a wc_add_order_item() function, wc_update_order_item() function and wc_delete_order_item() function,
+ * but no `wc_get_order_item()` function, so we need to add our own (for now).
+ *
+ * @param int                      $item_id The ID of an order item
+ * @param WC_Order|WC_Subscription $order   The order or order object the item belongs to.
+ *
+ * @return WC_Order_Item|array The order item object or an empty array if the item doesn&#039;t exist.
+ *
+ * @since 2.0
+ */
+function wcs_get_order_item( $item_id, $order ) {
+
+	$item = array();
+
+	if ( ! is_a( $order, &#039;WC_Abstract_Order&#039; ) ) {
+		throw new InvalidArgumentException( __( &#039;Invalid data. No valid subscription / order was passed in.&#039;, &#039;woocommerce-subscriptions&#039; ), 422 );
+	}
+
+	if ( ! absint( $item_id ) ) {
+		throw new InvalidArgumentException( __( &#039;Invalid data. No valid item id was passed in.&#039;, &#039;woocommerce-subscriptions&#039; ), 422 );
+	}
+
+	foreach ( $order-&gt;get_items() as $line_item_id =&gt; $line_item ) {
+		if ( $item_id == $line_item_id ) {
+			$item = $line_item;
+			break;
+		}
+	}
+
+	return $item;
+}
+
+/**
+ * A wrapper for wc_update_order_item() which consistently deletes the cached item after update, unlike WC.
+ *
+ * @param int $item_id The ID of an order item
+ * @param string $new_type The new type to set as the &#039;order_item_type&#039; value on the order item.
+ * @param int $order_or_subscription_id The order or subscription ID the line item belongs to - optional. Deletes the order item cache if provided.
+ * @since 2.2.12
+ */
+function wcs_update_order_item_type( $item_id, $new_type, $order_or_subscription_id = 0 ) {
+	wc_update_order_item( $item_id, array( &#039;order_item_type&#039; =&gt; $new_type ) );
+	wp_cache_delete( &#039;item-&#039; . $item_id, &#039;order-items&#039; );
+
+	// When possible, also clear the order items&#039; cache for the object to which this item relates (double cache :sob:)
+	if ( ! empty( $order_or_subscription_id ) ) {
+		wp_cache_delete( &#039;order-items-&#039; . $order_or_subscription_id, &#039;orders&#039; );
+	}
+}
+
+/**
+ * Get an instance of WC_Order_Item_Meta for an order item
+ *
+ * @param array
+ * @return WC_Order_Item_Meta
+ * @since 2.0
+ */
+function wcs_get_order_item_meta( $item, $product = null ) {
+	if ( false === wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+		wcs_deprecated_function( __FUNCTION__, &#039;3.1 of WooCommerce and 2.2.9 of Subscriptions&#039;, &#039;WC_Order_Item_Product-&gt;get_formatted_meta_data() or wc_display_item_meta()&#039; );
+	}
+	return new WC_Order_Item_Meta( $item, $product );
+}
+
+/**
+ * Create a string representing an order item&#039;s name and optionally include attributes.
+ *
+ * @param array $order_item An order item.
+ * @since 2.0
+ */
+function wcs_get_order_item_name( $order_item, $include = array() ) {
+
+	$include = wp_parse_args( $include, array(
+		&#039;attributes&#039; =&gt; false,
+	) );
+
+	$order_item_name = $order_item[&#039;name&#039;];
+
+	if ( $include[&#039;attributes&#039;] &amp;&amp; ! empty( $order_item[&#039;item_meta&#039;] ) ) {
+
+		$attribute_strings = array();
+
+		foreach ( $order_item[&#039;item_meta&#039;] as $meta_key =&gt; $meta_value ) {
+
+			$meta_value = wcs_is_woocommerce_pre( 3.0 ) ? $meta_value[0] : $meta_value;
+
+			// Skip hidden core fields
+			if ( in_array( $meta_key, apply_filters( &#039;woocommerce_hidden_order_itemmeta&#039;, array(
+				&#039;_qty&#039;,
+				&#039;_tax_class&#039;,
+				&#039;_product_id&#039;,
+				&#039;_variation_id&#039;,
+				&#039;_line_subtotal&#039;,
+				&#039;_line_subtotal_tax&#039;,
+				&#039;_line_total&#039;,
+				&#039;_line_tax&#039;,
+				&#039;_switched_subscription_item_id&#039;,
+			) ) ) ) {
+				continue;
+			}
+
+			// Skip serialised or array meta values
+			if ( is_serialized( $meta_value ) || is_array( $meta_value ) ) {
+				continue;
+			}
+
+			// Get attribute data
+			if ( taxonomy_exists( wc_sanitize_taxonomy_name( $meta_key ) ) ) {
+				$term       = get_term_by( &#039;slug&#039;, $meta_value, wc_sanitize_taxonomy_name( $meta_key ) );
+				$meta_key   = wc_attribute_label( wc_sanitize_taxonomy_name( $meta_key ) );
+				$meta_value = isset( $term-&gt;name ) ? $term-&gt;name : $meta_value;
+			} else {
+				$meta_key   = wc_attribute_label( $meta_key );
+			}
+
+			$attribute_strings[] = sprintf( &#039;%s: %s&#039;, wp_kses_post( rawurldecode( $meta_key ) ), wp_kses_post( rawurldecode( $meta_value ) ) );
+		}
+
+		$order_item_name = sprintf( &#039;%s (%s)&#039;, $order_item_name, implode( &#039;, &#039;, $attribute_strings ) );
+	}
+
+	return apply_filters( &#039;wcs_get_order_item_name&#039;, $order_item_name, $order_item, $include );
+}
+
+/**
+ * Get the full name for a order/subscription line item, including the items non hidden meta
+ * (i.e. attributes), as a flat string.
+ *
+ * @param array
+ * @return string
+ */
+function wcs_get_line_item_name( $line_item ) {
+
+	$item_meta_strings = array();
+
+	foreach ( $line_item[&#039;item_meta&#039;] as $meta_key =&gt; $meta_value ) {
+
+		$meta_value = wcs_is_woocommerce_pre( 3.0 ) ? $meta_value[0] : $meta_value;
+
+		// Skip hidden core fields
+		if ( in_array( $meta_key, apply_filters( &#039;woocommerce_hidden_order_itemmeta&#039;, array(
+			&#039;_qty&#039;,
+			&#039;_tax_class&#039;,
+			&#039;_product_id&#039;,
+			&#039;_variation_id&#039;,
+			&#039;_line_subtotal&#039;,
+			&#039;_line_subtotal_tax&#039;,
+			&#039;_line_total&#039;,
+			&#039;_line_tax&#039;,
+			&#039;_line_tax_data&#039;,
+		) ) ) ) {
+			continue;
+		}
+
+		// Skip serialised or array meta values
+		if ( is_serialized( $meta_value ) || is_array( $meta_value ) ) {
+			continue;
+		}
+
+		// Get attribute data
+		if ( taxonomy_exists( wc_sanitize_taxonomy_name( $meta_key ) ) ) {
+			$term       = get_term_by( &#039;slug&#039;, $meta_value, wc_sanitize_taxonomy_name( $meta_key ) );
+			$meta_key   = wc_attribute_label( wc_sanitize_taxonomy_name( $meta_key ) );
+			$meta_value = isset( $term-&gt;name ) ? $term-&gt;name : $meta_value;
+		} else {
+			$meta_key   = wc_attribute_label( $meta_key );
+		}
+
+		$item_meta_strings[] = sprintf( &#039;%s: %s&#039;, rawurldecode( $meta_key ), rawurldecode( $meta_value ) );
+	}
+
+	if ( ! empty( $item_meta_strings ) ) {
+		$line_item_name = sprintf( &#039;%s (%s)&#039;, $line_item[&#039;name&#039;], implode( &#039;, &#039;, $item_meta_strings ) );
+	} else {
+		$line_item_name = $line_item[&#039;name&#039;];
+	}
+
+	return apply_filters( &#039;wcs_line_item_name&#039;, $line_item_name, $line_item );
+}
+
+/**
+ * Display item meta data in a version compatible way.
+ *
+ * @since  2.2.0
+ * @param  WC_Item $item
+ * @param  WC_Order $order
+ * @return void
+ */
+function wcs_display_item_meta( $item, $order ) {
+	if ( function_exists( &#039;wc_display_item_meta&#039; ) ) { // WC 3.0+
+		wc_display_item_meta( $item );
+	} else {
+		$order-&gt;display_item_meta( $item );
+	}
+}
+
+/**
+ * Display item download links in a version compatible way.
+ *
+ * @since  2.2.0
+ * @param  WC_Item $item
+ * @param  WC_Order $order
+ * @return void
+ */
+function wcs_display_item_downloads( $item, $order ) {
+	wcs_deprecated_function( __FUNCTION__, &#039;2.5.0&#039;, &#039;wc_display_item_downloads( $item )&#039; );
+
+	if ( function_exists( &#039;wc_display_item_downloads&#039; ) ) { // WC 3.0+
+		wc_display_item_downloads( $item );
+	} else {
+		$order-&gt;display_item_downloads( $item );
+	}
+}
+
+/**
+ * Copy the order item data and meta data from one item to another.
+ *
+ * @since  2.2.0
+ * @param  WC_Order_Item $from_item The order item to copy data from
+ * @param  WC_Order_Item $to_item The order item to copy data to
+ */
+function wcs_copy_order_item( $from_item, &amp;$to_item ) {
+
+	if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+		wcs_doing_it_wrong( __FUNCTION__, &#039;This function uses data structures introduced in WC 3.0. To copy line item meta use $from_item[\&#039;item_meta\&#039;] and wc_add_order_item_meta().&#039;, &#039;2.2&#039; );
+		return;
+	}
+
+	foreach ( $from_item-&gt;get_meta_data() as $meta_data ) {
+		if ( &#039;_reduced_stock&#039; === $meta_data-&gt;key ) {
+			continue;
+		}
+
+		$to_item-&gt;update_meta_data( $meta_data-&gt;key, $meta_data-&gt;value );
+	}
+
+	switch ( $from_item-&gt;get_type() ) {
+		case &#039;line_item&#039;:
+			/** @var WC_Order_Item_Product $from_item */
+			$to_item-&gt;set_props( array(
+				&#039;product_id&#039;   =&gt; $from_item-&gt;get_product_id(),
+				&#039;variation_id&#039; =&gt; $from_item-&gt;get_variation_id(),
+				&#039;quantity&#039;     =&gt; $from_item-&gt;get_quantity(),
+				&#039;tax_class&#039;    =&gt; $from_item-&gt;get_tax_class(),
+				&#039;subtotal&#039;     =&gt; $from_item-&gt;get_subtotal(),
+				&#039;total&#039;        =&gt; $from_item-&gt;get_total(),
+				&#039;taxes&#039;        =&gt; $from_item-&gt;get_taxes(),
+			) );
+			break;
+		case &#039;shipping&#039;:
+			/** @var WC_Order_Item_Shipping $from_item */
+			$to_item-&gt;set_props( array(
+				&#039;method_id&#039; =&gt; $from_item-&gt;get_method_id(),
+				&#039;total&#039;     =&gt; $from_item-&gt;get_total(),
+				&#039;taxes&#039;     =&gt; $from_item-&gt;get_taxes(),
+			) );
+
+			// Post WC 3.4 the instance ID is stored separately.
+			if ( ! wcs_is_woocommerce_pre( &#039;3.4&#039; ) ) {
+				$to_item-&gt;set_instance_id( $from_item-&gt;get_instance_id() );
+			}
+
+			break;
+		case &#039;tax&#039;:
+			/**
+			 * @var WC_Order_Item_Tax $from_item
+			 * @var WC_Order_Item_Tax $to_item
+			 */
+			$to_item-&gt;set_props( array(
+				&#039;rate_id&#039;            =&gt; $from_item-&gt;get_rate_id(),
+				&#039;label&#039;              =&gt; $from_item-&gt;get_label(),
+				&#039;compound&#039;           =&gt; $from_item-&gt;get_compound(),
+				&#039;tax_total&#039;          =&gt; $from_item-&gt;get_tax_total(),
+				&#039;shipping_tax_total&#039; =&gt; $from_item-&gt;get_shipping_tax_total(),
+			) );
+
+			// WC 3.7.0+ Compatibility.
+			if ( is_callable( array( $from_item, &#039;get_rate_percent&#039; ) ) ) {
+				$to_item-&gt;set_rate_percent( $from_item-&gt;get_rate_percent() );
+			}
+
+			break;
+		case &#039;fee&#039;:
+			/** @var WC_Order_Item_Fee $from_item */
+			$to_item-&gt;set_props( array(
+				&#039;tax_class&#039;  =&gt; $from_item-&gt;get_tax_class(),
+				&#039;tax_status&#039; =&gt; $from_item-&gt;get_tax_status(),
+				&#039;total&#039;      =&gt; $from_item-&gt;get_total(),
+				&#039;taxes&#039;      =&gt; $from_item-&gt;get_taxes(),
+			) );
+			break;
+		case &#039;coupon&#039;:
+			/** @var WC_Order_Item_Coupon $from_item */
+			$to_item-&gt;set_props( array(
+				&#039;discount&#039;     =&gt; $from_item-&gt;get_discount(),
+				&#039;discount_tax&#039; =&gt; $from_item-&gt;get_discount_tax(),
+			) );
+			break;
+	}
+}
+
+/**
+ * Checks an order to see if it contains a manual subscription.
+ *
+ * @since 2.4.3
+ * @param WC_Order|int $order The WC_Order object or ID to get related subscriptions from.
+ * @param string|array $order_type The order relationship type(s). Can be single string or an array of order types. Optional. Default is &#039;any&#039;.
+ * @return bool
+ */
+function wcs_order_contains_manual_subscription( $order, $order_type = &#039;any&#039; ) {
+	$subscriptions = wcs_get_subscriptions_for_order( $order, array( &#039;order_type&#039; =&gt; $order_type ) );
+	$contains_manual_subscription = false;
+
+	foreach ( $subscriptions as $subscription ) {
+		if ( $subscription-&gt;is_manual() ) {
+			$contains_manual_subscription = true;
+			break;
+		}
+	}
+
+	return $contains_manual_subscription;
+}
+
+/**
+ * Copy payment method from a subscription to an order.
+ *
+ * @since 2.4.3
+ * @param WC_Subscription $subscription
+ * @param WC_Order $order
+ */
+function wcs_copy_payment_method_to_order( $subscription, $order ) {
+	// Set the order&#039;s payment method to match the subscription.
+	if ( $order-&gt;get_payment_method() !== $subscription-&gt;get_payment_method() ) {
+		$order-&gt;set_payment_method( $subscription-&gt;get_payment_method() );
+	}
+
+	// We only need to copy the subscription&#039;s post meta to the order. All other payment related meta should already exist.
+	// Both post_meta and postmeta keys are supported by wcs_set_payment_meta().
+	$payment_meta = array_intersect_key( $subscription-&gt;get_payment_method_meta(), array_flip( array( &#039;post_meta&#039;, &#039;postmeta&#039; ) ) );
+	$payment_meta = (array) apply_filters( &#039;wcs_copy_payment_meta_to_order&#039;, $payment_meta, $order, $subscription );
+
+	if ( ! empty( $payment_meta ) ) {
+		wcs_set_payment_meta( $order, $payment_meta );
+	}
+
+}
+
+/**
+ * Returns how many minutes ago the order was created.
+ *
+ * @param WC_Order $order
+ *
+ * @return int
+ * @since 2.5.3
+ */
+function wcs_minutes_since_order_created( $order ) {
+	$now             = new WC_DateTime( &#039;now&#039;, $order-&gt;get_date_created()-&gt;getTimezone() );
+	$diff_in_minutes = $now-&gt;diff( $order-&gt;get_date_created() );
+
+	return absint( $diff_in_minutes-&gt;i );
+}
+
+/**
+ * Returns how many seconds ago the order was created.
+ *
+ * @param WC_Order $order
+ *
+ * @return int
+ * @since 2.5.3
+ */
+function wcs_seconds_since_order_created( $order ) {
+	return time() - $order-&gt;get_date_created()-&gt;getTimestamp();
+}
+
+/**
+ * Finds a corresponding subscription line item on an order.
+ *
+ * @since 2.6.0
+ *
+ * @param WC_Abstract_Order $order         The order object to look for the item in.
+ * @param WC_Order_Item $subscription_item The line item on the the subscription to find on the order.
+ * @param string $match_type               Optional. The type of comparison to make. Can be &#039;match_product_ids&#039; to compare product|variation IDs or &#039;match_attributes&#039; to also compare by item attributes on top of matching product IDs. Default &#039;match_product_ids&#039;.
+ *
+ * @return WC_Order_Item|bool The order item which matches the subscription item or false if one cannot be found.
+ */
+function wcs_find_matching_line_item( $order, $subscription_item, $match_type = &#039;match_product_ids&#039; ) {
+	$matching_item = false;
+
+	if ( &#039;match_attributes&#039; === $match_type ) {
+		$subscription_item_attributes = wp_list_pluck( $subscription_item-&gt;get_formatted_meta_data( &#039;_&#039;, true ), &#039;value&#039;, &#039;key&#039; );
+	}
+
+	$subscription_item_canonical_product_id = wcs_get_canonical_product_id( $subscription_item );
+
+	foreach ( $order-&gt;get_items() as $order_item ) {
+		if ( wcs_get_canonical_product_id( $order_item ) !== $subscription_item_canonical_product_id ) {
+			continue;
+		}
+
+		// Check if we have matching meta key and value pairs loosely - they can appear in any order,
+		if ( &#039;match_attributes&#039; === $match_type &amp;&amp; wp_list_pluck( $order_item-&gt;get_formatted_meta_data( &#039;_&#039;, true ), &#039;value&#039;, &#039;key&#039; ) != $subscription_item_attributes ) {
+			continue;
+		}
+
+		$matching_item = $order_item;
+		break;
+	}
+
+	return $matching_item;
+}
+
+/**
+ * Checks if an order contains a product.
+ *
+ * @since 2.6.0
+ *
+ * @param WC_Order $order     An order object
+ * @param WC_Product $product A product object
+ *
+ * @return bool $order_has_product Whether the order contains a line item matching that product
+ */
+function wcs_order_contains_product( $order, $product ) {
+	$order_has_product = false;
+	$product_id        = wcs_get_canonical_product_id( $product );
+
+	foreach ( $order-&gt;get_items() as $line_item ) {
+		if ( wcs_get_canonical_product_id( $line_item ) === $product_id ) {
+			$order_has_product = true;
+			break;
+		}
+	}
+
+	return $order_has_product;
+}
+
+/**
+ * Check if a given order is a subscription renewal order.
+ *
+ * @param WC_Order|int $order The WC_Order object or ID of a WC_Order order.
+ * @since 2.3.0
+ * @return bool True if the order contains an early renewal, otherwise false.
+ */
+function wcs_order_contains_early_renewal( $order ) {
+
+	if ( ! is_object( $order ) ) {
+		$order = wc_get_order( $order );
+	}
+
+	$subscription_id  = absint( wcs_get_objects_property( $order, &#039;subscription_renewal_early&#039; ) );
+	$is_early_renewal = wcs_is_order( $order ) &amp;&amp; $subscription_id &gt; 0;
+
+	/**
+	 * Allow third-parties to filter whether this order contains the early renewal flag.
+	 *
+	 * @since 2.3.0
+	 * @param bool     $is_renewal True if early renewal meta was found on the order, otherwise false.
+	 * @param WC_Order $order The WC_Order object.
+	 */
+	return apply_filters( &#039;woocommerce_subscriptions_is_early_renewal_order&#039;, $is_early_renewal, $order );
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-remove-item.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Remove Item
+ *
+ *
+ * @author   Prospress
+ * @since    2.0
+ */
+class WCS_Remove_Item {
+
+	/**
+	 * Initialise class hooks &amp; filters when the file is loaded
+	 *
+	 * @since 2.0
+	 */
+	public static function init() {
+
+		// Check if a user is requesting to remove or re-add an item to their subscription
+		add_action( &#039;init&#039;, __CLASS__ . &#039;::maybe_remove_or_add_item_to_subscription&#039;, 100 );
+	}
+
+	/**
+	 * Returns the link used to remove an item from a subscription
+	 *
+	 * @param int $subscription_id
+	 * @param int $order_item_id
+	 * @since 2.0
+	 */
+	public static function get_remove_url( $subscription_id, $order_item_id ) {
+
+		$remove_link = add_query_arg(
+			array(
+				&#039;subscription_id&#039; =&gt; $subscription_id,
+				&#039;remove_item&#039;     =&gt; $order_item_id,
+			)
+		);
+		$remove_link = wp_nonce_url( $remove_link, $subscription_id );
+
+		return $remove_link;
+	}
+
+	/**
+	 * Returns the link to undo removing an item from a subscription
+	 *
+	 * @param int $subscription_id
+	 * @param int $order_item_id
+	 * @param string $base_url
+	 * @since 2.0
+	 */
+	public static function get_undo_remove_url( $subscription_id, $order_item_id, $base_url ) {
+
+		$undo_link = add_query_arg(
+			array(
+				&#039;subscription_id&#039;  =&gt; $subscription_id,
+				&#039;undo_remove_item&#039; =&gt; $order_item_id,
+			),
+			$base_url
+		);
+		$undo_link = wp_nonce_url( $undo_link, $subscription_id );
+
+		return $undo_link;
+	}
+
+	/**
+	 * Process the remove or re-add a line item from a subscription request.
+	 *
+	 * @since 2.0
+	 */
+	public static function maybe_remove_or_add_item_to_subscription() {
+
+		if ( isset( $_GET[&#039;subscription_id&#039;] ) &amp;&amp; ( isset( $_GET[&#039;remove_item&#039;] ) || isset( $_GET[&#039;undo_remove_item&#039;] ) ) &amp;&amp; isset( $_GET[&#039;_wpnonce&#039;] ) ) {
+
+			$subscription = wcs_is_subscription( $_GET[&#039;subscription_id&#039;] ) ? wcs_get_subscription( $_GET[&#039;subscription_id&#039;] ) : false;
+			$undo_request = isset( $_GET[&#039;undo_remove_item&#039;] );
+			$item_id      = $undo_request ? $_GET[&#039;undo_remove_item&#039;] : $_GET[&#039;remove_item&#039;];
+
+			if ( false === $subscription ) {
+				// translators: %d: subscription ID.
+				wc_add_notice( sprintf( _x( &#039;Subscription #%d does not exist.&#039;, &#039;hash before subscription ID&#039;, &#039;woocommerce-subscriptions&#039; ), $_GET[&#039;subscription_id&#039;] ), &#039;error&#039; );
+				wp_safe_redirect( wc_get_page_permalink( &#039;myaccount&#039; ) );
+				exit;
+			}
+
+			if ( self::validate_remove_items_request( $subscription, $item_id, $undo_request ) ) {
+
+				if ( $undo_request ) {
+					// handle undo request
+					$removed_item = WC()-&gt;session-&gt;get( &#039;removed_subscription_items&#039;, array() );
+
+					if ( ! empty( $removed_item[ $item_id ] ) &amp;&amp; $subscription-&gt;get_id() == $removed_item[ $item_id ] ) {
+
+						// restore the item
+						wcs_update_order_item_type( $item_id, &#039;line_item&#039;, $subscription-&gt;get_id() );
+
+						WC()-&gt;session-&gt;set( &#039;removed_subscription_items&#039;, $removed_item );
+
+						// restore download permissions for this item
+						$subscription = wcs_get_subscription( $subscription-&gt;get_id() );
+						$line_items = $subscription-&gt;get_items();
+						$line_item  = $line_items[ $item_id ];
+						$_product   = $line_item-&gt;get_product();
+						$product_id = wcs_get_canonical_product_id( $line_item );
+
+						if ( $_product &amp;&amp; $_product-&gt;exists() &amp;&amp; $_product-&gt;is_downloadable() ) {
+
+							$downloads = wcs_get_objects_property( $_product, &#039;downloads&#039; );
+
+							foreach ( array_keys( $downloads ) as $download_id ) {
+								wc_downloadable_file_permission( $download_id, $product_id, $subscription, $line_item[&#039;qty&#039;] );
+							}
+						}
+
+						// translators: 1$: product name, 2$: product id
+						$subscription-&gt;add_order_note( sprintf( _x( &#039;Customer added &quot;%1$s&quot; (Product ID: #%2$d) via the My Account page.&#039;, &#039;used in order note&#039;, &#039;woocommerce-subscriptions&#039; ), wcs_get_line_item_name( $line_item ), $product_id ) );
+
+						do_action( &#039;wcs_user_readded_item&#039;, $line_item, $subscription );
+
+					} else {
+						wc_add_notice( __( &#039;Your request to undo your previous action was unsuccessful.&#039;, &#039;woocommerce-subscriptions&#039; ) );
+					}
+				} else {
+
+					// handle remove item requests
+					WC()-&gt;session-&gt;set( &#039;removed_subscription_items&#039;, array( $item_id =&gt; $subscription-&gt;get_id() ) );
+
+					// remove download access for the item
+					$line_items = $subscription-&gt;get_items();
+					$line_item  = $line_items[ $item_id ];
+					$product_id = wcs_get_canonical_product_id( $line_item );
+
+					WCS_Download_Handler::revoke_downloadable_file_permission( $product_id, $subscription-&gt;get_id(), $subscription-&gt;get_user_id() );
+
+					// remove the line item from subscription but preserve its data in the DB
+					wcs_update_order_item_type( $item_id, &#039;line_item_removed&#039;, $subscription-&gt;get_id() );
+
+					// translators: 1$: product name, 2$: product id
+					$subscription-&gt;add_order_note( sprintf( _x( &#039;Customer removed &quot;%1$s&quot; (Product ID: #%2$d) via the My Account page.&#039;, &#039;used in order note&#039;, &#039;woocommerce-subscriptions&#039; ), wcs_get_line_item_name( $line_item ), $product_id ) );
+
+					// translators: placeholders are 1$: item name, and, 2$: opening and, 3$: closing link tags
+					wc_add_notice( sprintf( __( &#039;You have successfully removed &quot;%1$s&quot; from your subscription. %2$sUndo?%3$s&#039;, &#039;woocommerce-subscriptions&#039; ), $line_item[&#039;name&#039;], &#039;&lt;a href=&quot;&#039; . esc_url( self::get_undo_remove_url( $subscription-&gt;get_id(), $item_id, $subscription-&gt;get_view_order_url() ) ) . &#039;&quot; &gt;&#039;, &#039;&lt;/a&gt;&#039; ) );
+
+					do_action( &#039;wcs_user_removed_item&#039;, $line_item, $subscription );
+				}
+			}
+
+			/**
+			 * In WooCommerce 3.0 the subscription object and its items override the database with their current content,
+			 * so we lost the changes we just did with `wc_update_order_item`. Re-reading the object fixes this problem.
+			 */
+			$subscription = wcs_get_subscription( $subscription-&gt;get_id() );
+			$subscription-&gt;calculate_totals();
+			wp_safe_redirect( $subscription-&gt;get_view_order_url() );
+			exit;
+
+		}
+
+	}
+
+	/**
+	 * Validate the incoming request to either remove an item or add and item back to a subscription that was previously removed.
+	 * Add an descriptive notice to the page whether or not the request was validated or not.
+	 *
+	 * @since 2.0
+	 * @param WC_Subscription $subscription
+	 * @param int $order_item_id
+	 * @param bool $undo_request bool
+	 * @return bool
+	 */
+	private static function validate_remove_items_request( $subscription, $order_item_id, $undo_request = false ) {
+
+		$subscription_items = $subscription-&gt;get_items();
+		$response           = false;
+
+		if ( ! wp_verify_nonce( $_GET[&#039;_wpnonce&#039;], $_GET[&#039;subscription_id&#039;] ) ) {
+
+			wc_add_notice( __( &#039;Security error. Please contact us if you need assistance.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+
+		} elseif ( ! current_user_can( &#039;edit_shop_subscription_line_items&#039;, $subscription-&gt;get_id() ) ) {
+
+			wc_add_notice( __( &#039;You cannot modify a subscription that does not belong to you.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+
+		} elseif ( ! $undo_request &amp;&amp; ! isset( $subscription_items[ $order_item_id ] ) ) { // only need to validate the order item id when removing
+
+			wc_add_notice( __( &#039;You cannot remove an item that does not exist. &#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+
+		} elseif ( ! $subscription-&gt;payment_method_supports( &#039;subscription_amount_changes&#039; ) ) {
+
+			wc_add_notice( __( &#039;The item was not removed because this Subscription\&#039;s payment method does not support removing an item.&#039;, &#039;woocommerce-subscriptions&#039; ) );
+
+		} else {
+
+			$response = true;
+		}
+
+		return $response;
+	}
+
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

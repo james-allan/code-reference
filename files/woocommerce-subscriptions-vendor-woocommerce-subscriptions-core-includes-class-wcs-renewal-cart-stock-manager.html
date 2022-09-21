@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-renewal-cart-stock-manager.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * A Renewal Cart Stock Manager class.
+ *
+ * Contains functions which assists in overriding WC core functionality to allow renewal carts to bypass stock validation.
+ *
+ * @package  WooCommerce Subscriptions
+ * @category Class
+ * @author   Prospress
+ * @since    2.6.0
+ */
+
+defined( &#039;ABSPATH&#039; ) || exit;
+
+class WCS_Renewal_Cart_Stock_Manager {
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 *
+	 * @since 2.6.0
+	 */
+	public static function attach_callbacks() {
+		add_action( &#039;wcs_before_renewal_setup_cart_subscription&#039;, array( get_called_class(), &#039;maybe_adjust_stock_cart&#039; ), 10, 2 );
+		add_action( &#039;woocommerce_check_cart_items&#039;, array( get_called_class(), &#039;maybe_adjust_stock_checkout&#039; ), 0 );
+		add_action( &#039;woocommerce_checkout_create_order&#039;, array( get_called_class(), &#039;remove_filters&#039; ) );
+		add_action( &#039;woocommerce_check_cart_items&#039;, array( get_called_class(), &#039;remove_filters&#039; ), 20 );
+	}
+
+	/**
+	 * Attaches filters that allow a manual renewal to add to the cart an otherwise out of stock product.
+	 *
+	 * Hooked onto &#039;wcs_before_renewal_setup_cart_subscription&#039;.
+	 *
+	 * @since 2.6.0
+	 *
+	 * @param WC_Subscription $subscription The subscription object. This param is unused. It is the first parameter of the hook.
+	 * @param WC_Order $order               The renewal order object.
+	 */
+	public static function maybe_adjust_stock_cart( $subscription, $order ) {
+		static::maybe_attach_stock_filters( $order );
+	}
+
+	/**
+	 * Attaches filters that allow manual renewal carts to pass checkout validity checks for an otherwise out of stock product.
+	 *
+	 * @since 2.6.0
+	 */
+	public static function maybe_adjust_stock_checkout() {
+		$renewal_order = static::get_order_from_cart();
+
+		// Get the order from query vars if the cart isn&#039;t loaded yet.
+		if ( ! $renewal_order ) {
+			$renewal_order = static::get_order_from_query_vars();
+		}
+
+		if ( $renewal_order ) {
+			static::maybe_attach_stock_filters( $renewal_order );
+		}
+	}
+
+	/**
+	 * Attaches stock override filters for out of stock renewal products.
+	 *
+	 * @since 2.6.0
+	 * @param WC_Order $order Renewal order.
+	 */
+	protected static function maybe_attach_stock_filters( $order ) {
+		if ( ! $order instanceof WC_Order ) {
+			return;
+		}
+
+		foreach ( $order-&gt;get_items() as $line_item ) {
+			$product = $line_item-&gt;get_product();
+
+			if ( ! $product ) {
+				continue;
+			}
+
+			// Use the stock managed product in case we have a variation product which is managed on the variable (parent level)
+			$stock_managed_product = wc_get_product( $product-&gt;get_stock_managed_by_id() );
+
+			// Account for stock which is being held by other unpaid orders.
+			$held_stock     = ( (int) get_option( &#039;woocommerce_hold_stock_minutes&#039;, 0 ) &gt; 0 ) ? wc_get_held_stock_quantity( $product, $order-&gt;get_id() ) : 0;
+			$required_stock = wcs_get_total_line_item_product_quantity( $order, $stock_managed_product );
+
+			if ( ! $product-&gt;is_in_stock() || ( $required_stock + $held_stock ) &gt; $stock_managed_product-&gt;get_stock_quantity() ) {
+				add_filter( &#039;woocommerce_product_is_in_stock&#039;, array( get_called_class(), &#039;adjust_is_in_stock&#039; ), 10, 2 );
+				add_filter( &#039;woocommerce_product_backorders_allowed&#039;, array( get_called_class(), &#039;adjust_backorder_status&#039; ), 10, 3 );
+				break;
+			}
+		}
+	}
+
+	/**
+	 * Adjusts the stock status of a product that is an out-of-stock renewal.
+	 *
+	 * @since 2.6.0
+	 *
+	 * @param bool $is_in_stock   Whether the product is in stock or not
+	 * @param WC_Product $product The product which stock is being checked
+	 *
+	 * @return bool $is_in_stock
+	 */
+	public static function adjust_is_in_stock( $is_in_stock, $product ) {
+		if ( ! $is_in_stock ) {
+			$is_in_stock = static::cart_contains_renewal_to_product( $product );
+		}
+
+		return $is_in_stock;
+
+	}
+
+	/**
+	 * Adjusts whether backorders are allowed so out-of-stock renewal item products bypass stock validation.
+	 *
+	 * @since 2.6.0
+	 *
+	 * @param bool $backorders_allowed  If the product has backorders enabled.
+	 * @param int $product_id           The product ID.
+	 * @param WC_Product $product       The product on which stock management is being changed.
+	 *
+	 * @return bool $backorders_allowed Whether backorders are allowed.
+	 */
+	public static function adjust_backorder_status( $backorders_allowed, $product_id, $product ) {
+		if ( ! $backorders_allowed ) {
+			$backorders_allowed = static::cart_contains_renewal_to_product( $product );
+		}
+
+		return $backorders_allowed;
+	}
+
+	/**
+	 * Removes the filters that adjust stock on out of stock renewals items.
+	 *
+	 * @since 2.6.0
+	 */
+	public static function remove_filters() {
+		remove_filter( &#039;woocommerce_product_is_in_stock&#039;, array( get_called_class(), &#039;adjust_is_in_stock&#039; ) );
+		remove_filter( &#039;woocommerce_product_backorders_allowed&#039;, array( get_called_class(), &#039;adjust_backorder_status&#039; ) );
+	}
+
+	/**
+	 * Determines if the cart contains a renewal order with a specific product.
+	 *
+	 * @since 2.6.0
+	 * @param WC_Product $product The product object to look for.
+	 * @return bool               Whether the cart contains a renewal order to the given product.
+	 */
+	protected static function cart_contains_renewal_to_product( $product ) {
+		$cart_contains_renewal_to_product = false;
+		$renewal_order = static::get_order_from_cart();
+
+		if ( ! $renewal_order ) {
+			$renewal_order = static::get_order_from_query_vars();
+		}
+
+		if ( $renewal_order &amp;&amp; wcs_order_contains_product( $renewal_order, $product ) ) {
+			$cart_contains_renewal_to_product = true;
+		}
+
+		return $cart_contains_renewal_to_product;
+	}
+
+	/**
+	 * Gets the renewal order from the cart.
+	 *
+	 * @since 2.6.0
+	 * @return WC_Order|bool Renewal order obtained from the cart contents or false if the cart doesn&#039;t contain a renewal order.
+	 */
+	protected static function get_order_from_cart() {
+		$renewal_order = false;
+		$cart_item     = wcs_cart_contains_renewal();
+
+		if ( false !== $cart_item &amp;&amp; isset( $cart_item[&#039;subscription_renewal&#039;][&#039;renewal_order_id&#039;] ) ) {
+			$renewal_order = wc_get_order( $cart_item[&#039;subscription_renewal&#039;][&#039;renewal_order_id&#039;] );
+		}
+
+		return $renewal_order;
+	}
+
+	/**
+	 * Gets the renewal order from order-pay query vars.
+	 *
+	 * @since 2.6.0
+	 * @return WC_Order|bool Renewal order obtained from query vars or false if not set.
+	 */
+	protected static function get_order_from_query_vars() {
+		global $wp;
+		$renewal_order = false;
+
+		if ( isset( $wp-&gt;query_vars[&#039;order-pay&#039;] ) ) {
+			$order = wc_get_order( $wp-&gt;query_vars[&#039;order-pay&#039;] );
+
+			if ( wcs_order_contains_renewal( $order ) ) {
+				$renewal_order = $order;
+			}
+		}
+
+		return $renewal_order;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-customer-store-cached-cpt.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+/**
+ * Customer data store for subscriptions stored in Custom Post Types, with caching.
+ *
+ * Adds a persistent caching layer on top of WCS_Customer_Store_CPT for more
+ * performant queries to find a user&#039;s subscriptions.
+ *
+ * Cache is based on the current blog in case of a multisite environment.
+ *
+ * @version  2.3.0
+ * @category Class
+ * @author   Prospress
+ */
+class WCS_Customer_Store_Cached_CPT extends WCS_Customer_Store_CPT implements WCS_Cache_Updater {
+
+	/**
+	 * Keep cache up-to-date with changes to our meta data via WordPress post meta APIs
+	 * by using a post meta cache manager.
+	 *
+	 * @var WCS_Post_Meta_Cache_Manager_Many_To_One
+	 */
+	protected $post_meta_cache_manager;
+
+	/**
+	 * Meta key used to store all of a customer&#039;s subscription IDs in their user meta.
+	 *
+	 * @var string
+	 */
+	const _CACHE_META_KEY = &#039;_wcs_subscription_ids_cache&#039;;
+
+	/**
+	 * Constructor
+	 */
+	public function __construct() {
+		$this-&gt;post_meta_cache_manager = new WCS_Post_Meta_Cache_Manager_Many_To_One( &#039;shop_subscription&#039;, array( $this-&gt;get_meta_key() ) );
+	}
+
+	/**
+	 * Attach callbacks to keep user subscription caches up-to-date and provide debug tools for managing the cache.
+	 */
+	protected function init() {
+
+		$this-&gt;post_meta_cache_manager-&gt;init();
+
+		// When a user is first added, make sure the subscription cache is empty because it can not have any data yet, and we want to avoid running the query needlessly
+		add_filter( &#039;user_register&#039;, array( $this, &#039;set_empty_cache&#039; ) );
+
+		// When the post for a subscription is change, make sure the corresponding cache is updated
+		add_action( &#039;wcs_update_post_meta_caches&#039;, array( $this, &#039;maybe_update_for_post_meta_change&#039; ), 10, 5 );
+		add_action( &#039;wcs_delete_all_post_meta_caches&#039;, array( $this, &#039;maybe_delete_all_for_post_meta_change&#039; ), 10, 1 );
+
+		WCS_Debug_Tool_Factory::add_cache_tool( &#039;generator&#039;, __( &#039;Generate Customer Subscription Cache&#039;, &#039;woocommerce-subscriptions&#039; ), __( &#039;This will generate the persistent cache for linking users with subscriptions. The caches will be generated overtime in the background (via Action Scheduler).&#039;, &#039;woocommerce-subscriptions&#039; ), self::instance() );
+		WCS_Debug_Tool_Factory::add_cache_tool( &#039;eraser&#039;, __( &#039;Delete Customer Subscription Cache&#039;, &#039;woocommerce-subscriptions&#039; ), __( &#039;This will clear the persistent cache of all of subscriptions stored against users in your store. Expect slower performance of checkout, renewal and other subscription related functions after taking this action. The caches will be regenerated overtime as queries to find a given user\&#039;s subscriptions are run.&#039;, &#039;woocommerce-subscriptions&#039; ), self::instance() );
+	}
+
+	/* Public methods required by WCS_Customer_Store */
+
+	/**
+	 * Get the IDs for a given user&#039;s subscriptions.
+	 *
+	 * Wrapper to support getting a user&#039;s subscription regardless of whether they are cached or not yet,
+	 * either in the old transient cache, or new persistent cache.
+	 *
+	 * @param int $user_id The id of the user whose subscriptions you want.
+	 * @return array
+	 */
+	public function get_users_subscription_ids( $user_id ) {
+
+		$subscription_ids = $this-&gt;get_users_subscription_ids_from_cache( $user_id );
+
+		// get user meta returns an empty string when no matching row is found for the given key, meaning it&#039;s not set yet
+		if ( &#039;&#039; === $subscription_ids ) {
+
+			$transient_key = &quot;wcs_user_subscriptions_{$user_id}&quot;;
+
+			// We do this here rather than in get_users_subscription_ids_from_cache(), because we want to make sure the new persistent cache is updated too
+			$subscription_ids = get_transient( $transient_key );
+
+			if ( false === $subscription_ids ) {
+				$subscription_ids = parent::get_users_subscription_ids( $user_id ); // no data in transient, query directly
+			} else {
+				delete_transient( $transient_key ); // migrate the data to our new cache
+			}
+
+			$this-&gt;update_subscription_id_cache( $user_id, $subscription_ids );
+		}
+
+		// Sort results in order to keep consistency between cached results and queried results.
+		rsort( $subscription_ids );
+
+		return $subscription_ids;
+	}
+
+	/* Internal methods for managing the cache */
+
+	/**
+	 * Find subscriptions for a given user from the cache.
+	 *
+	 * Applies the &#039;wcs_get_cached_users_subscription_ids&#039; filter for backward compatibility with
+	 * the now deprecated wcs_get_cached_user_subscription_ids() method.
+	 *
+	 * @param int $user_id The id of the user whose subscriptions you want.
+	 * @return string|array An array of subscriptions in the cache, or an empty string when no matching row is found for the given key, meaning it&#039;s cache is not set yet or has been deleted
+	 */
+	protected function get_users_subscription_ids_from_cache( $user_id ) {
+
+		// Empty user IDs, like 0 or &#039;&#039;, are never cached
+		$subscription_ids = empty( $user_id ) ? array() : get_user_meta( $user_id, $this-&gt;get_cache_meta_key(), true );
+
+		return apply_filters( &#039;wcs_get_cached_users_subscription_ids&#039;, $subscription_ids, $user_id );
+	}
+
+	/**
+	 * Add a subscription ID to the cached subscriptions for a given user.
+	 *
+	 * @param int $user_id The user the subscription belongs to.
+	 * @param int $subscription_id A subscription to link the user in the cache.
+	 */
+	protected function add_subscription_id_to_cache( $user_id, $subscription_id ) {
+
+		$subscription_ids = $this-&gt;get_users_subscription_ids( $user_id );
+
+		if ( ! in_array( $subscription_id, $subscription_ids ) ) {
+			$subscription_ids[] = $subscription_id;
+			$this-&gt;update_subscription_id_cache( $user_id, $subscription_ids );
+		}
+	}
+
+	/**
+	 * Delete a subscription ID from the cached IDs for a given user.
+	 *
+	 * @param int $user_id The user the subscription belongs to.
+	 * @param int $subscription_id A subscription to link the user in the cache.
+	 */
+	protected function delete_subscription_id_from_cache( $user_id, $subscription_id ) {
+
+		$subscription_ids = $this-&gt;get_users_subscription_ids( $user_id );
+
+		if ( ( $index = array_search( $subscription_id, $subscription_ids ) ) !== false ) {
+			unset( $subscription_ids[ $index ] );
+			$this-&gt;update_subscription_id_cache( $user_id, $subscription_ids );
+		}
+	}
+
+	/**
+	 * Helper function for setting subscription cache.
+	 *
+	 * @param int $user_id The id of the user who the subscriptions belongs to.
+	 * @param array $subscription_ids Set of subscriptions to link with the given user.
+	 * @return bool|int Returns meta ID if the key didn&#039;t exist; true on successful update; false on failure or if $subscription_ids is the same as the existing meta value in the database.
+	 */
+	protected function update_subscription_id_cache( $user_id, array $subscription_ids ) {
+
+		// Never cache empty user IDs, like 0 or &#039;&#039;
+		if ( empty( $user_id ) ) {
+			return false;
+		}
+
+		rsort( $subscription_ids ); // the results from the database query are ordered by date/ID in DESC, so make sure the user cached values are ordered the same.
+		return update_user_meta( $user_id, $this-&gt;get_cache_meta_key(), $subscription_ids );
+	}
+
+	/* Public methods used to bulk edit cache */
+
+	/**
+	 * Clear all caches for all subscriptions against all users.
+	 */
+	public function delete_caches_for_all_users() {
+		delete_metadata( &#039;user&#039;, null, $this-&gt;get_cache_meta_key(), null, true );
+	}
+
+	/**
+	 * Clears the cache for a given user.
+	 *
+	 * @param int $user_id The id of the user
+	 */
+	public function delete_cache_for_user( $user_id ) {
+		if ( empty( $user_id ) ) {
+			return;
+		}
+
+		delete_user_meta( $user_id, $this-&gt;get_cache_meta_key() );
+	}
+
+	/* Public methods used as callbacks on hooks for managing cache */
+
+	/**
+	 * Set empty subscription cache on a user.
+	 *
+	 * Newly registered users can&#039;t have subscriptions yet, so we set that cache to empty whenever a new user is added
+	 * by attaching this to the &#039;user_register&#039; hook.
+	 *
+	 * @param int $user_id The id of the user just created
+	 */
+	public function set_empty_cache( $user_id ) {
+		$this-&gt;update_subscription_id_cache( $user_id, array() );
+	}
+
+	/* Public methods attached to WCS_Post_Meta_Cache_Manager_Many_To_One hooks for managing the cache */
+
+	/**
+	 * If there is a change to a subscription&#039;s post meta key, update the user meta cache.
+	 *
+	 * @param string $update_type The type of update to check. Can be &#039;add&#039;, &#039;update&#039; or &#039;delete&#039;.
+	 * @param int $subscription_id The subscription&#039;s post ID where the customer is being changed.
+	 * @param string $meta_key The post meta key being changed.
+	 * @param mixed $user_id The meta value, which will be subscriber&#039;s user ID when $meta_key is &#039;_customer_user&#039;.
+	 * @param mixed $old_user_id The previous value stored in the database for the subscription&#039;s &#039;_customer_user&#039;. Optional.
+	 */
+	public function maybe_update_for_post_meta_change( $update_type, $subscription_id, $meta_key, $user_id, $old_user_id = &#039;&#039; ) {
+
+		if ( $this-&gt;get_meta_key() !== $meta_key ) {
+			return;
+		}
+
+		switch ( $update_type ) {
+			case &#039;add&#039;:
+				$this-&gt;add_subscription_id_to_cache( $user_id, $subscription_id );
+				break;
+			case &#039;delete&#039;:
+				// If we don&#039;t have a specific user ID, the post is being deleted as WCS_Post_Meta_Cache_Manager_Many_To_One doesn&#039;t pass the associated meta value for that event, so find the corresponding user ID from post meta directly
+				if ( empty( $user_id ) ) {
+					$user_id = get_post_meta( $subscription_id, $this-&gt;get_meta_key(), true );
+				}
+				$this-&gt;delete_subscription_id_from_cache( $user_id, $subscription_id );
+				break;
+			case &#039;update&#039;:
+				if ( ! empty( $old_user_id ) ) {
+					$this-&gt;delete_subscription_id_from_cache( $old_user_id, $subscription_id );
+				}
+
+				$this-&gt;add_subscription_id_to_cache( $user_id, $subscription_id );
+				break;
+		}
+	}
+
+	/**
+	 * Remove all caches for a given meta key if all entries for that meta key are being deleted.
+	 *
+	 * This is very unlikely to ever happen, because it would be equivalent to deleting the linked
+	 * customer on all orders and subscriptions. But it is handled here anyway in case of things
+	 * like removing WooCommerce entirely.
+	 *
+	 * @param string $meta_key The post meta key being changed.
+	 */
+	public function maybe_delete_all_for_post_meta_change( $meta_key ) {
+		if ( $this-&gt;get_meta_key() === $meta_key ) {
+			$this-&gt;delete_caches_for_all_users();
+		}
+	}
+
+	/**
+	 * Get the IDs of users without a cache set.
+	 *
+	 * @param int $number The number of users to return. Use -1 to return all users.
+	 * @return array
+	 */
+	protected function get_user_ids_without_cache( $number = 10 ) {
+		return get_users( array(
+			&#039;fields&#039;       =&gt; &#039;ids&#039;,
+			&#039;number&#039;       =&gt; $number,
+			&#039;meta_key&#039;     =&gt; $this-&gt;get_cache_meta_key(),
+			&#039;meta_compare&#039; =&gt; &#039;NOT EXISTS&#039;,
+		) );
+	}
+
+	/** Methods to implement WCS_Cache_Updater - wrap more accurately named methods for the sake of clarity */
+
+	/**
+	 * Get the items to be updated, if any.
+	 *
+	 * @return array An array of items to update, or empty array if there are no items to update.
+	 */
+	public function get_items_to_update() {
+		return $this-&gt;get_user_ids_without_cache();
+	}
+
+	/**
+	 * Run the update for a single item.
+	 *
+	 * @param mixed $item The item to update.
+	 */
+	public function update_items_cache( $user_id ) {
+		// Getting the subscription IDs also sets the cache when it&#039;s not already set
+		$this-&gt;get_users_subscription_ids( $user_id );
+	}
+
+	/**
+	 * Clear all caches.
+	 */
+	public function delete_all_caches() {
+		$this-&gt;delete_caches_for_all_users();
+	}
+
+	/**
+	 * Gets the cache meta key.
+	 *
+	 * On multi-site installations, the current site ID is appended.
+	 *
+	 * @since 3.1.0
+	 * @return string
+	 */
+	public function get_cache_meta_key() {
+		if ( is_multisite() ) {
+			return self::_CACHE_META_KEY . &#039;_&#039; . get_current_blog_id();
+		}
+
+		return self::_CACHE_META_KEY;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

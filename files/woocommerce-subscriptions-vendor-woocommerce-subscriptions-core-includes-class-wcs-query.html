@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-query.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Query Handler
+ *
+ * @version 2.0
+ * @author  Prospress
+ */
+class WCS_Query extends WC_Query {
+
+	public function __construct() {
+
+		add_action( &#039;init&#039;, array( $this, &#039;add_endpoints&#039; ) );
+
+		add_filter( &#039;the_title&#039;, array( $this, &#039;change_endpoint_title&#039; ), 11, 1 );
+
+		if ( ! is_admin() ) {
+			add_filter( &#039;query_vars&#039;, array( $this, &#039;add_query_vars&#039; ), 0 );
+			add_action( &#039;parse_request&#039;, array( $this, &#039;parse_request&#039; ), 0 );
+			add_action( &#039;pre_get_posts&#039;, array( $this, &#039;maybe_redirect_payment_methods&#039; ) );
+			add_action( &#039;pre_get_posts&#039;, array( $this, &#039;pre_get_posts&#039; ), 11 );
+			add_filter( &#039;woocommerce_get_query_vars&#039;, array( $this, &#039;add_wcs_query_vars&#039; ) );
+
+			// Inserting your new tab/page into the My Account page.
+			add_filter( &#039;woocommerce_account_menu_items&#039;, array( $this, &#039;add_menu_items&#039; ) );
+
+			// Since WC 3.3.0, add_wcs_query_vars() is enough for custom endpoints to work.
+			if ( wcs_is_woocommerce_pre( &#039;3.3.0&#039; ) ) {
+				add_filter( &#039;woocommerce_get_endpoint_url&#039;, array( $this, &#039;get_endpoint_url&#039; ), 10, 4 );
+			}
+
+			add_filter( &#039;woocommerce_get_endpoint_url&#039;, array( $this, &#039;maybe_redirect_to_only_subscription&#039; ), 10, 2 );
+			add_action( &#039;woocommerce_account_subscriptions_endpoint&#039;, array( $this, &#039;endpoint_content&#039; ) );
+			add_filter( &#039;woocommerce_account_menu_item_classes&#039;, array( $this, &#039;maybe_add_active_class&#039; ), 10, 2 );
+
+			add_filter( &#039;woocommerce_endpoint_subscriptions_title&#039;, array( $this, &#039;change_my_account_endpoint_title&#039; ), 10, 2 );
+			add_filter( &#039;woocommerce_endpoint_view-subscription_title&#039;, array( $this, &#039;change_my_account_endpoint_title&#039; ), 10, 2 );
+		}
+
+		$this-&gt;init_query_vars();
+
+		if ( wcs_is_woocommerce_pre( &#039;3.4&#039; ) ) {
+			add_filter( &#039;woocommerce_account_settings&#039;, array( $this, &#039;add_endpoint_account_settings&#039; ) );
+		} else {
+			add_filter( &#039;woocommerce_get_settings_advanced&#039;, array( $this, &#039;add_endpoint_account_settings&#039; ) );
+		}
+	}
+
+	/**
+	 * Init query vars by loading options.
+	 *
+	 * @since 2.0
+	 */
+	public function init_query_vars() {
+		$this-&gt;query_vars = array(
+			&#039;view-subscription&#039; =&gt; $this-&gt;get_view_subscription_endpoint(),
+		);
+		if ( ! wcs_is_woocommerce_pre( &#039;2.6&#039; ) ) {
+			$this-&gt;query_vars[&#039;subscriptions&#039;]               = get_option( &#039;woocommerce_myaccount_subscriptions_endpoint&#039;, &#039;subscriptions&#039; );
+			$this-&gt;query_vars[&#039;subscription-payment-method&#039;] = get_option( &#039;woocommerce_myaccount_subscription_payment_method_endpoint&#039;, &#039;subscription-payment-method&#039; );
+		}
+	}
+
+	/**
+	 * Changes page title on view subscription page
+	 *
+	 * @param  string $title original title
+	 * @return string        changed title
+	 */
+	public function change_endpoint_title( $title ) {
+
+		if ( in_the_loop() &amp;&amp; is_account_page() ) {
+			foreach ( $this-&gt;query_vars as $key =&gt; $query_var ) {
+				if ( $this-&gt;is_query( $query_var ) ) {
+					$title = $this-&gt;get_endpoint_title( $key );
+
+					// unhook after we&#039;ve returned our title to prevent it from overriding others
+					remove_filter( &#039;the_title&#039;, array( $this, __FUNCTION__ ), 11 );
+				}
+			}
+		}
+		return $title;
+	}
+
+	/**
+	 * Hooks onto `woocommerce_endpoint_{$endpoint}_title` to return the correct page title for subscription endpoints
+	 * in My Account.
+	 *
+	 * @param string $title
+	 * @param string $endpoint
+	 * @return string
+	 *
+	 * @since 3.0.10
+	 */
+	public function change_my_account_endpoint_title( $title, $endpoint ) {
+		global $wp;
+
+		switch ( $endpoint ) {
+			case &#039;view-subscription&#039;:
+				$subscription = wcs_get_subscription( $wp-&gt;query_vars[&#039;view-subscription&#039;] );
+				// translators: placeholder is a subscription ID.
+				$title = ( $subscription ) ? sprintf( _x( &#039;Subscription #%s&#039;, &#039;hash before order number&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription-&gt;get_order_number() ) : &#039;&#039;;
+				break;
+			case &#039;subscriptions&#039;:
+				if ( ! empty( $wp-&gt;query_vars[&#039;subscriptions&#039;] ) ) {
+					// translators: placeholder is a page number.
+					$title = sprintf( __( &#039;Subscriptions (page %d)&#039;, &#039;woocommerce-subscriptions&#039; ), intval( $wp-&gt;query_vars[&#039;subscriptions&#039;] ) );
+				} else {
+					$title = __( &#039;Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; );
+				}
+
+				break;
+		}
+
+		return $title;
+	}
+
+	/**
+	 * Insert the new endpoint into the My Account menu.
+	 *
+	 * @param array $items
+	 * @return array
+	 */
+	public function add_menu_items( $menu_items ) {
+
+		// If the Subscriptions endpoint setting is empty, don&#039;t display it in line with core WC behaviour.
+		if ( empty( $this-&gt;query_vars[&#039;subscriptions&#039;] ) ) {
+			return $menu_items;
+		}
+
+		if ( 1 === count( wcs_get_users_subscriptions() ) &amp;&amp; apply_filters( &#039;wcs_my_account_redirect_to_single_subscription&#039;, true ) ) {
+			$label = __( &#039;My Subscription&#039;, &#039;woocommerce-subscriptions&#039; );
+		} else {
+			$label = __( &#039;Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; );
+		}
+
+		// Add our menu item after the Orders tab if it exists, otherwise just add it to the end
+		if ( array_key_exists( &#039;orders&#039;, $menu_items ) ) {
+			$menu_items = wcs_array_insert_after( &#039;orders&#039;, $menu_items, &#039;subscriptions&#039;, $label );
+		} else {
+			$menu_items[&#039;subscriptions&#039;] = $label;
+		}
+
+		return $menu_items;
+	}
+
+	/**
+	 * Changes the URL for the subscriptions endpoint when there&#039;s only one user subscription.
+	 *
+	 * @since 2.2.17
+	 * @param string $url
+	 * @param string $endpoint
+	 * @return string
+	 */
+	public function maybe_redirect_to_only_subscription( $url, $endpoint ) {
+		if ( $this-&gt;query_vars[&#039;subscriptions&#039;] === $endpoint &amp;&amp; is_account_page() ) {
+			$subscriptions = wcs_get_users_subscriptions();
+
+			if ( is_array( $subscriptions ) &amp;&amp; 1 === count( $subscriptions ) &amp;&amp; apply_filters( &#039;wcs_my_account_redirect_to_single_subscription&#039;, true ) ) {
+				$subscription = reset( $subscriptions );
+				$url          = $subscription-&gt;get_view_order_url();
+			}
+		}
+
+		return $url;
+	}
+
+	/**
+	 * Endpoint HTML content.
+	 *
+	 * @param int $current_page
+	 */
+	public function endpoint_content( $current_page = 1 ) {
+
+		$current_page = empty( $current_page ) ? 1 : absint( $current_page );
+
+		wc_get_template( &#039;myaccount/subscriptions.php&#039;, array( &#039;current_page&#039; =&gt; $current_page ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Check if the current query is for a type we want to override.
+	 *
+	 * @param  string $query_var the string for a query to check for
+	 * @return bool
+	 */
+	protected function is_query( $query_var ) {
+		global $wp;
+
+		if ( is_main_query() &amp;&amp; is_page() &amp;&amp; isset( $wp-&gt;query_vars[ $query_var ] ) ) {
+			$is_view_subscription_query = true;
+		} else {
+			$is_view_subscription_query = false;
+		}
+
+		return apply_filters( &#039;wcs_query_is_query&#039;, $is_view_subscription_query, $query_var );
+	}
+
+	/**
+	 * Fix for endpoints on the homepage
+	 *
+	 * Based on WC_Query-&gt;pre_get_posts(), but only applies the fix for endpoints on the homepage from it
+	 * instead of duplicating all the code to handle the main product query.
+	 *
+	 * @param mixed $q query object
+	 */
+	public function pre_get_posts( $q ) {
+		// We only want to affect the main query
+		if ( ! $q-&gt;is_main_query() ) {
+			return;
+		}
+
+		if ( $q-&gt;is_home() &amp;&amp; &#039;page&#039; === get_option( &#039;show_on_front&#039; ) &amp;&amp; absint( get_option( &#039;page_on_front&#039; ) ) !== absint( $q-&gt;get( &#039;page_id&#039; ) ) ) {
+			$_query = wp_parse_args( $q-&gt;query );
+			if ( ! empty( $_query ) &amp;&amp; array_intersect( array_keys( $_query ), array_keys( $this-&gt;query_vars ) ) ) {
+				$q-&gt;is_page     = true;
+				$q-&gt;is_home     = false;
+				$q-&gt;is_singular = true;
+				$q-&gt;set( &#039;page_id&#039;, (int) get_option( &#039;page_on_front&#039; ) );
+				add_filter( &#039;redirect_canonical&#039;, &#039;__return_false&#039; );
+			}
+		}
+	}
+
+	/**
+	 * Redirect to order-pay flow for Subscription Payment Method endpoint.
+	 *
+	 * @param WP_Query $query WordPress query object
+	 * @since 2.5.0
+	 */
+	public function maybe_redirect_payment_methods( $query ) {
+
+		if ( ! $query-&gt;is_main_query() || ! absint( $query-&gt;get( &#039;subscription-payment-method&#039; ) ) ) {
+			return;
+		}
+
+		$subscription = wcs_get_subscription( absint( $query-&gt;get( &#039;subscription-payment-method&#039; ) ) );
+		if ( ! $subscription ) {
+			return;
+		}
+
+		if ( ! $subscription-&gt;can_be_updated_to( &#039;new-payment-method&#039; ) ) {
+
+			$url = $subscription-&gt;get_view_order_url();
+			wc_add_notice( __( &#039;The payment method can not be changed for that subscription.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+
+		} else {
+
+			$args = array(
+				&#039;change_payment_method&#039; =&gt; $subscription-&gt;get_id(),
+				&#039;_wpnonce&#039;              =&gt; wp_create_nonce(),
+			);
+			$url  = add_query_arg( $args, $subscription-&gt;get_checkout_payment_url() );
+		}
+
+		wp_redirect( $url ); // phpcs:ignore WordPress.Security.SafeRedirect.wp_redirect_wp_redirect
+		exit();
+	}
+
+	/**
+	 * Reset the woocommerce_myaccount_view_subscriptions_endpoint option name to woocommerce_myaccount_view_subscription_endpoint
+	 *
+	 * @return mixed Value set for the option
+	 * @since 2.2.18
+	 */
+	private function get_view_subscription_endpoint() {
+		$value = get_option( &#039;woocommerce_myaccount_view_subscriptions_endpoint&#039;, null );
+
+		if ( isset( $value ) ) {
+			wcs_doing_it_wrong( &#039;woocommerce_myaccount_view_subscriptions_endpoint&#039;, sprintf( &#039;%1$s option is deprecated. Use %2$s option instead.&#039;, &#039;woocommerce_myaccount_view_subscriptions_endpoint&#039;, &#039;woocommerce_myaccount_view_subscription_endpoint&#039; ), &#039;2.2.17&#039; );
+
+			// Update the current option name with the value that was set in the deprecated option name
+			update_option( &#039;woocommerce_myaccount_view_subscription_endpoint&#039;, $value );
+			// Now that things are upto date, do away with the deprecated option name
+			delete_option( &#039;woocommerce_myaccount_view_subscriptions_endpoint&#039; );
+		}
+
+		return get_option( &#039;woocommerce_myaccount_view_subscription_endpoint&#039;, &#039;view-subscription&#039; );
+	}
+
+	/**
+	 * Add UI option for changing Subscription endpoints in WC settings
+	 *
+	 * @param mixed $account_settings
+	 * @return mixed $account_settings
+	 */
+	public function add_endpoint_account_settings( $settings ) {
+		$subscriptions_endpoint_setting = array(
+			&#039;title&#039;    =&gt; __( &#039;Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;desc&#039;     =&gt; __( &#039;Endpoint for the My Account &amp;rarr; Subscriptions page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;id&#039;       =&gt; &#039;woocommerce_myaccount_subscriptions_endpoint&#039;,
+			&#039;type&#039;     =&gt; &#039;text&#039;,
+			&#039;default&#039;  =&gt; &#039;subscriptions&#039;,
+			&#039;desc_tip&#039; =&gt; true,
+		);
+
+		$view_subscription_endpoint_setting = array(
+			&#039;title&#039;    =&gt; __( &#039;View subscription&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;desc&#039;     =&gt; __( &#039;Endpoint for the My Account &amp;rarr; View Subscription page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;id&#039;       =&gt; &#039;woocommerce_myaccount_view_subscription_endpoint&#039;,
+			&#039;type&#039;     =&gt; &#039;text&#039;,
+			&#039;default&#039;  =&gt; &#039;view-subscription&#039;,
+			&#039;desc_tip&#039; =&gt; true,
+		);
+
+		$subscription_payment_method_endpoint_setting = array(
+			&#039;title&#039;    =&gt; __( &#039;Subscription payment method&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;desc&#039;     =&gt; __( &#039;Endpoint for the My Account &amp;rarr; Change Subscription Payment Method page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;id&#039;       =&gt; &#039;woocommerce_myaccount_subscription_payment_method_endpoint&#039;,
+			&#039;type&#039;     =&gt; &#039;text&#039;,
+			&#039;default&#039;  =&gt; &#039;subscription-payment-method&#039;,
+			&#039;desc_tip&#039; =&gt; true,
+		);
+
+		WC_Subscriptions_Admin::insert_setting_after( $settings, &#039;woocommerce_myaccount_view_order_endpoint&#039;, array( $subscriptions_endpoint_setting, $view_subscription_endpoint_setting, $subscription_payment_method_endpoint_setting ), &#039;multiple_settings&#039; );
+		return $settings;
+	}
+
+	/**
+	 * Get endpoint URL.
+	 *
+	 * Gets the URL for an endpoint, which varies depending on permalink settings.
+	 *
+	 * @param  string $endpoint
+	 * @param  string $value
+	 * @param  string $permalink
+	 *
+	 * @return string $url
+	 */
+
+	public function get_endpoint_url( $url, $endpoint, $value = &#039;&#039;, $permalink = &#039;&#039; ) {
+
+		if ( ! empty( $this-&gt;query_vars[ $endpoint ] ) ) {
+			remove_filter( &#039;woocommerce_get_endpoint_url&#039;, array( $this, &#039;get_endpoint_url&#039; ) );
+			$url = wc_get_endpoint_url( $this-&gt;query_vars[ $endpoint ], $value, $permalink );
+			add_filter( &#039;woocommerce_get_endpoint_url&#039;, array( $this, &#039;get_endpoint_url&#039; ), 10, 4 );
+		}
+		return $url;
+	}
+
+	/**
+	 * Hooks into `woocommerce_get_query_vars` to make sure query vars defined in
+	 * this class are also considered `WC_Query` query vars.
+	 *
+	 * @param  array $query_vars
+	 * @return array
+	 * @since  2.3.0
+	 */
+	public function add_wcs_query_vars( $query_vars ) {
+		return array_merge( $query_vars, $this-&gt;query_vars );
+	}
+
+	/**
+	 * Adds `is-active` class to Subscriptions label when we&#039;re viewing a single Subscription.
+	 *
+	 * @param array  $classes  The classes present in the current endpoint.
+	 * @param string $endpoint The endpoint/label we&#039;re filtering.
+	 *
+	 * @return array
+	 * @since 2.5.6
+	 */
+	public function maybe_add_active_class( $classes, $endpoint ) {
+		if ( ! isset( $classes[&#039;is-active&#039;] ) &amp;&amp; &#039;subscriptions&#039; === $endpoint &amp;&amp; wcs_is_view_subscription_page() ) {
+			$classes[] = &#039;is-active&#039;;
+		}
+
+		return $classes;
+	}
+
+	/**
+	 * Adds endpoint breadcrumb when viewing subscription.
+	 *
+	 * Deprecated as we now use the `woocommerce_endpoint_{$endpoint}_title` hook which automatically integrates with
+	 * breadcrumb generation.
+	 *
+	 * @param  array $crumbs already assembled breadcrumb data
+	 * @return array $crumbs if we&#039;re on a view-subscription page, then augmented breadcrumb data
+	 *
+	 * @deprecated 3.0.10
+	 */
+	public function add_breadcrumb( $crumbs ) {
+		_deprecated_function( __METHOD__, &#039;3.0.10&#039; );
+
+		foreach ( $this-&gt;query_vars as $key =&gt; $query_var ) {
+			if ( $this-&gt;is_query( $query_var ) ) {
+				$crumbs[] = array( $this-&gt;get_endpoint_title( $key ) );
+			}
+		}
+		return $crumbs;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-admin-system-status.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions System Status
+ *
+ * Adds additional Subscriptions related information to the WooCommerce System Status.
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Admin
+ * @category   Class
+ * @author     Prospress
+ * @since      2.3.0
+ */
+class WCS_Admin_System_Status {
+
+	/**
+	 * @var int Subscriptions&#039; WooCommerce Marketplace product ID
+	 */
+	const WCS_PRODUCT_ID = 27147;
+
+	/**
+	 * Attach callbacks
+	 *
+	 * @since 2.3.0
+	 */
+	public static function init() {
+		add_filter( &#039;woocommerce_system_status_report&#039;, array( __CLASS__, &#039;render_system_status_items&#039; ) );
+	}
+
+	/**
+	 * Renders the Subscription information in the WC status page
+	 *
+	 * @since 2.3.0
+	 */
+	public static function render_system_status_items() {
+
+		$store_data = $subscriptions_data = $subscriptions_by_payment_gateway_data = $payment_gateway_data = array();
+
+		self::set_debug_mode( $subscriptions_data );
+		self::set_staging_mode( $subscriptions_data );
+		self::set_live_site_url( $subscriptions_data );
+		self::set_theme_overrides( $subscriptions_data );
+		self::set_subscription_statuses( $subscriptions_data );
+		self::set_woocommerce_account_data( $subscriptions_data );
+
+		// Subscriptions by Payment Gateway
+		self::set_subscriptions_by_payment_gateway( $subscriptions_by_payment_gateway );
+
+		// Payment gateway features
+		self::set_subscriptions_payment_gateway_support( $payment_gateway_data );
+
+		// Store settings
+		self::set_store_location( $store_data );
+
+		$system_status_sections = array(
+			array(
+				&#039;title&#039;   =&gt; __( &#039;Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;tooltip&#039; =&gt; __( &#039;This section shows any information about Subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;data&#039;    =&gt; apply_filters( &#039;wcs_system_status&#039;, $subscriptions_data ),
+			),
+			array(
+				&#039;title&#039;   =&gt; __( &#039;Store Setup&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;tooltip&#039; =&gt; __( &#039;This section shows general information about the store.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;data&#039;    =&gt; $store_data,
+			),
+			array(
+				&#039;title&#039;   =&gt; __( &#039;Subscriptions by Payment Gateway&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;tooltip&#039; =&gt; __( &#039;This section shows information about Subscription payment methods.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;data&#039;    =&gt; $subscriptions_by_payment_gateway,
+			),
+			array(
+				&#039;title&#039;   =&gt; __( &#039;Payment Gateway Support&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;tooltip&#039; =&gt; __( &#039;This section shows information about payment gateway feature support.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;data&#039;    =&gt; $payment_gateway_data,
+			),
+		);
+
+		foreach ( $system_status_sections as $section ) {
+			$section_title   = $section[&#039;title&#039;];
+			$section_tooltip = $section[&#039;tooltip&#039;];
+			$debug_data      = $section[&#039;data&#039;];
+
+			include( WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/admin/status.php&#039; ) );
+		}
+	}
+
+	/**
+	 * Include WCS_DEBUG flag
+	 */
+	private static function set_debug_mode( &amp;$debug_data ) {
+		$is_wcs_debug = defined( &#039;WCS_DEBUG&#039; ) ? WCS_DEBUG : false;
+
+		$debug_data[&#039;wcs_debug&#039;] = array(
+			&#039;name&#039;    =&gt; _x( &#039;WCS_DEBUG&#039;, &#039;label that indicates whether debugging is turned on for the plugin&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;label&#039;   =&gt; &#039;WCS_DEBUG&#039;,
+			&#039;note&#039;    =&gt; ( $is_wcs_debug ) ? __( &#039;Yes&#039;, &#039;woocommerce-subscriptions&#039; ) : __( &#039;No&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;success&#039; =&gt; $is_wcs_debug ? 0 : 1,
+		);
+	}
+
+	/**
+	 * Include the staging/live mode the store is running in.
+	 *
+	 * @param array $debug_data
+	 */
+	private static function set_staging_mode( &amp;$debug_data ) {
+		$debug_data[&#039;wcs_staging&#039;] = array(
+			&#039;name&#039;    =&gt; _x( &#039;Subscriptions Mode&#039;, &#039;Live or Staging, Label on WooCommerce -&gt; System Status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;label&#039;   =&gt; &#039;Subscriptions Mode&#039;,
+			&#039;note&#039;    =&gt; &#039;&lt;strong&gt;&#039; . ( ( WCS_Staging::is_duplicate_site() ) ? _x( &#039;Staging&#039;, &#039;refers to staging site&#039;, &#039;woocommerce-subscriptions&#039; ) : _x( &#039;Live&#039;, &#039;refers to live site&#039;, &#039;woocommerce-subscriptions&#039; ) ) . &#039;&lt;/strong&gt;&#039;,
+			&#039;success&#039; =&gt; ( WCS_Staging::is_duplicate_site() ) ? 0 : 1,
+		);
+	}
+
+	/**
+	 * @param array $debug_data
+	 */
+	private static function set_live_site_url( &amp;$debug_data ) {
+		$debug_data[&#039;wcs_live_site_url&#039;] = array(
+			&#039;name&#039;      =&gt; _x( &#039;Subscriptions Live URL&#039;, &#039;Live URL, Label on WooCommerce -&gt; System Status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;label&#039;     =&gt; &#039;Subscriptions Live URL&#039;,
+			&#039;note&#039;      =&gt; &#039;&lt;a href=&quot;&#039; . esc_url( WCS_Staging::get_site_url_from_source( &#039;subscriptions_install&#039; ) ) . &#039;&quot;&gt;&#039; . esc_html( WCS_Staging::get_site_url_from_source( &#039;subscriptions_install&#039; ) ) . &#039;&lt;/a&gt;&#039;,
+			&#039;mark&#039;      =&gt; &#039;&#039;,
+			&#039;mark_icon&#039; =&gt; &#039;&#039;,
+		);
+	}
+
+	/**
+	 * List any Subscriptions template overrides.
+	 */
+	private static function set_theme_overrides( &amp;$debug_data ) {
+		$theme_overrides = self::get_theme_overrides();
+
+		if ( ! empty( $theme_overrides[&#039;overrides&#039;] ) ) {
+			$debug_data[&#039;wcs_theme_overrides&#039;] = array(
+				&#039;name&#039;  =&gt; _x( &#039;Subscriptions Template Theme Overrides&#039;, &#039;label for the system status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;label&#039; =&gt; &#039;Subscriptions Template Theme Overrides&#039;,
+				&#039;data&#039;  =&gt; $theme_overrides[&#039;overrides&#039;],
+			);
+
+			// Include a note on how to update if the templates are out of date.
+			if ( ! empty( $theme_overrides[&#039;has_outdated_templates&#039;] ) &amp;&amp; true === $theme_overrides[&#039;has_outdated_templates&#039;] ) {
+				$debug_data[&#039;wcs_theme_overrides&#039;] += array(
+					&#039;mark_icon&#039; =&gt; &#039;warning&#039;,
+					// translators: placeholders are opening/closing tags linking to documentation on outdated templates.
+					&#039;note&#039;      =&gt; sprintf( __( &#039;%1$sLearn how to update%2$s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;https://docs.woocommerce.com/document/fix-outdated-templates-woocommerce/&quot; target=&quot;_blank&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ),
+				);
+			}
+		}
+	}
+
+	/**
+	 * Determine which of our files have been overridden by the theme.
+	 *
+	 * @author Jeremy Pry
+	 * @return array Theme override data.
+	 */
+	private static function get_theme_overrides() {
+		$wcs_template_dir = WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; );
+		$wc_template_path = trailingslashit( wc()-&gt;template_path() );
+		$theme_root       = trailingslashit( get_theme_root() );
+		$overridden       = array();
+		$outdated         = false;
+		$templates        = WC_Admin_Status::scan_template_files( $wcs_template_dir );
+
+		foreach ( $templates as $file ) {
+			$theme_file = $is_outdated = false;
+			$locations  = array(
+				get_stylesheet_directory() . &quot;/{$file}&quot;,
+				get_stylesheet_directory() . &quot;/{$wc_template_path}{$file}&quot;,
+				get_template_directory() . &quot;/{$file}&quot;,
+				get_template_directory() . &quot;/{$wc_template_path}{$file}&quot;,
+			);
+
+			foreach ( $locations as $location ) {
+				if ( is_readable( $location ) ) {
+					$theme_file = $location;
+					break;
+				}
+			}
+
+			if ( ! empty( $theme_file ) ) {
+				$core_version  = WC_Admin_Status::get_file_version( $wcs_template_dir . $file );
+				$theme_version = WC_Admin_Status::get_file_version( $theme_file );
+
+				$overridden_template_output = sprintf( &#039;&lt;code&gt;%s&lt;/code&gt;&#039;, esc_html( str_replace( $theme_root, &#039;&#039;, $theme_file ) ) );
+
+				if ( $core_version &amp;&amp; ( empty( $theme_version ) || version_compare( $theme_version, $core_version, &#039;&lt;&#039; ) ) ) {
+					$outdated = true;
+					$overridden_template_output .= sprintf(
+						/* translators: %1$s is the file version, %2$s is the core version */
+						esc_html__( &#039;version %1$s is out of date. The core version is %2$s&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;&lt;strong style=&quot;color:red&quot;&gt;&#039; . esc_html( $theme_version ) . &#039;&lt;/strong&gt;&#039;,
+						&#039;&lt;strong&gt;&#039; . esc_html( $core_version ) . &#039;&lt;/strong&gt;&#039;
+					);
+				}
+
+				$overridden[&#039;overrides&#039;][] = $overridden_template_output;
+			}
+		}
+
+		$overridden[&#039;has_outdated_templates&#039;] = $outdated;
+
+		return $overridden;
+	}
+
+	/**
+	 * Add a breakdown of Subscriptions per status.
+	 */
+	private static function set_subscription_statuses( &amp;$debug_data ) {
+
+		$debug_data[&#039;wcs_subscriptions_by_status&#039;] = array(
+			&#039;name&#039;      =&gt; _x( &#039;Subscription Statuses&#039;, &#039;label for the system status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;label&#039;     =&gt; &#039;Subscription Statuses&#039;,
+			&#039;mark&#039;      =&gt; &#039;&#039;,
+			&#039;mark_icon&#039; =&gt; &#039;&#039;,
+			&#039;data&#039;      =&gt; self::get_subscription_statuses(),
+		);
+	}
+
+	/**
+	 * Include information about whether the store is linked to a WooCommerce account and whether they have an active WCS product key.
+	 */
+	private static function set_woocommerce_account_data( &amp;$debug_data ) {
+
+		if ( ! class_exists( &#039;WC_Helper&#039; ) ) {
+			return;
+		}
+
+		$woocommerce_account_auth      = WC_Helper_Options::get( &#039;auth&#039; );
+		$woocommerce_account_connected = ! empty( $woocommerce_account_auth );
+
+		$debug_data[&#039;wcs_woocommerce_account_connected&#039;] = array(
+			&#039;name&#039;    =&gt; _x( &#039;WooCommerce Account Connected&#039;, &#039;label for the system status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;label&#039;   =&gt; &#039;WooCommerce Account Connected&#039;,
+			&#039;note&#039;    =&gt; $woocommerce_account_connected ? &#039;Yes&#039; : &#039;No&#039;,
+			&#039;success&#039; =&gt; $woocommerce_account_connected,
+		);
+
+		if ( ! $woocommerce_account_connected ) {
+			return;
+		}
+
+		// Check for an active WooCommerce Subscriptions product key
+		$woocommerce_account_subscriptions = WC_Helper::get_subscriptions();
+		$site_id                           = absint( $woocommerce_account_auth[&#039;site_id&#039;] );
+		$has_active_product_key            = false;
+
+		foreach ( $woocommerce_account_subscriptions as $subscription ) {
+			if ( isset( $subscription[&#039;product_id&#039;] ) &amp;&amp; self::WCS_PRODUCT_ID === $subscription[&#039;product_id&#039;] ) {
+				$has_active_product_key = in_array( $site_id, $subscription[&#039;connections&#039;] );
+				break;
+			}
+		}
+
+		$debug_data[&#039;wcs_active_product_key&#039;] = array(
+			&#039;name&#039;    =&gt; _x( &#039;Active Product Key&#039;, &#039;label for the system status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;label&#039;   =&gt; &#039;Active Product Key&#039;,
+			&#039;note&#039;    =&gt; $has_active_product_key ? &#039;Yes&#039; : &#039;No&#039;,
+			&#039;success&#039; =&gt; $has_active_product_key,
+		);
+	}
+
+	/**
+	 * Add a breakdown of subscriptions per payment gateway.
+	 */
+	private static function set_subscriptions_by_payment_gateway( &amp;$debug_data ) {
+		$gateways = WC()-&gt;payment_gateways-&gt;get_available_payment_gateways();
+
+		foreach ( self::get_subscriptions_by_gateway() as $payment_method =&gt; $status_counts ) {
+			if ( isset( $gateways[ $payment_method ] ) ) {
+				$payment_method_name = $payment_method_label = $gateways[ $payment_method ]-&gt;method_title;
+			} else {
+				$payment_method_label = $payment_method = &#039;other&#039;;
+				$payment_method_name  = _x( &#039;Other&#039;, &#039;label for the system status page&#039;, &#039;woocommerce-subscriptions&#039; );
+			}
+
+			$key = &#039;wcs_payment_method_subscriptions_by&#039; . $payment_method;
+
+			$debug_data[ $key ] = array(
+				&#039;name&#039;  =&gt; $payment_method_name,
+				&#039;label&#039; =&gt; $payment_method_label,
+				&#039;data&#039;  =&gt; array(),
+			);
+
+			foreach ( $status_counts as $status =&gt; $count ) {
+				$debug_data[ $key ][&#039;data&#039;][] = &quot;$status: $count&quot;;
+			}
+		}
+	}
+
+	/**
+	 * List the enabled payment gateways and the features they support.
+	 */
+	private static function set_subscriptions_payment_gateway_support( &amp;$debug_data ) {
+		$gateways = WC()-&gt;payment_gateways-&gt;get_available_payment_gateways();
+
+		foreach ( $gateways as $gateway_id =&gt; $gateway ) {
+			$debug_data[ &#039;wcs_&#039; . $gateway_id . &#039;_feature_support&#039; ] = array(
+				&#039;name&#039;  =&gt; $gateway-&gt;method_title,
+				&#039;label&#039; =&gt; $gateway-&gt;method_title,
+				&#039;data&#039;  =&gt; (array) apply_filters( &#039;woocommerce_subscriptions_payment_gateway_features_list&#039;, $gateway-&gt;supports, $gateway ),
+			);
+
+			if ( &#039;paypal&#039; === $gateway_id ) {
+				$are_reference_transactions_enabled = WCS_PayPal::are_reference_transactions_enabled();
+
+				$debug_data[&#039;wcs_paypal_reference_transactions&#039;] = array(
+					&#039;name&#039;      =&gt; _x( &#039;PayPal Reference Transactions Enabled&#039;, &#039;label for the system status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;label&#039;     =&gt; &#039;PayPal Reference Transactions Enabled&#039;,
+					&#039;mark_icon&#039; =&gt; $are_reference_transactions_enabled ? &#039;yes&#039; : &#039;warning&#039;,
+					&#039;note&#039;      =&gt; $are_reference_transactions_enabled ? &#039;Yes&#039; : &#039;No&#039;,
+					&#039;success&#039;   =&gt; $are_reference_transactions_enabled,
+				);
+			}
+		}
+	}
+
+	/**
+	 * Add the store&#039;s country and state information.
+	 */
+	private static function set_store_location( &amp;$debug_data ) {
+		$store_base_location   = wc_get_base_location();
+		$countries             = WC()-&gt;countries-&gt;get_countries();
+		$states                = WC()-&gt;countries-&gt;get_states( $store_base_location[&#039;country&#039;] );
+		$store_location_string = &#039;&#039;;
+
+		if ( isset( $countries[ $store_base_location[&#039;country&#039;] ] ) ) {
+			$store_location_string = $countries[ $store_base_location[&#039;country&#039;] ];
+
+			if ( ! empty( $states[ $store_base_location[&#039;state&#039;] ] ) ) {
+				$store_location_string .= &#039; &amp;mdash; &#039; . $states[ $store_base_location[&#039;state&#039;] ];
+			}
+		}
+
+		$debug_data[&#039;wcs_store_location&#039;] = array(
+			&#039;name&#039;      =&gt; _x( &#039;Country / State&#039;, &#039;label for the system status page&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;label&#039;     =&gt; &#039;Country / State&#039;,
+			&#039;note&#039;      =&gt; $store_location_string,
+			&#039;mark&#039;      =&gt; &#039;&#039;,
+			&#039;mark_icon&#039; =&gt; &#039;&#039;,
+		);
+	}
+
+	/**
+	 * Gets the store&#039;s subscription broken down by payment gateway and status.
+	 *
+	 * @since 3.1.0
+	 * @return array The subscription gateway and status data array( &#039;gateway_id&#039; =&gt; array( &#039;status&#039; =&gt; count ) );
+	 */
+	public static function get_subscriptions_by_gateway() {
+		global $wpdb;
+		$subscription_gatway_data = array();
+
+		$results = $wpdb-&gt;get_results( &quot;
+			SELECT COUNT(subscriptions.ID) as count, post_meta.meta_value as payment_method, subscriptions.post_status
+			FROM $wpdb-&gt;posts as subscriptions RIGHT JOIN $wpdb-&gt;postmeta as post_meta ON post_meta.post_id = subscriptions.ID
+			WHERE subscriptions.post_type = &#039;shop_subscription&#039; &amp;&amp; post_meta.meta_key = &#039;_payment_method&#039;
+			GROUP BY post_meta.meta_value, subscriptions.post_status&quot;, ARRAY_A );
+
+		foreach ( $results as $result ) {
+			$subscription_gatway_data[ $result[&#039;payment_method&#039;] ][ $result[&#039;post_status&#039;] ] = $result[&#039;count&#039;];
+		}
+
+		return $subscription_gatway_data;
+	}
+
+	/**
+	 * Gets the store&#039;s subscriptions by status.
+	 *
+	 * @since 3.1.0
+	 * @return array
+	 */
+	public static function get_subscription_statuses() {
+		$subscriptions_by_status        = (array) wp_count_posts( &#039;shop_subscription&#039; );
+		$subscriptions_by_status_output = array();
+
+		foreach ( $subscriptions_by_status as $status =&gt; $count ) {
+			if ( ! empty( $count ) ) {
+				$subscriptions_by_status_output[] = $status . &#039;: &#039; . $count;
+			}
+		}
+
+		return $subscriptions_by_status_output;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

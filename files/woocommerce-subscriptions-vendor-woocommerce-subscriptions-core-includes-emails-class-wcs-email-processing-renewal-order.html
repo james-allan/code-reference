@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-email-processing-renewal-order.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+/**
+ * Customer Completed Order Email
+ *
+ * Order complete emails are sent to the customer when the order is marked complete and usual indicates that the order has been shipped.
+ *
+ * @class WC_Email_Customer_Completed_Order
+ * @version 2.0.0
+ * @package WooCommerce/Classes/Emails
+ * @author Prospress
+ * @extends WC_Email
+ */
+class WCS_Email_Processing_Renewal_Order extends WC_Email_Customer_Processing_Order {
+
+	/**
+	 * Constructor
+	 */
+	function __construct() {
+
+		$this-&gt;id             = &#039;customer_processing_renewal_order&#039;;
+		$this-&gt;title          = __( &#039;Processing Renewal order&#039;, &#039;woocommerce-subscriptions&#039; );
+		$this-&gt;description    = __( &#039;This is an order notification sent to the customer after payment for a subscription renewal order is completed. It contains the renewal order details.&#039;, &#039;woocommerce-subscriptions&#039; );
+		$this-&gt;customer_email = true;
+
+		$this-&gt;heading        = __( &#039;Thank you for your order&#039;, &#039;woocommerce-subscriptions&#039; );
+		$this-&gt;subject        = __( &#039;Your {blogname} renewal order receipt from {order_date}&#039;, &#039;woocommerce-subscriptions&#039; );
+
+		$this-&gt;template_html  = &#039;emails/customer-processing-renewal-order.php&#039;;
+		$this-&gt;template_plain = &#039;emails/plain/customer-processing-renewal-order.php&#039;;
+		$this-&gt;template_base  = WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; );
+
+		// Triggers for this email
+		add_action( &#039;woocommerce_order_status_pending_to_processing_renewal_notification&#039;, array( $this, &#039;trigger&#039; ) );
+		add_action( &#039;woocommerce_order_status_cancelled_to_processing_renewal_notification&#039;, array( $this, &#039;trigger&#039; ) );
+		add_action( &#039;woocommerce_order_status_failed_to_processing_renewal_notification&#039;, array( $this, &#039;trigger&#039; ) );
+		add_action( &#039;woocommerce_order_status_on-hold_to_processing_renewal_notification&#039;, array( $this, &#039;trigger&#039; ) );
+
+		// We want all the parent&#039;s methods, with none of its properties, so call its parent&#039;s constructor
+		WC_Email::__construct();
+	}
+
+	/**
+	 * Get the default e-mail subject.
+	 *
+	 * @since 2.5.3
+	 * @return string
+	 */
+	public function get_default_subject() {
+		return $this-&gt;subject;
+	}
+
+	/**
+	 * Get the default e-mail heading.
+	 *
+	 * @since 2.5.3
+	 * @return string
+	 */
+	public function get_default_heading() {
+		return $this-&gt;heading;
+	}
+
+	/**
+	 * trigger function.
+	 *
+	 * We need to override WC_Email_Customer_Processing_Order&#039;s trigger method because it expects to be run only once
+	 * per request (but multiple subscription renewal orders can be generated per request).
+	 *
+	 * @access public
+	 * @return void
+	 */
+	function trigger( $order_id, $order = null ) {
+
+		if ( $order_id ) {
+			$this-&gt;object    = wc_get_order( $order_id );
+			$this-&gt;recipient = wcs_get_objects_property( $this-&gt;object, &#039;billing_email&#039; );
+
+			$order_date_index = array_search( &#039;{order_date}&#039;, $this-&gt;find );
+			if ( false === $order_date_index ) {
+				$this-&gt;find[&#039;order_date&#039;]    = &#039;{order_date}&#039;;
+				$this-&gt;replace[&#039;order_date&#039;] = wcs_format_datetime( wcs_get_objects_property( $this-&gt;object, &#039;date_created&#039; ) );
+			} else {
+				$this-&gt;replace[ $order_date_index ] = wcs_format_datetime( wcs_get_objects_property( $this-&gt;object, &#039;date_created&#039; ) );
+			}
+
+			$order_number_index = array_search( &#039;{order_number}&#039;, $this-&gt;find );
+			if ( false === $order_number_index ) {
+				$this-&gt;find[&#039;order_number&#039;]    = &#039;{order_number}&#039;;
+				$this-&gt;replace[&#039;order_number&#039;] = $this-&gt;object-&gt;get_order_number();
+			} else {
+				$this-&gt;replace[ $order_number_index ] = $this-&gt;object-&gt;get_order_number();
+			}
+		}
+
+		if ( ! $this-&gt;is_enabled() || ! $this-&gt;get_recipient() ) {
+			return;
+		}
+
+		$this-&gt;send( $this-&gt;get_recipient(), $this-&gt;get_subject(), $this-&gt;get_content(), $this-&gt;get_headers(), $this-&gt;get_attachments() );
+	}
+
+	/**
+	 * get_subject function.
+	 *
+	 * @access public
+	 * @return string
+	 */
+	function get_subject() {
+		return apply_filters( &#039;woocommerce_subscriptions_email_subject_customer_processing_renewal_order&#039;, parent::get_subject(), $this-&gt;object );
+	}
+
+	/**
+	 * get_heading function.
+	 *
+	 * @access public
+	 * @return string
+	 */
+	function get_heading() {
+		return apply_filters( &#039;woocommerce_email_heading_customer_renewal_order&#039;, parent::get_heading(), $this-&gt;object );
+	}
+
+	/**
+	 * get_content_html function.
+	 *
+	 * @access public
+	 * @return string
+	 */
+	function get_content_html() {
+		return wc_get_template_html(
+			$this-&gt;template_html,
+			array(
+				&#039;order&#039;              =&gt; $this-&gt;object,
+				&#039;email_heading&#039;      =&gt; $this-&gt;get_heading(),
+				&#039;additional_content&#039; =&gt; is_callable( array( $this, &#039;get_additional_content&#039; ) ) ? $this-&gt;get_additional_content() : &#039;&#039;, // WC 3.7 introduced an additional content field for all emails.
+				&#039;sent_to_admin&#039;      =&gt; false,
+				&#039;plain_text&#039;         =&gt; false,
+				&#039;email&#039;              =&gt; $this,
+			),
+			&#039;&#039;,
+			$this-&gt;template_base
+		);
+	}
+
+	/**
+	 * get_content_plain function.
+	 *
+	 * @access public
+	 * @return string
+	 */
+	function get_content_plain() {
+		return wc_get_template_html(
+			$this-&gt;template_plain,
+			array(
+				&#039;order&#039;              =&gt; $this-&gt;object,
+				&#039;email_heading&#039;      =&gt; $this-&gt;get_heading(),
+				&#039;additional_content&#039; =&gt; is_callable( array( $this, &#039;get_additional_content&#039; ) ) ? $this-&gt;get_additional_content() : &#039;&#039;, // WC 3.7 introduced an additional content field for all emails.
+				&#039;sent_to_admin&#039;      =&gt; false,
+				&#039;plain_text&#039;         =&gt; true,
+				&#039;email&#039;              =&gt; $this,
+			),
+			&#039;&#039;,
+			$this-&gt;template_base
+		);
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

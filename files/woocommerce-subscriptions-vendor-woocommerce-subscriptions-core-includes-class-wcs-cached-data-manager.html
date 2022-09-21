@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-cached-data-manager.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscription Cached Data Manager Class
+ *
+ * @class    WCS_Cached_Data_Manager
+ * @version  2.3.0
+ * @since    2.1.2
+ * @package  WooCommerce Subscriptions/Classes
+ * @category Class
+ * @author   Prospress
+ */
+class WCS_Cached_Data_Manager extends WCS_Cache_Manager {
+
+	/**
+	 * @var  WC_Logger_Interface|null
+	 */
+	public $logger = null;
+
+	public function __construct() {
+		add_action( &#039;woocommerce_loaded&#039;, array( $this, &#039;load_logger&#039; ) );
+
+		add_action( &#039;admin_init&#039;, array( $this, &#039;initialize_cron_check_size&#039; ) ); // setup cron task to truncate big logs.
+		add_filter( &#039;cron_schedules&#039;, array( $this, &#039;add_weekly_cron_schedule&#039; ) ); // create a weekly cron schedule
+	}
+
+	/**
+	 * Attaches logger
+	 */
+	public function load_logger() {
+		$this-&gt;logger = new WC_Logger();
+	}
+
+	/**
+	 * Wrapper function around WC_Logger-&gt;log
+	 *
+	 * @param string $message Message to log
+	 */
+	public function log( $message ) {
+		if ( is_object( $this-&gt;logger ) &amp;&amp; defined( &#039;WCS_DEBUG&#039; ) &amp;&amp; WCS_DEBUG ) {
+			$this-&gt;logger-&gt;add( &#039;wcs-cache&#039;, $message );
+		}
+	}
+
+	/**
+	 * Helper function for fetching cached data or updating and storing new data provided by callback.
+	 *
+	 * @param string $key The key to cache/fetch the data with
+	 * @param string|array $callback name of function, or array of class - method that fetches the data
+	 * @param array $params arguments passed to $callback
+	 * @param integer $expires number of seconds to keep the cache. Don&#039;t set it to 0, as the cache will be autoloaded. Default is a week.
+	 *
+	 * @return bool|mixed
+	 */
+	public function cache_and_get( $key, $callback, $params = array(), $expires = WEEK_IN_SECONDS ) {
+		$expires = absint( $expires );
+		$data    = get_transient( $key );
+
+		// if there isn&#039;t a transient currently stored and we have a callback update function, fetch and store
+		if ( false === $data &amp;&amp; ! empty( $callback ) ) {
+			$data = call_user_func_array( $callback, array_values( $params ) );
+			set_transient( $key, $data, $expires );
+		}
+
+		return $data;
+	}
+
+	/**
+	 * Clearing cache when a post is deleted
+	 *
+	 * @param int     $post_id The ID of a post
+	 * @param WP_Post $post    The post object (on certain hooks).
+	 */
+	public function purge_delete( $post_id, $post = null ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.3.0&#039; );
+
+		$post_type = get_post_type( $post_id );
+
+		if ( &#039;shop_order&#039; === $post_type ) {
+			wcs_deprecated_argument( __METHOD__, &#039;2.3.0&#039;, sprintf( __( &#039;Related order caching is now handled by %1$s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;WCS_Related_Order_Store&#039; ) ); // phpcs:ignore WordPress.WP.I18n.MissingTranslatorsComment
+			if ( is_callable( array( WCS_Related_Order_Store::instance(), &#039;delete_related_order_id_from_caches&#039; ) ) ) {
+				WCS_Related_Order_Store::instance()-&gt;delete_related_order_id_from_caches( $post_id );
+			}
+		}
+
+		if ( &#039;shop_subscription&#039; === $post_type ) {
+			wcs_deprecated_argument( __METHOD__, &#039;2.3.0&#039;, sprintf( __( &#039;Customer subscription caching is now handled by %1$s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;WCS_Customer_Store_Cached_CPT&#039; ) ); // phpcs:ignore WordPress.WP.I18n.MissingTranslatorsComment
+
+			// Purge wcs_do_subscriptions_exist cache, but only on the before_delete_post hook.
+			if ( doing_action( &#039;before_delete_post&#039; ) ) {
+				$this-&gt;log( &quot;Subscription {$post_id} deleted. Purging subscription cache.&quot; );
+				$this-&gt;delete_cached( &#039;wcs_do_subscriptions_exist&#039; );
+			}
+
+			// Purge cache for a specific user on the save_post hook.
+			if ( doing_action( &#039;save_post&#039; ) ) {
+				$this-&gt;purge_subscription_user_cache( $post_id );
+			}
+		}
+	}
+
+	/**
+	 * When subscription related metadata is added / deleted / updated on an order, we need to invalidate the subscription related orders cache.
+	 *
+	 * @param $meta_id integer the ID of the meta in the meta table
+	 * @param $object_id integer the ID of the post we&#039;re updating on, only concerned with order IDs
+	 * @param $meta_key string the meta_key in the table, only concerned with the &#039;_customer_user&#039; key
+	 * @param $meta_value mixed the ID of the subscription that relates to the order
+	 */
+	public function purge_from_metadata( $meta_id, $object_id, $meta_key, $meta_value ) {
+		wcs_deprecated_argument( __METHOD__, &#039;2.3.0&#039;, sprintf( __( &#039;Customer subscription caching is now handled by %1$s and %2$s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;WCS_Customer_Store_Cached_CPT&#039;, &#039;WCS_Post_Meta_Cache_Manager&#039; ) ); // phpcs:ignore WordPress.WP.I18n.MissingTranslatorsComment
+
+		// Ensure we&#039;re handling a meta key we actually care about.
+		if ( &#039;_customer_user&#039; !== $meta_key || &#039;shop_subscription&#039; !== get_post_type( $object_id ) ) {
+			return;
+		}
+
+		$this-&gt;purge_subscription_user_cache( $object_id );
+	}
+
+	/**
+	 * Wrapper function to clear the cache that relates to related orders
+	 *
+	 * @param null $subscription_id
+	 * @deprecated 2.3.0
+	 */
+	protected function clear_related_order_cache( $subscription_id ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.3.0&#039;, __( &#039;new related order methods in WCS_Related_Order_Store&#039;, &#039;woocommerce-subscriptions&#039; ) );
+
+		// if it&#039;s not a Subscription, we don&#039;t deal with it
+		if ( is_object( $subscription_id ) &amp;&amp; $subscription_id instanceof WC_Subscription ) {
+			$subscription_id = $subscription_id-&gt;get_id();
+		} elseif ( is_numeric( $subscription_id ) ) {
+			$subscription_id = absint( $subscription_id );
+		} else {
+			return;
+		}
+
+		// Clear the new cache, to honour the method call
+		if ( is_callable( array( WCS_Related_Order_Store::instance(), &#039;delete_caches_for_subscription&#039; ) ) ) {
+			WCS_Related_Order_Store::instance()-&gt;delete_caches_for_subscription( $subscription_id );
+		}
+
+		// Clear the old cache, just in case it&#039;s still got data
+		$key = &#039;wcs-related-orders-to-&#039; . $subscription_id;
+
+		$this-&gt;log( &#039;In the clearing, key being purged is this: &#039; . print_r( $key, true ) );
+
+		$this-&gt;delete_cached( $key );
+	}
+
+	/**
+	 * Delete cached data with key
+	 *
+	 * @param string $key Key that needs deleting
+	 *
+	 * @return bool
+	 */
+	public function delete_cached( $key ) {
+		wcs_deprecated_argument( __METHOD__, &#039;2.3.0&#039; );
+
+		if ( ! is_string( $key ) || empty( $key ) ) {
+			return false;
+		}
+
+		return delete_transient( $key );
+	}
+
+	/**
+	 * If the log is bigger than a threshold it will be
+	 * truncated to 0 bytes.
+	 */
+	public static function cleanup_logs() {
+		$file = wc_get_log_file_path( &#039;wcs-cache&#039; );
+		$max_cache_size = apply_filters( &#039;wcs_max_log_size&#039;, 50 * 1024 * 1024 );
+
+		if ( filesize( $file ) &gt;= $max_cache_size ) {
+			$size_to_keep = apply_filters( &#039;wcs_log_size_to_keep&#039;, 25 * 1024 );
+			$lines_to_keep = apply_filters( &#039;wcs_log_lines_to_keep&#039;, 1000 );
+
+			$fp = fopen( $file, &#039;r&#039; );
+			fseek( $fp, -1 * $size_to_keep, SEEK_END );
+			$data = &#039;&#039;;
+			while ( ! feof( $fp ) ) {
+				$data .= fread( $fp, $size_to_keep );
+			}
+			fclose( $fp );
+
+			// Remove first line (which is probably incomplete) and also any empty line
+			$lines = explode( &quot;\n&quot;, $data );
+			$lines = array_filter( array_slice( $lines, 1 ) );
+			$lines = array_slice( $lines, -1000 );
+			$lines[] = &#039;---- log file automatically truncated &#039; . gmdate( &#039;Y-m-d H:i:s&#039; ) . &#039; ---&#039;;
+
+			file_put_contents( $file, implode( &quot;\n&quot;, $lines ), LOCK_EX );
+		}
+	}
+
+	/**
+	 * Check once each week if the log file has exceeded the limits.
+	 *
+	 * @since 2.2.9
+	 */
+	public function initialize_cron_check_size() {
+
+		$hook = &#039;wcs_cleanup_big_logs&#039;;
+
+		if ( ! wp_next_scheduled( $hook ) ) {
+			wp_schedule_event( time(), &#039;weekly&#039;, $hook );
+		}
+
+		add_action( $hook, __CLASS__ . &#039;::cleanup_logs&#039; );
+	}
+
+	/**
+	 * Add a weekly schedule for clearing up the cache
+	 *
+	 * @param $scheduled array
+	 * @since 2.2.9
+	 */
+	function add_weekly_cron_schedule( $schedules ) {
+
+		if ( ! isset( $schedules[&#039;weekly&#039;] ) ) {
+			$schedules[&#039;weekly&#039;] = array(
+				&#039;interval&#039; =&gt; WEEK_IN_SECONDS,
+				&#039;display&#039;  =&gt; __( &#039;Weekly&#039;, &#039;woocommerce-subscriptions&#039; ),
+			);
+		}
+
+		return $schedules;
+	}
+
+	/**
+	 * Purge the cache for the subscription&#039;s user.
+	 *
+	 * @author Jeremy Pry
+	 *
+	 * @param int $subscription_id The subscription to purge.
+	 */
+	protected function purge_subscription_user_cache( $subscription_id ) {
+		wcs_deprecated_argument( __METHOD__, &#039;2.3.0&#039;, sprintf( __( &#039;Customer subscription caching is now handled by %1$s and %2$s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;WCS_Customer_Store_Cached_CPT&#039;, &#039;WCS_Post_Meta_Cache_Manager&#039; ) ); // phpcs:ignore WordPress.WP.I18n.MissingTranslatorsComment
+
+		$subscription         = wcs_get_subscription( $subscription_id );
+		$subscription_user_id = $subscription-&gt;get_user_id();
+		$this-&gt;log( sprintf(
+			&#039;Clearing cache for user ID %1$s on %2$s hook.&#039;,
+			$subscription_user_id,
+			current_action()
+		) );
+		$this-&gt;delete_cached( &quot;wcs_user_subscriptions_{$subscription_user_id}&quot; );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

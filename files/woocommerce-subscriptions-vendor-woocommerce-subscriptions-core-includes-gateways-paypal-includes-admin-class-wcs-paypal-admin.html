@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html">GatewaysPayPal</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-paypal-admin.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions PayPal Administration Class.
+ *
+ * Hooks into WooCommerce&#039;s core PayPal class to display fields and notices relating to subscriptions.
+ *
+ * @package     WooCommerce Subscriptions
+ * @subpackage  Gateways/PayPal
+ * @category    Class
+ * @author      Prospress
+ * @since       2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_PayPal_Admin {
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 *
+	 * @since 2.0
+	 */
+	public static function init() {
+
+		// Add PayPal API fields to PayPal form fields as required
+		add_action( &#039;woocommerce_settings_start&#039;, __CLASS__ . &#039;::add_form_fields&#039;, 100 );
+		add_action( &#039;woocommerce_api_wc_gateway_paypal&#039;, __CLASS__ . &#039;::add_form_fields&#039;, 100 );
+
+		// Handle requests to check whether a PayPal account has Reference Transactions enabled
+		add_action( &#039;admin_init&#039;, __CLASS__ . &#039;::maybe_check_account&#039; );
+
+		// Maybe show notice to enter PayPal API credentials
+		add_action( &#039;admin_notices&#039;, __CLASS__ . &#039;::maybe_show_admin_notices&#039; );
+
+		// Add the PayPal subscription information to the billing information
+		add_action( &#039;woocommerce_admin_order_data_after_billing_address&#039;, __CLASS__ . &#039;::profile_link&#039; );
+
+		// Before WC updates the PayPal settings remove credentials error flag
+		add_action( &#039;load-woocommerce_page_wc-settings&#039;, __CLASS__ . &#039;::maybe_update_credentials_error_flag&#039;, 9 );
+
+		// Add an enable for subscription purchases setting.
+		add_action( &#039;woocommerce_settings_api_form_fields_paypal&#039;, array( __CLASS__, &#039;add_enable_for_subscriptions_setting&#039; ) );
+	}
+
+	/**
+	 * Adds extra PayPal credential fields required to manage subscriptions.
+	 *
+	 * @since 2.0
+	 */
+	public static function add_form_fields() {
+
+		foreach ( WC()-&gt;payment_gateways-&gt;payment_gateways as $key =&gt; $gateway ) {
+
+			if ( WC()-&gt;payment_gateways-&gt;payment_gateways[ $key ]-&gt;id !== &#039;paypal&#039; ) {
+				continue;
+			}
+
+			// Warn store managers not to change their PayPal Email address as it can break existing Subscriptions in WC2.0+
+			WC()-&gt;payment_gateways-&gt;payment_gateways[ $key ]-&gt;form_fields[&#039;receiver_email&#039;][&#039;desc_tip&#039;]     = false;
+			// translators: $1 and $2 are opening and closing strong tags, respectively.
+			WC()-&gt;payment_gateways-&gt;payment_gateways[ $key ]-&gt;form_fields[&#039;receiver_email&#039;][&#039;description&#039;] .= &#039; &lt;/p&gt;&lt;p class=&quot;description&quot;&gt;&#039; . sprintf( __( &#039;It is %1$sstrongly recommended you do not change the Receiver Email address%2$s if you have active subscriptions with PayPal. Doing so can break existing subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039;, &#039;&lt;/strong&gt;&#039; );
+		}
+	}
+
+	/**
+	 * Handle requests to check whether a PayPal account has Reference Transactions enabled
+	 *
+	 * @since 2.0
+	 */
+	public static function maybe_check_account() {
+
+		if ( isset( $_GET[&#039;wcs_paypal&#039;] ) &amp;&amp; &#039;check_reference_transaction_support&#039; === $_GET[&#039;wcs_paypal&#039;] &amp;&amp; wp_verify_nonce( $_GET[&#039;_wpnonce&#039;], __CLASS__ ) ) {
+
+			$redirect_url = remove_query_arg( array( &#039;wcs_paypal&#039;, &#039;_wpnonce&#039; ) );
+
+			if ( WCS_PayPal::are_reference_transactions_enabled( &#039;bypass_cache&#039; ) ) {
+				$redirect_url = add_query_arg( array( &#039;wcs_paypal&#039; =&gt; &#039;rt_enabled&#039; ), $redirect_url );
+			} else {
+				$redirect_url = add_query_arg( array( &#039;wcs_paypal&#039; =&gt; &#039;rt_not_enabled&#039; ), $redirect_url );
+			}
+
+			wp_safe_redirect( $redirect_url );
+		}
+	}
+
+	/**
+	 * Display an assortment of notices to administrators to encourage them to get PayPal setup right.
+	 *
+	 * @since 2.0
+	 */
+	public static function maybe_show_admin_notices() {
+		self::maybe_disable_invalid_profile_notice();
+
+		$valid_paypal_currency = in_array( get_woocommerce_currency(), apply_filters( &#039;woocommerce_paypal_supported_currencies&#039;, array( &#039;AUD&#039;, &#039;BRL&#039;, &#039;CAD&#039;, &#039;MXN&#039;, &#039;NZD&#039;, &#039;HKD&#039;, &#039;SGD&#039;, &#039;USD&#039;, &#039;EUR&#039;, &#039;JPY&#039;, &#039;TRY&#039;, &#039;NOK&#039;, &#039;CZK&#039;, &#039;DKK&#039;, &#039;HUF&#039;, &#039;ILS&#039;, &#039;MYR&#039;, &#039;PHP&#039;, &#039;PLN&#039;, &#039;SEK&#039;, &#039;CHF&#039;, &#039;TWD&#039;, &#039;THB&#039;, &#039;GBP&#039;, &#039;RMB&#039; ) ) );
+		$is_paypal_enabled = &#039;yes&#039; === WCS_PayPal::get_option( &#039;enabled&#039; );
+
+		// We don&#039;t want to show Paypal warnings while showing the WC Subscriptions extension welcome notice
+		$is_showing_wc_subscriptions_welcome_notice = class_exists( &#039;WC_Subscriptions_Core_Plugin&#039; ) &amp;&amp; has_action( &#039;admin_notices&#039;, array( WC_Subscriptions_Core_Plugin::instance(), &#039;admin_installed_notice&#039; ) );
+
+		if ( ! $is_paypal_enabled || ! $valid_paypal_currency || ! current_user_can( &#039;manage_options&#039; ) || $is_showing_wc_subscriptions_welcome_notice ) {
+			return;
+		}
+
+		$payment_gateway_tab_url = admin_url( &#039;admin.php?page=wc-settings&amp;tab=checkout&amp;section=paypal&#039; );
+		$notices                 = array();
+
+		if ( ! WCS_PayPal::are_credentials_set() ) {
+			if ( &#039;yes&#039; === WCS_PayPal::get_option( &#039;enabled_for_subscriptions&#039; ) ) {
+				$notices[] = array(
+					&#039;type&#039; =&gt; &#039;warning&#039;,
+					// translators: placeholders are opening and closing link tags. 1$-2$: to docs on woocommerce, 3$-4$ to gateway settings on the site
+					&#039;text&#039; =&gt; sprintf( esc_html__( &#039;PayPal is inactive for subscription transactions. Please %1$sset up the PayPal IPN%2$s and %3$senter your API credentials%4$s to enable PayPal for Subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;&lt;a href=&quot;https://docs.woocommerce.com/document/subscriptions/store-manager-guide/#ipn-setup&quot; target=&quot;_blank&quot;&gt;&#039;,
+						&#039;&lt;/a&gt;&#039;,
+						&#039;&lt;a href=&quot;&#039; . esc_url( $payment_gateway_tab_url ) . &#039;&quot;&gt;&#039;,
+						&#039;&lt;/a&gt;&#039;
+					),
+				);
+			}
+		} elseif ( &#039;woocommerce_page_wc-settings&#039; === get_current_screen()-&gt;base &amp;&amp; isset( $_GET[&#039;tab&#039;] ) &amp;&amp; in_array( $_GET[&#039;tab&#039;], array( &#039;subscriptions&#039;, &#039;checkout&#039; ) ) &amp;&amp; ! WCS_PayPal::are_reference_transactions_enabled() ) {
+			if ( &#039;yes&#039; === WCS_PayPal::get_option( &#039;enabled_for_subscriptions&#039; ) ) {
+				$notice_type = &#039;warning&#039;;
+				// translators: opening/closing tags - links to documentation.
+				$notice_text = esc_html__( &#039;%1$sPayPal Reference Transactions are not enabled on your account%2$s, some subscription management features are not enabled. Please contact PayPal and request they %3$senable PayPal Reference Transactions%4$s on your account. %5$sCheck PayPal Account%6$s  %3$sLearn more %7$s&#039;, &#039;woocommerce-subscriptions&#039; );
+			} else {
+				$notice_type = &#039;info&#039;;
+				// translators: opening/closing tags - links to documentation.
+				$notice_text = esc_html__( &#039;%1$sPayPal Reference Transactions are not enabled on your account%2$s. If you wish to use PayPal Reference Transactions with Subscriptions, please contact PayPal and request they %3$senable PayPal Reference Transactions%4$s on your account. %5$sCheck PayPal Account%6$s  %3$sLearn more %7$s&#039;, &#039;woocommerce-subscriptions&#039; );
+			}
+
+			$notices[] = array(
+				&#039;type&#039; =&gt; $notice_type,
+				// translators: placeholders are opening and closing strong and link tags. 1$-2$: strong tags, 3$-8$ link to docs on woocommerce
+				&#039;text&#039; =&gt; sprintf( $notice_text,
+					&#039;&lt;strong&gt;&#039;,
+					&#039;&lt;/strong&gt;&#039;,
+					&#039;&lt;a href=&quot;https://docs.woocommerce.com/document/subscriptions/faq/paypal-reference-transactions/&quot; target=&quot;_blank&quot;&gt;&#039;,
+					&#039;&lt;/a&gt;&#039;,
+					&#039;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;button&quot; href=&quot;&#039; . esc_url( wp_nonce_url( add_query_arg( &#039;wcs_paypal&#039;, &#039;check_reference_transaction_support&#039; ), __CLASS__ ) ) . &#039;&quot;&gt;&#039;,
+					&#039;&lt;/a&gt;&#039;,
+					&#039;&amp;raquo;&lt;/a&gt;&#039;
+				),
+			);
+		}
+
+		if ( isset( $_GET[&#039;wcs_paypal&#039;] ) &amp;&amp; &#039;rt_enabled&#039; === $_GET[&#039;wcs_paypal&#039;] ) {
+			$notices[] = array(
+				&#039;type&#039; =&gt; &#039;confirmation&#039;,
+				// translators: placeholders are opening and closing strong tags.
+				&#039;text&#039; =&gt; sprintf( esc_html__( &#039;%1$sPayPal Reference Transactions are enabled on your account%2$s. All subscription management features are now enabled. Happy selling!&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;&lt;strong&gt;&#039;,
+					&#039;&lt;/strong&gt;&#039;
+				),
+			);
+		}
+
+		if ( false !== get_option( &#039;wcs_paypal_credentials_error&#039; ) ) {
+			$notices[] = array(
+				&#039;type&#039; =&gt; &#039;error&#039;,
+				// translators: placeholders are link opening and closing tags. 1$-2$: to gateway settings, 3$-4$: support docs on woocommerce.com
+				&#039;text&#039; =&gt; sprintf( esc_html__( &#039;There is a problem with PayPal. Your API credentials may be incorrect. Please update your %1$sAPI credentials%2$s. %3$sLearn more%4$s.&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;&lt;a href=&quot;&#039; . esc_url( $payment_gateway_tab_url ) . &#039;&quot;&gt;&#039;,
+					&#039;&lt;/a&gt;&#039;,
+					&#039;&lt;a href=&quot;https://docs.woocommerce.com/document/subscriptions-canceled-suspended-paypal/#section-2&quot; target=&quot;_blank&quot;&gt;&#039;,
+					&#039;&lt;/a&gt;&#039;
+				),
+			);
+		}
+
+		if ( &#039;yes&#039; == get_option( &#039;wcs_paypal_invalid_profile_id&#039; ) ) {
+			$notices[] = array(
+				&#039;type&#039; =&gt; &#039;error&#039;,
+				// translators: placeholders are opening and closing link tags. 1$-2$: docs on woocommerce, 3$-4$: dismiss link
+				&#039;text&#039; =&gt; sprintf( esc_html__( &#039;There is a problem with PayPal. Your PayPal account is issuing out-of-date subscription IDs. %1$sLearn more%2$s. %3$sDismiss%4$s.&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;&lt;a href=&quot;https://docs.woocommerce.com/document/subscriptions-canceled-suspended-paypal/#section-3&quot; target=&quot;_blank&quot;&gt;&#039;,
+					&#039;&lt;/a&gt;&#039;,
+					&#039;&lt;a href=&quot;&#039; . esc_url( add_query_arg( &#039;wcs_disable_paypal_invalid_profile_id_notice&#039;, &#039;true&#039; ) ) . &#039;&quot;&gt;&#039;,
+					&#039;&lt;/a&gt;&#039;
+				),
+			);
+		}
+
+		$last_ipn_error        = get_option( &#039;wcs_fatal_error_handling_ipn&#039;, &#039;&#039; );
+		$failed_ipn_log_handle = &#039;wcs-ipn-failures&#039;;
+
+		if ( ! empty( $last_ipn_error ) &amp;&amp; ( false == get_option( &#039;wcs_fatal_error_handling_ipn_ignored&#039;, false ) || isset( $_GET[&#039;wcs_reveal_your_ipn_secrets&#039;] ) ) ) {
+			$notice = new WCS_Admin_Notice( &#039;error&#039; );
+			$notice-&gt;set_content_template( &#039;html-ipn-failure-notice.php&#039;, dirname( __FILE__ ) . &#039;/../templates/&#039;, array(
+				&#039;failed_ipn_log_handle&#039; =&gt; $failed_ipn_log_handle,
+				&#039;last_ipn_error&#039;        =&gt; $last_ipn_error,
+				&#039;log_file_url&#039;          =&gt; admin_url( sprintf( &#039;admin.php?page=wc-status&amp;tab=logs&amp;log_file=%s-%s-log&#039;, $failed_ipn_log_handle, sanitize_file_name( wp_hash( $failed_ipn_log_handle ) ) ) ),
+			) );
+
+			$notice-&gt;set_actions( array(
+				array(
+					&#039;name&#039;  =&gt; __( &#039;Ignore this error (not recommended)&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;url&#039;   =&gt; wp_nonce_url( add_query_arg( &#039;wcs_ipn_error_notice&#039;, &#039;ignore&#039; ), &#039;wcs_ipn_error_notice&#039;, &#039;_wcsnonce&#039; ),
+					&#039;class&#039; =&gt; &#039;button&#039;,
+				),
+				array(
+					&#039;name&#039;  =&gt; __( &#039;Open a ticket&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;url&#039;   =&gt; &#039;https://woocommerce.com/my-account/marketplace-ticket-form/&#039;,
+					&#039;class&#039; =&gt; &#039;button button-primary&#039;,
+				),
+			) );
+
+			$notice-&gt;display();
+		}
+
+		if ( ! empty( $notices ) ) {
+			include_once( dirname( __FILE__ ) . &#039;/../templates/admin-notices.php&#039; );
+		}
+	}
+
+	/**
+	 * Disable the invalid profile notice when requested.
+	 *
+	 * @since 2.0
+	 */
+	protected static function maybe_disable_invalid_profile_notice() {
+		if ( isset( $_GET[&#039;wcs_disable_paypal_invalid_profile_id_notice&#039;] ) ) {
+			update_option( &#039;wcs_paypal_invalid_profile_id&#039;, &#039;disabled&#039; );
+		}
+
+		if ( isset( $_GET[&#039;wcs_ipn_error_notice&#039;] ) ) {
+			update_option( &#039;wcs_fatal_error_handling_ipn_ignored&#039;, true );
+		}
+	}
+
+	/**
+	 * Remove the invalid credentials error flag whenever a new set of API credentials are saved.
+	 *
+	 * @since 2.0
+	 */
+	public static function maybe_update_credentials_error_flag() {
+
+		// Check if the API credentials are being saved - we can&#039;t do this on the &#039;woocommerce_update_options_payment_gateways_paypal&#039; hook because it is triggered after &#039;admin_notices&#039;
+		if ( ! empty( $_REQUEST[&#039;_wpnonce&#039;] ) &amp;&amp; wp_verify_nonce( $_REQUEST[&#039;_wpnonce&#039;], &#039;woocommerce-settings&#039; ) &amp;&amp; isset( $_POST[&#039;woocommerce_paypal_api_username&#039;] ) || isset( $_POST[&#039;woocommerce_paypal_api_password&#039;] ) || isset( $_POST[&#039;woocommerce_paypal_api_signature&#039;] ) ) {
+
+			$credentials_updated = false;
+
+			if ( isset( $_POST[&#039;woocommerce_paypal_api_username&#039;] ) &amp;&amp; WCS_PayPal::get_option( &#039;api_username&#039; ) != $_POST[&#039;woocommerce_paypal_api_username&#039;] ) {
+				$credentials_updated = true;
+			} elseif ( isset( $_POST[&#039;woocommerce_paypal_api_password&#039;] ) &amp;&amp; WCS_PayPal::get_option( &#039;api_password&#039; ) != $_POST[&#039;woocommerce_paypal_api_password&#039;] ) {
+				$credentials_updated = true;
+			} elseif ( isset( $_POST[&#039;woocommerce_paypal_api_signature&#039;] ) &amp;&amp; WCS_PayPal::get_option( &#039;api_signature&#039; ) != $_POST[&#039;woocommerce_paypal_api_signature&#039;] ) {
+				$credentials_updated = true;
+			}
+
+			if ( $credentials_updated ) {
+				delete_option( &#039;wcs_paypal_credentials_error&#039; );
+			}
+		}
+
+		do_action( &#039;wcs_paypal_admin_update_credentials&#039; );
+	}
+
+
+	/**
+	 * Prints link to the PayPal&#039;s profile related to the provided subscription
+	 *
+	 * @param WC_Subscription $subscription
+	 */
+	public static function profile_link( $subscription ) {
+		if ( ! wcs_is_subscription( $subscription ) || $subscription-&gt;is_manual() || &#039;paypal&#039; != $subscription-&gt;get_payment_method() ) {
+			return;
+		}
+
+		$paypal_profile_id = wcs_get_paypal_id( $subscription );
+
+		if ( empty( $paypal_profile_id ) ) {
+			return;
+		}
+
+		$url    = &#039;&#039;;
+		$domain = WCS_PayPal::get_option( &#039;testmode&#039; ) === &#039;yes&#039; ? &#039;sandbox.paypal&#039; : &#039;paypal&#039;;
+
+		if ( false === wcs_is_paypal_profile_a( $paypal_profile_id, &#039;billing_agreement&#039; ) ) {
+			// Standard subscription
+			$url = &quot;https://www.{$domain}.com/?cmd=_profile-recurring-payments&amp;encrypted_profile_id={$paypal_profile_id}&quot;;
+		} elseif ( wcs_is_paypal_profile_a( $paypal_profile_id, &#039;billing_agreement&#039; ) ) {
+			// Reference Transaction subscription
+			$url = &quot;https://www.{$domain}.com/?cmd=_profile-merchant-pull&amp;encrypted_profile_id={$paypal_profile_id}&amp;mp_id={$paypal_profile_id}&amp;return_to=merchant&amp;flag_flow=merchant&quot;;
+		}
+
+		echo &#039;&lt;div class=&quot;address&quot;&gt;&#039;;
+		echo &#039;&lt;p class=&quot;paypal_subscription_info&quot;&gt;&lt;strong&gt;&#039;;
+		echo esc_html( __( &#039;PayPal Subscription ID:&#039;, &#039;woocommerce-subscriptions&#039; ) );
+		echo &#039;&lt;/strong&gt;&#039;;
+
+		if ( ! empty( $url ) ) {
+			echo &#039;&lt;a href=&quot;&#039; . esc_url( $url ) . &#039;&quot; target=&quot;_blank&quot;&gt;&#039; . esc_html( $paypal_profile_id ) . &#039;&lt;/a&gt;&#039;;
+		} else {
+			echo esc_html( $paypal_profile_id );
+		}
+
+		echo &#039;&lt;/p&gt;&lt;/div&gt;&#039;;
+	}
+
+	/**
+	 * Add the enabled or subscriptions setting.
+	 *
+	 * @param array $settings The WooCommerce PayPal Settings array.
+	 * @return array
+	 * @since 2.5.0
+	 */
+	public static function add_enable_for_subscriptions_setting( $settings ) {
+		if ( WCS_PayPal::are_reference_transactions_enabled() ) {
+			return $settings;
+		}
+
+		$setting = array(
+			&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+			&#039;label&#039;   =&gt; __( &#039;Enable PayPal Standard for Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;default&#039; =&gt; &#039;no&#039;,
+		);
+
+		// Display a description
+		if ( &#039;no&#039; === WCS_PayPal::get_option( &#039;enabled_for_subscriptions&#039; ) ) {
+			$setting[&#039;description&#039;] = sprintf(
+				/* translators: Placeholders are the opening and closing link tags.*/
+				__( &quot;Before enabling PayPal Standard for Subscriptions, please note, when using PayPal Standard, customers are locked into using PayPal Standard for the life of their subscription, and PayPal Standard has a number of limitations. Please read the guide on %1\$swhy we don&#039;t recommend PayPal Standard%2\$s for Subscriptions before choosing to enable this option.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;a href=&quot;https://docs.woocommerce.com/document/subscriptions/payment-gateways/#paypal-limitations&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039;
+			);
+		}
+
+		$settings = wcs_array_insert_after( &#039;enabled&#039;, $settings, &#039;enabled_for_subscriptions&#039;, $setting );
+
+		return $settings;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

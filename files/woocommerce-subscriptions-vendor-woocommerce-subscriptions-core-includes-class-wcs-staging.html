@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-staging.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions staging mode handler.
+ *
+ * @package WooCommerce Subscriptions
+ * @author  Prospress
+ * @since   2.3.0
+ */
+class WCS_Staging {
+
+	/**
+	 * Attach callbacks.
+	 */
+	public static function init() {
+		add_action( &#039;woocommerce_generated_manual_renewal_order&#039;, array( __CLASS__, &#039;maybe_record_staging_site_renewal&#039; ) );
+		add_filter( &#039;woocommerce_register_post_type_subscription&#039;, array( __CLASS__, &#039;maybe_add_menu_badge&#039; ) );
+		add_action( &#039;wp_loaded&#039;, array( __CLASS__, &#039;maybe_reset_admin_notice&#039; ) );
+		add_action( &#039;woocommerce_admin_order_data_after_billing_address&#039;, array( __CLASS__, &#039;maybe_add_payment_method_note&#039; ) );
+		add_action( &#039;admin_notices&#039;, array( __CLASS__, &#039;handle_site_change_notice&#039; ) );
+	}
+
+	/**
+	 * Add an order note to a renewal order to record when it was created under staging site conditions.
+	 *
+	 * @param int $renewal_order_id The renewal order ID.
+	 * @since 2.3.0
+	 */
+	public static function maybe_record_staging_site_renewal( $renewal_order_id ) {
+
+		if ( ! WCS_Staging::is_duplicate_site() ) {
+			return;
+		}
+
+		$renewal_order = wc_get_order( $renewal_order_id );
+
+		if ( $renewal_order ) {
+			$wp_site_url  = self::get_site_url_from_source( &#039;current_wp_site&#039; );
+			$wcs_site_url = self::get_site_url_from_source( &#039;subscriptions_install&#039; );
+
+			// translators: 1-2: opening/closing &lt;a&gt; tags - linked to staging site, 3: link to live site.
+			$message = sprintf( __( &#039;Payment processing skipped - renewal order created on %1$sstaging site%2$s under staging site lock. Live site is at %3$s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;&#039; . $wp_site_url . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039;, &#039;&lt;a href=&quot;&#039; . $wcs_site_url . &#039;&quot;&gt;&#039; . $wcs_site_url . &#039;&lt;/a&gt;&#039; );
+
+			$renewal_order-&gt;add_order_note( $message );
+		}
+	}
+
+	/**
+	 * Add a badge to the Subscriptions submenu when a site is operating under a staging site lock.
+	 *
+	 * @param array $subscription_order_type_data The WC_Subscription register order type data.
+	 * @since 2.3.0
+	 */
+	public static function maybe_add_menu_badge( $subscription_order_type_data ) {
+
+		if ( isset( $subscription_order_type_data[&#039;labels&#039;][&#039;menu_name&#039;] ) &amp;&amp; WCS_Staging::is_duplicate_site() ) {
+			$subscription_order_type_data[&#039;labels&#039;][&#039;menu_name&#039;] .= &#039;&lt;span class=&quot;update-plugins&quot;&gt;&#039; . esc_html__( &#039;staging&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/span&gt;&#039;;
+		}
+
+		return $subscription_order_type_data;
+	}
+
+	/**
+	 * Handles admin requests to redisplay the staging site admin notice.
+	 *
+	 * @since 2.5.5
+	 */
+	public static function maybe_reset_admin_notice() {
+		if ( isset( $_REQUEST[&#039;wcs_display_staging_notice&#039;] ) &amp;&amp; is_admin() &amp;&amp; current_user_can( &#039;manage_options&#039; ) ) {
+			delete_option( &#039;wcs_ignore_duplicate_siteurl_notice&#039; );
+			wp_safe_redirect( remove_query_arg( array( &#039;wcs_display_staging_notice&#039; ) ) );
+		}
+	}
+
+	/**
+	 * Displays a note under the edit subscription payment method field to explain why the subscription is set to Manual Renewal.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @since 2.6.0
+	 */
+	public static function maybe_add_payment_method_note( $subscription ) {
+		if ( wcs_is_subscription( $subscription ) &amp;&amp; WCS_Staging::is_duplicate_site() &amp;&amp; $subscription-&gt;has_payment_gateway() &amp;&amp; ! $subscription-&gt;get_requires_manual_renewal() ) {
+			printf(
+				&#039;&lt;p&gt;%s&lt;/p&gt;&#039;,
+				esc_html__( &#039;Subscription locked to Manual Renewal while the store is in staging mode. Payment method changes will take effect in live mode.&#039;, &#039;woocommerce-subscriptions&#039; )
+			);
+		}
+	}
+
+	/**
+	 * Returns the content for a tooltip explaining a subscription&#039;s payment method while in staging mode.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @return string HTML content for a tooltip.
+	 * @since 2.6.0
+	 */
+	public static function get_payment_method_tooltip( $subscription ) {
+		// translators: placeholder is a payment method title.
+		return &#039;&lt;div class=&quot;woocommerce-help-tip&quot; data-tip=&quot;&#039; . sprintf( esc_attr__( &#039;Subscription locked to Manual Renewal while the store is in staging mode. Live payment method: %s&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription-&gt;get_payment_method_title() ) . &#039;&quot;&gt;&lt;/div&gt;&#039;;
+	}
+
+	/**
+	 * Displays a notice when Subscriptions is being run on a different site, like a staging or testing site.
+	 *
+	 * @since 4.0.0
+	 */
+	public static function handle_site_change_notice() {
+
+		if ( self::is_duplicate_site() &amp;&amp; current_user_can( &#039;manage_options&#039; ) ) {
+
+			if ( ! empty( $_REQUEST[&#039;_wcsnonce&#039;] ) &amp;&amp; wp_verify_nonce( $_REQUEST[&#039;_wcsnonce&#039;], &#039;wcs_duplicate_site&#039; ) &amp;&amp; isset( $_GET[&#039;wc_subscription_duplicate_site&#039;] ) ) {
+
+				if ( &#039;update&#039; === $_GET[&#039;wc_subscription_duplicate_site&#039;] ) {
+
+					self::set_duplicate_site_url_lock();
+
+				} elseif ( &#039;ignore&#039; === $_GET[&#039;wc_subscription_duplicate_site&#039;] ) {
+
+					update_option( &#039;wcs_ignore_duplicate_siteurl_notice&#039;, self::get_duplicate_site_lock_key() );
+
+				}
+
+				wp_safe_redirect( remove_query_arg( array( &#039;wc_subscription_duplicate_site&#039;, &#039;_wcsnonce&#039; ) ) );
+
+			} elseif ( self::get_duplicate_site_lock_key() !== get_option( &#039;wcs_ignore_duplicate_siteurl_notice&#039; ) ) {
+				$notice = new WCS_Admin_Notice( &#039;error&#039; );
+				$notice-&gt;set_simple_content(
+					sprintf(
+						// translators: 1$-2$: opening and closing &lt;strong&gt; tags. 3$-4$: opening and closing link tags for learn more. Leads to duplicate site article on docs. 5$-6$: Opening and closing link to production URL. 7$: Production URL .
+						esc_html__( &#039;It looks like this site has moved or is a duplicate site. %1$sWooCommerce Subscriptions%2$s has disabled automatic payments and subscription related emails on this site to prevent duplicate payments from a staging or test environment. %1$sWooCommerce Subscriptions%2$s considers %5$s%7$s%6$s to be the site\&#039;s URL. %3$sLearn more &amp;raquo;%4$s.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;&lt;strong&gt;&#039;,
+						&#039;&lt;/strong&gt;&#039;,
+						&#039;&lt;a href=&quot;https://docs.woocommerce.com/document/subscriptions-handles-staging-sites/&quot; target=&quot;_blank&quot;&gt;&#039;,
+						&#039;&lt;/a&gt;&#039;,
+						&#039;&lt;a href=&quot;&#039; . esc_url( self::get_site_url_from_source( &#039;subscriptions_install&#039; ) ) . &#039;&quot; target=&quot;_blank&quot;&gt;&#039;,
+						&#039;&lt;/a&gt;&#039;,
+						esc_url( self::get_site_url_from_source( &#039;subscriptions_install&#039; ) )
+					)
+				);
+				$notice-&gt;set_actions(
+					array(
+						array(
+							&#039;name&#039;  =&gt; __( &#039;Quit nagging me (but don\&#039;t enable automatic payments)&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;url&#039;   =&gt; wp_nonce_url( add_query_arg( &#039;wc_subscription_duplicate_site&#039;, &#039;ignore&#039; ), &#039;wcs_duplicate_site&#039;, &#039;_wcsnonce&#039; ),
+							&#039;class&#039; =&gt; &#039;button button-primary&#039;,
+						),
+						array(
+							&#039;name&#039;  =&gt; __( &#039;Enable automatic payments&#039;, &#039;woocommerce-subscriptions&#039; ),
+							&#039;url&#039;   =&gt; wp_nonce_url( add_query_arg( &#039;wc_subscription_duplicate_site&#039;, &#039;update&#039; ), &#039;wcs_duplicate_site&#039;, &#039;_wcsnonce&#039; ),
+							&#039;class&#039; =&gt; &#039;button&#039;,
+						),
+					)
+				);
+
+				$notice-&gt;display();
+			}
+		}
+	}
+
+	/**
+	 * Generates a unique key based on the sites URL used to determine duplicate/staging sites.
+	 *
+	 * The key can not simply be the site URL, e.g. http://example.com, because some hosts (WP Engine) replaces all
+	 * instances of the site URL in the database when creating a staging site. As a result, we obfuscate
+	 * the URL by inserting &#039;_[wc_subscriptions_siteurl]_&#039; into the middle of it.
+	 *
+	 * We don&#039;t use a hash because keeping the URL in the value allows for viewing and editing the URL
+	 * directly in the database.
+	 *
+	 * @since 4.0.0
+	 * @return string The duplicate lock key.
+	 */
+	public static function get_duplicate_site_lock_key() {
+		$site_url = self::get_site_url_from_source( &#039;current_wp_site&#039; );
+		$scheme   = parse_url( $site_url, PHP_URL_SCHEME ) . &#039;://&#039;;
+		$site_url = str_replace( $scheme, &#039;&#039;, $site_url );
+
+		return $scheme . substr_replace( $site_url, &#039;_[wc_subscriptions_siteurl]_&#039;, strlen( $site_url ) / 2, 0 );
+	}
+
+	/**
+	 * Sets the duplicate site lock key to record the site&#039;s &quot;live&quot; url.
+	 *
+	 * This key is checked to determine if this database has moved to a different URL.
+	 *
+	 * @see self::get_duplicate_site_lock_key() which generates the key.
+	 *
+	 * @since 4.0.0
+	 */
+	public static function set_duplicate_site_url_lock() {
+		update_option( &#039;wc_subscriptions_siteurl&#039;, self::get_duplicate_site_lock_key() );
+	}
+
+	/**
+	 * Determines if this is a duplicate/staging site.
+	 *
+	 * Checks if the WordPress site URL is the same as the URL subscriptions considers
+	 * the live URL (@see self::set_duplicate_site_url_lock()).
+	 *
+	 * @since 4.0.0
+	 * @return bool Whether the site is a duplicate URL or not.
+	 */
+	public static function is_duplicate_site() {
+		$wp_site_url_parts  = wp_parse_url( self::get_site_url_from_source( &#039;current_wp_site&#039; ) );
+		$wcs_site_url_parts = wp_parse_url( self::get_site_url_from_source( &#039;subscriptions_install&#039; ) );
+
+		if ( ! isset( $wp_site_url_parts[&#039;path&#039;] ) &amp;&amp; ! isset( $wcs_site_url_parts[&#039;path&#039;] ) ) {
+			$paths_match = true;
+		} elseif ( isset( $wp_site_url_parts[&#039;path&#039;] ) &amp;&amp; isset( $wcs_site_url_parts[&#039;path&#039;] ) &amp;&amp; $wp_site_url_parts[&#039;path&#039;] == $wcs_site_url_parts[&#039;path&#039;] ) {
+			$paths_match = true;
+		} else {
+			$paths_match = false;
+		}
+
+		if ( isset( $wp_site_url_parts[&#039;host&#039;] ) &amp;&amp; isset( $wcs_site_url_parts[&#039;host&#039;] ) &amp;&amp; $wp_site_url_parts[&#039;host&#039;] == $wcs_site_url_parts[&#039;host&#039;] ) {
+			$hosts_match = true;
+		} else {
+			$hosts_match = false;
+		}
+
+		// Check the host and path, do not check the protocol/scheme to avoid issues with WP Engine and other occasions where the WP_SITEURL constant may be set, but being overridden (e.g. by FORCE_SSL_ADMIN)
+		if ( $paths_match &amp;&amp; $hosts_match ) {
+			$is_duplicate = false;
+		} else {
+			$is_duplicate = true;
+		}
+
+		return apply_filters( &#039;woocommerce_subscriptions_is_duplicate_site&#039;, $is_duplicate );
+	}
+
+	/**
+	 * Gets the URL Subscriptions considers as the live site URL.
+	 *
+	 * This URL is set by @see WCS_Staging::set_duplicate_site_url_lock(). This function removes the obfuscation to get a raw URL.
+	 *
+	 * @since 4.0.0
+	 *
+	 * @param int|null    $blog_id The blog to get the URL for. Optional. Default is null. Used for multisites only.
+	 * @param string      $path    The URL path to append. Optional. Default is &#039;&#039;.
+	 * @param string|null $scheme  The URL scheme passed to @see set_url_scheme(). Optional. Default is null which automatically returns the URL as https or http depending on @see is_ssl().
+	 */
+	public static function get_live_site_url( $blog_id = null, $path = &#039;&#039;, $scheme = null ) {
+		if ( empty( $blog_id ) || ! is_multisite() ) {
+			$url = get_option( &#039;wc_subscriptions_siteurl&#039; );
+		} else {
+			switch_to_blog( $blog_id );
+			$url = get_option( &#039;wc_subscriptions_siteurl&#039; );
+			restore_current_blog();
+		}
+
+		// Remove the prefix used to prevent the site URL being updated on WP Engine
+		$url = str_replace( &#039;_[wc_subscriptions_siteurl]_&#039;, &#039;&#039;, $url );
+
+		$url = set_url_scheme( $url, $scheme );
+
+		if ( ! empty( $path ) &amp;&amp; is_string( $path ) &amp;&amp; strpos( $path, &#039;..&#039; ) === false ) {
+			$url .= &#039;/&#039; . ltrim( $path, &#039;/&#039; );
+		}
+
+		return apply_filters( &#039;wc_subscriptions_site_url&#039;, $url, $path, $scheme, $blog_id );
+	}
+
+	/**
+	 * Gets the sites WordPress or Subscriptions URL.
+	 *
+	 * WordPress - This is typically the URL the current site is accessable via.
+	 * Subscriptions is the URL Subscritpions considers to be the URL to process live payments on. It may differ to the WP URL if the site has moved.
+	 *
+	 * @since 4.0.0
+	 *
+	 * @param string $source The URL source to get. Optional. Takes values &#039;current_wp_site&#039; or &#039;subscriptions_install&#039;. Default is &#039;current_wp_site&#039; - the URL WP considers to be the site&#039;s.
+	 * @return string The URL.
+	 */
+	public static function get_site_url_from_source( $source = &#039;current_wp_site&#039; ) {
+		// Let the default source be WP
+		if ( &#039;subscriptions_install&#039; === $source ) {
+			$site_url = self::get_live_site_url();
+		} elseif ( ! is_multisite() &amp;&amp; defined( &#039;WP_SITEURL&#039; ) ) {
+			$site_url = WP_SITEURL;
+		} else {
+			$site_url = get_site_url();
+		}
+
+		return $site_url;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

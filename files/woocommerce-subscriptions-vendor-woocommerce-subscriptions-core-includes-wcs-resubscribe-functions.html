@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-resubscribe-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_order_contains_resubscribe">
+        wcs_order_contains_resubscribe()
+        <a href="#function_wcs_order_contains_resubscribe" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-resubscribe-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-resubscribe-functions.html#source-view.23">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-resubscribe-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check if a given order was created to resubscribe to a cancelled or expired subscription.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_order_contains_resubscribe</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The WC_Order object or ID of a WC_Order order.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_create_resubscribe_order">
+        wcs_create_resubscribe_order()
+        <a href="#function_wcs_create_resubscribe_order" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-resubscribe-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-resubscribe-functions.html#source-view.51">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-resubscribe-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Create a resubscribe order to record a customer resubscribing to an expired or cancelled subscription.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_create_resubscribe_order</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>This method is a wrapper for @see wcs_create_order() which creates an order with the same post meta, order
+items and order item meta as the subscription passed to it. No trial periods or sign up fees are applied
+to resubscribe orders.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_users_resubscribe_link">
+        wcs_get_users_resubscribe_link()
+        <a href="#function_wcs_get_users_resubscribe_link" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-resubscribe-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-resubscribe-functions.html#source-view.73">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-resubscribe-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns a URL including required parameters for an authenticated user to renew a subscription</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_users_resubscribe_link</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_users_resubscribe_link_for_product">
+        wcs_get_users_resubscribe_link_for_product()
+        <a href="#function_wcs_get_users_resubscribe_link_for_product" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-resubscribe-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-resubscribe-functions.html#source-view.89">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-resubscribe-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns a URL including required parameters for an authenticated user to renew a subscription by product ID.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_users_resubscribe_link_for_product</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$product_id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$product_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The ID of a product post type.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.2</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_cart_contains_resubscribe">
+        wcs_cart_contains_resubscribe()
+        <a href="#function_wcs_cart_contains_resubscribe" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-resubscribe-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-resubscribe-functions.html#source-view.114">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-resubscribe-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">114</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks the cart to see if it contains a subscription product renewal.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_cart_contains_resubscribe</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cart</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cart</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscriptions_for_resubscribe_order">
+        wcs_get_subscriptions_for_resubscribe_order()
+        <a href="#function_wcs_get_subscriptions_for_resubscribe_order" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-resubscribe-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-resubscribe-functions.html#source-view.140">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-resubscribe-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">140</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get the subscription to which a renewal order relates.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscriptions_for_resubscribe_order</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The WC_Order object or ID of a WC_Order order.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_can_user_resubscribe_to">
+        wcs_can_user_resubscribe_to()
+        <a href="#function_wcs_can_user_resubscribe_to" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-resubscribe-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-resubscribe-functions.html#source-view.163">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-resubscribe-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">163</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check if a user can resubscribe to an expired or cancelled subscription by creating a
+new subscription with the same terms.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_can_user_resubscribe_to</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user_id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>For it to be possible to resubscribe to a subscription, the user specified with $user_id must
+and the subscription must:</p>
+<ol>
+<li>be be inactive (expired or cancelled)</li>
+<li>had at least one payment, to avoid circumventing sign-up fees</li>
+<li>its parent order must not have already been superseded by a new order (to prevent
+displaying &quot;Resubscribe&quot; links on subscriptions that have already been renewed)</li>
+<li>the products to which the subscription relates must not have been deleted</li>
+<li>have a recurring amount greater than $0, to avoid allowing resubscribes to subscriptions
+where the entire cost is charged in a sign-up fee</li>
+</ol>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Resubscribe Functions
+ *
+ * Functions for managing resubscribing to expired or cancelled subscriptions.
+ *
+ * @author Prospress
+ * @category Core
+ * @package WooCommerce Subscriptions/Functions
+ * @version     2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * Check if a given order was created to resubscribe to a cancelled or expired subscription.
+ *
+ * @param WC_Order|int $order The WC_Order object or ID of a WC_Order order.
+ * @since 2.0
+ */
+function wcs_order_contains_resubscribe( $order ) {
+
+	if ( ! is_a( $order, &#039;WC_Abstract_Order&#039; ) ) {
+		$order = wc_get_order( $order );
+	}
+
+	$related_subscriptions = wcs_get_subscriptions_for_resubscribe_order( $order );
+
+	if ( wcs_is_order( $order ) &amp;&amp; ! empty( $related_subscriptions ) ) {
+		$is_resubscribe_order = true;
+	} else {
+		$is_resubscribe_order = false;
+	}
+
+	return apply_filters( &#039;woocommerce_subscriptions_is_resubscribe_order&#039;, $is_resubscribe_order, $order );
+}
+
+/**
+ * Create a resubscribe order to record a customer resubscribing to an expired or cancelled subscription.
+ *
+ * This method is a wrapper for @see wcs_create_order() which creates an order with the same post meta, order
+ * items and order item meta as the subscription passed to it. No trial periods or sign up fees are applied
+ * to resubscribe orders.
+ *
+ * @param  int | WC_Subscription $subscription Post ID of a &#039;shop_subscription&#039; post, or instance of a WC_Subscription object
+ * @return WC_Subscription
+ * @since  2.0
+ */
+function wcs_create_resubscribe_order( $subscription ) {
+
+	$resubscribe_order = wcs_create_order_from_subscription( $subscription, &#039;resubscribe_order&#039; );
+
+	if ( is_wp_error( $resubscribe_order ) ) {
+		return new WP_Error( &#039;resubscribe-order-error&#039;, $resubscribe_order-&gt;get_error_message() );
+	}
+
+	WCS_Related_Order_Store::instance()-&gt;add_relation( $resubscribe_order, $subscription, &#039;resubscribe&#039; );
+
+	do_action( &#039;wcs_resubscribe_order_created&#039;, $resubscribe_order, $subscription );
+
+	return $resubscribe_order;
+}
+
+/**
+ * Returns a URL including required parameters for an authenticated user to renew a subscription
+ *
+ * @param  int | WC_Subscription $subscription Post ID of a &#039;shop_subscription&#039; post, or instance of a WC_Subscription object
+ * @return string
+ * @since  2.0
+ */
+function wcs_get_users_resubscribe_link( $subscription ) {
+
+	$subscription_id  = ( is_object( $subscription ) ) ? $subscription-&gt;get_id() : $subscription;
+
+	$resubscribe_link = add_query_arg( array( &#039;resubscribe&#039; =&gt; $subscription_id ), get_permalink( wc_get_page_id( &#039;myaccount&#039; ) ) );
+	$resubscribe_link = wp_nonce_url( $resubscribe_link, $subscription_id );
+
+	return apply_filters( &#039;wcs_users_resubscribe_link&#039;, $resubscribe_link, $subscription_id );
+}
+
+/**
+ * Returns a URL including required parameters for an authenticated user to renew a subscription by product ID.
+ *
+ * @param int $product_id The ID of a product post type.
+ * @since 1.2
+ */
+function wcs_get_users_resubscribe_link_for_product( $product_id ) {
+
+	$renewal_url = &#039;&#039;;
+
+	if ( is_user_logged_in() ) {
+		foreach ( wcs_get_users_subscriptions() as $subscription ) {
+			foreach ( $subscription-&gt;get_items() as $line_item ) {
+				if ( ( $line_item[&#039;product_id&#039;] == $product_id || $line_item[&#039;variation_id&#039;] == $product_id ) &amp;&amp; wcs_can_user_resubscribe_to( $subscription ) ) {
+					$renewal_url = wcs_get_users_resubscribe_link( $subscription );
+					break;
+				}
+			}
+		}
+	}
+
+	return apply_filters( &#039;wcs_users_resubscribe_link_for_product&#039;, $renewal_url, $product_id );
+}
+
+/**
+ * Checks the cart to see if it contains a subscription product renewal.
+ *
+ * @param  bool | Array The cart item containing the renewal, else false.
+ * @return string
+ * @since  2.0
+ */
+function wcs_cart_contains_resubscribe( $cart = &#039;&#039; ) {
+
+	$contains_resubscribe = false;
+
+	if ( empty( $cart ) ) {
+		$cart = WC()-&gt;cart;
+	}
+
+	if ( ! empty( $cart-&gt;cart_contents ) ) {
+		foreach ( $cart-&gt;cart_contents as $cart_item ) {
+			if ( isset( $cart_item[&#039;subscription_resubscribe&#039;] ) ) {
+				$contains_resubscribe = $cart_item;
+				break;
+			}
+		}
+	}
+
+	return apply_filters( &#039;wcs_cart_contains_resubscribe&#039;, $contains_resubscribe, $cart );
+}
+
+/**
+ * Get the subscription to which a renewal order relates.
+ *
+ * @param WC_Order|int $order The WC_Order object or ID of a WC_Order order.
+ * @since 2.0
+ */
+function wcs_get_subscriptions_for_resubscribe_order( $order ) {
+	return wcs_get_subscriptions_for_order( $order, array( &#039;order_type&#039; =&gt; &#039;resubscribe&#039; ) );
+}
+
+/**
+ * Check if a user can resubscribe to an expired or cancelled subscription by creating a
+ * new subscription with the same terms.
+ *
+ * For it to be possible to resubscribe to a subscription, the user specified with $user_id must
+ * and the subscription must:
+ * 1. be be inactive (expired or cancelled)
+ * 2. had at least one payment, to avoid circumventing sign-up fees
+ * 3. its parent order must not have already been superseded by a new order (to prevent
+ *    displaying &quot;Resubscribe&quot; links on subscriptions that have already been renewed)
+ * 4. the products to which the subscription relates must not have been deleted
+ * 5. have a recurring amount greater than $0, to avoid allowing resubscribes to subscriptions
+ *    where the entire cost is charged in a sign-up fee
+ *
+ * @param  int | WC_Subscription $subscription Post ID of a &#039;shop_subscription&#039; post, or instance of a WC_Subscription object
+ * @param  int The ID of a user
+ * @return bool
+ * @since  2.0
+ */
+function wcs_can_user_resubscribe_to( $subscription, $user_id = &#039;&#039; ) {
+
+	if ( ! is_object( $subscription ) ) {
+		$subscription = wcs_get_subscription( $subscription );
+	}
+
+	if ( empty( $user_id ) ) {
+		$user_id = get_current_user_id();
+	}
+
+	if ( empty( $subscription ) ) {
+
+		$can_user_resubscribe = false;
+
+	} elseif ( ! user_can( $user_id, &#039;subscribe_again&#039;, $subscription-&gt;get_id() ) ) {
+
+		$can_user_resubscribe = false;
+
+	} elseif ( ! $subscription-&gt;has_status( array( &#039;pending-cancel&#039;, &#039;cancelled&#039;, &#039;expired&#039;, &#039;trash&#039; ) ) ) {
+
+		$can_user_resubscribe = false;
+
+	} elseif ( $subscription-&gt;get_total() &lt;= 0 ) {
+
+		$can_user_resubscribe = false;
+
+	} else {
+
+		$resubscribe_order_ids = $subscription-&gt;get_related_orders( &#039;ids&#039;, &#039;resubscribe&#039; );
+
+		// Make sure all line items still exist
+		$all_line_items_exist = true;
+
+		// Check if product in subscription is limited
+		$has_active_limited_subscription = false;
+
+		foreach ( $subscription-&gt;get_items() as $line_item ) {
+
+			$product = ( ! empty( $line_item[&#039;variation_id&#039;] ) ) ? wc_get_product( $line_item[&#039;variation_id&#039;] ) : wc_get_product( $line_item[&#039;product_id&#039;] );
+
+			if ( false === $product ) {
+				$all_line_items_exist = false;
+				break;
+			}
+
+			if ( &#039;active&#039; === wcs_get_product_limitation( $product ) ) {
+				if ( $product-&gt;is_type( &#039;variation&#039; ) ) {
+					$limited_product_id = $product-&gt;get_parent_id();
+				} else {
+					$limited_product_id = $product-&gt;get_id();
+				}
+
+				if ( wcs_user_has_subscription( $user_id, $limited_product_id, &#039;on-hold&#039; ) || wcs_user_has_subscription( $user_id, $limited_product_id, &#039;active&#039; ) ) {
+					$has_active_limited_subscription = true;
+					break;
+				}
+			}
+		}
+
+		if ( empty( $resubscribe_order_ids ) &amp;&amp; $subscription-&gt;get_payment_count() &gt; 0 &amp;&amp; true === $all_line_items_exist &amp;&amp; false === $has_active_limited_subscription ) {
+			$can_user_resubscribe = true;
+		} else {
+			$can_user_resubscribe = false;
+		}
+	}
+
+	return apply_filters( &#039;wcs_can_user_resubscribe_to_subscription&#039;, $can_user_resubscribe, $subscription, $user_id );
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

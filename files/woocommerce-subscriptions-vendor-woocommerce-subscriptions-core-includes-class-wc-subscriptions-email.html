@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-email.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Subscriptions Email Class
+ *
+ * Modifies the base WooCommerce email class and extends it to send subscription emails.
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Email
+ * @category   Class
+ * @author     Prospress
+ */
+class WC_Subscriptions_Email {
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 *
+	 * @since 1.0
+	 */
+	public static function init() {
+
+		add_action( &#039;woocommerce_email_classes&#039;, __CLASS__ . &#039;::add_emails&#039;, 10, 1 );
+
+		add_action( &#039;woocommerce_init&#039;, __CLASS__ . &#039;::hook_transactional_emails&#039; );
+
+		add_filter( &#039;woocommerce_resend_order_emails_available&#039;, __CLASS__ . &#039;::renewal_order_emails_available&#039;, -1 ); // run before other plugins so we don&#039;t remove their emails
+
+		add_action( &#039;woocommerce_subscriptions_email_order_details&#039;, __CLASS__ . &#039;::order_download_details&#039;, 10, 4 );
+		add_action( &#039;woocommerce_subscriptions_email_order_details&#039;, __CLASS__ . &#039;::order_details&#039;, 10, 4 );
+	}
+
+	/**
+	 * Add Subscriptions&#039; email classes.
+	 *
+	 * @since 1.4
+	 */
+	public static function add_emails( $email_classes ) {
+		$email_classes[&#039;WCS_Email_New_Renewal_Order&#039;]              = new WCS_Email_New_Renewal_Order();
+		$email_classes[&#039;WCS_Email_New_Switch_Order&#039;]               = new WCS_Email_New_Switch_Order();
+		$email_classes[&#039;WCS_Email_Processing_Renewal_Order&#039;]       = new WCS_Email_Processing_Renewal_Order();
+		$email_classes[&#039;WCS_Email_Completed_Renewal_Order&#039;]        = new WCS_Email_Completed_Renewal_Order();
+		$email_classes[&#039;WCS_Email_Customer_On_Hold_Renewal_Order&#039;] = new WCS_Email_Customer_On_Hold_Renewal_Order();
+		$email_classes[&#039;WCS_Email_Completed_Switch_Order&#039;]         = new WCS_Email_Completed_Switch_Order();
+		$email_classes[&#039;WCS_Email_Customer_Renewal_Invoice&#039;]       = new WCS_Email_Customer_Renewal_Invoice();
+		$email_classes[&#039;WCS_Email_Cancelled_Subscription&#039;]         = new WCS_Email_Cancelled_Subscription();
+		$email_classes[&#039;WCS_Email_Expired_Subscription&#039;]           = new WCS_Email_Expired_Subscription();
+		$email_classes[&#039;WCS_Email_On_Hold_Subscription&#039;]           = new WCS_Email_On_Hold_Subscription();
+
+		return $email_classes;
+	}
+
+	/**
+	 * Hooks up all of Subscription&#039;s transaction emails after the WooCommerce object is constructed.
+	 *
+	 * @since 1.4
+	 */
+	public static function hook_transactional_emails() {
+
+		$order_email_actions = array(
+			// WC New Order Emails (Admin) -- other hooks below also trigger this email.
+			&#039;woocommerce_order_status_pending_to_completed&#039;,
+			&#039;woocommerce_order_status_failed_to_completed&#039;,
+			&#039;woocommerce_order_status_cancelled_to_completed&#039;,
+
+			// WC Order Processing Emails.
+			&#039;woocommerce_order_status_pending_to_processing&#039;,
+			&#039;woocommerce_order_status_failed_to_processing&#039;,
+			&#039;woocommerce_order_status_cancelled_to_processing&#039;,
+			&#039;woocommerce_order_status_on-hold_to_processing&#039;,
+
+			// WC Order Completed Emails.
+			&#039;woocommerce_order_status_completed&#039;,
+
+			// WC On-hold Order Emails.
+			&#039;woocommerce_order_status_pending_to_on-hold&#039;,
+			&#039;woocommerce_order_status_failed_to_on-hold&#039;,
+			&#039;woocommerce_order_status_cancelled_to_on-hold&#039;,
+
+			// WCS Order Invoice Emails.
+			&#039;woocommerce_generated_manual_renewal_order&#039;,
+			&#039;woocommerce_order_status_failed&#039;,
+		);
+
+		// Don&#039;t send subscriptions emails or WC core emails for subscription-related events on staging sites.
+		if ( WCS_Staging::is_duplicate_site() &amp;&amp; ! defined( &#039;WCS_FORCE_EMAIL&#039; ) ) {
+			// Unhook WC order core emails which would normally be replaced by a subscription version on a live site.
+			foreach ( $order_email_actions as $action ) {
+				add_action( $action, __CLASS__ . &#039;::maybe_remove_woocommerce_email&#039;, 9 );
+			}
+			return;
+		}
+
+		add_action( &#039;woocommerce_subscription_status_updated&#039;, __CLASS__ . &#039;::send_cancelled_email&#039;, 10, 2 );
+		add_action( &#039;woocommerce_subscription_status_expired&#039;, __CLASS__ . &#039;::send_expired_email&#039;, 10, 2 );
+		add_action( &#039;woocommerce_customer_changed_subscription_to_on-hold&#039;, __CLASS__ . &#039;::send_on_hold_email&#039;, 10, 2 );
+		add_action( &#039;woocommerce_subscriptions_switch_completed&#039;, __CLASS__ . &#039;::send_switch_order_email&#039;, 10 );
+
+		foreach ( $order_email_actions as $action ) {
+			add_action( $action, __CLASS__ . &#039;::maybe_remove_woocommerce_email&#039;, 9 );
+			add_action( $action, __CLASS__ . &#039;::send_renewal_order_email&#039;, 10 );
+			add_action( $action, __CLASS__ . &#039;::maybe_reattach_woocommerce_email&#039;, 11 );
+		}
+	}
+
+	/**
+	 * Init the mailer and call for the cancelled email notification hook.
+	 *
+	 * @param $subscription WC Subscription
+	 * @since 2.0
+	 */
+	public static function send_cancelled_email( $subscription ) {
+		WC()-&gt;mailer();
+
+		if ( $subscription-&gt;has_status( array( &#039;pending-cancel&#039;, &#039;cancelled&#039; ) ) &amp;&amp; &#039;true&#039; !== get_post_meta( $subscription-&gt;get_id(), &#039;_cancelled_email_sent&#039;, true ) ) {
+			do_action( &#039;cancelled_subscription_notification&#039;, $subscription );
+		}
+	}
+
+	/**
+	 * Init the mailer and call for the expired email notification hook.
+	 *
+	 * @param $subscription WC Subscription
+	 * @since 2.1
+	 */
+	public static function send_expired_email( $subscription ) {
+		WC()-&gt;mailer();
+
+		do_action( &#039;expired_subscription_notification&#039;, $subscription );
+	}
+
+	/**
+	 * Init the mailer and call for the suspended email notification hook.
+	 *
+	 * @param $subscription WC Subscription
+	 * @since 2.1
+	 */
+	public static function send_on_hold_email( $subscription ) {
+		WC()-&gt;mailer();
+
+		do_action( &#039;on-hold_subscription_notification&#039;, $subscription );
+	}
+
+	/**
+	 * Init the mailer and call the notifications for the renewal orders.
+	 *
+	 * @param int $order_id The order ID.
+	 */
+	public static function send_renewal_order_email( $order_id ) {
+		WC()-&gt;mailer();
+
+		if ( wcs_order_contains_renewal( $order_id ) ) {
+			do_action( current_filter() . &#039;_renewal_notification&#039;, $order_id );
+		}
+	}
+
+	/**
+	 * If the order is a renewal order or a switch order, don&#039;t send core emails.
+	 *
+	 * @param int $order_id The order ID.
+	 */
+	public static function maybe_remove_woocommerce_email( $order_id ) {
+		if ( wcs_order_contains_renewal( $order_id ) || wcs_order_contains_switch( $order_id ) ) {
+			self::detach_woocommerce_transactional_email();
+		}
+	}
+
+	/**
+	 * If the order is a renewal order or a switch order, send core emails
+	 *
+	 * @param int $order_id The order ID.
+	 */
+	public static function maybe_reattach_woocommerce_email( $order_id ) {
+		if ( wcs_order_contains_renewal( $order_id ) || wcs_order_contains_switch( $order_id ) ) {
+			self::attach_woocommerce_transactional_email();
+		}
+	}
+
+	/**
+	 * If viewing a renewal order on the the Edit Order screen, set the available email actions for the order to use
+	 * renewal order emails, not core WooCommerce order emails.
+	 *
+	 * @param array $available_emails The emails available to send from the edit order screen.
+	 */
+	public static function renewal_order_emails_available( $available_emails ) {
+		global $theorder;
+
+		if ( wcs_order_contains_renewal( wcs_get_objects_property( $theorder, &#039;id&#039; ) ) ) {
+			$available_emails = array(
+				&#039;new_renewal_order&#039;,
+				&#039;customer_processing_renewal_order&#039;,
+				&#039;customer_completed_renewal_order&#039;,
+			);
+
+			if ( $theorder-&gt;needs_payment() ) {
+				array_push( $available_emails, &#039;customer_renewal_invoice&#039; );
+			}
+		}
+
+		return $available_emails;
+	}
+
+	/**
+	 * Init the mailer and call the notifications for subscription switch orders.
+	 *
+	 * @param int $order_id The order ID.
+	 */
+	public static function send_switch_order_email( $order_id ) {
+		WC()-&gt;mailer();
+
+		if ( wcs_order_contains_switch( $order_id ) ) {
+			do_action( current_filter() . &#039;_switch_notification&#039;, $order_id );
+		}
+	}
+
+	/**
+	 * Generate an order items table using a WC compatible version of the function.
+	 *
+	 * @param object $order
+	 * @param array $args {
+	 *     @type bool  &#039;show_download_links&#039;
+	 *     @type bool  &#039;show_sku&#039;
+	 *     @type bool  &#039;show_purchase_note&#039;
+	 *     @type array &#039;image_size&#039;
+	 *     @type bool  &#039;plain_text&#039;
+	 * }
+	 * @return string email order items table html
+	 */
+	public static function email_order_items_table( $order, $args = array() ) {
+		$items_table = &#039;&#039;;
+
+		if ( is_numeric( $order ) ) {
+			$order = wc_get_order( $order );
+		}
+
+		if ( is_a( $order, &#039;WC_Abstract_Order&#039; ) ) {
+			$show_download_links_callback = ( isset( $args[&#039;show_download_links&#039;] ) &amp;&amp; $args[&#039;show_download_links&#039;] ) ? &#039;__return_true&#039; : &#039;__return_false&#039;;
+			$show_purchase_note_callback  = ( isset( $args[&#039;show_purchase_note&#039;] ) &amp;&amp; $args[&#039;show_purchase_note&#039;] ) ? &#039;__return_true&#039; : &#039;__return_false&#039;;
+
+			unset( $args[&#039;show_download_links&#039;] );
+			unset( $args[&#039;show_purchase_note&#039;] );
+
+			add_filter( &#039;woocommerce_order_is_download_permitted&#039;, $show_download_links_callback );
+			add_filter( &#039;woocommerce_order_is_paid&#039;, $show_purchase_note_callback );
+
+			if ( function_exists( &#039;wc_get_email_order_items&#039; ) ) { // WC 3.0+
+				$items_table = wc_get_email_order_items( $order, $args );
+			} else {
+				$items_table = $order-&gt;email_order_items_table( $args );
+			}
+
+			remove_filter( &#039;woocommerce_order_is_download_permitted&#039;, $show_download_links_callback );
+			remove_filter( &#039;woocommerce_order_is_paid&#039;, $show_purchase_note_callback );
+		}
+
+		return $items_table;
+	}
+
+	/**
+	 * Show the order details table
+	 *
+	 * @param WC_Order $order
+	 * @param bool $sent_to_admin Whether the email is sent to admin - defaults to false
+	 * @param bool $plain_text Whether the email should use plain text templates - defaults to false
+	 * @param WC_Email $email
+	 * @since 2.1
+	 */
+	public static function order_details( $order, $sent_to_admin = false, $plain_text = false, $email = &#039;&#039; ) {
+
+		$order_items_table_args = array(
+			&#039;show_download_links&#039; =&gt; ( $sent_to_admin ) ? false : $order-&gt;is_download_permitted(),
+			&#039;show_sku&#039;            =&gt; $sent_to_admin,
+			&#039;show_purchase_note&#039;  =&gt; ( $sent_to_admin ) ? false : $order-&gt;has_status( apply_filters( &#039;woocommerce_order_is_paid_statuses&#039;, array( &#039;processing&#039;, &#039;completed&#039; ) ) ),
+			&#039;show_image&#039;          =&gt; &#039;&#039;,
+			&#039;image_size&#039;          =&gt; &#039;&#039;,
+			&#039;plain_text&#039;          =&gt; $plain_text,
+		);
+
+		$template_path = ( $plain_text ) ? &#039;emails/plain/email-order-details.php&#039; : &#039;emails/email-order-details.php&#039;;
+		$order_type    = ( wcs_is_subscription( $order ) ) ? &#039;subscription&#039; : &#039;order&#039;;
+
+		wc_get_template(
+			$template_path,
+			array(
+				&#039;order&#039;                  =&gt; $order,
+				&#039;sent_to_admin&#039;          =&gt; $sent_to_admin,
+				&#039;plain_text&#039;             =&gt; $plain_text,
+				&#039;email&#039;                  =&gt; $email,
+				&#039;order_type&#039;             =&gt; $order_type,
+				&#039;order_items_table_args&#039; =&gt; $order_items_table_args,
+			),
+			&#039;&#039;,
+			WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; )
+		);
+	}
+
+	/**
+	 * Detach WC transactional emails from a specific hook.
+	 *
+	 * @param string Optional. The action hook or filter to detach WC core&#039;s transactional emails from. Defaults to the current filter.
+	 * @param int Optional. The priority the function runs on. Default 10.
+	 * @since 2.2.3
+	 */
+	public static function detach_woocommerce_transactional_email( $hook = &#039;&#039;, $priority = 10 ) {
+
+		if ( &#039;&#039; === $hook ) {
+			$hook = current_filter();
+		}
+
+		// Emails might be queued or sent immediately so we need to remove both
+		remove_action( $hook, array( &#039;WC_Emails&#039;, &#039;queue_transactional_email&#039; ), $priority );
+		remove_action( $hook, array( &#039;WC_Emails&#039;, &#039;send_transactional_email&#039; ), $priority );
+	}
+
+	/**
+	 * Attach WC transactional emails to a specific hook.
+	 *
+	 * @param string Optional. The action hook or filter to attach WC core&#039;s transactional emails to. Defaults to the current filter.
+	 * @param int Optional. The priority the function should run on. Default 10.
+	 * @param int Optional. The number of arguments the function accepts. Default 10.
+	 * @since 2.2.3
+	 */
+	public static function attach_woocommerce_transactional_email( $hook = &#039;&#039;, $priority = 10, $accepted_args = 10 ) {
+
+		if ( &#039;&#039; === $hook ) {
+			$hook = current_filter();
+		}
+
+		if ( false === wcs_is_woocommerce_pre( &#039;3.0&#039; ) &amp;&amp; apply_filters( &#039;woocommerce_defer_transactional_emails&#039;, false ) ) {
+			add_action( $hook, array( &#039;WC_Emails&#039;, &#039;queue_transactional_email&#039; ), $priority, $accepted_args );
+		} else {
+			add_action( $hook, array( &#039;WC_Emails&#039;, &#039;send_transactional_email&#039; ), $priority, $accepted_args );
+		}
+	}
+
+	/**
+	 * With WooCommerce 3.2+ active display the downloads table.
+	 *
+	 * @param WC_Order $order
+	 * @param bool $sent_to_admin Whether the email is sent to admin - defaults to false
+	 * @param bool $plain_text Whether the email should use plain text templates - defaults to false
+	 * @param WC_Email $email
+	 * @since 2.2.17
+	 */
+	public static function order_download_details( $order, $sent_to_admin = false, $plain_text = false, $email = &#039;&#039; ) {
+		if ( is_callable( array( &#039;WC_Emails&#039;, &#039;order_downloads&#039; ) ) ) {
+			WC_Emails::instance()-&gt;order_downloads( $order, $sent_to_admin, $plain_text, $email );
+		}
+	}
+
+	/**
+	 * Init the mailer and call the notifications for the current filter.
+	 *
+	 * @param int $user_id The ID of the user who the subscription belongs to
+	 * @param string $subscription_key A subscription key of the form created by @see self::get_subscription_key()
+	 * @return void
+	 * @deprecated 2.0
+	 */
+	public static function send_subscription_email( $user_id, $subscription_key ) {
+		_deprecated_function( __FUNCTION__, &#039;2.0&#039; );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

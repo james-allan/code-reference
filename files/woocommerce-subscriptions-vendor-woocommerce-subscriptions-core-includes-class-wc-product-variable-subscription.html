@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-product-variable-subscription.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Variable Subscription Product Class
+ *
+ * This class extends the WC Variable product class to create variable products with recurring payments.
+ *
+ * @class WC_Product_Variable_Subscription
+ * @package WooCommerce Subscriptions
+ * @category Class
+ * @since 1.3
+ *
+ */
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WC_Product_Variable_Subscription extends WC_Product_Variable {
+
+	/**
+	 * A cache of the variable product&#039;s min and max data generated by @see wcs_get_min_max_variation_data().
+	 *
+	 * @var array
+	 */
+	protected $min_max_variation_data = array();
+
+	/**
+	 * A cache of the variable product&#039;s sorted variation prices.
+	 *
+	 * @var array
+	 */
+	private $sorted_variation_prices = array();
+
+	/**
+	 * Get internal type.
+	 *
+	 * @return string
+	 */
+	public function get_type() {
+		return &#039;variable-subscription&#039;;
+	}
+
+	/**
+	 * Auto-load in-accessible properties on demand.
+	 *
+	 * @param mixed $key
+	 * @return mixed
+	 */
+	public function __get( $key ) {
+
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			$value = parent::__get( $key );
+		} else {
+			$value = wcs_product_deprecated_property_handler( $key, $this );
+
+			// No matching property found in wcs_product_deprecated_property_handler()
+			if ( is_null( $value ) ) {
+				$value = parent::__get( $key );
+			}
+		}
+
+		return $value;
+	}
+
+	/**
+	 * Get the add to cart button text for the single page
+	 *
+	 * @access public
+	 * @return string
+	 */
+	public function single_add_to_cart_text() {
+
+		if ( $this-&gt;is_purchasable() &amp;&amp; $this-&gt;is_in_stock() ) {
+			$text = WC_Subscriptions_Product::get_add_to_cart_text();
+		} else {
+			$text = parent::add_to_cart_text(); // translated &quot;Read More&quot;
+		}
+
+		return apply_filters( &#039;woocommerce_product_single_add_to_cart_text&#039;, $text, $this );
+	}
+
+	/**
+	 * Returns the price in html format.
+	 *
+	 * @access public
+	 * @param string $price (default: &#039;&#039;)
+	 * @return string
+	 */
+	public function get_price_html( $price = &#039;&#039; ) {
+		$prices                 = $this-&gt;get_variation_prices( true );
+		$min_price_variation_id = $this-&gt;get_meta( &#039;_min_price_variation_id&#039; );
+
+		if ( empty( $min_price_variation_id ) ) {
+			WC_Subscriptions_Product::variable_subscription_product_sync( $this );
+			$min_price_variation_id = $this-&gt;get_meta( &#039;_min_price_variation_id&#039; );
+		}
+
+		if ( empty( $prices[&#039;price&#039;] ) || ! $min_price_variation_id ) {
+			return apply_filters( &#039;woocommerce_variable_empty_price_html&#039;, &#039;&#039;, $this );
+		}
+
+		$tax_display_mode = get_option( &#039;woocommerce_tax_display_shop&#039; );
+
+		$price = WC_Subscriptions_Product::get_price( $min_price_variation_id );
+		$price = &#039;incl&#039; == $tax_display_mode ? wcs_get_price_including_tax( $this, array( &#039;price&#039; =&gt; $price ) ) : wcs_get_price_excluding_tax( $this, array( &#039;price&#039; =&gt; $price ) );
+		$price = $this-&gt;get_price_prefix( $prices ) . wc_price( $price ) . $this-&gt;get_price_suffix();
+		$price = apply_filters( &#039;woocommerce_variable_price_html&#039;, $price, $this );
+		$price = WC_Subscriptions_Product::get_price_string( $this, array( &#039;price&#039; =&gt; $price ) );
+
+		return apply_filters( &#039;woocommerce_variable_subscription_price_html&#039;, apply_filters( &#039;woocommerce_get_price_html&#039;, $price, $this ), $this );
+	}
+
+	/**
+	 * Checks if the store manager has requested the current product be limited to one purchase
+	 * per customer, and if so, checks whether the customer already has an active subscription to
+	 * the product.
+	 *
+	 * @access public
+	 * @return bool
+	 */
+	function is_purchasable() {
+		$purchasable = WCS_Limiter::is_purchasable( parent::is_purchasable(), $this );
+
+		return apply_filters( &#039;woocommerce_subscription_is_purchasable&#039;, $purchasable, $this );
+	}
+
+	/**
+	 * Checks the product type to see if it is either this product&#039;s type or the parent&#039;s
+	 * product type.
+	 *
+	 * @access public
+	 * @param mixed $type Array or string of types
+	 * @return bool
+	 */
+	public function is_type( $type ) {
+		if ( &#039;variable&#039; == $type || ( is_array( $type ) &amp;&amp; in_array( &#039;variable&#039;, $type ) ) ) {
+			return true;
+		} else {
+			return parent::is_type( $type );
+		}
+	}
+
+	/**
+	 * Sort an associative array of $variation_id =&gt; $price pairs in order of min and max prices.
+	 *
+	 * @param array $prices Associative array of $variation_id =&gt; $price pairs
+	 * @return array
+	 */
+	protected function sort_variation_prices( $prices ) {
+
+		// If we don&#039;t have any prices, there&#039;s nothing to sort.
+		if ( empty( $prices ) ) {
+			return $prices;
+		}
+
+		$prices_hash = md5( json_encode( $prices ) );
+
+		if ( empty( $this-&gt;sorted_variation_prices[ $prices_hash ] ) ) {
+
+			$min_max_variation_data = $this-&gt;get_min_and_max_variation_data( array_keys( $prices ) );
+
+			$min_variation_id = $min_max_variation_data[&#039;min&#039;][&#039;variation_id&#039;];
+			$max_variation_id = $min_max_variation_data[&#039;max&#039;][&#039;variation_id&#039;];
+
+			// Reorder the variable price arrays to reflect the min and max values so that WooCommerce will find them in the correct order
+			$min_price = $prices[ $min_variation_id ];
+			$max_price = $prices[ $max_variation_id ];
+
+			unset( $prices[ $min_variation_id ] );
+			unset( $prices[ $max_variation_id ] );
+
+			// Prepend the minimum variation and append the maximum variation
+			$prices  = array( $min_variation_id =&gt; $min_price ) + $prices;
+			$prices += array( $max_variation_id =&gt; $max_price );
+
+			$this-&gt;sorted_variation_prices[ $prices_hash ] = $prices;
+		}
+
+		return $this-&gt;sorted_variation_prices[ $prices_hash ];
+	}
+
+	/**
+	 * Set the product&#039;s min and max variation data.
+	 *
+	 * @param array $min_and_max_data The min and max variation data returned by @see wcs_get_min_max_variation_data(). Optional.
+	 * @param array $variation_ids The child variation IDs. Optional. By default this value be generated by @see WC_Product_Variable-&gt;get_visible_children().
+	 * @since 2.3.0
+	 */
+	public function set_min_and_max_variation_data( $min_and_max_data = array(), $variation_ids = array() ) {
+
+		if ( empty( $variation_ids ) ) {
+			$variation_ids = $this-&gt;get_visible_children();
+		}
+
+		if ( empty( $min_and_max_data ) ) {
+			$min_and_max_data = wcs_get_min_max_variation_data( $this, $variation_ids );
+		}
+
+		$this-&gt;add_meta_data( &#039;_min_max_variation_data&#039;, $min_and_max_data, true );
+		$this-&gt;add_meta_data( &#039;_min_max_variation_ids_hash&#039;, $this-&gt;get_variation_ids_hash( $variation_ids ), true );
+
+		do_action( &#039;wc_subscriptions_min_and_max_variation_data_set&#039;, $this, $min_and_max_data, $variation_ids );
+	}
+
+	/**
+	 * Get the min and max variation data.
+	 *
+	 * This is a wrapper for @see wcs_get_min_max_variation_data() but to avoid calling
+	 * that resource intensive function multiple times per request, check the value
+	 * stored in meta or cached in memory before calling that function.
+	 *
+	 * @param  array $variation_ids An array of variation IDs.
+	 * @return array The variable product&#039;s min and max variation data.
+	 * @since 2.3.0
+	 */
+	public function get_min_and_max_variation_data( $variation_ids ) {
+		$variation_ids_hash = $this-&gt;get_variation_ids_hash( $variation_ids );
+
+		if ( $variation_ids_hash === $this-&gt;get_meta( &#039;_min_max_variation_ids_hash&#039;, true ) ) {
+			$min_and_max_variation_data = $this-&gt;get_meta( &#039;_min_max_variation_data&#039;, true );
+		} elseif ( ! empty( $this-&gt;min_max_variation_data[ $variation_ids_hash ] ) ) {
+			$min_and_max_variation_data = $this-&gt;min_max_variation_data[ $variation_ids_hash ];
+		} else {
+			$min_and_max_variation_data = wcs_get_min_max_variation_data( $this, $variation_ids );
+			$this-&gt;min_max_variation_data[ $variation_ids_hash ] = $min_and_max_variation_data;
+		}
+
+		return $min_and_max_variation_data;
+	}
+
+	/**
+	 * Generate a unique hash from an array of variation IDs.
+	 *
+	 * @param  array $variation_ids
+	 * @return string
+	 */
+	protected static function get_variation_ids_hash( $variation_ids ) {
+		// Sort the variation IDs so the hash isn&#039;t different for the same array of IDs
+		sort( $variation_ids );
+
+		return md5( json_encode( $variation_ids ) );
+	}
+
+	/* Deprecated Functions */
+
+	/**
+	 * Return the sign-up fee for this product
+	 *
+	 * @return string
+	 */
+	public function get_sign_up_fee() {
+		wcs_deprecated_function( __METHOD__, &#039;2.2.0&#039;, &#039;WC_Subscriptions_Product::get_sign_up_fee( $this )&#039; );
+		return WC_Subscriptions_Product::get_sign_up_fee( $this );
+	}
+
+	/**
+	 * Returns the sign up fee (including tax) by filtering the products price used in
+	 * @see WC_Product::get_price_including_tax( $qty )
+	 *
+	 * @return string
+	 */
+	public function get_sign_up_fee_including_tax( $qty = 1 ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.2.0&#039;, &#039;wcs_get_price_including_tax( $product, array( &quot;qty&quot; =&gt; $qty, &quot;price&quot; =&gt; WC_Subscriptions_Product::get_sign_up_fee( $product ) ) )&#039; );
+		return wcs_get_price_including_tax(
+			$this,
+			array(
+				&#039;qty&#039;   =&gt; $qty,
+				&#039;price&#039; =&gt; WC_Subscriptions_Product::get_sign_up_fee( $this ),
+			)
+		);
+	}
+
+	/**
+	 * Returns the sign up fee (excluding tax) by filtering the products price used in
+	 * @see WC_Product::get_price_excluding_tax( $qty )
+	 *
+	 * @return string
+	 */
+	public function get_sign_up_fee_excluding_tax( $qty = 1 ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.2.0&#039;, &#039;wcs_get_price_excluding_tax( $product, array( &quot;qty&quot; =&gt; $qty, &quot;price&quot; =&gt; WC_Subscriptions_Product::get_sign_up_fee( $product ) ) )&#039; );
+		return wcs_get_price_excluding_tax(
+			$this,
+			array(
+				&#039;qty&#039;   =&gt; $qty,
+				&#039;price&#039; =&gt; WC_Subscriptions_Product::get_sign_up_fee( $this ),
+			)
+		);
+	}
+
+	/**
+	 *
+	 * @param string $product_type A string representation of a product type
+	 */
+	public function add_to_cart_handler( $handler, $product ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.2.0&#039;, &#039;WC_Subscriptions_Cart::add_to_cart_handler( $handler, $product )&#039; );
+		return WC_Subscriptions_Cart::add_to_cart_handler( $handler, $product );
+	}
+
+	/**
+	 * Sync variable product prices with the childs lowest/highest prices.
+	 *
+	 * @access public
+	 * @return void
+	 */
+	public function variable_product_sync( $product_id = &#039;&#039; ) {
+		wcs_deprecated_function( __METHOD__, &#039;2.2,0&#039;, &#039;WC_Subscriptions_Product::variable_subscription_product_sync( $this )&#039; );
+
+		if ( empty( $product_id ) ) {
+			$product_id = $this-&gt;get_id();
+		}
+
+		// Sync prices with children
+		self::sync( $product_id );
+	}
+
+	/**
+	 * Get the suffix to display before prices.
+	 *
+	 * @return string
+	 */
+	protected function get_price_prefix( $prices ) {
+
+		$child_variation_ids    = array_keys( $prices[&#039;price&#039;] );
+		$min_max_variation_data = $this-&gt;get_min_and_max_variation_data( $child_variation_ids );
+
+		// Are the subscription details of all variations identical?
+		if ( $min_max_variation_data[&#039;identical&#039;] ) {
+			$prefix = &#039;&#039;;
+		} else {
+			$prefix = wcs_get_price_html_from_text( $this );
+		}
+
+		return $prefix;
+	}
+
+	/**
+	 * Gets an array of available variations.
+	 *
+	 * @param string $return Optional. The format to return the results in. Can be &#039;array&#039; to return an array of variation data or &#039;objects&#039; for the product objects. Default &#039;array&#039;.
+	 * @return array|WC_Product_Subscription_Variation[]
+	 */
+	public function get_available_variations( $return = &#039;array&#039; ) {
+		$available_variations = parent::get_available_variations( $return );
+
+		// Add the variation first payment date if data is being prepared for the add to cart form.
+		if ( &#039;array&#039; === $return ) {
+			foreach ( $available_variations as $index =&gt; $variation_data ) {
+
+				// Add the product&#039;s synced first payment date to the variation data if applicable.
+				if ( isset( $variation_data[&#039;variation_id&#039;] ) ) {
+					$available_variations[ $index ][&#039;first_payment_html&#039;] = WC_Subscriptions_Synchroniser::get_products_first_payment_date( wc_get_product( $variation_data[&#039;variation_id&#039;] ) );
+				}
+			}
+		}
+
+		return $available_variations;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

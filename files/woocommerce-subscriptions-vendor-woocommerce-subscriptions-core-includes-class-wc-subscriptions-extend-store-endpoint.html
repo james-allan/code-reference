@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-extend-store-endpoint.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Extend Store API.
+ *
+ * A class to extend the store public API with subscription related data
+ * for each subscription item
+ *
+ * @package WooCommerce Subscriptions
+ * @since   WCBLOCKS-DEV
+ */
+
+use Automattic\WooCommerce\Blocks\Package;
+use Automattic\WooCommerce\Blocks\Domain\Services\ExtendRestApi;
+use Automattic\WooCommerce\Blocks\StoreApi\Schemas\CartSchema;
+use Automattic\WooCommerce\Blocks\StoreApi\Schemas\CartItemSchema;
+
+class WC_Subscriptions_Extend_Store_Endpoint {
+	/**
+	 * Stores Rest Schema Controller.
+	 *
+	 * @var Automattic\WooCommerce\StoreApi\SchemaController
+	 */
+	private static $schema;
+
+	/**
+	 * Stores Money formatter instance.
+	 *
+	 * @var Automattic\WooCommerce\StoreApi\Formatters\FormatterInterface
+	 */
+	private static $money_formatter;
+
+	/**
+	 * Stores Currency formatter instance.
+	 *
+	 * @var Automattic\WooCommerce\StoreApi\Formatters\FormatterInterface
+	 */
+	private static $currency_formatter;
+
+	/**
+	 * Plugin Identifier, unique to each plugin.
+	 *
+	 * @var string
+	 */
+	const IDENTIFIER = &#039;subscriptions&#039;;
+
+	/**
+	 * Bootstraps the class and hooks required data.
+	 *
+	 * @since WCBLOCKS-DEV
+	 */
+	public static function init() {
+		self::$schema             = class_exists( &#039;Automattic\WooCommerce\StoreApi\StoreApi&#039; ) ? Automattic\WooCommerce\StoreApi\StoreApi::container()-&gt;get( Automattic\WooCommerce\StoreApi\SchemaController::class ) : Package::container()-&gt;get( Automattic\WooCommerce\Blocks\StoreApi\SchemaController::class );
+		self::$money_formatter    = function_exists( &#039;woocommerce_store_api_get_formatter&#039; ) ? woocommerce_store_api_get_formatter( &#039;money&#039; ) : Package::container()-&gt;get( ExtendRestApi::class )-&gt;get_formatter( &#039;money&#039; );
+		self::$currency_formatter = function_exists( &#039;woocommerce_store_api_get_formatter&#039; ) ? woocommerce_store_api_get_formatter( &#039;currency&#039; ) : Package::container()-&gt;get( ExtendRestApi::class )-&gt;get_formatter( &#039;currency&#039; );
+		self::extend_store();
+	}
+
+	/**
+	 * Register endpoint data with the API.
+	 *
+	 * @param array $args Endpoint data to register.
+	 */
+	protected static function register_endpoint_data( $args ) {
+		if ( function_exists( &#039;woocommerce_store_api_register_endpoint_data&#039; ) ) {
+			woocommerce_store_api_register_endpoint_data( $args );
+		} else {
+			Package::container()-&gt;get( ExtendRestApi::class )-&gt;register_endpoint_data( $args );
+		}
+	}
+
+	/**
+	 * Register payment requirements with the API.
+	 *
+	 * @param array $args Data to register.
+	 */
+	protected static function register_payment_requirements( $args ) {
+		if ( function_exists( &#039;woocommerce_store_api_register_payment_requirements&#039; ) ) {
+			woocommerce_store_api_register_payment_requirements( $args );
+		} else {
+			Package::container()-&gt;get( ExtendRestApi::class )-&gt;register_payment_requirements( $args );
+		}
+	}
+
+	/**
+	 * Registers the actual data into each endpoint.
+	 */
+	public static function extend_store() {
+		// Register into `cart/items`
+		self::register_endpoint_data(
+			array(
+				&#039;endpoint&#039;        =&gt; CartItemSchema::IDENTIFIER,
+				&#039;namespace&#039;       =&gt; self::IDENTIFIER,
+				&#039;data_callback&#039;   =&gt; array( &#039;WC_Subscriptions_Extend_Store_Endpoint&#039;, &#039;extend_cart_item_data&#039; ),
+				&#039;schema_callback&#039; =&gt; array( &#039;WC_Subscriptions_Extend_Store_Endpoint&#039;, &#039;extend_cart_item_schema&#039; ),
+				&#039;schema_type&#039;     =&gt; ARRAY_A,
+			)
+		);
+
+		// Register into `cart`
+		self::register_endpoint_data(
+			array(
+				&#039;endpoint&#039;        =&gt; CartSchema::IDENTIFIER,
+				&#039;namespace&#039;       =&gt; self::IDENTIFIER,
+				&#039;data_callback&#039;   =&gt; array( &#039;WC_Subscriptions_Extend_Store_Endpoint&#039;, &#039;extend_cart_data&#039; ),
+				&#039;schema_callback&#039; =&gt; array( &#039;WC_Subscriptions_Extend_Store_Endpoint&#039;, &#039;extend_cart_schema&#039; ),
+				&#039;schema_type&#039;     =&gt; ARRAY_N,
+			)
+		);
+
+		// Register payment requirements.
+		self::register_payment_requirements(
+			array(
+				&#039;data_callback&#039; =&gt; array( WC_Subscriptions_Core_Plugin::instance()-&gt;get_gateways_handler_class(), &#039;inject_payment_feature_requirements_for_cart_api&#039; ),
+			)
+		);
+	}
+
+	/**
+	 * Register subscription product data into cart/items endpoint.
+	 *
+	 * @param array $cart_item Current cart item data.
+	 *
+	 * @return array $item_data Registered data or empty array if condition is not satisfied.
+	 */
+	public static function extend_cart_item_data( $cart_item ) {
+		$product   = $cart_item[&#039;data&#039;];
+		$item_data = array(
+			&#039;billing_period&#039;      =&gt; null,
+			&#039;billing_interval&#039;    =&gt; null,
+			&#039;subscription_length&#039; =&gt; null,
+			&#039;trial_length&#039;        =&gt; null,
+			&#039;trial_period&#039;        =&gt; null,
+			&#039;sign_up_fees&#039;        =&gt; null,
+			&#039;sign_up_fees_tax&#039;    =&gt; null,
+			&#039;is_resubscribe&#039;      =&gt; null,
+			&#039;switch_type&#039;         =&gt; null,
+			&#039;synchronization&#039;     =&gt; null,
+
+		);
+
+		if ( WC_Subscriptions_Product::is_subscription( $product ) ) {
+			$item_data = array_merge(
+				array(
+					&#039;billing_period&#039;      =&gt; WC_Subscriptions_Product::get_period( $product ),
+					&#039;billing_interval&#039;    =&gt; (int) WC_Subscriptions_Product::get_interval( $product ),
+					&#039;subscription_length&#039; =&gt; (int) WC_Subscriptions_Product::get_length( $product ),
+					&#039;trial_length&#039;        =&gt; (int) WC_Subscriptions_Product::get_trial_length( $product ),
+					&#039;trial_period&#039;        =&gt; WC_Subscriptions_Product::get_trial_period( $product ),
+					&#039;is_resubscribe&#039;      =&gt; isset( $cart_item[&#039;subscription_resubscribe&#039;] ),
+					&#039;switch_type&#039;         =&gt; wcs_get_cart_item_switch_type( $cart_item ),
+					&#039;synchronization&#039;     =&gt; self::format_sync_data( $product ),
+				),
+				self::format_sign_up_fees( $product )
+			);
+		}
+
+		return $item_data;
+	}
+
+	/**
+	 * Register subscription product schema into cart/items endpoint.
+	 *
+	 * @return array Registered schema.
+	 */
+	public static function extend_cart_item_schema() {
+		return array(
+			&#039;billing_period&#039;      =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Billing period for the subscription.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; array( &#039;string&#039;, &#039;null&#039; ),
+				&#039;enum&#039;        =&gt; array_keys( wcs_get_subscription_period_strings() ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;billing_interval&#039;    =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;The number of billing periods between subscription renewals.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; array( &#039;integer&#039;, &#039;null&#039; ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;subscription_length&#039; =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Subscription Product length.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; array( &#039;integer&#039;, &#039;null&#039; ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;trial_period&#039;        =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Subscription Product trial period.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; array( &#039;string&#039;, &#039;null&#039; ),
+				&#039;enum&#039;        =&gt; array_keys( wcs_get_subscription_period_strings() ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;trial_length&#039;        =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Subscription Product trial interval.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; array( &#039;integer&#039;, &#039;null&#039; ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;sign_up_fees&#039;        =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Subscription Product signup fees.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; array( &#039;string&#039;, &#039;null&#039; ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;sign_up_fees_tax&#039;    =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Subscription Product signup fees taxes.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; array( &#039;string&#039;, &#039;null&#039; ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;is_resubscribe&#039;      =&gt; array(
+				&#039;description&#039; =&gt; __(
+					&#039;Indicates whether this product is being used to resubscribe the customer to an existing, expired subscription.&#039;,
+					&#039;woocommerce-subscriptions&#039;
+				),
+				&#039;type&#039;        =&gt; &#039;boolean&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;switch_type&#039;         =&gt; array(
+				&#039;description&#039; =&gt; __(
+					&#039;Indicates whether this product a subscription update, downgrade, cross grade or none of the above.&#039;,
+					&#039;woocommerce-subscriptions&#039;
+				),
+				&#039;type&#039;        =&gt; array( &#039;string&#039;, &#039;null&#039; ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;synchronization&#039;     =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Synchronization data for the subscription.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; array( &#039;object&#039;, &#039;integer&#039;, &#039;null&#039; ),
+				&#039;properties&#039;  =&gt; array(
+					&#039;day&#039;   =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Synchronization day if subscription is annual.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;integer&#039;,
+					),
+					&#039;month&#039; =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Synchronization month if subscription is annual.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;integer&#039;,
+					),
+				),
+			),
+		);
+	}
+
+	/**
+	 * Get packages from the recurring carts.
+	 *
+	 * @param string $cart_key Recurring cart key.
+	 * @param array  $cart Recurring cart data.
+	 * @return array
+	 */
+	private static function get_packages_for_recurring_cart( $cart_key, $cart ) {
+		$packages_by_cart = WC_Subscriptions_Cart::get_recurring_shipping_packages();
+
+		if ( ! isset( $packages_by_cart[ $cart_key ] ) ) {
+			return array();
+		}
+
+		$packages = $packages_by_cart[ $cart_key ];
+
+		// Add extra package data to array.
+		if ( count( $packages ) ) {
+			$packages = array_map(
+				function( $key, $package, $index ) use ( $cart, $cart_key ) {
+					$package[&#039;package_id&#039;]   = isset( $package[&#039;package_id&#039;] ) ? $package[&#039;package_id&#039;] : $key;
+					$package[&#039;package_name&#039;] = isset( $package[&#039;package_name&#039;] ) ? $package[&#039;package_name&#039;] : self::get_shipping_package_name( $package, $cart );
+					return $package;
+				},
+				array_keys( $packages ),
+				$packages,
+				range( 1, count( $packages ) )
+			);
+		}
+
+		return $packages;
+	}
+
+	/**
+	 * Changes the shipping package name to add more meaningful information about it&#039;s content.
+	 *
+	 * @param array $package All shipping package data.
+	 * @param array $cart Recurring cart data.
+	 * @return string
+	 */
+	private static function get_shipping_package_name( $package, $cart ) {
+		$package_name = __( &#039;Shipping&#039;, &#039;woocommerce-subscriptions&#039; );
+		$interval     = wcs_cart_pluck( $cart, &#039;subscription_period_interval&#039;, &#039;&#039; );
+		$period       = wcs_cart_pluck( $cart, &#039;subscription_period&#039;, &#039;&#039; );
+		switch ( $period ) {
+			case &#039;year&#039;:
+				// translators: %d subscription interval.
+				$package_name = $interval &gt; 1 ? sprintf( _n( &#039;Shipment every %d year&#039;, &#039;Shipment every %d years&#039;, $interval, &#039;woocommerce-subscriptions&#039; ), $interval ) : __( &#039;Yearly Shipment&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+			case &#039;month&#039;:
+				// translators: %d subscription interval.
+				$package_name = $interval &gt; 1 ? sprintf( _n( &#039;Shipment every %d month&#039;, &#039;Shipment every %d months&#039;, $interval, &#039;woocommerce-subscriptions&#039; ), $interval ) : __( &#039;Monthly Shipment&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+			case &#039;week&#039;:
+				// translators: %d subscription interval.
+				$package_name = $interval &gt; 1 ? sprintf( _n( &#039;Shipment every %d week&#039;, &#039;Shipment every %d weeks&#039;, $interval, &#039;woocommerce-subscriptions&#039; ), $interval ) : __( &#039;Weekly Shipment&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+			case &#039;day&#039;:
+				// translators: %d subscription interval.
+				$package_name = $interval &gt; 1 ? sprintf( _n( &#039;Shipment every %d day&#039;, &#039;Shipment every %d days&#039;, $interval, &#039;woocommerce-subscriptions&#039; ), $interval ) : __( &#039;Daily Shipment&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+		}
+		return $package_name;
+	}
+
+	/**
+	 * Register future subscriptions into cart endpoint.
+	 *
+	 * @return array $future_subscriptions Registered data or empty array if condition is not satisfied.
+	 */
+	public static function extend_cart_data() {
+		// return early if we don&#039;t have any subscription.
+		if ( ! WC_Subscriptions_Cart::cart_contains_subscription() ) {
+			return array();
+		}
+
+		$future_subscriptions = array();
+
+		if ( ! empty( wc()-&gt;cart-&gt;recurring_carts ) ) {
+			foreach ( wc()-&gt;cart-&gt;recurring_carts as $cart_key =&gt; $cart ) {
+				$cart_item         = current( $cart-&gt;cart_contents );
+				$product           = $cart_item[&#039;data&#039;];
+				$shipping_packages = self::get_packages_for_recurring_cart( $cart_key, $cart );
+
+				$future_subscriptions[] = array(
+					&#039;key&#039;                 =&gt; $cart_key,
+					&#039;next_payment_date&#039;   =&gt; $cart-&gt;next_payment_date ? date_i18n( wc_date_format(), wcs_date_to_time( get_date_from_gmt( $cart-&gt;next_payment_date ) ) ) : null,
+					&#039;billing_period&#039;      =&gt; WC_Subscriptions_Product::get_period( $product ),
+					&#039;billing_interval&#039;    =&gt; (int) WC_Subscriptions_Product::get_interval( $product ),
+					&#039;subscription_length&#039; =&gt; (int) WC_Subscriptions_Product::get_length( $product ),
+					&#039;totals&#039;              =&gt; self::$currency_formatter-&gt;format(
+						array(
+							&#039;total_items&#039;        =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_subtotal() ),
+							&#039;total_items_tax&#039;    =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_subtotal_tax() ),
+							&#039;total_fees&#039;         =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_fee_total() ),
+							&#039;total_fees_tax&#039;     =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_fee_tax() ),
+							&#039;total_discount&#039;     =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_discount_total() ),
+							&#039;total_discount_tax&#039; =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_discount_tax() ),
+							&#039;total_shipping&#039;     =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_shipping_total() ),
+							&#039;total_shipping_tax&#039; =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_shipping_tax() ),
+							&#039;total_price&#039;        =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_total( &#039;edit&#039; ) ),
+							&#039;total_tax&#039;          =&gt; self::$money_formatter-&gt;format( $cart-&gt;get_total_tax() ),
+							&#039;tax_lines&#039;          =&gt; self::get_tax_lines( $cart ),
+						)
+					),
+					&#039;shipping_rates&#039;      =&gt; array_values( array_map( array( self::$schema-&gt;get( &#039;cart-shipping-rate&#039; ), &#039;get_item_response&#039; ), $shipping_packages ) ),
+				);
+			}
+		}
+
+		return $future_subscriptions;
+	}
+
+	/**
+	 * Format sign-up fees.
+	 *
+	 * @param \WC_Product $product current product.
+	 * @return array
+	 */
+	private static function format_sign_up_fees( $product ) {
+		$fees_excluding_tax = wcs_get_price_excluding_tax(
+			$product,
+			array(
+				&#039;qty&#039;   =&gt; 1,
+				&#039;price&#039; =&gt; WC_Subscriptions_Product::get_sign_up_fee( $product ),
+			)
+		);
+
+		$fees_including_tax = wcs_get_price_including_tax(
+			$product,
+			array(
+				&#039;qty&#039;   =&gt; 1,
+				&#039;price&#039; =&gt; WC_Subscriptions_Product::get_sign_up_fee( $product ),
+			)
+		);
+
+		return array(
+			&#039;sign_up_fees&#039;     =&gt; self::$money_formatter-&gt;format(
+				$fees_excluding_tax
+			),
+			&#039;sign_up_fees_tax&#039; =&gt; self::$money_formatter-&gt;format(
+				$fees_including_tax
+				- $fees_excluding_tax
+			),
+
+		);
+	}
+
+	/**
+	 * Format sync data to the correct so it either returns a day integer or an object of day and month.
+	 *
+	 * @param WC_Product_Subscription $product current cart item product.
+	 *
+	 * @return object|int|null synchronization_date;
+	 */
+	private static function format_sync_data( $product ) {
+		if ( ! WC_Subscriptions_Synchroniser::is_product_synced( $product ) ) {
+			return null;
+		}
+
+		$payment_day = WC_Subscriptions_Synchroniser::get_products_payment_day( $product );
+
+		if ( ! is_array( $payment_day ) ) {
+			return (int) $payment_day;
+		}
+
+		return (object) array(
+			&#039;month&#039; =&gt; (int) $payment_day[&#039;month&#039;],
+			&#039;day&#039;   =&gt; (int) $payment_day[&#039;day&#039;],
+		);
+	}
+	/**
+	 * Register future subscriptions schema into cart endpoint.
+	 *
+	 * @return array Registered schema.
+	 */
+	public static function extend_cart_schema() {
+		// return early if we don&#039;t have any subscription.
+		if ( ! WC_Subscriptions_Cart::cart_contains_subscription() ) {
+			return array();
+		}
+
+		return array(
+			&#039;key&#039;                 =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Subscription key&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;string&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;next_payment_date&#039;   =&gt; array(
+				&#039;description&#039; =&gt; __( &quot;The subscription&#039;s next payment date.&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; [ &#039;date-time&#039;, &#039;null&#039; ],
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;billing_period&#039;      =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Billing period for the subscription.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;string&#039;,
+				&#039;enum&#039;        =&gt; array_keys( wcs_get_subscription_period_strings() ),
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;billing_interval&#039;    =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;The number of billing periods between subscription renewals.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;integer&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;subscription_length&#039; =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Subscription length.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;integer&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+			),
+			&#039;totals&#039;              =&gt; array(
+				&#039;description&#039; =&gt; __( &#039;Cart total amounts provided using the smallest unit of the currency.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039;        =&gt; &#039;object&#039;,
+				&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+				&#039;readonly&#039;    =&gt; true,
+				&#039;properties&#039;  =&gt; array(
+					&#039;total_items&#039;                 =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total price of items in the cart.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_items_tax&#039;             =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total tax on items in the cart.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_fees&#039;                  =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total price of any applied fees.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_fees_tax&#039;              =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total tax on fees.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_discount&#039;              =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total discount from applied coupons.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_discount_tax&#039;          =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total tax removed due to discount from applied coupons.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_shipping&#039;              =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total price of shipping. If shipping has not been calculated, a null response will be sent.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; array( &#039;string&#039;, &#039;null&#039; ),
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_shipping_tax&#039;          =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total tax on shipping. If shipping has not been calculated, a null response will be sent.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; array( &#039;string&#039;, &#039;null&#039; ),
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_price&#039;                 =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total price the customer will pay.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;total_tax&#039;                   =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Total tax applied to items and shipping.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;tax_lines&#039;                   =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Lines of taxes applied to items and shipping.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;array&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+						&#039;items&#039;       =&gt; array(
+							&#039;type&#039;       =&gt; &#039;object&#039;,
+							&#039;properties&#039; =&gt; array(
+								&#039;name&#039;  =&gt; array(
+									&#039;description&#039; =&gt; __( &#039;The name of the tax.&#039;, &#039;woocommerce-subscriptions&#039; ),
+									&#039;type&#039;        =&gt; &#039;string&#039;,
+									&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+									&#039;readonly&#039;    =&gt; true,
+								),
+								&#039;price&#039; =&gt; array(
+									&#039;description&#039; =&gt; __( &#039;The amount of tax charged.&#039;, &#039;woocommerce-subscriptions&#039; ),
+									&#039;type&#039;        =&gt; &#039;string&#039;,
+									&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+									&#039;readonly&#039;    =&gt; true,
+								),
+							),
+						),
+					),
+					&#039;currency_code&#039;               =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Currency code (in ISO format) for returned prices.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;currency_symbol&#039;             =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Currency symbol for the currency which can be used to format returned prices.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;currency_minor_unit&#039;         =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Currency minor unit (number of digits after the decimal separator) for returned prices.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;integer&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;currency_decimal_separator&#039;  =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Decimal separator for the currency which can be used to format returned prices.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;currency_thousand_separator&#039; =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Thousand separator for the currency which can be used to format returned prices.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;currency_prefix&#039;             =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Price prefix for the currency which can be used to format returned prices.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+					&#039;currency_suffix&#039;             =&gt; array(
+						&#039;description&#039; =&gt; __( &#039;Price prefix for the currency which can be used to format returned prices.&#039;, &#039;woocommerce-subscriptions&#039; ),
+						&#039;type&#039;        =&gt; &#039;string&#039;,
+						&#039;context&#039;     =&gt; array( &#039;view&#039;, &#039;edit&#039; ),
+						&#039;readonly&#039;    =&gt; true,
+					),
+				),
+			),
+		);
+	}
+
+	/**
+	 * Get tax lines from the cart and format to match schema.
+	 *
+	 * TODO: This function is copied from WooCommerce Blocks, remove it once https://github.com/woocommerce/woocommerce-gutenberg-products-block/issues/3264 is closed.
+	 *
+	 * @param \WC_Cart $cart Cart class instance.
+	 * @return array
+	 */
+	protected static function get_tax_lines( $cart ) {
+		$cart_tax_totals = $cart-&gt;get_tax_totals();
+		$tax_lines       = array();
+
+		foreach ( $cart_tax_totals as $cart_tax_total ) {
+			$tax_lines[] = array(
+				&#039;name&#039;  =&gt; $cart_tax_total-&gt;label,
+				&#039;price&#039; =&gt; self::$money_formatter-&gt;format( $cart_tax_total-&gt;amount ),
+			);
+		}
+
+		return $tax_lines;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

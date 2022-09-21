@@ -1002,7 +1002,7 @@ var searchIndex = [
     },{
         fqsen: "\\WCS_Autoloader",
         name: "WCS_Autoloader",
-        summary: "",
+        summary: "WooCommerce\u0020Subscriptions\u0020Core\u0020Autoloader.",
         url: "https://woocommerce.github.io/code-reference/classes/WCS-Autoloader.html"
     },{
         fqsen: "\\WCS_Autoloader\u003A\u003Aget_class_base_path\u0028\u0029",
@@ -1402,7 +1402,7 @@ var searchIndex = [
     },{
         fqsen: "\\WCS_Cart_Early_Renewal",
         name: "WCS_Cart_Early_Renewal",
-        summary: "",
+        summary: "Implement\u0020renewing\u0020to\u0020a\u0020subscription\u0020via\u0020the\u0020cart.",
         url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Early-Renewal.html"
     },{
         fqsen: "\\WCS_Cart_Early_Renewal\u003A\u003A__construct\u0028\u0029",
@@ -3249,6 +3249,11711 @@ var searchIndex = [
         name: "calculated_switch_items",
         summary: "A\u0020cache\u0020of\u0020the\u0020cart\u0020item\u0020switch\u0020objects\u0020after\u0020they\u0020have\u0020had\u0020their\u0020totals\u0020calculated.",
         url: "https://woocommerce.github.io/code-reference/classes/WCS-Switch-Totals-Calculator.html#property_calculated_switch_items"
+    },{
+        fqsen: "\\WCS_Background_Repairer",
+        name: "WCS_Background_Repairer",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attaches\u0020callbacks\u0020to\u0020hooks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_init"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aschedule_repair\u0028\u0029",
+        name: "schedule_repair",
+        summary: "Schedules\u0020the\u0020\u0040see\u0020\u0024this\u002D\u003Escheduled_hook\u0020action\u0020to\u0020run\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_schedule_repair"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Gets\u0020a\u0020batch\u0020of\u0020items\u0020which\u0020need\u0020to\u0020be\u0020repaired.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Arun_update\u0028\u0029",
+        name: "run_update",
+        summary: "Runs\u0020the\u0020update\u0020and\u0020save\u0020any\u0020items\u0020which\u0020didn\u0027t\u0020get\u0020processed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_run_update"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aupdate_item\u0028\u0029",
+        name: "update_item",
+        summary: "Schedules\u0020the\u0020repair\u0020event\u0020for\u0020this\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_update_item"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aget_page\u0028\u0029",
+        name: "get_page",
+        summary: "Gets\u0020the\u0020current\u0020page\u0020number.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_get_page"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aset_page\u0028\u0029",
+        name: "set_page",
+        summary: "Sets\u0020the\u0020current\u0020page\u0020number.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_set_page"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aget_unprocessed_items\u0028\u0029",
+        name: "get_unprocessed_items",
+        summary: "Gets\u0020items\u0020from\u0020the\u0020last\u0020request\u0020which\u0020weren\u0027t\u0020processed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_get_unprocessed_items"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Asave_unprocessed_items\u0028\u0029",
+        name: "save_unprocessed_items",
+        summary: "Saves\u0020any\u0020items\u0020which\u0020haven\u0027t\u0020been\u0020handled.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_save_unprocessed_items"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aclear_unprocessed_items_cache\u0028\u0029",
+        name: "clear_unprocessed_items_cache",
+        summary: "Deletes\u0020any\u0020items\u0020stored\u0020in\u0020the\u0020unprocessed\u0020cache\u0020stored\u0020in\u0020an\u0020option.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_clear_unprocessed_items_cache"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aunschedule_background_updates\u0028\u0029",
+        name: "unschedule_background_updates",
+        summary: "Unschedules\u0020the\u0020instance\u0027s\u0020hook\u0020in\u0020Action\u0020Scheduler\u0020and\u0020deletes\u0020the\u0020page\u0020counter.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_unschedule_background_updates"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Arepair_item\u0028\u0029",
+        name: "repair_item",
+        summary: "Repairs\u0020an\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_repair_item"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003Aget_items_to_repair\u0028\u0029",
+        name: "get_items_to_repair",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020items\u0020which\u0020need\u0020to\u0020be\u0020repaired.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#method_get_items_to_repair"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003A\u0024repair_hook",
+        name: "repair_hook",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#property_repair_hook"
+    },{
+        fqsen: "\\WCS_Background_Repairer\u003A\u003A\u0024items_to_repair",
+        name: "items_to_repair",
+        summary: "An\u0020internal\u0020cache\u0020of\u0020items\u0020which\u0020need\u0020to\u0020be\u0020repaired.\u0020Used\u0020in\u0020cases\u0020where\u0020the\u0020updater\u0020runs\u0020out\u0020of\u0020processing\u0020time,\u0020so\u0020we\u0020can\u0020ensure\u0020remaining\u0020items\u0020are\u0020processed\u0020in\u0020the\u0020next\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Repairer.html#property_items_to_repair"
+    },{
+        fqsen: "\\WCS_Background_Updater",
+        name: "WCS_Background_Updater",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks\u0020to\u0020hooks",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#method_init"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020the\u0020items\u0020to\u0020be\u0020updated,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003Aupdate_item\u0028\u0029",
+        name: "update_item",
+        summary: "Run\u0020the\u0020update\u0020for\u0020a\u0020single\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#method_update_item"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003Arun_update\u0028\u0029",
+        name: "run_update",
+        summary: "Update\u0020a\u0020set\u0020of\u0020items\u0020in\u0020the\u0020background.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#method_run_update"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003Aschedule_background_update\u0028\u0029",
+        name: "schedule_background_update",
+        summary: "Schedule\u0020the\u0020instance\u0027s\u0020hook\u0020to\u0020run\u0020in\u0020\u0024this\u002D\u003Etime_limit\u0020seconds,\u0020if\u0020it\u0027s\u0020not\u0020already\u0020scheduled.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#method_schedule_background_update"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003Aunschedule_background_updates\u0028\u0029",
+        name: "unschedule_background_updates",
+        summary: "Unschedule\u0020the\u0020instance\u0027s\u0020hook\u0020in\u0020Action\u0020Scheduler",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#method_unschedule_background_updates"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003Ais_wp_cli_request\u0028\u0029",
+        name: "is_wp_cli_request",
+        summary: "Check\u0020whether\u0020the\u0020current\u0020request\u0020is\u0020via\u0020WP\u0020CLI",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#method_is_wp_cli_request"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003A\u0024time_limit",
+        name: "time_limit",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#property_time_limit"
+    },{
+        fqsen: "\\WCS_Background_Updater\u003A\u003A\u0024scheduled_hook",
+        name: "scheduled_hook",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Updater.html#property_scheduled_hook"
+    },{
+        fqsen: "\\WCS_Background_Upgrader",
+        name: "WCS_Background_Upgrader",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Upgrader.html"
+    },{
+        fqsen: "\\WCS_Background_Upgrader\u003A\u003Aschedule_repair\u0028\u0029",
+        name: "schedule_repair",
+        summary: "Schedule\u0020the\u0020\u0040see\u0020\u0024this\u002D\u003Escheduled_hook\u0020action\u0020to\u0020start\u0020repairing\u0020subscriptions\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Upgrader.html#method_schedule_repair"
+    },{
+        fqsen: "\\WCS_Background_Upgrader\u003A\u003Alog\u0028\u0029",
+        name: "log",
+        summary: "Add\u0020a\u0020message\u0020to\u0020the\u0020wcs\u002Dupgrade\u002Dsubscriptions\u002Dpaypal\u002Dsuspended\u0020log",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Upgrader.html#method_log"
+    },{
+        fqsen: "\\WCS_Background_Upgrader\u003A\u003A\u0024logger",
+        name: "logger",
+        summary: "WC\u0020Logger\u0020instance\u0020for\u0020logging\u0020messages.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Upgrader.html#property_logger"
+    },{
+        fqsen: "\\WCS_Background_Upgrader\u003A\u003A\u0024log_handle",
+        name: "log_handle",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Background-Upgrader.html#property_log_handle"
+    },{
+        fqsen: "\\WCS_Cache_Manager",
+        name: "WCS_Cache_Manager",
+        summary: "Abstract\u0020Subscription\u0020Cache\u0020Manager\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Manager.html"
+    },{
+        fqsen: "\\WCS_Cache_Manager\u003A\u003Aget_instance\u0028\u0029",
+        name: "get_instance",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Manager.html#method_get_instance"
+    },{
+        fqsen: "\\WCS_Cache_Manager\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "WCS_Cache_Manager\u0020constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Manager.html#method___construct"
+    },{
+        fqsen: "\\WCS_Cache_Manager\u003A\u003Aload_logger\u0028\u0029",
+        name: "load_logger",
+        summary: "Initialises\u0020some\u0020form\u0020of\u0020logger",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Manager.html#method_load_logger"
+    },{
+        fqsen: "\\WCS_Cache_Manager\u003A\u003Alog\u0028\u0029",
+        name: "log",
+        summary: "This\u0020method\u0020should\u0020implement\u0020adding\u0020to\u0020the\u0020log\u0020file",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Manager.html#method_log"
+    },{
+        fqsen: "\\WCS_Cache_Manager\u003A\u003Acache_and_get\u0028\u0029",
+        name: "cache_and_get",
+        summary: "Caches\u0020and\u0020returns\u0020data.\u0020Implementation\u0020can\u0020vary\u0020by\u0020classes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Manager.html#method_cache_and_get"
+    },{
+        fqsen: "\\WCS_Cache_Manager\u003A\u003Adelete_cached\u0028\u0029",
+        name: "delete_cached",
+        summary: "Deletes\u0020a\u0020cached\u0020version\u0020of\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Manager.html#method_delete_cached"
+    },{
+        fqsen: "\\WCS_Customer_Store",
+        name: "WCS_Customer_Store",
+        summary: "Define\u0020requirements\u0020for\u0020a\u0020customer\u0020data\u0020store\u0020and\u0020provide\u0020method\u0020for\u0020accessing\u0020active\u0020data\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store.html"
+    },{
+        fqsen: "\\WCS_Customer_Store\u003A\u003Aget_users_subscription_ids\u0028\u0029",
+        name: "get_users_subscription_ids",
+        summary: "Get\u0020the\u0020IDs\u0020for\u0020a\u0020given\u0020user\u0027s\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store.html#method_get_users_subscription_ids"
+    },{
+        fqsen: "\\WCS_Customer_Store\u003A\u003A\u0024instance",
+        name: "instance",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store.html#property_instance"
+    },{
+        fqsen: "\\WCS_Customer_Store\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Stub\u0020for\u0020initialising\u0020the\u0020class\u0020outside\u0020the\u0020constructor,\u0020for\u0020things\u0020like\u0020attaching\u0020callbacks\u0020to\u0020hooks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store.html#method_init"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Updater",
+        name: "WCS_Debug_Tool_Cache_Updater",
+        summary: "WCS_Debug_Tool_Cache_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Updater.html"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Updater\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks\u0020and\u0020hooks,\u0020if\u0020the\u0020class\u0027s\u0020data\u0020store\u0020is\u0020using\u0020caching.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Updater.html#method_init"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Updater\u003A\u003Ais_data_store_cached\u0028\u0029",
+        name: "is_data_store_cached",
+        summary: "Check\u0020if\u0020the\u0020store\u0020is\u0020a\u0020cache\u0020updater,\u0020and\u0020has\u0020methods\u0020required\u0020to\u0020erase\u0020or\u0020generate\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Updater.html#method_is_data_store_cached"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Updater\u003A\u003A\u0024data_store",
+        name: "data_store",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Updater.html#property_data_store"
+    },{
+        fqsen: "\\WCS_Debug_Tool",
+        name: "WCS_Debug_Tool",
+        summary: "WCS_Debug_Tool\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool.html"
+    },{
+        fqsen: "\\WCS_Debug_Tool\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks\u0020to\u0020hooks\u0020and\u0020validate\u0020required\u0020properties\u0020are\u0020assigned\u0020values.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool.html#method_init"
+    },{
+        fqsen: "\\WCS_Debug_Tool\u003A\u003Aadd_debug_tools\u0028\u0029",
+        name: "add_debug_tools",
+        summary: "Add\u0020subscription\u0020related\u0020tools\u0020to\u0020display\u0020on\u0020the\u0020WooCommerce\u0020\u003E\u0020System\u0020Status\u0020\u003E\u0020Tools\u0020administration\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool.html#method_add_debug_tools"
+    },{
+        fqsen: "\\WCS_Debug_Tool\u003A\u003A\u0024tool_key",
+        name: "tool_key",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool.html#property_tool_key"
+    },{
+        fqsen: "\\WCS_Debug_Tool\u003A\u003A\u0024tool_data",
+        name: "tool_data",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool.html#property_tool_data"
+    },{
+        fqsen: "\\WCS_Deprecated_Functions_Handler",
+        name: "WCS_Deprecated_Functions_Handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Functions-Handler.html"
+    },{
+        fqsen: "\\WCS_Deprecated_Functions_Handler\u003A\u003Ais_deprecated\u0028\u0029",
+        name: "is_deprecated",
+        summary: "Determines\u0020if\u0020a\u0020function\u0020is\u0020deprecated\u0020and\u0020handled\u0020by\u0020this\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Functions-Handler.html#method_is_deprecated"
+    },{
+        fqsen: "\\WCS_Deprecated_Functions_Handler\u003A\u003Ahas_replacement\u0028\u0029",
+        name: "has_replacement",
+        summary: "Determines\u0020if\u0020there\u0027s\u0020a\u0020replacement\u0020function\u0020to\u0020call.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Functions-Handler.html#method_has_replacement"
+    },{
+        fqsen: "\\WCS_Deprecated_Functions_Handler\u003A\u003Acall_replacement\u0028\u0029",
+        name: "call_replacement",
+        summary: "Calls\u0020the\u0020replacement\u0020function\u0020if\u0020one\u0020exists.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Functions-Handler.html#method_call_replacement"
+    },{
+        fqsen: "\\WCS_Deprecated_Functions_Handler\u003A\u003Atrigger_notice\u0028\u0029",
+        name: "trigger_notice",
+        summary: "Triggers\u0020the\u0020deprecated\u0020notice.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Functions-Handler.html#method_trigger_notice"
+    },{
+        fqsen: "\\WCS_Deprecated_Functions_Handler\u003A\u003A\u0024class",
+        name: "class",
+        summary: "The\u0020class\u0020this\u0020handler\u0020is\u0020responsible\u0020for.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Functions-Handler.html#property_class"
+    },{
+        fqsen: "\\WCS_Deprecated_Functions_Handler\u003A\u003A\u0024deprecated_functions",
+        name: "deprecated_functions",
+        summary: "An\u0020array\u0020of\u0020functions\u0020which\u0020have\u0020been\u0020deprecated\u0020with\u0020their\u0020replacement\u0020\u0028optional\u0029\u0020and\u0020version\u0020they\u0020were\u0020deprecated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Functions-Handler.html#property_deprecated_functions"
+    },{
+        fqsen: "\\WCS_Dynamic_Hook_Deprecator",
+        name: "WCS_Dynamic_Hook_Deprecator",
+        summary: "Deprecate\u0020actions\u0020and\u0020filters\u0020that\u0020use\u0020a\u0020dynamic\u0020hook\u0020by\u0020appending\u0020a\u0020variable,\u0020like\u0020a\u0020payment\u0020gateway\u0027s\u0020name.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Hook-Deprecator.html"
+    },{
+        fqsen: "\\WCS_Dynamic_Hook_Deprecator\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Hook-Deprecator.html#method___construct"
+    },{
+        fqsen: "\\WCS_Dynamic_Hook_Deprecator\u003A\u003Acheck_for_deprecated_hooks\u0028\u0029",
+        name: "check_for_deprecated_hooks",
+        summary: "Check\u0020if\u0020the\u0020current\u0020hook\u0020contains\u0020the\u0020prefix\u0020of\u0020any\u0020dynamic\u0020hook\u0020that\u0020has\u0020been\u0020deprecated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Hook-Deprecator.html#method_check_for_deprecated_hooks"
+    },{
+        fqsen: "\\WCS_Dynamic_Hook_Deprecator\u003A\u003Acheck_for_deprecated_hook\u0028\u0029",
+        name: "check_for_deprecated_hook",
+        summary: "Check\u0020if\u0020a\u0020given\u0020hook\u0020contains\u0020the\u0020prefix\u0020and\u0020if\u0020it\u0020does,\u0020attach\u0020the\u0020\u0040see\u0020\u0024this\u002D\u003Emaybe_handle_deprecated_hook\u0028\u0029\u0020method\nas\u0020a\u0020callback\u0020to\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Hook-Deprecator.html#method_check_for_deprecated_hook"
+    },{
+        fqsen: "\\WCS_Dynamic_Hook_Deprecator\u003A\u003A\u0024deprecated_hook_prefixes",
+        name: "deprecated_hook_prefixes",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Hook-Deprecator.html#property_deprecated_hook_prefixes"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator",
+        name: "WCS_Hook_Deprecator",
+        summary: "Provide\u0020shared\u0020utilities\u0020for\u0020deprecating\u0020actions\u0020and\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#method___construct"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003Amaybe_handle_deprecated_hook\u0028\u0029",
+        name: "maybe_handle_deprecated_hook",
+        summary: "Check\u0020if\u0020an\u0020old\u0020hook\u0020still\u0020has\u0020callbacks\u0020attached\u0020to\u0020it,\u0020and\u0020if\u0020so,\u0020display\u0020a\u0020notice\u0020and\u0020trigger\u0020the\u0020old\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#method_maybe_handle_deprecated_hook"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003Ahandle_deprecated_hook\u0028\u0029",
+        name: "handle_deprecated_hook",
+        summary: "Check\u0020if\u0020an\u0020old\u0020hook\u0020still\u0020has\u0020callbacks\u0020attached\u0020to\u0020it,\u0020and\u0020if\u0020so,\u0020display\u0020a\u0020notice\u0020and\u0020trigger\u0020the\u0020old\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#method_handle_deprecated_hook"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003Adisplay_notice\u0028\u0029",
+        name: "display_notice",
+        summary: "Display\u0020a\u0020deprecated\u0020notice\u0020for\u0020old\u0020hooks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#method_display_notice"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003Atrigger_hook\u0028\u0029",
+        name: "trigger_hook",
+        summary: "Trigger\u0020the\u0020old\u0020hook\u0020with\u0020the\u0020original\u0020callback\u0020parameters",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#method_trigger_hook"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003Aget_order\u0028\u0029",
+        name: "get_order",
+        summary: "Get\u0020the\u0020order\u0020for\u0020a\u0020subscription\u0020to\u0020pass\u0020to\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#method_get_order"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003Aget_order_id\u0028\u0029",
+        name: "get_order_id",
+        summary: "Get\u0020the\u0020order\u0020ID\u0020for\u0020a\u0020subscription\u0020to\u0020pass\u0020to\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#method_get_order_id"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003Aget_product_id\u0028\u0029",
+        name: "get_product_id",
+        summary: "Get\u0020the\u0020first\u0020product\u0020ID\u0020for\u0020a\u0020subscription\u0020to\u0020pass\u0020to\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#method_get_product_id"
+    },{
+        fqsen: "\\WCS_Hook_Deprecator\u003A\u003A\u0024deprecated_hooks",
+        name: "deprecated_hooks",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Hook-Deprecator.html#property_deprecated_hooks"
+    },{
+        fqsen: "\\WCS_Migrator",
+        name: "WCS_Migrator",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "WCS_Migrator\u0020constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#method___construct"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003Ashould_migrate_entry\u0028\u0029",
+        name: "should_migrate_entry",
+        summary: "Should\u0020this\u0020entry\u0020be\u0020migrated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#method_should_migrate_entry"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003Aget_source_store_entry\u0028\u0029",
+        name: "get_source_store_entry",
+        summary: "Gets\u0020the\u0020item\u0020from\u0020the\u0020source\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#method_get_source_store_entry"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003Asave_destination_store_entry\u0028\u0029",
+        name: "save_destination_store_entry",
+        summary: "save\u0020the\u0020item\u0020to\u0020the\u0020destination\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#method_save_destination_store_entry"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003Adelete_source_store_entry\u0028\u0029",
+        name: "delete_source_store_entry",
+        summary: "deletes\u0020the\u0020item\u0020from\u0020the\u0020source\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#method_delete_source_store_entry"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003Amigrated_entry\u0028\u0029",
+        name: "migrated_entry",
+        summary: "Runs\u0020after\u0020a\u0020entry\u0020has\u0020been\u0020migrated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#method_migrated_entry"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003Amigrate_entry\u0028\u0029",
+        name: "migrate_entry",
+        summary: "Migrates\u0020our\u0020entry.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#method_migrate_entry"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003Alog\u0028\u0029",
+        name: "log",
+        summary: "Add\u0020a\u0020message\u0020to\u0020the\u0020log",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#method_log"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003A\u0024source_store",
+        name: "source_store",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#property_source_store"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003A\u0024destination_store",
+        name: "destination_store",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#property_destination_store"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003A\u0024logger",
+        name: "logger",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#property_logger"
+    },{
+        fqsen: "\\WCS_Migrator\u003A\u003A\u0024log_handle",
+        name: "log_handle",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Migrator.html#property_log_handle"
+    },{
+        fqsen: "\\WCS_Related_Order_Store",
+        name: "WCS_Related_Order_Store",
+        summary: "Define\u0020requirements\u0020for\u0020a\u0020related\u0020order\u0020data\u0020store\u0020and\u0020provide\u0020method\u0020for\u0020accessing\u0020active\u0020data\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003A\u0024instance",
+        name: "instance",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#property_instance"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Stub\u0020for\u0020initialising\u0020the\u0020class\u0020outside\u0020the\u0020constructor,\u0020for\u0020things\u0020like\u0020attaching\u0020callbacks\u0020to\u0020hooks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#method_init"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003Aget_related_order_ids\u0028\u0029",
+        name: "get_related_order_ids",
+        summary: "Get\u0020orders\u0020related\u0020to\u0020a\u0020given\u0020subscription\u0020with\u0020a\u0020given\u0020relationship\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#method_get_related_order_ids"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003Aget_related_subscription_ids\u0028\u0029",
+        name: "get_related_subscription_ids",
+        summary: "Find\u0020subscriptions\u0020related\u0020to\u0020a\u0020given\u0020order\u0020in\u0020a\u0020given\u0020way,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#method_get_related_subscription_ids"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003Aadd_relation\u0028\u0029",
+        name: "add_relation",
+        summary: "Helper\u0020function\u0020for\u0020linking\u0020an\u0020order\u0020to\u0020a\u0020subscription\u0020via\u0020a\u0020given\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#method_add_relation"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003Adelete_relation\u0028\u0029",
+        name: "delete_relation",
+        summary: "Remove\u0020the\u0020relationship\u0020between\u0020a\u0020given\u0020order\u0020and\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#method_delete_relation"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003Adelete_relations\u0028\u0029",
+        name: "delete_relations",
+        summary: "Remove\u0020all\u0020related\u0020orders\/subscriptions\u0020of\u0020a\u0020given\u0020type\u0020from\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#method_delete_relations"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003Aget_relation_types\u0028\u0029",
+        name: "get_relation_types",
+        summary: "Types\u0020of\u0020relationships\u0020the\u0020data\u0020store\u0020supports.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#method_get_relation_types"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003Acheck_relation_type\u0028\u0029",
+        name: "check_relation_type",
+        summary: "Check\u0020if\u0020a\u0020given\u0020relationship\u0020is\u0020supported\u0020by\u0020the\u0020data\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#method_check_relation_type"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003A\u0024relation_types",
+        name: "relation_types",
+        summary: "Types\u0020of\u0020relationships\u0020the\u0020data\u0020store\u0020supports.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#property_relation_types"
+    },{
+        fqsen: "\\WCS_Related_Order_Store\u003A\u003A\u0024relation_type_keys",
+        name: "relation_type_keys",
+        summary: "An\u0020array\u0020using\u0020\u0040see\u0020self\u003A\u003A\u0024relation_types\u0020as\u0020keys\u0020for\u0020more\u0020performant\u0020checks\u0020by\u0020\u0040see\u0020\u0024this\u002D\u003Echeck_relation_type\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store.html#property_relation_type_keys"
+    },{
+        fqsen: "\\WCS_Scheduler",
+        name: "WCS_Scheduler",
+        summary: "Base\u0020class\u0020for\u0020creating\u0020a\u0020scheduler",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Scheduler.html"
+    },{
+        fqsen: "\\WCS_Scheduler\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Scheduler.html#method___construct"
+    },{
+        fqsen: "\\WCS_Scheduler\u003A\u003Aset_date_types_to_schedule\u0028\u0029",
+        name: "set_date_types_to_schedule",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Scheduler.html#method_set_date_types_to_schedule"
+    },{
+        fqsen: "\\WCS_Scheduler\u003A\u003Aget_date_types_to_schedule\u0028\u0029",
+        name: "get_date_types_to_schedule",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Scheduler.html#method_get_date_types_to_schedule"
+    },{
+        fqsen: "\\WCS_Scheduler\u003A\u003Aupdate_date\u0028\u0029",
+        name: "update_date",
+        summary: "When\u0020a\u0020subscription\u0027s\u0020date\u0020is\u0020updated,\u0020maybe\u0020schedule\u0020an\u0020event",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Scheduler.html#method_update_date"
+    },{
+        fqsen: "\\WCS_Scheduler\u003A\u003Adelete_date\u0028\u0029",
+        name: "delete_date",
+        summary: "When\u0020a\u0020subscription\u0027s\u0020date\u0020is\u0020deleted,\u0020clear\u0020it\u0020from\u0020the\u0020scheduler",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Scheduler.html#method_delete_date"
+    },{
+        fqsen: "\\WCS_Scheduler\u003A\u003Aupdate_status\u0028\u0029",
+        name: "update_status",
+        summary: "When\u0020a\u0020subscription\u0027s\u0020status\u0020is\u0020updated,\u0020maybe\u0020schedule\u0020an\u0020event",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Scheduler.html#method_update_status"
+    },{
+        fqsen: "\\WCS_Scheduler\u003A\u003A\u0024date_types_to_schedule",
+        name: "date_types_to_schedule",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Scheduler.html#property_date_types_to_schedule"
+    },{
+        fqsen: "\\WCS_Table_Maker",
+        name: "WCS_Table_Maker",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003Aregister_tables\u0028\u0029",
+        name: "register_tables",
+        summary: "Register\u0020tables\u0020with\u0020WordPress,\u0020and\u0020create\u0020them\u0020if\u0020needed",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#method_register_tables"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003Aget_table_definition\u0028\u0029",
+        name: "get_table_definition",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#method_get_table_definition"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003Aschema_update_required\u0028\u0029",
+        name: "schema_update_required",
+        summary: "Determine\u0020if\u0020the\u0020database\u0020schema\u0020is\u0020out\u0020of\u0020date\nby\u0020comparing\u0020the\u0020integer\u0020found\u0020in\u0020\u0024this\u002D\u003Eschema_version\nwith\u0020the\u0020option\u0020set\u0020in\u0020the\u0020WordPress\u0020options\u0020table",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#method_schema_update_required"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003Aget_schema_option_name\u0028\u0029",
+        name: "get_schema_option_name",
+        summary: "Gets\u0020the\u0020schema\u0020version\u0020name.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#method_get_schema_option_name"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003Aget_schema_option\u0028\u0029",
+        name: "get_schema_option",
+        summary: "Gets\u0020the\u0020schema\u0020version\u0020we\u0020have.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#method_get_schema_option"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003Amark_schema_update_complete\u0028\u0029",
+        name: "mark_schema_update_complete",
+        summary: "Update\u0020the\u0020option\u0020in\u0020WordPress\u0020to\u0020indicate\u0020that\nour\u0020schema\u0020is\u0020now\u0020up\u0020to\u0020date",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#method_mark_schema_update_complete"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003Aupdate_table\u0028\u0029",
+        name: "update_table",
+        summary: "Update\u0020the\u0020schema\u0020for\u0020the\u0020given\u0020table",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#method_update_table"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003Aget_full_table_name\u0028\u0029",
+        name: "get_full_table_name",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#method_get_full_table_name"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003A\u0024schema_version",
+        name: "schema_version",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#property_schema_version"
+    },{
+        fqsen: "\\WCS_Table_Maker\u003A\u003A\u0024tables",
+        name: "tables",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Table-Maker.html#property_tables"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin",
+        name: "WC_Subscriptions_Admin",
+        summary: "Subscriptions\u0020Admin\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aclear_subscriptions_transients\u0028\u0029",
+        name: "clear_subscriptions_transients",
+        summary: "Clear\u0020all\u0020transients\u0020data\u0020we\u0020have\u0020when\u0020the\u0020WooCommerce\u003A\u003ATools\u003A\u003AClear\u0020Transients\u0020action\u0020is\ntriggered.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_clear_subscriptions_transients"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_subscription_products_to_select\u0028\u0029",
+        name: "add_subscription_products_to_select",
+        summary: "Add\u0020the\u0020\u0027subscriptions\u0027\u0020product\u0020type\u0020to\u0020the\u0020WooCommerce\u0020product\u0020type\u0020select\u0020box.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_subscription_products_to_select"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_downloadable_and_virtual_filters\u0028\u0029",
+        name: "add_downloadable_and_virtual_filters",
+        summary: "Add\u0020options\u0020for\u0020downloadable\u0020and\u0020virtual\u0020subscription\u0020products\u0020to\u0020the\u0020product\u0020type\u0020selector\u0020on\u0020the\u0020WooCommerce\u0020products\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_downloadable_and_virtual_filters"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Amodify_downloadable_and_virtual_product_queries\u0028\u0029",
+        name: "modify_downloadable_and_virtual_product_queries",
+        summary: "Modifies\u0020the\u0020main\u0020query\u0020on\u0020the\u0020WooCommerce\u0020products\u0020screen\u0020to\u0020correctly\u0020handle\u0020filtering\u0020by\u0020virtual\u0020and\u0020downloadable\nproduct\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_modify_downloadable_and_virtual_product_queries"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asubscription_pricing_fields\u0028\u0029",
+        name: "subscription_pricing_fields",
+        summary: "Output\u0020the\u0020subscription\u0020specific\u0020pricing\u0020fields\u0020on\u0020the\u0020\u0022Edit\u0020Product\u0022\u0020admin\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_subscription_pricing_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asubscription_shipping_fields\u0028\u0029",
+        name: "subscription_shipping_fields",
+        summary: "Output\u0020subscription\u0020shipping\u0020options\u0020on\u0020the\u0020\u0022Edit\u0020Product\u0022\u0020admin\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_subscription_shipping_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asubscription_advanced_fields\u0028\u0029",
+        name: "subscription_advanced_fields",
+        summary: "Output\u0020advanced\u0020subscription\u0020options\u0020on\u0020the\u0020\u0022Edit\u0020Product\u0022\u0020admin\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_subscription_advanced_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Avariable_subscription_pricing_fields\u0028\u0029",
+        name: "variable_subscription_pricing_fields",
+        summary: "Output\u0020the\u0020subscription\u0020specific\u0020pricing\u0020fields\u0020on\u0020the\u0020\u0022Edit\u0020Product\u0022\u0020admin\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_variable_subscription_pricing_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Avariable_subscription_bulk_edit_actions\u0028\u0029",
+        name: "variable_subscription_bulk_edit_actions",
+        summary: "Output\u0020extra\u0020options\u0020in\u0020the\u0020Bulk\u0020Edit\u0020select\u0020box\u0020for\u0020editing\u0020Subscription\u0020terms.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_variable_subscription_bulk_edit_actions"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asave_subscription_meta\u0028\u0029",
+        name: "save_subscription_meta",
+        summary: "Save\u0020meta\u0020data\u0020for\u0020simple\u0020subscription\u0020product\u0020type\u0020when\u0020the\u0020\u0022Edit\u0020Product\u0022\u0020form\u0020is\u0020submitted.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_save_subscription_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asave_variable_subscription_meta\u0028\u0029",
+        name: "save_variable_subscription_meta",
+        summary: "Save\u0020meta\u0020data\u0020for\u0020variable\u0020subscription\u0020product\u0020type\u0020when\u0020the\u0020\u0022Edit\u0020Product\u0022\u0020form\u0020is\u0020submitted.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_save_variable_subscription_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Abulk_edit_save_subscription_meta\u0028\u0029",
+        name: "bulk_edit_save_subscription_meta",
+        summary: "Calculate\u0020and\u0020set\u0020a\u0020simple\u0020subscription\u0027s\u0020prices\u0020when\u0020edited\u0020via\u0020the\u0020bulk\u0020edit",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_bulk_edit_save_subscription_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aprocess_product_meta_variable_subscription\u0028\u0029",
+        name: "process_product_meta_variable_subscription",
+        summary: "Save\u0020a\u0020variable\u0020subscription\u0027s\u0020details\u0020when\u0020the\u0020edit\u0020product\u0020page\u0020is\u0020submitted\u0020for\u0020a\u0020variable\nsubscription\u0020product\u0020type\u0020\u0028or\u0020the\u0020bulk\u0020edit\u0020product\u0020is\u0020saved\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_process_product_meta_variable_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asave_product_variation\u0028\u0029",
+        name: "save_product_variation",
+        summary: "Save\u0020meta\u0020info\u0020for\u0020subscription\u0020variations",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_save_product_variation"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Acheck_customer_is_set\u0028\u0029",
+        name: "check_customer_is_set",
+        summary: "Make\u0020sure\u0020when\u0020saving\u0020a\u0020subscription\u0020via\u0020the\u0020admin\u0020to\u0020activate\u0020it,\u0020it\u0020has\u0020a\u0020valid\u0020customer\u0020set\u0020on\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_check_customer_is_set"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aset_variation_meta_defaults_on_bulk_add\u0028\u0029",
+        name: "set_variation_meta_defaults_on_bulk_add",
+        summary: "Set\u0020default\u0020values\u0020for\u0020subscription\u0020dropdown\u0020fields\u0020when\u0020bulk\u0020adding\u0020variations\u0020to\u0020fix\u0020issue\u0020\u00231342",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_set_variation_meta_defaults_on_bulk_add"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aenqueue_styles_scripts\u0028\u0029",
+        name: "enqueue_styles_scripts",
+        summary: "Adds\u0020all\u0020necessary\u0020admin\u0020styles.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_enqueue_styles_scripts"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_user_columns\u0028\u0029",
+        name: "add_user_columns",
+        summary: "Add\u0020the\u0020\u0022Active\u0020Subscriber\u003F\u0022\u0020column\u0020to\u0020the\u0020User\u0027s\u0020admin\u0020table",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_user_columns"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Auser_column_values\u0028\u0029",
+        name: "user_column_values",
+        summary: "Hooked\u0020to\u0020the\u0020users\u0020table\u0020to\u0020display\u0020a\u0020check\u0020mark\u0020if\u0020a\u0020given\u0020user\u0020has\u0020an\u0020active\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_user_column_values"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asubscriptions_management_page\u0028\u0029",
+        name: "subscriptions_management_page",
+        summary: "Outputs\u0020the\u0020Subscription\u0020Management\u0020admin\u0020page\u0020with\u0020a\u0020sortable\u0020\u0040see\u0020WC_Subscriptions_List_Table\u0020used\u0020to\ndisplay\u0020all\u0020the\u0020subscriptions\u0020that\u0020have\u0020been\u0020purchased.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_subscriptions_management_page"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_manage_subscriptions_screen_options\u0028\u0029",
+        name: "add_manage_subscriptions_screen_options",
+        summary: "Outputs\u0020the\u0020screen\u0020options\u0020on\u0020the\u0020Subscription\u0020Management\u0020admin\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_manage_subscriptions_screen_options"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aset_manage_subscriptions_screen_option\u0028\u0029",
+        name: "set_manage_subscriptions_screen_option",
+        summary: "Sets\u0020the\u0020correct\u0020value\u0020for\u0020screen\u0020options\u0020on\u0020the\u0020Subscription\u0020Management\u0020admin\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_set_manage_subscriptions_screen_option"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aget_subscription_table_columns\u0028\u0029",
+        name: "get_subscription_table_columns",
+        summary: "Returns\u0020the\u0020columns\u0020for\u0020the\u0020Manage\u0020Subscriptions\u0020table,\u0020specifically\u0020used\u0020for\u0020adding\u0020the\nshow\/hide\u0020column\u0020screen\u0020options.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_get_subscription_table_columns"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aget_subscriptions_list_table\u0028\u0029",
+        name: "get_subscriptions_list_table",
+        summary: "Returns\u0020the\u0020columns\u0020for\u0020the\u0020Manage\u0020Subscriptions\u0020table,\u0020specifically\u0020used\u0020for\u0020adding\u0020the\nshow\/hide\u0020column\u0020screen\u0020options.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_get_subscriptions_list_table"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aupdate_subscription_settings\u0028\u0029",
+        name: "update_subscription_settings",
+        summary: "Uses\u0020the\u0020WooCommerce\u0020options\u0020API\u0020to\u0020save\u0020settings\u0020via\u0020the\u0020\u0040see\u0020woocommerce_update_options\u0028\u0029\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_update_subscription_settings"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asubscription_settings_page\u0028\u0029",
+        name: "subscription_settings_page",
+        summary: "Uses\u0020the\u0020WooCommerce\u0020admin\u0020fields\u0020API\u0020to\u0020output\u0020settings\u0020via\u0020the\u0020\u0040see\u0020woocommerce_admin_fields\u0028\u0029\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_subscription_settings_page"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_subscription_settings_tab\u0028\u0029",
+        name: "add_subscription_settings_tab",
+        summary: "Add\u0020the\u0020Subscriptions\u0020settings\u0020tab\u0020to\u0020the\u0020WooCommerce\u0020settings\u0020tabs\u0020array.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_subscription_settings_tab"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_default_settings\u0028\u0029",
+        name: "add_default_settings",
+        summary: "Sets\u0020default\u0020values\u0020for\u0020all\u0020the\u0020WooCommerce\u0020Subscription\u0020options.\u0020Called\u0020on\u0020plugin\u0020activation.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_default_settings"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Ahas_settings\u0028\u0029",
+        name: "has_settings",
+        summary: "Deteremines\u0020if\u0020the\u0020subscriptions\u0020settings\u0020have\u0020been\u0020setup.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_has_settings"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aget_settings\u0028\u0029",
+        name: "get_settings",
+        summary: "Get\u0020all\u0020the\u0020settings\u0020for\u0020the\u0020Subscriptions\u0020extension\u0020in\u0020the\u0020format\u0020required\u0020by\u0020the\u0020\u0040see\u0020woocommerce_admin_fields\u0028\u0029\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_get_settings"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_informational_admin_field\u0028\u0029",
+        name: "add_informational_admin_field",
+        summary: "Displays\u0020instructional\u0020information\u0020for\u0020a\u0020WooCommerce\u0020setting.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_informational_admin_field"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Ashow_user_pointers\u0028\u0029",
+        name: "show_user_pointers",
+        summary: "Checks\u0020whether\u0020a\u0020user\u0020should\u0020be\u0020shown\u0020pointers\u0020or\u0020not,\u0020based\u0020on\u0020whether\u0020a\u0020user\u0020has\u0020previously\u0020dismissed\u0020pointers.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_show_user_pointers"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_subscription_url\u0028\u0029",
+        name: "add_subscription_url",
+        summary: "Returns\u0020a\u0020URL\u0020for\u0020adding\/editing\u0020a\u0020subscription,\u0020which\u0020special\u0020parameters\u0020to\u0020define\u0020whether\u0020pointers\u0020should\u0020be\u0020shown.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_subscription_url"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aget_woocommerce_plugin_dir_file\u0028\u0029",
+        name: "get_woocommerce_plugin_dir_file",
+        summary: "Searches\u0020through\u0020the\u0020list\u0020of\u0020active\u0020plugins\u0020to\u0020find\u0020WooCommerce.\u0020Just\u0020in\u0020case\nWooCommerce\u0020resides\u0020in\u0020a\u0020folder\u0020other\u0020than\u0020\/woocommerce\/",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_get_woocommerce_plugin_dir_file"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Afilter_orders\u0028\u0029",
+        name: "filter_orders",
+        summary: "Filter\u0020the\u0020\u0022Orders\u0022\u0020list\u0020to\u0020show\u0020only\u0020orders\u0020associated\u0020with\u0020a\u0020specific\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_filter_orders"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Afilter_orders_and_subscriptions_from_list\u0028\u0029",
+        name: "filter_orders_and_subscriptions_from_list",
+        summary: "Filters\u0020the\u0020Admin\u0020orders\u0020and\u0020subscriptions\u0020table\u0020results\u0020based\u0020on\u0020a\u0020list\u0020of\u0020IDs\u0020returned\u0020by\u0020a\u0020report\u0020query.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_filter_orders_and_subscriptions_from_list"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Afilter_paid_subscription_orders_for_user\u0028\u0029",
+        name: "filter_paid_subscription_orders_for_user",
+        summary: "Filter\u0020the\u0020\u0022Orders\u0022\u0020list\u0020to\u0020show\u0020only\u0020paid\u0020subscription\u0020orders\u0020for\u0020a\u0020particular\u0020user",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_filter_paid_subscription_orders_for_user"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Adisplay_renewal_filter_notice\u0028\u0029",
+        name: "display_renewal_filter_notice",
+        summary: "Display\u0020a\u0020notice\u0020indicating\u0020that\u0020the\u0020\u0022Orders\u0022\u0020list\u0020is\u0020filtered.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_display_renewal_filter_notice"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aget_trial_period_validation_message\u0028\u0029",
+        name: "get_trial_period_validation_message",
+        summary: "Returns\u0020either\u0020a\u0020string\u0020or\u0020array\u0020of\u0020strings\u0020describing\u0020the\u0020allowable\u0020trial\u0020period\u0020range\nfor\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_get_trial_period_validation_message"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Ado_subscriptions_shortcode\u0028\u0029",
+        name: "do_subscriptions_shortcode",
+        summary: "Callback\u0020for\u0020the\u0020\u005Bsubscriptions\u005D\u0020shortcode\u0020that\u0020displays\u0020subscription\u0020names\u0020for\u0020a\u0020particular\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_do_subscriptions_shortcode"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_system_status_items\u0028\u0029",
+        name: "add_system_status_items",
+        summary: "Adds\u0020Subscriptions\u0020specific\u0020details\u0020to\u0020the\u0020WooCommerce\u0020System\u0020Status\u0020report.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_system_status_items"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Asettings_tab_url\u0028\u0029",
+        name: "settings_tab_url",
+        summary: "A\u0020WooCommerce\u0020version\u0020aware\u0020function\u0020for\u0020getting\u0020the\u0020Subscriptions\u0020admin\u0020settings\ntab\u0020URL.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_settings_tab_url"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Apayment_gateways_renewal_column\u0028\u0029",
+        name: "payment_gateways_renewal_column",
+        summary: "Add\u0020a\u0020column\u0020to\u0020the\u0020Payment\u0020Gateway\u0020table\u0020to\u0020show\u0020whether\u0020the\u0020gateway\u0020supports\u0020automated\u0020renewals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_payment_gateways_renewal_column"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Apayment_gateways_rewewal_column\u0028\u0029",
+        name: "payment_gateways_rewewal_column",
+        summary: "Add\u0020a\u0020column\u0020to\u0020the\u0020Payment\u0020Gateway\u0020table\u0020to\u0020show\u0020whether\u0020the\u0020gateway\u0020supports\u0020automated\u0020renewals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_payment_gateways_rewewal_column"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Apayment_gateways_renewal_support\u0028\u0029",
+        name: "payment_gateways_renewal_support",
+        summary: "Check\u0020whether\u0020the\u0020payment\u0020gateway\u0020passed\u0020in\u0020supports\u0020automated\u0020renewals\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_payment_gateways_renewal_support"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Apayment_gateways_rewewal_support\u0028\u0029",
+        name: "payment_gateways_rewewal_support",
+        summary: "Check\u0020whether\u0020the\u0020payment\u0020gateway\u0020passed\u0020in\u0020supports\u0020automated\u0020renewals\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_payment_gateways_rewewal_support"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Amaybe_remove_formatted_order_total_filter\u0028\u0029",
+        name: "maybe_remove_formatted_order_total_filter",
+        summary: "Do\u0020not\u0020display\u0020formatted\u0020order\u0020total\u0020on\u0020the\u0020Edit\u0020Order\u0020administration\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_maybe_remove_formatted_order_total_filter"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Amaybe_attach_gettext_callback\u0028\u0029",
+        name: "maybe_attach_gettext_callback",
+        summary: "Only\u0020attach\u0020the\u0020gettext\u0020callback\u0020when\u0020on\u0020admin\u0020shop\u0020subscription\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_maybe_attach_gettext_callback"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Amaybe_unattach_gettext_callback\u0028\u0029",
+        name: "maybe_unattach_gettext_callback",
+        summary: "Only\u0020unattach\u0020the\u0020gettext\u0020callback\u0020when\u0020it\u0020was\u0020attached",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_maybe_unattach_gettext_callback"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Achange_order_item_editable_text\u0028\u0029",
+        name: "change_order_item_editable_text",
+        summary: "When\u0020subscription\u0020items\u0020not\u0020editable\u0020\u0028such\u0020as\u0020due\u0020to\u0020the\u0020payment\u0020gateway\u0020not\u0020supporting\u0020modifications\u0029,\nchange\u0020the\u0020text\u0020to\u0020explain\u0020why",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_change_order_item_editable_text"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_recurring_payment_gateway_information\u0028\u0029",
+        name: "add_recurring_payment_gateway_information",
+        summary: "Add\u0020recurring\u0020payment\u0020gateway\u0020information\u0020after\u0020the\u0020Settings\u002D\u003EPayments\u002D\u003EPayment\u0020Methods\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_recurring_payment_gateway_information"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Ais_subscription_product_save_request\u0028\u0029",
+        name: "is_subscription_product_save_request",
+        summary: "Check\u0020if\u0020subscription\u0020product\u0020meta\u0020data\u0020should\u0020be\u0020saved\u0020for\u0020the\u0020current\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_is_subscription_product_save_request"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Ainsert_setting_after\u0028\u0029",
+        name: "insert_setting_after",
+        summary: "Insert\u0020a\u0020setting\u0020or\u0020an\u0020array\u0020of\u0020settings\u0020after\u0020another\u0020specific\u0020setting\u0020by\u0020its\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_insert_setting_after"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_guest_checkout_setting_note\u0028\u0029",
+        name: "add_guest_checkout_setting_note",
+        summary: "Add\u0020a\u0020reminder\u0020on\u0020the\u0020enable\u0020guest\u0020checkout\u0020setting\u0020that\u0020subscriptions\u0020still\u0020require\u0020an\u0020account",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_guest_checkout_setting_note"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aget_change_product_type_warning\u0028\u0029",
+        name: "get_change_product_type_warning",
+        summary: "Gets\u0020the\u0020product\u0020type\u0020warning\u0020message\u0020displayed\u0020for\u0020products\u0020associated\u0020with\u0020subscriptions",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_get_change_product_type_warning"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Avalidate_product_type_change\u0028\u0029",
+        name: "validate_product_type_change",
+        summary: "Validates\u0020the\u0020product\u0020type\u0020change\u0020before\u0020other\u0020product\u0020data\u0020is\u0020saved.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_validate_product_type_change"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_registration_for_subscription_purchases_setting\u0028\u0029",
+        name: "add_registration_for_subscription_purchases_setting",
+        summary: "Adds\u0020a\u0020setting\u0020to\u0020allow\u0020customer\u0020registration\u0020on\u0020checkout\u0020specifically\u0020for\u0020subscription\u0020purchases.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_registration_for_subscription_purchases_setting"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Arender_system_status_items\u0028\u0029",
+        name: "render_system_status_items",
+        summary: "Renders\u0020the\u0020Subscription\u0020information\u0020in\u0020the\u0020WC\u0020status\u0020page",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_render_system_status_items"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Arelated_orders_meta_box\u0028\u0029",
+        name: "related_orders_meta_box",
+        summary: "Outputs\u0020the\u0020contents\u0020of\u0020the\u0020\u0022Renewal\u0020Orders\u0022\u0020meta\u0020box.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_related_orders_meta_box"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_subscribers_to_customers\u0028\u0029",
+        name: "add_subscribers_to_customers",
+        summary: "Add\u0020users\u0020with\u0020subscriptions\u0020to\u0020the\u0020\u0022Customers\u0022\u0020report\u0020in\u0020WooCommerce\u0020\u002D\u003E\u0020Reports.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_subscribers_to_customers"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aset_admin_screen_id\u0028\u0029",
+        name: "set_admin_screen_id",
+        summary: "Set\u0020a\u0020translation\u0020safe\u0020screen\u0020ID\u0020for\u0020Subcsription",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_set_admin_screen_id"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_subscriptions_table_column_filter\u0028\u0029",
+        name: "add_subscriptions_table_column_filter",
+        summary: "Once\u0020we\u0020have\u0020set\u0020a\u0020correct\u0020admin\u0020page\u0020screen\u0020ID,\u0020we\u0020can\u0020use\u0020it\u0020for\u0020adding\u0020the\u0020Manage\u0020Subscriptions\u0020table\u0027s\u0020columns.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_subscriptions_table_column_filter"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Afilter_orders_by_renewal_parent\u0028\u0029",
+        name: "filter_orders_by_renewal_parent",
+        summary: "Filter\u0020the\u0020\u0022Orders\u0022\u0020list\u0020to\u0020show\u0020only\u0020renewal\u0020orders\u0020associated\u0020with\u0020a\u0020specific\u0020parent\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_filter_orders_by_renewal_parent"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Aadd_meta_boxes\u0028\u0029",
+        name: "add_meta_boxes",
+        summary: "Registers\u0020the\u0020\u0022Renewal\u0020Orders\u0022\u0020meta\u0020box\u0020for\u0020the\u0020\u0022Edit\u0020Order\u0022\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_add_meta_boxes"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Arecurring_totals_meta_box\u0028\u0029",
+        name: "recurring_totals_meta_box",
+        summary: "Output\u0020the\u0020metabox",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_recurring_totals_meta_box"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Afilter_orders_from_list\u0028\u0029",
+        name: "filter_orders_from_list",
+        summary: "Filters\u0020the\u0020Admin\u0020orders\u0020table\u0020results\u0020based\u0020on\u0020a\u0020list\u0020of\u0020IDs\u0020returned\u0020by\u0020a\u0020report\u0020query.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_filter_orders_from_list"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Afilter_subscriptions_from_list\u0028\u0029",
+        name: "filter_subscriptions_from_list",
+        summary: "Filters\u0020the\u0020Admin\u0020subscriptions\u0020table\u0020results\u0020based\u0020on\u0020a\u0020list\u0020of\u0020IDs\u0020returned\u0020by\u0020a\u0020report\u0020query.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_filter_subscriptions_from_list"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003Amaybe_keep_variations\u0028\u0029",
+        name: "maybe_keep_variations",
+        summary: "Prevents\u0020variations\u0020from\u0020being\u0020deleted\u0020if\u0020switching\u0020from\u0020a\u0020variable\u0020product\u0020type\u0020to\u0020a\u0020subscription\u0020variable\u0020product\u0020type\u0020\u0028and\u0020vice\u0020versa\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#method_maybe_keep_variations"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003A\u0024tab_name",
+        name: "tab_name",
+        summary: "The\u0020WooCommerce\u0020settings\u0020tab\u0020name",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#property_tab_name"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003A\u0024option_prefix",
+        name: "option_prefix",
+        summary: "The\u0020prefix\u0020for\u0020subscription\u0020settings",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#property_option_prefix"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003A\u0024subscriptions_list_table",
+        name: "subscriptions_list_table",
+        summary: "Store\u0020an\u0020instance\u0020of\u0020the\u0020list\u0020table",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#property_subscriptions_list_table"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003A\u0024found_related_orders",
+        name: "found_related_orders",
+        summary: "Store\u0020an\u0020instance\u0020of\u0020the\u0020list\u0020table",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#property_found_related_orders"
+    },{
+        fqsen: "\\WC_Subscriptions_Admin\u003A\u003A\u0024saved_product_meta",
+        name: "saved_product_meta",
+        summary: "Is\u0020meta\u0020boxes\u0020saved\u0020once\u003F",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Admin.html#property_saved_product_meta"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes",
+        name: "WCS_Admin_Meta_Boxes",
+        summary: "WC_Admin_Meta_Boxes",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method___construct"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aadd_meta_boxes\u0028\u0029",
+        name: "add_meta_boxes",
+        summary: "Add\u0020WC\u0020Meta\u0020boxes",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_add_meta_boxes"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aremove_meta_boxes\u0028\u0029",
+        name: "remove_meta_boxes",
+        summary: "Removes\u0020the\u0020core\u0020Order\u0020Data\u0020meta\u0020box\u0020as\u0020we\u0020add\u0020our\u0020own\u0020Subscription\u0020Data\u0020meta\u0020box",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_remove_meta_boxes"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aremove_meta_box_save\u0028\u0029",
+        name: "remove_meta_box_save",
+        summary: "Don\u0027t\u0020save\u0020save\u0020some\u0020order\u0020related\u0020meta\u0020boxes",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_remove_meta_box_save"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aenqueue_styles_scripts\u0028\u0029",
+        name: "enqueue_styles_scripts",
+        summary: "Print\u0020admin\u0020styles\/scripts",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_enqueue_styles_scripts"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aadd_subscription_actions\u0028\u0029",
+        name: "add_subscription_actions",
+        summary: "Adds\u0020actions\u0020to\u0020the\u0020admin\u0020edit\u0020subscriptions\u0020page,\u0020if\u0020the\u0020subscription\u0020hasn\u0027t\u0020ended\u0020and\u0020the\u0020payment\u0020method\u0020supports\u0020them.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_add_subscription_actions"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aprocess_renewal_action_request\u0028\u0029",
+        name: "process_renewal_action_request",
+        summary: "Handles\u0020the\u0020action\u0020request\u0020to\u0020process\u0020a\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_process_renewal_action_request"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Acreate_pending_renewal_action_request\u0028\u0029",
+        name: "create_pending_renewal_action_request",
+        summary: "Handles\u0020the\u0020action\u0020request\u0020to\u0020create\u0020a\u0020pending\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_create_pending_renewal_action_request"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Acreate_pending_parent_action_request\u0028\u0029",
+        name: "create_pending_parent_action_request",
+        summary: "Handles\u0020the\u0020action\u0020request\u0020to\u0020create\u0020a\u0020pending\u0020parent\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_create_pending_parent_action_request"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aremove_order_email_actions\u0028\u0029",
+        name: "remove_order_email_actions",
+        summary: "Removes\u0020order\u0020related\u0020emails\u0020from\u0020the\u0020available\u0020actions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_remove_order_email_actions"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aprocess_retry_renewal_payment_action_request\u0028\u0029",
+        name: "process_retry_renewal_payment_action_request",
+        summary: "Process\u0020the\u0020action\u0020request\u0020to\u0020retry\u0020renewal\u0020payment\u0020for\u0020failed\u0020renewal\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_process_retry_renewal_payment_action_request"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Acan_renewal_order_be_retried\u0028\u0029",
+        name: "can_renewal_order_be_retried",
+        summary: "Determines\u0020if\u0020a\u0020renewal\u0020order\u0020payment\u0020can\u0020be\u0020retried.\u0020A\u0020renewal\u0020order\u0020payment\u0020can\u0020only\u0020be\u0020retried\u0020when\u003A\n\u0020\u002D\u0020Order\u0020is\u0020a\u0020renewal\u0020order\n\u0020\u002D\u0020Order\u0020status\u0020is\u0020failed\n\u0020\u002D\u0020Order\u0020payment\u0020method\u0020isn\u0027t\u0020empty\n\u0020\u002D\u0020Order\u0020total\u0020\u003E\u00200\n\u0020\u002D\u0020Subscription\/s\u0020aren\u0027t\u0020manual\n\u0020\u002D\u0020Subscription\u0020payment\u0020method\u0020supports\u0020date\u0020changes\n\u0020\u002D\u0020Order\u0020payment\u0020method\u0020has_action\u0028\u0027woocommerce_scheduled_subscription_payment_..\u0027\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_can_renewal_order_be_retried"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aoverride_stock_management\u0028\u0029",
+        name: "override_stock_management",
+        summary: "Disables\u0020stock\u0020managment\u0020while\u0020adding\u0020items\u0020to\u0020a\u0020subscription\u0020via\u0020the\u0020edit\u0020subscription\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_override_stock_management"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aoutput_price_lock_html\u0028\u0029",
+        name: "output_price_lock_html",
+        summary: "Displays\u0020a\u0020checkbox\u0020allowing\u0020admin\u0020to\u0020lock\u0020in\u0020prices\u0020increases\u0020in\u0020the\u0020edit\u0020order\u0020line\u0020items\u0020meta\u0020box.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_output_price_lock_html"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Asave_increased_price_lock\u0028\u0029",
+        name: "save_increased_price_lock",
+        summary: "Saves\u0020the\u0020manual\u0020price\u0020increase\u0020lock\u0020via\u0020Edit\u0020order\u0020save\u0020and\u0020ajax\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_save_increased_price_lock"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Astore_item_base_location_tax\u0028\u0029",
+        name: "store_item_base_location_tax",
+        summary: "Stores\u0020the\u0020subtracted\u0020base\u0020location\u0020tax\u0020totals\u0020for\u0020subscription\u0020and\u0020renewal\u0020line\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_store_item_base_location_tax"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aprevent_subscription_line_item_stock_handling\u0028\u0029",
+        name: "prevent_subscription_line_item_stock_handling",
+        summary: "Prevents\u0020WC\u0020core\u0027s\u0020handling\u0020of\u0020stock\u0020for\u0020subscriptions\u0020saved\u0020via\u0020the\u0020edit\u0020subscription\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_prevent_subscription_line_item_stock_handling"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aupdate_subtracted_base_location_tax_meta\u0028\u0029",
+        name: "update_subtracted_base_location_tax_meta",
+        summary: "Updates\u0020the\u0020\u0060_subtracted_base_location_tax\u0060\u0020meta\u0020when\u0020admin\u0020users\u0020update\u0020a\u0020line\u0020item\u0027s\u0020quantity.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_update_subtracted_base_location_tax_meta"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aupdate_subtracted_base_location_taxes_amount\u0028\u0029",
+        name: "update_subtracted_base_location_taxes_amount",
+        summary: "Updates\u0020the\u0020\u0060_subtracted_base_location_taxes\u0060\u0020meta\u0020when\u0020admin\u0020users\u0020update\u0020a\u0020line\u0020item\u0027s\u0020price.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_update_subtracted_base_location_taxes_amount"
+    },{
+        fqsen: "\\WCS_Admin_Meta_Boxes\u003A\u003Aget_customer_orders\u0028\u0029",
+        name: "get_customer_orders",
+        summary: "Gets\u0020a\u0020list\u0020of\u0020customer\u0020orders\u0020via\u0020ajax.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Meta-Boxes.html#method_get_customer_orders"
+    },{
+        fqsen: "\\WCS_Admin_Notice",
+        name: "WCS_Admin_Notice",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method___construct"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Adisplay\u0028\u0029",
+        name: "display",
+        summary: "Display\u0020the\u0020admin\u0020notice.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_display"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Ais_dismissible\u0028\u0029",
+        name: "is_dismissible",
+        summary: "Whether\u0020the\u0020admin\u0020notice\u0020is\u0020dismissible.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_is_dismissible"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Ahas_heading\u0028\u0029",
+        name: "has_heading",
+        summary: "Whether\u0020the\u0020admin\u0020notice\u0020has\u0020a\u0020heading\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_has_heading"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Ahas_actions\u0028\u0029",
+        name: "has_actions",
+        summary: "Whether\u0020the\u0020admin\u0020notice\u0020has\u0020actions\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_has_actions"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aprint_heading\u0028\u0029",
+        name: "print_heading",
+        summary: "Print\u0020the\u0020notice\u0027s\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_print_heading"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aprint_content\u0028\u0029",
+        name: "print_content",
+        summary: "Get\u0020the\u0020notice\u0027s\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_print_content"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aprint_attributes\u0028\u0029",
+        name: "print_attributes",
+        summary: "Print\u0020the\u0020notice\u0027s\u0020attributes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_print_attributes"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aprint_dismiss_url\u0028\u0029",
+        name: "print_dismiss_url",
+        summary: "Print\u0020the\u0020notice\u0027s\u0020dismiss\u0020URL.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_print_dismiss_url"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aget_actions\u0028\u0029",
+        name: "get_actions",
+        summary: "Get\u0020the\u0020notice\u0027s\u0020actions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_get_actions"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aset_simple_content\u0028\u0029",
+        name: "set_simple_content",
+        summary: "Set\u0020the\u0020notice\u0027s\u0020content\u0020to\u0020a\u0020simple\u0020string.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_set_simple_content"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aset_html_content\u0028\u0029",
+        name: "set_html_content",
+        summary: "Set\u0020the\u0020notice\u0027s\u0020content\u0020to\u0020a\u0020string\u0020containing\u0020HTML\u0020elements.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_set_html_content"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aset_content_template\u0028\u0029",
+        name: "set_content_template",
+        summary: "Set\u0020the\u0020notice\u0027s\u0020content\u0020to\u0020a\u0020string\u0020containing\u0020HTML\u0020elements.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_set_content_template"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aset_actions\u0028\u0029",
+        name: "set_actions",
+        summary: "Set\u0020actions\u0020the\u0020user\u0020can\u0020make\u0020in\u0020response\u0020to\u0020this\u0020notice.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_set_actions"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003Aset_heading\u0028\u0029",
+        name: "set_heading",
+        summary: "Set\u0020notice\u0027s\u0020heading.\u0020If\u0020set\u0020this\u0020will\u0020appear\u0020at\u0020the\u0020top\u0020of\u0020the\u0020notice\u0020wrapped\u0020in\u0020a\u0020h2\u0020element.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#method_set_heading"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003A\u0024type",
+        name: "type",
+        summary: "The\u0020notice\u0020type.\u0020Can\u0020be\u0020notice,\u0020notice\u002Dinfo,\u0020updated,\u0020error\u0020or\u0020a\u0020custom\u0020notice\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#property_type"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003A\u0024heading",
+        name: "heading",
+        summary: "The\u0020notice\u0020heading.\u0020Optional\u0020property.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#property_heading"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003A\u0024content",
+        name: "content",
+        summary: "The\u0020notice\u0027s\u0020main\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#property_content"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003A\u0024content_type",
+        name: "content_type",
+        summary: "The\u0020notice\u0027s\u0020content\u0020type.\u0020Can\u0020be\u0020\u0027simple\u0027\u0020or\u0020\u0027html\u0027.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#property_content_type"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003A\u0024attributes",
+        name: "attributes",
+        summary: "The\u0020container\u0020div\u0027s\u0020attributes.\u0020Optional\u0020property.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#property_attributes"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003A\u0024dismiss_url",
+        name: "dismiss_url",
+        summary: "The\u0020URL\u0020used\u0020to\u0020dismiss\u0020the\u0020notice.\u0020Optional\u0020property.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#property_dismiss_url"
+    },{
+        fqsen: "\\WCS_Admin_Notice\u003A\u003A\u0024actions",
+        name: "actions",
+        summary: "A\u0020list\u0020of\u0020actions\u0020the\u0020user\u0020can\u0020take",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Notice.html#property_actions"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types",
+        name: "WCS_Admin_Post_Types",
+        summary: "WC_Admin_Post_Types\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method___construct"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aposts_clauses\u0028\u0029",
+        name: "posts_clauses",
+        summary: "Modifies\u0020the\u0020actual\u0020SQL\u0020that\u0020is\u0020needed\u0020to\u0020order\u0020by\u0020last\u0020payment\u0020date\u0020on\u0020subscriptions.\u0020Data\u0020is\u0020pulled\u0020from\u0020related\nbut\u0020independent\u0020posts,\u0020so\u0020subqueries\u0020are\u0020needed.\u0020That\u0027s\u0020something\u0020we\u0020can\u0027t\u0020get\u0020by\u0020filtering\u0020the\u0020request.\u0020This\u0020is\u0020hooked\nin\u0020\u0040see\u0020WCS_Admin_Post_Types\u003A\u003Arequest_query\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_posts_clauses"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Ais_db_user_privileged\u0028\u0029",
+        name: "is_db_user_privileged",
+        summary: "Check\u0020is\u0020database\u0020user\u0020is\u0020capable\u0020of\u0020doing\u0020high\u0020performance\u0020things,\u0020such\u0020as\u0020creating\u0020temporary\u0020tables,\nindexing\u0020them,\u0020and\u0020then\u0020dropping\u0020them\u0020after.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_is_db_user_privileged"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aget_special_database_privileges\u0028\u0029",
+        name: "get_special_database_privileges",
+        summary: "Return\u0020the\u0020privileges\u0020a\u0020database\u0020user\u0020has\u0020out\u0020of\u0020CREATE\u0020TEMPORARY\u0020TABLES,\u0020INDEX\u0020and\u0020DROP.\u0020This\u0020is\u0020so\u0020we\u0020can\u0020use\nthese\u0020discrete\u0020values\u0020on\u0020a\u0020debug\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_get_special_database_privileges"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aposts_clauses_low_performance\u0028\u0029",
+        name: "posts_clauses_low_performance",
+        summary: "Modifies\u0020the\u0020query\u0020for\u0020a\u0020slightly\u0020faster,\u0020yet\u0020still\u0020pretty\u0020slow\u0020query\u0020in\u0020case\u0020the\u0020user\u0020does\u0020not\u0020have\nthe\u0020necessary\u0020privileges\u0020to\u0020run",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_posts_clauses_low_performance"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aposts_clauses_high_performance\u0028\u0029",
+        name: "posts_clauses_high_performance",
+        summary: "Modifies\u0020the\u0020query\u0020in\u0020such\u0020a\u0020way\u0020that\u0020makes\u0020use\u0020of\u0020the\u0020CREATE\u0020TEMPORARY\u0020TABLE,\u0020DROP\u0020and\u0020INDEX\nMySQL\u0020privileges.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_posts_clauses_high_performance"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Arestrict_by_product\u0028\u0029",
+        name: "restrict_by_product",
+        summary: "Displays\u0020the\u0020dropdown\u0020for\u0020the\u0020product\u0020filter",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_restrict_by_product"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aremove_bulk_actions\u0028\u0029",
+        name: "remove_bulk_actions",
+        summary: "Remove\u0020\u0022edit\u0022\u0020from\u0020the\u0020bulk\u0020actions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_remove_bulk_actions"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aprint_bulk_actions_script\u0028\u0029",
+        name: "print_bulk_actions_script",
+        summary: "Add\u0020extra\u0020options\u0020to\u0020the\u0020bulk\u0020actions\u0020dropdown",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_print_bulk_actions_script"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aparse_bulk_actions\u0028\u0029",
+        name: "parse_bulk_actions",
+        summary: "Deals\u0020with\u0020bulk\u0020actions.\u0020The\u0020style\u0020is\u0020similar\u0020to\u0020what\u0020WooCommerce\u0020is\u0020doing.\u0020Extensions\u0020will\u0020have\u0020to\u0020define\u0020their\nown\u0020logic\u0020by\u0020copying\u0020the\u0020concept\u0020behind\u0020this\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_parse_bulk_actions"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Abulk_admin_notices\u0028\u0029",
+        name: "bulk_admin_notices",
+        summary: "Show\u0020confirmation\u0020message\u0020that\u0020subscription\u0020status\u0020was\u0020changed",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_bulk_admin_notices"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Ashop_subscription_columns\u0028\u0029",
+        name: "shop_subscription_columns",
+        summary: "Define\u0020custom\u0020columns\u0020for\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_shop_subscription_columns"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Arender_shop_subscription_columns\u0028\u0029",
+        name: "render_shop_subscription_columns",
+        summary: "Output\u0020custom\u0020columns\u0020for\u0020subscriptions",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_render_shop_subscription_columns"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aget_date_column_content\u0028\u0029",
+        name: "get_date_column_content",
+        summary: "Return\u0020the\u0020content\u0020for\u0020a\u0020date\u0020column\u0020on\u0020the\u0020Edit\u0020Subscription\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_get_date_column_content"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Ashop_subscription_sortable_columns\u0028\u0029",
+        name: "shop_subscription_sortable_columns",
+        summary: "Make\u0020columns\u0020sortable",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_shop_subscription_sortable_columns"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Ashop_subscription_search_custom_fields\u0028\u0029",
+        name: "shop_subscription_search_custom_fields",
+        summary: "Search\u0020custom\u0020fields\u0020as\u0020well\u0020as\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_shop_subscription_search_custom_fields"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Ashop_subscription_search_label\u0028\u0029",
+        name: "shop_subscription_search_label",
+        summary: "Change\u0020the\u0020label\u0020when\u0020searching\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_shop_subscription_search_label"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aadd_custom_query_var\u0028\u0029",
+        name: "add_custom_query_var",
+        summary: "Query\u0020vars\u0020for\u0020custom\u0020searches.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_add_custom_query_var"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Arequest_query\u0028\u0029",
+        name: "request_query",
+        summary: "Filters\u0020and\u0020sorting\u0020handler",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_request_query"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aset_post__in_query_var\u0028\u0029",
+        name: "set_post__in_query_var",
+        summary: "Set\u0020the\u0020\u0027post__in\u0027\u0020query\u0020var\u0020with\u0020a\u0020given\u0020set\u0020of\u0020post\u0020ids.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_set_post__in_query_var"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Apost_updated_messages\u0028\u0029",
+        name: "post_updated_messages",
+        summary: "Change\u0020messages\u0020when\u0020a\u0020post\u0020type\u0020is\u0020updated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_post_updated_messages"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aget_related_orders_link\u0028\u0029",
+        name: "get_related_orders_link",
+        summary: "Returns\u0020a\u0020clickable\u0020link\u0020that\u0020takes\u0020you\u0020to\u0020a\u0020collection\u0020of\u0020orders\u0020relating\u0020to\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_get_related_orders_link"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Arestrict_by_payment_method\u0028\u0029",
+        name: "restrict_by_payment_method",
+        summary: "Displays\u0020the\u0020dropdown\u0020for\u0020the\u0020payment\u0020method\u0020filter.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_restrict_by_payment_method"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Alist_table_primary_column\u0028\u0029",
+        name: "list_table_primary_column",
+        summary: "Sets\u0020post\u0020table\u0020primary\u0020column\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_list_table_primary_column"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Ashop_subscription_row_actions\u0028\u0029",
+        name: "shop_subscription_row_actions",
+        summary: "Don\u0027t\u0020display\u0020default\u0020Post\u0020actions\u0020on\u0020Subscription\u0020post\u0020types\u0020\u0028we\u0020display\u0020our\u0020own\u0020set\u0020of\nactions\u0020when\u0020rendering\u0020the\u0020column\u0020content\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_shop_subscription_row_actions"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aget_item_meta_html\u0028\u0029",
+        name: "get_item_meta_html",
+        summary: "Gets\u0020the\u0020HTML\u0020for\u0020a\u0020line\u0020item\u0027s\u0020meta\u0020to\u0020display\u0020on\u0020the\u0020Subscription\u0020list\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_get_item_meta_html"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aget_item_name_html\u0028\u0029",
+        name: "get_item_name_html",
+        summary: "Get\u0020the\u0020HTML\u0020for\u0020order\u0020item\u0020meta\u0020to\u0020display\u0020on\u0020the\u0020Subscription\u0020list\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_get_item_name_html"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aget_item_display_row\u0028\u0029",
+        name: "get_item_display_row",
+        summary: "Gets\u0020the\u0020table\u0020row\u0020HTML\u0020content\u0020for\u0020a\u0020subscription\u0020line\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_get_item_display_row"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Arestrict_by_customer\u0028\u0029",
+        name: "restrict_by_customer",
+        summary: "Renders\u0020the\u0020dropdown\u0020for\u0020the\u0020customer\u0020filter.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_restrict_by_customer"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aget_item_display\u0028\u0029",
+        name: "get_item_display",
+        summary: "Get\u0020the\u0020HTML\u0020for\u0020an\u0020order\u0020item\u0020to\u0020display\u0020on\u0020the\u0020Subscription\u0020list\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_get_item_display"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003Aget_item_display_div\u0028\u0029",
+        name: "get_item_display_div",
+        summary: "Gets\u0020the\u0020HTML\u0020for\u0020order\u0020item\u0020to\u0020display\u0020on\u0020the\u0020Subscription\u0020list\u0020table\u0020using\u0020a\u0020div\u0020element\nas\u0020the\u0020wrapper,\u0020which\u0020is\u0020done\u0020for\u0020subscriptions\u0020with\u0020a\u0020single\u0020line\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#method_get_item_display_div"
+    },{
+        fqsen: "\\WCS_Admin_Post_Types\u003A\u003A\u0024post__in_none",
+        name: "post__in_none",
+        summary: "The\u0020value\u0020to\u0020use\u0020for\u0020the\u0020\u0027post__in\u0027\u0020query\u0020param\u0020when\u0020no\u0020results\u0020should\u0020be\u0020returned.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Post-Types.html#property_post__in_none"
+    },{
+        fqsen: "\\WCS_Admin_Product_Import_Export_Manager",
+        name: "WCS_Admin_Product_Import_Export_Manager",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Product-Import-Export-Manager.html"
+    },{
+        fqsen: "\\WCS_Admin_Product_Import_Export_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attaches\u0020callbacks\u0020and\u0020initializes\u0020the\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Product-Import-Export-Manager.html#method_init"
+    },{
+        fqsen: "\\WCS_Admin_Product_Import_Export_Manager\u003A\u003Aregister_susbcription_variation_type\u0028\u0029",
+        name: "register_susbcription_variation_type",
+        summary: "Registers\u0020the\u0020subscription\u0020variation\u0020product\u0020type\u0020with\u0020the\u0020exporter.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Product-Import-Export-Manager.html#method_register_susbcription_variation_type"
+    },{
+        fqsen: "\\WCS_Admin_Product_Import_Export_Manager\u003A\u003Afilter_export_query\u0028\u0029",
+        name: "filter_export_query",
+        summary: "Filters\u0020the\u0020product\u0020export\u0020query\u0020args\u0020to\u0020separate\u0020standard\u0020variations\u0020and\u0020subscription\u0020variations.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Product-Import-Export-Manager.html#method_filter_export_query"
+    },{
+        fqsen: "\\WCS_Admin_Product_Import_Export_Manager\u003A\u003Aimport_subscription_variations\u0028\u0029",
+        name: "import_subscription_variations",
+        summary: "Filters\u0020product\u0020import\u0020data\u0020so\u0020subcription\u0020variations\u0020are\u0020imported\u0020correctly\u0020\u0028as\u0020variations\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-Product-Import-Export-Manager.html#method_import_subscription_variations"
+    },{
+        fqsen: "\\WCS_Admin_System_Status",
+        name: "WCS_Admin_System_Status",
+        summary: "Subscriptions\u0020System\u0020Status",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_init"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Arender_system_status_items\u0028\u0029",
+        name: "render_system_status_items",
+        summary: "Renders\u0020the\u0020Subscription\u0020information\u0020in\u0020the\u0020WC\u0020status\u0020page",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_render_system_status_items"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_debug_mode\u0028\u0029",
+        name: "set_debug_mode",
+        summary: "Include\u0020WCS_DEBUG\u0020flag",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_debug_mode"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_staging_mode\u0028\u0029",
+        name: "set_staging_mode",
+        summary: "Include\u0020the\u0020staging\/live\u0020mode\u0020the\u0020store\u0020is\u0020running\u0020in.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_staging_mode"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_live_site_url\u0028\u0029",
+        name: "set_live_site_url",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_live_site_url"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_theme_overrides\u0028\u0029",
+        name: "set_theme_overrides",
+        summary: "List\u0020any\u0020Subscriptions\u0020template\u0020overrides.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_theme_overrides"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aget_theme_overrides\u0028\u0029",
+        name: "get_theme_overrides",
+        summary: "Determine\u0020which\u0020of\u0020our\u0020files\u0020have\u0020been\u0020overridden\u0020by\u0020the\u0020theme.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_get_theme_overrides"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_subscription_statuses\u0028\u0029",
+        name: "set_subscription_statuses",
+        summary: "Add\u0020a\u0020breakdown\u0020of\u0020Subscriptions\u0020per\u0020status.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_subscription_statuses"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_woocommerce_account_data\u0028\u0029",
+        name: "set_woocommerce_account_data",
+        summary: "Include\u0020information\u0020about\u0020whether\u0020the\u0020store\u0020is\u0020linked\u0020to\u0020a\u0020WooCommerce\u0020account\u0020and\u0020whether\u0020they\u0020have\u0020an\u0020active\u0020WCS\u0020product\u0020key.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_woocommerce_account_data"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_subscriptions_by_payment_gateway\u0028\u0029",
+        name: "set_subscriptions_by_payment_gateway",
+        summary: "Add\u0020a\u0020breakdown\u0020of\u0020subscriptions\u0020per\u0020payment\u0020gateway.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_subscriptions_by_payment_gateway"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_subscriptions_payment_gateway_support\u0028\u0029",
+        name: "set_subscriptions_payment_gateway_support",
+        summary: "List\u0020the\u0020enabled\u0020payment\u0020gateways\u0020and\u0020the\u0020features\u0020they\u0020support.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_subscriptions_payment_gateway_support"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aset_store_location\u0028\u0029",
+        name: "set_store_location",
+        summary: "Add\u0020the\u0020store\u0027s\u0020country\u0020and\u0020state\u0020information.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_set_store_location"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aget_subscriptions_by_gateway\u0028\u0029",
+        name: "get_subscriptions_by_gateway",
+        summary: "Gets\u0020the\u0020store\u0027s\u0020subscription\u0020broken\u0020down\u0020by\u0020payment\u0020gateway\u0020and\u0020status.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_get_subscriptions_by_gateway"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003Aget_subscription_statuses\u0028\u0029",
+        name: "get_subscription_statuses",
+        summary: "Gets\u0020the\u0020store\u0027s\u0020subscriptions\u0020by\u0020status.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#method_get_subscription_statuses"
+    },{
+        fqsen: "\\WCS_Admin_System_Status\u003A\u003AWCS_PRODUCT_ID",
+        name: "WCS_PRODUCT_ID",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Admin-System-Status.html#constant_WCS_PRODUCT_ID"
+    },{
+        fqsen: "\\WCS_WC_Admin_Manager",
+        name: "WCS_WC_Admin_Manager",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-WC-Admin-Manager.html"
+    },{
+        fqsen: "\\WCS_WC_Admin_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialise\u0020the\u0020class\u0020and\u0020attach\u0020hook\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-WC-Admin-Manager.html#method_init"
+    },{
+        fqsen: "\\WCS_WC_Admin_Manager\u003A\u003Aregister_subscription_admin_pages\u0028\u0029",
+        name: "register_subscription_admin_pages",
+        summary: "Connects\u0020existing\u0020WooCommerce\u0020Subscription\u0020admin\u0020pages\u0020to\u0020WooCommerce\u0020Admin.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-WC-Admin-Manager.html#method_register_subscription_admin_pages"
+    },{
+        fqsen: "\\WCS_WC_Admin_Manager\u003A\u003Aregister_navigation_items\u0028\u0029",
+        name: "register_navigation_items",
+        summary: "Register\u0020the\u0020navigation\u0020items\u0020in\u0020the\u0020WooCommerce\u0020navigation.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-WC-Admin-Manager.html#method_register_navigation_items"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Background_Updater",
+        name: "WCS_Debug_Tool_Cache_Background_Updater",
+        summary: "WCS_Debug_Tool_Cache_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Background-Updater.html"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Background_Updater\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "WCS_Debug_Tool_Cache_Background_Updater\u0020constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Background-Updater.html#method___construct"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Background_Updater\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020the\u0020items\u0020to\u0020be\u0020updated,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Background-Updater.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Background_Updater\u003A\u003Aupdate_item\u0028\u0029",
+        name: "update_item",
+        summary: "Run\u0020the\u0020update\u0020for\u0020a\u0020single\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Background-Updater.html#method_update_item"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Background_Updater\u003A\u003A\u0024data_store",
+        name: "data_store",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Background-Updater.html#property_data_store"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Eraser",
+        name: "WCS_Debug_Tool_Cache_Eraser",
+        summary: "WCS_Debug_Tool_Cache_Eraser\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Eraser.html"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Eraser\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "WCS_Debug_Tool_Cache_Eraser\u0020constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Eraser.html#method___construct"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Eraser\u003A\u003Adelete_caches\u0028\u0029",
+        name: "delete_caches",
+        summary: "Clear\u0020all\u0020of\u0020the\u0020data\u0020store\u0027s\u0020caches.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Eraser.html#method_delete_caches"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Generator",
+        name: "WCS_Debug_Tool_Cache_Generator",
+        summary: "WCS_Debug_Tool_Cache_Generator\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Generator.html"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Generator\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "WCS_Debug_Tool_Cache_Generator\u0020constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Generator.html#method___construct"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Generator\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks\u0020and\u0020hooks,\u0020if\u0020the\u0020store\u0020supports\u0020getting\u0020uncached\u0020items,\u0020which\u0020is\u0020required\u0020to\u0020generate\u0020cache\nand\u0020also\u0020acts\u0020as\u0020a\u0020proxy\u0020to\u0020determine\u0020if\u0020the\u0020related\u0020order\u0020store\u0020is\u0020using\u0020caching",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Generator.html#method_init"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Generator\u003A\u003Agenerate_caches\u0028\u0029",
+        name: "generate_caches",
+        summary: "Generate\u0020the\u0020data\u0020store\u0027s\u0020cache\u0020by\u0020calling\u0020the\u0020\u0040see\u0020\u0024this\u002D\u003E\u003Ecache_updater\u0027s\u0020update\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Generator.html#method_generate_caches"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Cache_Generator\u003A\u003A\u0024cache_updater",
+        name: "cache_updater",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Cache-Generator.html#property_cache_updater"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Factory",
+        name: "WCS_Debug_Tool_Factory",
+        summary: "WCS_Debug_Tool_Factory\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Factory.html"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Factory\u003A\u003Aadd_cache_tool\u0028\u0029",
+        name: "add_cache_tool",
+        summary: "Add\u0020a\u0020debug\u0020tool\u0020for\u0020manually\u0020managing\u0020a\u0020data\u0020store\u0027s\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Factory.html#method_add_cache_tool"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Factory\u003A\u003Aget_tool_key\u0028\u0029",
+        name: "get_tool_key",
+        summary: "Get\u0020the\u0020string\u0020used\u0020to\u0020identify\u0020the\u0020tool.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Factory.html#method_get_tool_key"
+    },{
+        fqsen: "\\WCS_Debug_Tool_Factory\u003A\u003Aget_cache_tool_class_name\u0028\u0029",
+        name: "get_cache_tool_class_name",
+        summary: "Get\u0020a\u0020cache\u0020tool\u0027s\u0020class\u0020name\u0020by\u0020passing\u0020in\u0020the\u0020cache\u0020name\u0020and\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Debug-Tool-Factory.html#method_get_cache_tool_class_name"
+    },{
+        fqsen: "\\WCS_Meta_Box_Related_Orders",
+        name: "WCS_Meta_Box_Related_Orders",
+        summary: "WCS_Meta_Box_Related_Orders\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Related-Orders.html"
+    },{
+        fqsen: "\\WCS_Meta_Box_Related_Orders\u003A\u003Aoutput\u0028\u0029",
+        name: "output",
+        summary: "Output\u0020the\u0020metabox",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Related-Orders.html#method_output"
+    },{
+        fqsen: "\\WCS_Meta_Box_Related_Orders\u003A\u003Aoutput_rows\u0028\u0029",
+        name: "output_rows",
+        summary: "Displays\u0020the\u0020renewal\u0020orders\u0020in\u0020the\u0020Related\u0020Orders\u0020meta\u0020box.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Related-Orders.html#method_output_rows"
+    },{
+        fqsen: "\\WCS_Meta_Box_Schedule",
+        name: "WCS_Meta_Box_Schedule",
+        summary: "WCS_Meta_Box_Schedule",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Schedule.html"
+    },{
+        fqsen: "\\WCS_Meta_Box_Schedule\u003A\u003Aoutput\u0028\u0029",
+        name: "output",
+        summary: "Output\u0020the\u0020metabox",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Schedule.html#method_output"
+    },{
+        fqsen: "\\WCS_Meta_Box_Schedule\u003A\u003Asave\u0028\u0029",
+        name: "save",
+        summary: "Save\u0020meta\u0020box\u0020data",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Schedule.html#method_save"
+    },{
+        fqsen: "\\WCS_Meta_Box_Subscription_Data",
+        name: "WCS_Meta_Box_Subscription_Data",
+        summary: "WCS_Meta_Box_Subscription_Data\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Subscription-Data.html"
+    },{
+        fqsen: "\\WCS_Meta_Box_Subscription_Data\u003A\u003Aoutput\u0028\u0029",
+        name: "output",
+        summary: "Output\u0020the\u0020metabox",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Subscription-Data.html#method_output"
+    },{
+        fqsen: "\\WCS_Meta_Box_Subscription_Data\u003A\u003Asave\u0028\u0029",
+        name: "save",
+        summary: "Save\u0020meta\u0020box\u0020data",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Meta-Box-Subscription-Data.html#method_save"
+    },{
+        fqsen: "\\wcs_add_admin_notice\u0028\u0029",
+        name: "wcs_add_admin_notice",
+        summary: "Store\u0020a\u0020message\u0020to\u0020display\u0020via\u0020\u0040see\u0020wcs_display_admin_notices\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_add_admin_notice"
+    },{
+        fqsen: "\\wcs_display_admin_notices\u0028\u0029",
+        name: "wcs_display_admin_notices",
+        summary: "Display\u0020any\u0020notices\u0020added\u0020with\u0020\u0040see\u0020wcs_add_admin_notice\u0028\u0029",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_display_admin_notices"
+    },{
+        fqsen: "\\wcs_clear_admin_notices\u0028\u0029",
+        name: "wcs_clear_admin_notices",
+        summary: "Delete\u0020any\u0020admin\u0020notices\u0020we\u0020stored\u0020for\u0020display\u0020later.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_clear_admin_notices"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation",
+        name: "WC_Product_Subscription_Variation",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Create\u0020a\u0020simple\u0020subscription\u0020product\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method___construct"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003A__get\u0028\u0029",
+        name: "__get",
+        summary: "Magic\u0020__get\u0020method\u0020for\u0020backwards\u0020compatibility.\u0020Map\u0020legacy\u0020vars\u0020to\u0020WC_Subscriptions_Product\u0020getters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method___get"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Aget_type\u0028\u0029",
+        name: "get_type",
+        summary: "Get\u0020internal\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_get_type"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Aget_price_html\u0028\u0029",
+        name: "get_price_html",
+        summary: "Get\u0020variation\u0020price\u0020HTML.\u0020Prices\u0020are\u0020not\u0020inherited\u0020from\u0020parents.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_get_price_html"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Aadd_to_cart_text\u0028\u0029",
+        name: "add_to_cart_text",
+        summary: "Get\u0020the\u0020add\u0020to\u0020cart\u0020button\u0020text",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_add_to_cart_text"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Asingle_add_to_cart_text\u0028\u0029",
+        name: "single_add_to_cart_text",
+        summary: "Get\u0020the\u0020add\u0020to\u0020cart\u0020button\u0020text\u0020for\u0020the\u0020single\u0020page",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_single_add_to_cart_text"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Ais_purchasable\u0028\u0029",
+        name: "is_purchasable",
+        summary: "Checks\u0020if\u0020the\u0020variable\u0020product\u0020this\u0020variation\u0020belongs\u0020to\u0020is\u0020purchasable.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_is_purchasable"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Ais_type\u0028\u0029",
+        name: "is_type",
+        summary: "Checks\u0020the\u0020product\u0020type\u0020to\u0020see\u0020if\u0020it\u0020is\u0020either\u0020this\u0020product\u0027s\u0020type\u0020or\u0020the\u0020parent\u0027s\nproduct\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_is_type"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Aget_sign_up_fee\u0028\u0029",
+        name: "get_sign_up_fee",
+        summary: "Return\u0020the\u0020sign\u002Dup\u0020fee\u0020for\u0020this\u0020product",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_get_sign_up_fee"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Aget_sign_up_fee_including_tax\u0028\u0029",
+        name: "get_sign_up_fee_including_tax",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020\u0028including\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price\u0020used\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_get_sign_up_fee_including_tax"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003Aget_sign_up_fee_excluding_tax\u0028\u0029",
+        name: "get_sign_up_fee_excluding_tax",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020\u0028excluding\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price\u0020used\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#method_get_sign_up_fee_excluding_tax"
+    },{
+        fqsen: "\\WC_Product_Subscription_Variation\u003A\u003A\u0024subscription_variation_level_meta_data",
+        name: "subscription_variation_level_meta_data",
+        summary: "A\u0020way\u0020to\u0020access\u0020the\u0020old\u0020array\u0020property.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription-Variation.html#property_subscription_variation_level_meta_data"
+    },{
+        fqsen: "\\WC_Product_Subscription",
+        name: "WC_Product_Subscription",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003Aget_type\u0028\u0029",
+        name: "get_type",
+        summary: "Get\u0020internal\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method_get_type"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003A__get\u0028\u0029",
+        name: "__get",
+        summary: "Auto\u002Dload\u0020in\u002Daccessible\u0020properties\u0020on\u0020demand.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method___get"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003Aget_price_html\u0028\u0029",
+        name: "get_price_html",
+        summary: "Get\u0020subscription\u0027s\u0020price\u0020HTML.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method_get_price_html"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003Aadd_to_cart_text\u0028\u0029",
+        name: "add_to_cart_text",
+        summary: "Get\u0020the\u0020add\u0020to\u0020cart\u0020button\u0020text",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method_add_to_cart_text"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003Asingle_add_to_cart_text\u0028\u0029",
+        name: "single_add_to_cart_text",
+        summary: "Get\u0020the\u0020add\u0020to\u0020cart\u0020button\u0020text\u0020for\u0020the\u0020single\u0020page",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method_single_add_to_cart_text"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003Ais_purchasable\u0028\u0029",
+        name: "is_purchasable",
+        summary: "Checks\u0020if\u0020the\u0020store\u0020manager\u0020has\u0020requested\u0020the\u0020current\u0020product\u0020be\u0020limited\u0020to\u0020one\u0020purchase\nper\u0020customer,\u0020and\u0020if\u0020so,\u0020checks\u0020whether\u0020the\u0020customer\u0020already\u0020has\u0020an\u0020active\u0020subscription\u0020to\nthe\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method_is_purchasable"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003Aget_sign_up_fee\u0028\u0029",
+        name: "get_sign_up_fee",
+        summary: "Return\u0020the\u0020sign\u002Dup\u0020fee\u0020for\u0020this\u0020product",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method_get_sign_up_fee"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003Aget_sign_up_fee_including_tax\u0028\u0029",
+        name: "get_sign_up_fee_including_tax",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020\u0028including\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price\u0020used\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method_get_sign_up_fee_including_tax"
+    },{
+        fqsen: "\\WC_Product_Subscription\u003A\u003Aget_sign_up_fee_excluding_tax\u0028\u0029",
+        name: "get_sign_up_fee_excluding_tax",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020\u0028excluding\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price\u0020used\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Subscription.html#method_get_sign_up_fee_excluding_tax"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription",
+        name: "WC_Product_Variable_Subscription",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_type\u0028\u0029",
+        name: "get_type",
+        summary: "Get\u0020internal\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_type"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003A__get\u0028\u0029",
+        name: "__get",
+        summary: "Auto\u002Dload\u0020in\u002Daccessible\u0020properties\u0020on\u0020demand.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method___get"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Asingle_add_to_cart_text\u0028\u0029",
+        name: "single_add_to_cart_text",
+        summary: "Get\u0020the\u0020add\u0020to\u0020cart\u0020button\u0020text\u0020for\u0020the\u0020single\u0020page",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_single_add_to_cart_text"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_price_html\u0028\u0029",
+        name: "get_price_html",
+        summary: "Returns\u0020the\u0020price\u0020in\u0020html\u0020format.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_price_html"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Ais_purchasable\u0028\u0029",
+        name: "is_purchasable",
+        summary: "Checks\u0020if\u0020the\u0020store\u0020manager\u0020has\u0020requested\u0020the\u0020current\u0020product\u0020be\u0020limited\u0020to\u0020one\u0020purchase\nper\u0020customer,\u0020and\u0020if\u0020so,\u0020checks\u0020whether\u0020the\u0020customer\u0020already\u0020has\u0020an\u0020active\u0020subscription\u0020to\nthe\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_is_purchasable"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Ais_type\u0028\u0029",
+        name: "is_type",
+        summary: "Checks\u0020the\u0020product\u0020type\u0020to\u0020see\u0020if\u0020it\u0020is\u0020either\u0020this\u0020product\u0027s\u0020type\u0020or\u0020the\u0020parent\u0027s\nproduct\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_is_type"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Asort_variation_prices\u0028\u0029",
+        name: "sort_variation_prices",
+        summary: "Sort\u0020an\u0020associative\u0020array\u0020of\u0020\u0024variation_id\u0020\u003D\u003E\u0020\u0024price\u0020pairs\u0020in\u0020order\u0020of\u0020min\u0020and\u0020max\u0020prices.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_sort_variation_prices"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aset_min_and_max_variation_data\u0028\u0029",
+        name: "set_min_and_max_variation_data",
+        summary: "Set\u0020the\u0020product\u0027s\u0020min\u0020and\u0020max\u0020variation\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_set_min_and_max_variation_data"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_min_and_max_variation_data\u0028\u0029",
+        name: "get_min_and_max_variation_data",
+        summary: "Get\u0020the\u0020min\u0020and\u0020max\u0020variation\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_min_and_max_variation_data"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_variation_ids_hash\u0028\u0029",
+        name: "get_variation_ids_hash",
+        summary: "Generate\u0020a\u0020unique\u0020hash\u0020from\u0020an\u0020array\u0020of\u0020variation\u0020IDs.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_variation_ids_hash"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_sign_up_fee\u0028\u0029",
+        name: "get_sign_up_fee",
+        summary: "Return\u0020the\u0020sign\u002Dup\u0020fee\u0020for\u0020this\u0020product",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_sign_up_fee"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_sign_up_fee_including_tax\u0028\u0029",
+        name: "get_sign_up_fee_including_tax",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020\u0028including\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price\u0020used\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_sign_up_fee_including_tax"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_sign_up_fee_excluding_tax\u0028\u0029",
+        name: "get_sign_up_fee_excluding_tax",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020\u0028excluding\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price\u0020used\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_sign_up_fee_excluding_tax"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aadd_to_cart_handler\u0028\u0029",
+        name: "add_to_cart_handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_add_to_cart_handler"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Avariable_product_sync\u0028\u0029",
+        name: "variable_product_sync",
+        summary: "Sync\u0020variable\u0020product\u0020prices\u0020with\u0020the\u0020childs\u0020lowest\/highest\u0020prices.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_variable_product_sync"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_price_prefix\u0028\u0029",
+        name: "get_price_prefix",
+        summary: "Get\u0020the\u0020suffix\u0020to\u0020display\u0020before\u0020prices.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_price_prefix"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003Aget_available_variations\u0028\u0029",
+        name: "get_available_variations",
+        summary: "Gets\u0020an\u0020array\u0020of\u0020available\u0020variations.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#method_get_available_variations"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003A\u0024min_max_variation_data",
+        name: "min_max_variation_data",
+        summary: "A\u0020cache\u0020of\u0020the\u0020variable\u0020product\u0027s\u0020min\u0020and\u0020max\u0020data\u0020generated\u0020by\u0020\u0040see\u0020wcs_get_min_max_variation_data\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#property_min_max_variation_data"
+    },{
+        fqsen: "\\WC_Product_Variable_Subscription\u003A\u003A\u0024sorted_variation_prices",
+        name: "sorted_variation_prices",
+        summary: "A\u0020cache\u0020of\u0020the\u0020variable\u0020product\u0027s\u0020sorted\u0020variation\u0020prices.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Product-Variable-Subscription.html#property_sorted_variation_prices"
+    },{
+        fqsen: "\\WC_Subscription_Item_Coupon_Pending_Switch",
+        name: "WC_Subscription_Item_Coupon_Pending_Switch",
+        summary: "Coupon\u0020Pending\u0020Switch",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription-Item-Coupon-Pending-Switch.html"
+    },{
+        fqsen: "\\WC_Subscription_Item_Coupon_Pending_Switch\u003A\u003Aget_type\u0028\u0029",
+        name: "get_type",
+        summary: "Get\u0020item\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription-Item-Coupon-Pending-Switch.html#method_get_type"
+    },{
+        fqsen: "\\WC_Subscription_Item_Fee_Pending_Switch",
+        name: "WC_Subscription_Item_Fee_Pending_Switch",
+        summary: "Subscription\u0020Fee\u0020Item\u0020Pending\u0020Switch",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription-Item-Fee-Pending-Switch.html"
+    },{
+        fqsen: "\\WC_Subscription_Item_Fee_Pending_Switch\u003A\u003Aget_type\u0028\u0029",
+        name: "get_type",
+        summary: "Get\u0020item\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription-Item-Fee-Pending-Switch.html#method_get_type"
+    },{
+        fqsen: "\\WC_Subscription_Line_Item_Removed",
+        name: "WC_Subscription_Line_Item_Removed",
+        summary: "Subscription\u0020Line\u0020Item\u0020\u0028product\u0029\u0020Removed",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription-Line-Item-Removed.html"
+    },{
+        fqsen: "\\WC_Subscription_Line_Item_Removed\u003A\u003Aget_type\u0028\u0029",
+        name: "get_type",
+        summary: "Get\u0020item\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription-Line-Item-Removed.html#method_get_type"
+    },{
+        fqsen: "\\WC_Subscription_Line_Item_Switched",
+        name: "WC_Subscription_Line_Item_Switched",
+        summary: "Subscription\u0020Line\u0020Item\u0020\u0028product\u0029\u0020Switched",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription-Line-Item-Switched.html"
+    },{
+        fqsen: "\\WC_Subscription_Line_Item_Switched\u003A\u003Aget_type\u0028\u0029",
+        name: "get_type",
+        summary: "Get\u0020item\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription-Line-Item-Switched.html#method_get_type"
+    },{
+        fqsen: "\\WC_Subscription",
+        name: "WC_Subscription",
+        summary: "Subscription\u0020Object",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Initialize\u0020the\u0020subscription\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method___construct"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_type\u0028\u0029",
+        name: "get_type",
+        summary: "Get\u0020internal\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_type"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A__isset\u0028\u0029",
+        name: "__isset",
+        summary: "__isset\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method___isset"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A__set\u0028\u0029",
+        name: "__set",
+        summary: "Set\u0020deprecated\u0020properties\u0020via\u0020new\u0020methods.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method___set"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A__get\u0028\u0029",
+        name: "__get",
+        summary: "__get\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method___get"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aneeds_payment\u0028\u0029",
+        name: "needs_payment",
+        summary: "Checks\u0020if\u0020the\u0020subscription\u0020has\u0020an\u0020unpaid\u0020order\u0020or\u0020renewal\u0020order\u0020\u0028and\u0020therefore,\u0020needs\u0020payment\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_needs_payment"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Apayment_method_supports\u0028\u0029",
+        name: "payment_method_supports",
+        summary: "Check\u0020if\u0020the\u0020subscription\u0027s\u0020payment\u0020method\u0020supports\u0020a\u0020certain\u0020feature,\u0020like\u0020date\u0020changes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_payment_method_supports"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Acan_be_updated_to\u0028\u0029",
+        name: "can_be_updated_to",
+        summary: "Check\u0020if\u0020a\u0020the\u0020subscription\u0020can\u0020be\u0020changed\u0020to\u0020a\u0020new\u0020status\u0020or\u0020date",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_can_be_updated_to"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aupdate_status\u0028\u0029",
+        name: "update_status",
+        summary: "Updates\u0020status\u0020of\u0020the\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_update_status"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Astatus_transition\u0028\u0029",
+        name: "status_transition",
+        summary: "Handle\u0020the\u0020status\u0020transition.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_status_transition"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Ais_manual\u0028\u0029",
+        name: "is_manual",
+        summary: "Checks\u0020if\u0020the\u0020subscription\u0020requires\u0020manual\u0020renewal\u0020payments.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_is_manual"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_status\u0028\u0029",
+        name: "get_status",
+        summary: "Overrides\u0020the\u0020WC\u0020Order\u0020get_status\u0020function\u0020for\u0020draft\u0020and\u0020auto\u002Ddraft\u0020statuses\u0020for\u0020a\u0020subscription\nso\u0020that\u0020it\u0020will\u0020return\u0020a\u0020pending\u0020status\u0020instead\u0020of\u0020draft\u0020\/\u0020auto\u002Ddraft.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_status"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_valid_statuses\u0028\u0029",
+        name: "get_valid_statuses",
+        summary: "Get\u0020valid\u0020order\u0020status\u0020keys",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_valid_statuses"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_paid_order_statuses\u0028\u0029",
+        name: "get_paid_order_statuses",
+        summary: "WooCommerce\u0020handles\u0020statuses\u0020without\u0020the\u0020wc\u002D\u0020prefix\u0020in\u0020has_status,\u0020get_status\u0020and\u0020update_status,\u0020however\u0020in\u0020the\u0020database\nit\u0020stores\u0020it\u0020with\u0020the\u0020prefix.\u0020This\u0020makes\u0020it\u0020hard\u0020to\u0020use\u0020the\u0020same\u0020filters\u0020\/\u0020status\u0020names\u0020in\u0020both\u0020WC\u0027s\u0020methods\u0020AND\u0020WP\u0027s\nget_posts\u0020functions.\u0020This\u0020function\u0020bridges\u0020that\u0020gap\u0020and\u0020returns\u0020the\u0020prefixed\u0020versions\u0020of\u0020completed\u0020statuses.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_paid_order_statuses"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_payment_count\u0028\u0029",
+        name: "get_payment_count",
+        summary: "Get\u0020the\u0020number\u0020of\u0020payments\u0020for\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_payment_count"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_failed_payment_count\u0028\u0029",
+        name: "get_failed_payment_count",
+        summary: "Get\u0020the\u0020number\u0020of\u0020payments\u0020failed",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_failed_payment_count"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_total_initial_payment\u0028\u0029",
+        name: "get_total_initial_payment",
+        summary: "Returns\u0020the\u0020total\u0020amount\u0020charged\u0020at\u0020the\u0020outset\u0020of\u0020the\u0020Subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_total_initial_payment"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_billing_period\u0028\u0029",
+        name: "get_billing_period",
+        summary: "Get\u0020billing\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_billing_period"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_billing_interval\u0028\u0029",
+        name: "get_billing_interval",
+        summary: "Get\u0020billing\u0020interval.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_billing_interval"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_trial_period\u0028\u0029",
+        name: "get_trial_period",
+        summary: "Get\u0020trial\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_trial_period"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_suspension_count\u0028\u0029",
+        name: "get_suspension_count",
+        summary: "Get\u0020suspension\u0020count.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_suspension_count"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_requires_manual_renewal\u0028\u0029",
+        name: "get_requires_manual_renewal",
+        summary: "Checks\u0020if\u0020the\u0020subscription\u0020requires\u0020manual\u0020renewal\u0020payments.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_requires_manual_renewal"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_switch_data\u0028\u0029",
+        name: "get_switch_data",
+        summary: "Get\u0020the\u0020switch\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_switch_data"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_cancelled_email_sent\u0028\u0029",
+        name: "get_cancelled_email_sent",
+        summary: "Get\u0020the\u0020flag\u0020about\u0020whether\u0020the\u0020cancelled\u0020email\u0020has\u0020been\u0020sent\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_cancelled_email_sent"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_billing_period\u0028\u0029",
+        name: "set_billing_period",
+        summary: "Set\u0020billing\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_billing_period"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_billing_interval\u0028\u0029",
+        name: "set_billing_interval",
+        summary: "Set\u0020billing\u0020interval.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_billing_interval"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_trial_period\u0028\u0029",
+        name: "set_trial_period",
+        summary: "Set\u0020trial\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_trial_period"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_suspension_count\u0028\u0029",
+        name: "set_suspension_count",
+        summary: "Set\u0020suspension\u0020count.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_suspension_count"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_parent_id\u0028\u0029",
+        name: "set_parent_id",
+        summary: "Set\u0020parent\u0020order\u0020ID.\u0020We\u0020don\u0027t\u0020use\u0020WC_Abstract_Order\u003A\u003Aset_parent_id\u0028\u0029\u0020because\u0020we\u0020want\u0020to\u0020allow\u0020false\nparent\u0020IDs,\u0020like\u00200.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_parent_id"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_requires_manual_renewal\u0028\u0029",
+        name: "set_requires_manual_renewal",
+        summary: "Set\u0020the\u0020manual\u0020renewal\u0020flag\u0020on\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_requires_manual_renewal"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_switch_data\u0028\u0029",
+        name: "set_switch_data",
+        summary: "Set\u0020the\u0020switch\u0020data\u0020on\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_switch_data"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_cancelled_email_sent\u0028\u0029",
+        name: "set_cancelled_email_sent",
+        summary: "Set\u0020the\u0020flag\u0020about\u0020whether\u0020the\u0020cancelled\u0020email\u0020has\u0020been\u0020sent\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_cancelled_email_sent"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_date\u0028\u0029",
+        name: "get_date",
+        summary: "Get\u0020the\u0020MySQL\u0020formatted\u0020date\u0020for\u0020a\u0020specific\u0020piece\u0020of\u0020the\u0020subscriptions\u0020schedule",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_date"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_date_prop\u0028\u0029",
+        name: "get_date_prop",
+        summary: "Get\u0020the\u0020stored\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_date_prop"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_date_prop\u0028\u0029",
+        name: "set_date_prop",
+        summary: "Set\u0020the\u0020stored\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_date_prop"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_date_prop_key\u0028\u0029",
+        name: "get_date_prop_key",
+        summary: "Get\u0020the\u0020key\u0020used\u0020to\u0020refer\u0020to\u0020the\u0020date\u0020type\u0020in\u0020the\u0020set\u0020of\u0020props",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_date_prop_key"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_date_paid\u0028\u0029",
+        name: "get_date_paid",
+        summary: "Get\u0020date_paid\u0020prop\u0020of\u0020most\u0020recent\u0020related\u0020order\u0020that\u0020has\u0020been\u0020paid.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_date_paid"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_date_paid\u0028\u0029",
+        name: "set_date_paid",
+        summary: "Set\u0020date_paid.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_date_paid"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_date_completed\u0028\u0029",
+        name: "get_date_completed",
+        summary: "Get\u0020date_completed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_date_completed"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_date_completed\u0028\u0029",
+        name: "set_date_completed",
+        summary: "Set\u0020date_completed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_date_completed"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_related_orders_date\u0028\u0029",
+        name: "get_related_orders_date",
+        summary: "Get\u0020a\u0020certain\u0020date\u0020type\u0020for\u0020the\u0020most\u0020recent\u0020order\u0020on\u0020the\u0020subscription\u0020with\u0020that\u0020date\u0020type,\nor\u0020the\u0020last\u0020order,\u0020if\u0020the\u0020order\u0020type\u0020is\u0020specified\u0020as\u0020\u0027last\u0027.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_related_orders_date"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_last_order_date\u0028\u0029",
+        name: "set_last_order_date",
+        summary: "Set\u0020a\u0020certain\u0020date\u0020type\u0020for\u0020the\u0020last\u0020order\u0020on\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_last_order_date"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_date_to_display\u0028\u0029",
+        name: "get_date_to_display",
+        summary: "Returns\u0020a\u0020string\u0020representation\u0020of\u0020a\u0020subscription\u0020date\u0020in\u0020the\u0020site\u0027s\u0020time\u0020\u0028i.e.\u0020not\u0020GMT\/UTC\u0020timezone\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_date_to_display"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_time\u0028\u0029",
+        name: "get_time",
+        summary: "Get\u0020the\u0020timestamp\u0020for\u0020a\u0020specific\u0020piece\u0020of\u0020the\u0020subscriptions\u0020schedule",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_time"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aupdate_dates\u0028\u0029",
+        name: "update_dates",
+        summary: "Set\u0020the\u0020dates\u0020on\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_update_dates"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Adelete_date\u0028\u0029",
+        name: "delete_date",
+        summary: "Remove\u0020a\u0020date\u0020from\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_delete_date"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Acan_date_be_updated\u0028\u0029",
+        name: "can_date_be_updated",
+        summary: "Check\u0020if\u0020a\u0020given\u0020date\u0020type\u0020can\u0020be\u0020updated\u0020for\u0020this\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_can_date_be_updated"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Acalculate_date\u0028\u0029",
+        name: "calculate_date",
+        summary: "Calculate\u0020a\u0020given\u0020date\u0020for\u0020the\u0020subscription\u0020in\u0020GMT\/UTC.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_calculate_date"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Acalculate_next_payment_date\u0028\u0029",
+        name: "calculate_next_payment_date",
+        summary: "Calculates\u0020the\u0020next\u0020payment\u0020date\u0020for\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_calculate_next_payment_date"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Asave_dates\u0028\u0029",
+        name: "save_dates",
+        summary: "Complete\u0020a\u0020partial\u0020save,\u0020saving\u0020subscription\u0020date\u0020changes\u0020to\u0020the\u0020database.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_save_dates"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_formatted_line_subtotal\u0028\u0029",
+        name: "get_formatted_line_subtotal",
+        summary: "Gets\u0020line\u0020subtotal\u0020\u002D\u0020formatted\u0020for\u0020display.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_formatted_line_subtotal"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_formatted_order_total\u0028\u0029",
+        name: "get_formatted_order_total",
+        summary: "Gets\u0020order\u0020total\u0020\u002D\u0020formatted\u0020for\u0020display.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_formatted_order_total"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_subtotal_to_display\u0028\u0029",
+        name: "get_subtotal_to_display",
+        summary: "Gets\u0020subtotal\u0020\u002D\u0020subtotal\u0020is\u0020shown\u0020before\u0020discounts,\u0020but\u0020with\u0020localised\u0020taxes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_subtotal_to_display"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_price_string_details\u0028\u0029",
+        name: "get_price_string_details",
+        summary: "Get\u0020the\u0020details\u0020of\u0020the\u0020subscription\u0020for\u0020use\u0020with\u0020\u0040see\u0020wcs_price_string\u0028\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_price_string_details"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Acancel_order\u0028\u0029",
+        name: "cancel_order",
+        summary: "Cancel\u0020the\u0020order\u0020and\u0020restore\u0020the\u0020cart\u0020\u0028before\u0020payment\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_cancel_order"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Ais_editable\u0028\u0029",
+        name: "is_editable",
+        summary: "Allow\u0020subscription\u0020amounts\/items\u0020to\u0020bed\u0020edited\u0020if\u0020the\u0020gateway\u0020supports\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_is_editable"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Apayment_complete\u0028\u0029",
+        name: "payment_complete",
+        summary: "Process\u0020payment\u0020on\u0020the\u0020subscription,\u0020which\u0020mainly\u0020means\u0020processing\u0020it\u0020for\u0020the\u0020last\u0020order\u0020on\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_payment_complete"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Apayment_complete_for_order\u0028\u0029",
+        name: "payment_complete_for_order",
+        summary: "When\u0020payment\u0020is\u0020completed\u0020for\u0020a\u0020related\u0020order,\u0020reset\u0020any\u0020renewal\u0020related\u0020counters\u0020and\u0020reactive\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_payment_complete_for_order"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Apayment_failed\u0028\u0029",
+        name: "payment_failed",
+        summary: "When\u0020a\u0020payment\u0020fails,\u0020either\u0020for\u0020the\u0020original\u0020purchase\u0020or\u0020a\u0020renewal\u0020payment,\u0020this\u0020function\u0020processes\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_payment_failed"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_refunds\u0028\u0029",
+        name: "get_refunds",
+        summary: "Get\u0020order\u0020refunds",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_refunds"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_total_refunded\u0028\u0029",
+        name: "get_total_refunded",
+        summary: "Get\u0020amount\u0020already\u0020refunded",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_total_refunded"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_qty_refunded_for_item\u0028\u0029",
+        name: "get_qty_refunded_for_item",
+        summary: "Get\u0020the\u0020refunded\u0020amount\u0020for\u0020a\u0020line\u0020item",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_qty_refunded_for_item"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_total_refunded_for_item\u0028\u0029",
+        name: "get_total_refunded_for_item",
+        summary: "Get\u0020the\u0020refunded\u0020amount\u0020for\u0020a\u0020line\u0020item",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_total_refunded_for_item"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_tax_refunded_for_item\u0028\u0029",
+        name: "get_tax_refunded_for_item",
+        summary: "Get\u0020the\u0020refunded\u0020amount\u0020for\u0020a\u0020line\u0020item",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_tax_refunded_for_item"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_parent\u0028\u0029",
+        name: "get_parent",
+        summary: "Get\u0020parent\u0020order\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_parent"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_related_orders_query\u0028\u0029",
+        name: "get_related_orders_query",
+        summary: "Extracting\u0020the\u0020query\u0020from\u0020get_related_orders\u0020and\u0020get_last_order\u0020so\u0020it\u0020can\u0020be\u0020moved\u0020in\u0020a\u0020cached\nvalue.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_related_orders_query"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_related_orders\u0028\u0029",
+        name: "get_related_orders",
+        summary: "Get\u0020the\u0020related\u0020orders\u0020for\u0020a\u0020subscription,\u0020including\u0020renewal\u0020orders\u0020and\u0020the\u0020initial\u0020order\u0020\u0028if\u0020any\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_related_orders"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_related_order_ids\u0028\u0029",
+        name: "get_related_order_ids",
+        summary: "Get\u0020the\u0020related\u0020order\u0020IDs\u0020for\u0020a\u0020subscription\u0020based\u0020on\u0020an\u0020order\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_related_order_ids"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_last_order\u0028\u0029",
+        name: "get_last_order",
+        summary: "Gets\u0020the\u0020most\u0020recent\u0020order\u0020that\u0020relates\u0020to\u0020a\u0020subscription,\u0020including\u0020renewal\u0020orders\u0020and\u0020the\u0020initial\u0020order\u0020\u0028if\u0020any\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_last_order"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_payment_method_to_display\u0028\u0029",
+        name: "get_payment_method_to_display",
+        summary: "Determine\u0020how\u0020the\u0020payment\u0020method\u0020should\u0020be\u0020displayed\u0020for\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_payment_method_to_display"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_payment_method\u0028\u0029",
+        name: "set_payment_method",
+        summary: "Save\u0020new\u0020payment\u0020method\u0020for\u0020a\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_payment_method"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aset_payment_method_meta\u0028\u0029",
+        name: "set_payment_method_meta",
+        summary: "Save\u0020payment\u0020method\u0020meta\u0020data\u0020for\u0020the\u0020Subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_set_payment_method_meta"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_view_order_url\u0028\u0029",
+        name: "get_view_order_url",
+        summary: "Now\u0020uses\u0020the\u0020URL\u0020\/my\u002Daccount\/view\u002Dsubscription\/\u007Bpost\u002Did\u007D\u0020when\u0020viewing\u0020a\u0020subscription\u0020from\u0020the\u0020My\u0020Account\u0020Page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_view_order_url"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Ais_download_permitted\u0028\u0029",
+        name: "is_download_permitted",
+        summary: "Checks\u0020if\u0020product\u0020download\u0020is\u0020permitted",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_is_download_permitted"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Ahas_product\u0028\u0029",
+        name: "has_product",
+        summary: "Check\u0020if\u0020the\u0020subscription\u0020has\u0020a\u0020line\u0020item\u0020for\u0020a\u0020specific\u0020product,\u0020by\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_has_product"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Ahas_payment_gateway\u0028\u0029",
+        name: "has_payment_gateway",
+        summary: "Check\u0020if\u0020the\u0020subscription\u0020has\u0020a\u0020payment\u0020gateway.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_has_payment_gateway"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_sign_up_fee\u0028\u0029",
+        name: "get_sign_up_fee",
+        summary: "The\u0020total\u0020sign\u002Dup\u0020fee\u0020for\u0020the\u0020subscription\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_sign_up_fee"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_items_sign_up_fee\u0028\u0029",
+        name: "get_items_sign_up_fee",
+        summary: "Check\u0020if\u0020a\u0020given\u0020line\u0020item\u0020on\u0020the\u0020subscription\u0020had\u0020a\u0020sign\u002Dup\u0020fee,\u0020and\u0020if\u0020so,\u0020return\u0020the\u0020value\u0020of\u0020the\u0020sign\u002Dup\u0020fee.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_items_sign_up_fee"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Ais_one_payment\u0028\u0029",
+        name: "is_one_payment",
+        summary: "Determine\u0020if\u0020the\u0020subscription\u0020is\u0020for\u0020one\u0020payment\u0020only.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_is_one_payment"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_item_downloads\u0028\u0029",
+        name: "get_item_downloads",
+        summary: "Get\u0020the\u0020downloadable\u0020files\u0020for\u0020an\u0020item\u0020in\u0020this\u0020subscription\u0020if\u0020the\u0020subscription\u0020is\u0020active",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_item_downloads"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Avalidate_date_updates\u0028\u0029",
+        name: "validate_date_updates",
+        summary: "Validates\u0020subscription\u0020date\u0020updates\u0020ensuring\u0020the\u0020proposed\u0020date\u0020changes\u0020are\u0020in\u0020the\u0020correct\u0020format\u0020and\u0020are\u0020compatible\u0020with\nthe\u0020current\u0020subscription\u0020dates.\u0020Also\u0020returns\u0020the\u0020dates\u0020in\u0020the\u0020gmt\u0020timezone\u0020\u002D\u0020ready\u0020for\u0020setting\/deleting.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_validate_date_updates"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aadd_product\u0028\u0029",
+        name: "add_product",
+        summary: "Add\u0020a\u0020product\u0020line\u0020item\u0020to\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_add_product"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_valid_date_types\u0028\u0029",
+        name: "get_valid_date_types",
+        summary: "Get\u0020the\u0020set\u0020of\u0020date\u0020types\u0020that\u0020can\u0020be\u0020set\/get\u0020from\u0020this\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_valid_date_types"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_change_payment_method_url\u0028\u0029",
+        name: "get_change_payment_method_url",
+        summary: "Generates\u0020a\u0020URL\u0020to\u0020add\u0020or\u0020change\u0020the\u0020subscription\u0027s\u0020payment\u0020method\u0020from\u0020the\u0020my\u0020account\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_change_payment_method_url"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_payment_method_meta\u0028\u0029",
+        name: "get_payment_method_meta",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_payment_method_meta"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Amaybe_set_date_paid\u0028\u0029",
+        name: "maybe_set_date_paid",
+        summary: "Avoid\u0020running\u0020the\u0020expensive\u0020get_date_paid\u0028\u0029\u0020query\u0020on\u0020related\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_maybe_set_date_paid"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Amaybe_set_date_completed\u0028\u0029",
+        name: "maybe_set_date_completed",
+        summary: "Avoid\u0020running\u0020the\u0020expensive\u0020get_date_completed\u0028\u0029\u0020query\u0020on\u0020related\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_maybe_set_date_completed"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_order_item_totals\u0028\u0029",
+        name: "get_order_item_totals",
+        summary: "Get\u0020totals\u0020for\u0020display\u0020on\u0020pages\u0020and\u0020in\u0020emails.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_order_item_totals"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aupdate_parent\u0028\u0029",
+        name: "update_parent",
+        summary: "Set\u0020or\u0020change\u0020the\u0020WC_Order\u0020ID\u0020which\u0020records\u0020the\u0020subscription\u0027s\u0020initial\u0020purchase.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_update_parent"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aupdate_suspension_count\u0028\u0029",
+        name: "update_suspension_count",
+        summary: "Update\u0020the\u0020internal\u0020tally\u0020of\u0020suspensions\u0020on\u0020this\u0020subscription\u0020since\u0020the\u0020last\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_update_suspension_count"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aupdate_manual\u0028\u0029",
+        name: "update_manual",
+        summary: "Checks\u0020if\u0020the\u0020subscription\u0020requires\u0020manual\u0020renewal\u0020payments.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_update_manual"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_last_payment_date\u0028\u0029",
+        name: "get_last_payment_date",
+        summary: "Get\u0020the\u0020\u0022last\u0020payment\u0020date\u0022\u0020for\u0020a\u0020subscription,\u0020in\u0020GMT\/UTC.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_last_payment_date"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aupdate_last_payment_date\u0028\u0029",
+        name: "update_last_payment_date",
+        summary: "Updated\u0020both\u0020the\u0020_paid_date\u0020and\u0020post\u0020date\u0020GMT\u0020with\u0020the\u0020WooCommerce\u0020\u003C\u00203.0\u0020date\u0020storage\u0020structures.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_update_last_payment_date"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aget_completed_payment_count\u0028\u0029",
+        name: "get_completed_payment_count",
+        summary: "Get\u0020the\u0020number\u0020of\u0020payments\u0020completed\u0020for\u0020a\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_get_completed_payment_count"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003Aapply_deprecated_completed_payment_count_filter\u0028\u0029",
+        name: "apply_deprecated_completed_payment_count_filter",
+        summary: "Apply\u0020the\u0020deprecated\u0020\u0027woocommerce_subscription_payment_completed_count\u0027\u0020filter\nto\u0020maintain\u0020backward\u0020compatibility.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#method_apply_deprecated_completed_payment_count_filter"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024order",
+        name: "order",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_order"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024order_type",
+        name: "order_type",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_order_type"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024cached_payment_count",
+        name: "cached_payment_count",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_cached_payment_count"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024data_store_name",
+        name: "data_store_name",
+        summary: "Which\u0020data\u0020store\u0020to\u0020load.\u0020WC\u00203.0\u002B\u0020property.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_data_store_name"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024object_type",
+        name: "object_type",
+        summary: "This\u0020is\u0020the\u0020name\u0020of\u0020this\u0020object\u0020type.\u0020WC\u00203.0\u002B\u0020property.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_object_type"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024editable",
+        name: "editable",
+        summary: "Stores\u0020the\u0020\u0024this\u002D\u003Eis_editable\u0028\u0029\u0020returned\u0020value\u0020in\u0020memory",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_editable"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024extra_data",
+        name: "extra_data",
+        summary: "Extra\u0020data\u0020for\u0020this\u0020object.\u0020Name\u0020value\u0020pairs\u0020\u0028name\u0020\u002B\u0020default\u0020value\u0029.\u0020Used\u0020to\u0020add\u0020additional\u0020information\u0020to\u0020parent.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_extra_data"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024valid_date_types",
+        name: "valid_date_types",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_valid_date_types"
+    },{
+        fqsen: "\\WC_Subscription\u003A\u003A\u0024deprecated_properties",
+        name: "deprecated_properties",
+        summary: "List\u0020of\u0020properties\u0020deprecated\u0020for\u0020direct\u0020access\u0020due\u0020to\u0020WC\u00203.0\u002B\u0020\u0026\u0020CRUD.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscription.html#property_deprecated_properties"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses",
+        name: "WC_Subscriptions_Addresses",
+        summary: "Subscriptions\u0020Address\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Acan_user_edit_subscription_address\u0028\u0029",
+        name: "can_user_edit_subscription_address",
+        summary: "Checks\u0020if\u0020a\u0020user\u0020can\u0020edit\u0020a\u0020subscription\u0027s\u0020address.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_can_user_edit_subscription_address"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Aadd_edit_address_subscription_action\u0028\u0029",
+        name: "add_edit_address_subscription_action",
+        summary: "Add\u0020a\u0020\u0022Change\u0020Shipping\u0020Address\u0022\u0020button\u0020to\u0020the\u0020\u0022My\u0020Subscriptions\u0022\u0020table\u0020for\u0020those\u0020subscriptions\nwhich\u0020require\u0020shipping.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_add_edit_address_subscription_action"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Amaybe_restrict_edit_address_endpoint\u0028\u0029",
+        name: "maybe_restrict_edit_address_endpoint",
+        summary: "Redirects\u0020to\u0020\u0022My\u0020Account\u0022\u0020when\u0020attempting\u0020to\u0020edit\u0020the\u0020address\u0020on\u0020a\u0020subscription\u0020that\u0020doesn\u0027t\u0020belong\u0020to\u0020the\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_maybe_restrict_edit_address_endpoint"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Amaybe_add_edit_address_checkbox\u0028\u0029",
+        name: "maybe_add_edit_address_checkbox",
+        summary: "Outputs\u0020the\u0020necessary\u0020markup\u0020on\u0020the\u0020\u0022My\u0020Account\u0022\u0020\u003E\u0020\u0022Edit\u0020Address\u0022\u0020page\u0020for\u0020editing\u0020a\u0020single\u0020subscription\u0027s\naddress\u0020or\u0020to\u0020check\u0020if\u0020the\u0020customer\u0020wants\u0020to\u0020update\u0020the\u0020addresses\u0020for\u0020all\u0020of\u0020their\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_maybe_add_edit_address_checkbox"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Amaybe_update_subscription_addresses\u0028\u0029",
+        name: "maybe_update_subscription_addresses",
+        summary: "When\u0020a\u0020subscriber\u0027s\u0020billing\u0020or\u0020shipping\u0020address\u0020is\u0020successfully\u0020updated,\u0020check\u0020if\u0020the\u0020subscriber\nhas\u0020also\u0020requested\u0020to\u0020update\u0020the\u0020addresses\u0020on\u0020existing\u0020subscriptions\u0020and\u0020if\u0020so,\u0020go\u0020ahead\u0020and\u0020update\nthe\u0020addresses\u0020on\u0020the\u0020initial\u0020order\u0020for\u0020each\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_maybe_update_subscription_addresses"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Amaybe_populate_subscription_addresses\u0028\u0029",
+        name: "maybe_populate_subscription_addresses",
+        summary: "Prepopulate\u0020the\u0020address\u0020fields\u0020on\u0020a\u0020subscription\u0020item",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_maybe_populate_subscription_addresses"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Amaybe_update_order_address\u0028\u0029",
+        name: "maybe_update_order_address",
+        summary: "Update\u0020the\u0020address\u0020fields\u0020on\u0020an\u0020order",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_maybe_update_order_address"
+    },{
+        fqsen: "\\WC_Subscriptions_Addresses\u003A\u003Achange_addresses_breadcrumb\u0028\u0029",
+        name: "change_addresses_breadcrumb",
+        summary: "Replace\u0020the\u0020change\u0020address\u0020breadcrumbs\u0020structure\u0020to\u0020include\u0020a\u0020link\u0020back\u0020to\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Addresses.html#method_change_addresses_breadcrumb"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart_Validator",
+        name: "WC_Subscriptions_Cart_Validator",
+        summary: "Subscriptions\u0020Cart\u0020Validator\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart-Validator.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart_Validator\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart-Validator.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart_Validator\u003A\u003Amaybe_empty_cart\u0028\u0029",
+        name: "maybe_empty_cart",
+        summary: "When\u0020a\u0020subscription\u0020is\u0020added\u0020to\u0020the\u0020cart,\u0020remove\u0020other\u0020products\/subscriptions\u0020to\nwork\u0020with\u0020PayPal\u0020Standard,\u0020which\u0020only\u0020accept\u0020one\u0020subscription\u0020per\u0020checkout.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart-Validator.html#method_maybe_empty_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart_Validator\u003A\u003Avalidate_cart_contents_for_mixed_checkout\u0028\u0029",
+        name: "validate_cart_contents_for_mixed_checkout",
+        summary: "This\u0020checks\u0020cart\u0020items\u0020for\u0020mixed\u0020checkout.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart-Validator.html#method_validate_cart_contents_for_mixed_checkout"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart_Validator\u003A\u003Acan_add_subscription_product_to_cart\u0028\u0029",
+        name: "can_add_subscription_product_to_cart",
+        summary: "Don\u0027t\u0020allow\u0020new\u0020subscription\u0020products\u0020to\u0020be\u0020added\u0020to\u0020the\u0020cart\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020renewal\u0020already.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart-Validator.html#method_can_add_subscription_product_to_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart_Validator\u003A\u003Aadd_to_cart_ajax_redirect\u0028\u0029",
+        name: "add_to_cart_ajax_redirect",
+        summary: "Adds\u0020the\u0020required\u0020cart\u0020AJAX\u0020args\u0020and\u0020filter\u0020callbacks\u0020to\u0020cause\u0020an\u0020error\u0020and\u0020redirect\u0020the\u0020customer.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart-Validator.html#method_add_to_cart_ajax_redirect"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart",
+        name: "WC_Subscriptions_Cart",
+        summary: "Subscriptions\u0020Cart\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aattach_dependant_hooks\u0028\u0029",
+        name: "attach_dependant_hooks",
+        summary: "Attach\u0020dependant\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_attach_dependant_hooks"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aadd_calculation_price_filter\u0028\u0029",
+        name: "add_calculation_price_filter",
+        summary: "Attaches\u0020the\u0020\u0022set_subscription_prices_for_calculation\u0022\u0020filter\u0020to\u0020the\u0020WC\u0020Product\u0027s\u0020woocommerce_get_price\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_add_calculation_price_filter"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aremove_calculation_price_filter\u0028\u0029",
+        name: "remove_calculation_price_filter",
+        summary: "Removes\u0020the\u0020\u0022set_subscription_prices_for_calculation\u0022\u0020filter\u0020from\u0020the\u0020WC\u0020Product\u0027s\u0020woocommerce_get_price\u0020hook\u0020once\ncalculations\u0020are\u0020complete.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_remove_calculation_price_filter"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aadd_to_cart_handler\u0028\u0029",
+        name: "add_to_cart_handler",
+        summary: "Use\u0020WC\u0020core\u0020add\u002Dto\u002Dcart\u0020handlers\u0020for\u0020subscription\u0020products.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_add_to_cart_handler"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aset_subscription_prices_for_calculation\u0028\u0029",
+        name: "set_subscription_prices_for_calculation",
+        summary: "If\u0020we\u0020are\u0020running\u0020a\u0020custom\u0020calculation,\u0020we\u0020need\u0020to\u0020set\u0020the\u0020price\u0020returned\u0020by\u0020a\u0020product\nto\u0020be\u0020the\u0020appropriate\u0020value.\u0020This\u0020may\u0020include\u0020just\u0020the\u0020sign\u002Dup\u0020fee,\u0020a\u0020combination\u0020of\u0020the\nsign\u002Dup\u0020fee\u0020and\u0020recurring\u0020amount\u0020or\u0020just\u0020the\u0020recurring\u0020amount\u0020\u0028default\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_set_subscription_prices_for_calculation"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acalculate_subscription_totals\u0028\u0029",
+        name: "calculate_subscription_totals",
+        summary: "Calculate\u0020the\u0020initial\u0020and\u0020recurring\u0020totals\u0020for\u0020all\u0020subscription\u0020products\u0020in\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_calculate_subscription_totals"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_needs_shipping\u0028\u0029",
+        name: "cart_needs_shipping",
+        summary: "The\u0020cart\u0020needs\u0020shipping\u0020only\u0020if\u0020it\u0020needs\u0020shipping\u0020up\u0020front\u0020and\/or\u0020for\u0020recurring\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_needs_shipping"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_needs_shipping_address\u0028\u0029",
+        name: "cart_needs_shipping_address",
+        summary: "The\u0020cart\u0020needs\u0020a\u0020shipping\u0020address\u0020if\u0020any\u0020item\u0020needs\u0020shipping,\u0020including\u0020recurring\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_needs_shipping_address"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Amaybe_reset_chosen_shipping_methods\u0028\u0029",
+        name: "maybe_reset_chosen_shipping_methods",
+        summary: "Remove\u0020all\u0020recurring\u0020shipping\u0020methods\u0020stored\u0020in\u0020the\u0020session\u0020\u0028i.e.\u0020methods\u0020with\u0020a\u0020key\u0020that\u0020is\u0020a\u0020string\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_maybe_reset_chosen_shipping_methods"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Achange_initial_shipping_package_name\u0028\u0029",
+        name: "change_initial_shipping_package_name",
+        summary: "When\u0020shipping\u0020subscriptions,\u0020changes\u0020the\u0020original\u0020package\u0020to\u0020\u0022initial\u0020shipment\u0022.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_change_initial_shipping_package_name"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_shipping_package_key\u0028\u0029",
+        name: "get_recurring_shipping_package_key",
+        summary: "Create\u0020a\u0020shipping\u0020package\u0020index\u0020for\u0020a\u0020given\u0020shipping\u0020package\u0020on\u0020a\u0020recurring\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_shipping_package_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_shipping_packages\u0028\u0029",
+        name: "get_recurring_shipping_packages",
+        summary: "Create\u0020a\u0020shipping\u0020package\u0020index\u0020for\u0020a\u0020given\u0020shipping\u0020package\u0020on\u0020a\u0020recurring\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_shipping_packages"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aset_global_recurring_shipping_packages\u0028\u0029",
+        name: "set_global_recurring_shipping_packages",
+        summary: "Add\u0020the\u0020shipping\u0020packages\u0020stored\u0020in\u0020\u0040see\u0020self\u003A\u003A\u0024recurring_shipping_packages\u0020to\u0020WooCommerce\u0027s\u0020global\nset\u0020of\u0020packages\u0020in\u0020WC\u0028\u0029\u002D\u003Eshipping\u002D\u003Epackages\u0020so\u0020that\u0020plugins\u0020attempting\u0020to\u0020get\u0020the\u0020details\u0020of\u0020recurring\npackages\u0020can\u0020get\u0020them\u0020with\u0020WC\u0028\u0029\u002D\u003Eshipping\u002D\u003Eget_packages\u0028\u0029\u0020like\u0020any\u0020other\u0020packages.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_set_global_recurring_shipping_packages"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aall_cart_items_have_free_trial\u0028\u0029",
+        name: "all_cart_items_have_free_trial",
+        summary: "Check\u0020whether\u0020all\u0020the\u0020subscription\u0020product\u0020items\u0020in\u0020the\u0020cart\u0020have\u0020a\u0020free\u0020trial.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_all_cart_items_have_free_trial"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_contains_subscriptions_needing_shipping\u0028\u0029",
+        name: "cart_contains_subscriptions_needing_shipping",
+        summary: "Check\u0020if\u0020the\u0020cart\u0020contains\u0020a\u0020subscription\u0020which\u0020requires\u0020shipping.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_contains_subscriptions_needing_shipping"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aset_cart_shipping_packages\u0028\u0029",
+        name: "set_cart_shipping_packages",
+        summary: "Filters\u0020the\u0020cart\u0020contents\u0020to\u0020remove\u0020any\u0020subscriptions\u0020with\u0020free\u0020trials\u0020\u0028or\u0020synchronised\u0020to\u0020a\u0020date\u0020in\u0020the\u0020future\u0029\nto\u0020make\u0020sure\u0020no\u0020shipping\u0020amount\u0020is\u0020calculated\u0020for\u0020them.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_set_cart_shipping_packages"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acheck_cod_gateway_for_free_trials\u0028\u0029",
+        name: "check_cod_gateway_for_free_trials",
+        summary: "Checks\u0020whether\u0020or\u0020not\u0020the\u0020COD\u0020gateway\u0020should\u0020be\u0020available\u0020on\u0020checkout\u0020when\u0020a\u0020subscription\u0020has\u0020a\u0020free\u0020trial.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_check_cod_gateway_for_free_trials"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_formatted_product_subtotal\u0028\u0029",
+        name: "get_formatted_product_subtotal",
+        summary: "Returns\u0020the\u0020subtotal\u0020for\u0020a\u0020cart\u0020item\u0020including\u0020the\u0020subscription\u0020period\u0020and\u0020duration\u0020details",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_formatted_product_subtotal"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_contains_subscription\u0028\u0029",
+        name: "cart_contains_subscription",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_contains_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_contains_free_trial\u0028\u0029",
+        name: "cart_contains_free_trial",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020product\u0020with\u0020a\u0020free\u0020trial",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_contains_free_trial"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_calculation_type\u0028\u0029",
+        name: "get_calculation_type",
+        summary: "Gets\u0020the\u0020cart\u0020calculation\u0020type\u0020flag",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_calculation_type"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aset_calculation_type\u0028\u0029",
+        name: "set_calculation_type",
+        summary: "Sets\u0020the\u0020cart\u0020calculation\u0020type\u0020flag",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_set_calculation_type"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aset_cached_recurring_cart\u0028\u0029",
+        name: "set_cached_recurring_cart",
+        summary: "Update\u0020the\u0020cached\u0020recurring\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_set_cached_recurring_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_subscription_sign_up_fee\u0028\u0029",
+        name: "get_cart_subscription_sign_up_fee",
+        summary: "Gets\u0020the\u0020subscription\u0020sign\u0020up\u0020fee\u0020for\u0020the\u0020cart\u0020and\u0020returns\u0020it",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_subscription_sign_up_fee"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_needs_payment\u0028\u0029",
+        name: "cart_needs_payment",
+        summary: "Check\u0020whether\u0020the\u0020cart\u0020needs\u0020payment\u0020even\u0020if\u0020the\u0020order\u0020total\u0020is\u0020\u00240",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_needs_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Amaybe_restore_shipping_methods\u0028\u0029",
+        name: "maybe_restore_shipping_methods",
+        summary: "Restore\u0020shipping\u0020method,\u0020as\u0020well\u0020as\u0020cost\u0020and\u0020tax\u0020estimate\u0020when\u0020on\u0020the\u0020cart\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_maybe_restore_shipping_methods"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_product_price\u0028\u0029",
+        name: "cart_product_price",
+        summary: "Make\u0020sure\u0020cart\u0020product\u0020prices\u0020correctly\u0020include\/exclude\u0020taxes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_product_price"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Adisplay_recurring_totals\u0028\u0029",
+        name: "display_recurring_totals",
+        summary: "Display\u0020the\u0020recurring\u0020totals\u0020for\u0020items\u0020in\u0020the\u0020cart",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_display_recurring_totals"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_cart_key\u0028\u0029",
+        name: "get_recurring_cart_key",
+        summary: "Construct\u0020a\u0020cart\u0020key\u0020based\u0020on\u0020the\u0020billing\u0020schedule\u0020of\u0020a\u0020subscription\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_cart_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Afilter_recurring_cart_chosen_shipping_method\u0028\u0029",
+        name: "filter_recurring_cart_chosen_shipping_method",
+        summary: "When\u0020calculating\u0020shipping\u0020for\u0020recurring\u0020carts,\u0020return\u0020a\u0020revised\u0020list\u0020of\u0020shipping\u0020methods\u0020that\u0020apply\u0020to\u0020this\u0020recurring\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_filter_recurring_cart_chosen_shipping_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Avalidate_recurring_shipping_methods\u0028\u0029",
+        name: "validate_recurring_shipping_methods",
+        summary: "Validate\u0020the\u0020chosen\u0020recurring\u0020shipping\u0020methods\u0020for\u0020each\u0020recurring\u0020shipping\u0020package.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_validate_recurring_shipping_methods"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_contains_product\u0028\u0029",
+        name: "cart_contains_product",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020specific\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_contains_product"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_contains_other_subscription_products\u0028\u0029",
+        name: "cart_contains_other_subscription_products",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020any\u0020subscription\u0020product\u0020other\u0020than\u0020a\u0020specific\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_contains_other_subscription_products"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acache_package_rates\u0028\u0029",
+        name: "cache_package_rates",
+        summary: "Cache\u0020the\u0020package\u0020rates\u0020calculated\u0020by\u0020\u0040see\u0020WC_Shipping\u003A\u003Acalculate_shipping_for_package\u0028\u0029\u0020to\u0020avoid\u0020multiple\u0020calls\u0020of\u0020calculate_shipping_for_package\u0028\u0029\u0020per\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cache_package_rates"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_calculated_shipping_for_package\u0028\u0029",
+        name: "get_calculated_shipping_for_package",
+        summary: "Calculates\u0020the\u0020shipping\u0020rates\u0020for\u0020a\u0020package.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_calculated_shipping_for_package"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_package_shipping_rates_cache_key\u0028\u0029",
+        name: "get_package_shipping_rates_cache_key",
+        summary: "Generate\u0020a\u0020unique\u0020package\u0020key\u0020for\u0020a\u0020given\u0020shipping\u0020package\u0020to\u0020be\u0020used\u0020for\u0020caching\u0020package\u0020rates.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_package_shipping_rates_cache_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Amaybe_recalculate_shipping_method_availability\u0028\u0029",
+        name: "maybe_recalculate_shipping_method_availability",
+        summary: "When\u0020calculating\u0020the\u0020free\u0020shipping\u0020method\u0020availability,\u0020WC\u0020uses\u0020the\u0020WC\u002D\u003Ecart\u0020object.\u0020During\u0020shipping\u0020calculations\u0020for\nrecurring\u0020carts\u0020we\u0020need\u0020the\u0020recurring\u0020cart\u0027s\u0020total\u0020and\u0020coupons\u0020to\u0020be\u0020the\u0020base\u0020for\u0020checking\u0020its\u0020availability",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_maybe_recalculate_shipping_method_availability"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Arecalculate_shipping_method_availability\u0028\u0029",
+        name: "recalculate_shipping_method_availability",
+        summary: "Calculates\u0020whether\u0020a\u0020shipping\u0020method\u0020is\u0020available\u0020for\u0020the\u0020recurring\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_recalculate_shipping_method_availability"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aapply_recurring_fees\u0028\u0029",
+        name: "apply_recurring_fees",
+        summary: "Allow\u0020third\u002Dparties\u0020to\u0020apply\u0020fees\u0020which\u0020apply\u0020to\u0020the\u0020cart\u0020to\u0020recurring\u0020carts.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_apply_recurring_fees"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aupdate_chosen_shipping_methods\u0028\u0029",
+        name: "update_chosen_shipping_methods",
+        summary: "Update\u0020the\u0020chosen\u0020recurring\u0020package\u0020shipping\u0020methods\u0020from\u0020posted\u0020checkout\u0020form\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_update_chosen_shipping_methods"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aremove_subscriptions_from_cart\u0028\u0029",
+        name: "remove_subscriptions_from_cart",
+        summary: "Removes\u0020all\u0020subscription\u0020products\u0020from\u0020the\u0020shopping\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_remove_subscriptions_from_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Arecord_base_tax_rates\u0028\u0029",
+        name: "record_base_tax_rates",
+        summary: "Records\u0020the\u0020cart\u0020item\u0020base\u0020location\u0020tax\u0020total\u0020for\u0020later\u0020storage.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_record_base_tax_rates"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aset_chosen_shipping_method\u0028\u0029",
+        name: "set_chosen_shipping_method",
+        summary: "Set\u0020the\u0020chosen\u0020shipping\u0020method\u0020for\u0020recurring\u0020cart\u0020calculations",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_set_chosen_shipping_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aadd_to_cart_redirect\u0028\u0029",
+        name: "add_to_cart_redirect",
+        summary: "Redirects\u0020the\u0020customer\u0020to\u0020the\u0020cart\u0020after\u0020they\u0020add\u0020a\u0020subscription\u0020to\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_add_to_cart_redirect"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acheck_valid_add_to_cart\u0028\u0029",
+        name: "check_valid_add_to_cart",
+        summary: "Don\u0027t\u0020allow\u0020new\u0020subscription\u0020products\u0020to\u0020be\u0020added\u0020to\u0020the\u0020cart\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020renewal\u0020already.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_check_valid_add_to_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Apre_get_refreshed_fragments\u0028\u0029",
+        name: "pre_get_refreshed_fragments",
+        summary: "Make\u0020sure\u0020cart\u0020totals\u0020are\u0020calculated\u0020when\u0020the\u0020cart\u0020widget\u0020is\u0020populated\u0020via\u0020the\u0020get_refreshed_fragments\u0028\u0029\u0020method\nso\u0020that\u0020\u0040see\u0020self\u003A\u003Aget_formatted_cart_subtotal\u0028\u0029\u0020returns\u0020the\u0020correct\u0020subtotal\u0020price\u0020string.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_pre_get_refreshed_fragments"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_contains_subscription_renewal\u0028\u0029",
+        name: "cart_contains_subscription_renewal",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020product\u0020renewal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_contains_subscription_renewal"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_contains_failed_renewal_order_payment\u0028\u0029",
+        name: "cart_contains_failed_renewal_order_payment",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020product\u0020renewal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_contains_failed_renewal_order_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_item_from_session\u0028\u0029",
+        name: "get_cart_item_from_session",
+        summary: "Restore\u0020renewal\u0020flag\u0020when\u0020cart\u0020is\u0020reset\u0020and\u0020modify\u0020Product\u0020object\u0020with\nrenewal\u0020order\u0020related\u0020info",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_item_from_session"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Abefore_calculate_totals\u0028\u0029",
+        name: "before_calculate_totals",
+        summary: "For\u0020subscription\u0020renewal\u0020via\u0020cart,\u0020use\u0020original\u0020order\u0020discount",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_before_calculate_totals"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_discounted_price_for_renewal\u0028\u0029",
+        name: "get_discounted_price_for_renewal",
+        summary: "For\u0020subscription\u0020renewal\u0020via\u0020cart,\u0020previously\u0020adjust\u0020item\u0020price\u0020by\u0020original\u0020order\u0020discount",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_discounted_price_for_renewal"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_formatted_discounts_before_tax\u0028\u0029",
+        name: "get_formatted_discounts_before_tax",
+        summary: "Returns\u0020a\u0020string\u0020with\u0020the\u0020cart\u0020discount\u0020and\u0020subscription\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_formatted_discounts_before_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_formatted_discounts_after_tax\u0028\u0029",
+        name: "get_formatted_discounts_after_tax",
+        summary: "Gets\u0020the\u0020order\u0020discount\u0020amount\u0020\u002D\u0020these\u0020are\u0020applied\u0020after\u0020tax",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_formatted_discounts_after_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_coupon_discount_amount_html\u0028\u0029",
+        name: "cart_coupon_discount_amount_html",
+        summary: "Returns\u0020an\u0020individual\u0020coupon\u0027s\u0020formatted\u0020discount\u0020amount\u0020for\u0020WooCommerce\u00202.1\u002B",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_coupon_discount_amount_html"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acart_totals_fee_html\u0028\u0029",
+        name: "cart_totals_fee_html",
+        summary: "Returns\u0020individual\u0020coupon\u0027s\u0020formatted\u0020discount\u0020amount\u0020for\u0020WooCommerce\u00202.1\u002B",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_cart_totals_fee_html"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_formatted_cart_total\u0028\u0029",
+        name: "get_formatted_cart_total",
+        summary: "Includes\u0020the\u0020sign\u002Dup\u0020fee\u0020total\u0020in\u0020the\u0020cart\u0020total\u0020\u0028after\u0020calculation\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_formatted_cart_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_formatted_cart_subtotal\u0028\u0029",
+        name: "get_formatted_cart_subtotal",
+        summary: "Includes\u0020the\u0020sign\u002Dup\u0020fee\u0020subtotal\u0020in\u0020the\u0020subtotal\u0020displayed\u0020in\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_formatted_cart_subtotal"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_tax_totals\u0028\u0029",
+        name: "get_recurring_tax_totals",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020taxes\u0020merged\u0020by\u0020code,\u0020formatted\u0020with\u0020recurring\u0020amount\u0020ready\u0020for\u0020output.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_tax_totals"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_taxes_total_html\u0028\u0029",
+        name: "get_taxes_total_html",
+        summary: "Returns\u0020a\u0020string\u0020of\u0020the\u0020sum\u0020of\u0020all\u0020taxes\u0020in\u0020the\u0020cart\u0020for\u0020initial\u0020payment\u0020and\nrecurring\u0020amount.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_taxes_total_html"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_formatted_total\u0028\u0029",
+        name: "get_formatted_total",
+        summary: "Appends\u0020the\u0020cart\u0020subscription\u0020string\u0020to\u0020a\u0020cart\u0020total\u0020using\u0020the\u0020\u0040see\u0020self\u003A\u003Aget_cart_subscription_string\u0020and\u0020then\u0020returns\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_formatted_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_formatted_total_ex_tax\u0028\u0029",
+        name: "get_formatted_total_ex_tax",
+        summary: "Appends\u0020the\u0020cart\u0020subscription\u0020string\u0020to\u0020a\u0020cart\u0020total\u0020using\u0020the\u0020\u0040see\u0020self\u003A\u003Aget_cart_subscription_string\u0020and\u0020then\u0020returns\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_formatted_total_ex_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_totals_fields\u0028\u0029",
+        name: "get_recurring_totals_fields",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020the\u0020recurring\u0020total\u0020fields",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_totals_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_subscription_period\u0028\u0029",
+        name: "get_cart_subscription_period",
+        summary: "Gets\u0020the\u0020subscription\u0020period\u0020from\u0020the\u0020cart\u0020and\u0020returns\u0020it\u0020as\u0020an\u0020array\u0020\u0028eg.\u0020array\u0028\u0020\u0027month\u0027,\u0020\u0027day\u0027\u0020\u0029\u0020\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_subscription_period"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_subscription_interval\u0028\u0029",
+        name: "get_cart_subscription_interval",
+        summary: "Gets\u0020the\u0020subscription\u0020period\u0020from\u0020the\u0020cart\u0020and\u0020returns\u0020it\u0020as\u0020an\u0020array\u0020\u0028eg.\u0020array\u0028\u0020\u0027month\u0027,\u0020\u0027day\u0027\u0020\u0029\u0020\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_subscription_interval"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_subscription_length\u0028\u0029",
+        name: "get_cart_subscription_length",
+        summary: "Gets\u0020the\u0020subscription\u0020length\u0020from\u0020the\u0020cart\u0020and\u0020returns\u0020it\u0020as\u0020an\u0020array\u0020\u0028eg.\u0020array\u0028\u0020\u0027month\u0027,\u0020\u0027day\u0027\u0020\u0029\u0020\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_subscription_length"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_subscription_trial_length\u0028\u0029",
+        name: "get_cart_subscription_trial_length",
+        summary: "Gets\u0020the\u0020subscription\u0020length\u0020from\u0020the\u0020cart\u0020and\u0020returns\u0020it\u0020as\u0020an\u0020array\u0020\u0028eg.\u0020array\u0028\u0020\u0027month\u0027,\u0020\u0027day\u0027\u0020\u0029\u0020\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_subscription_trial_length"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_subscription_trial_period\u0028\u0029",
+        name: "get_cart_subscription_trial_period",
+        summary: "Gets\u0020the\u0020subscription\u0020trial\u0020period\u0020from\u0020the\u0020cart\u0020and\u0020returns\u0020it\u0020as\u0020an\u0020array\u0020\u0028eg.\u0020array\u0028\u0020\u0027month\u0027,\u0020\u0027day\u0027\u0020\u0029\u0020\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_subscription_trial_period"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_cart_contents_total\u0028\u0029",
+        name: "get_recurring_cart_contents_total",
+        summary: "Get\u0020tax\u0020row\u0020amounts\u0020with\u0020or\u0020without\u0020compound\u0020taxes\u0020includes",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_cart_contents_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_subtotal_ex_tax\u0028\u0029",
+        name: "get_recurring_subtotal_ex_tax",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020cart\u0020discount\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_subtotal_ex_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_subtotal\u0028\u0029",
+        name: "get_recurring_subtotal",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020cart\u0020discount\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_subtotal"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_discount_cart\u0028\u0029",
+        name: "get_recurring_discount_cart",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020cart\u0020discount\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_discount_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_discount_cart_tax\u0028\u0029",
+        name: "get_recurring_discount_cart_tax",
+        summary: "Returns\u0020the\u0020cart\u0020discount\u0020tax\u0020amount\u0020for\u0020WC\u00202.3\u0020and\u0020newer",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_discount_cart_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_discount_total\u0028\u0029",
+        name: "get_recurring_discount_total",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020total\u0020discount\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_discount_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_shipping_tax_total\u0028\u0029",
+        name: "get_recurring_shipping_tax_total",
+        summary: "Returns\u0020the\u0020amount\u0020of\u0020shipping\u0020tax\u0020that\u0020is\u0020recurring.\u0020As\u0020shipping\u0020only\u0020applies\nto\u0020recurring\u0020payments,\u0020and\u0020only\u00201\u0020subscription\u0020can\u0020be\u0020purchased\u0020at\u0020a\u0020time,\nthis\u0020is\u0020equal\u0020to\u0020\u0040see\u0020WC_Cart\u003A\u003A\u0024shipping_tax_total",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_shipping_tax_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_shipping_total\u0028\u0029",
+        name: "get_recurring_shipping_total",
+        summary: "Returns\u0020the\u0020recurring\u0020shipping\u0020price\u0020.\u0020As\u0020shipping\u0020only\u0020applies\u0020to\u0020recurring\npayments,\u0020and\u0020only\u00201\u0020subscription\u0020can\u0020be\u0020purchased\u0020at\u0020a\u0020time,\u0020this\u0020is\nequal\u0020to\u0020\u0040see\u0020WC_Cart\u003A\u003Ashipping_total",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_shipping_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_taxes\u0028\u0029",
+        name: "get_recurring_taxes",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020taxes\u0020on\u0020an\u0020order\u0020with\u0020their\u0020recurring\u0020totals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_taxes"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_fees\u0028\u0029",
+        name: "get_recurring_fees",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020recurring\u0020fees.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_fees"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_taxes_total\u0028\u0029",
+        name: "get_recurring_taxes_total",
+        summary: "Get\u0020tax\u0020row\u0020amounts\u0020with\u0020or\u0020without\u0020compound\u0020taxes\u0020includes",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_taxes_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_total_tax\u0028\u0029",
+        name: "get_recurring_total_tax",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020total\u0020tax\u0020on\u0020an\u0020order\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_total_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_total_ex_tax\u0028\u0029",
+        name: "get_recurring_total_ex_tax",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020total\u0020before\u0020tax\u0020on\u0020an\u0020order\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_total_ex_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_recurring_total\u0028\u0029",
+        name: "get_recurring_total",
+        summary: "Returns\u0020the\u0020price\u0020per\u0020period\u0020for\u0020a\u0020subscription\u0020in\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_recurring_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Acalculate_recurring_shipping\u0028\u0029",
+        name: "calculate_recurring_shipping",
+        summary: "Calculate\u0020the\u0020total\u0020amount\u0020of\u0020recurring\u0020shipping\u0020needed.\u0020\u0020Removes\u0020any\u0020item\u0020from\u0020the\u0020calculation\u0020that\nis\u0020not\u0020a\u0020subscription\u0020and\u0020calculates\u0020the\u0020totals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_calculate_recurring_shipping"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_subscription_string\u0028\u0029",
+        name: "get_cart_subscription_string",
+        summary: "Creates\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020subscription\u0020period\/term\u0020for\u0020each\u0020item\u0020in\u0020the\u0020cart",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_subscription_string"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aset_calculated_total\u0028\u0029",
+        name: "set_calculated_total",
+        summary: "Uses\u0020the\u0020a\u0020subscription\u0027s\u0020combined\u0020price\u0020total\u0020calculated\u0020by\u0020WooCommerce\u0020to\u0020determine\u0020the\ntotal\u0020price\u0020that\u0020should\u0020be\u0020charged\u0020per\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_set_calculated_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_from_session\u0028\u0029",
+        name: "get_cart_from_session",
+        summary: "Get\u0020the\u0020recurring\u0020amounts\u0020values\u0020from\u0020the\u0020session",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_from_session"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aset_session\u0028\u0029",
+        name: "set_session",
+        summary: "Store\u0020the\u0020sign\u002Dup\u0020fee\u0020cart\u0020values\u0020in\u0020the\u0020session",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_set_session"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Areset\u0028\u0029",
+        name: "reset",
+        summary: "Reset\u0020the\u0020sign\u002Dup\u0020fee\u0020fields\u0020in\u0020the\u0020current\u0020session",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_reset"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_items_product_id\u0028\u0029",
+        name: "get_items_product_id",
+        summary: "Returns\u0020a\u0020cart\u0020item\u0027s\u0020product\u0020ID.\u0020For\u0020a\u0020variation,\u0020this\u0020will\u0020be\u0020a\u0020variation\u0020ID,\u0020for\u0020a\u0020simple\u0020product,\nit\u0020will\u0020be\u0020the\u0020product\u0027s\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_items_product_id"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aincrease_coupon_discount_amount\u0028\u0029",
+        name: "increase_coupon_discount_amount",
+        summary: "Store\u0020how\u0020much\u0020discount\u0020each\u0020coupon\u0020grants.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_increase_coupon_discount_amount"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aget_cart_shipping_method_full_label\u0028\u0029",
+        name: "get_cart_shipping_method_full_label",
+        summary: "Don\u0027t\u0020display\u0020shipping\u0020prices\u0020if\u0020the\u0020initial\u0020order\u0020won\u0027t\u0020require\u0020shipping\u0020\u0028i.e.\u0020all\u0020the\u0020products\u0020in\u0020the\u0020cart\u0020are\u0020subscriptions\u0020with\u0020a\u0020free\u0020trial\u0020or\u0020synchronised\u0020to\u0020a\u0020date\u0020in\u0020the\u0020future\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_get_cart_shipping_method_full_label"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Amaybe_restore_chosen_shipping_method\u0028\u0029",
+        name: "maybe_restore_chosen_shipping_method",
+        summary: "One\u0020time\u0020shipping\u0020can\u0020null\u0020the\u0020need\u0020for\u0020shipping\u0020needs.\u0020WooCommerce\u0020treats\u0020that\u0020as\u0020no\u0020need\u0020to\u0020ship,\u0020therefore\u0020it\u0020will\u0020call\nWC\u0028\u0029\u002D\u003Eshipping\u002D\u003Ereset\u0028\u0029\u0020on\u0020it,\u0020which\u0020will\u0020wipe\u0020the\u0020preferences\u0020saved.\u0020That\u0020can\u0020cause\u0020the\u0020chosen\u0020shipping\u0020method\u0020for\u0020the\u0020one\ntime\u0020shipping\u0020feature\u0020to\u0020be\u0020lost,\u0020and\u0020the\u0020first\u0020default\u0020to\u0020be\u0020applied\u0020instead.\u0020To\u0020counter\u0020that,\u0020we\u0020save\u0020the\u0020chosen\u0020shipping\nmethod\u0020to\u0020a\u0020key\u0020that\u0027s\u0020not\u0020going\u0020to\u0020get\u0020wiped\u0020by\u0020WC\u0027s\u0020method,\u0020and\u0020then\u0020later\u0020restore\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_maybe_restore_chosen_shipping_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aformat_free_trial_period\u0028\u0029",
+        name: "format_free_trial_period",
+        summary: "Return\u0020a\u0020localized\u0020free\u0020trial\u0020period\u0020string.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_format_free_trial_period"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aformat_sync_period\u0028\u0029",
+        name: "format_sync_period",
+        summary: "Return\u0020a\u0020localized\u0020sync\u0020string,\u0020copied\u0020from\u0020WC_Subscriptions_Product\u003A\u003Aget_price_string",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_format_sync_period"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Awoocommerce_get_item_data\u0028\u0029",
+        name: "woocommerce_get_item_data",
+        summary: "Adds\u0020meta\u0020data\u0020so\u0020it\u0020can\u0020be\u0020displayed\u0020in\u0020the\u0020Cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_woocommerce_get_item_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Aadd_shipping_method_post_data\u0028\u0029",
+        name: "add_shipping_method_post_data",
+        summary: "Parse\u0020recurring\u0020shipping\u0020rates\u0020from\u0020the\u0020front\u0020end\u0020and\u0020put\u0020them\u0020into\u0020the\u0020\u0024_POST\u005B\u0027shipping_method\u0027\u005D\u0020used\u0020by\u0020WooCommerce.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_add_shipping_method_post_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Areset_shipping_method_counts\u0028\u0029",
+        name: "reset_shipping_method_counts",
+        summary: "When\u0020WooCommerce\u0020calculates\u0020rates\u0020for\u0020a\u0020recurring\u0020shipping\u0020package,\u0020we\u0020need\u0020to\u0020make\u0020sure\u0020there\u0020is\u0020a\ndifferent\u0020number\u0020of\u0020rates\u0020to\u0020make\u0020sure\u0020WooCommerce\u0020updates\u0020the\u0020chosen\u0020method\u0020for\u0020the\u0020recurring\u0020cart\nand\u0020the\u0020\u0027woocommerce_shipping_chosen_method\u0027\u0020filter\u0020is\u0020called,\u0020which\u0020we\u0020use\u0020to\u0020make\u0020sure\u0020the\u0020chosen\nmethod\u0020is\u0020the\u0020recurring\u0020method,\u0020not\u0020the\u0020initial\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_reset_shipping_method_counts"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003Azero_initial_payment_requires_payment\u0028\u0029",
+        name: "zero_initial_payment_requires_payment",
+        summary: "Checks\u0020to\u0020see\u0020if\u0020payment\u0020method\u0020is\u0020required\u0020on\u0020a\u0020subscription\u0020product\u0020with\u0020a\u0020\u00240\u0020initial\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#method_zero_initial_payment_requires_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003A\u0024calculation_type",
+        name: "calculation_type",
+        summary: "A\u0020flag\u0020to\u0020control\u0020how\u0020to\u0020modify\u0020the\u0020calculation\u0020of\u0020totals\u0020by\u0020WC_Cart\u003A\u003Acalculate_totals\u0028\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#property_calculation_type"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003A\u0024recurring_cart_key",
+        name: "recurring_cart_key",
+        summary: "An\u0020internal\u0020pointer\u0020to\u0020the\u0020current\u0020recurring\u0020cart\u0020calculation\u0020\u0028if\u0020any\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#property_recurring_cart_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003A\u0024recurring_shipping_packages",
+        name: "recurring_shipping_packages",
+        summary: "A\u0020cache\u0020of\u0020the\u0020calculated\u0020recurring\u0020shipping\u0020packages",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#property_recurring_shipping_packages"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003A\u0024shipping_rates",
+        name: "shipping_rates",
+        summary: "A\u0020cache\u0020of\u0020the\u0020calculated\u0020shipping\u0020package\u0020rates",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#property_shipping_rates"
+    },{
+        fqsen: "\\WC_Subscriptions_Cart\u003A\u003A\u0024cached_recurring_cart",
+        name: "cached_recurring_cart",
+        summary: "A\u0020cache\u0020of\u0020the\u0020current\u0020recurring\u0020cart\u0020being\u0020calculated",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Cart.html#property_cached_recurring_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway",
+        name: "WC_Subscriptions_Change_Payment_Gateway",
+        summary: "Make\u0020it\u0020possible\u0020for\u0020customers\u0020to\u0020change\u0020the\u0020payment\u0020gateway\u0020used\u0020for\u0020an\u0020existing\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Aset_change_payment_method_flag\u0028\u0029",
+        name: "set_change_payment_method_flag",
+        summary: "Set\u0020a\u0020flag\u0020to\u0020indicate\u0020that\u0020the\u0020current\u0020request\u0020is\u0020for\u0020changing\u0020payment.\u0020Better\u0020than\u0020requiring\u0020other\u0020extensions\nto\u0020check\u0020the\u0020\u0024_GET\u0020global\u0020as\u0020it\u0020allows\u0020for\u0020the\u0020flag\u0020to\u0020be\u0020overridden.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_set_change_payment_method_flag"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Astore_pay_shortcode_messages\u0028\u0029",
+        name: "store_pay_shortcode_messages",
+        summary: "Store\u0020any\u0020messages\u0020or\u0020errors\u0020added\u0020by\u0020other\u0020plugins.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_store_pay_shortcode_messages"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Astore_pay_shortcode_mesages\u0028\u0029",
+        name: "store_pay_shortcode_mesages",
+        summary: "Store\u0020messages\u0020ore\u0020errors\u0020added\u0020by\u0020other\u0020plugins.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_store_pay_shortcode_mesages"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Amaybe_replace_pay_shortcode\u0028\u0029",
+        name: "maybe_replace_pay_shortcode",
+        summary: "If\u0020requesting\u0020a\u0020payment\u0020method\u0020change,\u0020replace\u0020the\u0020woocommerce_pay_shortcode\u0028\u0029\u0020with\u0020a\u0020change\u0020payment\u0020form.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_maybe_replace_pay_shortcode"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Avalidate_change_payment_request\u0028\u0029",
+        name: "validate_change_payment_request",
+        summary: "Validates\u0020the\u0020request\u0020to\u0020change\u0020a\u0020subscription\u0027s\u0020payment\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_validate_change_payment_request"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Achange_payment_method_button\u0028\u0029",
+        name: "change_payment_method_button",
+        summary: "Add\u0020a\u0020\u0022Change\u0020Payment\u0020Method\u0022\u0020button\u0020to\u0020the\u0020\u0022My\u0020Subscriptions\u0022\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_change_payment_method_button"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Achange_payment_method_via_pay_shortcode\u0028\u0029",
+        name: "change_payment_method_via_pay_shortcode",
+        summary: "Process\u0020the\u0020change\u0020payment\u0020form.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_change_payment_method_via_pay_shortcode"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Aupdate_all_payment_methods_from_subscription\u0028\u0029",
+        name: "update_all_payment_methods_from_subscription",
+        summary: "Update\u0020the\u0020recurring\u0020payment\u0020method\u0020on\u0020all\u0020current\u0020subscriptions\u0020to\u0020the\u0020payment\u0020method\u0020on\u0020this\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_update_all_payment_methods_from_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Acan_update_all_subscription_payment_methods\u0028\u0029",
+        name: "can_update_all_subscription_payment_methods",
+        summary: "Check\u0020whether\u0020a\u0020payment\u0020method\u0020supports\u0020updating\u0020all\u0020current\u0020subscriptions\u0027\u0020payment\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_can_update_all_subscription_payment_methods"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Awill_subscription_update_all_payment_methods\u0028\u0029",
+        name: "will_subscription_update_all_payment_methods",
+        summary: "Check\u0020whether\u0020a\u0020subscription\u0020will\u0020update\u0020all\u0020current\u0020subscriptions\u0027\u0020payment\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_will_subscription_update_all_payment_methods"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Aupdate_payment_method\u0028\u0029",
+        name: "update_payment_method",
+        summary: "Update\u0020the\u0020recurring\u0020payment\u0020method\u0020on\u0020a\u0020subscription\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_update_payment_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Aget_available_payment_gateways\u0028\u0029",
+        name: "get_available_payment_gateways",
+        summary: "Only\u0020display\u0020gateways\u0020which\u0020support\u0020changing\u0020payment\u0020method\u0020when\u0020paying\u0020for\u0020a\u0020failed\u0020renewal\u0020order\u0020or\nwhen\u0020requesting\u0020to\u0020change\u0020the\u0020payment\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_get_available_payment_gateways"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Amaybe_zero_total\u0028\u0029",
+        name: "maybe_zero_total",
+        summary: "Make\u0020sure\u0020certain\u0020totals\u0020are\u0020set\u0020to\u00200\u0020when\u0020the\u0020request\u0020is\u0020to\u0020change\u0020the\u0020payment\u0020method\u0020without\u0020charging\u0020anything.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_maybe_zero_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Aget_return_url\u0028\u0029",
+        name: "get_return_url",
+        summary: "Redirect\u0020back\u0020to\u0020the\u0020\u0022My\u0020Account\u0022\u0020page\u0020instead\u0020of\u0020the\u0020\u0022Thank\u0020You\u0022\u0020page\u0020after\u0020changing\u0020the\u0020payment\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_get_return_url"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Achange_failing_payment_method\u0028\u0029",
+        name: "change_failing_payment_method",
+        summary: "Update\u0020the\u0020recurring\u0020payment\u0020method\u0020for\u0020a\u0020subscription\u0020after\u0020a\u0020customer\u0020has\u0020paid\u0020for\u0020a\u0020failed\u0020renewal\u0020order\n\u0028which\u0020usually\u0020failed\u0020because\u0020of\u0020an\u0020issue\u0020with\u0020the\u0020existing\u0020payment,\u0020like\u0020an\u0020expired\u0020card\u0020or\u0020token\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_change_failing_payment_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Acan_subscription_be_updated_to_new_payment_method\u0028\u0029",
+        name: "can_subscription_be_updated_to_new_payment_method",
+        summary: "Add\u0020a\u0020\u0027new\u002Dpayment\u002Dmethod\u0027\u0020handler\u0020to\u0020the\u0020\u0040see\u0020WC_Subscription\u003A\u003Acan_be_updated_to\u0028\u0029\u0020function\nto\u0020determine\u0020whether\u0020the\u0020recurring\u0020payment\u0020method\u0020on\u0020a\u0020subscription\u0020can\u0020be\u0020changed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_can_subscription_be_updated_to_new_payment_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Achange_payment_method_page_title\u0028\u0029",
+        name: "change_payment_method_page_title",
+        summary: "Replace\u0020a\u0020page\u0020title\u0020with\u0020the\u0020endpoint\u0020title",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_change_payment_method_page_title"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Achange_payment_method_breadcrumb\u0028\u0029",
+        name: "change_payment_method_breadcrumb",
+        summary: "Replace\u0020the\u0020breadcrumbs\u0020structure\u0020to\u0020add\u0020a\u0020link\u0020to\u0020the\u0020subscription\u0020page\u0020and\u0020change\u0020the\u0020current\u0020page\u0020to\u0020\u0022Change\u0020Payment\u0020Method\u0022",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_change_payment_method_breadcrumb"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Aget_change_payment_method_page_title\u0028\u0029",
+        name: "get_change_payment_method_page_title",
+        summary: "Get\u0020the\u0020Change\u0020Payment\u0020Method\u0020page\u0020title\u0020\u0028also\u0020used\u0020for\u0020the\u0020page\u0020breadcrumb\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_get_change_payment_method_page_title"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Amaybe_override_needs_payment\u0028\u0029",
+        name: "maybe_override_needs_payment",
+        summary: "When\u0020processing\u0020a\u0020change_payment_method\u0020request\u0020on\u0020a\u0020subscription\u0020that\u0020has\u0020a\u0020failed\u0020or\u0020pending\u0020renewal,\nwe\u0020don\u0027t\u0020want\u0020the\u0020\u0060\u0024order\u002D\u003Eneeds_payment\u0028\u0029\u0060\u0020check\u0020inside\u0020WC_Shortcode_Checkout\u003A\u003Aorder_pay\u0028\u0029\u0020to\u0020pass.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_maybe_override_needs_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Amaybe_request_log_in\u0028\u0029",
+        name: "maybe_request_log_in",
+        summary: "Display\u0020a\u0020login\u0020form\u0020on\u0020the\u0020change\u0020payment\u0020method\u0020page\u0020if\u0020the\u0020customer\u0020isn\u0027t\u0020logged\u0020in.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_maybe_request_log_in"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Aupdate_recurring_payment_method\u0028\u0029",
+        name: "update_recurring_payment_method",
+        summary: "Update\u0020the\u0020recurring\u0020payment\u0020method\u0020on\u0020a\u0020subscription\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_update_recurring_payment_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Astore_original_order_dates\u0028\u0029",
+        name: "store_original_order_dates",
+        summary: "Keep\u0020a\u0020record\u0020of\u0020an\u0020order\u0027s\u0020dates\u0020if\u0020we\u0027re\u0020marking\u0020it\u0020as\u0020completed\u0020during\u0020a\u0020request\u0020to\u0020change\u0020the\u0020payment\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_store_original_order_dates"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Arestore_original_order_dates\u0028\u0029",
+        name: "restore_original_order_dates",
+        summary: "Restore\u0020an\u0020order\u0027s\u0020dates\u0020if\u0020we\u0020marked\u0020it\u0020as\u0020completed\u0020during\u0020a\u0020request\u0020to\u0020change\u0020the\u0020payment\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_restore_original_order_dates"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Acan_subscription_be_changed_to\u0028\u0029",
+        name: "can_subscription_be_changed_to",
+        summary: "Add\u0020a\u0020\u0027new\u002Dpayment\u002Dmethod\u0027\u0020handler\u0020to\u0020the\u0020\u0040see\u0020WC_Subscription\u003A\u003Acan_be_updated_to\u0028\u0029\u0020function\nto\u0020determine\u0020whether\u0020the\u0020recurring\u0020payment\u0020method\u0020on\u0020a\u0020subscription\u0020can\u0020be\u0020changed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_can_subscription_be_changed_to"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003Aattach_dependant_hooks\u0028\u0029",
+        name: "attach_dependant_hooks",
+        summary: "Attach\u0020WooCommerce\u0020version\u0020dependent\u0020hooks",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#method_attach_dependant_hooks"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003A\u0024is_request_to_change_payment",
+        name: "is_request_to_change_payment",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#property_is_request_to_change_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Change_Payment_Gateway\u003A\u003A\u0024notices",
+        name: "notices",
+        summary: "An\u0020internal\u0020cache\u0020of\u0020WooCommerce\u0020customer\u0020notices.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Change-Payment-Gateway.html#property_notices"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout",
+        name: "WC_Subscriptions_Checkout",
+        summary: "Subscriptions\u0020Checkout",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aattach_dependant_hooks\u0028\u0029",
+        name: "attach_dependant_hooks",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_attach_dependant_hooks"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aprocess_checkout\u0028\u0029",
+        name: "process_checkout",
+        summary: "Create\u0020subscriptions\u0020purchased\u0020on\u0020checkout.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_process_checkout"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Acreate_subscription\u0028\u0029",
+        name: "create_subscription",
+        summary: "Create\u0020a\u0020new\u0020subscription\u0020from\u0020a\u0020cart\u0020item\u0020on\u0020checkout.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_create_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aadd_shipping\u0028\u0029",
+        name: "add_shipping",
+        summary: "Stores\u0020shipping\u0020info\u0020on\u0020the\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_add_shipping"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aremove_backorder_meta_from_subscription_line_item\u0028\u0029",
+        name: "remove_backorder_meta_from_subscription_line_item",
+        summary: "Remove\u0020the\u0020Backordered\u0020meta\u0020data\u0020from\u0020subscription\u0020line\u0020items\u0020added\u0020on\u0020the\u0020checkout.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_remove_backorder_meta_from_subscription_line_item"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Amaybe_add_free_trial_item_meta\u0028\u0029",
+        name: "maybe_add_free_trial_item_meta",
+        summary: "Set\u0020a\u0020flag\u0020in\u0020subscription\u0020line\u0020item\u0020meta\u0020if\u0020the\u0020line\u0020item\u0020has\u0020a\u0020free\u0020trial.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_maybe_add_free_trial_item_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aadd_cart_item\u0028\u0029",
+        name: "add_cart_item",
+        summary: "Add\u0020a\u0020cart\u0020item\u0020to\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_add_cart_item"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aadd_order_meta\u0028\u0029",
+        name: "add_order_meta",
+        summary: "When\u0020a\u0020new\u0020order\u0020is\u0020inserted,\u0020add\u0020subscriptions\u0020related\u0020order\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_add_order_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aadd_order_item_meta\u0028\u0029",
+        name: "add_order_item_meta",
+        summary: "Add\u0020each\u0020subscription\u0020product\u0027s\u0020details\u0020to\u0020an\u0020order\u0020so\u0020that\u0020the\u0020state\u0020of\u0020the\u0020subscription\u0020persists\u0020even\u0020when\u0020a\u0020product\u0020is\u0020changed",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_add_order_item_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Afilter_woocommerce_script_parameters\u0028\u0029",
+        name: "filter_woocommerce_script_parameters",
+        summary: "Also\u0020make\u0020sure\u0020the\u0020guest\u0020checkout\u0020option\u0020value\u0020passed\u0020to\u0020the\u0020woocommerce.js\u0020forces\u0020registration.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_filter_woocommerce_script_parameters"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Astore_line_item_base_location_taxes\u0028\u0029",
+        name: "store_line_item_base_location_taxes",
+        summary: "Stores\u0020the\u0020subtracted\u0020base\u0020location\u0020tax\u0020totals\u0020in\u0020the\u0020subscription\u0020line\u0020item\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_store_line_item_base_location_taxes"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Afilter_woocommerce_script_paramaters\u0028\u0029",
+        name: "filter_woocommerce_script_paramaters",
+        summary: "Also\u0020make\u0020sure\u0020the\u0020guest\u0020checkout\u0020option\u0020value\u0020passed\u0020to\u0020the\u0020woocommerce.js\u0020forces\u0020registration.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_filter_woocommerce_script_paramaters"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Arequire_registration_during_checkout\u0028\u0029",
+        name: "require_registration_during_checkout",
+        summary: "Enables\u0020the\u0020\u0027registeration\u0020required\u0027\u0020\u0028guest\u0020checkout\u0029\u0020setting\u0020when\u0020purchasing\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_require_registration_during_checkout"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aforce_registration_during_checkout\u0028\u0029",
+        name: "force_registration_during_checkout",
+        summary: "During\u0020the\u0020checkout\u0020process,\u0020force\u0020registration\u0020when\u0020the\u0020cart\u0020contains\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_force_registration_during_checkout"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aget_registration_error_message\u0028\u0029",
+        name: "get_registration_error_message",
+        summary: "Generates\u0020a\u0020registration\u0020failed\u0020error\u0020message\u0020depending\u0020on\u0020the\u0020store\u0027s\u0020registration\u0020settings.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_get_registration_error_message"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Amaybe_enable_registration\u0028\u0029",
+        name: "maybe_enable_registration",
+        summary: "Enables\u0020registration\u0020for\u0020carts\u0020containing\u0020subscriptions\u0020if\u0020admin\u0020allow\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_maybe_enable_registration"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Afilter_woocommerce_create_order\u0028\u0029",
+        name: "filter_woocommerce_create_order",
+        summary: "When\u0020creating\u0020an\u0020order\u0020at\u0020checkout,\u0020if\u0020the\u0020checkout\u0020is\u0020to\u0020renew\u0020a\u0020subscription\u0020from\u0020a\u0020failed\npayment,\u0020hijack\u0020the\u0020order\u0020creation\u0020to\u0020make\u0020a\u0020renewal\u0020order\u0020\u002D\u0020not\u0020a\u0020plain\u0020WooCommerce\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_filter_woocommerce_create_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Afilter_woocommerce_my_account_my_orders_actions\u0028\u0029",
+        name: "filter_woocommerce_my_account_my_orders_actions",
+        summary: "Customise\u0020which\u0020actions\u0020are\u0020shown\u0020against\u0020a\u0020subscriptions\u0020order\u0020on\u0020the\u0020My\u0020Account\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_filter_woocommerce_my_account_my_orders_actions"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Amake_checkout_registration_possible\u0028\u0029",
+        name: "make_checkout_registration_possible",
+        summary: "If\u0020shopping\u0020cart\u0020contains\u0020subscriptions,\u0020make\u0020sure\u0020a\u0020user\u0020can\u0020register\u0020on\u0020the\u0020checkout\u0020page",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_make_checkout_registration_possible"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Amake_checkout_account_fields_required\u0028\u0029",
+        name: "make_checkout_account_fields_required",
+        summary: "Make\u0020sure\u0020account\u0020fields\u0020display\u0020the\u0020required\u0020\u0022\u002A\u0022\u0020when\u0020they\u0020are\u0020required.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_make_checkout_account_fields_required"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Arestore_checkout_registration_settings\u0028\u0029",
+        name: "restore_checkout_registration_settings",
+        summary: "After\u0020displaying\u0020the\u0020checkout\u0020form,\u0020restore\u0020the\u0020store\u0027s\u0020original\u0020registration\u0020settings.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_restore_checkout_registration_settings"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003Aorder_button_text\u0028\u0029",
+        name: "order_button_text",
+        summary: "Overrides\u0020the\u0020\u0022Place\u0020order\u0022\u0020button\u0020text\u0020with\u0020\u0022Sign\u0020up\u0020now\u0022\u0020when\u0020the\u0020cart\u0020contains\u0020initial\u0020subscription\u0020purchases.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#method_order_button_text"
+    },{
+        fqsen: "\\WC_Subscriptions_Checkout\u003A\u003A\u0024guest_checkout_option_changed",
+        name: "guest_checkout_option_changed",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Checkout.html#property_guest_checkout_option_changed"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin",
+        name: "WC_Subscriptions_Core_Plugin",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Initialise\u0020class\u0020and\u0020attach\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method___construct"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003A\u0024instance",
+        name: "instance",
+        summary: "The\u0020subscriptions\u0020instance.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#property_instance"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Adefine_constants\u0028\u0029",
+        name: "define_constants",
+        summary: "Defines\u0020WC\u0020Subscriptions\u0020contants.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_define_constants"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aincludes\u0028\u0029",
+        name: "includes",
+        summary: "Includes\u0020required\u0020files.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_includes"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialise\u0020the\u0020plugin.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Ainit_version_dependant_classes\u0028\u0029",
+        name: "init_version_dependant_classes",
+        summary: "Initialises\u0020classes\u0020which\u0020need\u0020to\u0020be\u0020loaded\u0020after\u0020other\u0020plugins\u0020have\u0020loaded.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_init_version_dependant_classes"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Ainit_hooks\u0028\u0029",
+        name: "init_hooks",
+        summary: "Attaches\u0020the\u0020hooks\u0020to\u0020init\/setup\u0020the\u0020plugin.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_init_hooks"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aget_subscriptions_core_directory\u0028\u0029",
+        name: "get_subscriptions_core_directory",
+        summary: "Gets\u0020the\u0020subscriptions\u0020core\u0020directory.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_get_subscriptions_core_directory"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aget_subscriptions_core_directory_url\u0028\u0029",
+        name: "get_subscriptions_core_directory_url",
+        summary: "Gets\u0020the\u0020subscriptions\u0020core\u0020directory\u0020url.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_get_subscriptions_core_directory_url"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aget_plugin_version\u0028\u0029",
+        name: "get_plugin_version",
+        summary: "Gets\u0020the\u0020plugin\u0027s\u0020version",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_get_plugin_version"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aget_plugin_file\u0028\u0029",
+        name: "get_plugin_file",
+        summary: "Gets\u0020the\u0020plugin\u0020file\u0020name",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_get_plugin_file"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aget_autoloader\u0028\u0029",
+        name: "get_autoloader",
+        summary: "Gets\u0020the\u0020autoloader\u0020instance.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_get_autoloader"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aget_product_type_name\u0028\u0029",
+        name: "get_product_type_name",
+        summary: "Gets\u0020the\u0020product\u0020type\u0020name.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_get_product_type_name"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aget_activation_transient\u0028\u0029",
+        name: "get_activation_transient",
+        summary: "Gets\u0020the\u0020activation\u0020transient\u0020name.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_get_activation_transient"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aget_gateways_handler_class\u0028\u0029",
+        name: "get_gateways_handler_class",
+        summary: "Gets\u0020the\u0020core\u0020Payment\u0020Gateways\u0020handler\u0020class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_get_gateways_handler_class"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aregister_order_types\u0028\u0029",
+        name: "register_order_types",
+        summary: "Registers\u0020Subscriptions\u0020order\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_register_order_types"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aadd_data_stores\u0028\u0029",
+        name: "add_data_stores",
+        summary: "Registers\u0020data\u0020stores.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_add_data_stores"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aregister_post_statuses\u0028\u0029",
+        name: "register_post_statuses",
+        summary: "Registers\u0020our\u0020custom\u0020post\u0020statuses,\u0020used\u0020for\u0020subscription\u0020statuses.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_register_post_statuses"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Adeactivate_plugin\u0028\u0029",
+        name: "deactivate_plugin",
+        summary: "Runs\u0020the\u0020required\u0020processes\u0020when\u0020the\u0020plugin\u0020is\u0020deactivated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_deactivate_plugin"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aactivate_plugin\u0028\u0029",
+        name: "activate_plugin",
+        summary: "Runs\u0020the\u0020required\u0020process\u0020on\u0020plugin\u0020activation.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_activate_plugin"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aload_plugin_textdomain\u0028\u0029",
+        name: "load_plugin_textdomain",
+        summary: "Registers\u0020plugin\u0020translation\u0020files.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_load_plugin_textdomain"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aadd_plugin_action_links\u0028\u0029",
+        name: "add_plugin_action_links",
+        summary: "Adds\u0020the\u0020settings,\u0020docs\u0020and\u0020support\u0020links\u0020to\u0020the\u0020plugin\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_add_plugin_action_links"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Aupdate_notice\u0028\u0029",
+        name: "update_notice",
+        summary: "Displays\u0020an\u0020upgrade\u0020notice\u0020for\u0020stores\u0020upgrading\u0020to\u00202.0.0.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_update_notice"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Asetup_blocks_integration\u0028\u0029",
+        name: "setup_blocks_integration",
+        summary: "Sets\u0020up\u0020the\u0020Blocks\u0020integration\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_setup_blocks_integration"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003Areduce_multisite_action_scheduler_batch_size\u0028\u0029",
+        name: "reduce_multisite_action_scheduler_batch_size",
+        summary: "Reduces\u0020the\u0020default\u0020Action\u0020Scheduler\u0020batch\u0020size\u0020on\u0020multi\u002Dsites.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#method_reduce_multisite_action_scheduler_batch_size"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003A\u0024plugin_version",
+        name: "plugin_version",
+        summary: "The\u0020plugin\u0020version\u0020core\u0020is\u0020based\u0020off.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#property_plugin_version"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003A\u0024scheduler",
+        name: "scheduler",
+        summary: "The\u0020subscription\u0020scheduler\u0020instance.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#property_scheduler"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003A\u0024autoloader",
+        name: "autoloader",
+        summary: "The\u0020plugin\u0027s\u0020autoloader\u0020instance.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#property_autoloader"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Plugin\u003A\u003A\u0024cache",
+        name: "cache",
+        summary: "The\u0020plugin\u0027s\u0020cache\u0020manager\u0020instance.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Plugin.html#property_cache"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon",
+        name: "WC_Subscriptions_Coupon",
+        summary: "Subscriptions\u0020Coupon\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Set\u0020up\u0020the\u0020class,\u0020including\u0020it\u0027s\u0020hooks\u0020\u0026\u0020filters,\u0020when\u0020the\u0020file\u0020is\u0020loaded.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Amark_recurring_coupon_in_initial_cart_for_hiding\u0028\u0029",
+        name: "mark_recurring_coupon_in_initial_cart_for_hiding",
+        summary: "When\u0020all\u0020items\u0020in\u0020the\u0020cart\u0020have\u0020free\u0020trial,\u0020a\u0020recurring\u0020coupon\u0020should\u0020not\u0020be\u0020applied\u0020to\u0020the\u0020main\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_mark_recurring_coupon_in_initial_cart_for_hiding"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aadd_discount_types\u0028\u0029",
+        name: "add_discount_types",
+        summary: "Add\u0020discount\u0020types",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_add_discount_types"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aget_discount_amount\u0028\u0029",
+        name: "get_discount_amount",
+        summary: "Get\u0020the\u0020discount\u0020amount\u0020for\u0020Subscriptions\u0020coupon\u0020types",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_get_discount_amount"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aget_discount_amount_for_cart_item\u0028\u0029",
+        name: "get_discount_amount_for_cart_item",
+        summary: "Get\u0020the\u0020discount\u0020amount\u0020which\u0020applies\u0020for\u0020a\u0020cart\u0020item\u0020for\u0020subscription\u0020coupon\u0020types",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_get_discount_amount_for_cart_item"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aget_discount_amount_for_line_item\u0028\u0029",
+        name: "get_discount_amount_for_line_item",
+        summary: "Get\u0020the\u0020discount\u0020amount\u0020which\u0020applies\u0020for\u0020a\u0020line\u0020item\u0020for\u0020subscription\u0020coupon\u0020types",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_get_discount_amount_for_line_item"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Acart_contains_discount\u0028\u0029",
+        name: "cart_contains_discount",
+        summary: "Determine\u0020if\u0020the\u0020cart\u0020contains\u0020a\u0020discount\u0020code\u0020of\u0020a\u0020given\u0020coupon\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_cart_contains_discount"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Avalidate_subscription_coupon\u0028\u0029",
+        name: "validate_subscription_coupon",
+        summary: "Check\u0020if\u0020a\u0020subscription\u0020coupon\u0020is\u0020valid\u0020before\u0020applying",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_validate_subscription_coupon"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Avalidate_subscription_coupon_for_cart\u0028\u0029",
+        name: "validate_subscription_coupon_for_cart",
+        summary: "Check\u0020if\u0020a\u0020subscription\u0020coupon\u0020is\u0020valid\u0020for\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_validate_subscription_coupon_for_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Avalidate_subscription_coupon_for_order\u0028\u0029",
+        name: "validate_subscription_coupon_for_order",
+        summary: "Check\u0020if\u0020a\u0020subscription\u0020coupon\u0020is\u0020valid\u0020for\u0020an\u0020order\/subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_validate_subscription_coupon_for_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aadd_coupon_error\u0028\u0029",
+        name: "add_coupon_error",
+        summary: "Returns\u0020a\u0020subscription\u0020coupon\u002Dspecific\u0020error\u0020if\u0020validation\u0020failed",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_add_coupon_error"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aremove_coupons\u0028\u0029",
+        name: "remove_coupons",
+        summary: "Sets\u0020which\u0020coupons\u0020should\u0020be\u0020applied\u0020for\u0020this\u0020calculation.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_remove_coupons"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Afilter_product_coupon_types\u0028\u0029",
+        name: "filter_product_coupon_types",
+        summary: "Add\u0020our\u0020recurring\u0020product\u0020coupon\u0020types\u0020to\u0020the\u0020list\u0020of\u0020coupon\u0020types\u0020that\u0020apply\u0020to\u0020individual\u0020products.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_filter_product_coupon_types"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aget_renewal_subtotal\u0028\u0029",
+        name: "get_renewal_subtotal",
+        summary: "Get\u0020subtotals\u0020for\u0020a\u0020renewal\u0020subscription\u0020so\u0020that\u0020our\u0020pseudo\u0020renewal_cart\u0020discounts\u0020can\u0020be\u0020applied\u0020correctly\u0020even\u0020if\u0020other\u0020items\u0020have\u0020been\u0020added\u0020to\u0020the\u0020cart",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_get_renewal_subtotal"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Ais_subscription_renewal_line_item\u0028\u0029",
+        name: "is_subscription_renewal_line_item",
+        summary: "Check\u0020if\u0020a\u0020product\u0020is\u0020a\u0020renewal\u0020order\u0020line\u0020item\u0020\u0028rather\u0020than\u0020a\u0020\u0022subscription\u0022\u0029\u0020\u002D\u0020to\u0020pick\u0020up\u0020non\u002Dsubscription\u0020products\u0020added\u0020to\u0020a\u0020subscription\u0020manually",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_is_subscription_renewal_line_item"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aadd_pseudo_coupon_types\u0028\u0029",
+        name: "add_pseudo_coupon_types",
+        summary: "Add\u0020our\u0020pseudo\u0020renewal\u0020coupon\u0020types\u0020to\u0020the\u0020list\u0020of\u0020supported\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_add_pseudo_coupon_types"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aget_pseudo_coupon_label\u0028\u0029",
+        name: "get_pseudo_coupon_label",
+        summary: "Filter\u0020the\u0020default\u0020coupon\u0020cart\u0020label\u0020for\u0020renewal\u0020pseudo\u0020coupons",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_get_pseudo_coupon_label"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Amap_virtual_coupon\u0028\u0029",
+        name: "map_virtual_coupon",
+        summary: "Get\u0020a\u0020normal\u0020coupon\u0020from\u0020one\u0020of\u0020our\u0020virtual\u0020coupons.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_map_virtual_coupon"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Ais_renewal_cart_coupon\u0028\u0029",
+        name: "is_renewal_cart_coupon",
+        summary: "Checks\u0020if\u0020a\u0020coupon\u0020is\u0020one\u0020of\u0020our\u0020virtual\u0020coupons\u0020applied\u0020to\u0020renewal\u0020carts.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_is_renewal_cart_coupon"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Ais_recurring_coupon\u0028\u0029",
+        name: "is_recurring_coupon",
+        summary: "Checks\u0020if\u0020a\u0020coupon\u0020is\u0020one\u0020of\u0020our\u0020recurring\u0020coupons.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_is_recurring_coupon"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aapply_subscription_discount\u0028\u0029",
+        name: "apply_subscription_discount",
+        summary: "Apply\u0020sign\u0020up\u0020fee\u0020or\u0020recurring\u0020fee\u0020discount",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_apply_subscription_discount"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Avalidate_subscription_coupon_for_product\u0028\u0029",
+        name: "validate_subscription_coupon_for_product",
+        summary: "Validates\u0020a\u0020subscription\u0020coupon\u0027s\u0020use\u0020for\u0020a\u0020given\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_validate_subscription_coupon_for_product"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aincrease_coupon_discount_amount\u0028\u0029",
+        name: "increase_coupon_discount_amount",
+        summary: "Store\u0020how\u0020much\u0020discount\u0020each\u0020coupon\u0020grants.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_increase_coupon_discount_amount"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Arestore_coupons\u0028\u0029",
+        name: "restore_coupons",
+        summary: "Restores\u0020discount\u0020coupons\u0020which\u0020had\u0020been\u0020removed\u0020for\u0020special\u0020subscription\u0020calculations.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_restore_coupons"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aoverride_applied_quantity_for_recurring_carts\u0028\u0029",
+        name: "override_applied_quantity_for_recurring_carts",
+        summary: "Override\u0020the\u0020quantity\u0020to\u0020apply\u0020limited\u0020coupons\u0020to\u0020recurring\u0020cart\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_override_applied_quantity_for_recurring_carts"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aapply_subscription_discount_before_tax\u0028\u0029",
+        name: "apply_subscription_discount_before_tax",
+        summary: "Apply\u0020sign\u0020up\u0020fee\u0020or\u0020recurring\u0020fee\u0020discount\u0020before\u0020tax\u0020is\u0020calculated",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_apply_subscription_discount_before_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aapply_subscription_discount_after_tax\u0028\u0029",
+        name: "apply_subscription_discount_after_tax",
+        summary: "Apply\u0020sign\u0020up\u0020fee\u0020or\u0020recurring\u0020fee\u0020discount\u0020after\u0020tax\u0020is\u0020calculated",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_apply_subscription_discount_after_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Amaybe_add_recurring_coupon_hooks\u0028\u0029",
+        name: "maybe_add_recurring_coupon_hooks",
+        summary: "Maybe\u0020add\u0020Recurring\u0020Coupon\u0020functionality.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_maybe_add_recurring_coupon_hooks"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aadd_coupon_fields\u0028\u0029",
+        name: "add_coupon_fields",
+        summary: "Add\u0020custom\u0020fields\u0020to\u0020the\u0020coupon\u0020data\u0020form.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_add_coupon_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Asave_coupon_fields\u0028\u0029",
+        name: "save_coupon_fields",
+        summary: "Save\u0020our\u0020custom\u0020coupon\u0020fields.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_save_coupon_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Acheck_coupon_usages\u0028\u0029",
+        name: "check_coupon_usages",
+        summary: "Determine\u0020how\u0020many\u0020subscriptions\u0020the\u0020coupon\u0020has\u0020been\u0020applied\u0020to.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_check_coupon_usages"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aadd_limit_to_list_table\u0028\u0029",
+        name: "add_limit_to_list_table",
+        summary: "Add\u0020our\u0020limited\u0020coupon\u0020data\u0020to\u0020the\u0020Coupon\u0020list\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_add_limit_to_list_table"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Agateways_subscription_amount_changes\u0028\u0029",
+        name: "gateways_subscription_amount_changes",
+        summary: "Filter\u0020the\u0020available\u0020gateways\u0020when\u0020there\u0020is\u0020a\u0020recurring\u0020coupon.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_gateways_subscription_amount_changes"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Ano_available_payment_methods_message\u0028\u0029",
+        name: "no_available_payment_methods_message",
+        summary: "Filter\u0020the\u0020message\u0020for\u0020when\u0020no\u0020payment\u0020gateways\u0020are\u0020available.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_no_available_payment_methods_message"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Acoupon_is_limited\u0028\u0029",
+        name: "coupon_is_limited",
+        summary: "Determine\u0020if\u0020a\u0020given\u0020coupon\u0020is\u0020limited\u0020to\u0020a\u0020certain\u0020number\u0020of\u0020renewals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_coupon_is_limited"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Acart_contains_limited_recurring_coupon\u0028\u0029",
+        name: "cart_contains_limited_recurring_coupon",
+        summary: "Determine\u0020whether\u0020the\u0020cart\u0020contains\u0020a\u0020recurring\u0020coupon\u0020with\u0020set\u0020number\u0020of\u0020renewals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_cart_contains_limited_recurring_coupon"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aorder_has_limited_recurring_coupon\u0028\u0029",
+        name: "order_has_limited_recurring_coupon",
+        summary: "Determine\u0020if\u0020a\u0020given\u0020order\u0020has\u0020a\u0020limited\u0020use\u0020coupon.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_order_has_limited_recurring_coupon"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Aget_coupon_limit\u0028\u0029",
+        name: "get_coupon_limit",
+        summary: "Get\u0020the\u0020number\u0020of\u0020renewals\u0020for\u0020a\u0020limited\u0020coupon.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_get_coupon_limit"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003Arecurring_cart_contains_expiring_coupon\u0028\u0029",
+        name: "recurring_cart_contains_expiring_coupon",
+        summary: "Determine\u0020if\u0020a\u0020given\u0020recurring\u0020cart\u0020contains\u0020a\u0020limited\u0020use\u0020coupon\u0020which\u0020when\u0020applied\u0020to\u0020a\u0020subscription\u0020will\u0020reach\u0020its\u0020usage\u0020limit\u0020within\u0020the\u0020subscription\u0027s\u0020length.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#method_recurring_cart_contains_expiring_coupon"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003A\u0024coupons_renewals",
+        name: "coupons_renewals",
+        summary: "The\u0020meta\u0020key\u0020used\u0020for\u0020the\u0020number\u0020of\u0020renewals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#property_coupons_renewals"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003A\u0024coupon_error",
+        name: "coupon_error",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#property_coupon_error"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003A\u0024removed_coupons",
+        name: "removed_coupons",
+        summary: "Stores\u0020the\u0020coupons\u0020not\u0020applied\u0020to\u0020a\u0020given\u0020calculation\u0020\u0028so\u0020they\u0020can\u0020be\u0020applied\u0020later\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#property_removed_coupons"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003A\u0024recurring_coupons",
+        name: "recurring_coupons",
+        summary: "Subscription\u0020coupon\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#property_recurring_coupons"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003A\u0024sign_up_fee_coupons",
+        name: "sign_up_fee_coupons",
+        summary: "Subscription\u0020sign\u0020up\u0020fee\u0020coupon\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#property_sign_up_fee_coupons"
+    },{
+        fqsen: "\\WC_Subscriptions_Coupon\u003A\u003A\u0024renewal_coupons",
+        name: "renewal_coupons",
+        summary: "Virtual\u0020renewal\u0020coupon\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Coupon.html#property_renewal_coupons"
+    },{
+        fqsen: "\\WC_Subscriptions_Email",
+        name: "WC_Subscriptions_Email",
+        summary: "Subscriptions\u0020Email\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Aadd_emails\u0028\u0029",
+        name: "add_emails",
+        summary: "Add\u0020Subscriptions\u0027\u0020email\u0020classes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_add_emails"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Ahook_transactional_emails\u0028\u0029",
+        name: "hook_transactional_emails",
+        summary: "Hooks\u0020up\u0020all\u0020of\u0020Subscription\u0027s\u0020transaction\u0020emails\u0020after\u0020the\u0020WooCommerce\u0020object\u0020is\u0020constructed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_hook_transactional_emails"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Asend_cancelled_email\u0028\u0029",
+        name: "send_cancelled_email",
+        summary: "Init\u0020the\u0020mailer\u0020and\u0020call\u0020for\u0020the\u0020cancelled\u0020email\u0020notification\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_send_cancelled_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Asend_expired_email\u0028\u0029",
+        name: "send_expired_email",
+        summary: "Init\u0020the\u0020mailer\u0020and\u0020call\u0020for\u0020the\u0020expired\u0020email\u0020notification\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_send_expired_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Asend_on_hold_email\u0028\u0029",
+        name: "send_on_hold_email",
+        summary: "Init\u0020the\u0020mailer\u0020and\u0020call\u0020for\u0020the\u0020suspended\u0020email\u0020notification\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_send_on_hold_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Asend_renewal_order_email\u0028\u0029",
+        name: "send_renewal_order_email",
+        summary: "Init\u0020the\u0020mailer\u0020and\u0020call\u0020the\u0020notifications\u0020for\u0020the\u0020renewal\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_send_renewal_order_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Amaybe_remove_woocommerce_email\u0028\u0029",
+        name: "maybe_remove_woocommerce_email",
+        summary: "If\u0020the\u0020order\u0020is\u0020a\u0020renewal\u0020order\u0020or\u0020a\u0020switch\u0020order,\u0020don\u0027t\u0020send\u0020core\u0020emails.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_maybe_remove_woocommerce_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Amaybe_reattach_woocommerce_email\u0028\u0029",
+        name: "maybe_reattach_woocommerce_email",
+        summary: "If\u0020the\u0020order\u0020is\u0020a\u0020renewal\u0020order\u0020or\u0020a\u0020switch\u0020order,\u0020send\u0020core\u0020emails",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_maybe_reattach_woocommerce_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Arenewal_order_emails_available\u0028\u0029",
+        name: "renewal_order_emails_available",
+        summary: "If\u0020viewing\u0020a\u0020renewal\u0020order\u0020on\u0020the\u0020the\u0020Edit\u0020Order\u0020screen,\u0020set\u0020the\u0020available\u0020email\u0020actions\u0020for\u0020the\u0020order\u0020to\u0020use\nrenewal\u0020order\u0020emails,\u0020not\u0020core\u0020WooCommerce\u0020order\u0020emails.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_renewal_order_emails_available"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Asend_switch_order_email\u0028\u0029",
+        name: "send_switch_order_email",
+        summary: "Init\u0020the\u0020mailer\u0020and\u0020call\u0020the\u0020notifications\u0020for\u0020subscription\u0020switch\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_send_switch_order_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Aemail_order_items_table\u0028\u0029",
+        name: "email_order_items_table",
+        summary: "Generate\u0020an\u0020order\u0020items\u0020table\u0020using\u0020a\u0020WC\u0020compatible\u0020version\u0020of\u0020the\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_email_order_items_table"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Aorder_details\u0028\u0029",
+        name: "order_details",
+        summary: "Show\u0020the\u0020order\u0020details\u0020table",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_order_details"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Adetach_woocommerce_transactional_email\u0028\u0029",
+        name: "detach_woocommerce_transactional_email",
+        summary: "Detach\u0020WC\u0020transactional\u0020emails\u0020from\u0020a\u0020specific\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_detach_woocommerce_transactional_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Aattach_woocommerce_transactional_email\u0028\u0029",
+        name: "attach_woocommerce_transactional_email",
+        summary: "Attach\u0020WC\u0020transactional\u0020emails\u0020to\u0020a\u0020specific\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_attach_woocommerce_transactional_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Aorder_download_details\u0028\u0029",
+        name: "order_download_details",
+        summary: "With\u0020WooCommerce\u00203.2\u002B\u0020active\u0020display\u0020the\u0020downloads\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_order_download_details"
+    },{
+        fqsen: "\\WC_Subscriptions_Email\u003A\u003Asend_subscription_email\u0028\u0029",
+        name: "send_subscription_email",
+        summary: "Init\u0020the\u0020mailer\u0020and\u0020call\u0020the\u0020notifications\u0020for\u0020the\u0020current\u0020filter.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Email.html#method_send_subscription_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint",
+        name: "WC_Subscriptions_Extend_Store_Endpoint",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aregister_endpoint_data\u0028\u0029",
+        name: "register_endpoint_data",
+        summary: "Register\u0020endpoint\u0020data\u0020with\u0020the\u0020API.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_register_endpoint_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aregister_payment_requirements\u0028\u0029",
+        name: "register_payment_requirements",
+        summary: "Register\u0020payment\u0020requirements\u0020with\u0020the\u0020API.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_register_payment_requirements"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aextend_store\u0028\u0029",
+        name: "extend_store",
+        summary: "Registers\u0020the\u0020actual\u0020data\u0020into\u0020each\u0020endpoint.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_extend_store"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aextend_cart_item_data\u0028\u0029",
+        name: "extend_cart_item_data",
+        summary: "Register\u0020subscription\u0020product\u0020data\u0020into\u0020cart\/items\u0020endpoint.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_extend_cart_item_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aextend_cart_item_schema\u0028\u0029",
+        name: "extend_cart_item_schema",
+        summary: "Register\u0020subscription\u0020product\u0020schema\u0020into\u0020cart\/items\u0020endpoint.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_extend_cart_item_schema"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aget_packages_for_recurring_cart\u0028\u0029",
+        name: "get_packages_for_recurring_cart",
+        summary: "Get\u0020packages\u0020from\u0020the\u0020recurring\u0020carts.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_get_packages_for_recurring_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aget_shipping_package_name\u0028\u0029",
+        name: "get_shipping_package_name",
+        summary: "Changes\u0020the\u0020shipping\u0020package\u0020name\u0020to\u0020add\u0020more\u0020meaningful\u0020information\u0020about\u0020it\u0027s\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_get_shipping_package_name"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aextend_cart_data\u0028\u0029",
+        name: "extend_cart_data",
+        summary: "Register\u0020future\u0020subscriptions\u0020into\u0020cart\u0020endpoint.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_extend_cart_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aformat_sign_up_fees\u0028\u0029",
+        name: "format_sign_up_fees",
+        summary: "Format\u0020sign\u002Dup\u0020fees.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_format_sign_up_fees"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aformat_sync_data\u0028\u0029",
+        name: "format_sync_data",
+        summary: "Format\u0020sync\u0020data\u0020to\u0020the\u0020correct\u0020so\u0020it\u0020either\u0020returns\u0020a\u0020day\u0020integer\u0020or\u0020an\u0020object\u0020of\u0020day\u0020and\u0020month.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_format_sync_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aextend_cart_schema\u0028\u0029",
+        name: "extend_cart_schema",
+        summary: "Register\u0020future\u0020subscriptions\u0020schema\u0020into\u0020cart\u0020endpoint.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_extend_cart_schema"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003Aget_tax_lines\u0028\u0029",
+        name: "get_tax_lines",
+        summary: "Get\u0020tax\u0020lines\u0020from\u0020the\u0020cart\u0020and\u0020format\u0020to\u0020match\u0020schema.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#method_get_tax_lines"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003AIDENTIFIER",
+        name: "IDENTIFIER",
+        summary: "Plugin\u0020Identifier,\u0020unique\u0020to\u0020each\u0020plugin.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#constant_IDENTIFIER"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003A\u0024schema",
+        name: "schema",
+        summary: "Stores\u0020Rest\u0020Schema\u0020Controller.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#property_schema"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003A\u0024money_formatter",
+        name: "money_formatter",
+        summary: "Stores\u0020Money\u0020formatter\u0020instance.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#property_money_formatter"
+    },{
+        fqsen: "\\WC_Subscriptions_Extend_Store_Endpoint\u003A\u003A\u0024currency_formatter",
+        name: "currency_formatter",
+        summary: "Stores\u0020Currency\u0020formatter\u0020instance.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Extend-Store-Endpoint.html#property_currency_formatter"
+    },{
+        fqsen: "\\WC_Subscriptions_Frontend_Scripts",
+        name: "WC_Subscriptions_Frontend_Scripts",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Frontend-Scripts.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Frontend_Scripts\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020hooks\u0020and\u0020callbacks\u0020to\u0020enqueue\u0020frontend\u0020scripts\u0020and\u0020styles.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Frontend-Scripts.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Frontend_Scripts\u003A\u003Aget_file_url\u0028\u0029",
+        name: "get_file_url",
+        summary: "Gets\u0020the\u0020plugin\u0020URL\u0020for\u0020an\u0020assets\u0020file.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Frontend-Scripts.html#method_get_file_url"
+    },{
+        fqsen: "\\WC_Subscriptions_Frontend_Scripts\u003A\u003Aenqueue_scripts\u0028\u0029",
+        name: "enqueue_scripts",
+        summary: "Enqueues\u0020scripts\u0020for\u0020frontend.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Frontend-Scripts.html#method_enqueue_scripts"
+    },{
+        fqsen: "\\WC_Subscriptions_Frontend_Scripts\u003A\u003Aenqueue_styles\u0028\u0029",
+        name: "enqueue_styles",
+        summary: "Enqueues\u0020stylesheets.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Frontend-Scripts.html#method_enqueue_styles"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager",
+        name: "WC_Subscriptions_Manager",
+        summary: "Subscriptions\u0020Management\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Set\u0020up\u0020the\u0020class,\u0020including\u0020it\u0027s\u0020hooks\u0020\u0026\u0020filters,\u0020when\u0020the\u0020file\u0020is\u0020loaded.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aprepare_renewal\u0028\u0029",
+        name: "prepare_renewal",
+        summary: "Sets\u0020up\u0020renewal\u0020for\u0020subscriptions\u0020managed\u0020by\u0020Subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_prepare_renewal"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aprocess_renewal\u0028\u0029",
+        name: "process_renewal",
+        summary: "Process\u0020renewal\u0020for\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_process_renewal"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aexpire_subscription\u0028\u0029",
+        name: "expire_subscription",
+        summary: "Expires\u0020a\u0020single\u0020subscription\u0020on\u0020a\u0020users\u0020account.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_expire_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Asubscription_end_of_prepaid_term\u0028\u0029",
+        name: "subscription_end_of_prepaid_term",
+        summary: "Fires\u0020when\u0020a\u0020cancelled\u0020subscription\u0020reaches\u0020the\u0020end\u0020of\u0020its\u0020prepaid\u0020term.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_subscription_end_of_prepaid_term"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aprocess_subscription_payment\u0028\u0029",
+        name: "process_subscription_payment",
+        summary: "Records\u0020a\u0020payment\u0020on\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_process_subscription_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aprocess_subscription_payment_failure\u0028\u0029",
+        name: "process_subscription_payment_failure",
+        summary: "Processes\u0020a\u0020failed\u0020payment\u0020on\u0020a\u0020subscription\u0020by\u0020recording\u0020the\u0020failed\u0020payment\u0020and\u0020cancelling\u0020the\u0020subscription\u0020if\u0020it\u0020exceeds\u0020the\nmaximum\u0020number\u0020of\u0020failed\u0020payments\u0020allowed\u0020on\u0020the\u0020site.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_process_subscription_payment_failure"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aprocess_subscription_payments_on_order\u0028\u0029",
+        name: "process_subscription_payments_on_order",
+        summary: "This\u0020function\u0020should\u0020be\u0020called\u0020whenever\u0020a\u0020subscription\u0020payment\u0020is\u0020made\u0020on\u0020an\u0020order.\u0020This\u0020includes\nwhen\u0020the\u0020subscriber\u0020signs\u0020up\u0020and\u0020for\u0020a\u0020recurring\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_process_subscription_payments_on_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aprocess_subscription_payment_failure_on_order\u0028\u0029",
+        name: "process_subscription_payment_failure_on_order",
+        summary: "This\u0020function\u0020should\u0020be\u0020called\u0020whenever\u0020a\u0020subscription\u0020payment\u0020has\u0020failed\u0020on\u0020a\u0020parent\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_process_subscription_payment_failure_on_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aactivate_subscriptions_for_order\u0028\u0029",
+        name: "activate_subscriptions_for_order",
+        summary: "Activates\u0020all\u0020the\u0020subscriptions\u0020created\u0020by\u0020a\u0020given\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_activate_subscriptions_for_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aput_subscription_on_hold_for_order\u0028\u0029",
+        name: "put_subscription_on_hold_for_order",
+        summary: "Suspends\u0020all\u0020the\u0020subscriptions\u0020on\u0020an\u0020order\u0020by\u0020changing\u0020their\u0020status\u0020to\u0020\u0022on\u002Dhold\u0022.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_put_subscription_on_hold_for_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acancel_subscriptions_for_order\u0028\u0029",
+        name: "cancel_subscriptions_for_order",
+        summary: "Mark\u0020all\u0020subscriptions\u0020in\u0020an\u0020order\u0020as\u0020cancelled\u0020on\u0020the\u0020user\u0027s\u0020account.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_cancel_subscriptions_for_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aexpire_subscriptions_for_order\u0028\u0029",
+        name: "expire_subscriptions_for_order",
+        summary: "Marks\u0020all\u0020the\u0020subscriptions\u0020in\u0020an\u0020order\u0020as\u0020expired",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_expire_subscriptions_for_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Afailed_subscription_sign_ups_for_order\u0028\u0029",
+        name: "failed_subscription_sign_ups_for_order",
+        summary: "Called\u0020when\u0020a\u0020sign\u0020up\u0020fails\u0020during\u0020the\u0020payment\u0020processing\u0020step.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_failed_subscription_sign_ups_for_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acreate_pending_subscription_for_order\u0028\u0029",
+        name: "create_pending_subscription_for_order",
+        summary: "Uses\u0020the\u0020details\u0020of\u0020an\u0020order\u0020to\u0020create\u0020a\u0020pending\u0020subscription\u0020on\u0020the\u0020customers\u0020account\nfor\u0020a\u0020subscription\u0020product,\u0020as\u0020specified\u0020with\u0020\u0024product_id.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_create_pending_subscription_for_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aprocess_subscriptions_on_checkout\u0028\u0029",
+        name: "process_subscriptions_on_checkout",
+        summary: "Creates\u0020subscriptions\u0020against\u0020a\u0020users\u0020account\u0020with\u0020a\u0020status\u0020of\u0020pending\u0020when\u0020a\u0020user\u0020creates\nan\u0020order\u0020containing\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_process_subscriptions_on_checkout"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aupdate_users_subscriptions_for_order\u0028\u0029",
+        name: "update_users_subscriptions_for_order",
+        summary: "Updates\u0020a\u0020user\u0027s\u0020subscriptions\u0020for\u0020each\u0020subscription\u0020product\u0020in\u0020the\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_update_users_subscriptions_for_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aupdate_users_subscriptions\u0028\u0029",
+        name: "update_users_subscriptions",
+        summary: "Takes\u0020a\u0020user\u0020ID\u0020and\u0020array\u0020of\u0020subscription\u0020details\u0020and\u0020updates\u0020the\u0020users\u0020subscription\u0020details\u0020accordingly.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_update_users_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aupdate_subscription\u0028\u0029",
+        name: "update_subscription",
+        summary: "Takes\u0020a\u0020subscription\u0020key\u0020and\u0020array\u0020of\u0020subscription\u0020details\u0020and\u0020updates\u0020the\u0020users\u0020subscription\u0020details\u0020accordingly.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_update_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acancel_users_subscriptions\u0028\u0029",
+        name: "cancel_users_subscriptions",
+        summary: "Takes\u0020a\u0020user\u0020ID\u0020and\u0020cancels\u0020any\u0020subscriptions\u0020that\u0020user\u0020has.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_cancel_users_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acancel_users_subscriptions_for_network\u0028\u0029",
+        name: "cancel_users_subscriptions_for_network",
+        summary: "Takes\u0020a\u0020user\u0020ID\u0020and\u0020cancels\u0020any\u0020subscriptions\u0020that\u0020user\u0020has\u0020on\u0020any\u0020site\u0020in\u0020a\u0020WordPress\u0020network",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_cancel_users_subscriptions_for_network"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aclear_users_subscriptions_from_order\u0028\u0029",
+        name: "clear_users_subscriptions_from_order",
+        summary: "Clear\u0020all\u0020subscriptions\u0020for\u0020a\u0020given\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_clear_users_subscriptions_from_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_trash_subscription\u0028\u0029",
+        name: "maybe_trash_subscription",
+        summary: "Trash\u0020all\u0020subscriptions\u0020attached\u0020to\u0020an\u0020order\u0020when\u0020it\u0027s\u0020trashed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_trash_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_untrash_subscription\u0028\u0029",
+        name: "maybe_untrash_subscription",
+        summary: "Untrash\u0020all\u0020subscriptions\u0020attached\u0020to\u0020an\u0020order\u0020when\u0020it\u0027s\u0020restored.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_untrash_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_delete_subscription\u0028\u0029",
+        name: "maybe_delete_subscription",
+        summary: "Delete\u0020related\u0020subscriptions\u0020when\u0020an\u0020order\u0020is\u0020deleted.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_delete_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_cancel_subscription\u0028\u0029",
+        name: "maybe_cancel_subscription",
+        summary: "Make\u0020sure\u0020a\u0020subscription\u0020is\u0020cancelled\u0020before\u0020it\u0020is\u0020trashed\u0020or\u0020deleted",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_cancel_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Afix_trash_meta_status\u0028\u0029",
+        name: "fix_trash_meta_status",
+        summary: "When\u0020WordPress\u0020trashes\u0020a\u0020post,\u0020it\u0020sets\u0020a\u0020\u0027_wp_trash_meta_status\u0027\u0020post\u0020meta\u0020value\u0020so\u0020that\u0020the\u0020post\u0020can\nbe\u0020restored\u0020to\u0020its\u0020original\u0020status.\u0020However,\u0020when\u0020setting\u0020that\u0020value,\u0020it\u0020uses\u0020the\u0020\u0027post_status\u0027\u0020of\u0020a\n\u0024post\u0020variable\u0020in\u0020memory.\u0020If\u0020that\u0020status\u0020is\u0020changed\u0020on\u0020the\u0020\u0027wp_trash_post\u0027\u0020or\u0020\u0027wp_delete_post\u0027\u0020hooks,\nas\u0020is\u0020the\u0020case\u0020with\u0020a\u0020subscription,\u0020which\u0020is\u0020cancelled\u0020before\u0020being\u0020trashed\u0020if\u0020it\u0020is\u0020active\u0020or\u0020on\u002Dhold,\nthen\u0020the\u0020\u0027_wp_trash_meta_status\u0027\u0020value\u0020will\u0020be\u0020incorrectly\u0020set\u0020to\u0020its\u0020status\u0020before\u0020being\u0020trashed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_fix_trash_meta_status"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Atrigger_subscription_trashed_hook\u0028\u0029",
+        name: "trigger_subscription_trashed_hook",
+        summary: "Trigger\u0020action\u0020hook\u0020after\u0020a\u0020subscription\u0020has\u0020been\u0020trashed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_trigger_subscription_trashed_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Atrash_users_subscriptions\u0028\u0029",
+        name: "trash_users_subscriptions",
+        summary: "Takes\u0020a\u0020user\u0020ID\u0020and\u0020trashes\u0020any\u0020subscriptions\u0020that\u0020user\u0020has.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_trash_users_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Atrash_users_subscriptions_for_network\u0028\u0029",
+        name: "trash_users_subscriptions_for_network",
+        summary: "Takes\u0020a\u0020user\u0020ID\u0020and\u0020trashes\u0020any\u0020subscriptions\u0020that\u0020user\u0020has\u0020on\u0020any\u0020site\u0020in\u0020a\u0020WordPress\u0020network",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_trash_users_subscriptions_for_network"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Atrigger_subscription_deleted_hook\u0028\u0029",
+        name: "trigger_subscription_deleted_hook",
+        summary: "Trigger\u0020action\u0020hook\u0020after\u0020a\u0020subscription\u0020has\u0020been\u0020deleted.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_trigger_subscription_deleted_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_change_users_subscription\u0028\u0029",
+        name: "maybe_change_users_subscription",
+        summary: "Checks\u0020if\u0020the\u0020current\u0020request\u0020is\u0020by\u0020a\u0020user\u0020to\u0020change\u0020the\u0020status\u0020of\u0020their\u0020subscription,\u0020and\u0020if\u0020it\u0020is\nvalidate\u0020the\u0020subscription\u0020cancellation\u0020request\u0020and\u0020maybe\u0020processes\u0020the\u0020cancellation.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_change_users_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acan_subscription_be_changed_to\u0028\u0029",
+        name: "can_subscription_be_changed_to",
+        summary: "Check\u0020if\u0020a\u0020given\u0020subscription\u0020can\u0020be\u0020changed\u0020to\u0020a\u0020given\u0020a\u0020status.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_can_subscription_be_changed_to"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription\u0028\u0029",
+        name: "get_subscription",
+        summary: "Return\u0020an\u0020associative\u0020array\u0020of\u0020a\u0020given\u0020subscriptions\u0020details\u0020\u0028if\u0020it\u0020exists\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_status_to_display\u0028\u0029",
+        name: "get_status_to_display",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020string\u0020for\u0020a\u0020given\u0020subscription\u0020status.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_status_to_display"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription_period_strings\u0028\u0029",
+        name: "get_subscription_period_strings",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020possible\u0020subscription\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription_period_strings"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription_period_interval_strings\u0028\u0029",
+        name: "get_subscription_period_interval_strings",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020possible\u0020subscription\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription_period_interval_strings"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription_ranges\u0028\u0029",
+        name: "get_subscription_ranges",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020subscription\u0020lengths.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription_ranges"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription_trial_lengths\u0028\u0029",
+        name: "get_subscription_trial_lengths",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020allowable\u0020trial\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription_trial_lengths"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription_trial_period_strings\u0028\u0029",
+        name: "get_subscription_trial_period_strings",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020possible\u0020subscription\u0020trial\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription_trial_period_strings"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_available_time_periods\u0028\u0029",
+        name: "get_available_time_periods",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020time\u0020periods\u0020allowed\u0020for\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_available_time_periods"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription_key\u0028\u0029",
+        name: "get_subscription_key",
+        summary: "Returns\u0020the\u0020string\u0020key\u0020for\u0020a\u0020subscription\u0020purchased\u0020in\u0020an\u0020order\u0020specified\u0020by\u0020\u0024order_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscriptions_failed_payment_count\u0028\u0029",
+        name: "get_subscriptions_failed_payment_count",
+        summary: "Returns\u0020the\u0020number\u0020of\u0020failed\u0020payments\u0020for\u0020a\u0020given\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscriptions_failed_payment_count"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscriptions_completed_payment_count\u0028\u0029",
+        name: "get_subscriptions_completed_payment_count",
+        summary: "Returns\u0020the\u0020number\u0020of\u0020completed\u0020payments\u0020for\u0020a\u0020given\u0020subscription\u0020\u0028including\u0020the\u0020initial\u0020payment\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscriptions_completed_payment_count"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription_expiration_date\u0028\u0029",
+        name: "get_subscription_expiration_date",
+        summary: "Takes\u0020a\u0020subscription\u0020key\u0020and\u0020returns\u0020the\u0020date\u0020on\u0020which\u0020the\u0020subscription\u0020is\u0020scheduled\u0020to\u0020expire\nor\u00200\u0020if\u0020it\u0020is\u0020cancelled,\u0020expired,\u0020or\u0020never\u0020going\u0020to\u0020expire.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aset_expiration_date\u0028\u0029",
+        name: "set_expiration_date",
+        summary: "Updates\u0020a\u0020subscription\u0027s\u0020expiration\u0020date\u0020as\u0020scheduled\u0020in\u0020WP\u002DCron\u0020and\u0020in\u0020the\u0020subscription\u0020details\u0020array.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_set_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acalculate_subscription_expiration_date\u0028\u0029",
+        name: "calculate_subscription_expiration_date",
+        summary: "A\u0020subscription\u0020now\u0020either\u0020has\u0020an\u0020end\u0020date\u0020or\u0020it\u0020doesn\u0027t,\u0020there\u0020is\u0020no\u0020way\u0020to\u0020calculate\u0020it\u0020based\u0020on\u0020the\u0020original\u0020subsciption\nproduct\u0020\u0028because\u0020a\u0020WC_Subscription\u0020object\u0020can\u0020have\u0020more\u0020than\u0020one\u0020product\u0020and\u0020syncing\u0020length\u0020with\u0020expiration\u0020date\u0020was\u0020both\ncumbersome\u0020and\u0020error\u0020prone\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_calculate_subscription_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_next_payment_date\u0028\u0029",
+        name: "get_next_payment_date",
+        summary: "Takes\u0020a\u0020subscription\u0020key\u0020and\u0020returns\u0020the\u0020date\u0020on\u0020which\u0020the\u0020next\u0020recurring\u0020payment\u0020is\u0020to\u0020be\u0020billed,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_next_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aset_next_payment_date\u0028\u0029",
+        name: "set_next_payment_date",
+        summary: "Clears\u0020the\u0020payment\u0020schedule\u0020for\u0020a\u0020subscription\u0020and\u0020schedules\u0020a\u0020new\u0020date\u0020for\u0020the\u0020next\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_set_next_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_last_payment_date\u0028\u0029",
+        name: "get_last_payment_date",
+        summary: "Takes\u0020a\u0020subscription\u0020key\u0020and\u0020returns\u0020the\u0020date\u0020on\u0020which\u0020the\u0020next\u0020recurring\u0020payment\u0020is\u0020to\u0020be\u0020billed,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_last_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aupdate_wp_cron_lock\u0028\u0029",
+        name: "update_wp_cron_lock",
+        summary: "Changes\u0020the\u0020transient\u0020used\u0020to\u0020safeguard\u0020against\u0020firing\u0020scheduled_subscription_payments\u0020during\u0020a\u0020payment\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_update_wp_cron_lock"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acalculate_next_payment_date\u0028\u0029",
+        name: "calculate_next_payment_date",
+        summary: "Clears\u0020the\u0020payment\u0020schedule\u0020for\u0020a\u0020subscription\u0020and\u0020sets\u0020a\u0020net\u0020date",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_calculate_next_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_trial_expiration_date\u0028\u0029",
+        name: "get_trial_expiration_date",
+        summary: "Takes\u0020a\u0020subscription\u0020key\u0020and\u0020returns\u0020the\u0020date\u0020on\u0020which\u0020the\u0020trial\u0020for\u0020the\u0020subscription\u0020ended\u0020or\u0020is\u0020going\u0020to\u0020end,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_trial_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aset_trial_expiration_date\u0028\u0029",
+        name: "set_trial_expiration_date",
+        summary: "Updates\u0020the\u0020trial\u0020expiration\u0020date\u0020as\u0020scheduled\u0020in\u0020WP\u002DCron\u0020and\u0020in\u0020the\u0020subscription\u0020details\u0020array.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_set_trial_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acalculate_trial_expiration_date\u0028\u0029",
+        name: "calculate_trial_expiration_date",
+        summary: "Takes\u0020a\u0020subscription\u0020key\u0020and\u0020calculates\u0020the\u0020date\u0020on\u0020which\u0020the\u0020subscription\u0027s\u0020trial\u0020should\u0020end\nor\u00200\u0020if\u0020no\u0020trial\u0020is\u0020set.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_calculate_trial_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_user_id_from_subscription_key\u0028\u0029",
+        name: "get_user_id_from_subscription_key",
+        summary: "Takes\u0020a\u0020subscription\u0020key\u0020and\u0020returns\u0020the\u0020user\u0020who\u0020owns\u0020the\u0020subscription\u0020\u0028based\u0020on\u0020the\u0020order\u0020ID\u0020in\u0020the\u0020subscription\u0020key\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_user_id_from_subscription_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Arequires_manual_renewal\u0028\u0029",
+        name: "requires_manual_renewal",
+        summary: "Checks\u0020if\u0020a\u0020subscription\u0020requires\u0020manual\u0020payment\u0020because\u0020the\u0020payment\u0020gateway\u0020used\u0020to\u0020purchase\u0020the\u0020subscription\ndid\u0020not\u0020support\u0020automatic\u0020payments\u0020at\u0020the\u0020time\u0020of\u0020the\u0020subscription\u0020sign\u0020up.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_requires_manual_renewal"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Asubscription_requires_payment\u0028\u0029",
+        name: "subscription_requires_payment",
+        summary: "Checks\u0020if\u0020a\u0020subscription\u0020has\u0020an\u0020unpaid\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_subscription_requires_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Auser_owns_subscription\u0028\u0029",
+        name: "user_owns_subscription",
+        summary: "Check\u0020if\u0020a\u0020user\u0020owns\u0020a\u0020subscription,\u0020as\u0020specified\u0020with\u0020\u0024subscription_key.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_user_owns_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Auser_has_subscription\u0028\u0029",
+        name: "user_has_subscription",
+        summary: "Check\u0020if\u0020a\u0020user\u0020has\u0020a\u0020subscription,\u0020optionally\u0020specified\u0020with\u0020\u0024product_id.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_user_has_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_all_users_subscriptions\u0028\u0029",
+        name: "get_all_users_subscriptions",
+        summary: "Gets\u0020all\u0020the\u0020active\u0020and\u0020inactive\u0020subscriptions\u0020for\u0020all\u0020users.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_all_users_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_users_subscriptions\u0028\u0029",
+        name: "get_users_subscriptions",
+        summary: "Gets\u0020all\u0020the\u0020active\u0020and\u0020inactive\u0020subscriptions\u0020for\u0020a\u0020user,\u0020as\u0020specified\u0020by\u0020\u0024user_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_users_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_users_trashed_subscriptions\u0028\u0029",
+        name: "get_users_trashed_subscriptions",
+        summary: "Gets\u0020all\u0020the\u0020subscriptions\u0020for\u0020a\u0020user\u0020that\u0020have\u0020been\u0020trashed,\u0020as\u0020specified\u0020by\u0020\u0024user_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_users_trashed_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amake_user_inactive\u0028\u0029",
+        name: "make_user_inactive",
+        summary: "A\u0020convenience\u0020wrapper\u0020to\u0020assign\u0020the\u0020inactive\u0020subscriber\u0020role\u0020to\u0020a\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_make_user_inactive"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_assign_user_cancelled_role\u0028\u0029",
+        name: "maybe_assign_user_cancelled_role",
+        summary: "A\u0020convenience\u0020wrapper\u0020to\u0020assign\u0020the\u0020cancelled\u0020subscriber\u0020role\u0020to\u0020a\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_assign_user_cancelled_role"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aupdate_users_role\u0028\u0029",
+        name: "update_users_role",
+        summary: "A\u0020convenience\u0020wrapper\u0020for\u0020changing\u0020a\u0020users\u0020role.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_update_users_role"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amark_paying_customer\u0028\u0029",
+        name: "mark_paying_customer",
+        summary: "Marks\u0020a\u0020customer\u0020as\u0020a\u0020paying\u0020customer\u0020when\u0020their\u0020subscription\u0020is\u0020activated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_mark_paying_customer"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amark_not_paying_customer\u0028\u0029",
+        name: "mark_not_paying_customer",
+        summary: "Unlike\u0020someone\u0020making\u0020a\u0020once\u002Doff\u0020payment,\u0020a\u0020subscriber\u0020can\u0020cease\u0020to\u0020be\u0020a\u0020paying\u0020customer.\u0020This\u0020function\nchanges\u0020a\u0020user\u0027s\u0020status\u0020to\u0020non\u002Dpaying.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_mark_not_paying_customer"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_users_change_status_link\u0028\u0029",
+        name: "get_users_change_status_link",
+        summary: "Return\u0020a\u0020link\u0020for\u0020subscribers\u0020to\u0020change\u0020the\u0020status\u0020of\u0020their\u0020subscription,\u0020as\u0020specified\u0020with\u0020\u0024status\u0020parameter",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_users_change_status_link"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aupdate_next_payment_date\u0028\u0029",
+        name: "update_next_payment_date",
+        summary: "Change\u0020a\u0020subscription\u0027s\u0020next\u0020payment\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_update_next_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aarray_merge_recursive_for_real\u0028\u0029",
+        name: "array_merge_recursive_for_real",
+        summary: "Because\u0020neither\u0020PHP\u0020nor\u0020WP\u0020include\u0020a\u0020real\u0020array\u0020merge\u0020function\u0020that\u0020works\u0020recursively.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_array_merge_recursive_for_real"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_amount_from_proportion\u0028\u0029",
+        name: "get_amount_from_proportion",
+        summary: "Takes\u0020a\u0020total\u0020and\u0020calculates\u0020the\u0020recurring\u0020proportion\u0020of\u0020that\u0020based\u0020on\u0020\u0024proportion\u0020and\u0020then\u0020fixes\u0020any\u0020rounding\u0020bugs\u0020to\nmake\u0020sure\u0020the\u0020totals\u0020add\u0020up.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_amount_from_proportion"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aget_subscription_price_string\u0028\u0029",
+        name: "get_subscription_price_string",
+        summary: "Creates\u0020a\u0020subscription\u0020price\u0020string\u0020from\u0020an\u0020array\u0020of\u0020subscription\u0020details.\u0020For\u0020example,\u0020\u0022\u0022\u00245\u0020\/\u0020month\u0020for\u002012\u0020months\u0022.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_get_subscription_price_string"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Atouch_time\u0028\u0029",
+        name: "touch_time",
+        summary: "Copy\u0020of\u0020the\u0020WordPress\u0020\u0022touch_time\u0022\u0020template\u0020function\u0020for\u0020use\u0020with\u0020a\u0020variety\u0020of\u0020different\u0020times",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_touch_time"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_put_subscription_on_hold\u0028\u0029",
+        name: "maybe_put_subscription_on_hold",
+        summary: "If\u0020a\u0020gateway\u0020doesn\u0027t\u0020manage\u0020payment\u0020schedules,\u0020then\u0020we\u0020should\u0020suspend\u0020the\u0020subscription\u0020until\u0020it\u0020is\u0020paid\u0020\u0028i.e.\u0020for\u0020manual\u0020payments\nor\u0020token\u0020gateways\u0020like\u0020Stripe\u0029.\u0020If\u0020the\u0020gateway\u0020does\u0020manage\u0020the\u0020scheduling,\u0020then\u0020we\u0020shouldn\u0027t\u0020suspend\u0020the\u0020subscription\u0020because\u0020a\ngateway\u0020may\u0020use\u0020batch\u0020processing\u0020on\u0020the\u0020time\u0020payments\u0020are\u0020charged\u0020and\u0020a\u0020subscription\u0020could\u0020end\u0020up\u0020being\u0020incorrectly\u0020suspended.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_put_subscription_on_hold"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_process_failed_renewal_for_repair\u0028\u0029",
+        name: "maybe_process_failed_renewal_for_repair",
+        summary: "Check\u0020if\u0020the\u0020subscription\u0020needs\u0020to\u0020use\u0020the\u0020failed\u0020payment\u0020process\u0020to\u0020repair\u0020its\u0020status\u0020after\u0020it\u0020incorrectly\u0020expired\u0020due\u0020to\u0020a\u0020date\u0020migration\nbug\u0020in\u0020upgrade\u0020process\u0020for\u00202.0.0\u0020of\u0020Subscriptions\u0020\u0028i.e.\u0020not\u00202.0.1\u0020or\u0020newer\u0029.\u0020See\u0020WCS_Repair_2_0_2\u003A\u003Amaybe_repair_status\u0028\u0029\u0020for\u0020more\u0020details.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_process_failed_renewal_for_repair"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_process_subscription_payment\u0028\u0029",
+        name: "maybe_process_subscription_payment",
+        summary: "When\u0020a\u0020scheduled\u0020subscription\u0020payment\u0020hook\u0020is\u0020fired,\u0020automatically\u0020process\u0020the\u0020subscription\u0020payment\nif\u0020the\u0020amount\u0020is\u0020for\u0020\u00240\u0020\u0028and\u0020therefore,\u0020there\u0020is\u0020no\u0020payment\u0020to\u0020be\u0020processed\u0020by\u0020a\u0020gateway,\u0020and\u0020likely\nno\u0020gateway\u0020used\u0020on\u0020the\u0020initial\u0020order\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_process_subscription_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acurrent_user_can_suspend_subscription\u0028\u0029",
+        name: "current_user_can_suspend_subscription",
+        summary: "Return\u0020a\u0020link\u0020for\u0020subscribers\u0020to\u0020change\u0020the\u0020status\u0020of\u0020their\u0020subscription,\u0020as\u0020specified\u0020with\u0020\u0024status\u0020parameter",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_current_user_can_suspend_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Asearch_subscriptions\u0028\u0029",
+        name: "search_subscriptions",
+        summary: "Return\u0020a\u0020multi\u002Ddimensional\u0020associative\u0020array\u0020of\u0020subscriptions\u0020with\u0020a\u0020certain\u0020value,\u0020grouped\u0020by\u0020user\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_search_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aactivate_subscription\u0028\u0029",
+        name: "activate_subscription",
+        summary: "Marks\u0020a\u0020single\u0020subscription\u0020as\u0020active\u0020on\u0020a\u0020users\u0020account.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_activate_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Areactivate_subscription\u0028\u0029",
+        name: "reactivate_subscription",
+        summary: "Changes\u0020a\u0020single\u0020subscription\u0020from\u0020on\u002Dhold\u0020to\u0020active\u0020on\u0020a\u0020users\u0020account.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_reactivate_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aput_subscription_on_hold\u0028\u0029",
+        name: "put_subscription_on_hold",
+        summary: "Suspends\u0020a\u0020single\u0020subscription\u0020on\u0020a\u0020users\u0020account\u0020by\u0020placing\u0020it\u0020in\u0020the\u0020\u0022on\u002Dhold\u0022\u0020status.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_put_subscription_on_hold"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Acancel_subscription\u0028\u0029",
+        name: "cancel_subscription",
+        summary: "Cancels\u0020a\u0020single\u0020subscription\u0020on\u0020a\u0020users\u0020account.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_cancel_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Afailed_subscription_signup\u0028\u0029",
+        name: "failed_subscription_signup",
+        summary: "Sets\u0020a\u0020single\u0020subscription\u0020on\u0020a\u0020users\u0020account\u0020to\u0020be\u0020\u0027on\u002Dhold\u0027\u0020and\u0020keeps\u0020a\u0020record\u0020of\u0020the\u0020failed\u0020sign\u0020up\u0020on\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_failed_subscription_signup"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Atrash_subscription\u0028\u0029",
+        name: "trash_subscription",
+        summary: "Trashes\u0020a\u0020single\u0020subscription\u0020on\u0020a\u0020users\u0020account.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_trash_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Adelete_subscription\u0028\u0029",
+        name: "delete_subscription",
+        summary: "Permanently\u0020deletes\u0020a\u0020single\u0020subscription\u0020on\u0020a\u0020users\u0020account.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_delete_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Aajax_update_next_payment_date\u0028\u0029",
+        name: "ajax_update_next_payment_date",
+        summary: "Processes\u0020an\u0020ajax\u0020request\u0020to\u0020change\u0020a\u0020subscription\u0027s\u0020next\u0020payment\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_ajax_update_next_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Asafeguard_scheduled_payments\u0028\u0029",
+        name: "safeguard_scheduled_payments",
+        summary: "WP\u002DCron\u0020occasionally\u0020gets\u0020itself\u0020into\u0020an\u0020infinite\u0020loop\u0020on\u0020scheduled\u0020events,\u0020this\u0020function\u0020is\ndesigned\u0020to\u0020create\u0020a\u0020non\u002Dcron\u0020related\u0020safeguard\u0020against\u0020payments\u0020getting\u0020caught\u0020up\u0020in\u0020such\u0020a\u0020loop.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_safeguard_scheduled_payments"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Amaybe_reschedule_subscription_payment\u0028\u0029",
+        name: "maybe_reschedule_subscription_payment",
+        summary: "When\u0020a\u0020subscription\u0020payment\u0020hook\u0020is\u0020fired,\u0020reschedule\u0020the\u0020hook\u0020to\u0020run\u0020again\u0020on\u0020the\ntime\/date\u0020of\u0020the\u0020next\u0020payment\u0020\u0028if\u0020any\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_maybe_reschedule_subscription_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003Asubscription_trial_end\u0028\u0029",
+        name: "subscription_trial_end",
+        summary: "Fires\u0020when\u0020the\u0020trial\u0020period\u0020for\u0020a\u0020subscription\u0020has\u0020completed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#method_subscription_trial_end"
+    },{
+        fqsen: "\\WC_Subscriptions_Manager\u003A\u003A\u0024users_meta_key",
+        name: "users_meta_key",
+        summary: "The\u0020database\u0020key\u0020for\u0020user\u0027s\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Manager.html#property_users_meta_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Order",
+        name: "WC_Subscriptions_Order",
+        summary: "Subscriptions\u0020Order\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_non_subscription_total\u0028\u0029",
+        name: "get_non_subscription_total",
+        summary: "Returns\u0020the\u0020total\u0020amount\u0020to\u0020be\u0020charged\u0020for\u0020non\u002Dsubscription\u0020products\u0020at\u0020the\u0020outset\u0020of\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_non_subscription_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_sign_up_fee\u0028\u0029",
+        name: "get_sign_up_fee",
+        summary: "Returns\u0020the\u0020total\u0020sign\u002Dup\u0020fee\u0020for\u0020all\u0020subscriptions\u0020in\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_sign_up_fee"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_items_product_id\u0028\u0029",
+        name: "get_items_product_id",
+        summary: "Gets\u0020the\u0020product\u0020ID\u0020for\u0020an\u0020order\u0020item\u0020in\u0020a\u0020way\u0020that\u0020is\u0020backwards\u0020compatible\u0020with\u0020WC\u00201.x.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_items_product_id"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_by_product_id\u0028\u0029",
+        name: "get_item_by_product_id",
+        summary: "Gets\u0020an\u0020item\u0020by\u0020product\u0020id\u0020from\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_by_product_id"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_by_subscription_key\u0028\u0029",
+        name: "get_item_by_subscription_key",
+        summary: "Gets\u0020an\u0020item\u0020by\u0020a\u0020subscription\u0020key\u0020of\u0020the\u0020form\u0020created\u0020by\u0020\u0040see\u0020WC_Subscriptions_Manager\u003A\u003Aget_subscription_key\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_by_subscription_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_id_by_subscription_key\u0028\u0029",
+        name: "get_item_id_by_subscription_key",
+        summary: "Gets\u0020the\u0020ID\u0020of\u0020a\u0020subscription\u0020item\u0020which\u0020belongs\u0020to\u0020a\u0020subscription\u0020key\u0020of\u0020the\u0020form\u0020created\nby\u0020\u0040see\u0020WC_Subscriptions_Manager\u003A\u003Aget_subscription_key\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_id_by_subscription_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_by_id\u0028\u0029",
+        name: "get_item_by_id",
+        summary: "Gets\u0020an\u0020individual\u0020order\u0020item\u0020by\u0020ID\u0020without\u0020requiring\u0020the\u0020order\u0020ID\u0020associated\u0020with\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_by_id"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_meta\u0028\u0029",
+        name: "get_item_meta",
+        summary: "A\u0020unified\u0020API\u0020for\u0020accessing\u0020product\u0020specific\u0020meta\u0020on\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_meta_data\u0028\u0029",
+        name: "get_item_meta_data",
+        summary: "Access\u0020an\u0020individual\u0020piece\u0020of\u0020item\u0020metadata\u0020\u0028\u0040see\u0020woocommerce_get_order_item_meta\u0020returns\u0020all\u0020metadata\u0020for\u0020an\u0020item\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_meta_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_name\u0028\u0029",
+        name: "get_item_name",
+        summary: "Gets\u0020the\u0020name\u0020of\u0020a\u0020subscription\u0020item\u0020by\u0020product\u0020ID\u0020from\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_name"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Asubscription_thank_you\u0028\u0029",
+        name: "subscription_thank_you",
+        summary: "Displays\u0020a\u0020few\u0020details\u0020about\u0020what\u0020happens\u0020to\u0020their\u0020subscription.\u0020Hooked\nto\u0020the\u0020thank\u0020you\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_subscription_thank_you"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aadd_contains_subscription_hidden_field\u0028\u0029",
+        name: "add_contains_subscription_hidden_field",
+        summary: "Output\u0020a\u0020hidden\u0020element\u0020in\u0020the\u0020order\u0020status\u0020of\u0020the\u0020orders\u0020list\u0020table\u0020to\u0020provide\u0020information\u0020about\u0020whether\nthe\u0020order\u0020displayed\u0020in\u0020that\u0020row\u0020contains\u0020a\u0020subscription\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_add_contains_subscription_hidden_field"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Acontains_subscription_hidden_field\u0028\u0029",
+        name: "contains_subscription_hidden_field",
+        summary: "Output\u0020a\u0020hidden\u0020element\u0020on\u0020the\u0020Edit\u0020Order\u0020screen\u0020to\u0020provide\u0020information\u0020about\u0020whether\u0020the\u0020order\u0020displayed\nin\u0020that\u0020row\u0020contains\u0020a\u0020subscription\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_contains_subscription_hidden_field"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aadd_contains_subscription_column\u0028\u0029",
+        name: "add_contains_subscription_column",
+        summary: "Add\u0020a\u0020column\u0020to\u0020the\u0020WooCommerce\u0020\u002D\u003E\u0020Orders\u0020admin\u0020screen\u0020to\u0020indicate\u0020whether\u0020an\u0020order\u0020is\u0020a\nparent\u0020of\u0020a\u0020subscription,\u0020a\u0020renewal\u0020order\u0020for\u0020a\u0020subscription,\u0020or\u0020a\u0020regular\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_add_contains_subscription_column"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aadd_contains_subscription_column_content\u0028\u0029",
+        name: "add_contains_subscription_column_content",
+        summary: "Add\u0020column\u0020content\u0020to\u0020the\u0020WooCommerce\u0020\u002D\u003E\u0020Orders\u0020admin\u0020screen\u0020to\u0020indicate\u0020whether\u0020an\norder\u0020is\u0020a\u0020parent\u0020of\u0020a\u0020subscription,\u0020a\u0020renewal\u0020order\u0020for\u0020a\u0020subscription,\u0020or\u0020a\nregular\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_add_contains_subscription_column_content"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Amaybe_record_subscription_payment\u0028\u0029",
+        name: "maybe_record_subscription_payment",
+        summary: "Records\u0020the\u0020initial\u0020payment\u0020against\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_maybe_record_subscription_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Ais_item_subscription\u0028\u0029",
+        name: "is_item_subscription",
+        summary: "Checks\u0020if\u0020a\u0020given\u0020order\u0020item\u0020matches\u0020a\u0020line\u0020item\u0020from\u0020a\u0020subscription\u0020purchased\u0020in\u0020the\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_is_item_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_users_subscription_orders\u0028\u0029",
+        name: "get_users_subscription_orders",
+        summary: "Returns\u0020all\u0020parent\u0020subscription\u0020orders\u0020for\u0020a\u0020user,\u0020specificed\u0020with\u0020\u0024user_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_users_subscription_orders"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aorder_needs_payment\u0028\u0029",
+        name: "order_needs_payment",
+        summary: "Check\u0020whether\u0020an\u0020order\u0020needs\u0020payment\u0020even\u0020if\u0020the\u0020order\u0020total\u0020is\u0020\u00240\u0020\u0028because\u0020it\u0020has\u0020a\u0020recurring\u0020total\u0020and\nautomatic\u0020payments\u0020are\u0020not\u0020switched\u0020off\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_order_needs_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aadd_sub_info_email\u0028\u0029",
+        name: "add_sub_info_email",
+        summary: "Adds\u0020the\u0020subscription\u0020information\u0020to\u0020our\u0020order\u0020emails.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_add_sub_info_email"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Arestrict_manage_subscriptions\u0028\u0029",
+        name: "restrict_manage_subscriptions",
+        summary: "Add\u0020admin\u0020dropdown\u0020for\u0020order\u0020types\u0020to\u0020Woocommerce\u0020\u002D\u003E\u0020Orders\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_restrict_manage_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aorders_by_type_query\u0028\u0029",
+        name: "orders_by_type_query",
+        summary: "Add\u0020request\u0020filter\u0020for\u0020order\u0020types\u0020to\u0020Woocommerce\u0020\u002D\u003E\u0020Orders\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_orders_by_type_query"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aadd_subscriptions_to_view_order_templates\u0028\u0029",
+        name: "add_subscriptions_to_view_order_templates",
+        summary: "Add\u0020related\u0020subscriptions\u0020below\u0020order\u0020details\u0020tables.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_add_subscriptions_to_view_order_templates"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_related_orders_template\u0028\u0029",
+        name: "get_related_orders_template",
+        summary: "Loads\u0020the\u0020related\u0020orders\u0020table\u0020on\u0020the\u0020view\u0020subscription\u0020page",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_related_orders_template"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Amaybe_remove_pay_action\u0028\u0029",
+        name: "maybe_remove_pay_action",
+        summary: "Unset\u0020pay\u0020action\u0020for\u0020an\u0020order\u0020if\u0020a\u0020more\u0020recent\u0020order\u0020exists",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_maybe_remove_pay_action"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Ais_order_editable\u0028\u0029",
+        name: "is_order_editable",
+        summary: "Allow\u0020subscription\u0020order\u0020items\u0020to\u0020be\u0020edited\u0020in\u0020WC\u00202.2.\u0020until\u0020Subscriptions\u00202.0\u0020introduces\nits\u0020own\u0020WC_Subscription\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_is_order_editable"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_matching_subscription\u0028\u0029",
+        name: "get_matching_subscription",
+        summary: "Get\u0020a\u0020subscription\u0020that\u0020has\u0020an\u0020item\u0020with\u0020the\u0020same\u0020product\/variation\u0020ID\u0020as\u0020an\u0020order\u0020item,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_matching_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_matching_subscription_item\u0028\u0029",
+        name: "get_matching_subscription_item",
+        summary: "Get\u0020the\u0020subscription\u0020item\u0020that\u0020has\u0020the\u0020same\u0020product\/variation\u0020ID\u0020as\u0020an\u0020order\u0020item,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_matching_subscription_item"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Ahide_order_itemmeta\u0028\u0029",
+        name: "hide_order_itemmeta",
+        summary: "Don\u0027t\u0020display\u0020migrated\u0020subscription\u0020meta\u0020data\u0020on\u0020the\u0020Edit\u0020Order\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_hide_order_itemmeta"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Amaybe_cancel_subscription_on_full_refund\u0028\u0029",
+        name: "maybe_cancel_subscription_on_full_refund",
+        summary: "If\u0020the\u0020subscription\u0020is\u0020pending\u0020cancellation\u0020and\u0020a\u0020latest\u0020order\u0020is\u0020refunded,\u0020cancel\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_maybe_cancel_subscription_on_full_refund"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Amaybe_cancel_subscription_on_partial_refund\u0028\u0029",
+        name: "maybe_cancel_subscription_on_partial_refund",
+        summary: "Handles\u0020partial\u0020refunds\u0020on\u0020orders\u0020in\u0020WC\u0020versions\u0020pre\u00202.5\u0020which\u0020would\u0020be\u0020considered\u0020full\u0020refunds\u0020in\u0020WC\u00202.5.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_maybe_cancel_subscription_on_partial_refund"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Amaybe_display_shipping_address\u0028\u0029",
+        name: "maybe_display_shipping_address",
+        summary: "If\u0020the\u0020order\u0020doesn\u0027t\u0020contain\u0020shipping\u0020methods\u0020because\u0020it\u0020contains\u0020synced\u0020or\u0020trial\u0020products\u0020but\u0020the\u0020related\u0020subscription\u0028s\u0029\u0020does\u0020have\u0020a\u0020shipping\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_maybe_display_shipping_address"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Amaybe_autocomplete_order\u0028\u0029",
+        name: "maybe_autocomplete_order",
+        summary: "Automatically\u0020set\u0020the\u0020order\u0027s\u0020status\u0020to\u0020complete\u0020if\u0020the\u0020order\u0020total\u0020is\u0020zero\u0020and\u0020all\u0020the\u0020subscriptions\nin\u0020an\u0020order\u0020are\u0020synced\u0020or\u0020the\u0020order\u0020contains\u0020a\u0020resubscribe.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_maybe_autocomplete_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aadd_subscription_order_query_args\u0028\u0029",
+        name: "add_subscription_order_query_args",
+        summary: "Map\u0020subscription\u0020related\u0020order\u0020arguments\u0020passed\u0020to\u0020\u0040see\u0020wc_get_orders\u0028\u0029\u0020to\u0020WP_Query\u0020args.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_add_subscription_order_query_args"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aorder_contains_subscription\u0028\u0029",
+        name: "order_contains_subscription",
+        summary: "Checks\u0020an\u0020order\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_order_contains_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aset_recurring_payment_method\u0028\u0029",
+        name: "set_recurring_payment_method",
+        summary: "This\u0020function\u0020once\u0020made\u0020sure\u0020the\u0020recurring\u0020payment\u0020method\u0020was\u0020set\u0020correctly\u0020on\u0020an\u0020order\u0020when\u0020a\u0020customer\u0020placed\u0020an\u0020order\nwith\u0020one\u0020payment\u0020method\u0020\u0028like\u0020PayPal\u0029,\u0020and\u0020then\u0020returned\u0020and\u0020completed\u0020payment\u0020using\u0020a\u0020different\u0020payment\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_set_recurring_payment_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Ais_download_permitted\u0028\u0029",
+        name: "is_download_permitted",
+        summary: "Checks\u0020if\u0020an\u0020order\u0020contains\u0020an\u0020in\u0020active\u0020subscription\u0020and\u0020if\u0020it\u0020does,\u0020denies\u0020download\u0020acces\nto\u0020files\u0020purchased\u0020on\u0020the\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_is_download_permitted"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aprefill_order_item_meta\u0028\u0029",
+        name: "prefill_order_item_meta",
+        summary: "Add\u0020subscription\u0020related\u0020order\u0020item\u0020meta\u0020when\u0020a\u0020subscription\u0020product\u0020is\u0020added\u0020as\u0020an\u0020item\u0020to\u0020an\u0020order\u0020via\u0020Ajax.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_prefill_order_item_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Acalculate_recurring_line_taxes\u0028\u0029",
+        name: "calculate_recurring_line_taxes",
+        summary: "Calculate\u0020recurring\u0020line\u0020taxes\u0020when\u0020a\u0020store\u0020manager\u0020clicks\u0020the\u0020\u0022Calc\u0020Line\u0020Tax\u0022\u0020button\u0020on\u0020the\u0020\u0022Edit\u0020Order\u0022\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_calculate_recurring_line_taxes"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aremove_line_tax\u0028\u0029",
+        name: "remove_line_tax",
+        summary: "Removes\u0020a\u0020line\u0020tax\u0020item\u0020from\u0020an\u0020order\u0020by\u0020ID.\u0020Hooked\u0020to\nan\u0020Ajax\u0020call\u0020from\u0020the\u0020\u0022Edit\u0020Order\u0022\u0020page\u0020and\u0020mirrors\u0020the",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_remove_line_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aadd_line_tax\u0028\u0029",
+        name: "add_line_tax",
+        summary: "Adds\u0020a\u0020line\u0020tax\u0020item\u0020from\u0020an\u0020order\u0020by\u0020ID.\u0020Hooked\u0020to\nan\u0020Ajax\u0020call\u0020from\u0020the\u0020\u0022Edit\u0020Order\u0022\u0020page\u0020and\u0020mirrors\u0020the",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_add_line_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Arecurring_order_totals_meta_box_section\u0028\u0029",
+        name: "recurring_order_totals_meta_box_section",
+        summary: "Display\u0020recurring\u0020order\u0020totals\u0020on\u0020the\u0020\u0022Edit\u0020Order\u0022\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_recurring_order_totals_meta_box_section"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Apre_process_shop_order_meta\u0028\u0029",
+        name: "pre_process_shop_order_meta",
+        summary: "When\u0020an\u0020order\u0020is\u0020added\u0020or\u0020updated\u0020from\u0020the\u0020admin\u0020interface,\u0020check\u0020if\u0020a\u0020subscription\u0020product\nhas\u0020been\u0020manually\u0020added\u0020to\u0020the\u0020order\u0020or\u0020the\u0020details\u0020of\u0020the\u0020subscription\u0020have\u0020been\u0020modified,\nand\u0020create\/update\u0020the\u0020subscription\u0020as\u0020required.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_pre_process_shop_order_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aprocess_shop_order_item_meta\u0028\u0029",
+        name: "process_shop_order_item_meta",
+        summary: "Worked\u0020around\u0020a\u0020bug\u0020in\u0020WooCommerce\u0020which\u0020ignores\u0020order\u0020item\u0020meta\u0020values\u0020of\u00200.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_process_shop_order_item_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Arequires_manual_renewal\u0028\u0029",
+        name: "requires_manual_renewal",
+        summary: "Checks\u0020if\u0020a\u0020subscription\u0020requires\u0020manual\u0020payment\u0020because\u0020the\u0020payment\u0020gateway\u0020used\u0020to\u0020purchase\u0020the\u0020subscription\ndid\u0020not\u0020support\u0020automatic\u0020payments\u0020at\u0020the\u0020time\u0020of\u0020the\u0020subscription\u0020sign\u0020up.\u0020Or\u0020because\u0020we\u0027re\u0020on\u0020a\u0020staging\u0020site.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_requires_manual_renewal"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_total_initial_payment\u0028\u0029",
+        name: "get_total_initial_payment",
+        summary: "Returns\u0020the\u0020total\u0020amount\u0020to\u0020be\u0020charged\u0020at\u0020the\u0020outset\u0020of\u0020the\u0020Subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_total_initial_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_recurring_amount\u0028\u0029",
+        name: "get_item_recurring_amount",
+        summary: "Returns\u0020the\u0020recurring\u0020amount\u0020for\u0020an\u0020item",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_recurring_amount"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_discount_cart\u0028\u0029",
+        name: "get_recurring_discount_cart",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020cart\u0020discount\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_discount_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_discount_cart_tax\u0028\u0029",
+        name: "get_recurring_discount_cart_tax",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020cart\u0020discount\u0020tax\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_discount_cart_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_discount_total\u0028\u0029",
+        name: "get_recurring_discount_total",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020total\u0020discount\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_discount_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_shipping_tax_total\u0028\u0029",
+        name: "get_recurring_shipping_tax_total",
+        summary: "Returns\u0020the\u0020amount\u0020of\u0020shipping\u0020tax\u0020that\u0020is\u0020recurring.\u0020As\u0020shipping\u0020only\u0020applies\nto\u0020recurring\u0020payments,\u0020and\u0020only\u00201\u0020subscription\u0020can\u0020be\u0020purchased\u0020at\u0020a\u0020time,\nthis\u0020is\u0020equal\u0020to\u0020\u0040see\u0020WC_Order\u003A\u003Aget_total_tax\u0028\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_shipping_tax_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_shipping_total\u0028\u0029",
+        name: "get_recurring_shipping_total",
+        summary: "Returns\u0020the\u0020recurring\u0020shipping\u0020price\u0020.\u0020As\u0020shipping\u0020only\u0020applies\u0020to\u0020recurring\npayments,\u0020and\u0020only\u00201\u0020subscription\u0020can\u0020be\u0020purchased\u0020at\u0020a\u0020time,\u0020this\u0020is\nequal\u0020to\u0020\u0040see\u0020WC_Order\u003A\u003Aget_total_shipping\u0028\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_shipping_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_shipping_methods\u0028\u0029",
+        name: "get_recurring_shipping_methods",
+        summary: "Return\u0020an\u0020array\u0020of\u0020shipping\u0020costs\u0020within\u0020this\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_shipping_methods"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_taxes\u0028\u0029",
+        name: "get_recurring_taxes",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020taxes\u0020on\u0020an\u0020order\u0020with\u0020their\u0020recurring\u0020totals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_taxes"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_total_tax\u0028\u0029",
+        name: "get_recurring_total_tax",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020total\u0020tax\u0020on\u0020an\u0020order\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_total_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_total_ex_tax\u0028\u0029",
+        name: "get_recurring_total_ex_tax",
+        summary: "Returns\u0020the\u0020proportion\u0020of\u0020total\u0020before\u0020tax\u0020on\u0020an\u0020order\u0020that\u0020is\u0020recurring\u0020for\u0020the\u0020product\u0020specified\u0020with\u0020\u0024product_id",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_total_ex_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_total\u0028\u0029",
+        name: "get_recurring_total",
+        summary: "Returns\u0020the\u0020price\u0020per\u0020period\u0020for\u0020a\u0020subscription\u0020in\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_order_subscription_string\u0028\u0029",
+        name: "get_order_subscription_string",
+        summary: "Creates\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020subscription\u0020period\/term\u0020for\u0020each\u0020item\u0020in\u0020the\u0020cart",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_order_subscription_string"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_recurring_items\u0028\u0029",
+        name: "get_recurring_items",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020items\u0020in\u0020an\u0020order\u0020which\u0020are\u0020recurring\u0020along\u0020with\u0020their\u0020recurring\u0020totals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_recurring_items"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_subscription_period\u0028\u0029",
+        name: "get_subscription_period",
+        summary: "Returns\u0020the\u0020period\u0020\u0028e.g.\u0020month\u0029\u0020for\u0020a\u0020each\u0020subscription\u0020product\u0020in\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_subscription_period"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_subscription_interval\u0028\u0029",
+        name: "get_subscription_interval",
+        summary: "Returns\u0020the\u0020billing\u0020interval\u0020for\u0020a\u0020each\u0020subscription\u0020product\u0020in\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_subscription_interval"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_subscription_length\u0028\u0029",
+        name: "get_subscription_length",
+        summary: "Returns\u0020the\u0020length\u0020for\u0020a\u0020subscription\u0020in\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_subscription_length"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_subscription_trial_length\u0028\u0029",
+        name: "get_subscription_trial_length",
+        summary: "Returns\u0020the\u0020length\u0020for\u0020a\u0020subscription\u0020product\u0027s\u0020trial\u0020period\u0020as\u0020set\u0020when\u0020added\u0020to\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_subscription_trial_length"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_subscription_trial_period\u0028\u0029",
+        name: "get_subscription_trial_period",
+        summary: "Returns\u0020the\u0020period\u0020\u0028e.g.\u0020month\u0029\u0020\u0020for\u0020a\u0020subscription\u0020product\u0027s\u0020trial\u0020as\u0020set\u0020when\u0020added\u0020to\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_subscription_trial_period"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_next_payment_timestamp\u0028\u0029",
+        name: "get_next_payment_timestamp",
+        summary: "Takes\u0020a\u0020subscription\u0020product\u0027s\u0020ID\u0020and\u0020returns\u0020the\u0020timestamp\u0020on\u0020which\u0020the\u0020next\u0020payment\u0020is\u0020due.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_next_payment_timestamp"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_next_payment_date\u0028\u0029",
+        name: "get_next_payment_date",
+        summary: "Takes\u0020a\u0020subscription\u0020product\u0027s\u0020ID\u0020and\u0020the\u0020order\u0020it\u0020was\u0020purchased\u0020in\u0020and\u0020returns\u0020the\u0020date\u0020on\nwhich\u0020the\u0020next\u0020payment\u0020is\u0020due.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_next_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_last_payment_date\u0028\u0029",
+        name: "get_last_payment_date",
+        summary: "Takes\u0020a\u0020subscription\u0020product\u0027s\u0020ID\u0020and\u0020the\u0020order\u0020it\u0020was\u0020purchased\u0020in\u0020and\u0020returns\u0020the\u0020date\u0020on\nwhich\u0020the\u0020last\u0020payment\u0020was\u0020made.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_last_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Acalculate_next_payment_date\u0028\u0029",
+        name: "calculate_next_payment_date",
+        summary: "Takes\u0020a\u0020subscription\u0020product\u0027s\u0020ID\u0020and\u0020calculates\u0020the\u0020date\u0020on\u0020which\u0020the\u0020next\u0020payment\u0020is\u0020due.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_calculate_next_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_failed_payment_count\u0028\u0029",
+        name: "get_failed_payment_count",
+        summary: "Returns\u0020the\u0020number\u0020of\u0020failed\u0020payments\u0020for\u0020a\u0020given\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_failed_payment_count"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_outstanding_balance\u0028\u0029",
+        name: "get_outstanding_balance",
+        summary: "Returns\u0020the\u0020amount\u0020outstanding\u0020on\u0020a\u0020subscription\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_outstanding_balance"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Asafeguard_scheduled_payments\u0028\u0029",
+        name: "safeguard_scheduled_payments",
+        summary: "Once\u0020payment\u0020is\u0020completed\u0020on\u0020an\u0020order,\u0020set\u0020a\u0020lock\u0020on\u0020payments\u0020until\u0020the\u0020next\u0020subscription\u0020payment\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_safeguard_scheduled_payments"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_formatted_line_total\u0028\u0029",
+        name: "get_formatted_line_total",
+        summary: "Appends\u0020the\u0020subscription\u0020period\/duration\u0020string\u0020to\u0020order\u0020total",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_formatted_line_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_subtotal_to_display\u0028\u0029",
+        name: "get_subtotal_to_display",
+        summary: "Appends\u0020the\u0020subscription\u0020period\/duration\u0020string\u0020to\u0020order\u0020subtotal",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_subtotal_to_display"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_cart_discount_to_display\u0028\u0029",
+        name: "get_cart_discount_to_display",
+        summary: "Appends\u0020the\u0020subscription\u0020period\/duration\u0020string\u0020to\u0020order\u0020total",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_cart_discount_to_display"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_order_discount_to_display\u0028\u0029",
+        name: "get_order_discount_to_display",
+        summary: "Appends\u0020the\u0020subscription\u0020period\/duration\u0020string\u0020to\u0020order\u0020total",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_order_discount_to_display"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_formatted_order_total\u0028\u0029",
+        name: "get_formatted_order_total",
+        summary: "Appends\u0020the\u0020subscription\u0020period\/duration\u0020string\u0020to\u0020order\u0020total",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_formatted_order_total"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_shipping_to_display\u0028\u0029",
+        name: "get_shipping_to_display",
+        summary: "Appends\u0020the\u0020subscription\u0020period\/duration\u0020string\u0020to\u0020shipping\u0020fee",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_shipping_to_display"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_order_item_totals\u0028\u0029",
+        name: "get_order_item_totals",
+        summary: "Individual\u0020totals\u0020are\u0020taken\u0020care\u0020of\u0020by\u0020filters,\u0020but\u0020taxes\u0020and\u0020fees\u0020are\u0020not,\u0020so\u0020we\u0020need\u0020to\u0020override\u0020them\u0020here.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_order_item_totals"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aload_order_data\u0028\u0029",
+        name: "load_order_data",
+        summary: "Load\u0020Subscription\u0020related\u0020order\u0020data\u0020when\u0020populating\u0020an\u0020order",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_load_order_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aorder_shipping_method\u0028\u0029",
+        name: "order_shipping_method",
+        summary: "Add\u0020request\u0020filter\u0020for\u0020order\u0020types\u0020to\u0020Woocommerce\u0020\u002D\u003E\u0020Orders\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_order_shipping_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_item_sign_up_fee\u0028\u0029",
+        name: "get_item_sign_up_fee",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020for\u0020an\u0020item",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_item_sign_up_fee"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Amaybe_record_order_payment\u0028\u0029",
+        name: "maybe_record_order_payment",
+        summary: "Records\u0020the\u0020initial\u0020payment\u0020against\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_maybe_record_order_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_order_currency\u0028\u0029",
+        name: "get_order_currency",
+        summary: "Wrapper\u0020around\u0020\u0040see\u0020WC_Order\u003A\u003Aget_order_currency\u0028\u0029\u0020for\u0020versions\u0020of\u0020WooCommerce\u0020prior\u0020to\u00202.1.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_order_currency"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003Aget_meta\u0028\u0029",
+        name: "get_meta",
+        summary: "A\u0020unified\u0020API\u0020for\u0020accessing\u0020subscription\u0020order\u0020meta,\u0020especially\u0020for\u0020sign\u002Dup\u0020fee\u0020related\u0020order\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#method_get_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003A\u0024requires_update",
+        name: "requires_update",
+        summary: "Store\u0020a\u0020record\u0020of\u0020which\u0020product\/item\u0020IDs\u0020need\u0020to\u0020have\u0020subscriptions\u0020details\u0020updated\nwhenever\u0020a\u0020subscription\u0020is\u0020saved\u0020via\u0020the\u0020\u0022Edit\u0020Order\u0022\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#property_requires_update"
+    },{
+        fqsen: "\\WC_Subscriptions_Order\u003A\u003A\u0024recurring_only_price_strings",
+        name: "recurring_only_price_strings",
+        summary: "A\u0020flag\u0020to\u0020indicate\u0020whether\u0020subscription\u0020price\u0020strings\u0020should\u0020include\u0020the\u0020subscription\u0020length",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Order.html#property_recurring_only_price_strings"
+    },{
+        fqsen: "\\WC_Subscriptions_Product",
+        name: "WC_Subscriptions_Product",
+        summary: "Individual\u0020Subscription\u0020Product\u0020API",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Set\u0020up\u0020the\u0020class,\u0020including\u0020it\u0027s\u0020hooks\u0020\u0026\u0020filters,\u0020when\u0020the\u0020file\u0020is\u0020loaded.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_sign_up_fee_filter\u0028\u0029",
+        name: "get_sign_up_fee_filter",
+        summary: "Returns\u0020the\u0020raw\u0020sign\u0020up\u0020fee\u0020value\u0020\u0028ignoring\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_sign_up_fee_filter"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Ais_subscription\u0028\u0029",
+        name: "is_subscription",
+        summary: "Checks\u0020a\u0020given\u0020product\u0020to\u0020determine\u0020if\u0020it\u0020is\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_is_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_grouped_price_html\u0028\u0029",
+        name: "get_grouped_price_html",
+        summary: "Output\u0020subscription\u0020string\u0020as\u0020the\u0020price\u0020html\u0020for\u0020grouped\u0020products\u0020and\u0020make\u0020sure\u0020that\nsign\u002Dup\u0020fees\u0020are\u0020taken\u0020into\u0020account\u0020for\u0020price.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_grouped_price_html"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_gravity_form_prices\u0028\u0029",
+        name: "get_gravity_form_prices",
+        summary: "Output\u0020subscription\u0020string\u0020in\u0020Gravity\u0020Form\u0020fields.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_gravity_form_prices"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_price_string\u0028\u0029",
+        name: "get_price_string",
+        summary: "Returns\u0020a\u0020string\u0020representing\u0020the\u0020details\u0020of\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_price_string"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_price\u0028\u0029",
+        name: "get_price",
+        summary: "Returns\u0020the\u0020active\u0020price\u0020per\u0020period\u0020for\u0020a\u0020product\u0020if\u0020it\u0020is\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_price"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_regular_price\u0028\u0029",
+        name: "get_regular_price",
+        summary: "Returns\u0020the\u0020sale\u0020price\u0020per\u0020period\u0020for\u0020a\u0020product\u0020if\u0020it\u0020is\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_regular_price"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_sale_price\u0028\u0029",
+        name: "get_sale_price",
+        summary: "Returns\u0020the\u0020regular\u0020price\u0020per\u0020period\u0020for\u0020a\u0020product\u0020if\u0020it\u0020is\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_sale_price"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_period\u0028\u0029",
+        name: "get_period",
+        summary: "Returns\u0020the\u0020subscription\u0020period\u0020for\u0020a\u0020product,\u0020if\u0020it\u0027s\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_period"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_interval\u0028\u0029",
+        name: "get_interval",
+        summary: "Returns\u0020the\u0020subscription\u0020interval\u0020for\u0020a\u0020product,\u0020if\u0020it\u0027s\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_interval"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_length\u0028\u0029",
+        name: "get_length",
+        summary: "Returns\u0020the\u0020length\u0020of\u0020a\u0020subscription\u0020product,\u0020if\u0020it\u0020is\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_length"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_trial_length\u0028\u0029",
+        name: "get_trial_length",
+        summary: "Returns\u0020the\u0020trial\u0020length\u0020of\u0020a\u0020subscription\u0020product,\u0020if\u0020it\u0020is\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_trial_length"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_trial_period\u0028\u0029",
+        name: "get_trial_period",
+        summary: "Returns\u0020the\u0020trial\u0020period\u0020of\u0020a\u0020subscription\u0020product,\u0020if\u0020it\u0020is\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_trial_period"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_sign_up_fee\u0028\u0029",
+        name: "get_sign_up_fee",
+        summary: "Returns\u0020the\u0020sign\u002Dup\u0020fee\u0020for\u0020a\u0020subscription,\u0020if\u0020it\u0020is\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_sign_up_fee"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_first_renewal_payment_date\u0028\u0029",
+        name: "get_first_renewal_payment_date",
+        summary: "Takes\u0020a\u0020subscription\u0020product\u0027s\u0020ID\u0020and\u0020returns\u0020the\u0020date\u0020on\u0020which\u0020the\u0020first\u0020renewal\u0020payment\u0020will\u0020be\u0020processed\nbased\u0020on\u0020the\u0020subscription\u0027s\u0020length\u0020and\u0020calculated\u0020from\u0020either\u0020the\u0020\u0024from_date\u0020if\u0020specified,\u0020or\u0020the\u0020current\u0020date\/time.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_first_renewal_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_first_renewal_payment_time\u0028\u0029",
+        name: "get_first_renewal_payment_time",
+        summary: "Takes\u0020a\u0020subscription\u0020product\u0027s\u0020ID\u0020and\u0020returns\u0020the\u0020date\u0020on\u0020which\u0020the\u0020first\u0020renewal\u0020payment\u0020will\u0020be\u0020processed\nbased\u0020on\u0020the\u0020subscription\u0027s\u0020length\u0020and\u0020calculated\u0020from\u0020either\u0020the\u0020\u0024from_date\u0020if\u0020specified,\u0020or\u0020the\u0020current\u0020date\/time.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_first_renewal_payment_time"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_expiration_date\u0028\u0029",
+        name: "get_expiration_date",
+        summary: "Takes\u0020a\u0020subscription\u0020product\u0027s\u0020ID\u0020and\u0020returns\u0020the\u0020date\u0020on\u0020which\u0020the\u0020subscription\u0020product\u0020will\u0020expire,\nbased\u0020on\u0020the\u0020subscription\u0027s\u0020length\u0020and\u0020calculated\u0020from\u0020either\u0020the\u0020\u0024from_date\u0020if\u0020specified,\u0020or\u0020the\u0020current\u0020date\/time.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_trial_expiration_date\u0028\u0029",
+        name: "get_trial_expiration_date",
+        summary: "Takes\u0020a\u0020subscription\u0020product\u0027s\u0020ID\u0020and\u0020returns\u0020the\u0020date\u0020on\u0020which\u0020the\u0020subscription\u0020trial\u0020will\u0020expire,\nbased\u0020on\u0020the\u0020subscription\u0027s\u0020trial\u0020length\u0020and\u0020calculated\u0020from\u0020either\u0020the\u0020\u0024from_date\u0020if\u0020specified,\nor\u0020the\u0020current\u0020date\/time.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_trial_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aset_subscription_variation_class\u0028\u0029",
+        name: "set_subscription_variation_class",
+        summary: "Checks\u0020the\u0020classname\u0020being\u0020used\u0020for\u0020a\u0020product\u0020variation\u0020to\u0020see\u0020if\u0020it\u0020should\u0020be\u0020a\u0020subscription\u0020product\nvariation,\u0020and\u0020if\u0020so,\u0020returns\u0020this\u0020as\u0020the\u0020class\u0020which\u0020should\u0020be\u0020instantiated\u0020\u0028instead\u0020of\u0020the\u0020default\nWC_Product_Variation\u0020class\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_set_subscription_variation_class"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Amaybe_set_variations_price_html\u0028\u0029",
+        name: "maybe_set_variations_price_html",
+        summary: "Ensures\u0020a\u0020price\u0020is\u0020displayed\u0020for\u0020subscription\u0020variation\u0020where\u0020WC\u0020would\u0020normally\u0020ignore\u0020it\u0020\u0028i.e.\u0020when\u0020prices\u0020are\u0020equal\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_maybe_set_variations_price_html"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Auser_can_not_delete_subscription\u0028\u0029",
+        name: "user_can_not_delete_subscription",
+        summary: "Do\u0020not\u0020allow\u0020any\u0020user\u0020to\u0020delete\u0020a\u0020subscription\u0020product\u0020if\u0020it\u0020is\u0020associated\u0020with\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_user_can_not_delete_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Asubscription_row_actions\u0028\u0029",
+        name: "subscription_row_actions",
+        summary: "Make\u0020sure\u0020the\u0020\u0027untrash\u0027\u0020\u0028i.e.\u0020\u0022Restore\u0022\u0029\u0020row\u0020action\u0020is\u0020displayed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_subscription_row_actions"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Asubscription_bulk_actions\u0028\u0029",
+        name: "subscription_bulk_actions",
+        summary: "Remove\u0020the\u0020\u0022Delete\u0020Permanently\u0022\u0020action\u0020from\u0020the\u0020bulk\u0020actions\u0020select\u0020element\u0020on\u0020the\u0020Products\u0020admin\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_subscription_bulk_actions"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aneeds_one_time_shipping\u0028\u0029",
+        name: "needs_one_time_shipping",
+        summary: "Check\u0020whether\u0020a\u0020product\u0020has\u0020one\u002Dtime\u0020shipping\u0020only.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_needs_one_time_shipping"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aprevent_scheduled_deletion\u0028\u0029",
+        name: "prevent_scheduled_deletion",
+        summary: "Hooked\u0020to\u0020the\u0020\u0040see\u0020\u0027wp_scheduled_delete\u0027\u0020WP\u002DCron\u0020scheduled\u0020task\u0020to\u0020rename\u0020the\u0020\u0027_wp_trash_meta_time\u0027\u0020meta\u0020value\nas\u0020\u0027_wc_trash_meta_time\u0027.\u0020This\u0020is\u0020the\u0020flag\u0020used\u0020by\u0020WordPress\u0020to\u0020determine\u0020which\u0020posts\u0020should\u0020be\u0020automatically\npurged\u0020from\u0020the\u0020trash.\u0020We\u0020want\u0020to\u0020make\u0020sure\u0020Subscriptions\u0020products\u0020are\u0020not\u0020automatically\u0020purged\u0020\u0028but\u0020still\u0020want\nto\u0020keep\u0020a\u0020record\u0020of\u0020when\u0020the\u0020product\u0020was\u0020trashed\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_prevent_scheduled_deletion"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aremove_variations\u0028\u0029",
+        name: "remove_variations",
+        summary: "Trash\u0020subscription\u0020variations\u0020\u002D\u0020don\u0027t\u0020delete\u0020them\u0020permanently.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_remove_variations"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Abulk_edit_variations\u0028\u0029",
+        name: "bulk_edit_variations",
+        summary: "Save\u0020variation\u0020meta\u0020data\u0020when\u0020it\u0020is\u0020bulk\u0020edited\u0020from\u0020the\u0020Edit\u0020Product\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_bulk_edit_variations"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aadd_variation_removal_flag\u0028\u0029",
+        name: "add_variation_removal_flag",
+        summary: "Hooked\u0020to\u0020\u0060woocommerce_product_after_variable_attributes\u0060.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_add_variation_removal_flag"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Acheck_product_variations_for_syncd_or_trial\u0028\u0029",
+        name: "check_product_variations_for_syncd_or_trial",
+        summary: "Processes\u0020an\u0020AJAX\u0020request\u0020to\u0020check\u0020if\u0020a\u0020product\u0020has\u0020a\u0020variation\u0020which\u0020is\u0020either\u0020sync\u0027d\u0020or\u0020has\u0020a\u0020trial.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_check_product_variations_for_syncd_or_trial"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Amaybe_update_one_time_shipping_on_variation_edits\u0028\u0029",
+        name: "maybe_update_one_time_shipping_on_variation_edits",
+        summary: "Processes\u0020an\u0020AJAX\u0020request\u0020to\u0020update\u0020a\u0020product\u0027s\u0020One\u0020Time\u0020Shipping\u0020setting\u0020after\u0020a\u0020bulk\u0020variation\u0020edit\u0020has\u0020been\u0020made.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_maybe_update_one_time_shipping_on_variation_edits"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Amaybe_get_product_instance\u0028\u0029",
+        name: "maybe_get_product_instance",
+        summary: "Wrapper\u0020to\u0020check\u0020whether\u0020we\u0020have\u0020a\u0020product\u0020ID\u0020or\u0020product\u0020and\u0020if\u0020we\u0020have\u0020the\u0020former,\u0020return\u0020the\u0020later.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_maybe_get_product_instance"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_meta_data\u0028\u0029",
+        name: "get_meta_data",
+        summary: "Get\u0020a\u0020piece\u0020of\u0020subscription\u0020related\u0020meta\u0020data\u0020for\u0020a\u0020product\u0020in\u0020a\u0020version\u0020compatible\u0020way.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_meta_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Avariable_subscription_product_sync\u0028\u0029",
+        name: "variable_subscription_product_sync",
+        summary: "sync\u0020variable\u0020product\u0020min\/max\u0020prices\u0020with\u0020WC\u00203.0",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_variable_subscription_product_sync"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_parent_ids\u0028\u0029",
+        name: "get_parent_ids",
+        summary: "Get\u0020an\u0020array\u0020of\u0020parent\u0020IDs\u0020from\u0020a\u0020potential\u0020child\u0020product,\u0020used\u0020to\u0020determine\u0020if\u0020a\u0020product\u0020belongs\u0020to\u0020a\u0020group.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_parent_ids"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_visible_grouped_parent_product_ids\u0028\u0029",
+        name: "get_visible_grouped_parent_product_ids",
+        summary: "Get\u0020a\u0020product\u0027s\u0020list\u0020of\u0020parent\u0020IDs\u0020which\u0020are\u0020a\u0020grouped\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_visible_grouped_parent_product_ids"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_add_to_cart_text\u0028\u0029",
+        name: "get_add_to_cart_text",
+        summary: "Gets\u0020the\u0020add\u0020to\u0020cart\u0020text\u0020for\u0020subscription\u0020products.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_add_to_cart_text"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Avalidate_variation_deletion\u0028\u0029",
+        name: "validate_variation_deletion",
+        summary: "Validates\u0020an\u0020ajax\u0020request\u0020to\u0020delete\u0020a\u0020subscription\u0020variation.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_validate_variation_deletion"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aadd_to_cart_text\u0028\u0029",
+        name: "add_to_cart_text",
+        summary: "Override\u0020the\u0020WooCommerce\u0020\u0022Add\u0020to\u0020cart\u0022\u0020text\u0020with\u0020\u0022Sign\u0020up\u0020now\u0022.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_add_to_cart_text"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Ais_purchasable\u0028\u0029",
+        name: "is_purchasable",
+        summary: "If\u0020a\u0020product\u0020is\u0020being\u0020marked\u0020as\u0020not\u0020purchasable\u0020because\u0020it\u0020is\u0020limited\u0020and\u0020the\u0020customer\u0020has\u0020a\u0020subscription,\nbut\u0020the\u0020current\u0020request\u0020is\u0020to\u0020resubscribe\u0020to\u0020the\u0020subscription,\u0020then\u0020mark\u0020it\u0020as\u0020purchasable.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_is_purchasable"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003A\u0024order_awaiting_payment_for_product",
+        name: "order_awaiting_payment_for_product",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#property_order_awaiting_payment_for_product"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_sign_up_fee_including_tax\u0028\u0029",
+        name: "get_sign_up_fee_including_tax",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020\u0028including\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price\u0020used\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_sign_up_fee_including_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003Aget_sign_up_fee_excluding_tax\u0028\u0029",
+        name: "get_sign_up_fee_excluding_tax",
+        summary: "Returns\u0020the\u0020sign\u0020up\u0020fee\u0020\u0028excluding\u0020tax\u0029\u0020by\u0020filtering\u0020the\u0020products\u0020price\u0020used\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#method_get_sign_up_fee_excluding_tax"
+    },{
+        fqsen: "\\WC_Subscriptions_Product\u003A\u003A\u0024subscription_meta_fields",
+        name: "subscription_meta_fields",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Product.html#property_subscription_meta_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order",
+        name: "WC_Subscriptions_Renewal_Order",
+        summary: "Subscriptions\u0020Renewal\u0020Order\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Atrigger_renewal_payment_complete\u0028\u0029",
+        name: "trigger_renewal_payment_complete",
+        summary: "Trigger\u0020a\u0020special\u0020hook\u0020for\u0020payments\u0020on\u0020a\u0020completed\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_trigger_renewal_payment_complete"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aget_failed_order_replaced_by\u0028\u0029",
+        name: "get_failed_order_replaced_by",
+        summary: "Check\u0020if\u0020a\u0020given\u0020renewal\u0020order\u0020was\u0020created\u0020to\u0020replace\u0020a\u0020failed\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_get_failed_order_replaced_by"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Amaybe_record_subscription_payment\u0028\u0029",
+        name: "maybe_record_subscription_payment",
+        summary: "Whenever\u0020a\u0020renewal\u0020order\u0027s\u0020status\u0020is\u0020changed,\u0020check\u0020if\u0020a\u0020corresponding\u0020subscription\u0027s\u0020status\u0020should\u0020be\u0020changed",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_maybe_record_subscription_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aadd_order_note\u0028\u0029",
+        name: "add_order_note",
+        summary: "Add\u0020order\u0020note\u0020to\u0020subscription\u0020to\u0020record\u0020the\u0020renewal\u0020order",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_add_order_note"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aprevent_cancelling_renewal_orders\u0028\u0029",
+        name: "prevent_cancelling_renewal_orders",
+        summary: "Do\u0020not\u0020allow\u0020customers\u0020to\u0020cancel\u0020renewal\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_prevent_cancelling_renewal_orders"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aremove_switch_item_meta_keys\u0028\u0029",
+        name: "remove_switch_item_meta_keys",
+        summary: "Removes\u0020switch\u0020line\u0020item\u0020meta\u0020data\u0020so\u0020it\u0020isn\u0027t\u0020copied\u0020to\u0020renewal\u0020order\u0020line\u0020items",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_remove_switch_item_meta_keys"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Agenerate_paid_renewal_order\u0028\u0029",
+        name: "generate_paid_renewal_order",
+        summary: "Generate\u0020an\u0020order\u0020to\u0020record\u0020an\u0020automatic\u0020subscription\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_generate_paid_renewal_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Agenerate_failed_payment_renewal_order\u0028\u0029",
+        name: "generate_failed_payment_renewal_order",
+        summary: "Generate\u0020an\u0020order\u0020to\u0020record\u0020a\u0020subscription\u0020payment\u0020failure.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_generate_failed_payment_renewal_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Amaybe_generate_manual_renewal_order\u0028\u0029",
+        name: "maybe_generate_manual_renewal_order",
+        summary: "Generate\u0020an\u0020order\u0020to\u0020record\u0020a\u0020subscription\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_maybe_generate_manual_renewal_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aget_parent_order_id\u0028\u0029",
+        name: "get_parent_order_id",
+        summary: "Get\u0020the\u0020ID\u0020of\u0020the\u0020parent\u0020order\u0020for\u0020a\u0020subscription\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_get_parent_order_id"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aget_parent_order\u0028\u0029",
+        name: "get_parent_order",
+        summary: "Get\u0020the\u0020parent\u0020order\u0020for\u0020a\u0020subscription\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_get_parent_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aget_renewal_order_count\u0028\u0029",
+        name: "get_renewal_order_count",
+        summary: "Returns\u0020the\u0020number\u0020of\u0020renewals\u0020for\u0020a\u0020given\u0020parent\u0020order",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_get_renewal_order_count"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aget_users_renewal_link\u0028\u0029",
+        name: "get_users_renewal_link",
+        summary: "Returns\u0020a\u0020URL\u0020including\u0020required\u0020parameters\u0020for\u0020an\u0020authenticated\u0020user\u0020to\u0020renew\u0020a\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_get_users_renewal_link"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aget_users_renewal_link_for_product\u0028\u0029",
+        name: "get_users_renewal_link_for_product",
+        summary: "Returns\u0020a\u0020URL\u0020including\u0020required\u0020parameters\u0020for\u0020an\u0020authenticated\u0020user\u0020to\u0020renew\u0020a\u0020subscription\u0020by\u0020product\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_get_users_renewal_link_for_product"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Acan_subscription_be_renewed\u0028\u0029",
+        name: "can_subscription_be_renewed",
+        summary: "Check\u0020if\u0020a\u0020given\u0020subscription\u0020can\u0020be\u0020renewed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_can_subscription_be_renewed"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Amaybe_create_renewal_order_for_user\u0028\u0029",
+        name: "maybe_create_renewal_order_for_user",
+        summary: "Checks\u0020if\u0020the\u0020current\u0020request\u0020is\u0020by\u0020a\u0020user\u0020to\u0020renew\u0020their\u0020subscription,\u0020and\u0020if\u0020it\u0020is\nset\u0020up\u0020a\u0020subscription\u0020renewal\u0020via\u0020the\u0020cart\u0020for\u0020the\u0020product\/variation\u0020that\u0020is\u0020being\u0020renewed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_maybe_create_renewal_order_for_user"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aproduct_addons_adjust_price\u0028\u0029",
+        name: "product_addons_adjust_price",
+        summary: "When\u0020restoring\u0020the\u0020cart\u0020from\u0020the\u0020session,\u0020if\u0020the\u0020cart\u0020item\u0020contains\u0020addons,\u0020but\u0020is\u0020also\na\u0020subscription\u0020renewal,\u0020do\u0020not\u0020adjust\u0020the\u0020price\u0020because\u0020the\u0020original\u0020order\u0027s\u0020price\u0020will\nbe\u0020used,\u0020and\u0020this\u0020includes\u0020the\u0020addons\u0020amounts.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_product_addons_adjust_price"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Agenerate_renewal_order\u0028\u0029",
+        name: "generate_renewal_order",
+        summary: "Created\u0020a\u0020new\u0020order\u0020for\u0020renewing\u0020a\u0020subscription\u0020product\u0020based\u0020on\u0020the\u0020details\u0020of\u0020a\u0020previous\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_generate_renewal_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Ais_purchasable\u0028\u0029",
+        name: "is_purchasable",
+        summary: "If\u0020a\u0020product\u0020is\u0020being\u0020marked\u0020as\u0020not\u0020purchasable\u0020because\u0020it\u0020is\u0020limited\u0020and\u0020the\u0020customer\u0020has\u0020a\u0020subscription,\nbut\u0020the\u0020current\u0020request\u0020is\u0020to\u0020resubscribe\u0020to\u0020the\u0020subscription,\u0020then\u0020mark\u0020it\u0020as\u0020purchasable.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_is_purchasable"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Ais_renewal\u0028\u0029",
+        name: "is_renewal",
+        summary: "Check\u0020if\u0020a\u0020given\u0020order\u0020is\u0020a\u0020subscription\u0020renewal\u0020order\u0020and\u0020optionally,\u0020if\u0020it\u0020is\u0020a\u0020renewal\u0020order\u0020of\u0020a\u0020certain\u0020role.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_is_renewal"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aget_renewal_orders\u0028\u0029",
+        name: "get_renewal_orders",
+        summary: "Returns\u0020the\u0020renewal\u0020orders\u0020for\u0020a\u0020given\u0020parent\u0020order",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_get_renewal_orders"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aget_checkout_payment_url\u0028\u0029",
+        name: "get_checkout_payment_url",
+        summary: "Flag\u0020payment\u0020of\u0020manual\u0020renewal\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_get_checkout_payment_url"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Amaybe_process_failed_renewal_order_payment\u0028\u0029",
+        name: "maybe_process_failed_renewal_order_payment",
+        summary: "Process\u0020a\u0020renewal\u0020payment\u0020when\u0020a\u0020customer\u0020has\u0020completed\u0020the\u0020payment\u0020for\u0020a\u0020renewal\u0020payment\u0020which\u0020previously\u0020failed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_maybe_process_failed_renewal_order_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aprocess_failed_renewal_order_payment\u0028\u0029",
+        name: "process_failed_renewal_order_payment",
+        summary: "If\u0020the\u0020payment\u0020for\u0020a\u0020renewal\u0020order\u0020has\u0020previously\u0020failed\u0020and\u0020is\u0020then\u0020paid,\u0020then\u0020the",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_process_failed_renewal_order_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Amaybe_record_renewal_order_payment\u0028\u0029",
+        name: "maybe_record_renewal_order_payment",
+        summary: "Records\u0020manual\u0020payment\u0020of\u0020a\u0020renewal\u0020order\u0020against\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_maybe_record_renewal_order_payment"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Amaybe_record_renewal_order_payment_failure\u0028\u0029",
+        name: "maybe_record_renewal_order_payment_failure",
+        summary: "Records\u0020manual\u0020payment\u0020of\u0020a\u0020renewal\u0020order\u0020against\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_maybe_record_renewal_order_payment_failure"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Aprocess_subscription_payment_on_child_order\u0028\u0029",
+        name: "process_subscription_payment_on_child_order",
+        summary: "If\u0020the\u0020payment\u0020for\u0020a\u0020renewal\u0020order\u0020has\u0020previously\u0020failed\u0020and\u0020is\u0020then\u0020paid,\u0020we\u0020need\u0020to\u0020make\u0020sure\u0020the\nsubscription\u0020payment\u0020function\u0020is\u0020called.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_process_subscription_payment_on_child_order"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Arenewal_orders_meta_box_section\u0028\u0029",
+        name: "renewal_orders_meta_box_section",
+        summary: "Adds\u0020a\u0020renewal\u0020orders\u0020section\u0020to\u0020the\u0020Related\u0020Orders\u0020meta\u0020box\u0020displayed\u0020on\u0020subscription\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_renewal_orders_meta_box_section"
+    },{
+        fqsen: "\\WC_Subscriptions_Renewal_Order\u003A\u003Atrigger_processed_failed_renewal_order_payment_hook\u0028\u0029",
+        name: "trigger_processed_failed_renewal_order_payment_hook",
+        summary: "Trigger\u0020a\u0020hook\u0020when\u0020a\u0020subscription\u0020suspended\u0020due\u0020to\u0020a\u0020failed\u0020renewal\u0020payment\u0020is\u0020reactivated",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Renewal-Order.html#method_trigger_processed_failed_renewal_order_payment_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser",
+        name: "WC_Subscriptions_Synchroniser",
+        summary: "Allow\u0020for\u0020payment\u0020dates\u0020to\u0020be\u0020synchronised\u0020to\u0020a\u0020specific\u0020day\u0020of\u0020the\u0020week,\u0020month\u0020or\u0020year.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aoption_default\u0028\u0029",
+        name: "option_default",
+        summary: "Set\u0020default\u0020value\u0020of\u0020\u0027no\u0027\u0020for\u0020our\u0020options.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_option_default"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Asanitize_option\u0028\u0029",
+        name: "sanitize_option",
+        summary: "Sanitize\u0020our\u0020options\u0020when\u0020they\u0020are\u0020saved\u0020in\u0020the\u0020admin\u0020area.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_sanitize_option"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Ais_syncing_enabled\u0028\u0029",
+        name: "is_syncing_enabled",
+        summary: "Check\u0020if\u0020payment\u0020syncing\u0020is\u0020enabled\u0020on\u0020the\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_is_syncing_enabled"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Ais_sync_proration_enabled\u0028\u0029",
+        name: "is_sync_proration_enabled",
+        summary: "Check\u0020if\u0020payments\u0020can\u0020be\u0020prorated\u0020on\u0020the\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_is_sync_proration_enabled"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aadd_settings\u0028\u0029",
+        name: "add_settings",
+        summary: "Add\u0020sync\u0020settings\u0020to\u0020the\u0020Subscription\u0027s\u0020settings\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_add_settings"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Asubscription_product_fields\u0028\u0029",
+        name: "subscription_product_fields",
+        summary: "Add\u0020the\u0020sync\u0020setting\u0020fields\u0020to\u0020the\u0020Edit\u0020Product\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_subscription_product_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Avariable_subscription_product_fields\u0028\u0029",
+        name: "variable_subscription_product_fields",
+        summary: "Add\u0020the\u0020sync\u0020setting\u0020fields\u0020to\u0020the\u0020variation\u0020section\u0020of\u0020the\u0020Edit\u0020Product\u0020screen",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_variable_subscription_product_fields"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Asave_subscription_meta\u0028\u0029",
+        name: "save_subscription_meta",
+        summary: "Save\u0020sync\u0020options\u0020when\u0020a\u0020subscription\u0020product\u0020is\u0020saved",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_save_subscription_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aprocess_product_meta_variable_subscription\u0028\u0029",
+        name: "process_product_meta_variable_subscription",
+        summary: "Save\u0020sync\u0020options\u0020when\u0020a\u0020variable\u0020subscription\u0020product\u0020is\u0020saved",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_process_product_meta_variable_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Asave_product_variation\u0028\u0029",
+        name: "save_product_variation",
+        summary: "Save\u0020sync\u0020options\u0020when\u0020a\u0020variable\u0020subscription\u0020product\u0020is\u0020saved",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_save_product_variation"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aadmin_script_parameters\u0028\u0029",
+        name: "admin_script_parameters",
+        summary: "Add\u0020translated\u0020syncing\u0020options\u0020for\u0020our\u0020client\u0020side\u0020script",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_admin_script_parameters"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Ais_product_synced\u0028\u0029",
+        name: "is_product_synced",
+        summary: "Determine\u0020whether\u0020a\u0020product,\u0020specified\u0020with\u0020\u0024product,\u0020needs\u0020to\u0020have\u0020its\u0020first\u0020payment\u0020processed\u0020on\u0020a\nspecific\u0020day\u0020\u0028instead\u0020of\u0020at\u0020the\u0020time\u0020of\u0020sign\u002Dup\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_is_product_synced"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Ais_product_prorated\u0028\u0029",
+        name: "is_product_prorated",
+        summary: "Determine\u0020whether\u0020a\u0020product,\u0020specified\u0020with\u0020\u0024product,\u0020should\u0020have\u0020its\u0020first\u0020payment\u0020processed\u0020on\u0020a\nat\u0020the\u0020time\u0020of\u0020sign\u002Dup\u0020but\u0020prorated\u0020to\u0020the\u0020sync\u0020day.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_is_product_prorated"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Ais_payment_upfront\u0028\u0029",
+        name: "is_payment_upfront",
+        summary: "Determine\u0020whether\u0020the\u0020payment\u0020for\u0020a\u0020subscription\u0020should\u0020be\u0020the\u0020full\u0020price\u0020upfront.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_is_payment_upfront"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_products_payment_day\u0028\u0029",
+        name: "get_products_payment_day",
+        summary: "Get\u0020the\u0020day\u0020of\u0020the\u0020week,\u0020month\u0020or\u0020year\u0020on\u0020which\u0020a\u0020subscription\u0027s\u0020payments\u0020should\u0020be\nsynchronised\u0020to.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_products_payment_day"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Acalculate_first_payment_date\u0028\u0029",
+        name: "calculate_first_payment_date",
+        summary: "Calculate\u0020the\u0020first\u0020payment\u0020date\u0020for\u0020a\u0020synced\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_calculate_first_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_year_sync_options\u0028\u0029",
+        name: "get_year_sync_options",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020sync\u0020options\u0020for\u0020\u0027year\u0027\u0020as\u0020billing\u0020period",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_year_sync_options"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_billing_period_ranges\u0028\u0029",
+        name: "get_billing_period_ranges",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020possible\u0020subscription\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_billing_period_ranges"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aproducts_first_payment_date\u0028\u0029",
+        name: "products_first_payment_date",
+        summary: "Add\u0020the\u0020first\u0020payment\u0020date\u0020to\u0020a\u0020products\u0020summary\u0020section",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_products_first_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_products_first_payment_date\u0028\u0029",
+        name: "get_products_first_payment_date",
+        summary: "Return\u0020a\u0020string\u0020explaining\u0020when\u0020the\u0020first\u0020payment\u0020will\u0020be\u0020completed\u0020for\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_products_first_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aproducts_first_renewal_payment_time\u0028\u0029",
+        name: "products_first_renewal_payment_time",
+        summary: "If\u0020a\u0020product\u0020is\u0020synchronised\u0020to\u0020a\u0020date\u0020in\u0020the\u0020future,\u0020make\u0020sure\u0020that\u0020is\u0020set\u0020as\u0020the\u0020product\u0027s\u0020first\u0020payment\u0020date",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_products_first_renewal_payment_time"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_set_free_trial\u0028\u0029",
+        name: "maybe_set_free_trial",
+        summary: "Make\u0020sure\u0020a\u0020synchronised\u0020subscription\u0027s\u0020price\u0020includes\u0020a\u0020free\u0020trial,\u0020unless\u0020it\u0027s\u0020first\u0020payment\u0020is\u0020today.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_set_free_trial"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_unset_free_trial\u0028\u0029",
+        name: "maybe_unset_free_trial",
+        summary: "Make\u0020sure\u0020a\u0020synchronised\u0020subscription\u0027s\u0020price\u0020includes\u0020a\u0020free\u0020trial,\u0020unless\u0020it\u0027s\u0020first\u0020payment\u0020is\u0020today.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_unset_free_trial"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Acart_contains_synced_subscription\u0028\u0029",
+        name: "cart_contains_synced_subscription",
+        summary: "Check\u0020if\u0020the\u0020cart\u0020includes\u0020a\u0020subscription\u0020that\u0020needs\u0020to\u0020be\u0020synced.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_cart_contains_synced_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Arecalculate_product_trial_expiration_date\u0028\u0029",
+        name: "recalculate_product_trial_expiration_date",
+        summary: "Maybe\u0020set\u0020the\u0020time\u0020of\u0020a\u0020product\u0027s\u0020trial\u0020expiration\u0020to\u0020be\u0020the\u0020same\u0020as\u0020the\u0020synced\u0020first\u0020payment\u0020date\u0020for\u0020products\u0020where\u0020the\u0020first\nrenewal\u0020payment\u0020date\u0020falls\u0020on\u0020the\u0020same\u0020day\u0020as\u0020the\u0020trial\u0020expiration\u0020date,\u0020but\u0020the\u0020trial\u0020expiration\u0020time\u0020is\u0020later\u0020in\u0020the\u0020day.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_recalculate_product_trial_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Arecalculate_product_expiration_date\u0028\u0029",
+        name: "recalculate_product_expiration_date",
+        summary: "Make\u0020sure\u0020the\u0020expiration\u0020date\u0020is\u0020calculated\u0020from\u0020the\u0020synced\u0020start\u0020date\u0020for\u0020products\u0020where\u0020the\u0020start\u0020date\nwill\u0020be\u0020synced.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_recalculate_product_expiration_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Ais_today\u0028\u0029",
+        name: "is_today",
+        summary: "Check\u0020if\u0020a\u0020given\u0020timestamp\u0020\u0028in\u0020the\u0020UTC\u0020timezone\u0029\u0020is\u0020equivalent\u0020to\u0020today\u0020in\u0020the\u0020site\u0027s\u0020time.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_is_today"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_synced_sign_up_fee\u0028\u0029",
+        name: "get_synced_sign_up_fee",
+        summary: "Filters\u0020WC_Subscriptions_Order\u003A\u003Aget_sign_up_fee\u0028\u0029\u0020to\u0020make\u0020sure\u0020the\u0020sign\u002Dup\u0020fee\u0020for\u0020a\u0020subscription\u0020product\nthat\u0020is\u0020synchronised\u0020is\u0020returned\u0020correctly.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_synced_sign_up_fee"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aset_prorated_price_for_calculation\u0028\u0029",
+        name: "set_prorated_price_for_calculation",
+        summary: "Removes\u0020the\u0020\u0022set_subscription_prices_for_calculation\u0022\u0020filter\u0020from\u0020the\u0020WC\u0020Product\u0027s\u0020woocommerce_get_price\u0020hook\u0020once",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_set_prorated_price_for_calculation"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_weekday\u0028\u0029",
+        name: "get_weekday",
+        summary: "Retrieve\u0020the\u0020full\u0020translated\u0020weekday\u0020word.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_weekday"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_do_not_reduce_stock\u0028\u0029",
+        name: "maybe_do_not_reduce_stock",
+        summary: "Override\u0020quantities\u0020used\u0020to\u0020lower\u0020stock\u0020levels\u0020by\u0020when\u0020using\u0020synced\u0020subscriptions.\u0020If\u0020it\u0027s\u0020a\u0020synced\u0020product\nthat\u0020does\u0020not\u0020have\u0020proration\u0020enabled\u0020and\u0020the\u0020payment\u0020date\u0020is\u0020not\u0020today,\u0020do\u0020not\u0020lower\u0020stock\u0020levels.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_do_not_reduce_stock"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_add_subscription_meta\u0028\u0029",
+        name: "maybe_add_subscription_meta",
+        summary: "Add\u0020subscription\u0020meta\u0020for\u0020subscription\u0020that\u0020contains\u0020a\u0020synced\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_add_subscription_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aajax_maybe_add_meta_for_item\u0028\u0029",
+        name: "ajax_maybe_add_meta_for_item",
+        summary: "When\u0020adding\u0020an\u0020item\u0020to\u0020an\u0020order\/subscription\u0020via\u0020the\u0020Add\/Edit\u0020Subscription\u0020administration\u0020interface,\u0020check\u0020if\u0020we\u0020should\u0020be\u0020setting\nthe\u0020sync\u0020meta\u0020on\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_ajax_maybe_add_meta_for_item"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_add_meta_for_new_product\u0028\u0029",
+        name: "maybe_add_meta_for_new_product",
+        summary: "When\u0020adding\u0020a\u0020product\u0020to\u0020an\u0020order\/subscription\u0020via\u0020the\u0020WC_Subscription\u003A\u003Aadd_product\u0028\u0029\u0020method,\u0020check\u0020if\u0020we\u0020should\u0020be\u0020setting\nthe\u0020sync\u0020meta\u0020on\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_add_meta_for_new_product"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Asubscription_contains_synced_product\u0028\u0029",
+        name: "subscription_contains_synced_product",
+        summary: "Check\u0020if\u0020a\u0020given\u0020subscription\u0020is\u0020synced\u0020to\u0020a\u0020certain\u0020day.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_subscription_contains_synced_product"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aadd_to_recurring_cart_key\u0028\u0029",
+        name: "add_to_recurring_cart_key",
+        summary: "If\u0020the\u0020cart\u0020item\u0020is\u0020synced,\u0020add\u0020a\u0020\u0027_synced\u0027\u0020string\u0020to\u0020the\u0020recurring\u0020cart\u0020key.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_add_to_recurring_cart_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_add_meta_for_new_line_item\u0028\u0029",
+        name: "maybe_add_meta_for_new_line_item",
+        summary: "When\u0020adding\u0020a\u0020product\u0020line\u0020item\u0020to\u0020an\u0020order\/subscription\u0020via\u0020the\u0020WC_Abstract_Order\u003A\u003Aadd_product\u0028\u0029\u0020method,\u0020check\u0020if\u0020we\u0020should\u0020be\u0020setting\nthe\u0020sync\u0020meta\u0020on\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_add_meta_for_new_line_item"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_add_line_item_meta\u0028\u0029",
+        name: "maybe_add_line_item_meta",
+        summary: "Store\u0020a\u0020synced\u0020product\u0027s\u0020signup\u0020fee\u0020on\u0020the\u0020line\u0020item\u0020on\u0020the\u0020subscription\u0020and\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_add_line_item_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_add_order_item_meta\u0028\u0029",
+        name: "maybe_add_order_item_meta",
+        summary: "Store\u0020a\u0020synced\u0020product\u0027s\u0020signup\u0020fee\u0020on\u0020the\u0020line\u0020item\u0020on\u0020the\u0020subscription\u0020and\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_add_order_item_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Ahide_order_itemmeta\u0028\u0029",
+        name: "hide_order_itemmeta",
+        summary: "Hides\u0020synced\u0020subscription\u0020meta\u0020on\u0020the\u0020edit\u0020order\u0020and\u0020subscription\u0020screen\u0020on\u0020non\u002Ddebug\u0020sites.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_hide_order_itemmeta"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_number_of_grace_period_days\u0028\u0029",
+        name: "get_number_of_grace_period_days",
+        summary: "Gets\u0020the\u0020number\u0020of\u0020sign\u002Dup\u0020grace\u0020period\u0020days.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_number_of_grace_period_days"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aorder_autocomplete\u0028\u0029",
+        name: "order_autocomplete",
+        summary: "Automatically\u0020set\u0020the\u0020order\u0027s\u0020status\u0020to\u0020complete\u0020if\u0020all\u0020the\u0020subscriptions\u0020in\u0020an\u0020order\nare\u0020synced\u0020and\u0020the\u0020order\u0020total\u0020is\u0020zero.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_order_autocomplete"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Acustomise_subscription_price_string\u0028\u0029",
+        name: "customise_subscription_price_string",
+        summary: "Add\u0020the\u0020first\u0020payment\u0020date\u0020to\u0020the\u0020end\u0020of\u0020the\u0020subscription\u0020to\u0020clarify\u0020when\u0020the\u0020first\u0020payment\u0020will\u0020be\u0020processed",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_customise_subscription_price_string"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_hide_free_trial\u0028\u0029",
+        name: "maybe_hide_free_trial",
+        summary: "Hid\u0020the\u0020trial\u0020period\u0020for\u0020a\u0020synchronised\u0020subscription\u0020unless\u0020the\u0020related\u0020product\u0020actually\u0020has\u0020a\u0020trial\u0020period\u0020\u0028because\nwe\u0020use\u0020a\u0020trial\u0020period\u0020to\u0020set\u0020the\u0020original\u0020order\u0020totals\u0020to\u00200\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_hide_free_trial"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Acharge_shipping_up_front\u0028\u0029",
+        name: "charge_shipping_up_front",
+        summary: "Let\u0020other\u0020functions\u0020know\u0020shipping\u0020should\u0020not\u0020be\u0020charged\u0020on\u0020the\u0020initial\u0020order\u0020when\nthe\u0020cart\u0020contains\u0020a\u0020synchronised\u0020subscription\u0020and\u0020no\u0020other\u0020items\u0020which\u0020need\u0020shipping.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_charge_shipping_up_front"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_first_payment_date\u0028\u0029",
+        name: "get_first_payment_date",
+        summary: "Make\u0020sure\u0020anything\u0020requesting\u0020the\u0020first\u0020payment\u0020date\u0020for\u0020a\u0020synced\u0020subscription\u0020on\u0020the\u0020front\u002Dend\u0020receives\na\u0020date\u0020which\u0020takes\u0020into\u0020account\u0020the\u0020day\u0020on\u0020which\u0020payments\u0020should\u0020be\u0020processed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_first_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Amaybe_set_payment_date\u0028\u0029",
+        name: "maybe_set_payment_date",
+        summary: "Tell\u0020anything\u0020hooking\u0020to\u0020\u0027woocommerce_subscriptions_calculated_next_payment_date\u0027\nto\u0020use\u0020the\u0020synchronised\u0020first\u0020payment\u0020date\u0020as\u0020the\u0020next\u0020payment\u0020date\u0020\u0028if\u0020the\u0020first\npayment\u0020date\u0020isn\u0027t\u0020today,\u0020meaning\u0020the\u0020first\u0020payment\u0020won\u0027t\u0020be\u0020charged\u0020today\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_maybe_set_payment_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aorder_contains_synced_subscription\u0028\u0029",
+        name: "order_contains_synced_subscription",
+        summary: "Check\u0020if\u0020a\u0020given\u0020order\u0020included\u0020a\u0020subscription\u0020that\u0020is\u0020synced\u0020to\u0020a\u0020certain\u0020day.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_order_contains_synced_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aadd_order_meta\u0028\u0029",
+        name: "add_order_meta",
+        summary: "If\u0020the\u0020order\u0020being\u0020generated\u0020is\u0020for\u0020a\u0020synced\u0020subscription,\u0020keep\u0020a\u0020record\u0020of\u0020the\u0020syncing\u0020related\u0020meta\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_add_order_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aprefill_order_item_meta\u0028\u0029",
+        name: "prefill_order_item_meta",
+        summary: "If\u0020the\u0020subscription\u0020being\u0020generated\u0020is\u0020synced,\u0020set\u0020the\u0020syncing\u0020related\u0020meta\u0020data\u0020correctly.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_prefill_order_item_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Aget_sign_up_fee\u0028\u0029",
+        name: "get_sign_up_fee",
+        summary: "Filters\u0020WC_Subscriptions_Order\u003A\u003Aget_sign_up_fee\u0028\u0029\u0020to\u0020make\u0020sure\u0020the\u0020sign\u002Dup\u0020fee\u0020for\u0020a\u0020subscription\u0020product\nthat\u0020is\u0020synchronised\u0020is\u0020returned\u0020correctly.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_get_sign_up_fee"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Acart_contains_prorated_subscription\u0028\u0029",
+        name: "cart_contains_prorated_subscription",
+        summary: "Check\u0020if\u0020the\u0020cart\u0020includes\u0020a\u0020subscription\u0020that\u0020needs\u0020to\u0020be\u0020prorated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_cart_contains_prorated_subscription"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Arecalculate_trial_end_date\u0028\u0029",
+        name: "recalculate_trial_end_date",
+        summary: "Maybe\u0020recalculate\u0020the\u0020trial\u0020end\u0020date\u0020for\u0020synced\u0020subscription\u0020products\u0020that\u0020contain\u0020the\u0020unnecessary\n\u0022one\u0020day\u0020trial\u0022\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_recalculate_trial_end_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003Arecalculate_end_date\u0028\u0029",
+        name: "recalculate_end_date",
+        summary: "Maybe\u0020recalculate\u0020the\u0020end\u0020date\u0020for\u0020synced\u0020subscription\u0020products\u0020that\u0020contain\u0020the\u0020unnecessary\n\u0022one\u0020day\u0020trial\u0022\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#method_recalculate_end_date"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024setting_id",
+        name: "setting_id",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_setting_id"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024setting_id_proration",
+        name: "setting_id_proration",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_setting_id_proration"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024setting_id_days_no_fee",
+        name: "setting_id_days_no_fee",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_setting_id_days_no_fee"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024post_meta_key",
+        name: "post_meta_key",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_post_meta_key"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024post_meta_key_day",
+        name: "post_meta_key_day",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_post_meta_key_day"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024post_meta_key_month",
+        name: "post_meta_key_month",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_post_meta_key_month"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024sync_field_label",
+        name: "sync_field_label",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_sync_field_label"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024sync_description",
+        name: "sync_description",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_sync_description"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024sync_description_year",
+        name: "sync_description_year",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_sync_description_year"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024billing_period_ranges",
+        name: "billing_period_ranges",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_billing_period_ranges"
+    },{
+        fqsen: "\\WC_Subscriptions_Synchroniser\u003A\u003A\u0024weekdays",
+        name: "weekdays",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Synchroniser.html#property_weekdays"
+    },{
+        fqsen: "\\WC_Subscriptions_Tracker",
+        name: "WC_Subscriptions_Tracker",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Tracker.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Tracker\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialize\u0020the\u0020Tracker.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Tracker.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Tracker\u003A\u003Aadd_subscriptions_tracking_data\u0028\u0029",
+        name: "add_subscriptions_tracking_data",
+        summary: "Adds\u0020Subscriptions\u0020data\u0020to\u0020the\u0020WC\u0020tracked\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Tracker.html#method_add_subscriptions_tracking_data"
+    },{
+        fqsen: "\\WC_Subscriptions_Tracker\u003A\u003Aget_subscriptions_options\u0028\u0029",
+        name: "get_subscriptions_options",
+        summary: "Gets\u0020the\u0020tracked\u0020Subscriptions\u0020options\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Tracker.html#method_get_subscriptions_options"
+    },{
+        fqsen: "\\WC_Subscriptions_Tracker\u003A\u003Aget_subscriptions\u0028\u0029",
+        name: "get_subscriptions",
+        summary: "Gets\u0020the\u0020combined\u0020subscription\u0020dates,\u0020count,\u0020and\u0020totals\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Tracker.html#method_get_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Tracker\u003A\u003Aget_subscription_counts\u0028\u0029",
+        name: "get_subscription_counts",
+        summary: "Gets\u0020subscription\u0020counts.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Tracker.html#method_get_subscription_counts"
+    },{
+        fqsen: "\\WC_Subscriptions_Tracker\u003A\u003Aget_subscription_orders\u0028\u0029",
+        name: "get_subscription_orders",
+        summary: "Gets\u0020subscription\u0020order\u0020counts\u0020and\u0020totals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Tracker.html#method_get_subscription_orders"
+    },{
+        fqsen: "\\WC_Subscriptions_Tracker\u003A\u003Aget_subscription_dates\u0028\u0029",
+        name: "get_subscription_dates",
+        summary: "Gets\u0020first\u0020and\u0020last\u0020subscription\u0020created\u0020dates.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Tracker.html#method_get_subscription_dates"
+    },{
+        fqsen: "\\WCS_Action_Scheduler",
+        name: "WCS_Action_Scheduler",
+        summary: "Scheduler\u0020for\u0020subscription\u0020events\u0020that\u0020uses\u0020the\u0020Action\u0020Scheduler",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Scheduler.html"
+    },{
+        fqsen: "\\WCS_Action_Scheduler\u003A\u003Aupdate_date\u0028\u0029",
+        name: "update_date",
+        summary: "Maybe\u0020set\u0020a\u0020schedule\u0020action\u0020if\u0020the\u0020new\u0020date\u0020is\u0020in\u0020the\u0020future",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Scheduler.html#method_update_date"
+    },{
+        fqsen: "\\WCS_Action_Scheduler\u003A\u003Adelete_date\u0028\u0029",
+        name: "delete_date",
+        summary: "Delete\u0020a\u0020date\u0020from\u0020the\u0020action\u0020scheduler\u0020queue",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Scheduler.html#method_delete_date"
+    },{
+        fqsen: "\\WCS_Action_Scheduler\u003A\u003Aupdate_status\u0028\u0029",
+        name: "update_status",
+        summary: "When\u0020a\u0020subscription\u0027s\u0020status\u0020is\u0020updated,\u0020maybe\u0020schedule\u0020an\u0020event",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Scheduler.html#method_update_status"
+    },{
+        fqsen: "\\WCS_Action_Scheduler\u003A\u003Aget_scheduled_action_hook\u0028\u0029",
+        name: "get_scheduled_action_hook",
+        summary: "Get\u0020the\u0020hook\u0020to\u0020use\u0020in\u0020the\u0020action\u0020scheduler\u0020for\u0020the\u0020date\u0020type",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Scheduler.html#method_get_scheduled_action_hook"
+    },{
+        fqsen: "\\WCS_Action_Scheduler\u003A\u003Aget_action_args\u0028\u0029",
+        name: "get_action_args",
+        summary: "Get\u0020the\u0020args\u0020to\u0020set\u0020on\u0020the\u0020scheduled\u0020action.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Scheduler.html#method_get_action_args"
+    },{
+        fqsen: "\\WCS_Action_Scheduler\u003A\u003Aunschedule_actions\u0028\u0029",
+        name: "unschedule_actions",
+        summary: "Get\u0020the\u0020args\u0020to\u0020set\u0020on\u0020the\u0020scheduled\u0020action.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Scheduler.html#method_unschedule_actions"
+    },{
+        fqsen: "\\WCS_Action_Scheduler\u003A\u003A\u0024action_hooks",
+        name: "action_hooks",
+        summary: "An\u0020internal\u0020cache\u0020of\u0020action\u0020hooks\u0020and\u0020corresponding\u0020date\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Scheduler.html#property_action_hooks"
+    },{
+        fqsen: "\\WCS_Blocks_Integration",
+        name: "WCS_Blocks_Integration",
+        summary: "Class\u0020for\u0020integrating\u0020with\u0020WooCommerce\u0020Blocks",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Blocks-Integration.html"
+    },{
+        fqsen: "\\WCS_Blocks_Integration\u003A\u003Aget_name\u0028\u0029",
+        name: "get_name",
+        summary: "The\u0020name\u0020of\u0020the\u0020integration.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Blocks-Integration.html#method_get_name"
+    },{
+        fqsen: "\\WCS_Blocks_Integration\u003A\u003Ainitialize\u0028\u0029",
+        name: "initialize",
+        summary: "When\u0020called\u0020invokes\u0020any\u0020initialization\/setup\u0020for\u0020the\u0020integration.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Blocks-Integration.html#method_initialize"
+    },{
+        fqsen: "\\WCS_Blocks_Integration\u003A\u003Aget_script_handles\u0028\u0029",
+        name: "get_script_handles",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020script\u0020handles\u0020to\u0020enqueue\u0020in\u0020the\u0020frontend\u0020context.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Blocks-Integration.html#method_get_script_handles"
+    },{
+        fqsen: "\\WCS_Blocks_Integration\u003A\u003Aget_editor_script_handles\u0028\u0029",
+        name: "get_editor_script_handles",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020script\u0020handles\u0020to\u0020enqueue\u0020in\u0020the\u0020editor\u0020context.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Blocks-Integration.html#method_get_editor_script_handles"
+    },{
+        fqsen: "\\WCS_Blocks_Integration\u003A\u003Aget_script_data\u0028\u0029",
+        name: "get_script_data",
+        summary: "An\u0020array\u0020of\u0020key,\u0020value\u0020pairs\u0020of\u0020data\u0020made\u0020available\u0020to\u0020the\u0020block\u0020on\u0020the\u0020client\u0020side.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Blocks-Integration.html#method_get_script_data"
+    },{
+        fqsen: "\\WCS_Blocks_Integration\u003A\u003Aget_file_version\u0028\u0029",
+        name: "get_file_version",
+        summary: "Get\u0020the\u0020file\u0020modified\u0020time\u0020as\u0020a\u0020cache\u0020buster\u0020if\u0020we\u0027re\u0020in\u0020dev\u0020mode.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Blocks-Integration.html#method_get_file_version"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager",
+        name: "WCS_Cached_Data_Manager",
+        summary: "Subscription\u0020Cached\u0020Data\u0020Manager\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "WCS_Cache_Manager\u0020constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method___construct"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Aload_logger\u0028\u0029",
+        name: "load_logger",
+        summary: "Attaches\u0020logger",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_load_logger"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Alog\u0028\u0029",
+        name: "log",
+        summary: "Wrapper\u0020function\u0020around\u0020WC_Logger\u002D\u003Elog",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_log"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Acache_and_get\u0028\u0029",
+        name: "cache_and_get",
+        summary: "Helper\u0020function\u0020for\u0020fetching\u0020cached\u0020data\u0020or\u0020updating\u0020and\u0020storing\u0020new\u0020data\u0020provided\u0020by\u0020callback.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_cache_and_get"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Apurge_delete\u0028\u0029",
+        name: "purge_delete",
+        summary: "Clearing\u0020cache\u0020when\u0020a\u0020post\u0020is\u0020deleted",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_purge_delete"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Apurge_from_metadata\u0028\u0029",
+        name: "purge_from_metadata",
+        summary: "When\u0020subscription\u0020related\u0020metadata\u0020is\u0020added\u0020\/\u0020deleted\u0020\/\u0020updated\u0020on\u0020an\u0020order,\u0020we\u0020need\u0020to\u0020invalidate\u0020the\u0020subscription\u0020related\u0020orders\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_purge_from_metadata"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Aclear_related_order_cache\u0028\u0029",
+        name: "clear_related_order_cache",
+        summary: "Wrapper\u0020function\u0020to\u0020clear\u0020the\u0020cache\u0020that\u0020relates\u0020to\u0020related\u0020orders",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_clear_related_order_cache"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Adelete_cached\u0028\u0029",
+        name: "delete_cached",
+        summary: "Delete\u0020cached\u0020data\u0020with\u0020key",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_delete_cached"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Acleanup_logs\u0028\u0029",
+        name: "cleanup_logs",
+        summary: "If\u0020the\u0020log\u0020is\u0020bigger\u0020than\u0020a\u0020threshold\u0020it\u0020will\u0020be\ntruncated\u0020to\u00200\u0020bytes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_cleanup_logs"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Ainitialize_cron_check_size\u0028\u0029",
+        name: "initialize_cron_check_size",
+        summary: "Check\u0020once\u0020each\u0020week\u0020if\u0020the\u0020log\u0020file\u0020has\u0020exceeded\u0020the\u0020limits.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_initialize_cron_check_size"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Aadd_weekly_cron_schedule\u0028\u0029",
+        name: "add_weekly_cron_schedule",
+        summary: "Add\u0020a\u0020weekly\u0020schedule\u0020for\u0020clearing\u0020up\u0020the\u0020cache",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_add_weekly_cron_schedule"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003Apurge_subscription_user_cache\u0028\u0029",
+        name: "purge_subscription_user_cache",
+        summary: "Purge\u0020the\u0020cache\u0020for\u0020the\u0020subscription\u0027s\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#method_purge_subscription_user_cache"
+    },{
+        fqsen: "\\WCS_Cached_Data_Manager\u003A\u003A\u0024logger",
+        name: "logger",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cached-Data-Manager.html#property_logger"
+    },{
+        fqsen: "\\WCS_Cart_Initial_Payment",
+        name: "WCS_Cart_Initial_Payment",
+        summary: "Handles\u0020the\u0020initial\u0020payment\u0020for\u0020a\u0020pending\u0020subscription\u0020via\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Initial-Payment.html"
+    },{
+        fqsen: "\\WCS_Cart_Initial_Payment\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Initial-Payment.html#method___construct"
+    },{
+        fqsen: "\\WCS_Cart_Initial_Payment\u003A\u003Amaybe_setup_cart\u0028\u0029",
+        name: "maybe_setup_cart",
+        summary: "Setup\u0020the\u0020cart\u0020for\u0020paying\u0020for\u0020a\u0020delayed\u0020initial\u0020payment\u0020for\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Initial-Payment.html#method_maybe_setup_cart"
+    },{
+        fqsen: "\\WCS_Cart_Initial_Payment\u003A\u003Acart_contains\u0028\u0029",
+        name: "cart_contains",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020an\u0020initial\u0020payment\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Initial-Payment.html#method_cart_contains"
+    },{
+        fqsen: "\\WCS_Cart_Initial_Payment\u003A\u003Aget_order\u0028\u0029",
+        name: "get_order",
+        summary: "Get\u0020the\u0020order\u0020object\u0020used\u0020to\u0020construct\u0020the\u0020initial\u0020payment\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Initial-Payment.html#method_get_order"
+    },{
+        fqsen: "\\WCS_Cart_Initial_Payment\u003A\u003Ashould_honor_subscription_prices\u0028\u0029",
+        name: "should_honor_subscription_prices",
+        summary: "Deteremines\u0020if\u0020the\u0020cart\u0020should\u0020honor\u0020the\u0020granfathered\u0020subscription\/order\u0020line\u0020item\u0020total.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Initial-Payment.html#method_should_honor_subscription_prices"
+    },{
+        fqsen: "\\WCS_Cart_Initial_Payment\u003A\u003A\u0024cart_item_key",
+        name: "cart_item_key",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Initial-Payment.html#property_cart_item_key"
+    },{
+        fqsen: "\\WCS_Cart_Renewal",
+        name: "WCS_Cart_Renewal",
+        summary: "Implement\u0020renewing\u0020to\u0020a\u0020subscription\u0020via\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method___construct"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aattach_dependant_hooks\u0028\u0029",
+        name: "attach_dependant_hooks",
+        summary: "Attach\u0020WooCommerce\u0020version\u0020dependent\u0020hooks",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_attach_dependant_hooks"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Asetup_hooks\u0028\u0029",
+        name: "setup_hooks",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_setup_hooks"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aattach_dependant_callbacks\u0028\u0029",
+        name: "attach_dependant_callbacks",
+        summary: "Attach\u0020callbacks\u0020dependant\u0020on\u0020WC\u0020versions",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_attach_dependant_callbacks"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_setup_cart\u0028\u0029",
+        name: "maybe_setup_cart",
+        summary: "Check\u0020if\u0020a\u0020payment\u0020is\u0020being\u0020made\u0020on\u0020a\u0020renewal\u0020order\u0020from\u0020\u0027My\u0020Account\u0027.\u0020If\u0020so,\nredirect\u0020the\u0020order\u0020into\u0020a\u0020cart\/checkout\u0020payment\u0020flow\u0020so\u0020that\u0020the\u0020customer\u0020can\nchoose\u0020payment\u0020method,\u0020apply\u0020discounts\u0020set\u0020shipping\u0020and\u0020pay\u0020for\u0020the\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_setup_cart"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Asetup_cart\u0028\u0029",
+        name: "setup_cart",
+        summary: "Set\u0020up\u0020cart\u0020item\u0020meta\u0020data\u0020to\u0020complete\u0020a\u0020subscription\u0020renewal\u0020via\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_setup_cart"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Acart_items_loaded_from_session\u0028\u0029",
+        name: "cart_items_loaded_from_session",
+        summary: "Does\u0020some\u0020housekeeping.\u0020Fires\u0020after\u0020the\u0020items\u0020have\u0020been\u0020passed\u0020through\u0020the\u0020get\u0020items\u0020from\u0020session\u0020filter.\u0020Because\nthat\u0020filter\u0020is\u0020not\u0020good\u0020for\u0020removing\u0020cart\u0020items,\u0020we\u0020need\u0020to\u0020work\u0020around\u0020that\u0020by\u0020doing\u0020it\u0020later,\u0020in\u0020the\u0020cart\nloaded\u0020from\u0020session\u0020action.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_cart_items_loaded_from_session"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aget_cart_item_from_session\u0028\u0029",
+        name: "get_cart_item_from_session",
+        summary: "Restore\u0020renewal\u0020flag\u0020when\u0020cart\u0020is\u0020reset\u0020and\u0020modify\u0020Product\u0020object\u0020with\u0020renewal\u0020order\u0020related\u0020info",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_get_cart_item_from_session"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Acheckout_get_value\u0028\u0029",
+        name: "checkout_get_value",
+        summary: "Returns\u0020address\u0020details\u0020from\u0020the\u0020renewal\u0020order\u0020if\u0020the\u0020checkout\u0020is\u0020for\u0020a\u0020renewal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_checkout_get_value"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_check_ship_to_different_address\u0028\u0029",
+        name: "maybe_check_ship_to_different_address",
+        summary: "If\u0020the\u0020cart\u0020contains\u0020a\u0020renewal\u0020order\u0020that\u0020needs\u0020to\u0020ship\u0020to\u0020an\u0020address\u0020that\u0020is\u0020different\nto\u0020the\u0020order\u0027s\u0020billing\u0020address,\u0020tell\u0020the\u0020checkout\u0020to\u0020toggle\u0020the\u0020ship\u0020to\u0020a\u0020different\u0020address\ncheckbox\u0020and\u0020make\u0020sure\u0020the\u0020shipping\u0020fields\u0020are\u0020displayed\u0020by\u0020default.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_check_ship_to_different_address"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_update_subscription_customer_data\u0028\u0029",
+        name: "maybe_update_subscription_customer_data",
+        summary: "When\u0020completing\u0020checkout\u0020for\u0020a\u0020subscription\u0020renewal,\u0020update\u0020the\u0020address\u0020on\u0020the\u0020subscription\u0020to\u0020use\nthe\u0020shipping\/billing\u0020address\u0020entered\u0020in\u0020case\u0020it\u0020has\u0020changed\u0020since\u0020the\u0020subscription\u0020was\u0020first\u0020created.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_update_subscription_customer_data"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Ais_purchasable\u0028\u0029",
+        name: "is_purchasable",
+        summary: "If\u0020a\u0020product\u0020is\u0020being\u0020marked\u0020as\u0020not\u0020purchasable\u0020because\u0020it\u0020is\u0020limited\u0020and\u0020the\u0020customer\u0020has\u0020a\u0020subscription,\nbut\u0020the\u0020current\u0020request\u0020is\u0020to\u0020resubscribe\u0020to\u0020the\u0020subscription,\u0020then\u0020mark\u0020it\u0020as\u0020purchasable.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_is_purchasable"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aget_checkout_payment_url\u0028\u0029",
+        name: "get_checkout_payment_url",
+        summary: "Flag\u0020payment\u0020of\u0020manual\u0020renewal\u0020orders\u0020via\u0020an\u0020extra\u0020URL\u0020param.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_get_checkout_payment_url"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Afilter_my_account_my_orders_actions\u0028\u0029",
+        name: "filter_my_account_my_orders_actions",
+        summary: "Customise\u0020which\u0020actions\u0020are\u0020shown\u0020against\u0020a\u0020subscription\u0020renewal\u0020order\u0020on\u0020the\u0020My\u0020Account\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_filter_my_account_my_orders_actions"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_preserve_order_status\u0028\u0029",
+        name: "maybe_preserve_order_status",
+        summary: "When\u0020a\u0020failed\u0020renewal\u0020order\u0020is\u0020being\u0020paid\u0020for\u0020via\u0020checkout,\u0020make\u0020sure\u0020WC_Checkout\u003A\u003Acreate_order\u0028\u0029\u0020preserves\u0020its\nstatus\u0020as\u0020\u0027failed\u0027\u0020until\u0020it\u0020is\u0020paid.\u0020By\u0020default,\u0020it\u0020will\u0020always\u0020set\u0020it\u0020to\u0020\u0027pending\u0027,\u0020but\u0020we\u0020need\u0020it\u0020left\u0020as\u0020\u0027failed\u0027\nso\u0020that\u0020we\u0020can\u0020correctly\u0020identify\u0020the\u0020status\u0020change\u0020in\u0020\u0040see\u0020self\u003A\u003Amaybe_change_subscription_status\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_preserve_order_status"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_remove_items\u0028\u0029",
+        name: "maybe_remove_items",
+        summary: "Removes\u0020all\u0020the\u0020linked\u0020renewal\/resubscribe\u0020items\u0020from\u0020the\u0020cart\u0020if\u0020a\u0020renewal\/resubscribe\u0020item\u0020is\u0020removed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_remove_items"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Acart_contains\u0028\u0029",
+        name: "cart_contains",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020renewal\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_cart_contains"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aitems_removed_title\u0028\u0029",
+        name: "items_removed_title",
+        summary: "Formats\u0020the\u0020title\u0020of\u0020the\u0020product\u0020removed\u0020from\u0020the\u0020cart.\u0020Because\u0020we\u0020have\u0020removed\u0020all\nlinked\u0020renewal\/resubscribe\u0020items\u0020from\u0020the\u0020cart\u0020we\u0020need\u0020a\u0020product\u0020title\u0020to\u0020reflect\u0020that.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_items_removed_title"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_restore_items\u0028\u0029",
+        name: "maybe_restore_items",
+        summary: "Restores\u0020all\u0020linked\u0020renewal\/resubscribe\u0020items\u0020to\u0020the\u0020cart\u0020if\u0020the\u0020customer\u0020has\u0020restored\u0020one.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_restore_items"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Arenewal_coupon_data\u0028\u0029",
+        name: "renewal_coupon_data",
+        summary: "Return\u0020our\u0020custom\u0020pseudo\u0020coupon\u0020data\u0020for\u0020renewal\u0020coupons",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_renewal_coupon_data"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aget_products\u0028\u0029",
+        name: "get_products",
+        summary: "Get\u0020original\u0020products\u0020for\u0020a\u0020renewal\u0020order\u0020\u002D\u0020so\u0020that\u0020we\u0020can\u0020ensure\u0020renewal\u0020coupons\u0020are\u0020only\u0020applied\u0020to\u0020those",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_get_products"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Astore_coupon\u0028\u0029",
+        name: "store_coupon",
+        summary: "Store\u0020renewal\u0020coupon\u0020information\u0020in\u0020a\u0020session\u0020variable\u0020so\u0020we\u0020can\u0020access\u0020it\u0020later\u0020when\u0020coupon\u0020data\u0020is\u0020being\u0020retrieved",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_store_coupon"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aclear_coupons\u0028\u0029",
+        name: "clear_coupons",
+        summary: "Clear\u0020renewal\u0020coupons\u0020\u002D\u0020protects\u0020against\u0020confusing\u0020customer\u0020facing\u0020notices\u0020if\u0020customers\u0020add\u0020one\u0020renewal\u0020order\u0020to\u0020the\u0020cart\u0020with\u0020a\u0020set\u0020of\u0020coupons\u0020and\u0020then\u0020decide\u0020to\u0020add\u0020another\u0020renewal\u0020order\u0020with\u0020a\u0020different\u0020set\u0020of\u0020coupons",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_clear_coupons"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_add_fees\u0028\u0029",
+        name: "maybe_add_fees",
+        summary: "Add\u0020order\/subscription\u0020fee\u0020line\u0020items\u0020to\u0020the\u0020cart\u0020when\u0020a\u0020renewal\u0020order,\u0020initial\u0020order\u0020or\u0020resubscribe\u0020is\u0020in\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_add_fees"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aproduct_addons_adjust_price\u0028\u0029",
+        name: "product_addons_adjust_price",
+        summary: "When\u0020restoring\u0020the\u0020cart\u0020from\u0020the\u0020session,\u0020if\u0020the\u0020cart\u0020item\u0020contains\u0020addons,\u0020as\u0020well\u0020as\na\u0020renewal\u0020or\u0020resubscribe,\u0020do\u0020not\u0020adjust\u0020the\u0020price\u0020because\u0020the\u0020original\u0020order\u0027s\u0020price\u0020will\nbe\u0020used,\u0020and\u0020this\u0020includes\u0020the\u0020addons\u0020amounts.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_product_addons_adjust_price"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aget_order\u0028\u0029",
+        name: "get_order",
+        summary: "Get\u0020the\u0020order\u0020object\u0020used\u0020to\u0020construct\u0020the\u0020renewal\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_get_order"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aset_cart_hash\u0028\u0029",
+        name: "set_cart_hash",
+        summary: "Before\u0020allowing\u0020payment\u0020on\u0020an\u0020order\u0020awaiting\u0020payment\u0020via\u0020checkout,\u0020WC\u0020\u003E\u003D\u00202.6\u0020validates\norder\u0020items\u0020haven\u0027t\u0020changed\u0020by\u0020checking\u0020for\u0020a\u0020cart\u0020hash\u0020on\u0020the\u0020order,\u0020so\u0020we\u0020need\u0020to\u0020set\nthat\u0020here.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_set_cart_hash"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aupdate_cart_hash\u0028\u0029",
+        name: "update_cart_hash",
+        summary: "Right\u0020before\u0020WC\u0020processes\u0020a\u0020renewal\u0020cart\u0020through\u0020the\u0020checkout,\u0020set\u0020the\u0020cart\u0020hash.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_update_cart_hash"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_redirect_after_login\u0028\u0029",
+        name: "maybe_redirect_after_login",
+        summary: "Redirect\u0020back\u0020to\u0020pay\u0020for\u0020an\u0020order\u0020after\u0020successfully\u0020logging\u0020in.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_redirect_after_login"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aupdate_session_cart_after_updating_renewal_order\u0028\u0029",
+        name: "update_session_cart_after_updating_renewal_order",
+        summary: "Force\u0020an\u0020update\u0020to\u0020the\u0020session\u0020cart\u0020after\u0020updating\u0020renewal\u0020order\u0020line\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_update_session_cart_after_updating_renewal_order"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aprevent_compounding_dynamic_discounts\u0028\u0029",
+        name: "prevent_compounding_dynamic_discounts",
+        summary: "Prevent\u0020compounding\u0020dynamic\u0020discounts\u0020on\u0020cart\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_prevent_compounding_dynamic_discounts"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aadd_line_item_meta\u0028\u0029",
+        name: "add_line_item_meta",
+        summary: "For\u0020order\u0020items\u0020created\u0020as\u0020part\u0020of\u0020a\u0020renewal,\u0020keep\u0020a\u0020record\u0020of\u0020the\u0020cart\u0020item\u0020key\u0020so\u0020that\u0020we\u0020can\u0020match\u0020it\nlater\u0020in\u0020\u0040see\u0020this\u002D\u003Eset_order_item_id\u0028\u0029\u0020once\u0020the\u0020order\u0020item\u0020has\u0020been\u0020saved\u0020and\u0020has\u0020an\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_add_line_item_meta"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aset_order_item_id\u0028\u0029",
+        name: "set_order_item_id",
+        summary: "After\u0020order\u0020meta\u0020is\u0020saved,\u0020get\u0020the\u0020order\u0020line\u0020item\u0020ID\u0020for\u0020this\u0020renewal\u0020and\u0020keep\u0020a\u0020record\u0020of\u0020it\u0020in\nthe\u0020cart\u0020so\u0020we\u0020can\u0020update\u0020it\u0020later.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_set_order_item_id"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aset_cart_item_order_item_id\u0028\u0029",
+        name: "set_cart_item_order_item_id",
+        summary: "After\u0020updating\u0020renewal\u0020order\u0020line\u0020items,\u0020update\u0020the\u0020values\u0020stored\u0020in\u0020cart\u0020item\u0020data\nwhich\u0020would\u0020now\u0020reference\u0020old\u0020line\u0020item\u0020IDs.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_set_cart_item_order_item_id"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Ahidden_order_itemmeta\u0028\u0029",
+        name: "hidden_order_itemmeta",
+        summary: "Do\u0020not\u0020display\u0020cart\u0020item\u0020key\u0020order\u0020item\u0020meta\u0020keys\u0020unless\u0020Subscriptions\u0020is\u0020in\u0020debug\u0020mode.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_hidden_order_itemmeta"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_update_subscription_address_data\u0028\u0029",
+        name: "maybe_update_subscription_address_data",
+        summary: "When\u0020completing\u0020checkout\u0020for\u0020a\u0020subscription\u0020renewal,\u0020update\u0020the\u0020subscription\u0027s\u0020address\u0020to\u0020match\nthe\u0020shipping\/billing\u0020address\u0020entered\u0020on\u0020checkout.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_update_subscription_address_data"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_update_subscription_address_data_from_store_api\u0028\u0029",
+        name: "maybe_update_subscription_address_data_from_store_api",
+        summary: "When\u0020completing\u0020checkout\u0020for\u0020a\u0020subscription\u0020renewal,\u0020update\u0020the\u0020subscription\u0027s\u0020address\u0020to\u0020match\nthe\u0020shipping\/billing\u0020address\u0020entered\u0020on\u0020checkout.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_update_subscription_address_data_from_store_api"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Adisplay_line_item_data_in_cart\u0028\u0029",
+        name: "display_line_item_data_in_cart",
+        summary: "Add\u0020custom\u0020line\u0020item\u0020meta\u0020to\u0020the\u0020cart\u0020item\u0020data\u0020so\u0020it\u0027s\u0020displayed\u0020in\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_display_line_item_data_in_cart"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aadd_order_item_meta\u0028\u0029",
+        name: "add_order_item_meta",
+        summary: "Add\u0020custom\u0020line\u0020item\u0020meta\u0020from\u0020the\u0020old\u0020line\u0020item\u0020into\u0020the\u0020new\u0020line\u0020item\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_add_order_item_meta"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aadd_order_line_item_meta\u0028\u0029",
+        name: "add_order_line_item_meta",
+        summary: "Add\u0020custom\u0020line\u0020item\u0020meta\u0020from\u0020the\u0020old\u0020line\u0020item\u0020into\u0020the\u0020new\u0020line\u0020item\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_add_order_line_item_meta"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aremove_non_recurring_fees\u0028\u0029",
+        name: "remove_non_recurring_fees",
+        summary: "Remove\u0020any\u0020fees\u0020applied\u0020to\u0020the\u0020renewal\u0020cart\u0020which\u0020aren\u0027t\u0020recurring.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_remove_non_recurring_fees"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_update_shipping_packages\u0028\u0029",
+        name: "maybe_update_shipping_packages",
+        summary: "Filters\u0020the\u0020shipping\u0020packages\u0020to\u0020remove\u0020subscriptions\u0020that\u0020have\u0020\u0022one\u0020time\u0020shipping\u0022\u0020enabled\u0020and,\u0020as\u0020such,\nshouldn\u0027t\u0020have\u0020a\u0020shipping\u0020amount\u0020associated\u0020during\u0020a\u0020renewal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_update_shipping_packages"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Asetup_discounts\u0028\u0029",
+        name: "setup_discounts",
+        summary: "Check\u0020if\u0020the\u0020order\u0020has\u0020any\u0020discounts\u0020applied\u0020and\u0020if\u0020so\u0020reapply\u0020them\u0020to\u0020the\u0020cart\nor\u0020add\u0020pseudo\u0020coupon\u0020equivalents\u0020if\u0020the\u0020coupons\u0020no\u0020longer\u0020exist.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_setup_discounts"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aget_line_item_coupons\u0028\u0029",
+        name: "get_line_item_coupons",
+        summary: "Create\u0020coupon\u0020objects\u0020from\u0020coupon\u0020line\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_get_line_item_coupons"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aget_pseudo_coupon\u0028\u0029",
+        name: "get_pseudo_coupon",
+        summary: "Apply\u0020a\u0020pseudo\u0020coupon\u0020to\u0020the\u0020cart\u0020for\u0020a\u0020specific\u0020discount\u0020amount.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_get_pseudo_coupon"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aapply_order_coupon\u0028\u0029",
+        name: "apply_order_coupon",
+        summary: "Apply\u0020an\u0020order\u0020coupon\u0020to\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_apply_order_coupon"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_preserve_order_created_via\u0028\u0029",
+        name: "maybe_preserve_order_created_via",
+        summary: "Makes\u0020sure\u0020a\u0020renewal\u0020order\u0027s\u0020\u0022created\u0020via\u0022\u0020meta\u0020is\u0020not\u0020changed\u0020to\u0020\u0022checkout\u0022\u0020by\u0020WC\u0020during\u0020checkout.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_preserve_order_created_via"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Ashould_honor_subscription_prices\u0028\u0029",
+        name: "should_honor_subscription_prices",
+        summary: "Deteremines\u0020if\u0020the\u0020cart\u0020should\u0020honor\u0020the\u0020granfathered\u0020subscription\/order\u0020line\u0020item\u0020total.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_should_honor_subscription_prices"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_disable_manual_renewal_stock_validation\u0028\u0029",
+        name: "maybe_disable_manual_renewal_stock_validation",
+        summary: "Disables\u0020renewal\u0020cart\u0020stock\u0020validation\u0020if\u0020the\u0020store\u0020has\u0020switched\u0020it\u0020off\u0020via\u0020a\u0020filter.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_disable_manual_renewal_stock_validation"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aorder_button_text\u0028\u0029",
+        name: "order_button_text",
+        summary: "Overrides\u0020the\u0020place\u0020order\u0020button\u0020text\u0020on\u0020the\u0020checkout\u0020when\u0020the\u0020cart\u0020contains\u0020renewal\u0020order\u0020items,\u0020exclusively.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_order_button_text"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Averify_session_belongs_to_customer\u0028\u0029",
+        name: "verify_session_belongs_to_customer",
+        summary: "Verifies\u0020if\u0020the\u0020cart\u0020being\u0020loaded\u0020from\u0020the\u0020session\u0020belongs\u0020to\u0020the\u0020current\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_verify_session_belongs_to_customer"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Avalidate_current_user\u0028\u0029",
+        name: "validate_current_user",
+        summary: "Checks\u0020if\u0020the\u0020current\u0020user\u0020can\u0020pay\u0020for\u0020the\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_validate_current_user"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aset_renewal_discounts\u0028\u0029",
+        name: "set_renewal_discounts",
+        summary: "For\u0020subscription\u0020renewal\u0020via\u0020cart,\u0020use\u0020original\u0020order\u0020discount",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_set_renewal_discounts"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aget_discounted_price_for_renewal\u0028\u0029",
+        name: "get_discounted_price_for_renewal",
+        summary: "For\u0020subscription\u0020renewal\u0020via\u0020cart,\u0020previously\u0020adjust\u0020item\u0020price\u0020by\u0020original\u0020order\u0020discount",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_get_discounted_price_for_renewal"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_add_subscription_fees\u0028\u0029",
+        name: "maybe_add_subscription_fees",
+        summary: "Add\u0020subscription\u0020fee\u0020line\u0020items\u0020to\u0020the\u0020cart\u0020when\u0020a\u0020renewal\u0020order\u0020or\u0020resubscribe\u0020is\u0020in\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_add_subscription_fees"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aupdate_line_item_cart_data\u0028\u0029",
+        name: "update_line_item_cart_data",
+        summary: "After\u0020updating\u0020renewal\u0020order\u0020line\u0020items,\u0020update\u0020the\u0020values\u0020stored\u0020in\u0020cart\u0020item\u0020data\nwhich\u0020would\u0020now\u0020reference\u0020old\u0020line\u0020item\u0020IDs.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_update_line_item_cart_data"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aupdate_order_item_data_in_cart\u0028\u0029",
+        name: "update_order_item_data_in_cart",
+        summary: "After\u0020updating\u0020renewal\u0020order\u0020line\u0020items,\u0020update\u0020the\u0020values\u0020stored\u0020in\u0020cart\u0020item\u0020data\nwhich\u0020would\u0020now\u0020reference\u0020old\u0020line\u0020item\u0020IDs.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_update_order_item_data_in_cart"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Aset_renewal_order_cart_hash\u0028\u0029",
+        name: "set_renewal_order_cart_hash",
+        summary: "Right\u0020before\u0020WC\u0020processes\u0020a\u0020renewal\u0020cart\u0020through\u0020the\u0020checkout,\u0020set\u0020the\u0020cart\u0020hash.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_set_renewal_order_cart_hash"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003Amaybe_setup_discounts\u0028\u0029",
+        name: "maybe_setup_discounts",
+        summary: "Check\u0020if\u0020a\u0020renewal\u0020order\u0020subscription\u0020has\u0020any\u0020coupons\u0020applied\u0020and\u0020if\u0020so\u0020add\u0020pseudo\u0020renewal\u0020coupon\u0020equivalents\u0020to\u0020ensure\u0020the\u0020discount\u0020is\u0020still\u0020applied",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#method_maybe_setup_discounts"
+    },{
+        fqsen: "\\WCS_Cart_Renewal\u003A\u003A\u0024cart_item_key",
+        name: "cart_item_key",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Renewal.html#property_cart_item_key"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe",
+        name: "WCS_Cart_Resubscribe",
+        summary: "Implement\u0020resubscribing\u0020to\u0020a\u0020subscription\u0020via\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method___construct"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Amaybe_setup_cart\u0028\u0029",
+        name: "maybe_setup_cart",
+        summary: "Checks\u0020if\u0020the\u0020current\u0020request\u0020is\u0020by\u0020a\u0020user\u0020to\u0020resubcribe\u0020to\u0020a\u0020subscription,\u0020and\u0020if\u0020it\u0020is\u0020setup\u0020a\nsubscription\u0020resubcribe\u0020process\u0020via\u0020the\u0020cart\u0020for\u0020the\u0020product\/variation\/s\u0020that\u0020are\u0020being\u0020renewed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_maybe_setup_cart"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Amaybe_record_resubscribe\u0028\u0029",
+        name: "maybe_record_resubscribe",
+        summary: "When\u0020creating\u0020an\u0020order\u0020at\u0020checkout,\u0020if\u0020the\u0020checkout\u0020is\u0020to\u0020resubscribe\u0020to\u0020an\u0020expired\u0020or\u0020cancelled\nsubscription,\u0020make\u0020sure\u0020we\u0020record\u0020that\u0020on\u0020the\u0020order\u0020and\u0020new\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_maybe_record_resubscribe"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Aget_cart_item_from_session\u0028\u0029",
+        name: "get_cart_item_from_session",
+        summary: "Restore\u0020renewal\u0020flag\u0020when\u0020cart\u0020is\u0020reset\u0020and\u0020modify\u0020Product\u0020object\u0020with\u0020renewal\u0020order\u0020related\u0020info",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_get_cart_item_from_session"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Ais_purchasable\u0028\u0029",
+        name: "is_purchasable",
+        summary: "If\u0020a\u0020product\u0020is\u0020being\u0020marked\u0020as\u0020not\u0020purchasable\u0020because\u0020it\u0020is\u0020limited\u0020and\u0020the\u0020customer\u0020has\u0020a\u0020subscription,\nbut\u0020the\u0020current\u0020request\u0020is\u0020to\u0020resubscribe\u0020to\u0020the\u0020subscription,\u0020then\u0020mark\u0020it\u0020as\u0020purchasable.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_is_purchasable"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Acart_contains\u0028\u0029",
+        name: "cart_contains",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020resubscribe\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_cart_contains"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Aget_order\u0028\u0029",
+        name: "get_order",
+        summary: "Get\u0020the\u0020subscription\u0020object\u0020used\u0020to\u0020construct\u0020the\u0020resubscribe\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_get_order"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Aget_recurring_cart_key\u0028\u0029",
+        name: "get_recurring_cart_key",
+        summary: "Make\u0020sure\u0020that\u0020a\u0020resubscribe\u0020item\u0027s\u0020cart\u0020key\u0020is\u0020based\u0020on\u0020the\u0020end\u0020of\u0020the\u0020pre\u002Dpaid\u0020term\u0020if\u0020the\u0020user\u0020already\u0020has\u0020a\u0020subscription\u0020that\u0020is\u0020pending\u002Dcancel,\u0020not\u0020the\u0020date\u0020calculated\u0020for\u0020the\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_get_recurring_cart_key"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Arecurring_cart_next_payment_date\u0028\u0029",
+        name: "recurring_cart_next_payment_date",
+        summary: "Make\u0020sure\u0020when\u0020displaying\u0020the\u0020next\u0020payment\u0020date\u0020for\u0020a\u0020subscription,\u0020the\u0020date\u0020takes\u0020into\naccount\u0020the\u0020end\u0020of\u0020the\u0020pre\u002Dpaid\u0020term\u0020if\u0020the\u0020user\u0020is\u0020resubscribing\u0020to\u0020a\u0020subscription\u0020that\u0020is\u0020pending\u002Dcancel.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_recurring_cart_next_payment_date"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Amaybe_set_free_trial\u0028\u0029",
+        name: "maybe_set_free_trial",
+        summary: "Make\u0020sure\u0020resubscribe\u0020cart\u0020item\u0020price\u0020doesn\u0027t\u0020include\u0020any\u0020recurring\u0020amount\u0020by\u0020setting\u0020a\u0020free\u0020trial.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_maybe_set_free_trial"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Amaybe_unset_free_trial\u0028\u0029",
+        name: "maybe_unset_free_trial",
+        summary: "Remove\u0020mock\u0020free\u0020trials\u0020from\u0020resubscribe\u0020cart\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_maybe_unset_free_trial"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Amaybe_cancel_existing_subscription\u0028\u0029",
+        name: "maybe_cancel_existing_subscription",
+        summary: "When\u0020the\u0020user\u0020resubscribes\u0020to\u0020a\u0020subscription\u0020that\u0020is\u0020pending\u002Dcancel,\u0020cancel\u0020the\u0020existing\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_maybe_cancel_existing_subscription"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Aorder_button_text\u0028\u0029",
+        name: "order_button_text",
+        summary: "Overrides\u0020the\u0020place\u0020order\u0020button\u0020text\u0020on\u0020the\u0020checkout\u0020when\u0020the\u0020cart\u0020contains\u0020only\u0020resubscribe\u0020requests.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_order_button_text"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Ais_pre_cancelled_resubscribe\u0028\u0029",
+        name: "is_pre_cancelled_resubscribe",
+        summary: "Determines\u0020if\u0020the\u0020customer\u0020is\u0020resubscribe\u0020prior\u0020to\u0020the\u0020subscription\u0020being\u0020cancelled.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_is_pre_cancelled_resubscribe"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003Avalidate_current_user\u0028\u0029",
+        name: "validate_current_user",
+        summary: "Checks\u0020if\u0020the\u0020current\u0020user\u0020can\u0020resubscribe\u0020to\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#method_validate_current_user"
+    },{
+        fqsen: "\\WCS_Cart_Resubscribe\u003A\u003A\u0024cart_item_key",
+        name: "cart_item_key",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cart-Resubscribe.html#property_cart_item_key"
+    },{
+        fqsen: "\\WCS_Change_Payment_Method_Admin",
+        name: "WCS_Change_Payment_Method_Admin",
+        summary: "Class\u0020to\u0020handle\u0020everything\u0020to\u0020do\u0020with\u0020changing\u0020a\u0020payment\u0020method\u0020for\u0020a\u0020subscription\u0020on\u0020the\nedit\u0020subscription\u0020admin\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Change-Payment-Method-Admin.html"
+    },{
+        fqsen: "\\WCS_Change_Payment_Method_Admin\u003A\u003Adisplay_fields\u0028\u0029",
+        name: "display_fields",
+        summary: "Display\u0020the\u0020edit\u0020payment\u0020gateway\u0020option\u0020under",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Change-Payment-Method-Admin.html#method_display_fields"
+    },{
+        fqsen: "\\WCS_Change_Payment_Method_Admin\u003A\u003Asave_meta\u0028\u0029",
+        name: "save_meta",
+        summary: "Get\u0020the\u0020new\u0020payment\u0020data\u0020from\u0020POST\u0020and\u0020check\u0020the\u0020new\u0020payment\u0020method\u0020supports\nthe\u0020new\u0020admin\u0020change\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Change-Payment-Method-Admin.html#method_save_meta"
+    },{
+        fqsen: "\\WCS_Change_Payment_Method_Admin\u003A\u003Aget_valid_payment_methods\u0028\u0029",
+        name: "get_valid_payment_methods",
+        summary: "Get\u0020a\u0020list\u0020of\u0020possible\u0020gateways\u0020that\u0020a\u0020subscription\u0020could\u0020be\u0020changed\u0020to\u0020by\u0020admins.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Change-Payment-Method-Admin.html#method_get_valid_payment_methods"
+    },{
+        fqsen: "\\WCS_Core_Autoloader",
+        name: "WCS_Core_Autoloader",
+        summary: "WooCommerce\u0020Subscriptions\u0020Core\u0020Autoloader.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "WCS_Autoloader\u0020constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method___construct"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003A__destruct\u0028\u0029",
+        name: "__destruct",
+        summary: "Destructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method___destruct"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Aregister\u0028\u0029",
+        name: "register",
+        summary: "Register\u0020the\u0020autoloader.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_register"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Aunregister\u0028\u0029",
+        name: "unregister",
+        summary: "Unregister\u0020the\u0020autoloader.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_unregister"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Aautoload\u0028\u0029",
+        name: "autoload",
+        summary: "Autoload\u0020a\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_autoload"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Aget_class_base_path\u0028\u0029",
+        name: "get_class_base_path",
+        summary: "Gets\u0020the\u0020base\u0020path\u0020for\u0020a\u0020given\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_get_class_base_path"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Ashould_autoload\u0028\u0029",
+        name: "should_autoload",
+        summary: "Determine\u0020whether\u0020we\u0020should\u0020autoload\u0020a\u0020given\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_should_autoload"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Aget_file_name\u0028\u0029",
+        name: "get_file_name",
+        summary: "Convert\u0020the\u0020class\u0020name\u0020into\u0020an\u0020appropriate\u0020file\u0020name.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_get_file_name"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Ais_class_abstract\u0028\u0029",
+        name: "is_class_abstract",
+        summary: "Determine\u0020if\u0020the\u0020class\u0020is\u0020one\u0020of\u0020our\u0020abstract\u0020classes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_is_class_abstract"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Ais_class_interface\u0028\u0029",
+        name: "is_class_interface",
+        summary: "Determine\u0020if\u0020the\u0020class\u0020is\u0020one\u0020of\u0020our\u0020class\u0020interfaces.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_is_class_interface"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Ais_class_data_store\u0028\u0029",
+        name: "is_class_data_store",
+        summary: "Determine\u0020if\u0020the\u0020class\u0020is\u0020one\u0020of\u0020our\u0020data\u0020stores.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_is_class_data_store"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003Aget_relative_class_path\u0028\u0029",
+        name: "get_relative_class_path",
+        summary: "Get\u0020the\u0020relative\u0020path\u0020for\u0020the\u0020class\u0020location.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#method_get_relative_class_path"
+    },{
+        fqsen: "\\WCS_Core_Autoloader\u003A\u003A\u0024base_path",
+        name: "base_path",
+        summary: "The\u0020base\u0020path\u0020for\u0020autoloading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Core-Autoloader.html#property_base_path"
+    },{
+        fqsen: "\\WCS_Custom_Order_Item_Manager",
+        name: "WCS_Custom_Order_Item_Manager",
+        summary: "Subscriptions\u0020Custom\u0020Order\u0020Item\u0020Manager",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Custom-Order-Item-Manager.html"
+    },{
+        fqsen: "\\WCS_Custom_Order_Item_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialise\u0020class\u0020hooks\u0020\u0026\u0020filters\u0020when\u0020the\u0020file\u0020is\u0020loaded",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Custom-Order-Item-Manager.html#method_init"
+    },{
+        fqsen: "\\WCS_Custom_Order_Item_Manager\u003A\u003Aadd_extra_groups\u0028\u0029",
+        name: "add_extra_groups",
+        summary: "Adds\u0020extra\u0020groups.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Custom-Order-Item-Manager.html#method_add_extra_groups"
+    },{
+        fqsen: "\\WCS_Custom_Order_Item_Manager\u003A\u003Amap_classname_for_extra_items\u0028\u0029",
+        name: "map_classname_for_extra_items",
+        summary: "Maps\u0020the\u0020classname\u0020for\u0020extra\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Custom-Order-Item-Manager.html#method_map_classname_for_extra_items"
+    },{
+        fqsen: "\\WCS_Custom_Order_Item_Manager\u003A\u003Aregister_data_stores\u0028\u0029",
+        name: "register_data_stores",
+        summary: "Register\u0020the\u0020data\u0020stores\u0020to\u0020be\u0020used\u0020for\u0020our\u0020custom\u0020line\u0020item\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Custom-Order-Item-Manager.html#method_register_data_stores"
+    },{
+        fqsen: "\\WCS_Custom_Order_Item_Manager\u003A\u003A\u0024line_item_type_args",
+        name: "line_item_type_args",
+        summary: "The\u0020custom\u0020line\u0020item\u0020types\u0020managed\u0020by\u0020this\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Custom-Order-Item-Manager.html#property_line_item_type_args"
+    },{
+        fqsen: "\\WCS_Dependent_Hook_Manager",
+        name: "WCS_Dependent_Hook_Manager",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dependent-Hook-Manager.html"
+    },{
+        fqsen: "\\WCS_Dependent_Hook_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialise\u0020the\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dependent-Hook-Manager.html#method_init"
+    },{
+        fqsen: "\\WCS_Dependent_Hook_Manager\u003A\u003Aattach_woocommerce_dependent_hooks\u0028\u0029",
+        name: "attach_woocommerce_dependent_hooks",
+        summary: "Attach\u0020all\u0020the\u0020WooCommerce\u0020version\u0020dependent\u0020hooks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dependent-Hook-Manager.html#method_attach_woocommerce_dependent_hooks"
+    },{
+        fqsen: "\\WCS_Dependent_Hook_Manager\u003A\u003Aadd_woocommerce_dependent_action\u0028\u0029",
+        name: "add_woocommerce_dependent_action",
+        summary: "Attach\u0020function\u0020callback\u0020if\u0020a\u0020certain\u0020WooCommerce\u0020version\u0020is\u0020present.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dependent-Hook-Manager.html#method_add_woocommerce_dependent_action"
+    },{
+        fqsen: "\\WCS_Dependent_Hook_Manager\u003A\u003A\u0024dependent_callbacks",
+        name: "dependent_callbacks",
+        summary: "An\u0020array\u0020of\u0020callbacks\u0020which\u0020need\u0020to\u0020be\u0020attached\u0020on\u0020for\u0020certain\u0020WC\u0020versions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dependent-Hook-Manager.html#property_dependent_callbacks"
+    },{
+        fqsen: "\\WCS_Download_Handler",
+        name: "WCS_Download_Handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialize\u0020filters\u0020and\u0020hooks\u0020for\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_init"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Asave_downloadable_product_permissions\u0028\u0029",
+        name: "save_downloadable_product_permissions",
+        summary: "Save\u0020the\u0020download\u0020permissions\u0020on\u0020the\u0020individual\u0020subscriptions\u0020as\u0020well\u0020as\u0020the\u0020order.\u0020Hooked\u0020into\n\u0027woocommerce_grant_product_download_permissions\u0027,\u0020which\u0020is\u0020strictly\u0020after\u0020the\u0020order\u0020received\u0020all\u0020the\u0020info\nit\u0020needed,\u0020so\u0020we\u0020don\u0027t\u0020need\u0020to\u0020play\u0020with\u0020priorities.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_save_downloadable_product_permissions"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Arevoke_downloadable_file_permission\u0028\u0029",
+        name: "revoke_downloadable_file_permission",
+        summary: "Revokes\u0020download\u0020permissions\u0020from\u0020permissions\u0020table\u0020if\u0020a\u0020file\u0020has\u0020permissions\u0020on\u0020a\u0020subscription.\u0020If\u0020a\u0020product\u0020has\nmultiple\u0020files,\u0020all\u0020permissions\u0020will\u0020be\u0020revoked\u0020from\u0020the\u0020original\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_revoke_downloadable_file_permission"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Aget_item_downloads\u0028\u0029",
+        name: "get_item_downloads",
+        summary: "WooCommerce\u0027s\u0020function\u0020receives\u0020the\u0020original\u0020order\u0020ID,\u0020the\u0020item\u0020and\u0020the\u0020list\u0020of\u0020files.\u0020This\u0020does\u0020not\u0020work\u0020for\ndownload\u0020permissions\u0020stored\u0020on\u0020the\u0020subscription\u0020rather\u0020than\u0020the\u0020original\u0020order\u0020as\u0020the\u0020URL\u0020would\u0020have\u0020the\u0020wrong\u0020order\nkey.\u0020This\u0020function\u0020takes\u0020the\u0020same\u0020parameters,\u0020but\u0020queries\u0020the\u0020database\u0020again\u0020for\u0020download\u0020ids\u0020belonging\u0020to\u0020all\u0020the\nsubscriptions\u0020that\u0020were\u0020in\u0020the\u0020original\u0020order.\u0020Then\u0020for\u0020all\u0020subscriptions,\u0020it\u0020checks\u0020all\u0020items,\u0020and\u0020if\u0020the\u0020item\npassed\u0020in\u0020here\u0020is\u0020in\u0020that\u0020subscription,\u0020it\u0020creates\u0020the\u0020correct\u0020download\u0020link\u0020to\u0020be\u0020passsed\u0020to\u0020the\u0020email.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_get_item_downloads"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Arepair_permission_data\u0028\u0029",
+        name: "repair_permission_data",
+        summary: "Repairs\u0020a\u0020glitch\u0020in\u0020WordPress\u0027s\u0020save\u0020function.\u0020You\u0020cannot\u0020save\u0020a\u0020null\u0020value\u0020on\u0020update,\u0020see\nhttps\u003A\/\/github.com\/woocommerce\/woocommerce\/issues\/7861\u0020for\u0020more\u0020info\u0020on\u0020this.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_repair_permission_data"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Agrant_download_permissions\u0028\u0029",
+        name: "grant_download_permissions",
+        summary: "Gives\u0020customers\u0020access\u0020to\u0020downloadable\u0020products\u0020in\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_grant_download_permissions"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Adelete_subscription_permissions\u0028\u0029",
+        name: "delete_subscription_permissions",
+        summary: "Remove\u0020download\u0020permissions\u0020attached\u0020to\u0020a\u0020subscription\u0020when\u0020it\u0020is\u0020permenantly\u0020deleted.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_delete_subscription_permissions"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Agrant_new_file_product_permissions\u0028\u0029",
+        name: "grant_new_file_product_permissions",
+        summary: "Grant\u0020downloadable\u0020file\u0020access\u0020to\u0020any\u0020newly\u0020added\u0020files\u0020on\u0020any\u0020existing\u0020subscriptions\nwhich\u0020don\u0027t\u0020have\u0020existing\u0020permissions\u0020pre\u0020WC3.0\u0020and\u0020all\u0020subscriptions\u0020post\u0020WC3.0.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_grant_new_file_product_permissions"
+    },{
+        fqsen: "\\WCS_Download_Handler\u003A\u003Amaybe_revoke_immediate_access\u0028\u0029",
+        name: "maybe_revoke_immediate_access",
+        summary: "When\u0020adding\u0020new\u0020downloadable\u0020content\u0020to\u0020a\u0020subscription\u0020product,\u0020check\u0020if\u0020we\u0020don\u0027t\nwant\u0020to\u0020automatically\u0020add\u0020the\u0020new\u0020downloadable\u0020files\u0020to\u0020the\u0020subscription\u0020or\u0020initial\u0020and\u0020renewal\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Download-Handler.html#method_maybe_revoke_immediate_access"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager",
+        name: "WCS_Failed_Scheduled_Action_Manager",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method___construct"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method_init"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003Alog\u0028\u0029",
+        name: "log",
+        summary: "Log\u0020a\u0020message\u0020to\u0020the\u0020failed\u002Dscheduled\u002Dactions\u0020log.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method_log"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003Alog_action_scheduler_failure\u0028\u0029",
+        name: "log_action_scheduler_failure",
+        summary: "When\u0020a\u0020scheduled\u0020action\u0020failure\u0020is\u0020triggered,\u0020log\u0020information\u0020about\u0020the\u0020failed\u0020action\u0020to\u0020a\u0020WC\u0020logger.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method_log_action_scheduler_failure"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003Amaybe_show_admin_notice\u0028\u0029",
+        name: "maybe_show_admin_notice",
+        summary: "Display\u0020an\u0020admin\u0020notice\u0020when\u0020a\u0020scheduled\u0020action\u0020failure\u0020has\u0020occurred.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method_maybe_show_admin_notice"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003Amaybe_disable_admin_notice\u0028\u0029",
+        name: "maybe_disable_admin_notice",
+        summary: "Handle\u0020requests\u0020to\u0020disable\u0020the\u0020failed\u0020scheduled\u0020actions\u0020admin\u0020notice.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method_maybe_disable_admin_notice"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003Aget_action_hook_label\u0028\u0029",
+        name: "get_action_hook_label",
+        summary: "Retrieve\u0020a\u0020user\u0020friendly\u0020description\u0020of\u0020the\u0020scheduled\u0020action\u0020from\u0020the\u0020action\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method_get_action_hook_label"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003Aget_action_args_string\u0028\u0029",
+        name: "get_action_args_string",
+        summary: "Retrieve\u0020a\u0020list\u0020of\u0020scheduled\u0020action\u0020args\u0020as\u0020a\u0020string.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method_get_action_args_string"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003Aget_action\u0028\u0029",
+        name: "get_action",
+        summary: "Get\u0020a\u0020scheduled\u0020action\u0020object",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#method_get_action"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003A\u0024tracked_scheduled_actions",
+        name: "tracked_scheduled_actions",
+        summary: "Action\u0020hooks\u0020we\u0027re\u0020interested\u0020in\u0020tracking.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#property_tracked_scheduled_actions"
+    },{
+        fqsen: "\\WCS_Failed_Scheduled_Action_Manager\u003A\u003A\u0024logger",
+        name: "logger",
+        summary: "WC\u0020Logger\u0020instance\u0020for\u0020logging\u0020messages.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Failed-Scheduled-Action-Manager.html#property_logger"
+    },{
+        fqsen: "\\WCS_Initial_Cart_Stock_Manager",
+        name: "WCS_Initial_Cart_Stock_Manager",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Initial-Cart-Stock-Manager.html"
+    },{
+        fqsen: "\\WCS_Initial_Cart_Stock_Manager\u003A\u003Aattach_callbacks\u0028\u0029",
+        name: "attach_callbacks",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Initial-Cart-Stock-Manager.html#method_attach_callbacks"
+    },{
+        fqsen: "\\WCS_Initial_Cart_Stock_Manager\u003A\u003Aget_order_from_cart\u0028\u0029",
+        name: "get_order_from_cart",
+        summary: "Gets\u0020the\u0020parent\u0020order\u0020from\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Initial-Cart-Stock-Manager.html#method_get_order_from_cart"
+    },{
+        fqsen: "\\WCS_Initial_Cart_Stock_Manager\u003A\u003Aget_order_from_query_vars\u0028\u0029",
+        name: "get_order_from_query_vars",
+        summary: "Gets\u0020the\u0020parent\u0020order\u0020from\u0020order\u002Dpay\u0020query\u0020vars.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Initial-Cart-Stock-Manager.html#method_get_order_from_query_vars"
+    },{
+        fqsen: "\\WCS_Initial_Cart_Stock_Manager\u003A\u003Ahas_handled_stock\u0028\u0029",
+        name: "has_handled_stock",
+        summary: "Checks\u0020if\u0020an\u0020order\u0020has\u0020already\u0020reduced\u0020stock.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Initial-Cart-Stock-Manager.html#method_has_handled_stock"
+    },{
+        fqsen: "\\WCS_Limiter",
+        name: "WCS_Limiter",
+        summary: "A\u0020class\u0020to\u0020make\u0020it\u0020possible\u0020to\u0020limit\u0020a\u0020subscription\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#method_init"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003Aadmin_edit_product_fields\u0028\u0029",
+        name: "admin_edit_product_fields",
+        summary: "Adds\u0020limit\u0020options\u0020to\u0020\u0027Edit\u0020Product\u0027\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#method_admin_edit_product_fields"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003Ais_purchasable\u0028\u0029",
+        name: "is_purchasable",
+        summary: "Canonical\u0020is_purchasable\u0020method\u0020to\u0020be\u0020called\u0020by\u0020product\u0020classes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#method_is_purchasable"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003Ais_purchasable_product\u0028\u0029",
+        name: "is_purchasable_product",
+        summary: "If\u0020a\u0020product\u0020is\u0020limited\u0020and\u0020the\u0020customer\u0020already\u0020has\u0020a\u0020subscription,\u0020mark\u0020it\u0020as\u0020not\u0020purchasable.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#method_is_purchasable_product"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003Ais_purchasable_switch\u0028\u0029",
+        name: "is_purchasable_switch",
+        summary: "If\u0020a\u0020product\u0020is\u0020being\u0020marked\u0020as\u0020not\u0020purchasable\u0020because\u0020it\u0020is\u0020limited\u0020and\u0020the\u0020customer\u0020has\u0020a\u0020subscription,\nbut\u0020the\u0020current\u0020request\u0020is\u0020to\u0020switch\u0020the\u0020subscription,\u0020then\u0020mark\u0020it\u0020as\u0020purchasable.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#method_is_purchasable_switch"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003Ais_purchasable_renewal\u0028\u0029",
+        name: "is_purchasable_renewal",
+        summary: "Determines\u0020whether\u0020a\u0020product\u0020is\u0020purchasable\u0020based\u0020on\u0020whether\u0020the\u0020cart\u0020is\u0020to\u0020resubscribe\u0020or\u0020renew.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#method_is_purchasable_renewal"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003A\u0024order_awaiting_payment_for_product",
+        name: "order_awaiting_payment_for_product",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#property_order_awaiting_payment_for_product"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003Afilter_order_again_statuses_for_limited_subscriptions\u0028\u0029",
+        name: "filter_order_again_statuses_for_limited_subscriptions",
+        summary: "Filters\u0020the\u0020order\u0020statuses\u0020that\u0020enable\u0020the\u0020order\u0020again\u0020button\u0020and\u0020functionality.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#method_filter_order_again_statuses_for_limited_subscriptions"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003Aget_user_subscriptions_to_product\u0028\u0029",
+        name: "get_user_subscriptions_to_product",
+        summary: "Gets\u0020a\u0020list\u0020of\u0020the\u0020customer\u0020subscriptions\u0020to\u0020a\u0020product\u0020with\u0020a\u0020particular\u0020limited\u0020status.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#method_get_user_subscriptions_to_product"
+    },{
+        fqsen: "\\WCS_Limiter\u003A\u003A\u0024is_purchasable_cache",
+        name: "is_purchasable_cache",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Limiter.html#property_is_purchasable_cache"
+    },{
+        fqsen: "\\WCS_Modal",
+        name: "WCS_Modal",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aregister_scripts_and_styles\u0028\u0029",
+        name: "register_scripts_and_styles",
+        summary: "Registers\u0020the\u0020scripts\u0020and\u0020stylesheets\u0020needed\u0020to\u0020display\u0020the\u0020modals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_register_scripts_and_styles"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aenqueue_scripts_and_styles\u0028\u0029",
+        name: "enqueue_scripts_and_styles",
+        summary: "Enqueues\u0020the\u0020modal\u0020scripts\u0020and\u0020styles.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_enqueue_scripts_and_styles"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method___construct"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aprint_html\u0028\u0029",
+        name: "print_html",
+        summary: "Prints\u0020the\u0020modal\u0020HTML.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_print_html"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aprint_content\u0028\u0029",
+        name: "print_content",
+        summary: "Prints\u0020the\u0020modal\u0020inner\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_print_content"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Ahas_heading\u0028\u0029",
+        name: "has_heading",
+        summary: "Determines\u0020if\u0020the\u0020modal\u0020has\u0020a\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_has_heading"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Ahas_actions\u0028\u0029",
+        name: "has_actions",
+        summary: "Determines\u0020if\u0020the\u0020modal\u0020has\u0020actions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_has_actions"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aadd_action\u0028\u0029",
+        name: "add_action",
+        summary: "Adds\u0020a\u0020button\u0020or\u0020link\u0020action\u0020which\u0020will\u0020be\u0020printed\u0020in\u0020the\u0020modal\u0020footer.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_add_action"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aget_heading\u0028\u0029",
+        name: "get_heading",
+        summary: "Returns\u0020the\u0020modal\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_get_heading"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aget_actions\u0028\u0029",
+        name: "get_actions",
+        summary: "Returns\u0020the\u0020array\u0020of\u0020actions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_get_actions"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aget_trigger\u0028\u0029",
+        name: "get_trigger",
+        summary: "Returns\u0020the\u0020modal\u0027s\u0020trigger\u0020selector.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_get_trigger"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003Aget_attribute_string\u0028\u0029",
+        name: "get_attribute_string",
+        summary: "Returns\u0020a\u0020flattened\u0020string\u0020of\u0020HTML\u0020element\u0020attributes\u0020from\u0020an\u0020array\u0020of\u0020attributes\u0020and\u0020values.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#method_get_attribute_string"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003A\u0024content",
+        name: "content",
+        summary: "The\u0020content\u0020to\u0020display\u0020inside\u0020the\u0020modal\u0020body.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#property_content"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003A\u0024content_type",
+        name: "content_type",
+        summary: "The\u0020type\u0020of\u0020content\u0020to\u0020display.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#property_content_type"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003A\u0024trigger",
+        name: "trigger",
+        summary: "A\u0020selector\u0020of\u0020the\u0020element\u0020which\u0020triggers\u0020the\u0020modal\u0020to\u0020be\u0020displayed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#property_trigger"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003A\u0024heading",
+        name: "heading",
+        summary: "The\u0020modal\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#property_heading"
+    },{
+        fqsen: "\\WCS_Modal\u003A\u003A\u0024actions",
+        name: "actions",
+        summary: "The\u0020modal\u0020actions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Modal.html#property_actions"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle",
+        name: "WCS_My_Account_Auto_Renew_Toggle",
+        summary: "Class\u0020for\u0020managing\u0020Auto\u0020Renew\u0020Toggle\u0020on\u0020View\u0020Subscription\u0020page\u0020of\u0020My\u0020Account",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialize\u0020filters\u0020and\u0020hooks\u0020for\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#method_init"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003Acan_subscription_auto_renewal_be_changed\u0028\u0029",
+        name: "can_subscription_auto_renewal_be_changed",
+        summary: "Check\u0020all\u0020conditions\u0020for\u0020whether\u0020auto\u002Drenewal\u0020can\u0020be\u0020changed\u0020is\u0020possible",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#method_can_subscription_auto_renewal_be_changed"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003Acan_user_toggle_auto_renewal\u0028\u0029",
+        name: "can_user_toggle_auto_renewal",
+        summary: "Determines\u0020if\u0020a\u0020subscription\u0020is\u0020eligible\u0020for\u0020toggling\u0020auto\u0020renewal\u0020and\u0020whether\u0020the\u0020user,\u0020or\u0020current\u0020user\u0020has\u0020permission\u0020to\u0020do\u0020so.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#method_can_user_toggle_auto_renewal"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003Adisable_auto_renew\u0028\u0029",
+        name: "disable_auto_renew",
+        summary: "Disable\u0020auto\u0020renewal\u0020of\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#method_disable_auto_renew"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003Aenable_auto_renew\u0028\u0029",
+        name: "enable_auto_renew",
+        summary: "Enable\u0020auto\u0020renewal\u0020of\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#method_enable_auto_renew"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003Asend_ajax_response\u0028\u0029",
+        name: "send_ajax_response",
+        summary: "Send\u0020a\u0020response\u0020after\u0020processing\u0020the\u0020AJAX\u0020request\u0020so\u0020the\u0020page\u0020can\u0020be\u0020updated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#method_send_ajax_response"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003Aadd_setting\u0028\u0029",
+        name: "add_setting",
+        summary: "Add\u0020a\u0020setting\u0020to\u0020allow\u0020store\u0020managers\u0020to\u0020enable\u0020or\u0020disable\u0020the\u0020auto\u002Drenewal\u0020toggle.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#method_add_setting"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003Ais_enabled\u0028\u0029",
+        name: "is_enabled",
+        summary: "Checks\u0020if\u0020the\u0020store\u0020has\u0020enabled\u0020the\u0020auto\u002Drenewal\u0020toggle.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#method_is_enabled"
+    },{
+        fqsen: "\\WCS_My_Account_Auto_Renew_Toggle\u003A\u003A\u0024setting_id",
+        name: "setting_id",
+        summary: "The\u0020auto\u002Drenewal\u0020toggle\u0020setting\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Auto-Renew-Toggle.html#property_setting_id"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods",
+        name: "WCS_My_Account_Payment_Methods",
+        summary: "Manage\u0020the\u0020process\u0020of\u0020deleting,\u0020adding,\u0020assigning\u0020default\u0020payment\u0020tokens\u0020associated\u0020with\u0020automatic\u0020subscriptions",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialize\u0020filters\u0020and\u0020hooks\u0020for\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_init"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Aflag_subscription_payment_token_deletions\u0028\u0029",
+        name: "flag_subscription_payment_token_deletions",
+        summary: "Add\u0020additional\u0020query\u0020args\u0020to\u0020delete\u0020token\u0020URLs\u0020which\u0020are\u0020being\u0020used\u0020for\u0020subscription\u0020automatic\u0020payments.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_flag_subscription_payment_token_deletions"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Amaybe_update_subscriptions_payment_meta\u0028\u0029",
+        name: "maybe_update_subscriptions_payment_meta",
+        summary: "Update\u0020subscriptions\u0020using\u0020a\u0020deleted\u0020token\u0020to\u0020use\u0020a\u0020new\u0020token.\u0020Subscriptions\u0020with\u0020the\nold\u0020token\u0020value\u0020stored\u0020in\u0020post\u0020meta\u0020will\u0020be\u0020updated\u0020using\u0020the\u0020same\u0020meta\u0020key\u0020to\u0020use\u0020the\nnew\u0020token\u0020value.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_maybe_update_subscriptions_payment_meta"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Aget_token_label\u0028\u0029",
+        name: "get_token_label",
+        summary: "Get\u0020a\u0020WC_Payment_Token\u0020label.\u0020eg\u0020Visa\u0020ending\u0020in\u00201234",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_get_token_label"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Adisplay_default_payment_token_change_notice\u0028\u0029",
+        name: "display_default_payment_token_change_notice",
+        summary: "Display\u0020a\u0020notice\u0020when\u0020a\u0020customer\u0020sets\u0020a\u0020new\u0020default\u0020token\u0020notifying\u0020them\u0020of\u0020what\u0020this\u0020means\u0020for\u0020their\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_display_default_payment_token_change_notice"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Aupdate_subscription_tokens\u0028\u0029",
+        name: "update_subscription_tokens",
+        summary: "Update\u0020the\u0020customer\u0027s\u0020subscription\u0020tokens\u0020if\u0020they\u0020opted\u0020to\u0020from\u0020their\u0020My\u0020Account\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_update_subscription_tokens"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Aenqueue_frontend_scripts\u0028\u0029",
+        name: "enqueue_frontend_scripts",
+        summary: "Enqueues\u0020the\u0020frontend\u0020scripts\u0020for\u0020the\u0020My\u0020account\u0020\u003E\u0020Payment\u0020methods\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_enqueue_frontend_scripts"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Aprint_deleting_notices\u0028\u0029",
+        name: "print_deleting_notices",
+        summary: "Prints\u0020an\u0020error\u0020notice\u0020stub,\u0020to\u0020be\u0020used\u0020when\u0020a\u0020customer\u0020attempts\u0020to\u0020delete\u0020a\u0020payment\u0020token\u0020used\u0020by\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_print_deleting_notices"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Aget_subscriptions_by_token\u0028\u0029",
+        name: "get_subscriptions_by_token",
+        summary: "Get\u0020subscriptions\u0020by\u0020a\u0020WC_Payment_Token.\u0020All\u0020automatic\u0020subscriptions\u0020with\u0020the\u0020token\u0027s\u0020payment\u0020method,\ncustomer\u0020id\u0020and\u0020token\u0020value\u0020stored\u0020in\u0020post\u0020meta\u0020will\u0020be\u0020returned.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_get_subscriptions_by_token"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Aget_customer_tokens\u0028\u0029",
+        name: "get_customer_tokens",
+        summary: "Get\u0020a\u0020list\u0020of\u0020customer\u0020payment\u0020tokens.\u0020Caches\u0020results\u0020to\u0020avoid\u0020multiple\u0020database\u0020queries\u0020per\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_get_customer_tokens"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Aget_customers_alternative_token\u0028\u0029",
+        name: "get_customers_alternative_token",
+        summary: "Get\u0020the\u0020customer\u0027s\u0020alternative\u0020token.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_get_customers_alternative_token"
+    },{
+        fqsen: "\\WCS_My_Account_Payment_Methods\u003A\u003Acustomer_has_alternative_token\u0028\u0029",
+        name: "customer_has_alternative_token",
+        summary: "Determine\u0020if\u0020the\u0020customer\u0020has\u0020an\u0020alternative\u0020token.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-My-Account-Payment-Methods.html#method_customer_has_alternative_token"
+    },{
+        fqsen: "\\WCS_Object_Sorter",
+        name: "WCS_Object_Sorter",
+        summary: "A\u0020class\u0020to\u0020sort\u0020objects\u0020by\u0020an\u0020object\u0020property.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Object-Sorter.html"
+    },{
+        fqsen: "\\WCS_Object_Sorter\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Object-Sorter.html#method___construct"
+    },{
+        fqsen: "\\WCS_Object_Sorter\u003A\u003Aascending_compare\u0028\u0029",
+        name: "ascending_compare",
+        summary: "Compares\u0020two\u0020objects\u0020using\u0020the\u0020\u0040see\u0020\u0024this\u002D\u003Esort_by_property\u0020getter.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Object-Sorter.html#method_ascending_compare"
+    },{
+        fqsen: "\\WCS_Object_Sorter\u003A\u003Adescending_compare\u0028\u0029",
+        name: "descending_compare",
+        summary: "Compares\u0020two\u0020objects\u0020using\u0020the\u0020\u0040see\u0020\u0024this\u002D\u003Esort_by_property\u0020getter\u0020in\u0020reverse\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Object-Sorter.html#method_descending_compare"
+    },{
+        fqsen: "\\WCS_Object_Sorter\u003A\u003A\u0024sort_by_property",
+        name: "sort_by_property",
+        summary: "The\u0020object\u0020property\u0020to\u0020compare.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Object-Sorter.html#property_sort_by_property"
+    },{
+        fqsen: "\\WCS_Payment_Tokens",
+        name: "WCS_Payment_Tokens",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Payment-Tokens.html"
+    },{
+        fqsen: "\\WCS_Payment_Tokens\u003A\u003Aupdate_subscription_token\u0028\u0029",
+        name: "update_subscription_token",
+        summary: "Update\u0020the\u0020subscription\u0020payment\u0020meta\u0020to\u0020change\u0020from\u0020an\u0020old\u0020payment\u0020token\u0020to\u0020a\u0020new\u0020one.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Payment-Tokens.html#method_update_subscription_token"
+    },{
+        fqsen: "\\WCS_Payment_Tokens\u003A\u003Aget_subscription_payment_meta\u0028\u0029",
+        name: "get_subscription_payment_meta",
+        summary: "Get\u0020all\u0020payment\u0020meta\u0020on\u0020a\u0020subscription\u0020for\u0020a\u0020gateway.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Payment-Tokens.html#method_get_subscription_payment_meta"
+    },{
+        fqsen: "\\WCS_Payment_Tokens\u003A\u003Aget_subscriptions_from_token\u0028\u0029",
+        name: "get_subscriptions_from_token",
+        summary: "Get\u0020subscriptions\u0020by\u0020a\u0020WC_Payment_Token.\u0020All\u0020automatic\u0020subscriptions\u0020with\u0020the\u0020token\u0027s\u0020payment\u0020method,\ncustomer\u0020id\u0020and\u0020token\u0020value\u0020stored\u0020in\u0020post\u0020meta\u0020will\u0020be\u0020returned.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Payment-Tokens.html#method_get_subscriptions_from_token"
+    },{
+        fqsen: "\\WCS_Payment_Tokens\u003A\u003Aget_customer_tokens\u0028\u0029",
+        name: "get_customer_tokens",
+        summary: "Get\u0020a\u0020list\u0020of\u0020customer\u0020payment\u0020tokens.\u0020Caches\u0020results\u0020to\u0020avoid\u0020multiple\u0020database\u0020queries\u0020per\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Payment-Tokens.html#method_get_customer_tokens"
+    },{
+        fqsen: "\\WCS_Payment_Tokens\u003A\u003Aget_customers_alternative_token\u0028\u0029",
+        name: "get_customers_alternative_token",
+        summary: "Get\u0020the\u0020customer\u0027s\u0020alternative\u0020token.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Payment-Tokens.html#method_get_customers_alternative_token"
+    },{
+        fqsen: "\\WCS_Payment_Tokens\u003A\u003Acustomer_has_alternative_token\u0028\u0029",
+        name: "customer_has_alternative_token",
+        summary: "Determine\u0020if\u0020the\u0020customer\u0020has\u0020an\u0020alternative\u0020token.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Payment-Tokens.html#method_customer_has_alternative_token"
+    },{
+        fqsen: "\\WCS_Payment_Tokens\u003A\u003A\u0024customer_tokens",
+        name: "customer_tokens",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Payment-Tokens.html#property_customer_tokens"
+    },{
+        fqsen: "\\WCS_Permalink_Manager",
+        name: "WCS_Permalink_Manager",
+        summary: "Class\u0020WCS_Permalink_Manager",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Permalink-Manager.html"
+    },{
+        fqsen: "\\WCS_Permalink_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Hooks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Permalink-Manager.html#method_init"
+    },{
+        fqsen: "\\WCS_Permalink_Manager\u003A\u003Amaybe_allow_permalink_update\u0028\u0029",
+        name: "maybe_allow_permalink_update",
+        summary: "Validates\u0020that\u0020we\u0027re\u0020not\u0020passing\u0020the\u0020same\u0020endpoint.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Permalink-Manager.html#method_maybe_allow_permalink_update"
+    },{
+        fqsen: "\\WCS_Permalink_Manager\u003A\u003Ashow_duplicate_permalink_notice\u0028\u0029",
+        name: "show_duplicate_permalink_notice",
+        summary: "Display\u0020a\u0020warning\u0020informing\u0020that\u0020the\u0020endpoints\u0020changes\u0020has\u0020been\u0020ignored.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Permalink-Manager.html#method_show_duplicate_permalink_notice"
+    },{
+        fqsen: "\\WCS_Permalink_Manager\u003A\u003A\u0024notice_triggered",
+        name: "notice_triggered",
+        summary: "If\u0020the\u0020notice\u0020has\u0020been\u0020trigger,\u0020set\u0020to\u0020true\u0020to\u0020avoid\u0020duplicate\u0020notices.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Permalink-Manager.html#property_notice_triggered"
+    },{
+        fqsen: "\\WCS_Permalink_Manager\u003A\u003A\u0024permalink_options",
+        name: "permalink_options",
+        summary: "The\u0020options\u0020saved\u0020in\u0020DB\u0020related\u0020to\u0020permalinks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Permalink-Manager.html#property_permalink_options"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager_Many_To_One",
+        name: "WCS_Post_Meta_Cache_Manager_Many_To_One",
+        summary: "Class\u0020for\u0020managing\u0020caches\u0020of\u0020post\u0020meta\u0020data\u0020that\u0020have\u0020a\u0020many\u002Dto\u002Done\u0020relationship,\u0020meaning\nonly\u0020one\u0020cache\u0020should\u0020exist\u0020for\u0020the\u0020meta\u0020value.\u0020This\u0020differs\u0020to\u0020WCS_Post_Meta_Cache_Manager\nwhich\u0020allows\u0020multiple\u0020caches\u0020for\u0020the\u0020same\u0020meta\u0020value\u0020i.e.\u0020a\u0020many\u002Dto\u002Dmany\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager-Many-To-One.html"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager_Many_To_One\u003A\u003Ameta_updated\u0028\u0029",
+        name: "meta_updated",
+        summary: "When\u0020post\u0020meta\u0020is\u0020updated,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\u0020updating\u0020its\u0020cache\nto\u0020reflect\u0020the\u0020change.\u0020Always\u0020pass\u0020the\u0020previous\u0020value,\u0020to\u0020make\u0020sure\u0020that\u0020any\u0020existing\nrelationships\u0020are\u0020also\u0020deleted\u0020because\u0020we\u0020know\u0020the\u0020data\u0020should\u0020not\u0020allow\u0020realtionships\nwith\u0020multiple\u0020other\u0020values.\u0020e.g.\u0020a\u0020subscription\u0020can\u0020only\u0020belong\u0020to\u0020one\u0020customer.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager-Many-To-One.html#method_meta_updated"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager",
+        name: "WCS_Post_Meta_Cache_Manager",
+        summary: "Class\u0020for\u0020managing\u0020caches\u0020of\u0020post\u0020meta",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method___construct"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks\u0020to\u0020keep\u0020related\u0020order\u0020caches\u0020up\u002Dto\u002Ddate.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_init"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Ais_change_to_ignore\u0028\u0029",
+        name: "is_change_to_ignore",
+        summary: "Check\u0020if\u0020the\u0020post\u0020meta\u0020change\u0020is\u0020one\u0020to\u0020act\u0020on\u0020or\u0020ignore,\u0020based\u0020on\u0020the\u0020post\u0020type\u0020and\u0020meta\u0020key\u0020being\u0020changed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_is_change_to_ignore"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Ameta_added\u0028\u0029",
+        name: "meta_added",
+        summary: "When\u0020post\u0020meta\u0020is\u0020added,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\u0020updating\u0020its\u0020cache\nto\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_meta_added"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Ameta_deleted\u0028\u0029",
+        name: "meta_deleted",
+        summary: "When\u0020post\u0020meta\u0020is\u0020deleted,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\u0020updating\u0020its\u0020cache\nto\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_meta_deleted"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Ameta_updated_with_previous\u0028\u0029",
+        name: "meta_updated_with_previous",
+        summary: "When\u0020post\u0020meta\u0020is\u0020updated\u0020from\u0020a\u0020previous\u0020value,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\nupdating\u0020its\u0020cache\u0020to\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_meta_updated_with_previous"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Ameta_updated\u0028\u0029",
+        name: "meta_updated",
+        summary: "When\u0020post\u0020meta\u0020is\u0020updated,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\u0020updating\u0020its\u0020cache\nto\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_meta_updated"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Ameta_deleted_all\u0028\u0029",
+        name: "meta_deleted_all",
+        summary: "When\u0020all\u0020post\u0020meta\u0020rows\u0020for\u0020a\u0020given\u0020key\u0020are\u0020about\u0020to\u0020be\u0020deleted,\u0020check\u0020if\u0020this\u0020class\u0020instance\ncares\u0020about\u0020updating\u0020its\u0020cache\u0020to\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_meta_deleted_all"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Apost_untrashed\u0028\u0029",
+        name: "post_untrashed",
+        summary: "When\u0020a\u0020post\u0020object\u0020is\u0020restored\u0020from\u0020the\u0020trash,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\u0020updating\u0020its\u0020cache\nto\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_post_untrashed"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Apost_deleted\u0028\u0029",
+        name: "post_deleted",
+        summary: "When\u0020a\u0020post\u0020object\u0020is\u0020deleted\u0020or\u0020trashed,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\u0020updating\u0020its\u0020cache\nto\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_post_deleted"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Amaybe_update_for_post_change\u0028\u0029",
+        name: "maybe_update_for_post_change",
+        summary: "When\u0020a\u0020post\u0020object\u0020is\u0020changed,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\u0020updating\u0020its\u0020cache\nto\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_maybe_update_for_post_change"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Amaybe_trigger_update_cache_hook\u0028\u0029",
+        name: "maybe_trigger_update_cache_hook",
+        summary: "When\u0020post\u0020data\u0020is\u0020changed,\u0020check\u0020if\u0020this\u0020class\u0020instance\u0020cares\u0020about\u0020updating\u0020its\u0020cache\nto\u0020reflect\u0020the\u0020change.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_maybe_trigger_update_cache_hook"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Atrigger_update_cache_hook\u0028\u0029",
+        name: "trigger_update_cache_hook",
+        summary: "Trigger\u0020a\u0020hook\u0020to\u0020allow\u00203rd\u0020party\u0020code\u0020to\u0020update\u0020its\u0020cache\u0020for\u0020data\u0020that\u0020it\u0020cares\u0020about.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_trigger_update_cache_hook"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Atrigger_delete_all_caches_hook\u0028\u0029",
+        name: "trigger_delete_all_caches_hook",
+        summary: "Trigger\u0020a\u0020hook\u0020to\u0020allow\u00203rd\u0020party\u0020code\u0020to\u0020delete\u0020its\u0020cache\u0020for\u0020data\u0020that\u0020it\u0020cares\u0020about.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_trigger_delete_all_caches_hook"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003Ais_managed_post_type\u0028\u0029",
+        name: "is_managed_post_type",
+        summary: "Abstract\u0020the\u0020check\u0020against\u0020get_post_type\u0028\u0029\u0020so\u0020that\u0020it\u0020can\u0020be\u0020mocked\u0020for\u0020unit\u0020tests.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#method_is_managed_post_type"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003A\u0024post_type",
+        name: "post_type",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#property_post_type"
+    },{
+        fqsen: "\\WCS_Post_Meta_Cache_Manager\u003A\u003A\u0024meta_keys",
+        name: "meta_keys",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Post-Meta-Cache-Manager.html#property_meta_keys"
+    },{
+        fqsen: "\\WCS_Query",
+        name: "WCS_Query",
+        summary: "WooCommerce\u0020Subscriptions\u0020Query\u0020Handler",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method___construct"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Ainit_query_vars\u0028\u0029",
+        name: "init_query_vars",
+        summary: "Init\u0020query\u0020vars\u0020by\u0020loading\u0020options.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_init_query_vars"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Achange_endpoint_title\u0028\u0029",
+        name: "change_endpoint_title",
+        summary: "Changes\u0020page\u0020title\u0020on\u0020view\u0020subscription\u0020page",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_change_endpoint_title"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Achange_my_account_endpoint_title\u0028\u0029",
+        name: "change_my_account_endpoint_title",
+        summary: "Hooks\u0020onto\u0020\u0060woocommerce_endpoint_\u007B\u0024endpoint\u007D_title\u0060\u0020to\u0020return\u0020the\u0020correct\u0020page\u0020title\u0020for\u0020subscription\u0020endpoints\nin\u0020My\u0020Account.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_change_my_account_endpoint_title"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Aadd_menu_items\u0028\u0029",
+        name: "add_menu_items",
+        summary: "Insert\u0020the\u0020new\u0020endpoint\u0020into\u0020the\u0020My\u0020Account\u0020menu.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_add_menu_items"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Amaybe_redirect_to_only_subscription\u0028\u0029",
+        name: "maybe_redirect_to_only_subscription",
+        summary: "Changes\u0020the\u0020URL\u0020for\u0020the\u0020subscriptions\u0020endpoint\u0020when\u0020there\u0027s\u0020only\u0020one\u0020user\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_maybe_redirect_to_only_subscription"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Aendpoint_content\u0028\u0029",
+        name: "endpoint_content",
+        summary: "Endpoint\u0020HTML\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_endpoint_content"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Ais_query\u0028\u0029",
+        name: "is_query",
+        summary: "Check\u0020if\u0020the\u0020current\u0020query\u0020is\u0020for\u0020a\u0020type\u0020we\u0020want\u0020to\u0020override.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_is_query"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Apre_get_posts\u0028\u0029",
+        name: "pre_get_posts",
+        summary: "Fix\u0020for\u0020endpoints\u0020on\u0020the\u0020homepage",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_pre_get_posts"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Amaybe_redirect_payment_methods\u0028\u0029",
+        name: "maybe_redirect_payment_methods",
+        summary: "Redirect\u0020to\u0020order\u002Dpay\u0020flow\u0020for\u0020Subscription\u0020Payment\u0020Method\u0020endpoint.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_maybe_redirect_payment_methods"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Aget_view_subscription_endpoint\u0028\u0029",
+        name: "get_view_subscription_endpoint",
+        summary: "Reset\u0020the\u0020woocommerce_myaccount_view_subscriptions_endpoint\u0020option\u0020name\u0020to\u0020woocommerce_myaccount_view_subscription_endpoint",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_get_view_subscription_endpoint"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Aadd_endpoint_account_settings\u0028\u0029",
+        name: "add_endpoint_account_settings",
+        summary: "Add\u0020UI\u0020option\u0020for\u0020changing\u0020Subscription\u0020endpoints\u0020in\u0020WC\u0020settings",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_add_endpoint_account_settings"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Aget_endpoint_url\u0028\u0029",
+        name: "get_endpoint_url",
+        summary: "Get\u0020endpoint\u0020URL.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_get_endpoint_url"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Aadd_wcs_query_vars\u0028\u0029",
+        name: "add_wcs_query_vars",
+        summary: "Hooks\u0020into\u0020\u0060woocommerce_get_query_vars\u0060\u0020to\u0020make\u0020sure\u0020query\u0020vars\u0020defined\u0020in\nthis\u0020class\u0020are\u0020also\u0020considered\u0020\u0060WC_Query\u0060\u0020query\u0020vars.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_add_wcs_query_vars"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Amaybe_add_active_class\u0028\u0029",
+        name: "maybe_add_active_class",
+        summary: "Adds\u0020\u0060is\u002Dactive\u0060\u0020class\u0020to\u0020Subscriptions\u0020label\u0020when\u0020we\u0027re\u0020viewing\u0020a\u0020single\u0020Subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_maybe_add_active_class"
+    },{
+        fqsen: "\\WCS_Query\u003A\u003Aadd_breadcrumb\u0028\u0029",
+        name: "add_breadcrumb",
+        summary: "Adds\u0020endpoint\u0020breadcrumb\u0020when\u0020viewing\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Query.html#method_add_breadcrumb"
+    },{
+        fqsen: "\\WCS_Remove_Item",
+        name: "WCS_Remove_Item",
+        summary: "Subscriptions\u0020Remove\u0020Item",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Remove-Item.html"
+    },{
+        fqsen: "\\WCS_Remove_Item\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialise\u0020class\u0020hooks\u0020\u0026\u0020filters\u0020when\u0020the\u0020file\u0020is\u0020loaded",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Remove-Item.html#method_init"
+    },{
+        fqsen: "\\WCS_Remove_Item\u003A\u003Aget_remove_url\u0028\u0029",
+        name: "get_remove_url",
+        summary: "Returns\u0020the\u0020link\u0020used\u0020to\u0020remove\u0020an\u0020item\u0020from\u0020a\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Remove-Item.html#method_get_remove_url"
+    },{
+        fqsen: "\\WCS_Remove_Item\u003A\u003Aget_undo_remove_url\u0028\u0029",
+        name: "get_undo_remove_url",
+        summary: "Returns\u0020the\u0020link\u0020to\u0020undo\u0020removing\u0020an\u0020item\u0020from\u0020a\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Remove-Item.html#method_get_undo_remove_url"
+    },{
+        fqsen: "\\WCS_Remove_Item\u003A\u003Amaybe_remove_or_add_item_to_subscription\u0028\u0029",
+        name: "maybe_remove_or_add_item_to_subscription",
+        summary: "Process\u0020the\u0020remove\u0020or\u0020re\u002Dadd\u0020a\u0020line\u0020item\u0020from\u0020a\u0020subscription\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Remove-Item.html#method_maybe_remove_or_add_item_to_subscription"
+    },{
+        fqsen: "\\WCS_Remove_Item\u003A\u003Avalidate_remove_items_request\u0028\u0029",
+        name: "validate_remove_items_request",
+        summary: "Validate\u0020the\u0020incoming\u0020request\u0020to\u0020either\u0020remove\u0020an\u0020item\u0020or\u0020add\u0020and\u0020item\u0020back\u0020to\u0020a\u0020subscription\u0020that\u0020was\u0020previously\u0020removed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Remove-Item.html#method_validate_remove_items_request"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager",
+        name: "WCS_Renewal_Cart_Stock_Manager",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Aattach_callbacks\u0028\u0029",
+        name: "attach_callbacks",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_attach_callbacks"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Amaybe_adjust_stock_cart\u0028\u0029",
+        name: "maybe_adjust_stock_cart",
+        summary: "Attaches\u0020filters\u0020that\u0020allow\u0020a\u0020manual\u0020renewal\u0020to\u0020add\u0020to\u0020the\u0020cart\u0020an\u0020otherwise\u0020out\u0020of\u0020stock\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_maybe_adjust_stock_cart"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Amaybe_adjust_stock_checkout\u0028\u0029",
+        name: "maybe_adjust_stock_checkout",
+        summary: "Attaches\u0020filters\u0020that\u0020allow\u0020manual\u0020renewal\u0020carts\u0020to\u0020pass\u0020checkout\u0020validity\u0020checks\u0020for\u0020an\u0020otherwise\u0020out\u0020of\u0020stock\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_maybe_adjust_stock_checkout"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Amaybe_attach_stock_filters\u0028\u0029",
+        name: "maybe_attach_stock_filters",
+        summary: "Attaches\u0020stock\u0020override\u0020filters\u0020for\u0020out\u0020of\u0020stock\u0020renewal\u0020products.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_maybe_attach_stock_filters"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Aadjust_is_in_stock\u0028\u0029",
+        name: "adjust_is_in_stock",
+        summary: "Adjusts\u0020the\u0020stock\u0020status\u0020of\u0020a\u0020product\u0020that\u0020is\u0020an\u0020out\u002Dof\u002Dstock\u0020renewal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_adjust_is_in_stock"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Aadjust_backorder_status\u0028\u0029",
+        name: "adjust_backorder_status",
+        summary: "Adjusts\u0020whether\u0020backorders\u0020are\u0020allowed\u0020so\u0020out\u002Dof\u002Dstock\u0020renewal\u0020item\u0020products\u0020bypass\u0020stock\u0020validation.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_adjust_backorder_status"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Aremove_filters\u0028\u0029",
+        name: "remove_filters",
+        summary: "Removes\u0020the\u0020filters\u0020that\u0020adjust\u0020stock\u0020on\u0020out\u0020of\u0020stock\u0020renewals\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_remove_filters"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Acart_contains_renewal_to_product\u0028\u0029",
+        name: "cart_contains_renewal_to_product",
+        summary: "Determines\u0020if\u0020the\u0020cart\u0020contains\u0020a\u0020renewal\u0020order\u0020with\u0020a\u0020specific\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_cart_contains_renewal_to_product"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Aget_order_from_cart\u0028\u0029",
+        name: "get_order_from_cart",
+        summary: "Gets\u0020the\u0020renewal\u0020order\u0020from\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_get_order_from_cart"
+    },{
+        fqsen: "\\WCS_Renewal_Cart_Stock_Manager\u003A\u003Aget_order_from_query_vars\u0028\u0029",
+        name: "get_order_from_query_vars",
+        summary: "Gets\u0020the\u0020renewal\u0020order\u0020from\u0020order\u002Dpay\u0020query\u0020vars.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Renewal-Cart-Stock-Manager.html#method_get_order_from_query_vars"
+    },{
+        fqsen: "\\WCS_Select2",
+        name: "WCS_Select2",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html"
+    },{
+        fqsen: "\\WCS_Select2\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html#method___construct"
+    },{
+        fqsen: "\\WCS_Select2\u003A\u003Arender\u0028\u0029",
+        name: "render",
+        summary: "Render\u0020a\u0020select2\u0020element\u0020given\u0020an\u0020array\u0020of\u0020attributes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html#method_render"
+    },{
+        fqsen: "\\WCS_Select2\u003A\u003Aget_property_name\u0028\u0029",
+        name: "get_property_name",
+        summary: "Get\u0020a\u0020property\u0020name.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html#method_get_property_name"
+    },{
+        fqsen: "\\WCS_Select2\u003A\u003Aattributes_to_html\u0028\u0029",
+        name: "attributes_to_html",
+        summary: "Returns\u0020a\u0020list\u0020of\u0020properties\/values\u0020\u0028HTML\u0029\u0020from\u0020an\u0020array.\u0020All\u0020the\u0020values\nare\u0020escaped.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html#method_attributes_to_html"
+    },{
+        fqsen: "\\WCS_Select2\u003A\u003Aprint_html\u0028\u0029",
+        name: "print_html",
+        summary: "Prints\u0020the\u0020HTML\u0020to\u0020show\u0020the\u0020Select2\u0020field.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html#method_print_html"
+    },{
+        fqsen: "\\WCS_Select2\u003A\u003Aget_html\u0028\u0029",
+        name: "get_html",
+        summary: "Returns\u0020the\u0020HTML\u0020needed\u0020to\u0020show\u0020the\u0020Select2\u0020field",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html#method_get_html"
+    },{
+        fqsen: "\\WCS_Select2\u003A\u003A\u0024default_attributes",
+        name: "default_attributes",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html#property_default_attributes"
+    },{
+        fqsen: "\\WCS_Select2\u003A\u003A\u0024attributes",
+        name: "attributes",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Select2.html#property_attributes"
+    },{
+        fqsen: "\\WCS_SQL_Transaction",
+        name: "WCS_SQL_Transaction",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html"
+    },{
+        fqsen: "\\WCS_SQL_Transaction\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html#method___construct"
+    },{
+        fqsen: "\\WCS_SQL_Transaction\u003A\u003Astart\u0028\u0029",
+        name: "start",
+        summary: "Starts\u0020a\u0020MYSQL\u0020Transction.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html#method_start"
+    },{
+        fqsen: "\\WCS_SQL_Transaction\u003A\u003Acommit\u0028\u0029",
+        name: "commit",
+        summary: "Commits\u0020the\u0020MYSQL\u0020Transction.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html#method_commit"
+    },{
+        fqsen: "\\WCS_SQL_Transaction\u003A\u003Arollback\u0028\u0029",
+        name: "rollback",
+        summary: "Rolls\u0020back\u0020any\u0020changes\u0020made\u0020during\u0020the\u0020MYSQL\u0020Transction.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html#method_rollback"
+    },{
+        fqsen: "\\WCS_SQL_Transaction\u003A\u003Ahandle_shutdown\u0028\u0029",
+        name: "handle_shutdown",
+        summary: "Closes\u0020out\u0020an\u0020active\u0020transaction\u0020depending\u0020on\u0020the\u0020type\u0020of\u0020shutdown.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html#method_handle_shutdown"
+    },{
+        fqsen: "\\WCS_SQL_Transaction\u003A\u003A\u0024on_fatal",
+        name: "on_fatal",
+        summary: "The\u0020query\u0020to\u0020run\u0020when\u0020a\u0020fatal\u0020shutdown\u0020occurs.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html#property_on_fatal"
+    },{
+        fqsen: "\\WCS_SQL_Transaction\u003A\u003A\u0024on_shutdown",
+        name: "on_shutdown",
+        summary: "The\u0020query\u0020to\u0020run\u0020if\u0020the\u0020PHP\u0020request\u0020ends\u0020without\u0020error.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html#property_on_shutdown"
+    },{
+        fqsen: "\\WCS_SQL_Transaction\u003A\u003A\u0024active_transaction",
+        name: "active_transaction",
+        summary: "Whether\u0020there\u0027s\u0020an\u0020active\u0020MYSQL\u0020transaction.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SQL-Transaction.html#property_active_transaction"
+    },{
+        fqsen: "\\WCS_Staging",
+        name: "WCS_Staging",
+        summary: "WooCommerce\u0020Subscriptions\u0020staging\u0020mode\u0020handler.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_init"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Amaybe_record_staging_site_renewal\u0028\u0029",
+        name: "maybe_record_staging_site_renewal",
+        summary: "Add\u0020an\u0020order\u0020note\u0020to\u0020a\u0020renewal\u0020order\u0020to\u0020record\u0020when\u0020it\u0020was\u0020created\u0020under\u0020staging\u0020site\u0020conditions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_maybe_record_staging_site_renewal"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Amaybe_add_menu_badge\u0028\u0029",
+        name: "maybe_add_menu_badge",
+        summary: "Add\u0020a\u0020badge\u0020to\u0020the\u0020Subscriptions\u0020submenu\u0020when\u0020a\u0020site\u0020is\u0020operating\u0020under\u0020a\u0020staging\u0020site\u0020lock.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_maybe_add_menu_badge"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Amaybe_reset_admin_notice\u0028\u0029",
+        name: "maybe_reset_admin_notice",
+        summary: "Handles\u0020admin\u0020requests\u0020to\u0020redisplay\u0020the\u0020staging\u0020site\u0020admin\u0020notice.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_maybe_reset_admin_notice"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Amaybe_add_payment_method_note\u0028\u0029",
+        name: "maybe_add_payment_method_note",
+        summary: "Displays\u0020a\u0020note\u0020under\u0020the\u0020edit\u0020subscription\u0020payment\u0020method\u0020field\u0020to\u0020explain\u0020why\u0020the\u0020subscription\u0020is\u0020set\u0020to\u0020Manual\u0020Renewal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_maybe_add_payment_method_note"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Aget_payment_method_tooltip\u0028\u0029",
+        name: "get_payment_method_tooltip",
+        summary: "Returns\u0020the\u0020content\u0020for\u0020a\u0020tooltip\u0020explaining\u0020a\u0020subscription\u0027s\u0020payment\u0020method\u0020while\u0020in\u0020staging\u0020mode.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_get_payment_method_tooltip"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Ahandle_site_change_notice\u0028\u0029",
+        name: "handle_site_change_notice",
+        summary: "Displays\u0020a\u0020notice\u0020when\u0020Subscriptions\u0020is\u0020being\u0020run\u0020on\u0020a\u0020different\u0020site,\u0020like\u0020a\u0020staging\u0020or\u0020testing\u0020site.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_handle_site_change_notice"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Aget_duplicate_site_lock_key\u0028\u0029",
+        name: "get_duplicate_site_lock_key",
+        summary: "Generates\u0020a\u0020unique\u0020key\u0020based\u0020on\u0020the\u0020sites\u0020URL\u0020used\u0020to\u0020determine\u0020duplicate\/staging\u0020sites.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_get_duplicate_site_lock_key"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Aset_duplicate_site_url_lock\u0028\u0029",
+        name: "set_duplicate_site_url_lock",
+        summary: "Sets\u0020the\u0020duplicate\u0020site\u0020lock\u0020key\u0020to\u0020record\u0020the\u0020site\u0027s\u0020\u0022live\u0022\u0020url.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_set_duplicate_site_url_lock"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Ais_duplicate_site\u0028\u0029",
+        name: "is_duplicate_site",
+        summary: "Determines\u0020if\u0020this\u0020is\u0020a\u0020duplicate\/staging\u0020site.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_is_duplicate_site"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Aget_live_site_url\u0028\u0029",
+        name: "get_live_site_url",
+        summary: "Gets\u0020the\u0020URL\u0020Subscriptions\u0020considers\u0020as\u0020the\u0020live\u0020site\u0020URL.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_get_live_site_url"
+    },{
+        fqsen: "\\WCS_Staging\u003A\u003Aget_site_url_from_source\u0028\u0029",
+        name: "get_site_url_from_source",
+        summary: "Gets\u0020the\u0020sites\u0020WordPress\u0020or\u0020Subscriptions\u0020URL.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Staging.html#method_get_site_url_from_source"
+    },{
+        fqsen: "\\WCS_Template_Loader",
+        name: "WCS_Template_Loader",
+        summary: "WC\u0020Subscriptions\u0020Template\u0020Loader",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_init"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_view_subscription_template\u0028\u0029",
+        name: "get_view_subscription_template",
+        summary: "Get\u0020the\u0020view\u0020subscription\u0020template.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_view_subscription_template"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_subscription_details_template\u0028\u0029",
+        name: "get_subscription_details_template",
+        summary: "Get\u0020the\u0020subscription\u0020details\u0020template,\u0020which\u0020is\u0020part\u0020of\u0020the\u0020view\u0020subscription\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_subscription_details_template"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_subscription_totals_template\u0028\u0029",
+        name: "get_subscription_totals_template",
+        summary: "Get\u0020the\u0020subscription\u0020totals\u0020template,\u0020which\u0020is\u0020part\u0020of\u0020the\u0020view\u0020subscription\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_subscription_totals_template"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_order_downloads_template\u0028\u0029",
+        name: "get_order_downloads_template",
+        summary: "Get\u0020the\u0020order\u0020downloads\u0020template,\u0020which\u0020is\u0020part\u0020of\u0020the\u0020view\u0020subscription\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_order_downloads_template"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_subscription_totals_table_template\u0028\u0029",
+        name: "get_subscription_totals_table_template",
+        summary: "Gets\u0020the\u0020subscription\u0020totals\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_subscription_totals_table_template"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_subscription_receipt_template\u0028\u0029",
+        name: "get_subscription_receipt_template",
+        summary: "Gets\u0020the\u0020subscription\u0020receipt\u0020template\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_subscription_receipt_template"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_recurring_cart_subtotals\u0028\u0029",
+        name: "get_recurring_cart_subtotals",
+        summary: "Gets\u0020the\u0020recurring\u0020totals\u0020subtotal\u0020rows\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_recurring_cart_subtotals"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_recurring_cart_coupons\u0028\u0029",
+        name: "get_recurring_cart_coupons",
+        summary: "Gets\u0020the\u0020recurring\u0020totals\u0020coupon\u0020rows\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_recurring_cart_coupons"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_recurring_cart_shipping\u0028\u0029",
+        name: "get_recurring_cart_shipping",
+        summary: "Gets\u0020the\u0020recurring\u0020totals\u0020shipping\u0020rows\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_recurring_cart_shipping"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_recurring_cart_fees\u0028\u0029",
+        name: "get_recurring_cart_fees",
+        summary: "Gets\u0020the\u0020recurring\u0020totals\u0020fee\u0020rows\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_recurring_cart_fees"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_recurring_cart_taxes\u0028\u0029",
+        name: "get_recurring_cart_taxes",
+        summary: "Gets\u0020the\u0020recurring\u0020totals\u0020tax\u0020rows\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_recurring_cart_taxes"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_recurring_subscription_totals\u0028\u0029",
+        name: "get_recurring_subscription_totals",
+        summary: "Gets\u0020the\u0020recurring\u0020subscription\u0020total\u0020rows\u0020content.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_recurring_subscription_totals"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_my_subscriptions\u0028\u0029",
+        name: "get_my_subscriptions",
+        summary: "Loads\u0020the\u0020my\u002Dsubscriptions.php\u0020template\u0020on\u0020the\u0020My\u0020Account\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_my_subscriptions"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_subscription_add_to_cart\u0028\u0029",
+        name: "get_subscription_add_to_cart",
+        summary: "Gets\u0020the\u0020subscription\u0020add_to_cart\u0020template.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_subscription_add_to_cart"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_variable_subscription_add_to_cart\u0028\u0029",
+        name: "get_variable_subscription_add_to_cart",
+        summary: "Gets\u0020the\u0020variable\u0020subscription\u0020add_to_cart\u0020template.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_variable_subscription_add_to_cart"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Aget_opc_subscription_add_to_cart\u0028\u0029",
+        name: "get_opc_subscription_add_to_cart",
+        summary: "Gets\u0020OPC\u0027s\u0020simple\u0020add\u0020to\u0020cart\u0020template\u0020for\u0020simple\u0020subscription\u0020products\u0020\u0028to\u0020ensure\u0020data\u0020attributes\u0020required\u0020by\u0020OPC\u0020are\u0020added\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_get_opc_subscription_add_to_cart"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Ahandle_relocated_templates\u0028\u0029",
+        name: "handle_relocated_templates",
+        summary: "Handles\u0020relocated\u0020subscription\u0020templates.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_handle_relocated_templates"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003Ais_deprecated_default_path\u0028\u0029",
+        name: "is_deprecated_default_path",
+        summary: "Determine\u0020if\u0020the\u0020given\u0020template\u0020file\u0020and\u0020default\u0020path\u0020is\u0020sourcing\u0020the\u0020template\nfrom\u0020a\u0020outdated\u0020location.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#method_is_deprecated_default_path"
+    },{
+        fqsen: "\\WCS_Template_Loader\u003A\u003A\u0024relocated_templates",
+        name: "relocated_templates",
+        summary: "Relocated\u0020templates\u0020from\u0020WooCommerce\u0020Subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Template-Loader.html#property_relocated_templates"
+    },{
+        fqsen: "\\WCS_User_Change_Status_Handler",
+        name: "WCS_User_Change_Status_Handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-User-Change-Status-Handler.html"
+    },{
+        fqsen: "\\WCS_User_Change_Status_Handler\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-User-Change-Status-Handler.html#method_init"
+    },{
+        fqsen: "\\WCS_User_Change_Status_Handler\u003A\u003Amaybe_change_users_subscription\u0028\u0029",
+        name: "maybe_change_users_subscription",
+        summary: "Checks\u0020if\u0020the\u0020current\u0020request\u0020is\u0020by\u0020a\u0020user\u0020to\u0020change\u0020the\u0020status\u0020of\u0020their\u0020subscription,\u0020and\u0020if\u0020it\u0020is,\nvalidate\u0020the\u0020request\u0020and\u0020proceed\u0020to\u0020change\u0020to\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-User-Change-Status-Handler.html#method_maybe_change_users_subscription"
+    },{
+        fqsen: "\\WCS_User_Change_Status_Handler\u003A\u003Achange_users_subscription\u0028\u0029",
+        name: "change_users_subscription",
+        summary: "Change\u0020the\u0020status\u0020of\u0020a\u0020subscription\u0020and\u0020show\u0020a\u0020notice\u0020to\u0020the\u0020user\u0020if\u0020there\u0020was\u0020an\u0020issue.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-User-Change-Status-Handler.html#method_change_users_subscription"
+    },{
+        fqsen: "\\WCS_User_Change_Status_Handler\u003A\u003Avalidate_request\u0028\u0029",
+        name: "validate_request",
+        summary: "Validates\u0020a\u0020user\u0020change\u0020status\u0020change\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-User-Change-Status-Handler.html#method_validate_request"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT",
+        name: "WCS_Customer_Store_Cached_CPT",
+        summary: "Customer\u0020data\u0020store\u0020for\u0020subscriptions\u0020stored\u0020in\u0020Custom\u0020Post\u0020Types,\u0020with\u0020caching.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method___construct"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks\u0020to\u0020keep\u0020user\u0020subscription\u0020caches\u0020up\u002Dto\u002Ddate\u0020and\u0020provide\u0020debug\u0020tools\u0020for\u0020managing\u0020the\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_init"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aget_users_subscription_ids\u0028\u0029",
+        name: "get_users_subscription_ids",
+        summary: "Get\u0020the\u0020IDs\u0020for\u0020a\u0020given\u0020user\u0027s\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_get_users_subscription_ids"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aget_users_subscription_ids_from_cache\u0028\u0029",
+        name: "get_users_subscription_ids_from_cache",
+        summary: "Find\u0020subscriptions\u0020for\u0020a\u0020given\u0020user\u0020from\u0020the\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_get_users_subscription_ids_from_cache"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aadd_subscription_id_to_cache\u0028\u0029",
+        name: "add_subscription_id_to_cache",
+        summary: "Add\u0020a\u0020subscription\u0020ID\u0020to\u0020the\u0020cached\u0020subscriptions\u0020for\u0020a\u0020given\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_add_subscription_id_to_cache"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Adelete_subscription_id_from_cache\u0028\u0029",
+        name: "delete_subscription_id_from_cache",
+        summary: "Delete\u0020a\u0020subscription\u0020ID\u0020from\u0020the\u0020cached\u0020IDs\u0020for\u0020a\u0020given\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_delete_subscription_id_from_cache"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aupdate_subscription_id_cache\u0028\u0029",
+        name: "update_subscription_id_cache",
+        summary: "Helper\u0020function\u0020for\u0020setting\u0020subscription\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_update_subscription_id_cache"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Adelete_caches_for_all_users\u0028\u0029",
+        name: "delete_caches_for_all_users",
+        summary: "Clear\u0020all\u0020caches\u0020for\u0020all\u0020subscriptions\u0020against\u0020all\u0020users.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_delete_caches_for_all_users"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Adelete_cache_for_user\u0028\u0029",
+        name: "delete_cache_for_user",
+        summary: "Clears\u0020the\u0020cache\u0020for\u0020a\u0020given\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_delete_cache_for_user"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aset_empty_cache\u0028\u0029",
+        name: "set_empty_cache",
+        summary: "Set\u0020empty\u0020subscription\u0020cache\u0020on\u0020a\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_set_empty_cache"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Amaybe_update_for_post_meta_change\u0028\u0029",
+        name: "maybe_update_for_post_meta_change",
+        summary: "If\u0020there\u0020is\u0020a\u0020change\u0020to\u0020a\u0020subscription\u0027s\u0020post\u0020meta\u0020key,\u0020update\u0020the\u0020user\u0020meta\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_maybe_update_for_post_meta_change"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Amaybe_delete_all_for_post_meta_change\u0028\u0029",
+        name: "maybe_delete_all_for_post_meta_change",
+        summary: "Remove\u0020all\u0020caches\u0020for\u0020a\u0020given\u0020meta\u0020key\u0020if\u0020all\u0020entries\u0020for\u0020that\u0020meta\u0020key\u0020are\u0020being\u0020deleted.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_maybe_delete_all_for_post_meta_change"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aget_user_ids_without_cache\u0028\u0029",
+        name: "get_user_ids_without_cache",
+        summary: "Get\u0020the\u0020IDs\u0020of\u0020users\u0020without\u0020a\u0020cache\u0020set.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_get_user_ids_without_cache"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020the\u0020items\u0020to\u0020be\u0020updated,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aupdate_items_cache\u0028\u0029",
+        name: "update_items_cache",
+        summary: "Run\u0020the\u0020update\u0020for\u0020a\u0020single\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_update_items_cache"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Adelete_all_caches\u0028\u0029",
+        name: "delete_all_caches",
+        summary: "Clear\u0020all\u0020caches.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_delete_all_caches"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003Aget_cache_meta_key\u0028\u0029",
+        name: "get_cache_meta_key",
+        summary: "Gets\u0020the\u0020cache\u0020meta\u0020key.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#method_get_cache_meta_key"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003A_CACHE_META_KEY",
+        name: "_CACHE_META_KEY",
+        summary: "Meta\u0020key\u0020used\u0020to\u0020store\u0020all\u0020of\u0020a\u0020customer\u0027s\u0020subscription\u0020IDs\u0020in\u0020their\u0020user\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#constant__CACHE_META_KEY"
+    },{
+        fqsen: "\\WCS_Customer_Store_Cached_CPT\u003A\u003A\u0024post_meta_cache_manager",
+        name: "post_meta_cache_manager",
+        summary: "Keep\u0020cache\u0020up\u002Dto\u002Ddate\u0020with\u0020changes\u0020to\u0020our\u0020meta\u0020data\u0020via\u0020WordPress\u0020post\u0020meta\u0020APIs\nby\u0020using\u0020a\u0020post\u0020meta\u0020cache\u0020manager.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-Cached-CPT.html#property_post_meta_cache_manager"
+    },{
+        fqsen: "\\WCS_Customer_Store_CPT",
+        name: "WCS_Customer_Store_CPT",
+        summary: "Customer\u0020data\u0020store\u0020for\u0020subscriptions\u0020stored\u0020in\u0020Custom\u0020Post\u0020Types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-CPT.html"
+    },{
+        fqsen: "\\WCS_Customer_Store_CPT\u003A\u003Aget_meta_key\u0028\u0029",
+        name: "get_meta_key",
+        summary: "Get\u0020the\u0020meta\u0020key\u0020used\u0020to\u0020link\u0020a\u0020customer\u0020with\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-CPT.html#method_get_meta_key"
+    },{
+        fqsen: "\\WCS_Customer_Store_CPT\u003A\u003Aget_users_subscription_ids\u0028\u0029",
+        name: "get_users_subscription_ids",
+        summary: "Get\u0020the\u0020IDs\u0020for\u0020a\u0020given\u0020user\u0027s\u0020subscriptions\u0020by\u0020querying\u0020post\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-CPT.html#method_get_users_subscription_ids"
+    },{
+        fqsen: "\\WCS_Customer_Store_CPT\u003A\u003A\u0024meta_key",
+        name: "meta_key",
+        summary: "The\u0020meta\u0020key\u0020used\u0020to\u0020link\u0020a\u0020customer\u0020with\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Customer-Store-CPT.html#property_meta_key"
+    },{
+        fqsen: "\\WCS_Product_Variable_Data_Store_CPT",
+        name: "WCS_Product_Variable_Data_Store_CPT",
+        summary: "WCS\u0020Variable\u0020Product\u0020Data\u0020Store\u003A\u0020Stored\u0020in\u0020CPT.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Product-Variable-Data-Store-CPT.html"
+    },{
+        fqsen: "\\WCS_Product_Variable_Data_Store_CPT\u003A\u003Aread\u0028\u0029",
+        name: "read",
+        summary: "Method\u0020to\u0020read\u0020a\u0020product\u0020from\u0020the\u0020database.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Product-Variable-Data-Store-CPT.html#method_read"
+    },{
+        fqsen: "\\WCS_Product_Variable_Data_Store_CPT\u003A\u003Aread_min_max_variation_data\u0028\u0029",
+        name: "read_min_max_variation_data",
+        summary: "Read\u0020min\u0020and\u0020max\u0020variation\u0020data\u0020from\u0020post\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Product-Variable-Data-Store-CPT.html#method_read_min_max_variation_data"
+    },{
+        fqsen: "\\WCS_Product_Variable_Data_Store_CPT\u003A\u003A\u0024reading_min_max_variation_data",
+        name: "reading_min_max_variation_data",
+        summary: "A\u0020cache\u0020of\u0020products\u0020having\u0020their\u0020min\u0020and\u0020max\u0020variation\u0020data\u0020read.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Product-Variable-Data-Store-CPT.html#property_reading_min_max_variation_data"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT",
+        name: "WCS_Related_Order_Store_Cached_CPT",
+        summary: "Related\u0020order\u0020data\u0020store\u0020for\u0020orders\u0020and\u0020subscriptions\u0020stored\u0020in\u0020Custom\u0020Post\u0020Types,\u0020with\u0020caching.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method___construct"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks\u0020to\u0020keep\u0020related\u0020order\u0020caches\u0020up\u002Dto\u002Ddate\u0020and\u0020make\u0020sure\nthe\u0020cache\u0020doesn\u0027t\u0020mess\u0020with\u0020other\u0020data\u0020stores.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_init"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aget_related_order_ids\u0028\u0029",
+        name: "get_related_order_ids",
+        summary: "Find\u0020orders\u0020related\u0020to\u0020a\u0020given\u0020subscription\u0020in\u0020a\u0020given\u0020way.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_get_related_order_ids"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aadd_relation\u0028\u0029",
+        name: "add_relation",
+        summary: "Helper\u0020function\u0020for\u0020linking\u0020an\u0020order\u0020to\u0020a\u0020subscription\u0020via\u0020a\u0020given\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_add_relation"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Adelete_relation\u0028\u0029",
+        name: "delete_relation",
+        summary: "Remove\u0020the\u0020relationship\u0020between\u0020a\u0020given\u0020order\u0020and\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_delete_relation"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Adelete_relations\u0028\u0029",
+        name: "delete_relations",
+        summary: "Remove\u0020all\u0020related\u0020orders\/subscriptions\u0020of\u0020a\u0020given\u0020type\u0020from\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_delete_relations"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aget_related_order_ids_from_cache\u0028\u0029",
+        name: "get_related_order_ids_from_cache",
+        summary: "Find\u0020orders\u0020related\u0020to\u0020a\u0020given\u0020subscription\u0020in\u0020a\u0020given\u0020way\u0020from\u0020the\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_get_related_order_ids_from_cache"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aadd_related_order_id_to_cache\u0028\u0029",
+        name: "add_related_order_id_to_cache",
+        summary: "Add\u0020a\u0020related\u0020order\u0020ID\u0020to\u0020the\u0020cached\u0020related\u0020order\u0020IDs\u0020for\u0020a\u0020given\u0020order\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_add_related_order_id_to_cache"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Adelete_related_order_id_from_cache\u0028\u0029",
+        name: "delete_related_order_id_from_cache",
+        summary: "Delete\u0020a\u0020related\u0020order\u0020ID\u0020from\u0020the\u0020cached\u0020related\u0020order\u0020IDs\u0020for\u0020a\u0020given\u0020order\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_delete_related_order_id_from_cache"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aupdate_related_order_id_cache\u0028\u0029",
+        name: "update_related_order_id_cache",
+        summary: "Helper\u0020function\u0020for\u0020setting\u0020related\u0020order\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_update_related_order_id_cache"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aget_cache_meta_key\u0028\u0029",
+        name: "get_cache_meta_key",
+        summary: "Get\u0020the\u0020meta\u0020key\u0020used\u0020to\u0020store\u0020the\u0020cache\u0020of\u0020linked\u0020order\u0020with\u0020a\u0020subscription,\u0020based\u0020on\u0020the\u0020type\u0020of\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_get_cache_meta_key"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Adelete_caches_for_subscription\u0028\u0029",
+        name: "delete_caches_for_subscription",
+        summary: "Clear\u0020related\u0020order\u0020caches\u0020for\u0020a\u0020given\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_delete_caches_for_subscription"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Adelete_related_order_id_from_caches\u0028\u0029",
+        name: "delete_related_order_id_from_caches",
+        summary: "Remove\u0020an\u0020order\u0020from\u0020all\u0020related\u0020order\u0020caches.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_delete_related_order_id_from_caches"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Adelete_caches_for_all_subscriptions\u0028\u0029",
+        name: "delete_caches_for_all_subscriptions",
+        summary: "Clear\u0020all\u0020related\u0020order\u0020caches\u0020for\u0020all\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_delete_caches_for_all_subscriptions"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aadd_related_order_cache_props\u0028\u0029",
+        name: "add_related_order_cache_props",
+        summary: "Add\u0020related\u0020order\u0020cache\u0020meta\u0020keys\u0020to\u0020a\u0020set\u0020of\u0020props\u0020for\u0020a\u0020subscription\u0020data\u0020store.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_add_related_order_cache_props"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aset_empty_renewal_order_cache\u0028\u0029",
+        name: "set_empty_renewal_order_cache",
+        summary: "Set\u0020empty\u0020renewal\u0020order\u0020cache\u0020on\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_set_empty_renewal_order_cache"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Amaybe_update_for_post_meta_change\u0028\u0029",
+        name: "maybe_update_for_post_meta_change",
+        summary: "If\u0020there\u0020is\u0020a\u0020change\u0020to\u0020a\u0020related\u0020order\u0020post\u0020meta\u0020key,\u0020update\u0020the\u0020cache.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_maybe_update_for_post_meta_change"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Amaybe_delete_all_for_post_meta_change\u0028\u0029",
+        name: "maybe_delete_all_for_post_meta_change",
+        summary: "Remove\u0020all\u0020caches\u0020for\u0020a\u0020given\u0020meta\u0020key\u0020if\u0020all\u0020entries\u0020for\u0020that\u0020meta\u0020key\u0020are\u0020being\u0020deleted.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_maybe_delete_all_for_post_meta_change"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aget_subscription_ids_without_cache\u0028\u0029",
+        name: "get_subscription_ids_without_cache",
+        summary: "Get\u0020the\u0020IDs\u0020of\u0020subscriptions\u0020without\u0020related\u0020order\u0020cache\u0020set\u0020for\u0020a\u0020give\u0020relation\u0020type\u0020or\u0020types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_get_subscription_ids_without_cache"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aget_relation_type_for_meta_key\u0028\u0029",
+        name: "get_relation_type_for_meta_key",
+        summary: "Get\u0020the\u0020order\u0020relation\u0020for\u0020a\u0020given\u0020post\u0020meta\u0020key.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_get_relation_type_for_meta_key"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aremove_related_order_cache_keys\u0028\u0029",
+        name: "remove_related_order_cache_keys",
+        summary: "Remove\u0020related\u0020order\u0020cache\u0020meta\u0020data\u0020from\u0020order\u0020meta\u0020copied\u0020from\u0020subscriptions\u0020to\u0020renewal\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_remove_related_order_cache_keys"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020the\u0020items\u0020to\u0020be\u0020updated,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Aupdate_items_cache\u0028\u0029",
+        name: "update_items_cache",
+        summary: "Run\u0020the\u0020update\u0020for\u0020a\u0020single\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_update_items_cache"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003Adelete_all_caches\u0028\u0029",
+        name: "delete_all_caches",
+        summary: "Clear\u0020all\u0020caches.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#method_delete_all_caches"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003A\u0024post_meta_cache_manager",
+        name: "post_meta_cache_manager",
+        summary: "Keep\u0020cache\u0020up\u002Dto\u002Ddate\u0020with\u0020changes\u0020to\u0020our\u0020meta\u0020data\u0020via\u0020WordPress\u0020post\u0020meta\u0020APIs\nby\u0020using\u0020a\u0020post\u0020meta\u0020cache\u0020manager.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#property_post_meta_cache_manager"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_Cached_CPT\u003A\u003A\u0024relation_keys",
+        name: "relation_keys",
+        summary: "Store\u0020order\u0020relations\u0020using\u0020post\u0020meta\u0020keys\u0020as\u0020the\u0020array\u0020key\u0020for\u0020more\u0020performant\u0020searches\nin\u0020\u0040see\u0020\u0024this\u002D\u003Eget_relation_type_for_meta_key\u0028\u0029\u0020than\u0020using\u0020array_search\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-Cached-CPT.html#property_relation_keys"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT",
+        name: "WCS_Related_Order_Store_CPT",
+        summary: "Related\u0020order\u0020data\u0020store\u0020for\u0020orders\u0020stored\u0020in\u0020Custom\u0020Post\u0020Types.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor\u003A\u0020sets\u0020meta\u0020keys\u0020used\u0020for\u0020storing\u0020each\u0020order\u0020relation.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method___construct"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003Aget_related_order_ids\u0028\u0029",
+        name: "get_related_order_ids",
+        summary: "Find\u0020orders\u0020related\u0020to\u0020a\u0020given\u0020subscription\u0020in\u0020a\u0020given\u0020way.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method_get_related_order_ids"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003Aget_related_subscription_ids\u0028\u0029",
+        name: "get_related_subscription_ids",
+        summary: "Find\u0020subscriptions\u0020related\u0020to\u0020a\u0020given\u0020order\u0020in\u0020a\u0020given\u0020way,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method_get_related_subscription_ids"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003Aapply_deprecated_related_order_filter\u0028\u0029",
+        name: "apply_deprecated_related_order_filter",
+        summary: "Apply\u0020the\u0020deprecated\u0020\u0027wcs_subscriptions_for_renewal_order\u0027\u0020and\u0020\u0027wcs_subscriptions_for_resubscribe_order\u0027\u0020filters\nto\u0020maintain\u0020backward\u0020compatibility.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method_apply_deprecated_related_order_filter"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003Aadd_relation\u0028\u0029",
+        name: "add_relation",
+        summary: "Helper\u0020function\u0020for\u0020linking\u0020an\u0020order\u0020to\u0020a\u0020subscription\u0020via\u0020a\u0020given\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method_add_relation"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003Adelete_relation\u0028\u0029",
+        name: "delete_relation",
+        summary: "Remove\u0020the\u0020relationship\u0020between\u0020a\u0020given\u0020order\u0020and\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method_delete_relation"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003Adelete_relations\u0028\u0029",
+        name: "delete_relations",
+        summary: "Remove\u0020all\u0020related\u0020orders\/subscriptions\u0020of\u0020a\u0020given\u0020type\u0020from\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method_delete_relations"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003Aget_meta_keys\u0028\u0029",
+        name: "get_meta_keys",
+        summary: "Get\u0020the\u0020meta\u0020keys\u0020used\u0020to\u0020link\u0020orders\u0020with\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method_get_meta_keys"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003Aget_meta_key\u0028\u0029",
+        name: "get_meta_key",
+        summary: "Get\u0020the\u0020meta\u0020key\u0020used\u0020to\u0020link\u0020an\u0020order\u0020with\u0020a\u0020subscription\u0020based\u0020on\u0020the\u0020type\u0020of\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#method_get_meta_key"
+    },{
+        fqsen: "\\WCS_Related_Order_Store_CPT\u003A\u003A\u0024meta_keys",
+        name: "meta_keys",
+        summary: "Meta\u0020keys\u0020used\u0020to\u0020link\u0020an\u0020order\u0020with\u0020a\u0020subscription\u0020for\u0020each\u0020type\u0020of\u0020relationship.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Related-Order-Store-CPT.html#property_meta_keys"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT",
+        name: "WCS_Subscription_Data_Store_CPT",
+        summary: "Subscription\u0020Data\u0020Store\u003A\u0020Stored\u0020in\u0020CPT.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method___construct"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Acreate\u0028\u0029",
+        name: "create",
+        summary: "Create\u0020a\u0020new\u0020subscription\u0020in\u0020the\u0020database.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_create"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aread_meta\u0028\u0029",
+        name: "read_meta",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020meta\u0020for\u0020an\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_read_meta"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aread_order_data\u0028\u0029",
+        name: "read_order_data",
+        summary: "Read\u0020subscription\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_read_order_data"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aupdate\u0028\u0029",
+        name: "update",
+        summary: "Update\u0020subscription\u0020in\u0020the\u0020database.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_update"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aupdate_post_meta\u0028\u0029",
+        name: "update_post_meta",
+        summary: "Update\u0020post\u0020meta\u0020for\u0020a\u0020subscription\u0020based\u0020on\u0020it\u0027s\u0020settings\u0020in\u0020the\u0020WC_Subscription\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_update_post_meta"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aget_total_refunded\u0028\u0029",
+        name: "get_total_refunded",
+        summary: "Get\u0020amount\u0020refunded\u0020for\u0020all\u0020related\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_get_total_refunded"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aget_total_tax_refunded\u0028\u0029",
+        name: "get_total_tax_refunded",
+        summary: "Get\u0020the\u0020total\u0020tax\u0020refunded\u0020for\u0020all\u0020related\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_get_total_tax_refunded"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aget_total_shipping_refunded\u0028\u0029",
+        name: "get_total_shipping_refunded",
+        summary: "Get\u0020the\u0020total\u0020shipping\u0020refunded\u0020for\u0020all\u0020related\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_get_total_shipping_refunded"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aget_order_count\u0028\u0029",
+        name: "get_order_count",
+        summary: "Return\u0020count\u0020of\u0020subscriptions\u0020with\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_get_order_count"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aget_orders\u0028\u0029",
+        name: "get_orders",
+        summary: "Get\u0020all\u0020subscriptions\u0020matching\u0020the\u0020passed\u0020in\u0020args.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_get_orders"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Asave_dates\u0028\u0029",
+        name: "save_dates",
+        summary: "Update\u0020subscription\u0020dates\u0020in\u0020the\u0020database.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_save_dates"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aget_props_to_update\u0028\u0029",
+        name: "get_props_to_update",
+        summary: "Get\u0020the\u0020props\u0020to\u0020update,\u0020and\u0020remove\u0020order\u0020meta\u0020data\u0020that\u0020isn\u0027t\u0020used\u0020on\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_get_props_to_update"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aget_props_to_ignore\u0028\u0029",
+        name: "get_props_to_ignore",
+        summary: "Get\u0020the\u0020props\u0020set\u0020on\u0020a\u0020subscription\u0020which\u0020we\u0020don\u0027t\u0020want\u0020used\u0020on\u0020a\u0020subscription,\u0020which\u0020may\u0020be\ninherited\u0020order\u0020meta\u0020data,\u0020or\u0020other\u0020values\u0020using\u0020the\u0020post\u0020meta\u0020data\u0020store\u0020but\u0020not\u0020as\u0020props.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_get_props_to_ignore"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Asearch_subscriptions\u0028\u0029",
+        name: "search_subscriptions",
+        summary: "Search\u0020subscription\u0020data\u0020for\u0020a\u0020term\u0020and\u0020returns\u0020subscription\u0020ids",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_search_subscriptions"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003Aget_subscription_customer_ids\u0028\u0029",
+        name: "get_subscription_customer_ids",
+        summary: "Get\u0020the\u0020user\u0020IDs\u0020for\u0020customers\u0020who\u0020have\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#method_get_subscription_customer_ids"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003A\u0024subscription_internal_meta_keys",
+        name: "subscription_internal_meta_keys",
+        summary: "Define\u0020subscription\u0020specific\u0020data\u0020which\u0020augments\u0020the\u0020meta\u0020of\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#property_subscription_internal_meta_keys"
+    },{
+        fqsen: "\\WCS_Subscription_Data_Store_CPT\u003A\u003A\u0024subscription_meta_keys_to_props",
+        name: "subscription_meta_keys_to_props",
+        summary: "Array\u0020of\u0020subscription\u0020specific\u0020data\u0020which\u0020augments\u0020the\u0020meta\u0020of\u0020an\u0020order\u0020in\u0020the\u0020form\u0020meta_key\u0020\u003D\u003E\u0020prop_key",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Subscription-Data-Store-CPT.html#property_subscription_meta_keys_to_props"
+    },{
+        fqsen: "\\WCS_Action_Deprecator",
+        name: "WCS_Action_Deprecator",
+        summary: "Handle\u0020deprecated\u0020actions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Deprecator.html"
+    },{
+        fqsen: "\\WCS_Action_Deprecator\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Deprecator.html#method___construct"
+    },{
+        fqsen: "\\WCS_Action_Deprecator\u003A\u003Atrigger_hook\u0028\u0029",
+        name: "trigger_hook",
+        summary: "Trigger\u0020the\u0020old\u0020action\u0020with\u0020the\u0020original\u0020callback\u0020parameters",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Deprecator.html#method_trigger_hook"
+    },{
+        fqsen: "\\WCS_Action_Deprecator\u003A\u003A\u0024deprecated_hooks",
+        name: "deprecated_hooks",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Action-Deprecator.html#property_deprecated_hooks"
+    },{
+        fqsen: "\\WCS_Deprecated_Filter_Hooks",
+        name: "WCS_Deprecated_Filter_Hooks",
+        summary: "Handles\u0020deprecation\u0020notices\u0020and\u0020triggering\u0020of\u0020legacy\u0020filter\u0020hooks\u0020when\u0020WC\u00203.0\u002B\u0020subscription\u0020filters\u0020are\u0020triggered.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Filter-Hooks.html"
+    },{
+        fqsen: "\\WCS_Deprecated_Filter_Hooks\u003A\u003Adisplay_notice\u0028\u0029",
+        name: "display_notice",
+        summary: "Display\u0020a\u0020deprecated\u0020notice\u0020for\u0020old\u0020hooks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Filter-Hooks.html#method_display_notice"
+    },{
+        fqsen: "\\WCS_Deprecated_Filter_Hooks\u003A\u003A\u0024deprecated_hooks",
+        name: "deprecated_hooks",
+        summary: "Array\u0020of\u0020deprecated\u0020hooks\u0020we\u0020need\u0020to\u0020handle\u0020in\u0020the\u0020format\u0020array\u0028\u0020new_hook\u0020\u003D\u003E\u0020old_hook\u0020\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Deprecated-Filter-Hooks.html#property_deprecated_hooks"
+    },{
+        fqsen: "\\WCS_Dynamic_Action_Deprecator",
+        name: "WCS_Dynamic_Action_Deprecator",
+        summary: "Deprecate\u0020actions\u0020that\u0020use\u0020a\u0020dynamic\u0020hook\u0020by\u0020appending\u0020a\u0020variable,\u0020like\u0020a\u0020payment\u0020gateway\u0027s\u0020name.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Action-Deprecator.html"
+    },{
+        fqsen: "\\WCS_Dynamic_Action_Deprecator\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Action-Deprecator.html#method___construct"
+    },{
+        fqsen: "\\WCS_Dynamic_Action_Deprecator\u003A\u003Atrigger_hook\u0028\u0029",
+        name: "trigger_hook",
+        summary: "Display\u0020a\u0020notice\u0020if\u0020functions\u0020are\u0020hooked\u0020to\u0020the\u0020old\u0020filter\u0020and\u0020apply\u0020the\u0020old\u0020filters\u0020args",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Action-Deprecator.html#method_trigger_hook"
+    },{
+        fqsen: "\\WCS_Dynamic_Action_Deprecator\u003A\u003A\u0024deprecated_hook_prefixes",
+        name: "deprecated_hook_prefixes",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Action-Deprecator.html#property_deprecated_hook_prefixes"
+    },{
+        fqsen: "\\WCS_Dynamic_Filter_Deprecator",
+        name: "WCS_Dynamic_Filter_Deprecator",
+        summary: "Deprecate\u0020filters\u0020that\u0020use\u0020a\u0020dynamic\u0020hook\u0020by\u0020appending\u0020a\u0020variable,\u0020like\u0020a\u0020payment\u0020gateway\u0027s\u0020name.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Filter-Deprecator.html"
+    },{
+        fqsen: "\\WCS_Dynamic_Filter_Deprecator\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Filter-Deprecator.html#method___construct"
+    },{
+        fqsen: "\\WCS_Dynamic_Filter_Deprecator\u003A\u003Atrigger_hook\u0028\u0029",
+        name: "trigger_hook",
+        summary: "Display\u0020a\u0020notice\u0020if\u0020functions\u0020are\u0020hooked\u0020to\u0020the\u0020old\u0020filter\u0020and\u0020apply\u0020the\u0020old\u0020filters\u0020args",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Filter-Deprecator.html#method_trigger_hook"
+    },{
+        fqsen: "\\WCS_Dynamic_Filter_Deprecator\u003A\u003A\u0024deprecated_hook_prefixes",
+        name: "deprecated_hook_prefixes",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Dynamic-Filter-Deprecator.html#property_deprecated_hook_prefixes"
+    },{
+        fqsen: "\\WCS_Filter_Deprecator",
+        name: "WCS_Filter_Deprecator",
+        summary: "Handle\u0020deprecated\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Filter-Deprecator.html"
+    },{
+        fqsen: "\\WCS_Filter_Deprecator\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Filter-Deprecator.html#method___construct"
+    },{
+        fqsen: "\\WCS_Filter_Deprecator\u003A\u003Atrigger_hook\u0028\u0029",
+        name: "trigger_hook",
+        summary: "Trigger\u0020the\u0020old\u0020filter\u0020with\u0020the\u0020original\u0020callback\u0020parameters\u0020and\u0020make\u0020sure\u0020the\u0020return\u0020value\u0020is\u0020passed\u0020on\u0020\u0028when\u0020possible\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Filter-Deprecator.html#method_trigger_hook"
+    },{
+        fqsen: "\\WCS_Filter_Deprecator\u003A\u003A\u0024deprecated_hooks",
+        name: "deprecated_hooks",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Filter-Deprecator.html#property_deprecated_hooks"
+    },{
+        fqsen: "\\WC_Subscriptions_Deprecation_Handler",
+        name: "WC_Subscriptions_Deprecation_Handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Deprecation-Handler.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Deprecation_Handler\u003A\u003A_is_large_site\u0028\u0029",
+        name: "_is_large_site",
+        summary: "Deprecation\u0020handling\u0020of\u0020the\u0020original\u0020WC_Subscriptions\u003A\u003Ais_large_site\u0028\u0029\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Deprecation-Handler.html#method__is_large_site"
+    },{
+        fqsen: "\\WC_Subscriptions_Deprecation_Handler\u003A\u003A_get_subscription_status_counts\u0028\u0029",
+        name: "_get_subscription_status_counts",
+        summary: "Deprecation\u0020handling\u0020of\u0020the\u0020original\u0020WC_Subscriptions\u003A\u003Aget_subscription_status_counts\u0028\u0029\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Deprecation-Handler.html#method__get_subscription_status_counts"
+    },{
+        fqsen: "\\WC_Subscriptions_Deprecation_Handler\u003A\u003A_redirect_to_cart\u0028\u0029",
+        name: "_redirect_to_cart",
+        summary: "Deprecation\u0020handling\u0020of\u0020the\u0020original\u0020WC_Subscriptions\u003A\u003Aredirect_to_cart\u0028\u0029\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Deprecation-Handler.html#method__redirect_to_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Deprecation_Handler\u003A\u003A_show_downgrade_notice\u0028\u0029",
+        name: "_show_downgrade_notice",
+        summary: "Deprecation\u0020handling\u0020of\u0020the\u0020original\u0020WC_Subscriptions\u003A\u003Ashow_downgrade_notice\u0028\u0029\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Deprecation-Handler.html#method__show_downgrade_notice"
+    },{
+        fqsen: "\\WC_Subscriptions_Deprecation_Handler\u003A\u003A_get_subscriptions\u0028\u0029",
+        name: "_get_subscriptions",
+        summary: "Deprecation\u0020handling\u0020of\u0020the\u0020original\u0020WC_Subscriptions\u003A\u003Ashow_downgrade_notice\u0028\u0029\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Deprecation-Handler.html#method__get_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Deprecation_Handler\u003A\u003A\u0024class",
+        name: "class",
+        summary: "This\u0020class\u0020handles\u0020WC_Subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Deprecation-Handler.html#property_class"
+    },{
+        fqsen: "\\WC_Subscriptions_Deprecation_Handler\u003A\u003A\u0024deprecated_functions",
+        name: "deprecated_functions",
+        summary: "Deprecated\u0020WC_Subscriptions\u0020functions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Deprecation-Handler.html#property_deprecated_functions"
+    },{
+        fqsen: "\\WCS_Email_Cancelled_Subscription",
+        name: "WCS_Email_Cancelled_Subscription",
+        summary: "Cancelled\u0020Subscription\u0020Email",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Cancelled-Subscription.html"
+    },{
+        fqsen: "\\WCS_Email_Cancelled_Subscription\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Create\u0020an\u0020instance\u0020of\u0020the\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Cancelled-Subscription.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_Cancelled_Subscription\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Cancelled-Subscription.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_Cancelled_Subscription\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Cancelled-Subscription.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_Cancelled_Subscription\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Cancelled-Subscription.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_Cancelled_Subscription\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Cancelled-Subscription.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_Cancelled_Subscription\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Cancelled-Subscription.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_Cancelled_Subscription\u003A\u003Ainit_form_fields\u0028\u0029",
+        name: "init_form_fields",
+        summary: "Initialise\u0020Settings\u0020Form\u0020Fields",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Cancelled-Subscription.html#method_init_form_fields"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order",
+        name: "WCS_Email_Completed_Renewal_Order",
+        summary: "Customer\u0020Completed\u0020Order\u0020Email",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order\u003A\u003Aget_subject\u0028\u0029",
+        name: "get_subject",
+        summary: "get_subject\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html#method_get_subject"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order\u003A\u003Aget_heading\u0028\u0029",
+        name: "get_heading",
+        summary: "get_heading\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html#method_get_heading"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_Completed_Renewal_Order\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Renewal-Order.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order",
+        name: "WCS_Email_Completed_Switch_Order",
+        summary: "Customer\u0020Completed\u0020Switch\u0020Order\u0020Email",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order\u003A\u003Aget_subject\u0028\u0029",
+        name: "get_subject",
+        summary: "get_subject\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html#method_get_subject"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order\u003A\u003Aget_heading\u0028\u0029",
+        name: "get_heading",
+        summary: "get_heading\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html#method_get_heading"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_Completed_Switch_Order\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Completed-Switch-Order.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_Customer_On_Hold_Renewal_Order",
+        name: "WCS_Email_Customer_On_Hold_Renewal_Order",
+        summary: "Customer\u0020On\u0020Hold\u0020Renewal\u0020Order\u0020Email.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-On-Hold-Renewal-Order.html"
+    },{
+        fqsen: "\\WCS_Email_Customer_On_Hold_Renewal_Order\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-On-Hold-Renewal-Order.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_Customer_On_Hold_Renewal_Order\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-On-Hold-Renewal-Order.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_Customer_On_Hold_Renewal_Order\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-On-Hold-Renewal-Order.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_Customer_On_Hold_Renewal_Order\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "Get\u0020content\u0020html.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-On-Hold-Renewal-Order.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_Customer_On_Hold_Renewal_Order\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "Get\u0020content\u0020plain.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-On-Hold-Renewal-Order.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice",
+        name: "WCS_Email_Customer_Renewal_Invoice",
+        summary: "Customer\u0020Invoice",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003Aget_subject\u0028\u0029",
+        name: "get_subject",
+        summary: "get_subject\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method_get_subject"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003Aget_heading\u0028\u0029",
+        name: "get_heading",
+        summary: "get_heading\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method_get_heading"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003Ainit_form_fields\u0028\u0029",
+        name: "init_form_fields",
+        summary: "Initialise\u0020Settings\u0020Form\u0020Fields,\u0020but\u0020add\u0020an\u0020enable\/disable\u0020field\nto\u0020this\u0020email\u0020as\u0020WC\u0020doesn\u0027t\u0020include\u0020that\u0020for\u0020customer\u0020Invoices.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#method_init_form_fields"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003A\u0024find",
+        name: "find",
+        summary: "Strings\u0020to\u0020find\u0020in\u0020subjects\/headings.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#property_find"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003A\u0024replace",
+        name: "replace",
+        summary: "Strings\u0020to\u0020replace\u0020in\u0020subjects\/headings.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#property_replace"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003A\u0024subject_paid",
+        name: "subject_paid",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#property_subject_paid"
+    },{
+        fqsen: "\\WCS_Email_Customer_Renewal_Invoice\u003A\u003A\u0024heading_paid",
+        name: "heading_paid",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Customer-Renewal-Invoice.html#property_heading_paid"
+    },{
+        fqsen: "\\WCS_Email_Expired_Subscription",
+        name: "WCS_Email_Expired_Subscription",
+        summary: "Expired\u0020Subscription\u0020Email",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Expired-Subscription.html"
+    },{
+        fqsen: "\\WCS_Email_Expired_Subscription\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Create\u0020an\u0020instance\u0020of\u0020the\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Expired-Subscription.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_Expired_Subscription\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Expired-Subscription.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_Expired_Subscription\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Expired-Subscription.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_Expired_Subscription\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Expired-Subscription.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_Expired_Subscription\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Expired-Subscription.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_Expired_Subscription\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Expired-Subscription.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_Expired_Subscription\u003A\u003Ainit_form_fields\u0028\u0029",
+        name: "init_form_fields",
+        summary: "Initialise\u0020Settings\u0020Form\u0020Fields",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Expired-Subscription.html#method_init_form_fields"
+    },{
+        fqsen: "\\WCS_Email_New_Renewal_Order",
+        name: "WCS_Email_New_Renewal_Order",
+        summary: "New\u0020Order\u0020Email",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Renewal-Order.html"
+    },{
+        fqsen: "\\WCS_Email_New_Renewal_Order\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Renewal-Order.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_New_Renewal_Order\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Renewal-Order.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_New_Renewal_Order\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Renewal-Order.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_New_Renewal_Order\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Renewal-Order.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_New_Renewal_Order\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Renewal-Order.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_New_Renewal_Order\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Renewal-Order.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_New_Switch_Order",
+        name: "WCS_Email_New_Switch_Order",
+        summary: "Subscription\u0020Switched\u0020Email",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Switch-Order.html"
+    },{
+        fqsen: "\\WCS_Email_New_Switch_Order\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Switch-Order.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_New_Switch_Order\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Switch-Order.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_New_Switch_Order\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Switch-Order.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_New_Switch_Order\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Switch-Order.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_New_Switch_Order\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Switch-Order.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_New_Switch_Order\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-New-Switch-Order.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_On_Hold_Subscription",
+        name: "WCS_Email_On_Hold_Subscription",
+        summary: "Suspended\u0020Subscription\u0020Email",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-On-Hold-Subscription.html"
+    },{
+        fqsen: "\\WCS_Email_On_Hold_Subscription\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Create\u0020an\u0020instance\u0020of\u0020the\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-On-Hold-Subscription.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_On_Hold_Subscription\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-On-Hold-Subscription.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_On_Hold_Subscription\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-On-Hold-Subscription.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_On_Hold_Subscription\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-On-Hold-Subscription.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_On_Hold_Subscription\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-On-Hold-Subscription.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_On_Hold_Subscription\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-On-Hold-Subscription.html#method_get_content_plain"
+    },{
+        fqsen: "\\WCS_Email_On_Hold_Subscription\u003A\u003Ainit_form_fields\u0028\u0029",
+        name: "init_form_fields",
+        summary: "Initialise\u0020Settings\u0020Form\u0020Fields",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-On-Hold-Subscription.html#method_init_form_fields"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order",
+        name: "WCS_Email_Processing_Renewal_Order",
+        summary: "Customer\u0020Completed\u0020Order\u0020Email",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html#method___construct"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order\u003A\u003Aget_default_subject\u0028\u0029",
+        name: "get_default_subject",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020subject.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html#method_get_default_subject"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order\u003A\u003Aget_default_heading\u0028\u0029",
+        name: "get_default_heading",
+        summary: "Get\u0020the\u0020default\u0020e\u002Dmail\u0020heading.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html#method_get_default_heading"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order\u003A\u003Atrigger\u0028\u0029",
+        name: "trigger",
+        summary: "trigger\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html#method_trigger"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order\u003A\u003Aget_subject\u0028\u0029",
+        name: "get_subject",
+        summary: "get_subject\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html#method_get_subject"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order\u003A\u003Aget_heading\u0028\u0029",
+        name: "get_heading",
+        summary: "get_heading\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html#method_get_heading"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order\u003A\u003Aget_content_html\u0028\u0029",
+        name: "get_content_html",
+        summary: "get_content_html\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html#method_get_content_html"
+    },{
+        fqsen: "\\WCS_Email_Processing_Renewal_Order\u003A\u003Aget_content_plain\u0028\u0029",
+        name: "get_content_plain",
+        summary: "get_content_plain\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Email-Processing-Renewal-Order.html#method_get_content_plain"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways",
+        name: "WC_Subscriptions_Core_Payment_Gateways",
+        summary: "Subscriptions\u0020Core\u0020Payment\u0020Gateways\nHooks\u0020into\u0020the\u0020WooCommerce\u0020payment\u0020gateways\u0020class\u0020to\u0020add\u0020subscription\u0020specific\u0020functionality.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Ainit_paypal\u0028\u0029",
+        name: "init_paypal",
+        summary: "Instantiate\u0020our\u0020custom\u0020PayPal\u0020class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_init_paypal"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Aget_payment_gateway\u0028\u0029",
+        name: "get_payment_gateway",
+        summary: "Returns\u0020a\u0020payment\u0020gateway\u0020object\u0020by\u0020gateway\u0027s\u0020ID,\u0020or\u0020false\u0020if\u0020it\u0020could\u0020not\u0020find\u0020the\u0020gateway.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_get_payment_gateway"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Aget_available_payment_gateways\u0028\u0029",
+        name: "get_available_payment_gateways",
+        summary: "Only\u0020display\u0020the\u0020gateways\u0020which\u0020subscriptions\u002Dcore\u0020supports",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_get_available_payment_gateways"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Ainject_payment_feature_requirements_for_cart_api\u0028\u0029",
+        name: "inject_payment_feature_requirements_for_cart_api",
+        summary: "Check\u0020the\u0020content\u0020of\u0020the\u0020cart\u0020and\u0020add\u0020required\u0020payment\u0020methods.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_inject_payment_feature_requirements_for_cart_api"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003A\u0024one_gateway_supports",
+        name: "one_gateway_supports",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#property_one_gateway_supports"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Ano_available_payment_methods_message\u0028\u0029",
+        name: "no_available_payment_methods_message",
+        summary: "Improve\u0020message\u0020displayed\u0020on\u0020checkout\u0020when\u0020a\u0020subscription\u0020is\u0020in\u0020the\u0020cart\u0020but\u0020not\u0020gateways\u0020support\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_no_available_payment_methods_message"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Atrigger_gateway_status_updated_hook\u0028\u0029",
+        name: "trigger_gateway_status_updated_hook",
+        summary: "Fire\u0020a\u0020gateway\u0020specific\u0020whenever\u0020a\u0020subscription\u0027s\u0020status\u0020is\u0020changed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_trigger_gateway_status_updated_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Apayment_gateways_support_tooltip\u0028\u0029",
+        name: "payment_gateways_support_tooltip",
+        summary: "Display\u0020a\u0020list\u0020of\u0020each\u0020gateway\u0020supported\u0020features\u0020in\u0020a\u0020tooltip",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_payment_gateways_support_tooltip"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Ahas_available_payment_method\u0028\u0029",
+        name: "has_available_payment_method",
+        summary: "Returns\u0020whether\u0020the\u0020subscription\u0020has\u0020an\u0020available\u0020payment\u0020gateway\u0020that\u0027s\u0020supported\u0020by\u0020subscriptions\u002Dcore.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_has_available_payment_method"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Aare_zero_total_subscriptions_allowed\u0028\u0029",
+        name: "are_zero_total_subscriptions_allowed",
+        summary: "Determines\u0020if\u0020subscriptions\u0020with\u0020a\u0020total\u0020of\u0020nothing\u0020\u00280\u0029\u0020are\u0020allowed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_are_zero_total_subscriptions_allowed"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Agateway_supports_subscriptions\u0028\u0029",
+        name: "gateway_supports_subscriptions",
+        summary: "Returns\u0020whether\u0020the\u0020gateway\u0020supports\u0020subscriptions\u0020and\u0020automatic\u0020renewals.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_gateway_supports_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Abefore_displaying_mini_cart\u0028\u0029",
+        name: "before_displaying_mini_cart",
+        summary: "The\u0020PayPal\u0020Checkout\u0020plugin\u0020checks\u0020for\u0020available\u0020payment\u0020methods\u0020on\u0020this\u0020hook\nbefore\u0020enqueuing\u0020their\u0020SPB\u0020JS\u0020when\u0020displaying\u0020the\u0020buttons\u0020in\u0020the\u0020mini\u002Dcart\u0020widget.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_before_displaying_mini_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Aafter_displaying_mini_cart\u0028\u0029",
+        name: "after_displaying_mini_cart",
+        summary: "The\u0020PayPal\u0020Checkout\u0020plugin\u0020checks\u0020for\u0020available\u0020payment\u0020methods\u0020on\u0020this\u0020hook\nbefore\u0020enqueuing\u0020their\u0020SPB\u0020JS\u0020when\u0020displaying\u0020the\u0020buttons\u0020in\u0020the\u0020mini\u002Dcart\u0020widget.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_after_displaying_mini_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Atrigger_gateway_activated_subscription_hook\u0028\u0029",
+        name: "trigger_gateway_activated_subscription_hook",
+        summary: "Fire\u0020a\u0020gateway\u0020specific\u0020hook\u0020for\u0020when\u0020a\u0020subscription\u0020is\u0020activated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_trigger_gateway_activated_subscription_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Atrigger_gateway_reactivated_subscription_hook\u0028\u0029",
+        name: "trigger_gateway_reactivated_subscription_hook",
+        summary: "Fire\u0020a\u0020gateway\u0020specific\u0020hook\u0020for\u0020when\u0020a\u0020subscription\u0020is\u0020activated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_trigger_gateway_reactivated_subscription_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Atrigger_gateway_subscription_put_on_hold_hook\u0028\u0029",
+        name: "trigger_gateway_subscription_put_on_hold_hook",
+        summary: "Fire\u0020a\u0020gateway\u0020specific\u0020hook\u0020for\u0020when\u0020a\u0020subscription\u0020is\u0020on\u002Dhold.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_trigger_gateway_subscription_put_on_hold_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Atrigger_gateway_cancelled_subscription_hook\u0028\u0029",
+        name: "trigger_gateway_cancelled_subscription_hook",
+        summary: "Fire\u0020a\u0020gateway\u0020specific\u0020when\u0020a\u0020subscription\u0020is\u0020cancelled.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_trigger_gateway_cancelled_subscription_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003Atrigger_gateway_subscription_expired_hook\u0028\u0029",
+        name: "trigger_gateway_subscription_expired_hook",
+        summary: "Fire\u0020a\u0020gateway\u0020specific\u0020hook\u0020when\u0020a\u0020subscription\u0020expires.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#method_trigger_gateway_subscription_expired_hook"
+    },{
+        fqsen: "\\WC_Subscriptions_Core_Payment_Gateways\u003A\u003A\u0024is_displaying_mini_cart",
+        name: "is_displaying_mini_cart",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Core-Payment-Gateways.html#property_is_displaying_mini_cart"
+    },{
+        fqsen: "\\WC_Subscriptions_Gateway_Restrictions_Manager",
+        name: "WC_Subscriptions_Gateway_Restrictions_Manager",
+        summary: "WC_Subscriptions_Gateway_Restrictions_Manager\u0020class",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Gateway-Restrictions-Manager.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Gateway_Restrictions_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Initialize\u0020the\u0020class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Gateway-Restrictions-Manager.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Gateway_Restrictions_Manager\u003A\u003Aenqueue_scripts\u0028\u0029",
+        name: "enqueue_scripts",
+        summary: "Registers\u0020and\u0020enqueues\u0020payment\u0020gateway\u0020specific\u0020scripts.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Gateway-Restrictions-Manager.html#method_enqueue_scripts"
+    },{
+        fqsen: "\\WCS_PayPal",
+        name: "WCS_PayPal",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003A\u0024instance",
+        name: "instance",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#property_instance"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_init"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_option\u0028\u0029",
+        name: "get_option",
+        summary: "Get\u0020a\u0020WooCommerce\u0020setting\u0020value\u0020for\u0020the\u0020PayPal\u0020Standard\u0020Gateway",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_option"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aare_credentials_set\u0028\u0029",
+        name: "are_credentials_set",
+        summary: "Checks\u0020if\u0020the\u0020PayPal\u0020API\u0020credentials\u0020are\u0020set.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_are_credentials_set"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aare_reference_transactions_enabled\u0028\u0029",
+        name: "are_reference_transactions_enabled",
+        summary: "Checks\u0020if\u0020the\u0020PayPal\u0020account\u0020has\u0020reference\u0020transactions\u0020setup",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_are_reference_transactions_enabled"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Ahandle_wc_api\u0028\u0029",
+        name: "handle_wc_api",
+        summary: "Handle\u0020WC\u0020API\u0020requests\u0020where\u0020we\u0020need\u0020to\u0020run\u0020a\u0020reference\u0020transaction\u0020API\u0020operation",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_handle_wc_api"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_paypal_args\u0028\u0029",
+        name: "get_paypal_args",
+        summary: "Override\u0020the\u0020default\u0020PayPal\u0020standard\u0020args\u0020in\u0020WooCommerce\u0020for\u0020subscription\u0020purchases\u0020when\nautomatic\u0020payments\u0020are\u0020enabled\u0020and\u0020when\u0020the\u0020recurring\u0020order\u0020totals\u0020is\u0020over\u0020\u00240.00\u0020\u0028because\nPayPal\u0020doesn\u0027t\u0020support\u0020subscriptions\u0020with\u0020a\u0020\u00240\u0020recurring\u0020total,\u0020we\u0020need\u0020to\u0020circumvent\u0020it\u0020and\nmanage\u0020it\u0020entirely\u0020ourselves.\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_paypal_args"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aprocess_ipn_request\u0028\u0029",
+        name: "process_ipn_request",
+        summary: "When\u0020a\u0020PayPal\u0020IPN\u0020messaged\u0020is\u0020received\u0020for\u0020a\u0020subscription\u0020transaction,\ncheck\u0020the\u0020transaction\u0020details\u0020and",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_process_ipn_request"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aprocess_subscription_payment\u0028\u0029",
+        name: "process_subscription_payment",
+        summary: "Check\u0020whether\u0020a\u0020given\u0020subscription\u0020is\u0020using\u0020reference\u0020transactions\u0020and\u0020if\u0020so\u0020process\u0020the\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_process_subscription_payment"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aprocess_subscription_payment_response\u0028\u0029",
+        name: "process_subscription_payment_response",
+        summary: "Process\u0020a\u0020payment\u0020based\u0020on\u0020a\u0020response",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_process_subscription_payment_response"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aremove_resubscribe_order_meta\u0028\u0029",
+        name: "remove_resubscribe_order_meta",
+        summary: "Don\u0027t\u0020transfer\u0020PayPal\u0020meta\u0020to\u0020resubscribe\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_remove_resubscribe_order_meta"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Amaybe_add_change_payment_method_warning\u0028\u0029",
+        name: "maybe_add_change_payment_method_warning",
+        summary: "Maybe\u0020adds\u0020a\u0020warning\u0020message\u0020to\u0020subscription\u0020script\u0020parameters\u0020which\u0020is\u0020used\u0020in\u0020a\u0020Javascript\u0020dialog\u0020if\u0020the\npayment\u0020method\u0020of\u0020the\u0020subscription\u0020is\u0020set\u0020to\u0020be\u0020changed.\u0020The\u0020warning\u0020message\u0020is\u0020only\u0020added\u0020if\u0020the\u0020subscriptions\npayment\u0020gateway\u0020is\u0020PayPal\u0020Standard.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_maybe_add_change_payment_method_warning"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Amaybe_override_needs_payment\u0028\u0029",
+        name: "maybe_override_needs_payment",
+        summary: "This\u0020validates\u0020against\u0020payment\u0020lock\u0020for\u0020PP\u0020and\u0020returns\u0020false\u0020if\u0020we\u0020meet\u0020the\u0020criteria\u003A\n\u0020\u002D\u0020is\u0020a\u0020parent\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_maybe_override_needs_payment"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Amaybe_add_payment_lock\u0028\u0029",
+        name: "maybe_add_payment_lock",
+        summary: "Adds\u0020payment\u0020lock\u0020meta\u0020when\u0020order\u0020is\u0020received\u0020and...\n\u002D\u0020order\u0020is\u0020valid.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_maybe_add_payment_lock"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Amaybe_remove_payment_lock\u0028\u0029",
+        name: "maybe_remove_payment_lock",
+        summary: "Removes\u0020payment\u0020lock\u0020when\u0020order\u0020is\u0020parent\u0020and\u0020has\u0020paypal\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_maybe_remove_payment_lock"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_ipn_handler\u0028\u0029",
+        name: "get_ipn_handler",
+        summary: "Get\u0020the\u0020API\u0020object",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_ipn_handler"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_api\u0028\u0029",
+        name: "get_api",
+        summary: "Get\u0020the\u0020API\u0020object",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_api"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Areload_options\u0028\u0029",
+        name: "reload_options",
+        summary: "Return\u0020the\u0020default\u0020WC\u0020PayPal\u0020gateway\u0027s\u0020settings.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_reload_options"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_options\u0028\u0029",
+        name: "get_options",
+        summary: "Return\u0020the\u0020default\u0020WC\u0020PayPal\u0020gateway\u0027s\u0020settings.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_options"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Alog_api_requests\u0028\u0029",
+        name: "log_api_requests",
+        summary: "Log\u0020API\u0020request\/response\u0020data",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_log_api_requests"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_plugin_name\u0028\u0029",
+        name: "get_plugin_name",
+        summary: "Method\u0020required\u0020by\u0020WCS_SV_API_Base,\u0020which\u0020normally\u0020requires\u0020an\u0020instance\u0020of\u0020SV_WC_Plugin\u0020\u002A",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_plugin_name"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_version\u0028\u0029",
+        name: "get_version",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_version"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_id\u0028\u0029",
+        name: "get_id",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_id"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aset_enabled_for_subscriptions_default\u0028\u0029",
+        name: "set_enabled_for_subscriptions_default",
+        summary: "Set\u0020the\u0020default\u0020value\u0020for\u0020whether\u0020PayPal\u0020Standard\u0020is\u0020enabled\u0020or\u0020disabled\u0020for\u0020subscriptions\u0020purchases.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_set_enabled_for_subscriptions_default"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Amaybe_remove_paypal_standard\u0028\u0029",
+        name: "maybe_remove_paypal_standard",
+        summary: "Remove\u0020PayPal\u0020Standard\u0020as\u0020an\u0020available\u0020payment\u0020method\u0020if\u0020it\u0020is\u0020disabled\u0020for\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_maybe_remove_paypal_standard"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003Aget_subscriptions_by_paypal_id\u0028\u0029",
+        name: "get_subscriptions_by_paypal_id",
+        summary: "Gets\u0020subscriptions\u0020with\u0020a\u0020given\u0020paypal\u0020subscription\u0020id.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#method_get_subscriptions_by_paypal_id"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003A\u0024api",
+        name: "api",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#property_api"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003A\u0024ipn_handlers",
+        name: "ipn_handlers",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#property_ipn_handlers"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003A\u0024paypal_settings",
+        name: "paypal_settings",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#property_paypal_settings"
+    },{
+        fqsen: "\\WCS_PayPal\u003A\u003A\u0024subscriptions_by_paypal_id",
+        name: "subscriptions_by_paypal_id",
+        summary: "An\u0020internal\u0020cache\u0020of\u0020subscription\u0020IDs\u0020with\u0020a\u0020specific\u0020PayPal\u0020Standard\u0020Profile\u0020ID\u0020or\u0020Reference\u0020Transaction\u0020Billing\u0020Agreement.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal.html#property_subscriptions_by_paypal_id"
+    },{
+        fqsen: "\\WCS_SV_API_Base",
+        name: "WCS_SV_API_Base",
+        summary: "\u0023\u0020WooCommerce\u0020Plugin\u0020Framework\u0020API\u0020Base\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aperform_request\u0028\u0029",
+        name: "perform_request",
+        summary: "Perform\u0020the\u0020request\u0020and\u0020return\u0020the\u0020parsed\u0020response",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_perform_request"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Ado_remote_request\u0028\u0029",
+        name: "do_remote_request",
+        summary: "Simple\u0020wrapper\u0020for\u0020wp_remote_request\u0028\u0029\u0020so\u0020child\u0020classes\u0020can\u0020override\u0020this\nand\u0020provide\u0020their\u0020own\u0020transport\u0020mechanism\u0020if\u0020needed,\u0020e.g.\u0020a\u0020custom\ncURL\u0020implementation",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_do_remote_request"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Ahandle_response\u0028\u0029",
+        name: "handle_response",
+        summary: "Handle\u0020and\u0020parse\u0020the\u0020response",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_handle_response"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Ado_pre_parse_response_validation\u0028\u0029",
+        name: "do_pre_parse_response_validation",
+        summary: "Allow\u0020child\u0020classes\u0020to\u0020validate\u0020a\u0020response\u0020prior\u0020to\u0020instantiating\u0020the\nresponse\u0020object.\u0020Useful\u0020for\u0020checking\u0020response\u0020codes\u0020or\u0020messages,\u0020e.g.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_do_pre_parse_response_validation"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Ado_post_parse_response_validation\u0028\u0029",
+        name: "do_post_parse_response_validation",
+        summary: "Allow\u0020child\u0020classes\u0020to\u0020validate\u0020a\u0020response\u0020after\u0020it\u0020has\u0020been\u0020parsed\nand\u0020instantiated.\u0020This\u0020is\u0020useful\u0020for\u0020check\u0020error\u0020codes\u0020or\u0020messages\u0020that\nexist\u0020in\u0020the\u0020parsed\u0020response.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_do_post_parse_response_validation"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_parsed_response\u0028\u0029",
+        name: "get_parsed_response",
+        summary: "Return\u0020the\u0020parsed\u0020response\u0020object\u0020for\u0020the\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_parsed_response"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Abroadcast_request\u0028\u0029",
+        name: "broadcast_request",
+        summary: "Alert\u0020other\u0020actors\u0020that\u0020a\u0020request\u0020has\u0020been\u0020performed.\u0020This\u0020is\u0020primarily\u0020used\nfor\u0020request\u0020logging.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_broadcast_request"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Areset_response\u0028\u0029",
+        name: "reset_response",
+        summary: "Reset\u0020the\u0020API\u0020response\u0020members\u0020to\u0020their",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_reset_response"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_request_uri\u0028\u0029",
+        name: "get_request_uri",
+        summary: "Get\u0020the\u0020request\u0020URI",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_request_uri"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_request_args\u0028\u0029",
+        name: "get_request_args",
+        summary: "Get\u0020the\u0020request\u0020arguments\u0020in\u0020the\u0020format\u0020required\u0020by\u0020wp_remote_request\u0028\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_request_args"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_request_method\u0028\u0029",
+        name: "get_request_method",
+        summary: "Get\u0020the\u0020request\u0020method,\u0020POST\u0020by\u0020default",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_request_method"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_request_http_version\u0028\u0029",
+        name: "get_request_http_version",
+        summary: "Get\u0020the\u0020request\u0020HTTP\u0020version,\u00201.1\u0020by\u0020default",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_request_http_version"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_request_headers\u0028\u0029",
+        name: "get_request_headers",
+        summary: "Get\u0020the\u0020request\u0020headers",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_request_headers"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_sanitized_request_headers\u0028\u0029",
+        name: "get_sanitized_request_headers",
+        summary: "Get\u0020sanitized\u0020request\u0020headers\u0020suitable\u0020for\u0020logging,\u0020stripped\u0020of\u0020any\nconfidential\u0020information",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_sanitized_request_headers"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_request_user_agent\u0028\u0029",
+        name: "get_request_user_agent",
+        summary: "Get\u0020the\u0020request\u0020user\u0020agent,\u0020defaults\u0020to\u003A",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_request_user_agent"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_request_duration\u0028\u0029",
+        name: "get_request_duration",
+        summary: "Get\u0020the\u0020request\u0020duration\u0020in\u0020seconds,\u0020rounded\u0020to\u0020the\u00205th\u0020decimal\u0020place",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_request_duration"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_response_handler\u0028\u0029",
+        name: "get_response_handler",
+        summary: "Get\u0020the\u0020response\u0020handler\u0020class\u0020name",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_response_handler"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_response_code\u0028\u0029",
+        name: "get_response_code",
+        summary: "Get\u0020the\u0020response\u0020code",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_response_code"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_response_message\u0028\u0029",
+        name: "get_response_message",
+        summary: "Get\u0020the\u0020response\u0020message",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_response_message"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_response_headers\u0028\u0029",
+        name: "get_response_headers",
+        summary: "Get\u0020the\u0020response\u0020headers",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_response_headers"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_raw_response_body\u0028\u0029",
+        name: "get_raw_response_body",
+        summary: "Get\u0020the\u0020raw\u0020response\u0020body,\u0020prior\u0020to\u0020any\u0020parsing\u0020or\u0020sanitization",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_raw_response_body"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_sanitized_response_body\u0028\u0029",
+        name: "get_sanitized_response_body",
+        summary: "Get\u0020the\u0020sanitized\u0020response\u0020body,\u0020provided\u0020by\u0020the\u0020response\u0020class\nto_string_safe\u0028\u0029\u0020method",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_sanitized_response_body"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_request\u0028\u0029",
+        name: "get_request",
+        summary: "Returns\u0020the\u0020most\u0020recent\u0020request\u0020object",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_request"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_response\u0028\u0029",
+        name: "get_response",
+        summary: "Returns\u0020the\u0020most\u0020recent\u0020response\u0020object",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_response"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_api_id\u0028\u0029",
+        name: "get_api_id",
+        summary: "Get\u0020the\u0020ID\u0020for\u0020the\u0020API,\u0020used\u0020primarily\u0020to\u0020namespace\u0020the\u0020action\u0020name\nfor\u0020broadcasting\u0020requests",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_api_id"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_new_request\u0028\u0029",
+        name: "get_new_request",
+        summary: "Return\u0020a\u0020new\u0020request\u0020object",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_new_request"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aget_plugin\u0028\u0029",
+        name: "get_plugin",
+        summary: "Return\u0020the\u0020plugin\u0020class\u0020instance\u0020associated\u0020with\u0020this\u0020API",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_get_plugin"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aset_request_header\u0028\u0029",
+        name: "set_request_header",
+        summary: "Set\u0020a\u0020header\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_set_request_header"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aset_http_basic_auth\u0028\u0029",
+        name: "set_http_basic_auth",
+        summary: "Set\u0020HTTP\u0020basic\u0020auth\u0020for\u0020the\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_set_http_basic_auth"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aset_request_content_type_header\u0028\u0029",
+        name: "set_request_content_type_header",
+        summary: "Set\u0020the\u0020Content\u002DType\u0020request\u0020header",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_set_request_content_type_header"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aset_request_accept_header\u0028\u0029",
+        name: "set_request_accept_header",
+        summary: "Set\u0020the\u0020Accept\u0020request\u0020header",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_set_request_accept_header"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003Aset_response_handler\u0028\u0029",
+        name: "set_response_handler",
+        summary: "Set\u0020the\u0020response\u0020handler\u0020class\u0020name.\u0020This\u0020class\u0020will\u0020be\u0020instantiated\nto\u0020parse\u0020the\u0020response\u0020for\u0020the\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#method_set_response_handler"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024request_method",
+        name: "request_method",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_request_method"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024request_uri",
+        name: "request_uri",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_request_uri"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024request_headers",
+        name: "request_headers",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_request_headers"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024request_user_agent",
+        name: "request_user_agent",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_request_user_agent"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024request_http_version",
+        name: "request_http_version",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_request_http_version"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024request_duration",
+        name: "request_duration",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_request_duration"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024request",
+        name: "request",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_request"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024response_code",
+        name: "response_code",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_response_code"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024response_message",
+        name: "response_message",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_response_message"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024response_headers",
+        name: "response_headers",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_response_headers"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024raw_response_body",
+        name: "raw_response_body",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_raw_response_body"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024response_handler",
+        name: "response_handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_response_handler"
+    },{
+        fqsen: "\\WCS_SV_API_Base\u003A\u003A\u0024response",
+        name: "response",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-SV-API-Base.html#property_response"
+    },{
+        fqsen: "\\WCS_PayPal_Admin",
+        name: "WCS_PayPal_Admin",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html"
+    },{
+        fqsen: "\\WCS_PayPal_Admin\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html#method_init"
+    },{
+        fqsen: "\\WCS_PayPal_Admin\u003A\u003Aadd_form_fields\u0028\u0029",
+        name: "add_form_fields",
+        summary: "Adds\u0020extra\u0020PayPal\u0020credential\u0020fields\u0020required\u0020to\u0020manage\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html#method_add_form_fields"
+    },{
+        fqsen: "\\WCS_PayPal_Admin\u003A\u003Amaybe_check_account\u0028\u0029",
+        name: "maybe_check_account",
+        summary: "Handle\u0020requests\u0020to\u0020check\u0020whether\u0020a\u0020PayPal\u0020account\u0020has\u0020Reference\u0020Transactions\u0020enabled",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html#method_maybe_check_account"
+    },{
+        fqsen: "\\WCS_PayPal_Admin\u003A\u003Amaybe_show_admin_notices\u0028\u0029",
+        name: "maybe_show_admin_notices",
+        summary: "Display\u0020an\u0020assortment\u0020of\u0020notices\u0020to\u0020administrators\u0020to\u0020encourage\u0020them\u0020to\u0020get\u0020PayPal\u0020setup\u0020right.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html#method_maybe_show_admin_notices"
+    },{
+        fqsen: "\\WCS_PayPal_Admin\u003A\u003Amaybe_disable_invalid_profile_notice\u0028\u0029",
+        name: "maybe_disable_invalid_profile_notice",
+        summary: "Disable\u0020the\u0020invalid\u0020profile\u0020notice\u0020when\u0020requested.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html#method_maybe_disable_invalid_profile_notice"
+    },{
+        fqsen: "\\WCS_PayPal_Admin\u003A\u003Amaybe_update_credentials_error_flag\u0028\u0029",
+        name: "maybe_update_credentials_error_flag",
+        summary: "Remove\u0020the\u0020invalid\u0020credentials\u0020error\u0020flag\u0020whenever\u0020a\u0020new\u0020set\u0020of\u0020API\u0020credentials\u0020are\u0020saved.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html#method_maybe_update_credentials_error_flag"
+    },{
+        fqsen: "\\WCS_PayPal_Admin\u003A\u003Aprofile_link\u0028\u0029",
+        name: "profile_link",
+        summary: "Prints\u0020link\u0020to\u0020the\u0020PayPal\u0027s\u0020profile\u0020related\u0020to\u0020the\u0020provided\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html#method_profile_link"
+    },{
+        fqsen: "\\WCS_PayPal_Admin\u003A\u003Aadd_enable_for_subscriptions_setting\u0028\u0029",
+        name: "add_enable_for_subscriptions_setting",
+        summary: "Add\u0020the\u0020enabled\u0020or\u0020subscriptions\u0020setting.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Admin.html#method_add_enable_for_subscriptions_setting"
+    },{
+        fqsen: "\\WCS_PayPal_Change_Payment_Method_Admin",
+        name: "WCS_PayPal_Change_Payment_Method_Admin",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Change-Payment-Method-Admin.html"
+    },{
+        fqsen: "\\WCS_PayPal_Change_Payment_Method_Admin\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Change-Payment-Method-Admin.html#method_init"
+    },{
+        fqsen: "\\WCS_PayPal_Change_Payment_Method_Admin\u003A\u003Aadd_payment_meta_details\u0028\u0029",
+        name: "add_payment_meta_details",
+        summary: "Include\u0020the\u0020PayPal\u0020payment\u0020meta\u0020data\u0020required\u0020to\u0020process\u0020automatic\u0020recurring\u0020payments\u0020so\u0020that\u0020store\u0020managers\u0020can\nmanually\u0020set\u0020up\u0020automatic\u0020recurring\u0020payments\u0020for\u0020a\u0020customer\u0020via\u0020the\u0020Edit\u0020Subscription\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Change-Payment-Method-Admin.html#method_add_payment_meta_details"
+    },{
+        fqsen: "\\WCS_PayPal_Change_Payment_Method_Admin\u003A\u003Avalidate_payment_meta\u0028\u0029",
+        name: "validate_payment_meta",
+        summary: "Validate\u0020the\u0020payment\u0020meta\u0020data\u0020required\u0020to\u0020process\u0020automatic\u0020recurring\u0020payments\u0020so\u0020that\u0020store\u0020managers\u0020can\nmanually\u0020set\u0020up\u0020automatic\u0020recurring\u0020payments\u0020for\u0020a\u0020customer\u0020via\u0020the\u0020Edit\u0020Subscription\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Change-Payment-Method-Admin.html#method_validate_payment_meta"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request",
+        name: "WCS_PayPal_Reference_Transaction_API_Request",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Construct\u0020an\u0020PayPal\u0020Express\u0020request\u0020object",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method___construct"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aset_express_checkout\u0028\u0029",
+        name: "set_express_checkout",
+        summary: "Sets\u0020up\u0020the\u0020express\u0020checkout\u0020transaction",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_set_express_checkout"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Ado_express_checkout\u0028\u0029",
+        name: "do_express_checkout",
+        summary: "Set\u0020up\u0020the\u0020DoExpressCheckoutPayment\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_do_express_checkout"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aget_express_checkout_details\u0028\u0029",
+        name: "get_express_checkout_details",
+        summary: "Get\u0020info\u0020about\u0020the\u0020buyer\u0020\u0026\u0020transaction\u0020from\u0020PayPal",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_get_express_checkout_details"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Acreate_billing_agreement\u0028\u0029",
+        name: "create_billing_agreement",
+        summary: "Create\u0020a\u0020billing\u0020agreement,\u0020required\u0020when\u0020a\u0020subscription\u0020sign\u002Dup\u0020has\u0020no\u0020initial\u0020payment",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_create_billing_agreement"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Ado_reference_transaction\u0028\u0029",
+        name: "do_reference_transaction",
+        summary: "Charge\u0020a\u0020payment\u0020against\u0020a\u0020reference\u0020token",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_do_reference_transaction"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aadd_payment_details_parameters\u0028\u0029",
+        name: "add_payment_details_parameters",
+        summary: "Set\u0020up\u0020the\u0020payment\u0020details\u0020for\u0020a\u0020DoExpressCheckoutPayment\u0020or\u0020DoReferenceTransaction\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_add_payment_details_parameters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Amanage_recurring_payments_profile_status\u0028\u0029",
+        name: "manage_recurring_payments_profile_status",
+        summary: "Performs\u0020an\u0020Express\u0020Checkout\u0020NVP\u0020API\u0020operation\u0020as\u0020passed\u0020in\u0020\u0024api_method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_manage_recurring_payments_profile_status"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aadd_parameter\u0028\u0029",
+        name: "add_parameter",
+        summary: "Add\u0020a\u0020parameter",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_add_parameter"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aadd_parameters\u0028\u0029",
+        name: "add_parameters",
+        summary: "Add\u0020multiple\u0020parameters",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_add_parameters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aset_method\u0028\u0029",
+        name: "set_method",
+        summary: "Set\u0020the\u0020method\u0020for\u0020the\u0020request,\u0020currently\u0020using\u003A",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_set_method"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aadd_payment_parameters\u0028\u0029",
+        name: "add_payment_parameters",
+        summary: "Add\u0020payment\u0020parameters,\u0020auto\u002Dprefixes\u0020the\u0020parameter\u0020key\u0020with\u0020\u0060PAYMENTREQUEST_0_\u0060\nfor\u0020convenience\u0020and\u0020readability",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_add_payment_parameters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aadd_line_item_parameters\u0028\u0029",
+        name: "add_line_item_parameters",
+        summary: "Adds\u0020a\u0020line\u0020item\u0020parameters\u0020to\u0020the\u0020request,\u0020auto\u002Dprefixes\u0020the\u0020parameter\u0020key\nwith\u0020\u0060L_PAYMENTREQUEST_0_\u0060\u0020for\u0020convenience\u0020and\u0020readability",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_add_line_item_parameters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aget_item_description\u0028\u0029",
+        name: "get_item_description",
+        summary: "Helper\u0020method\u0020to\u0020return\u0020the\u0020item\u0020description,\u0020which\u0020is\u0020composed\u0020of\u0020item\nmeta\u0020flattened\u0020into\u0020a\u0020comma\u002Dseparated\u0020string,\u0020if\u0020available.\u0020Otherwise\u0020the\nproduct\u0020SKU\u0020is\u0020included.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_get_item_description"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Ato_string\u0028\u0029",
+        name: "to_string",
+        summary: "Returns\u0020the\u0020string\u0020representation\u0020of\u0020this\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_to_string"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Ato_string_safe\u0028\u0029",
+        name: "to_string_safe",
+        summary: "Returns\u0020the\u0020string\u0020representation\u0020of\u0020this\u0020request\u0020with\u0020any\u0020and\u0020all\nsensitive\u0020elements\u0020masked\u0020or\u0020removed",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_to_string_safe"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aget_parameters\u0028\u0029",
+        name: "get_parameters",
+        summary: "Returns\u0020the\u0020request\u0020parameters\u0020after\u0020validation\u0020\u0026\u0020filtering",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_get_parameters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aget_method\u0028\u0029",
+        name: "get_method",
+        summary: "Returns\u0020the\u0020method\u0020for\u0020this\u0020request.\u0020PPE\u0020uses\u0020the\u0020API\u0020default\u0020request\nmethod\u0020\u0028POST\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_get_method"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aget_path\u0028\u0029",
+        name: "get_path",
+        summary: "Returns\u0020the\u0020request\u0020path\u0020for\u0020this\u0020request.\u0020PPE\u0020request\u0020paths\u0020do\u0020not\nvary\u0020per\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_get_path"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Askip_line_items\u0028\u0029",
+        name: "skip_line_items",
+        summary: "PayPal\u0020cannot\u0020properly\u0020calculate\u0020order\u0020totals\u0020when\u0020prices\u0020include\u0020tax\u0020\u0028due\nto\u0020rounding\u0020issues\u0029,\u0020so\u0020line\u0020items\u0020are\u0020skipped\u0020and\u0020the\u0020order\u0020is\u0020sent\u0020as\na\u0020single\u0020item",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_skip_line_items"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Around\u0028\u0029",
+        name: "round",
+        summary: "Round\u0020a\u0020float",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_round"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003Aprice_format\u0028\u0029",
+        name: "price_format",
+        summary: "Format\u0020prices.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#method_price_format"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003AAUTH_CAPTURE",
+        name: "AUTH_CAPTURE",
+        summary: "auth\/capture\u0020transaction\u0020type",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#constant_AUTH_CAPTURE"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Request\u003A\u003A\u0024parameters",
+        name: "parameters",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Request.html#property_parameters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Billing_Agreement",
+        name: "WCS_PayPal_Reference_Transaction_API_Response_Billing_Agreement",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Billing-Agreement.html"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Billing_Agreement\u003A\u003Aget_billing_agreement_id\u0028\u0029",
+        name: "get_billing_agreement_id",
+        summary: "Get\u0020the\u0020billing\u0020agreement\u0020ID\u0020which\u0020is\u0020returned\u0020after\u0020a\u0020successful\u0020CreateBillingAgreement\u0020API\u0020call",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Billing-Agreement.html#method_get_billing_agreement_id"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Checkout",
+        name: "WCS_PayPal_Reference_Transaction_API_Response_Checkout",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Checkout.html"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Checkout\u003A\u003Aget_token\u0028\u0029",
+        name: "get_token",
+        summary: "Get\u0020the\u0020token\u0020which\u0020is\u0020returned\u0020after\u0020a\u0020successful\u0020SetExpressCheckout\nAPI\u0020call",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Checkout.html#method_get_token"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Checkout\u003A\u003Aget_billing_agreement_status\u0028\u0029",
+        name: "get_billing_agreement_status",
+        summary: "Get\u0020the\u0020billing\u0020agreement\u0020status\u0020for\u0020a\u0020successful\u0020SetExpressCheckout",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Checkout.html#method_get_billing_agreement_status"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Checkout\u003A\u003Aget_shipping_details\u0028\u0029",
+        name: "get_shipping_details",
+        summary: "Get\u0020the\u0020shipping\u0020details\u0020from\u0020GetExpressCheckoutDetails\u0020response\u0020mapped\u0020to\u0020the\u0020WC\u0020shipping\u0020address\u0020format",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Checkout.html#method_get_shipping_details"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Checkout\u003A\u003Aget_note_text\u0028\u0029",
+        name: "get_note_text",
+        summary: "Get\u0020the\u0020note\u0020text\u0020from\u0020checkout\u0020details",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Checkout.html#method_get_note_text"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Checkout\u003A\u003Aget_payer_id\u0028\u0029",
+        name: "get_payer_id",
+        summary: "Gets\u0020the\u0020payer\u0020ID\u0020from\u0020checkout\u0020details,\u0020a\u0020payer\u0020ID\u0020is\u0020a\u0020Unique\u0020PayPal\u0020Customer\u0020Account\u0020identification\u0020number",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Checkout.html#method_get_payer_id"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Checkout\u003A\u003Aget_state_code\u0028\u0029",
+        name: "get_state_code",
+        summary: "Get\u0020state\u0020code\u0020given\u0020a\u0020full\u0020state\u0020name\u0020and\u0020country\u0020code",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Checkout.html#method_get_state_code"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment",
+        name: "WCS_PayPal_Reference_Transaction_API_Response_Payment",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Parse\u0020the\u0020payment\u0020response",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method___construct"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Atransaction_approved\u0028\u0029",
+        name: "transaction_approved",
+        summary: "Checks\u0020if\u0020the\u0020transaction\u0020was\u0020successful",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_transaction_approved"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Atransaction_held\u0028\u0029",
+        name: "transaction_held",
+        summary: "Returns\u0020true\u0020if\u0020the\u0020payment\u0020is\u0020pending,\u0020for\u0020instance\u0020if\u0020the\u0020payment\u0020was\u0020authorized,\u0020but\u0020not\u0020captured.\u0020There\u0020are\u0020many\u0020other\npossible\u0020reasons",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_transaction_held"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_status_code\u0028\u0029",
+        name: "get_status_code",
+        summary: "Gets\u0020the\u0020response\u0020status\u0020code,\u0020or\u0020null\u0020if\u0020there\u0020is\u0020no\u0020status\u0020code\u0020associated\u0020with\u0020this\u0020transaction.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_status_code"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_status_message\u0028\u0029",
+        name: "get_status_message",
+        summary: "Gets\u0020the\u0020response\u0020status\u0020message,\u0020or\u0020null\u0020if\u0020there\u0020is\u0020no\u0020status\u0020message\u0020associated\u0020with\u0020this\u0020transaction.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_status_message"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_transaction_id\u0028\u0029",
+        name: "get_transaction_id",
+        summary: "Gets\u0020the\u0020response\u0020transaction\u0020id,\u0020or\u0020null\u0020if\u0020there\u0020is\u0020no\u0020transaction\u0020id\u0020associated\u0020with\u0020this\u0020transaction.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_transaction_id"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Ahas_payment_type\u0028\u0029",
+        name: "has_payment_type",
+        summary: "Return\u0020true\u0020if\u0020the\u0020response\u0020has\u0020a\u0020payment\u0020type\u0020other\u0020than\u0020\u0060none\u0060",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_has_payment_type"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_payment_type\u0028\u0029",
+        name: "get_payment_type",
+        summary: "Get\u0020the\u0020PayPal\u0020payment\u0020type,\u0020either\u0020\u0060none\u0060,\u0020\u0060echeck\u0060,\u0020or\u0020\u0060instant\u0060",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_payment_type"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_payment_status\u0028\u0029",
+        name: "get_payment_status",
+        summary: "Gets\u0020payment\u0020status",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_payment_status"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_pending_reason\u0028\u0029",
+        name: "get_pending_reason",
+        summary: "Gets\u0020the\u0020pending\u0020reason",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_pending_reason"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_authorization_code\u0028\u0029",
+        name: "get_authorization_code",
+        summary: "PayPal\u0020Express\u0020does\u0020not\u0020return\u0020an\u0020authorization\u0020code",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_authorization_code"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_avs_result\u0028\u0029",
+        name: "get_avs_result",
+        summary: "Returns\u0020the\u0020result\u0020of\u0020the\u0020AVS\u0020check",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_avs_result"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_csc_result\u0028\u0029",
+        name: "get_csc_result",
+        summary: "Returns\u0020the\u0020result\u0020of\u0020the\u0020CSC\u0020check",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_csc_result"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Acsc_match\u0028\u0029",
+        name: "csc_match",
+        summary: "Returns\u0020true\u0020if\u0020the\u0020CSC\u0020check\u0020was\u0020successful",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_csc_match"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_fraud_filters\u0028\u0029",
+        name: "get_fraud_filters",
+        summary: "Return\u0020any\u0020fraud\u0020management\u0020data\u0020available.\u0020This\u0020data\u0020is\u0020explicitly\nenabled\u0020in\u0020the\u0020request,\u0020but\u0020PayPal\u0020recommends\u0020checking\u0020certain\u0020error\nconditions\u0020prior\u0020to\u0020accessing\u0020this\u0020data.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_fraud_filters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Ahas_payment_parameter\u0028\u0029",
+        name: "has_payment_parameter",
+        summary: "Check\u0020if\u0020the\u0020response\u0020has\u0020a\u0020specific\u0020payment\u0020parameter.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_has_payment_parameter"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_payment_parameter\u0028\u0029",
+        name: "get_payment_parameter",
+        summary: "Gets\u0020a\u0020given\u0020payment\u0020parameter\u0027s\u0020value,\u0020or\u0020null\u0020if\u0020parameter\u0020is\u0020not\u0020set\u0020or\u0020empty.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_payment_parameter"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003Aget_payment_parameter_prefix\u0028\u0029",
+        name: "get_payment_parameter_prefix",
+        summary: "DoExpressCheckoutPayment\u0020API\u0020responses\u0020have\u0020a\u0020prefix\u0020for\u0020the\u0020payment\nparameters.\u0020Parallels\u0020payments\u0020are\u0020not\u0020used,\u0020so\u0020the\u0020numeric\u0020portion\u0020of\nthe\u0020prefix\u0020is\u0020always\u0020\u00270\u0027",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#method_get_payment_parameter_prefix"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003ATRANSACTION_COMPLETED",
+        name: "TRANSACTION_COMPLETED",
+        summary: "approved\u0020transaction\u0020response\u0020payment\u0020status",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#constant_TRANSACTION_COMPLETED"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003ATRANSACTION_INPROGRESS",
+        name: "TRANSACTION_INPROGRESS",
+        summary: "in\u0020progress\u0020transaction\u0020response\u0020payment\u0020status",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#constant_TRANSACTION_INPROGRESS"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003ATRANSACTION_PROCESSED",
+        name: "TRANSACTION_PROCESSED",
+        summary: "in\u0020progress\u0020transaction\u0020response\u0020payment\u0020status",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#constant_TRANSACTION_PROCESSED"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003ATRANSACTION_PENDING",
+        name: "TRANSACTION_PENDING",
+        summary: "pending\u0020transaction\u0020response\u0020payment\u0020status",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#constant_TRANSACTION_PENDING"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Payment\u003A\u003A\u0024successful_statuses",
+        name: "successful_statuses",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Payment.html#property_successful_statuses"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Recurring_Payment",
+        name: "WCS_PayPal_Reference_Transaction_API_Response_Recurring_Payment",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Recurring-Payment.html"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Recurring_Payment\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Parse\u0020the\u0020payment\u0020response",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Recurring-Payment.html#method___construct"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response_Recurring_Payment\u003A\u003Aget_payment_parameter_prefix\u0028\u0029",
+        name: "get_payment_parameter_prefix",
+        summary: "DoExpressCheckoutPayment\u0020API\u0020responses\u0020have\u0020a\u0020prefix\u0020for\u0020the\u0020payment\nparameters.\u0020Parallels\u0020payments\u0020are\u0020not\u0020used,\u0020so\u0020the\u0020numeric\u0020portion\u0020of\nthe\u0020prefix\u0020is\u0020always\u0020\u00270\u0027",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response-Recurring-Payment.html#method_get_payment_parameter_prefix"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response",
+        name: "WCS_PayPal_Reference_Transaction_API_Response",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Parse\u0020the\u0020response\u0020parameters\u0020from\u0020the\u0020raw\u0020URL\u002Dencoded\u0020response\u0020string",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method___construct"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Ahas_api_error\u0028\u0029",
+        name: "has_api_error",
+        summary: "Checks\u0020if\u0020response\u0020contains\u0020an\u0020API\u0020error\u0020code",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_has_api_error"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Ahas_api_error_for_credentials\u0028\u0029",
+        name: "has_api_error_for_credentials",
+        summary: "Checks\u0020if\u0020response\u0020contains\u0020an\u0020API\u0020error\u0020code\u0020or\u0020message\u0020relating\u0020to\u0020invalid\u0020credentails",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_has_api_error_for_credentials"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Aget_api_error_code\u0028\u0029",
+        name: "get_api_error_code",
+        summary: "Gets\u0020the\u0020API\u0020error\u0020code",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_get_api_error_code"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Aget_api_error_message\u0028\u0029",
+        name: "get_api_error_message",
+        summary: "Gets\u0020the\u0020API\u0020error\u0020message",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_get_api_error_message"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Ahas_parameter\u0028\u0029",
+        name: "has_parameter",
+        summary: "Returns\u0020true\u0020if\u0020the\u0020parameter\u0020is\u0020not\u0020empty",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_has_parameter"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Aget_parameter\u0028\u0029",
+        name: "get_parameter",
+        summary: "Gets\u0020the\u0020parameter\u0020value,\u0020or\u0020null\u0020if\u0020parameter\u0020is\u0020not\u0020set\u0020or\u0020empty",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_get_parameter"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Aget_user_message\u0028\u0029",
+        name: "get_user_message",
+        summary: "Returns\u0020a\u0020message\u0020appropriate\u0020for\u0020a\u0020frontend\u0020user.\u0020\u0020This\u0020should\u0020be\u0020used\nto\u0020provide\u0020enough\u0020information\u0020to\u0020a\u0020user\u0020to\u0020allow\u0020them\u0020to\u0020resolve\u0020an\nissue\u0020on\u0020their\u0020own,\u0020but\u0020not\u0020enough\u0020to\u0020help\u0020nefarious\u0020folks\u0020fishing\u0020for\ninfo.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_get_user_message"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Ato_string\u0028\u0029",
+        name: "to_string",
+        summary: "Returns\u0020the\u0020string\u0020representation\u0020of\u0020this\u0020response",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_to_string"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Ato_string_safe\u0028\u0029",
+        name: "to_string_safe",
+        summary: "Returns\u0020the\u0020string\u0020representation\u0020of\u0020this\u0020response\u0020with\u0020any\u0020and\u0020all\nsensitive\u0020elements\u0020masked\u0020or\u0020removed",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_to_string_safe"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003Aget_order\u0028\u0029",
+        name: "get_order",
+        summary: "Get\u0020the\u0020order\u0020for\u0020a\u0020request\u0020based\u0020on\u0020the\u0020\u0027custom\u0027\u0020response\u0020field",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#method_get_order"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API_Response\u003A\u003A\u0024parameters",
+        name: "parameters",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API-Response.html#property_parameters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API",
+        name: "WCS_PayPal_Reference_Transaction_API",
+        summary: "\u0023\u0020WooCommerce\u0020Plugin\u0020Framework\u0020API\u0020Base\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor\u0020\u002D\u0020setup\u0020request\u0020object\u0020and\u0020set\u0020endpoint",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method___construct"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Aget_paypal_args\u0028\u0029",
+        name: "get_paypal_args",
+        summary: "Get\u0020PayPal\u0020URL\u0020parameters\u0020for\u0020the\u0020checkout\u0020URL",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_get_paypal_args"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Aare_reference_transactions_enabled\u0028\u0029",
+        name: "are_reference_transactions_enabled",
+        summary: "Check\u0020account\u0020for\u0020reference\u0020transaction\u0020support",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_are_reference_transactions_enabled"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Aset_express_checkout\u0028\u0029",
+        name: "set_express_checkout",
+        summary: "Set\u0020Express\u0020Checkout",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_set_express_checkout"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Acreate_billing_agreement\u0028\u0029",
+        name: "create_billing_agreement",
+        summary: "Create\u0020a\u0020billing\u0020agreement,\u0020required\u0020when\u0020a\u0020subscription\u0020sign\u002Dup\u0020has\u0020no\u0020initial\u0020payment",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_create_billing_agreement"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Aget_express_checkout_details\u0028\u0029",
+        name: "get_express_checkout_details",
+        summary: "Get\u0020Express\u0020Checkout\u0020Details",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_get_express_checkout_details"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Ado_express_checkout\u0028\u0029",
+        name: "do_express_checkout",
+        summary: "Process\u0020an\u0020express\u0020checkout\u0020payment\u0020and\u0020billing\u0020agreement\u0020creation",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_do_express_checkout"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Ado_reference_transaction\u0028\u0029",
+        name: "do_reference_transaction",
+        summary: "Perform\u0020a\u0020reference\u0020transaction\u0020for\u0020the\u0020given\u0020order",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_do_reference_transaction"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Amanage_recurring_payments_profile_status\u0028\u0029",
+        name: "manage_recurring_payments_profile_status",
+        summary: "Change\u0020the\u0020status\u0020of\u0020a\u0020subscription\u0020for\u0020a\u0020given\u0020order\/profile\u0020ID",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_manage_recurring_payments_profile_status"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Aget_callback_url\u0028\u0029",
+        name: "get_callback_url",
+        summary: "Get\u0020the\u0020wc\u002Dapi\u0020URL\u0020to\u0020redirect\u0020to",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_get_callback_url"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Aget_new_request\u0028\u0029",
+        name: "get_new_request",
+        summary: "Builds\u0020and\u0020returns\u0020a\u0020new\u0020API\u0020request\u0020object",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_get_new_request"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003Aget_plugin\u0028\u0029",
+        name: "get_plugin",
+        summary: "Supposed\u0020to\u0020return\u0020the\u0020main\u0020gatewya\u0020plugin\u0020class,\u0020but\u0020we\u0020don\u0027t\u0020have\u0020one\u0020of\u0020those",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#method_get_plugin"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003APRODUCTION_ENDPOINT",
+        name: "PRODUCTION_ENDPOINT",
+        summary: "the\u0020production\u0020endpoint",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#constant_PRODUCTION_ENDPOINT"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003ASANDBOX_ENDPOINT",
+        name: "SANDBOX_ENDPOINT",
+        summary: "the\u0020sandbox\u0020endpoint",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#constant_SANDBOX_ENDPOINT"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003AVERSION",
+        name: "VERSION",
+        summary: "NVP\u0020API\u0020version",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#constant_VERSION"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_API\u003A\u003A\u0024parameters",
+        name: "parameters",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-API.html#property_parameters"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_IPN_Handler",
+        name: "WCS_PayPal_Reference_Transaction_IPN_Handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-IPN-Handler.html"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_IPN_Handler\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-IPN-Handler.html#method___construct"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_IPN_Handler\u003A\u003Avalid_response\u0028\u0029",
+        name: "valid_response",
+        summary: "There\u0020was\u0020a\u0020valid\u0020response",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-IPN-Handler.html#method_valid_response"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_IPN_Handler\u003A\u003Acancel_subscriptions\u0028\u0029",
+        name: "cancel_subscriptions",
+        summary: "Find\u0020all\u0020subscription\u0020with\u0020a\u0020given\u0020billing\u0020agreement\u0020ID\u0020and\u0020cancel\u0020them\u0020because\u0020that\u0020billing\u0020agreement\u0020has\u0020been\ncancelled\u0020at\u0020PayPal,\u0020and\u0020therefore,\u0020no\u0020future\u0020payments\u0020can\u0020be\u0020charged.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-IPN-Handler.html#method_cancel_subscriptions"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_IPN_Handler\u003A\u003Aremove_billing_agreement_from_subscriptions\u0028\u0029",
+        name: "remove_billing_agreement_from_subscriptions",
+        summary: "Removes\u0020a\u0020billing\u0020agreement\u0020from\u0020all\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-IPN-Handler.html#method_remove_billing_agreement_from_subscriptions"
+    },{
+        fqsen: "\\WCS_PayPal_Reference_Transaction_IPN_Handler\u003A\u003A\u0024transaction_types",
+        name: "transaction_types",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Reference-Transaction-IPN-Handler.html#property_transaction_types"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Change_Payment_Method",
+        name: "WCS_PayPal_Standard_Change_Payment_Method",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Change-Payment-Method.html"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Change_Payment_Method\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Change-Payment-Method.html#method_init"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Change_Payment_Method\u003A\u003Amaybe_remove_subscription_cancelled_callback\u0028\u0029",
+        name: "maybe_remove_subscription_cancelled_callback",
+        summary: "If\u0020changing\u0020a\u0020subscriptions\u0020payment\u0020method\u0020from\u0020and\u0020to\u0020PayPal,\u0020wait\u0020until\u0020an\u0020appropriate\u0020IPN\u0020message\nhas\u0020come\u0020in\u0020before\u0020deciding\u0020to\u0020cancel\u0020the\u0020old\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Change-Payment-Method.html#method_maybe_remove_subscription_cancelled_callback"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Change_Payment_Method\u003A\u003Amaybe_reattach_subscription_cancelled_callback\u0028\u0029",
+        name: "maybe_reattach_subscription_cancelled_callback",
+        summary: "If\u0020changing\u0020a\u0020subscriptions\u0020payment\u0020method\u0020from\u0020and\u0020to\u0020PayPal,\u0020the\u0020cancelled\u0020subscription\u0020hook\u0020was\u0020removed\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Change-Payment-Method.html#method_maybe_reattach_subscription_cancelled_callback"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Change_Payment_Method\u003A\u003Amaybe_dont_update_payment_method\u0028\u0029",
+        name: "maybe_dont_update_payment_method",
+        summary: "Don\u0027t\u0020update\u0020the\u0020payment\u0020method\u0020on\u0020checkout\u0020when\u0020switching\u0020to\u0020PayPal\u0020\u002D\u0020wait\u0020until\u0020we\u0020have\u0020the\u0020IPN\u0020message.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Change-Payment-Method.html#method_maybe_dont_update_payment_method"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Change_Payment_Method\u003A\u003Achange_payment_button_text\u0028\u0029",
+        name: "change_payment_button_text",
+        summary: "Change\u0020the\u0020\u0022Change\u0020Payment\u0020Method\u0022\u0020button\u0020for\u0020PayPal",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Change-Payment-Method.html#method_change_payment_button_text"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler",
+        name: "WCS_PayPal_Standard_IPN_Failure_Handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler\u003A\u003Aattach\u0028\u0029",
+        name: "attach",
+        summary: "Attaches\u0020all\u0020IPN\u0020failure\u0020handler\u0020related\u0020hooks\u0020and\u0020filters\u0020and\u0020also\u0020sets\u0020logging\u0020to\u0020enabled.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html#method_attach"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler\u003A\u003Adetach\u0028\u0029",
+        name: "detach",
+        summary: "Close\u0020up\u0020loose\u0020ends",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html#method_detach"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler\u003A\u003Acatch_unexpected_shutdown\u0028\u0029",
+        name: "catch_unexpected_shutdown",
+        summary: "On\u0020PHP\u0020shutdown\u0020log\u0020any\u0020unexpected\u0020failures\u0020from\u0020PayPal\u0020IPN\u0020processing",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html#method_catch_unexpected_shutdown"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler\u003A\u003Alog_ipn_errors\u0028\u0029",
+        name: "log_ipn_errors",
+        summary: "Log\u0020any\u0020fatal\u0020errors\u0020occurred\u0020while\u0020Subscriptions\u0020is\u0020trying\u0020to\u0020process\u0020IPN\u0020messages",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html#method_log_ipn_errors"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler\u003A\u003Alog_to_failure\u0028\u0029",
+        name: "log_to_failure",
+        summary: "Log\u0020any\u0020unexpected\u0020fatal\u0020errors\u0020to\u0020wcs\u002Dipn\u002Dfailures\u0020log\u0020file",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html#method_log_to_failure"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler\u003A\u003Alog_unexpected_exception\u0028\u0029",
+        name: "log_unexpected_exception",
+        summary: "Builds\u0020an\u0020error\u0020array\u0020from\u0020exception\u0020and\u0020call\u0020\u0040see\u0020self\u003A\u003Alog_ipn_errors\u0028\u0029\u0020to\u0020log\u0020unhandled\nexceptions\u0020in\u0020a\u0020separate\u0020paypal\u0020log.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html#method_log_unexpected_exception"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler\u003A\u003A\u0024transaction_details",
+        name: "transaction_details",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html#property_transaction_details"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Failure_Handler\u003A\u003A\u0024log",
+        name: "log",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Failure-Handler.html#property_log"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler",
+        name: "WCS_PayPal_Standard_IPN_Handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor\u0020from\u0020WC_Gateway_Paypal_IPN_Handler",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method___construct"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Avalid_response\u0028\u0029",
+        name: "valid_response",
+        summary: "There\u0020was\u0020a\u0020valid\u0020response",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_valid_response"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Aprocess_ipn_request\u0028\u0029",
+        name: "process_ipn_request",
+        summary: "Process\u0020a\u0020PayPal\u0020Standard\u0020Subscription\u0020IPN\u0020request",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_process_ipn_request"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Aget_transaction_types\u0028\u0029",
+        name: "get_transaction_types",
+        summary: "Return\u0020valid\u0020transaction\u0020types",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_get_transaction_types"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Ais_woocommerce_payload\u0028\u0029",
+        name: "is_woocommerce_payload",
+        summary: "Checks\u0020if\u0020a\u0020string\u0020may\u0020include\u0020a\u0020WooCommerce\u0020order\u0020key.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_is_woocommerce_payload"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Aget_order_id_and_key\u0028\u0029",
+        name: "get_order_id_and_key",
+        summary: "Checks\u0020a\u0020set\u0020of\u0020args\u0020and\u0020derives\u0020an\u0020Order\u0020ID\u0020with\u0020backward\u0020compatibility\u0020for\u0020WC\u0020\u003C\u00201.7\u0020where\u0020\u0027custom\u0027\u0020was\u0020the\u0020Order\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_get_order_id_and_key"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Aget_parent_order_with_fallback\u0028\u0029",
+        name: "get_parent_order_with_fallback",
+        summary: "This\u0020function\u0020will\u0020try\u0020to\u0020get\u0020the\u0020parent\u0020order,\u0020and\u0020if\u0020not\u0020available,\u0020will\u0020get\u0020the\u0020last\u0020order\u0020related\u0020to\u0020the\u0020Subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_get_parent_order_with_fallback"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Acancel_subscription\u0028\u0029",
+        name: "cancel_subscription",
+        summary: "Cancel\u0020a\u0020specific\u0020PayPal\u0020Standard\u0020Subscription\u0020Profile\u0020with\u0020PayPal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_cancel_subscription"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Avalidate_transaction_type\u0028\u0029",
+        name: "validate_transaction_type",
+        summary: "Check\u0020for\u0020a\u0020valid\u0020transaction\u0020type",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_validate_transaction_type"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Aadd_order_note\u0028\u0029",
+        name: "add_order_note",
+        summary: "Add\u0020an\u0020note\u0020for\u0020the\u0020given\u0020order\u0020or\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_add_order_note"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Aget_order_by_transaction_id\u0028\u0029",
+        name: "get_order_by_transaction_id",
+        summary: "Get\u0020an\u0020order\u0020associated\u0020with\u0020a\u0020subscription\u0020that\u0020has\u0020a\u0020specified\u0020transaction\u0020id.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_get_order_by_transaction_id"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Aget_renewal_order_by_transaction_id\u0028\u0029",
+        name: "get_renewal_order_by_transaction_id",
+        summary: "Get\u0020a\u0020renewal\u0020order\u0020associated\u0020with\u0020a\u0020subscription\u0020that\u0020has\u0020a\u0020specified\u0020transaction\u0020id.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_get_renewal_order_by_transaction_id"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003Aget_parent_order_by_transaction_id\u0028\u0029",
+        name: "get_parent_order_by_transaction_id",
+        summary: "Get\u0020a\u0020parent\u0020order\u0020associated\u0020with\u0020a\u0020subscription\u0020that\u0020has\u0020a\u0020specified\u0020transaction\u0020id.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#method_get_parent_order_by_transaction_id"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_IPN_Handler\u003A\u003A\u0024transaction_types",
+        name: "transaction_types",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-IPN-Handler.html#property_transaction_types"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Request",
+        name: "WCS_PayPal_Standard_Request",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Request.html"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Request\u003A\u003Aget_paypal_args\u0028\u0029",
+        name: "get_paypal_args",
+        summary: "Get\u0020PayPal\u0020Args\u0020for\u0020passing\u0020to\u0020PP",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Request.html#method_get_paypal_args"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher",
+        name: "WCS_PayPal_Standard_Switcher",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_init"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Acan_item_be_switched\u0028\u0029",
+        name: "can_item_be_switched",
+        summary: "Allow\u0020items\u0020on\u0020PayPal\u0020Standard\u0020Subscriptions\u0020to\u0020be\u0020switch\u0020when\u0020the\u0020PayPal\u0020account\u0020supports\u0020Reference\u0020Transactions",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_can_item_be_switched"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Acart_needs_payment\u0028\u0029",
+        name: "cart_needs_payment",
+        summary: "Check\u0020whether\u0020the\u0020cart\u0020needs\u0020payment\u0020even\u0020if\u0020the\u0020order\u0020total\u0020is\u0020\u00240\u0020because\u0020it\u0027s\u0020a\u0020subscription\u0020switch\u0020request\u0020for\u0020a\u0020subscription\u0020using\nPayPal\u0020Standard\u0020as\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_cart_needs_payment"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Amaybe_set_payment_method\u0028\u0029",
+        name: "maybe_set_payment_method",
+        summary: "If\u0020switching\u0020a\u0020subscription\u0020using\u0020PayPal\u0020Standard\u0020as\u0020the\u0020payment\u0020method\u0020and\u0020the\u0020customer\u0020has\u0020entered\nin\u0020a\u0020payment\u0020method\u0020other\u0020than\u0020PayPal\u0020\u0028which\u0020would\u0020be\u0020using\u0020Reference\u0020Transactions\u0029,\u0020make\u0020sure\u0020to\u0020update\nthe\u0020payment\u0020method\u0020on\u0020the\u0020subscription\u0020\u0028this\u0020is\u0020hooked\u0020to\u0020\u0027woocommerce_payment_successful_result\u0027\u0020to\u0020make\nsure\u0020it\u0020happens\u0020after\u0020the\u0020payment\u0020succeeds\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_maybe_set_payment_method"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Asave_old_paypal_meta\u0028\u0029",
+        name: "save_old_paypal_meta",
+        summary: "Stores\u0020the\u0020old\u0020paypal\u0020standard\u0020subscription\u0020id\u0020on\u0020the\u0020switch\u0020order\u0020so\u0020that\u0020it\u0020can\u0020be\u0020used\u0020later\u0020to\u0020cancel\u0020the\u0020recurring\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_save_old_paypal_meta"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Acancel_paypal_standard_after_switch\u0028\u0029",
+        name: "cancel_paypal_standard_after_switch",
+        summary: "Cancel\u0020subscriptions\u0020with\u0020PayPal\u0020Standard\u0020after\u0020the\u0020order\u0020has\u0020been\u0020successfully\u0020switched.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_cancel_paypal_standard_after_switch"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Aget_available_payment_gateways\u0028\u0029",
+        name: "get_available_payment_gateways",
+        summary: "Do\u0020not\u0020allow\u0020subscriptions\u0020to\u0020be\u0020switched\u0020using\u0020PayPal\u0020Standard\u0020as\u0020the\u0020payment\u0020method",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_get_available_payment_gateways"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Amaybe_cancel_paypal_after_switch\u0028\u0029",
+        name: "maybe_cancel_paypal_after_switch",
+        summary: "Cancel\u0020subscriptions\u0020with\u0020PayPal\u0020Standard\u0020after\u0020the\u0020order\u0020has\u0020been\u0020successfully\u0020switched.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_maybe_cancel_paypal_after_switch"
+    },{
+        fqsen: "\\WCS_PayPal_Standard_Switcher\u003A\u003Afilter_suspended_switch_note\u0028\u0029",
+        name: "filter_suspended_switch_note",
+        summary: "Filters\u0020the\u0020note\u0020added\u0020to\u0020a\u0020subscription\u0020when\u0020the\u0020payment\u0020method\u0020is\u0020changed\u0020from\u0020PayPal\u0020Standard\u0020to\u0020PayPal\u0020Reference\u0020Transactions\u0020after\u0020a\u0020switch.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Standard-Switcher.html#method_filter_suspended_switch_note"
+    },{
+        fqsen: "\\WCS_PayPal_Status_Manager",
+        name: "WCS_PayPal_Status_Manager",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Status-Manager.html"
+    },{
+        fqsen: "\\WCS_PayPal_Status_Manager\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Status-Manager.html#method_init"
+    },{
+        fqsen: "\\WCS_PayPal_Status_Manager\u003A\u003Acancel_subscription\u0028\u0029",
+        name: "cancel_subscription",
+        summary: "When\u0020a\u0020store\u0020manager\u0020or\u0020user\u0020cancels\u0020a\u0020subscription\u0020in\u0020the\u0020store,\u0020also\u0020cancel\u0020the\u0020subscription\u0020with\u0020PayPal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Status-Manager.html#method_cancel_subscription"
+    },{
+        fqsen: "\\WCS_PayPal_Status_Manager\u003A\u003Asuspend_subscription\u0028\u0029",
+        name: "suspend_subscription",
+        summary: "When\u0020a\u0020store\u0020manager\u0020or\u0020user\u0020suspends\u0020a\u0020subscription\u0020in\u0020the\u0020store,\u0020also\u0020suspend\u0020the\u0020subscription\u0020with\u0020PayPal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Status-Manager.html#method_suspend_subscription"
+    },{
+        fqsen: "\\WCS_PayPal_Status_Manager\u003A\u003Areactivate_subscription\u0028\u0029",
+        name: "reactivate_subscription",
+        summary: "When\u0020a\u0020store\u0020manager\u0020or\u0020user\u0020reactivates\u0020a\u0020subscription\u0020in\u0020the\u0020store,\u0020also\u0020reactivate\u0020the\u0020subscription\u0020with\u0020PayPal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Status-Manager.html#method_reactivate_subscription"
+    },{
+        fqsen: "\\WCS_PayPal_Status_Manager\u003A\u003Aupdate_subscription_status\u0028\u0029",
+        name: "update_subscription_status",
+        summary: "Performs\u0020an\u0020Express\u0020Checkout\u0020NVP\u0020API\u0020operation\u0020as\u0020passed\u0020in\u0020\u0024api_method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Status-Manager.html#method_update_subscription_status"
+    },{
+        fqsen: "\\WCS_PayPal_Status_Manager\u003A\u003Asuspend_subscription_on_payment_changed\u0028\u0029",
+        name: "suspend_subscription_on_payment_changed",
+        summary: "When\u0020changing\u0020the\u0020payment\u0020method\u0020on\u0020edit\u0020subscription\u0020screen\u0020from\u0020PayPal,\u0020only\u0020suspend\u0020the\u0020subscription\u0020rather\nthan\u0020cancelling\u0020it.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Status-Manager.html#method_suspend_subscription_on_payment_changed"
+    },{
+        fqsen: "\\WCS_PayPal_Supports",
+        name: "WCS_PayPal_Supports",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Supports.html"
+    },{
+        fqsen: "\\WCS_PayPal_Supports\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Bootstraps\u0020the\u0020class\u0020and\u0020hooks\u0020required\u0020actions\u0020\u0026\u0020filters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Supports.html#method_init"
+    },{
+        fqsen: "\\WCS_PayPal_Supports\u003A\u003Aadd_feature_support_for_gateway\u0028\u0029",
+        name: "add_feature_support_for_gateway",
+        summary: "Add\u0020subscription\u0020support\u0020to\u0020the\u0020PayPal\u0020Standard\u0020gateway\u0020only\u0020when\u0020credentials\u0020are\u0020set",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Supports.html#method_add_feature_support_for_gateway"
+    },{
+        fqsen: "\\WCS_PayPal_Supports\u003A\u003Aadd_feature_support_for_subscription\u0028\u0029",
+        name: "add_feature_support_for_subscription",
+        summary: "Add\u0020additional\u0020feature\u0020support\u0020at\u0020the\u0020subscription\u0020level\u0020instead\u0020of\u0020just\u0020the\u0020gateway\u0020level\u0020because\u0020some\u0020subscriptions\u0020may\u0020have\u0020been\nsetup\u0020with\u0020PayPal\u0020Standard\u0020while\u0020others\u0020may\u0020have\u0020been\u0020setup\u0020with\u0020Billing\u0020Agreements\u0020to\u0020use\u0020with\u0020Reference\u0020Transactions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Supports.html#method_add_feature_support_for_subscription"
+    },{
+        fqsen: "\\WCS_PayPal_Supports\u003A\u003Aadd_paypal_billing_type_supported_features\u0028\u0029",
+        name: "add_paypal_billing_type_supported_features",
+        summary: "Adds\u0020the\u0020payment\u0020gateway\u0020features\u0020supported\u0020by\u0020the\u0020type\u0020of\u0020billing\u0020the\u0020PayPal\u0020account\u0020supports\u0020\u0028Reference\u0020Transactions\u0020or\u0020Standard\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Supports.html#method_add_paypal_billing_type_supported_features"
+    },{
+        fqsen: "\\WCS_PayPal_Supports\u003A\u003Aadd_paypal_billing_type_supported_features_blocks_store_api\u0028\u0029",
+        name: "add_paypal_billing_type_supported_features_blocks_store_api",
+        summary: "Adds\u0020the\u0020payment\u0020gateway\u0020features\u0020supported\u0020by\u0020the\u0020type\u0020of\u0020billing\u0020the\u0020PayPal\u0020account\u0020supports\u0020\u0028Reference\u0020Transactions\u0020or\u0020Standard\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Supports.html#method_add_paypal_billing_type_supported_features_blocks_store_api"
+    },{
+        fqsen: "\\WCS_PayPal_Supports\u003A\u003A\u0024standard_supported_features",
+        name: "standard_supported_features",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Supports.html#property_standard_supported_features"
+    },{
+        fqsen: "\\WCS_PayPal_Supports\u003A\u003A\u0024reference_transaction_supported_features",
+        name: "reference_transaction_supported_features",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-PayPal-Supports.html#property_reference_transaction_supported_features"
+    },{
+        fqsen: "\\create_paypal_standard_subscriptions\u0028\u0029",
+        name: "create_paypal_standard_subscriptions",
+        summary: "Needs\u0020to\u0020be\u0020called\u0020after\u0020init\u0020so\u0020that\u0020\u0024woocommerce\u0020global\u0020is\u0020setup",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_create_paypal_standard_subscriptions"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions",
+        name: "WC_PayPal_Standard_Subscriptions",
+        summary: "The\u0020old\u0020PayPal\u0020Standard\u0020Subscription\u0020Class.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Set\u0020the\u0020public\u0020properties\u0020to\u0020make\u0020sure\u0020\u0020we\u0020don\u0027t\u0020trigger\u0020any\u0020fatal\u0020errors\u0020even\u0020though\u0020the\u0020class\u0020is\u0020deprecated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_init"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Aare_credentials_set\u0028\u0029",
+        name: "are_credentials_set",
+        summary: "Checks\u0020if\u0020the\u0020PayPal\u0020API\u0020credentials\u0020are\u0020set.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_are_credentials_set"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Aadd_paypal_standard_subscription_support\u0028\u0029",
+        name: "add_paypal_standard_subscription_support",
+        summary: "Add\u0020subscription\u0020support\u0020to\u0020the\u0020PayPal\u0020Standard\u0020gateway\u0020only\u0020when\u0020credentials\u0020are\u0020set",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_add_paypal_standard_subscription_support"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Aprocess_paypal_ipn_request\u0028\u0029",
+        name: "process_paypal_ipn_request",
+        summary: "When\u0020a\u0020PayPal\u0020IPN\u0020messaged\u0020is\u0020received\u0020for\u0020a\u0020subscription\u0020transaction,\ncheck\u0020the\u0020transaction\u0020details\u0020and",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_process_paypal_ipn_request"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Apaypal_standard_subscription_args\u0028\u0029",
+        name: "paypal_standard_subscription_args",
+        summary: "Override\u0020the\u0020default\u0020PayPal\u0020standard\u0020args\u0020in\u0020WooCommerce\u0020for\u0020subscription\u0020purchases\u0020when\nautomatic\u0020payments\u0020are\u0020enabled\u0020and\u0020when\u0020the\u0020recurring\u0020order\u0020totals\u0020is\u0020over\u0020\u00240.00\u0020\u0028because\nPayPal\u0020doesn\u0027t\u0020support\u0020subscriptions\u0020with\u0020a\u0020\u00240\u0020recurring\u0020total,\u0020we\u0020need\u0020to\u0020circumvent\u0020it\u0020and\nmanage\u0020it\u0020entirely\u0020ourselves.\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_paypal_standard_subscription_args"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Aadd_subscription_form_fields\u0028\u0029",
+        name: "add_subscription_form_fields",
+        summary: "Adds\u0020extra\u0020PayPal\u0020credential\u0020fields\u0020required\u0020to\u0020manage\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_add_subscription_form_fields"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Aget_subscriptions_paypal_id\u0028\u0029",
+        name: "get_subscriptions_paypal_id",
+        summary: "Returns\u0020a\u0020PayPal\u0020Subscription\u0020ID\/Recurring\u0020Payment\u0020Profile\u0020ID\u0020based\u0020on\u0020a\u0020user\u0020ID\u0020and\u0020subscription\u0020key",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_get_subscriptions_paypal_id"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Achange_subscription_status\u0028\u0029",
+        name: "change_subscription_status",
+        summary: "Performs\u0020an\u0020Express\u0020Checkout\u0020NVP\u0020API\u0020operation\u0020as\u0020passed\u0020in\u0020\u0024api_method.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_change_subscription_status"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Aget_order_id_and_key\u0028\u0029",
+        name: "get_order_id_and_key",
+        summary: "Checks\u0020a\u0020set\u0020of\u0020args\u0020and\u0020derives\u0020an\u0020Order\u0020ID\u0020with\u0020backward\u0020compatibility\u0020for\u0020WC\u0020\u003C\u00201.7\u0020where\u0020\u0027custom\u0027\u0020was\u0020the\u0020Order\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_get_order_id_and_key"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Amaybe_remove_subscription_cancelled_callback\u0028\u0029",
+        name: "maybe_remove_subscription_cancelled_callback",
+        summary: "If\u0020changing\u0020a\u0020subscriptions\u0020payment\u0020method\u0020from\u0020and\u0020to\u0020PayPal,\u0020wait\u0020until\u0020an\u0020appropriate\u0020IPN\u0020message\nhas\u0020come\u0020in\u0020before\u0020deciding\u0020to\u0020cancel\u0020the\u0020old\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_maybe_remove_subscription_cancelled_callback"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Amaybe_reattach_subscription_cancelled_callback\u0028\u0029",
+        name: "maybe_reattach_subscription_cancelled_callback",
+        summary: "If\u0020changing\u0020a\u0020subscriptions\u0020payment\u0020method\u0020from\u0020and\u0020to\u0020PayPal,\u0020the\u0020cancelled\u0020subscription\u0020hook\u0020was\u0020removed\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_maybe_reattach_subscription_cancelled_callback"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Amaybe_dont_update_payment_method\u0028\u0029",
+        name: "maybe_dont_update_payment_method",
+        summary: "Don\u0027t\u0020update\u0020the\u0020payment\u0020method\u0020on\u0020checkout\u0020when\u0020switching\u0020to\u0020PayPal\u0020\u002D\u0020wait\u0020until\u0020we\u0020have\u0020the\u0020IPN\u0020message.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_maybe_dont_update_payment_method"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Ascheduled_subscription_payment\u0028\u0029",
+        name: "scheduled_subscription_payment",
+        summary: "In\u0020typical\u0020PayPal\u0020style,\u0020there\u0020are\u0020a\u0020couple\u0020of\u0020important\u0020limitations\u0020we\u0020need\u0020to\u0020work\u0020around\u003A",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_scheduled_subscription_payment"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Amaybe_show_admin_notice\u0028\u0029",
+        name: "maybe_show_admin_notice",
+        summary: "Prompt\u0020the\u0020store\u0020manager\u0020to\u0020enter\u0020their\u0020PayPal\u0020API\u0020credentials\u0020if\u0020they\u0020are\u0020using\nPayPal\u0020and\u0020have\u0020yet\u0020not\u0020entered\u0020their\u0020API\u0020credentials.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_maybe_show_admin_notice"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Acancel_subscription_with_paypal\u0028\u0029",
+        name: "cancel_subscription_with_paypal",
+        summary: "When\u0020a\u0020store\u0020manager\u0020or\u0020user\u0020cancels\u0020a\u0020subscription\u0020in\u0020the\u0020store,\u0020also\u0020cancel\u0020the\u0020subscription\u0020with\u0020PayPal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_cancel_subscription_with_paypal"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Asuspend_subscription_with_paypal\u0028\u0029",
+        name: "suspend_subscription_with_paypal",
+        summary: "When\u0020a\u0020store\u0020manager\u0020or\u0020user\u0020suspends\u0020a\u0020subscription\u0020in\u0020the\u0020store,\u0020also\u0020suspend\u0020the\u0020subscription\u0020with\u0020PayPal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_suspend_subscription_with_paypal"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Areactivate_subscription_with_paypal\u0028\u0029",
+        name: "reactivate_subscription_with_paypal",
+        summary: "When\u0020a\u0020store\u0020manager\u0020or\u0020user\u0020reactivates\u0020a\u0020subscription\u0020in\u0020the\u0020store,\u0020also\u0020reactivate\u0020the\u0020subscription\u0020with\u0020PayPal.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_reactivate_subscription_with_paypal"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Aremove_renewal_order_meta\u0028\u0029",
+        name: "remove_renewal_order_meta",
+        summary: "Don\u0027t\u0020transfer\u0020PayPal\u0020customer\/token\u0020meta\u0020when\u0020creating\u0020a\u0020parent\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_remove_renewal_order_meta"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Amaybe_remove_cancelled_subscription_hook\u0028\u0029",
+        name: "maybe_remove_cancelled_subscription_hook",
+        summary: "If\u0020changing\u0020a\u0020subscriptions\u0020payment\u0020method\u0020from\u0020and\u0020to\u0020PayPal,\u0020wait\u0020until\u0020an\u0020appropriate\u0020IPN\u0020message\nhas\u0020come\u0020in\u0020before\u0020deciding\u0020to\u0020cancel\u0020the\u0020old\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_maybe_remove_cancelled_subscription_hook"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Amaybe_readd_cancelled_subscription_hook\u0028\u0029",
+        name: "maybe_readd_cancelled_subscription_hook",
+        summary: "If\u0020changing\u0020a\u0020subscriptions\u0020payment\u0020method\u0020from\u0020and\u0020to\u0020PayPal,\u0020the\u0020cancelled\u0020subscription\u0020hook\u0020was\u0020removed\u0020in",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_maybe_readd_cancelled_subscription_hook"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003Acalculate_trial_periods_until\u0028\u0029",
+        name: "calculate_trial_periods_until",
+        summary: "Takes\u0020a\u0020timestamp\u0020for\u0020a\u0020date\u0020in\u0020the\u0020future\u0020and\u0020calculates\u0020the\u0020number\u0020of\u0020days\u0020between\u0020now\u0020and\u0020then",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#method_calculate_trial_periods_until"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003A\u0024api_username",
+        name: "api_username",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#property_api_username"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003A\u0024api_password",
+        name: "api_password",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#property_api_password"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003A\u0024api_signature",
+        name: "api_signature",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#property_api_signature"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003A\u0024api_endpoint",
+        name: "api_endpoint",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#property_api_endpoint"
+    },{
+        fqsen: "\\WC_PayPal_Standard_Subscriptions\u003A\u003A\u0024request_handler",
+        name: "request_handler",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-PayPal-Standard-Subscriptions.html#property_request_handler"
+    },{
+        fqsen: "\\wcs_get_paypal_id\u0028\u0029",
+        name: "wcs_get_paypal_id",
+        summary: "Returns\u0020a\u0020PayPal\u0020Subscription\u0020ID\u0020or\u0020Billing\u0020Agreement\u0020ID\u0020use\u0020to\u0020process\u0020payment\u0020for\u0020a\u0020given\u0020subscription\u0020or\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_paypal_id"
+    },{
+        fqsen: "\\wcs_set_paypal_id\u0028\u0029",
+        name: "wcs_set_paypal_id",
+        summary: "Stores\u0020a\u0020PayPal\u0020Standard\u0020Subscription\u0020ID\u0020or\u0020Billing\u0020Agreement\u0020ID\u0020in\u0020the\u0020post\u0020meta\u0020of\u0020a\u0020given\u0020order\u0020and\u0020the\u0020user\u0020meta\u0020of\u0020the\u0020order\u0027s\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_set_paypal_id"
+    },{
+        fqsen: "\\wcs_is_paypal_profile_a\u0028\u0029",
+        name: "wcs_is_paypal_profile_a",
+        summary: "Checks\u0020if\u0020a\u0020given\u0020profile\u0020ID\u0020is\u0020of\u0020a\u0020certain\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_paypal_profile_a"
+    },{
+        fqsen: "\\wcs_get_paypal_item_name\u0028\u0029",
+        name: "wcs_get_paypal_item_name",
+        summary: "Limit\u0020the\u0020length\u0020of\u0020item\u0020names\u0020to\u0020be\u0020within\u0020the\u0020allowed\u0020127\u0020character\u0020range.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_paypal_item_name"
+    },{
+        fqsen: "\\wcs_calculate_paypal_trial_periods_until\u0028\u0029",
+        name: "wcs_calculate_paypal_trial_periods_until",
+        summary: "Takes\u0020a\u0020timestamp\u0020for\u0020a\u0020date\u0020in\u0020the\u0020future\u0020and\u0020calculates\u0020the\u0020number\u0020of\u0020days\u0020between\u0020now\u0020and\u0020then",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_calculate_paypal_trial_periods_until"
+    },{
+        fqsen: "\\wcs_is_paypal_api_page\u0028\u0029",
+        name: "wcs_is_paypal_api_page",
+        summary: "Check\u0020if\u0020the\u0020\u0024_SERVER\u0020global\u0020has\u0020PayPal\u0020WC\u002DAPI\u0020endpoint\u0020URL\u0020slug\u0020in\u0020its\u0020\u0027REQUEST_URI\u0027\u0020value",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_paypal_api_page"
+    },{
+        fqsen: "\\WCS_Cache_Updater",
+        name: "WCS_Cache_Updater",
+        summary: "WCS_Cache_Updater\u0020Interface",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Updater.html"
+    },{
+        fqsen: "\\WCS_Cache_Updater\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020the\u0020items\u0020to\u0020be\u0020updated,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Updater.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Cache_Updater\u003A\u003Aupdate_items_cache\u0028\u0029",
+        name: "update_items_cache",
+        summary: "Update\u0020for\u0020a\u0020single\u0020item,\u0020of\u0020the\u0020form\u0020returned\u0020by\u0020get_items_to_update\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Updater.html#method_update_items_cache"
+    },{
+        fqsen: "\\WCS_Cache_Updater\u003A\u003Adelete_all_caches\u0028\u0029",
+        name: "delete_all_caches",
+        summary: "Clear\u0020all\u0020caches\u0020for\u0020all\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Cache-Updater.html#method_delete_all_caches"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater",
+        name: "WCS_Privacy_Background_Updater",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_init"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aschedule_ended_subscription_anonymization\u0028\u0029",
+        name: "schedule_ended_subscription_anonymization",
+        summary: "Schedule\u0020ended\u0020subscription\u0020anonymization,\u0020if\u0020it\u0027s\u0020not\u0020already\u0020scheduled.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_schedule_ended_subscription_anonymization"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aunschedule_ended_subscription_anonymization\u0028\u0029",
+        name: "unschedule_ended_subscription_anonymization",
+        summary: "Unschedule\u0020the\u0020ended\u0020subscription\u0020anonymization\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_unschedule_ended_subscription_anonymization"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aschedule_subscription_orders_anonymization\u0028\u0029",
+        name: "schedule_subscription_orders_anonymization",
+        summary: "Schedule\u0020subscription\u0020related\u0020order\u0020anonymization,\u0020if\u0020it\u0027s\u0020not\u0020already\u0020scheduled.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_schedule_subscription_orders_anonymization"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aunschedule_subscription_orders_anonymization\u0028\u0029",
+        name: "unschedule_subscription_orders_anonymization",
+        summary: "Unschedule\u0020a\u0020specific\u0020subscription\u0027s\u0020related\u0020order\u0020anonymization\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_unschedule_subscription_orders_anonymization"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aschedule_order_anonymization\u0028\u0029",
+        name: "schedule_order_anonymization",
+        summary: "Schedule\u0020a\u0020specific\u0020order\u0027s\u0020anonymization\u0020action.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_schedule_order_anonymization"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aorder_anonymization_is_scheduled\u0028\u0029",
+        name: "order_anonymization_is_scheduled",
+        summary: "Check\u0020if\u0020an\u0020order\u0020has\u0020a\u0020scheduled\u0020anonymization\u0020action.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_order_anonymization_is_scheduled"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aanonymize_ended_subscriptions\u0028\u0029",
+        name: "anonymize_ended_subscriptions",
+        summary: "Anonymize\u0020old\u0020ended\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_anonymize_ended_subscriptions"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aschedule_subscription_orders_anonymization_events\u0028\u0029",
+        name: "schedule_subscription_orders_anonymization_events",
+        summary: "Schedule\u0020related\u0020order\u0020anonymization\u0020events\u0020for\u0020a\u0020specific\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_schedule_subscription_orders_anonymization_events"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003Aanonymize_order\u0028\u0029",
+        name: "anonymize_order",
+        summary: "Anonymize\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#method_anonymize_order"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003A\u0024ended_subscription_anonymization_hook",
+        name: "ended_subscription_anonymization_hook",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#property_ended_subscription_anonymization_hook"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003A\u0024subscription_orders_anonymization_hook",
+        name: "subscription_orders_anonymization_hook",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#property_subscription_orders_anonymization_hook"
+    },{
+        fqsen: "\\WCS_Privacy_Background_Updater\u003A\u003A\u0024order_anonymization_hook",
+        name: "order_anonymization_hook",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Background-Updater.html#property_order_anonymization_hook"
+    },{
+        fqsen: "\\WCS_Privacy_Erasers",
+        name: "WCS_Privacy_Erasers",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Erasers.html"
+    },{
+        fqsen: "\\WCS_Privacy_Erasers\u003A\u003Asubscription_data_eraser\u0028\u0029",
+        name: "subscription_data_eraser",
+        summary: "Finds\u0020and\u0020erases\u0020data\u0020which\u0020could\u0020be\u0020used\u0020to\u0020identify\u0020a\u0020person\u0020from\u0020subscription\u0020data\u0020associated\u0020with\u0020an\u0020email\u0020address.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Erasers.html#method_subscription_data_eraser"
+    },{
+        fqsen: "\\WCS_Privacy_Erasers\u003A\u003Aerase_subscription_data_and_generate_response\u0028\u0029",
+        name: "erase_subscription_data_and_generate_response",
+        summary: "Erase\u0020personal\u0020data\u0020from\u0020an\u0020array\u0020of\u0020subscriptions\u0020and\u0020generate\u0020an\u0020eraser\u0020response.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Erasers.html#method_erase_subscription_data_and_generate_response"
+    },{
+        fqsen: "\\WCS_Privacy_Erasers\u003A\u003Aremove_subscription_personal_data\u0028\u0029",
+        name: "remove_subscription_personal_data",
+        summary: "Remove\u0020personal\u0020data\u0020from\u0020a\u0020subscription\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Erasers.html#method_remove_subscription_personal_data"
+    },{
+        fqsen: "\\WCS_Privacy_Exporters",
+        name: "WCS_Privacy_Exporters",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Exporters.html"
+    },{
+        fqsen: "\\WCS_Privacy_Exporters\u003A\u003Asubscription_data_exporter\u0028\u0029",
+        name: "subscription_data_exporter",
+        summary: "Finds\u0020and\u0020exports\u0020subscription\u0020data\u0020which\u0020could\u0020be\u0020used\u0020to\u0020identify\u0020a\u0020person\u0020from\u0020an\u0020email\u0020address.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Exporters.html#method_subscription_data_exporter"
+    },{
+        fqsen: "\\WCS_Privacy_Exporters\u003A\u003Aget_subscription_personal_data\u0028\u0029",
+        name: "get_subscription_personal_data",
+        summary: "Get\u0020personal\u0020data\u0020\u0028key\/value\u0020pairs\u0029\u0020for\u0020an\u0020subscription\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy-Exporters.html#method_get_subscription_personal_data"
+    },{
+        fqsen: "\\WCS_Privacy",
+        name: "WCS_Privacy",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "WCS_Privacy\u0020constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method___construct"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Attach\u0020callbacks.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_init"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aqueue_cleanup_personal_data\u0028\u0029",
+        name: "queue_cleanup_personal_data",
+        summary: "Spawn\u0020events\u0020for\u0020subscription\u0020cleanup.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_queue_cleanup_personal_data"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aget_privacy_message\u0028\u0029",
+        name: "get_privacy_message",
+        summary: "Add\u0020privacy\u0020policy\u0020content\u0020for\u0020the\u0020privacy\u0020policy\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_get_privacy_message"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aadd_remove_personal_data_bulk_action\u0028\u0029",
+        name: "add_remove_personal_data_bulk_action",
+        summary: "Add\u0020the\u0020option\u0020to\u0020remove\u0020personal\u0020data\u0020from\u0020subscription\u0020via\u0020a\u0020bulk\u0020action.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_add_remove_personal_data_bulk_action"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aprocess_bulk_action\u0028\u0029",
+        name: "process_bulk_action",
+        summary: "Process\u0020the\u0020request\u0020to\u0020delete\u0020personal\u0020data\u0020from\u0020subscriptions\u0020via\u0020admin\u0020bulk\u0020action.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_process_bulk_action"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Abulk_admin_notices\u0028\u0029",
+        name: "bulk_admin_notices",
+        summary: "Add\u0020admin\u0020notice\u0020after\u0020processing\u0020personal\u0020data\u0020removal\u0020bulk\u0020action.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_bulk_admin_notices"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aadd_caveat_to_order_data_retention_settings\u0028\u0029",
+        name: "add_caveat_to_order_data_retention_settings",
+        summary: "Add\u0020a\u0020note\u0020to\u0020WC\u0020Personal\u0020Data\u0020Retention\u0020settings\u0020explaining\u0020that\u0020subscription\u0020orders\u0020aren\u0027t\u0020affected.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_add_caveat_to_order_data_retention_settings"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aadd_subscription_data_retention_settings\u0028\u0029",
+        name: "add_subscription_data_retention_settings",
+        summary: "Add\u0020admin\u0020setting\u0020to\u0020turn\u0020subscription\u0020data\u0020removal\u0020when\u0020processing\u0020erasure\u0020requests\u0020on\u0020or\u0020off.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_add_subscription_data_retention_settings"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aremove_subscription_orders_from_anonymization_query\u0028\u0029",
+        name: "remove_subscription_orders_from_anonymization_query",
+        summary: "Remove\u0020subscription\u0020related\u0020order\u0020types\u0020from\u0020the\u0020order\u0020anonymization\u0020query.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_remove_subscription_orders_from_anonymization_query"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aadd_inactive_user_retention_note\u0028\u0029",
+        name: "add_inactive_user_retention_note",
+        summary: "Add\u0020a\u0020note\u0020to\u0020the\u0020inactive\u0020user\u0020data\u0020retention\u0020setting\u0020noting\u0020that\u0020users\u0020with\u0020a\u0020subscription\u0020are\u0020excluded.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_add_inactive_user_retention_note"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Aflag_subscription_user_exclusion_from_query\u0028\u0029",
+        name: "flag_subscription_user_exclusion_from_query",
+        summary: "Set\u0020a\u0020flag\u0020to\u0020record\u0020inactive\u0020user\u0020account\u0020deletion.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_flag_subscription_user_exclusion_from_query"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003Amaybe_exclude_subscription_customers\u0028\u0029",
+        name: "maybe_exclude_subscription_customers",
+        summary: "Exclude\u0020customers\u0020who\u0020have\u0020subscriptions\u0020from\u0020the\u0020inactive\u0020user\u0020cleanup\u0020query.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#method_maybe_exclude_subscription_customers"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003A\u0024background_process",
+        name: "background_process",
+        summary: "Background\u0020updater\u0020to\u0020process\u0020personal\u0020data\u0020removal\u0020from\u0020subscriptions\u0020and\u0020related\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#property_background_process"
+    },{
+        fqsen: "\\WCS_Privacy\u003A\u003A\u0024doing_user_inactivity_query",
+        name: "doing_user_inactivity_query",
+        summary: "A\u0020flag\u0020which\u0020is\u0020set\u0020when\u0020WC\u0020is\u0020doing\u0020a\u0020user\u0020inactivity\u0020cleanup.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Privacy.html#property_doing_user_inactivity_query"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader",
+        name: "WC_Subscriptions_Upgrader",
+        summary: "A\u0020timeout\u0020resistant,\u0020single\u002Dserve\u0020upgrader\u0020for\u0020WC\u0020Subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "Hooks\u0020upgrade\u0020function\u0020to\u0020init.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_init"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aset_upgrade_limits\u0028\u0029",
+        name: "set_upgrade_limits",
+        summary: "Set\u0020limits\u0020on\u0020the\u0020number\u0020of\u0020items\u0020to\u0020upgrade\u0020at\u0020any\u0020one\u0020time\u0020based\u0020on\u0020the\u0020size\u0020of\u0020the\u0020site.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_set_upgrade_limits"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aset_cron_lock\u0028\u0029",
+        name: "set_cron_lock",
+        summary: "Try\u0020to\u0020block\u0020WP\u002DCron\u0020until\u0020upgrading\u0020finishes.\u0020spawn_cron\u0028\u0029\u0020will\u0020only\u0020let\u0020us\u0020steal\u0020the\u0020lock\u0020for\u002010\u0020minutes\u0020into\u0020the\u0020future,\u0020so\nwe\u0020can\u0020actually\u0020only\u0020block\u0020it\u0020for\u00209\u0020minutes\u0020confidently.\u0020But\u0020as\u0020long\u0020as\u0020the\u0020upgrade\u0020process\u0020continues,\u0020the\u0020lock\u0020will\u0020remain.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_set_cron_lock"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aupgrade\u0028\u0029",
+        name: "upgrade",
+        summary: "Checks\u0020which\u0020upgrades\u0020need\u0020to\u0020run\u0020and\u0020calls\u0020the\u0020necessary\u0020functions\u0020for\u0020that\u0020upgrade.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_upgrade"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aupgrade_complete\u0028\u0029",
+        name: "upgrade_complete",
+        summary: "When\u0020an\u0020upgrade\u0020is\u0020complete,\u0020set\u0020the\u0020active\u0020version,\u0020delete\u0020the\u0020transient\u0020locking\u0020upgrade\u0020and\u0020fire\u0020a\u0020hook.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_upgrade_complete"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Amaybe_redirect_after_upgrade_complete\u0028\u0029",
+        name: "maybe_redirect_after_upgrade_complete",
+        summary: "Redirect\u0020to\u0020the\u0020Subscriptions\u0020major\u0020version\u0020Welcome\/About\u0020page\u0020for\u0020major\u0020version\u0020updates",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_maybe_redirect_after_upgrade_complete"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aajax_upgrade_handler\u0028\u0029",
+        name: "ajax_upgrade_handler",
+        summary: "Add\u0020support\u0020for\u0020quantities\u0020for\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_ajax_upgrade_handler"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aajax_upgrade\u0028\u0029",
+        name: "ajax_upgrade",
+        summary: "Move\u0020scheduled\u0020subscription\u0020hooks\u0020out\u0020of\u0020wp\u002Dcron\u0020and\u0020into\u0020the\u0020new\u0020Action\u0020Scheduler.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_ajax_upgrade"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aupgrade_really_old_versions\u0028\u0029",
+        name: "upgrade_really_old_versions",
+        summary: "Handle\u0020upgrades\u0020for\u0020really\u0020old\u0020versions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_upgrade_really_old_versions"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Agenerate_renewal_orders\u0028\u0029",
+        name: "generate_renewal_orders",
+        summary: "Version\u00201.2\u0020introduced\u0020child\u0020renewal\u0020orders\u0020to\u0020keep\u0020a\u0020record\u0020of\u0020each\u0020completed\u0020subscription\npayment.\u0020Before\u00201.2,\u0020these\u0020orders\u0020did\u0020not\u0020exist,\u0020so\u0020this\u0020function\u0020creates\u0020them.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_generate_renewal_orders"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Adisplay_database_upgrade_helper\u0028\u0029",
+        name: "display_database_upgrade_helper",
+        summary: "Let\u0020the\u0020site\u0020administrator\u0020know\u0020we\u0020are\u0020upgrading\u0020the\u0020database\u0020and\u0020provide\u0020a\u0020confirmation\u0020is\u0020complete.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_display_database_upgrade_helper"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aupgrade_in_progress_notice\u0028\u0029",
+        name: "upgrade_in_progress_notice",
+        summary: "Let\u0020the\u0020site\u0020administrator\u0020know\u0020we\u0020are\u0020upgrading\u0020the\u0020database\u0020already\u0020to\u0020prevent\u0020duplicate\u0020processes\u0020running\u0020the\nupgrade.\u0020Also\u0020provides\u0020some\u0020useful\u0020diagnostic\u0020information,\u0020like\u0020how\u0020long\u0020before\u0020the\u0020site\u0020admin\u0020can\u0020restart\u0020the\nupgrade\u0020process,\u0020and\u0020how\u0020many\u0020subscriptions\u0020per\u0020request\u0020can\u0020typically\u0020be\u0020updated\u0020given\u0020the\u0020amount\u0020of\u0020memory\nallocated\u0020to\u0020PHP.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_upgrade_in_progress_notice"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aupdated_welcome_page\u0028\u0029",
+        name: "updated_welcome_page",
+        summary: "Display\u0020the\u0020Subscriptions\u0020welcome\/about\u0020page\u0020after\u0020successfully\u0020upgrading\u0020to\u0020the\u0020latest\u0020version.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_updated_welcome_page"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aadmin_css\u0028\u0029",
+        name: "admin_css",
+        summary: "admin_css\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_admin_css"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aadmin_head\u0028\u0029",
+        name: "admin_head",
+        summary: "Add\u0020styles\u0020just\u0020for\u0020this\u0020page,\u0020and\u0020remove\u0020dashboard\u0020page\u0020links.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_admin_head"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aabout_screen\u0028\u0029",
+        name: "about_screen",
+        summary: "Output\u0020the\u0020about\u0020screen.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_about_screen"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aget_total_subscription_count\u0028\u0029",
+        name: "get_total_subscription_count",
+        summary: "In\u0020v2.0\u0020and\u0020newer,\u0020it\u0027s\u0020possible\u0020to\u0020simply\u0020use\u0020wp_count_posts\u0028\u0020\u0027shop_subscription\u0027\u0020\u0029\u0020to\u0020count\u0020subscriptions,\nbut\u0020not\u0020in\u0020v1.5,\u0020because\u0020a\u0020subscription\u0020data\u0020is\u0020still\u0020stored\u0020in\u0020order\u0020item\u0020meta.\u0020This\u0020function\u0020queries\u0020the\nv1.5\u0020database\u0020structure.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_get_total_subscription_count"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aget_total_subscription_count_query\u0028\u0029",
+        name: "get_total_subscription_count_query",
+        summary: "Returns\u0020the\u0020number\u0020of\u0020subscriptions\u0020left\u0020in\u0020the\u00201.5\u0020structure",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_get_total_subscription_count_query"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Aget_subscription_query\u0028\u0029",
+        name: "get_subscription_query",
+        summary: "Single\u0020source\u0020of\u0020truth\u0020for\u0020the\u0020query",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_get_subscription_query"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Amigrated_subscription_count\u0028\u0029",
+        name: "migrated_subscription_count",
+        summary: "Check\u0020if\u0020the\u0020database\u0020has\u0020some\u0020data\u0020that\u0020was\u0020migrated\u0020from\u00201.5\u0020to\u00202.0",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_migrated_subscription_count"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Amaybe_block_paypal_ipn\u0028\u0029",
+        name: "maybe_block_paypal_ipn",
+        summary: "While\u0020the\u0020upgrade\u0020is\u0020in\u0020progress,\u0020we\u0020need\u0020to\u0020block\u0020IPN\u0020messages\u0020to\u0020avoid\u0020renewals\u0020failing\u0020to\u0020process\u0020correctly.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_maybe_block_paypal_ipn"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Arepair_end_of_prepaid_term_actions\u0028\u0029",
+        name: "repair_end_of_prepaid_term_actions",
+        summary: "Run\u0020the\u0020end\u0020of\u0020prepaid\u0020term\u0020repair\u0020script.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_repair_end_of_prepaid_term_actions"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Arepair_subscription_contains_sync_meta\u0028\u0029",
+        name: "repair_subscription_contains_sync_meta",
+        summary: "Repair\u0020subscriptions\u0020with\u0020missing\u0020contains_synced_subscription\u0020post\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_repair_subscription_contains_sync_meta"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Amaybe_add_subscription_address_indexes\u0028\u0029",
+        name: "maybe_add_subscription_address_indexes",
+        summary: "When\u0020updating\u0020WC\u0020to\u0020a\u0020version\u0020after\u00203.0\u0020from\u0020a\u0020version\u0020prior\u0020to\u00203.0,\u0020schedule\u0020the\u0020repair\u0020script\u0020to\u0020add\u0020address\u0020indexes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_maybe_add_subscription_address_indexes"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Ainitialise_background_updaters\u0028\u0029",
+        name: "initialise_background_updaters",
+        summary: "Load\u0020and\u0020initialise\u0020the\u0020background\u0020updaters.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_initialise_background_updaters"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Amaybe_display_external_object_cache_warning\u0028\u0029",
+        name: "maybe_display_external_object_cache_warning",
+        summary: "Display\u0020an\u0020admin\u0020notice\u0020if\u0020the\u0020site\u0020had\u0020customer\u0020subscription\u0020and\/or\u0020subscription\u0020renewal\u0020order\u0020cached\u0020data\u0020stored\u0020in\u0020the\u0020options\u0020table\nand\u0020was\u0020using\u0020an\u0020external\u0020object\u0020cache\u0020at\u0020the\u0020time\u0020of\u0020updating\u0020to\u00202.3.3.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_maybe_display_external_object_cache_warning"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Arepair_subtracted_base_taxes\u0028\u0029",
+        name: "repair_subtracted_base_taxes",
+        summary: "Repair\u0020a\u0020single\u0020item\u0027s\u0020subtracted\u0020base\u0020tax\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_repair_subtracted_base_taxes"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Amaybe_update_subscription_post_author\u0028\u0029",
+        name: "maybe_update_subscription_post_author",
+        summary: "Handles\u0020the\u0020WC\u00203.5.0\u0020upgrade\u0020routine\u0020that\u0020moves\u0020customer\u0020IDs\u0020from\u0020post\u0020metadata\u0020to\u0020the\u0020\u0027post_author\u0027\u0020column.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_maybe_update_subscription_post_author"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Ais_user_upgraded_to_1_4\u0028\u0029",
+        name: "is_user_upgraded_to_1_4",
+        summary: "Used\u0020to\u0020check\u0020if\u0020a\u0020user\u0020ID\u0020is\u0020greater\u0020than\u0020the\u0020last\u0020user\u0020upgraded\u0020to\u0020version\u00201.4.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_is_user_upgraded_to_1_4"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003Amaybe_add_downgrade_notice\u0028\u0029",
+        name: "maybe_add_downgrade_notice",
+        summary: "Display\u0020an\u0020admin\u0020notice\u0020if\u0020the\u0020database\u0020version\u0020is\u0020greater\u0020than\u0020the\u0020active\u0020version\u0020of\u0020the\u0020plugin\u0020by\u0020at\u0020least\u0020one\u0020minor\u0020release\u0020\u0028eg\u00201.1\u0020and\u00201.0\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#method_maybe_add_downgrade_notice"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003A\u0024active_version",
+        name: "active_version",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#property_active_version"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003A\u0024upgrade_limit_hooks",
+        name: "upgrade_limit_hooks",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#property_upgrade_limit_hooks"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003A\u0024upgrade_limit_subscriptions",
+        name: "upgrade_limit_subscriptions",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#property_upgrade_limit_subscriptions"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003A\u0024about_page_url",
+        name: "about_page_url",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#property_about_page_url"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003A\u0024old_subscription_count",
+        name: "old_subscription_count",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#property_old_subscription_count"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003A\u0024is_wc_version_2",
+        name: "is_wc_version_2",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#property_is_wc_version_2"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003A\u0024updated_to_wc_2_0",
+        name: "updated_to_wc_2_0",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#property_updated_to_wc_2_0"
+    },{
+        fqsen: "\\WC_Subscriptions_Upgrader\u003A\u003A\u0024background_updaters",
+        name: "background_updaters",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WC-Subscriptions-Upgrader.html#property_background_updaters"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2",
+        name: "WCS_Repair_2_0_2",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2\u003A\u003Aget_subscriptions_to_repair\u0028\u0029",
+        name: "get_subscriptions_to_repair",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020subscriptions\u0020subscriptions\u0020that\u0020haven\u0027t\u0020already\u0020been\u0020checked\u0020for\u0020repair.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html#method_get_subscriptions_to_repair"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2\u003A\u003Amaybe_repair_subscriptions\u0028\u0029",
+        name: "maybe_repair_subscriptions",
+        summary: "Update\u0020any\u0020subscription\u0020that\u0020need\u0020to\u0020be\u0020repaired.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html#method_maybe_repair_subscriptions"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2\u003A\u003Amaybe_repair_subscription\u0028\u0029",
+        name: "maybe_repair_subscription",
+        summary: "Check\u0020if\u0020a\u0020subscription\u0020was\u0020created\u0020prior\u0020to\u00202.0.0\u0020and\u0020has\u0020some\u0020dates\u0020that\u0020need\u0020to\u0020be\u0020updated\nbecause\u0020the\u0020meta\u0020was\u0020borked\u0020during\u0020the\u00202.0.0\u0020upgrade\u0020process.\u0020If\u0020it\u0020does,\u0020then\u0020update\u0020the\u0020dates\nto\u0020the\u0020new\u0020values.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html#method_maybe_repair_subscription"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2\u003A\u003Acheck_trial_end_date\u0028\u0029",
+        name: "check_trial_end_date",
+        summary: "If\u0020we\u0020have\u0020a\u0020trial\u0020end\u0020date\u0020and\u0020that\u0020value\u0020is\u0020not\u0020the\u0020same\u0020as\u0020the\u0020old\u0020end\u0020date\u0020prior\u0020to\u0020upgrade,\u0020it\u0020was\u0020most\u0020likely\ncorrupted,\u0020so\u0020we\u0020will\u0020reset\u0020it\u0020to\u0020the\u0020value\u0020in\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html#method_check_trial_end_date"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2\u003A\u003Acheck_next_payment_date\u0028\u0029",
+        name: "check_next_payment_date",
+        summary: "Because\u0020the\u0020upgrader\u0020may\u0020have\u0020attempted\u0020to\u0020set\u0020an\u0020invalid\u0020end\u0020date\u0020on\u0020the\u0020subscription,\u0020it\u0020could\nlead\u0020to\u0020the\u0020entire\u0020date\u0020update\u0020process\u0020failing,\u0020which\u0020would\u0020mean\u0020that\u0020a\u0020next\u0020payment\u0020date\u0020would\nnot\u0020be\u0020set\u0020even\u0020when\u0020one\u0020existed.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html#method_check_next_payment_date"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2\u003A\u003Acheck_end_date\u0028\u0029",
+        name: "check_end_date",
+        summary: "Check\u0020if\u0020the\u0020old\u0020subscription\u0020meta\u0020had\u0020an\u0020end\u0020date\u0020recorded\u0020and\u0020make\u0020sure\u0020that\u0020end\u0020date\u0020is\u0020now\u0020being\u0020used\u0020for\u0020the\u0020new\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html#method_check_end_date"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2\u003A\u003Amaybe_repair_status\u0028\u0029",
+        name: "maybe_repair_status",
+        summary: "If\u0020the\u0020subscription\u0020has\u0020expired\u0020since\u0020upgrading\u0020and\u0020the\u0020end\u0020date\u0020is\u0020not\u0020the\u0020original\u0020expiration\u0020date,\nwe\u0020need\u0020to\u0020unexpire\u0020it,\u0020which\u0020in\u0020the\u0020case\u0020of\u0020a\u0020previously\u0020active\u0020subscription\u0020means\u0020activate\u0020it,\u0020and\nin\u0020any\u0020other\u0020case,\u0020leave\u0020it\u0020as\u0020on\u002Dhold\u0020\u0028a\u0020cancelled\u0020subscription\u0020wouldn\u0027t\u0020have\u0020been\u0020expired,\u0020so\u0020the\nstatus\u0020must\u0020be\u0020on\u002Dhold\u0020or\u0020active\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html#method_maybe_repair_status"
+    },{
+        fqsen: "\\WCS_Repair_2_0_2\u003A\u003Amaybe_repair_line_tax_data\u0028\u0029",
+        name: "maybe_repair_line_tax_data",
+        summary: "There\u0020was\u0020a\u0020bug\u0020in\u0020the\u0020WCS_Upgrade_2_0\u003A\u003Aadd_line_tax_data\u0028\u0029\u0020method\u0020in\u0020Subscriptions\u00202.0.0\u0020and\u00202.0.1\u0020which\nprevented\u0020recurring\u0020line\u0020tax\u0020data\u0020from\u0020being\u0020copied\u0020correctly\u0020to\u0020newly\u0020created\u0020subscriptions.\u0020This\u0020bug\u0020was\nfixed\u0020in\u00202.0.2,\u0020so\u0020we\u0020can\u0020now\u0020use\u0020that\u0020method\u0020to\u0020make\u0020sure\u0020line\u0020tax\u0020data\u0020is\u0020set\u0020correctly.\u0020But\u0020to\u0020do\u0020that,\nwe\u0020first\u0020need\u0020to\u0020massage\u0020some\u0020of\u0020the\u0020deprecated\u0020line\u0020item\u0020meta\u0020to\u0020use\u0020the\u0020original\u0020meta\u0020keys.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0-2.html#method_maybe_repair_line_tax_data"
+    },{
+        fqsen: "\\WCS_Repair_2_0",
+        name: "WCS_Repair_2_0",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Amaybe_repair_order_item\u0028\u0029",
+        name: "maybe_repair_order_item",
+        summary: "Takes\u0020care\u0020of\u0020undefine\u0020notices\u0020in\u0020the\u0020upgrade\u0020process",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_maybe_repair_order_item"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Amaybe_repair_subscription\u0028\u0029",
+        name: "maybe_repair_subscription",
+        summary: "Does\u0020sanity\u0020check\u0020on\u0020every\u0020subscription,\u0020and\u0020repairs\u0020them\u0020as\u0020needed",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_maybe_repair_subscription"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Aintegrity_check\u0028\u0029",
+        name: "integrity_check",
+        summary: "Checks\u0020for\u0020missing\u0020data\u0020on\u0020a\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_integrity_check"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_order_id\u0028\u0029",
+        name: "repair_order_id",
+        summary: "\u0027order_id\u0027\u003A\u0020a\u0020subscription\u0020can\u0020exist\u0020without\u0020an\u0020original\u0020order\u0020in\u0020v2.0,\u0020so\u0020technically\u0020the\u0020order\u0020ID\u0020is\u0020no\u0020longer\u0020required.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_order_id"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_from_item_meta\u0028\u0029",
+        name: "repair_from_item_meta",
+        summary: "Combined\u0020functionality\u0020for\u0020the\u0020following\u0020functions\u003A\n\u002D\u0020repair_product_id\n\u002D\u0020repair_variation_id\n\u002D\u0020repair_recurring_line_total\n\u002D\u0020repair_recurring_line_tax\n\u002D\u0020repair_recurring_line_subtotal\n\u002D\u0020repair_recurring_line_subtotal_tax",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_from_item_meta"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_product_id\u0028\u0029",
+        name: "repair_product_id",
+        summary: "\u0027_product_id\u0027\u003A\u0020the\u0020only\u0020way\u0020to\u0020derive\u0020a\u0020order\u0020item\u0027s\u0020product\u0020ID\u0020would\u0020be\u0020to\u0020match\u0020the\u0020order\u0020item\u0027s\u0020name\u0020to\u0020a\u0020product\u0020name\/title.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_product_id"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_variation_id\u0028\u0029",
+        name: "repair_variation_id",
+        summary: "\u0027_variation_id\u0027\u003A\u0020the\u0020only\u0020way\u0020to\u0020derive\u0020a\u0020order\u0020item\u0027s\u0020product\u0020ID\u0020would\u0020be\u0020to\u0020match\u0020the\u0020order\u0020item\u0027s\u0020name\u0020to\u0020a\u0020product\u0020name\/title.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_variation_id"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_subscription_key\u0028\u0029",
+        name: "repair_subscription_key",
+        summary: "If\u0020the\u0020subscription\u0020does\u0020not\u0020have\u0020a\u0020subscription\u0020key\u0020for\u0020whatever\u0020reason\u0020\u0028probably\u0020becuase\u0020the\u0020product_id\u0020was\u0020missing\u0029,\u0020then\u0020this\u0020one\nfills\u0020in\u0020the\u0020blank.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_subscription_key"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_status\u0028\u0029",
+        name: "repair_status",
+        summary: "\u0027_subscription_status\u0027\u003A\u0020we\u0020could\u0020default\u0020to\u0020cancelled\u0020\u0028and\u0020then\u0020potentially\u0020trash\u0029\u0020if\u0020no\u0020status\u0020exists\u0020because\u0020the\u0020cancelled\u0020status\nis\u0020irreversible.\u0020But\u0020we\u0020can\u0020also\u0020take\u0020this\u0020a\u0020step\u0020further.\u0020If\u0020the\u0020subscription\u0020has\u0020a\u0020\u0027_subscription_expiry_date\u0027\u0020value\u0020and\u0020a\n\u0027_subscription_end_date\u0027\u0020value,\u0020and\u0020they\u0020are\u0020within\u0020a\u0020few\u0020minutes\u0020of\u0020each\u0020other,\u0020we\u0020can\u0020assume\u0020the\u0020subscription\u0027s\u0020status\u0020should\u0020be\nexpired.\u0020If\u0020there\u0020is\u0020a\u0020\u0027_subscription_end_date\u0027\u0020value\u0020that\u0020is\u0020different\u0020to\u0020the\u0020\u0027_subscription_expiry_date\u0027\u0020value\u0020\u0028either\u0020because\u0020the\nexpiration\u0020value\u0020is\u00200\u0020or\u0020some\u0020other\u0020date\u0029,\u0020then\u0020we\u0020can\u0020assume\u0020the\u0020status\u0020should\u0020be\u0020cancelled\u0029.\u0020If\u0020there\u0020is\u0020no\u0020end\u0020date\u0020value,\u0020we\u0027re\na\u0020bit\u0020lost\u0020as\u0020technically\u0020the\u0020subscription\u0020hasn\u0027t\u0020ended,\u0020but\u0020we\u0020should\u0020make\u0020sure\u0020it\u0020is\u0020not\u0020active,\u0020so\u0020cancelled\u0020is\u0020still\u0020the\u0020best\ndefault.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_status"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_period\u0028\u0029",
+        name: "repair_period",
+        summary: "\u0027_subscription_period\u0027\u003A\u0020we\u0020can\u0020attempt\u0020to\u0020derive\u0020this\u0020from\u0020the\u0020time\u0020between\u0020renewal\u0020orders.\u0020For\u0020example,\u0020if\u0020there\u0020are\u0020two\u0020renewal\norders\u0020found\u00203\u0020months\u0020apart,\u0020the\u0020billing\u0020period\u0020would\u0020be\u0020month.\u0020If\u0020there\u0020are\u0020not\u0020two\u0020or\u0020more\u0020renewal\u0020orders\u0020\u0028we\u0020can\u0027t\u0020use\u0020a\u0020single\nrenewal\u0020order\u0020because\u0020that\u0020would\u0020account\u0020for\u0020the\u0020free\u0020trial\u0029\u0020and\u0020a\u0020_product_id\u0020value\u0020,\u0020if\u0020the\u0020product\u0020still\u0020exists,\u0020we\u0020can\u0020use\u0020the\ncurrent\u0020value\u0020set\u0020on\u0020that\u0020product.\u0020It\u0020won\u0027t\u0020always\u0020be\u0020correct,\u0020but\u0020it\u0027s\u0020the\u0020closest\u0020we\u0020can\u0020get\u0020to\u0020an\u0020accurate\u0020estimate.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_period"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_interval\u0028\u0029",
+        name: "repair_interval",
+        summary: "\u0027_subscription_interval\u0027\u003A\u0020we\u0020can\u0020attempt\u0020to\u0020derive\u0020this\u0020from\u0020the\u0020time\u0020between\u0020renewal\u0020orders.\u0020For\u0020example,\u0020if\u0020there\u0020are\u0020two\u0020renewal\norders\u0020found\u00203\u0020months\u0020apart,\u0020the\u0020billing\u0020period\u0020would\u0020be\u0020month.\u0020If\u0020there\u0020are\u0020not\u0020two\u0020or\u0020more\u0020renewal\u0020orders\u0020\u0028we\u0020can\u0027t\u0020use\u0020a\u0020single\nrenewal\u0020order\u0020because\u0020that\u0020would\u0020account\u0020for\u0020the\u0020free\u0020trial\u0029\u0020and\u0020a\u0020_product_id\u0020value\u0020,\u0020if\u0020the\u0020product\u0020still\u0020exists,\u0020we\u0020can\u0020use\u0020the\ncurrent\u0020value\u0020set\u0020on\u0020that\u0020product.\u0020It\u0020won\u0027t\u0020always\u0020be\u0020correct,\u0020but\u0020it\u0027s\u0020the\u0020closest\u0020we\u0020can\u0020get\u0020to\u0020an\u0020accurate\u0020estimate.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_interval"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_length\u0028\u0029",
+        name: "repair_length",
+        summary: "\u0027_subscription_length\u0027\u003A\u0020if\u0020there\u0020are\u0020\u0027_subscription_expiry_date\u0027\u0020and\u0020\u0027_subscription_start_date\u0027\u0020values,\u0020we\u0020can\u0020use\u0020those\u0020to\ndetermine\u0020how\u0020many\u0020billing\u0020periods\u0020fall\u0020between\u0020them,\u0020and\u0020therefore,\u0020the\u0020length\u0020of\u0020the\u0020subscription.\u0020This\u0020data\u0020is\u0020low\u0020value\u0020however\u0020as\nit\u0020is\u0020no\u0020longer\u0020stored\u0020in\u0020v2.0\u0020and\u0020mainly\u0020used\u0020to\u0020determine\u0020the\u0020expiration\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_length"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_start_date\u0028\u0029",
+        name: "repair_start_date",
+        summary: "\u0027_subscription_start_date\u0027\u003A\u0020the\u0020original\u0020order\u0027s\u0020\u0027_paid_date\u0027\u0020value\u0020\u0028stored\u0020in\u0020post\u0020meta\u0029\u0020can\u0020be\u0020used\u0020as\u0020the\u0020subscription\u0027s\u0020start\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_start_date"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_trial_expiry_date\u0028\u0029",
+        name: "repair_trial_expiry_date",
+        summary: "\u0027_subscription_trial_expiry_date\u0027\u003A\u0020if\u0020the\u0020subscription\u0020has\u0020at\u0020least\u0020one\u0020renewal\u0020order,\u0020we\u0020can\u0020set\u0020the\u0020trial\u0020expiration\u0020date\u0020to\u0020the\u0020date\nof\u0020the\u0020first\u0020renewal\u0020order.\u0020However,\u0020this\u0020is\u0020generally\u0020safe\u0020to\u0020default\u0020to\u00200\u0020if\u0020it\u0020is\u0020not\u0020set.\u0020Especially\u0020if\u0020the\u0020subscription\u0020is\ninactive\u0020and\/or\u0020has\u00201\u0020or\u0020more\u0020renewals\u0020\u0028because\u0020its\u0020no\u0020longer\u0020used\u0020and\u0020is\u0020simply\u0020for\u0020record\u0020keeping\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_trial_expiry_date"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_expiry_date\u0028\u0029",
+        name: "repair_expiry_date",
+        summary: "\u0027_subscription_expiry_date\u0027\u003A\u0020if\u0020the\u0020subscription\u0020has\u0020a\u0020\u0027_subscription_length\u0027\u0020value,\u0020that\u0020can\u0020be\u0020used\u0020to\u0020calculate\u0020the\u0020expiration\u0020date\n\u0028from\u0020the\u0020\u0027_subscription_start_date\u0027\u0020or\u0020\u0027_subscription_trial_expiry_date\u0027\u0020if\u0020one\u0020is\u0020set\u0029.\u0020If\u0020no\u0020length\u0020is\u0020set,\u0020but\u0020the\u0020subscription\u0020has\nan\u0020expired\u0020status,\u0020the\u0020\u0027_subscription_end_date\u0027\u0020can\u0020be\u0020used.\u0020In\u0020most\u0020other\u0020cases,\u0020this\u0020is\u0020generally\u0020safe\u0020to\u0020default\u0020to\u00200\u0020if\u0020the\nsubscription\u0020is\u0020cancelled\u0020because\u0020its\u0020no\u0020longer\u0020used\u0020and\u0020is\u0020simply\u0020for\u0020record\u0020keeping.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_expiry_date"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_end_date\u0028\u0029",
+        name: "repair_end_date",
+        summary: "\u0027_subscription_end_date\u0027\u003A\u0020if\u0020the\u0020subscription\u0020has\u0020a\u0020\u0027_subscription_length\u0027\u0020value\u0020and\u0020status\u0020of\u0020expired,\u0020the\u0020length\u0020can\u0020be\u0020used\u0020to\ncalculate\u0020the\u0020end\u0020date\u0020as\u0020it\u0020will\u0020be\u0020the\u0020same\u0020as\u0020the\u0020expiration\u0020date.\u0020If\u0020no\u0020length\u0020is\u0020set,\u0020or\u0020the\u0020subscription\u0020has\u0020a\u0020cancelled\u0020status,\nsome\u0020time\u0020within\u002024\u0020hours\u0020after\u0020the\u0020last\u0020renewal\u0020order\u0027s\u0020date\u0020can\u0020be\u0020used\u0020to\u0020provide\u0020a\u0020rough\u0020estimate.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_end_date"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_recurring_line_total\u0028\u0029",
+        name: "repair_recurring_line_total",
+        summary: "_recurring_line_total\u0027\u003A\u0020if\u0020the\u0020subscription\u0020has\u0020at\u0020least\u0020one\u0020renewal\u0020order,\u0020this\u0020value\u0020can\u0020be\u0020derived\u0020from\u0020the\u0020\u0027_line_total\u0027\u0020value\u0020of\nthat\u0020order.\u0020If\u0020no\u0020renewal\u0020orders\u0020exist,\u0020it\u0020can\u0020be\u0020derived\u0020roughly\u0020by\u0020deducting\u0020the\u0020\u0027_subscription_sign_up_fee\u0027\u0020value\u0020from\u0020the\u0020original\norder\u0027s\u0020total\u0020if\u0020there\u0020is\u0020no\u0020trial\u0020expiration\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_recurring_line_total"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_recurring_line_tax\u0028\u0029",
+        name: "repair_recurring_line_tax",
+        summary: "_recurring_line_total\u0027\u003A\u0020if\u0020the\u0020subscription\u0020has\u0020at\u0020least\u0020one\u0020renewal\u0020order,\u0020this\u0020value\u0020can\u0020be\u0020derived\u0020from\u0020the\u0020\u0027_line_total\u0027\u0020value\nof\u0020that\u0020order.\u0020If\u0020no\u0020renewal\u0020orders\u0020exist,\u0020it\u0020can\u0020be\u0020derived\u0020roughly\u0020by\u0020deducting\u0020the\u0020\u0027_subscription_sign_up_fee\u0027\u0020value\u0020from\u0020the\noriginal\u0020order\u0027s\u0020total\u0020if\u0020there\u0020is\u0020no\u0020trial\u0020expiration\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_recurring_line_tax"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_recurring_line_subtotal\u0028\u0029",
+        name: "repair_recurring_line_subtotal",
+        summary: "_recurring_line_total\u0027\u003A\u0020if\u0020the\u0020subscription\u0020has\u0020at\u0020least\u0020one\u0020renewal\u0020order,\u0020this\u0020value\u0020can\u0020be\u0020derived\u0020from\u0020the\u0020\u0027_line_total\u0027\u0020value\u0020of\nthat\u0020order.\u0020If\u0020no\u0020renewal\u0020orders\u0020exist,\u0020it\u0020can\u0020be\u0020derived\u0020roughly\u0020by\u0020deducting\u0020the\u0020\u0027_subscription_sign_up_fee\u0027\u0020value\u0020from\u0020the\u0020original\norder\u0027s\u0020total\u0020if\u0020there\u0020is\u0020no\u0020trial\u0020expiration\u0020date",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_recurring_line_subtotal"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Arepair_recurring_line_subtotal_tax\u0028\u0029",
+        name: "repair_recurring_line_subtotal_tax",
+        summary: "_recurring_line_total\u0027\u003A\u0020if\u0020the\u0020subscription\u0020has\u0020at\u0020least\u0020one\u0020renewal\u0020order,\u0020this\u0020value\u0020can\u0020be\u0020derived\u0020from\u0020the\u0020\u0027_line_total\u0027\u0020value\u0020of\nthat\u0020order.\u0020If\u0020no\u0020renewal\u0020orders\u0020exist,\u0020it\u0020can\u0020be\u0020derived\u0020roughly\u0020by\u0020deducting\u0020the\u0020\u0027_subscription_sign_up_fee\u0027\u0020value\u0020from\u0020the\u0020original\norder\u0027s\u0020total\u0020if\u0020there\u0020is\u0020no\u0020trial\u0020expiration\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_repair_recurring_line_subtotal_tax"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Atime_diff\u0028\u0029",
+        name: "time_diff",
+        summary: "Utility\u0020function\u0020to\u0020calculate\u0020the\u0020seconds\u0020between\u0020two\u0020timestamps.\u0020Order\u0020is\u0020not\u0020important,\u0020it\u0027s\u0020just\u0020the\u0020difference.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_time_diff"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Aget_renewal_orders\u0028\u0029",
+        name: "get_renewal_orders",
+        summary: "Utility\u0020function\u0020to\u0020get\u0020all\u0020renewal\u0020orders\u0020in\u0020the\u0020old\u0020structure.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_get_renewal_orders"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Amaybe_get_date_from_action_scheduler\u0028\u0029",
+        name: "maybe_get_date_from_action_scheduler",
+        summary: "Utility\u0020method\u0020to\u0020check\u0020the\u0020action\u0020scheduler\u0020for\u0020dates",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_maybe_get_date_from_action_scheduler"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Aget_effective_start_date\u0028\u0029",
+        name: "get_effective_start_date",
+        summary: "Utility\u0020function\u0020to\u0020return\u0020the\u0020effective\u0020start\u0020date\u0020for\u0020interval\u0020calculations\u0020\u0028end\u0020of\u0020trial\u0020period\u0020\u002D\u003E\u0020start\u0020date\u0020\u002D\u003E\u0020null\u0020\u0029",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_get_effective_start_date"
+    },{
+        fqsen: "\\WCS_Repair_2_0\u003A\u003Alog_store_owner_review\u0028\u0029",
+        name: "log_store_owner_review",
+        summary: "Logs\u0020an\u0020entry\u0020for\u0020the\u0020store\u0020owner\u0020to\u0020review\u0020an\u0020issue.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-2-0.html#method_log_store_owner_review"
+    },{
+        fqsen: "\\WCS_Repair_Line_Item_Has_Trial_Meta",
+        name: "WCS_Repair_Line_Item_Has_Trial_Meta",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Line-Item-Has-Trial-Meta.html"
+    },{
+        fqsen: "\\WCS_Repair_Line_Item_Has_Trial_Meta\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Line-Item-Has-Trial-Meta.html#method___construct"
+    },{
+        fqsen: "\\WCS_Repair_Line_Item_Has_Trial_Meta\u003A\u003Aget_items_to_repair\u0028\u0029",
+        name: "get_items_to_repair",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020subscriptions\u0020which\u0020have\u0020or\u0020had\u0020free\u0020trials\u0020at\u0020the\u0020time\u0020of\u0020purchase.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Line-Item-Has-Trial-Meta.html#method_get_items_to_repair"
+    },{
+        fqsen: "\\WCS_Repair_Line_Item_Has_Trial_Meta\u003A\u003Arepair_item\u0028\u0029",
+        name: "repair_item",
+        summary: "Repair\u0020the\u0020line\u0020item\u0020meta\u0020for\u0020a\u0020given\u0020subscription\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Line-Item-Has-Trial-Meta.html#method_repair_item"
+    },{
+        fqsen: "\\WCS_Repair_Start_Date_Metadata",
+        name: "WCS_Repair_Start_Date_Metadata",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Start-Date-Metadata.html"
+    },{
+        fqsen: "\\WCS_Repair_Start_Date_Metadata\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Start-Date-Metadata.html#method___construct"
+    },{
+        fqsen: "\\WCS_Repair_Start_Date_Metadata\u003A\u003Aupdate_item\u0028\u0029",
+        name: "update_item",
+        summary: "Update\u0020a\u0020subscription,\u0020saving\u0020its\u0020start\u0020date\u0020as\u0020metadata.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Start-Date-Metadata.html#method_update_item"
+    },{
+        fqsen: "\\WCS_Repair_Start_Date_Metadata\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020subscriptions\u0020to\u0020repair.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Start-Date-Metadata.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Repair_Subscription_Address_Indexes",
+        name: "WCS_Repair_Subscription_Address_Indexes",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Subscription-Address-Indexes.html"
+    },{
+        fqsen: "\\WCS_Repair_Subscription_Address_Indexes\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Subscription-Address-Indexes.html#method___construct"
+    },{
+        fqsen: "\\WCS_Repair_Subscription_Address_Indexes\u003A\u003Aupdate_item\u0028\u0029",
+        name: "update_item",
+        summary: "Update\u0020a\u0020subscription,\u0020setting\u0020its\u0020address\u0020indexes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Subscription-Address-Indexes.html#method_update_item"
+    },{
+        fqsen: "\\WCS_Repair_Subscription_Address_Indexes\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020subscriptions\u0020which\u0020need\u0020address\u0020indexes.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Subscription-Address-Indexes.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Repair_Subtracted_Base_Tax_Line_Item_Meta",
+        name: "WCS_Repair_Subtracted_Base_Tax_Line_Item_Meta",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Subtracted-Base-Tax-Line-Item-Meta.html"
+    },{
+        fqsen: "\\WCS_Repair_Subtracted_Base_Tax_Line_Item_Meta\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Subtracted-Base-Tax-Line-Item-Meta.html#method___construct"
+    },{
+        fqsen: "\\WCS_Repair_Subtracted_Base_Tax_Line_Item_Meta\u003A\u003Aget_items_to_repair\u0028\u0029",
+        name: "get_items_to_repair",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020line\u0020items\u0020with\u0020_subtracted_base_location_tax\u0020meta\u0020to\u0020repair.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Subtracted-Base-Tax-Line-Item-Meta.html#method_get_items_to_repair"
+    },{
+        fqsen: "\\WCS_Repair_Subtracted_Base_Tax_Line_Item_Meta\u003A\u003Arepair_item\u0028\u0029",
+        name: "repair_item",
+        summary: "Repair\u0020the\u0020line\u0020item\u0020meta\u0020for\u0020a\u0020given\u0020line\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Subtracted-Base-Tax-Line-Item-Meta.html#method_repair_item"
+    },{
+        fqsen: "\\WCS_Repair_Suspended_PayPal_Subscriptions",
+        name: "WCS_Repair_Suspended_PayPal_Subscriptions",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Suspended-PayPal-Subscriptions.html"
+    },{
+        fqsen: "\\WCS_Repair_Suspended_PayPal_Subscriptions\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Suspended-PayPal-Subscriptions.html#method___construct"
+    },{
+        fqsen: "\\WCS_Repair_Suspended_PayPal_Subscriptions\u003A\u003Aupdate_item\u0028\u0029",
+        name: "update_item",
+        summary: "Repair\u0020a\u0020subscription\u0020that\u0020was\u0020suspended\u0020in\u0020PayPal,\u0020but\u0020not\u0020suspended\u0020in\u0020WooCommerce.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Suspended-PayPal-Subscriptions.html#method_update_item"
+    },{
+        fqsen: "\\WCS_Repair_Suspended_PayPal_Subscriptions\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020a\u0020list\u0020of\u0020subscriptions\u0020to\u0020repair.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Repair-Suspended-PayPal-Subscriptions.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Upgrade_1_2",
+        name: "WCS_Upgrade_1_2",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-2.html"
+    },{
+        fqsen: "\\WCS_Upgrade_1_2\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-2.html#method_init"
+    },{
+        fqsen: "\\WCS_Upgrade_1_3",
+        name: "WCS_Upgrade_1_3",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-3.html"
+    },{
+        fqsen: "\\WCS_Upgrade_1_3\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-3.html#method_init"
+    },{
+        fqsen: "\\WCS_Upgrade_1_4",
+        name: "WCS_Upgrade_1_4",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-4.html"
+    },{
+        fqsen: "\\WCS_Upgrade_1_4\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-4.html#method_init"
+    },{
+        fqsen: "\\WCS_Upgrade_1_4\u003A\u003Ais_user_upgraded\u0028\u0029",
+        name: "is_user_upgraded",
+        summary: "Used\u0020to\u0020check\u0020if\u0020a\u0020user\u0020ID\u0020is\u0020greater\u0020than\u0020the\u0020last\u0020user\u0020upgraded\u0020to\u0020version\u00201.4.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-4.html#method_is_user_upgraded"
+    },{
+        fqsen: "\\WCS_Upgrade_1_4\u003A\u003A\u0024last_upgraded_user_id",
+        name: "last_upgraded_user_id",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-4.html#property_last_upgraded_user_id"
+    },{
+        fqsen: "\\WCS_Upgrade_1_5",
+        name: "WCS_Upgrade_1_5",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-5.html"
+    },{
+        fqsen: "\\WCS_Upgrade_1_5\u003A\u003Aupgrade_products\u0028\u0029",
+        name: "upgrade_products",
+        summary: "Set\u0020status\u0020to\u0020\u0027sold\u0020individually\u0027\u0020for\u0020all\u0020existing\u0020subscription\u0020products\u0020that\u0020haven\u0027t\u0020already\u0020been\u0020updated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-5.html#method_upgrade_products"
+    },{
+        fqsen: "\\WCS_Upgrade_1_5\u003A\u003Aupgrade_hooks\u0028\u0029",
+        name: "upgrade_hooks",
+        summary: "Update\u0020subscription\u0020WP\u002DCron\u0020tasks\u0020to\u0020Action\u0020Scheduler.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-1-5.html#method_upgrade_hooks"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0",
+        name: "WCS_Upgrade_2_0",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Aupgrade_subscriptions\u0028\u0029",
+        name: "upgrade_subscriptions",
+        summary: "Migrate\u0020subscriptions\u0020out\u0020of\u0020order\u0020item\u0020meta\u0020and\u0020into\u0020post\/post\u0020meta\u0020tables\u0020for\u0020their\u0020own\u0020post\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_upgrade_subscriptions"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Aget_subscriptions\u0028\u0029",
+        name: "get_subscriptions",
+        summary: "Gets\u0020an\u0020array\u0020of\u0020subscriptions\u0020from\u0020the\u0020v1.5\u0020database\u0020structure\u0020and\u0020returns\u0020them\u0020in\u0020the\u0020in\u0020the\u0020v1.5\u0020structure\u0020of\n\u0027order_item_id\u0027\u0020\u003D\u003E\u0020subscription\u0020details\u0020array\u0028\u0029.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_get_subscriptions"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Aadd_product\u0028\u0029",
+        name: "add_product",
+        summary: "Add\u0020the\u0020details\u0020of\u0020an\u0020order\u0020item\u0020to\u0020a\u0020subscription\u0020as\u0020a\u0020product\u0020line\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_add_product"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Aadd_line_tax_data\u0028\u0029",
+        name: "add_line_tax_data",
+        summary: "Copy\u0020or\u0020recreate\u0020line\u0020tax\u0020data\u0020to\u0020the\u0020new\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_add_line_tax_data"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Adeprecate_item_meta\u0028\u0029",
+        name: "deprecate_item_meta",
+        summary: "Deprecate\u0020order\u0020item\u0020meta\u0020data\u0020stored\u0020on\u0020the\u0020original\u0020order\u0020that\u0020used\u0020to\u0020make\u0020up\u0020the\u0020subscription\u0020by\u0020prefixing\u0020it\u0020with\u0020with\u0020\u0027_wcs_migrated\u0027",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_deprecate_item_meta"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Amigrate_download_permissions\u0028\u0029",
+        name: "migrate_download_permissions",
+        summary: "Move\u0020download\u0020permissions\u0020from\u0020original\u0020order\u0020to\u0020the\u0020new\u0020subscription\u0020created\u0020for\u0020the\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_migrate_download_permissions"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Amigrate_dates\u0028\u0029",
+        name: "migrate_dates",
+        summary: "Migrate\u0020the\u0020trial\u0020expiration,\u0020next\u0020payment\u0020and\u0020expiration\/end\u0020dates\u0020to\u0020a\u0020new\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_migrate_dates"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Amigrate_post_meta\u0028\u0029",
+        name: "migrate_post_meta",
+        summary: "Copy\u0020an\u0020assortment\u0020of\u0020meta\u0020data\u0020from\u0020the\u0020original\u0020order\u0027s\u0020post\u0020meta\u0020table\u0020to\u0020the\u0020new\u0020subscription\u0027s\u0020post\u0020meta\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_migrate_post_meta"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Adeprecate_post_meta\u0028\u0029",
+        name: "deprecate_post_meta",
+        summary: "Deprecate\u0020post\u0020meta\u0020data\u0020stored\u0020on\u0020the\u0020original\u0020order\u0020that\u0020used\u0020to\u0020make\u0020up\u0020the\u0020subscription\u0020by\u0020prefixing\u0020it\u0020with\u0020with\u0020\u0027_wcs_migrated\u0027",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_deprecate_post_meta"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Amigrate_order_notes\u0028\u0029",
+        name: "migrate_order_notes",
+        summary: "Migrate\u0020order\u0020notes\u0020relating\u0020to\u0020subscription\u0020events\u0020to\u0020the\u0020new\u0020subscription\u0020as\u0020these\u0020are\u0020now\u0020logged\u0020on\u0020the\u0020subscription\nnot\u0020the\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_migrate_order_notes"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Amigrate_order_items\u0028\u0029",
+        name: "migrate_order_items",
+        summary: "Migrate\u0020recurring_tax,\u0020recurring_shipping\u0020and\u0020recurring_coupon\u0020line\u0020items\u0020to\u0020be\u0020plain\u0020tax,\u0020shipping\u0020and\u0020coupon\u0020line\nitems\u0020on\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_migrate_order_items"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Amigrate_renewal_orders\u0028\u0029",
+        name: "migrate_renewal_orders",
+        summary: "The\u0020\u0027post_parent\u0027\u0020column\u0020is\u0020no\u0020longer\u0020used\u0020to\u0020relate\u0020a\u0020renewal\u0020order\u0020with\u0020a\u0020subscription\/order,\u0020instead,\u0020we\u0020use\u0020a\n\u0027_subscription_renewal\u0027\u0020post\u0020meta\u0020value,\u0020so\u0020the\u0020\u0027post_parent\u0027\u0020of\u0020all\u0020renewal\u0020orders\u0020needs\u0020to\u0020be\u0020changed\u0020from\u0020the\u0020original\norder\u0027s\u0020ID,\u0020to\u00200,\u0020and\u0020then\u0020the\u0020new\u0020subscription\u0027s\u0020ID\u0020should\u0020be\u0020set\u0020as\u0020the\u0020\u0027_subscription_renewal\u0027\u0020post\u0020meta\u0020value\u0020on\nthe\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_migrate_renewal_orders"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Amigrate_resubscribe_orders\u0028\u0029",
+        name: "migrate_resubscribe_orders",
+        summary: "The\u0020\u0027_original_order\u0027\u0020post\u0020meta\u0020value\u0020is\u0020no\u0020longer\u0020used\u0020to\u0020relate\u0020a\u0020resubscribe\u0020order\u0020with\u0020a\u0020subscription\/order,\u0020instead,\u0020we\u0020use\na\u0020\u0027_subscription_resubscribe\u0027\u0020post\u0020meta\u0020value,\u0020so\u0020the\u0020\u0027_original_order\u0027\u0020of\u0020all\u0020resubscribe\u0020orders\u0020needs\u0020to\u0020be\u0020changed\u0020from\u0020the\noriginal\u0020order\u0027s\u0020ID,\u0020to\u00200,\u0020and\u0020then\u0020the\u0020new\u0020subscription\u0027s\u0020ID\u0020should\u0020be\u0020set\u0020as\u0020the\u0020\u0027_subscription_resubscribe\u0027\u0020post\u0020meta\u0020value\non\u0020the\u0020resubscribe\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_migrate_resubscribe_orders"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003Amigrate_switch_meta\u0028\u0029",
+        name: "migrate_switch_meta",
+        summary: "The\u0020\u0027_switched_subscription_key\u0027\u0020and\u0020\u0027_switched_subscription_new_order\u0027\u0020post\u0020meta\u0020values\u0020are\u0020no\u0020longer\u0020used\u0020to\u0020relate\u0020orders\nand\u0020switched\u0020subscriptions,\u0020instead,\u0020we\u0020need\u0020to\u0020set\u0020a\u0020\u0027_subscription_switch\u0027\u0020value\u0020on\u0020the\u0020switch\u0020order\u0020and\u0020depreacted\u0020the\u0020old\nmeta\u0020keys\u0020by\u0020prefixing\u0020them\u0020with\u0020\u0027_wcs_migrated\u0027.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#method_migrate_switch_meta"
+    },{
+        fqsen: "\\WCS_Upgrade_2_0\u003A\u003A\u0024subscription_item_meta_keys",
+        name: "subscription_item_meta_keys",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-0.html#property_subscription_item_meta_keys"
+    },{
+        fqsen: "\\WCS_Upgrade_2_1",
+        name: "WCS_Upgrade_2_1",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-1.html"
+    },{
+        fqsen: "\\WCS_Upgrade_2_1\u003A\u003Aset_cancelled_dates\u0028\u0029",
+        name: "set_cancelled_dates",
+        summary: "Set\u0020the\u0020_schedule_cancelled\u0020post\u0020meta\u0020value\u0020to\u0020store\u0020a\u0020subscription\u0027s\u0020cancellation\ndate\u0020for\u0020those\u0020subscriptions\u0020still\u0020in\u0020the\u0020pending\u0020cancellation\u0020state,\u0020and\u0020therefore\nwhere\u0020it\u0020is\u0020possible\u0020to\u0020determine\u0020the\u0020cancellation\u0020date.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-1.html#method_set_cancelled_dates"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_7",
+        name: "WCS_Upgrade_2_2_7",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-7.html"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_7\u003A\u003Aschedule_end_of_prepaid_term_repair\u0028\u0029",
+        name: "schedule_end_of_prepaid_term_repair",
+        summary: "Schedule\u0020an\u0020WP\u002DCron\u0020event\u0020to\u0020run\u0020in\u00205\u0020minutes\u0020to\u0020repair\u0020pending\u0020cancelled\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-7.html#method_schedule_end_of_prepaid_term_repair"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_7\u003A\u003Arepair_pending_cancelled_subscriptions\u0028\u0029",
+        name: "repair_pending_cancelled_subscriptions",
+        summary: "Repair\u0020a\u0020batch\u0020of\u0020pending\u0020cancelled\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-7.html#method_repair_pending_cancelled_subscriptions"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_7\u003A\u003Aget_subscriptions_to_repair\u0028\u0029",
+        name: "get_subscriptions_to_repair",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020pending\u0020cancelled\u0020subscriptions\u0020to\u0020repair.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-7.html#method_get_subscriptions_to_repair"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_7\u003A\u003Alog\u0028\u0029",
+        name: "log",
+        summary: "Add\u0020a\u0020message\u0020to\u0020the\u0020wcs\u002Dupgrade\u002Dend\u002Dof\u002Dprepaid\u002Dterm\u002Drepair\u0020log",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-7.html#method_log"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_7\u003A\u003A\u0024cron_hook",
+        name: "cron_hook",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-7.html#property_cron_hook"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_7\u003A\u003A\u0024batch_size",
+        name: "batch_size",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-7.html#property_batch_size"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_9",
+        name: "WCS_Upgrade_2_2_9",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-9.html"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_9\u003A\u003Aschedule_repair\u0028\u0029",
+        name: "schedule_repair",
+        summary: "Schedule\u0020an\u0020WP\u002DCron\u0020event\u0020to\u0020run\u0020in\u00203\u0020minutes\u0020to\u0020repair\u0020subscription\u0020synced\u0020post\u0020meta.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-9.html#method_schedule_repair"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_9\u003A\u003Arepair_subscriptions_containing_synced_variations\u0028\u0029",
+        name: "repair_subscriptions_containing_synced_variations",
+        summary: "Repair\u0020a\u0020batch\u0020of\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-9.html#method_repair_subscriptions_containing_synced_variations"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_9\u003A\u003Aget_subscriptions_to_repair\u0028\u0029",
+        name: "get_subscriptions_to_repair",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020subscriptions\u0020to\u0020repair.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-9.html#method_get_subscriptions_to_repair"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_9\u003A\u003Alog\u0028\u0029",
+        name: "log",
+        summary: "Add\u0020a\u0020message\u0020to\u0020the\u0020wcs\u002Dupgrade\u002Dsubscriptions\u002Dcontaining\u002Dsynced\u002Dvariations\u0020log",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-9.html#method_log"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_9\u003A\u003A\u0024cron_hook",
+        name: "cron_hook",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-9.html#property_cron_hook"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_9\u003A\u003A\u0024repaired_subscriptions_option",
+        name: "repaired_subscriptions_option",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-9.html#property_repaired_subscriptions_option"
+    },{
+        fqsen: "\\WCS_Upgrade_2_2_9\u003A\u003A\u0024batch_size",
+        name: "batch_size",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-2-2-9.html#property_batch_size"
+    },{
+        fqsen: "\\WCS_Upgrade_3_1_0",
+        name: "WCS_Upgrade_3_1_0",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-3-1-0.html"
+    },{
+        fqsen: "\\WCS_Upgrade_3_1_0\u003A\u003Amigrate_subscription_webhooks_using_api_version_3\u0028\u0029",
+        name: "migrate_subscription_webhooks_using_api_version_3",
+        summary: "Update\u0020Subscription\u0020webhooks\u0020with\u0020API\u0020Version\u0020set\u0020to\u00203,\u0020to\u0020now\u0020deliver\u0020API\u0020Version\u00201\u0020payloads.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-3-1-0.html#method_migrate_subscription_webhooks_using_api_version_3"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger",
+        name: "WCS_Upgrade_Logger",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger\u003A\u003Ainit\u0028\u0029",
+        name: "init",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html#method_init"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger\u003A\u003Aadd\u0028\u0029",
+        name: "add",
+        summary: "Add\u0020an\u0020entry\u0020to\u0020the\u0020log",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html#method_add"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger\u003A\u003Aclear\u0028\u0029",
+        name: "clear",
+        summary: "Clear\u0020entries\u0020from\u0020the\u0020upgrade\u0020log.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html#method_clear"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger\u003A\u003Aadd_more_info\u0028\u0029",
+        name: "add_more_info",
+        summary: "Log\u0020more\u0020information\u0020during\u0020upgrade\u003A\u0020Information\u0020about\u0020environment\u0020and\u0020active\u0020plugins",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html#method_add_more_info"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger\u003A\u003Aschedule_cleanup\u0028\u0029",
+        name: "schedule_cleanup",
+        summary: "Schedule\u0020a\u0020hook\u0020to\u0020automatically\u0020clear\u0020the\u0020log\u0020after\u00208\u0020weeks",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html#method_schedule_cleanup"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger\u003A\u003A\u0024log",
+        name: "log",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html#property_log"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger\u003A\u003A\u0024handle",
+        name: "handle",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html#property_handle"
+    },{
+        fqsen: "\\WCS_Upgrade_Logger\u003A\u003A\u0024weeks_until_cleanup",
+        name: "weeks_until_cleanup",
+        summary: "",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Logger.html#property_weeks_until_cleanup"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author",
+        name: "WCS_Upgrade_Subscription_Post_Author",
+        summary: "WCS_Background_Updater\u0020Class",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003A__construct\u0028\u0029",
+        name: "__construct",
+        summary: "Constructor",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method___construct"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003Aupdate_item\u0028\u0029",
+        name: "update_item",
+        summary: "Update\u0020a\u0020subscription,\u0020setting\u0020its\u0020post_author\u0020to\u0020its\u0020customer\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method_update_item"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003Aget_items_to_update\u0028\u0029",
+        name: "get_items_to_update",
+        summary: "Get\u0020a\u0020batch\u0020of\u0020subscriptions\u0020which\u0020need\u0020to\u0020be\u0020updated.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method_get_items_to_update"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003Aschedule_background_update\u0028\u0029",
+        name: "schedule_background_update",
+        summary: "Schedule\u0020the\u0020instance\u0027s\u0020hook\u0020to\u0020run\u0020in\u0020\u0024this\u002D\u003Etime_limit\u0020seconds,\u0020if\u0020it\u0027s\u0020not\u0020already\u0020scheduled.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method_schedule_background_update"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003Aunschedule_background_updates\u0028\u0029",
+        name: "unschedule_background_updates",
+        summary: "Unschedule\u0020the\u0020instance\u0027s\u0020hook\u0020in\u0020Action\u0020Scheduler",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method_unschedule_background_updates"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003Aget_subscriptions_to_ignore\u0028\u0029",
+        name: "get_subscriptions_to_ignore",
+        summary: "Returns\u0020the\u0020list\u0020of\u0020admin\u0020subscription\u0020IDs\u0020to\u0020ignore\u0020during\u0020this\u0020upgrade\u0020routine.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method_get_subscriptions_to_ignore"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003Aadd_subscription_to_ignore_list\u0028\u0029",
+        name: "add_subscription_to_ignore_list",
+        summary: "Adds\u0020a\u0020subscription\u0020ID\u0020to\u0020the\u0020ignore\u0020list\u0020for\u0020this\u0020upgrade\u0020routine.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method_add_subscription_to_ignore_list"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003Ahook_into_wc_350_update\u0028\u0029",
+        name: "hook_into_wc_350_update",
+        summary: "Hooks\u0020into\u0020WC\u0027s\u00203.5\u0020update\u0020routine\u0020to\u0020add\u0020the\u0020subscription\u0020post\u0020type\u0020to\u0020the\u0020list\u0020of\u0020post\u0020types\u0020affected\u0020by\u0020this\u0020update.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method_hook_into_wc_350_update"
+    },{
+        fqsen: "\\WCS_Upgrade_Subscription_Post_Author\u003A\u003Aadd_post_type_to_wc_350_update\u0028\u0029",
+        name: "add_post_type_to_wc_350_update",
+        summary: "Callback\u0020for\u0020the\u0020\u0060woocommerce_update_350_order_customer_id_post_types\u0060\u0020hook.\u0020Makes\u0020sure\u0020\u0060shop_subscription\u0060\u0020is\nincluded\u0020in\u0020the\u0020post\u0020types\u0020array.",
+        url: "https://woocommerce.github.io/code-reference/classes/WCS-Upgrade-Subscription-Post-Author.html#method_add_post_type_to_wc_350_update"
+    },{
+        fqsen: "\\wcs_cart_totals_subtotal_html\u0028\u0029",
+        name: "wcs_cart_totals_subtotal_html",
+        summary: "Display\u0020a\u0020recurring\u0020cart\u0027s\u0020subtotal",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_totals_subtotal_html"
+    },{
+        fqsen: "\\wcs_cart_totals_shipping_html\u0028\u0029",
+        name: "wcs_cart_totals_shipping_html",
+        summary: "Get\u0020recurring\u0020shipping\u0020methods.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_totals_shipping_html"
+    },{
+        fqsen: "\\wcs_cart_print_shipping_input\u0028\u0029",
+        name: "wcs_cart_print_shipping_input",
+        summary: "Display\u0020a\u0020recurring\u0020shipping\u0020method\u0027s\u0020input\u0020element,\u0020either\u0020as\u0020a\u0020hidden\u0020element\u0020if\u0020there\u0020is\u0020only\u0020one\u0020shipping\u0020method,\nor\u0020a\u0020radio\u0020select\u0020box\u0020when\u0020there\u0020is\u0020more\u0020than\u0020one\u0020available\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_print_shipping_input"
+    },{
+        fqsen: "\\wcs_cart_totals_shipping_method\u0028\u0029",
+        name: "wcs_cart_totals_shipping_method",
+        summary: "Display\u0020a\u0020recurring\u0020shipping\u0020methods\u0020price\u0020\u0026\u0020name\u0020as\u0020a\u0020label",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_totals_shipping_method"
+    },{
+        fqsen: "\\wcs_cart_totals_shipping_method_price_label\u0028\u0029",
+        name: "wcs_cart_totals_shipping_method_price_label",
+        summary: "Display\u0020a\u0020recurring\u0020shipping\u0020methods\u0020price",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_totals_shipping_method_price_label"
+    },{
+        fqsen: "\\wcs_cart_totals_taxes_total_html\u0028\u0029",
+        name: "wcs_cart_totals_taxes_total_html",
+        summary: "Display\u0020recurring\u0020taxes\u0020total",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_totals_taxes_total_html"
+    },{
+        fqsen: "\\wcs_cart_coupon_remove_link_html\u0028\u0029",
+        name: "wcs_cart_coupon_remove_link_html",
+        summary: "Display\u0020the\u0020remove\u0020link\u0020for\u0020a\u0020coupon.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_coupon_remove_link_html"
+    },{
+        fqsen: "\\wcs_cart_totals_coupon_html\u0028\u0029",
+        name: "wcs_cart_totals_coupon_html",
+        summary: "Display\u0020a\u0020recurring\u0020coupon\u0027s\u0020value.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_totals_coupon_html"
+    },{
+        fqsen: "\\wcs_cart_totals_order_total_html\u0028\u0029",
+        name: "wcs_cart_totals_order_total_html",
+        summary: "Gets\u0020recurring\u0020total\u0020html\u0020including\u0020inc\u0020tax\u0020if\u0020needed.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_totals_order_total_html"
+    },{
+        fqsen: "\\wcs_cart_price_string\u0028\u0029",
+        name: "wcs_cart_price_string",
+        summary: "Return\u0020a\u0020formatted\u0020price\u0020string\u0020for\u0020a\u0020given\u0020cart\u0020object",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_price_string"
+    },{
+        fqsen: "\\wcs_cart_pluck\u0028\u0029",
+        name: "wcs_cart_pluck",
+        summary: "Return\u0020a\u0020given\u0020piece\u0020of\u0020meta\u0020data\u0020from\u0020the\u0020cart",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_pluck"
+    },{
+        fqsen: "\\wcs_add_cart_first_renewal_payment_date\u0028\u0029",
+        name: "wcs_add_cart_first_renewal_payment_date",
+        summary: "Append\u0020the\u0020first\u0020renewal\u0020payment\u0020date\u0020to\u0020a\u0020string\u0020\u0028which\u0020is\u0020the\u0020order\u0020total\u0020HTML\u0020string\u0020by\u0020default\u0029",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_add_cart_first_renewal_payment_date"
+    },{
+        fqsen: "\\wcs_get_cart_item_name\u0028\u0029",
+        name: "wcs_get_cart_item_name",
+        summary: "Return\u0020the\u0020cart\u0020item\u0020name\u0020for\u0020specific\u0020cart\u0020item",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_cart_item_name"
+    },{
+        fqsen: "\\wcs_allow_protected_products_to_renew\u0028\u0029",
+        name: "wcs_allow_protected_products_to_renew",
+        summary: "Allows\u0020protected\u0020products\u0020to\u0020be\u0020renewed.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_allow_protected_products_to_renew"
+    },{
+        fqsen: "\\wcs_disallow_protected_product_add_to_cart_validation\u0028\u0029",
+        name: "wcs_disallow_protected_product_add_to_cart_validation",
+        summary: "Restores\u0020protected\u0020products\u0020from\u0020being\u0020added\u0020to\u0020the\u0020cart.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_disallow_protected_product_add_to_cart_validation"
+    },{
+        fqsen: "\\wcs_get_order_type_cart_items\u0028\u0029",
+        name: "wcs_get_order_type_cart_items",
+        summary: "Gets\u0020all\u0020the\u0020cart\u0020items\u0020linked\u0020to\u0020a\u0020given\u0020subscription\u0020order\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_order_type_cart_items"
+    },{
+        fqsen: "\\wcs_help_tip\u0028\u0029",
+        name: "wcs_help_tip",
+        summary: "Display\u0020a\u0020tooltip\u0020in\u0020the\u0020WordPress\u0020administration\u0020area.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_help_tip"
+    },{
+        fqsen: "\\wcs_get_objects_property\u0028\u0029",
+        name: "wcs_get_objects_property",
+        summary: "Access\u0020an\u0020object\u0027s\u0020property\u0020in\u0020a\u0020way\u0020that\u0020is\u0020compatible\u0020with\u0020CRUD\u0020and\u0020non\u002DCRUD\u0020APIs\u0020for\u0020different\u0020versions\u0020of\u0020WooCommerce.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_objects_property"
+    },{
+        fqsen: "\\wcs_set_objects_property\u0028\u0029",
+        name: "wcs_set_objects_property",
+        summary: "Set\u0020an\u0020object\u0027s\u0020property\u0020in\u0020a\u0020way\u0020that\u0020is\u0020compatible\u0020with\u0020CRUD\u0020and\u0020non\u002DCRUD\u0020APIs\u0020for\u0020different\u0020versions\u0020of\u0020WooCommerce.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_set_objects_property"
+    },{
+        fqsen: "\\wcs_delete_objects_property\u0028\u0029",
+        name: "wcs_delete_objects_property",
+        summary: "Delete\u0020an\u0020object\u0027s\u0020property\u0020in\u0020a\u0020way\u0020that\u0020is\u0020compatible\u0020with\u0020CRUD\u0020and\u0020non\u002DCRUD\u0020APIs\u0020for\u0020different\u0020versions\u0020of\u0020WooCommerce.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_delete_objects_property"
+    },{
+        fqsen: "\\wcs_is_order\u0028\u0029",
+        name: "wcs_is_order",
+        summary: "Check\u0020whether\u0020an\u0020order\u0020is\u0020a\u0020standard\u0020order\u0020\u0028i.e.\u0020not\u0020a\u0020refund\u0020or\u0020subscription\u0029\u0020in\u0020version\u0020compatible\u0020way.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_order"
+    },{
+        fqsen: "\\wcs_product_deprecated_property_handler\u0028\u0029",
+        name: "wcs_product_deprecated_property_handler",
+        summary: "Find\u0020and\u0020return\u0020the\u0020value\u0020for\u0020a\u0020deprecated\u0020property\u0020property.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_product_deprecated_property_handler"
+    },{
+        fqsen: "\\wcs_get_coupon_property\u0028\u0029",
+        name: "wcs_get_coupon_property",
+        summary: "Access\u0020a\u0020coupon\u0027s\u0020property\u0020in\u0020a\u0020way\u0020that\u0020is\u0020compatible\u0020with\u0020CRUD\u0020and\u0020non\u002DCRUD\u0020APIs\u0020for\u0020different\u0020versions\u0020of\u0020WooCommerce.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_coupon_property"
+    },{
+        fqsen: "\\wcs_set_coupon_property\u0028\u0029",
+        name: "wcs_set_coupon_property",
+        summary: "Set\u0020a\u0020coupon\u0027s\u0020property\u0020in\u0020a\u0020way\u0020that\u0020is\u0020compatible\u0020with\u0020CRUD\u0020and\u0020non\u002DCRUD\u0020APIs\u0020for\u0020different\u0020versions\u0020of\u0020WooCommerce.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_set_coupon_property"
+    },{
+        fqsen: "\\wcs_generate_order_key\u0028\u0029",
+        name: "wcs_generate_order_key",
+        summary: "Generate\u0020an\u0020order\/subscription\u0020key.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_generate_order_key"
+    },{
+        fqsen: "\\wcs_update_settings_option\u0028\u0029",
+        name: "wcs_update_settings_option",
+        summary: "Update\u0020a\u0020single\u0020option\u0020for\u0020a\u0020WC_Settings_API\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_update_settings_option"
+    },{
+        fqsen: "\\wcs_is_rest_api_request\u0028\u0029",
+        name: "wcs_is_rest_api_request",
+        summary: "Determines\u0020if\u0020the\u0020request\u0020is\u0020a\u0020non\u002Dlegacy\u0020REST\u0020API\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_rest_api_request"
+    },{
+        fqsen: "\\wcs_is_checkout_blocks_api_request\u0028\u0029",
+        name: "wcs_is_checkout_blocks_api_request",
+        summary: "Determines\u0020if\u0020the\u0020current\u0020request\u0020is\u0020to\u0020any\u0020or\u0020a\u0020specific\u0020Checkout\u0020blocks\u0020REST\u0020API\u0020endpoint.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_checkout_blocks_api_request"
+    },{
+        fqsen: "\\wcs_doing_cron\u0028\u0029",
+        name: "wcs_doing_cron",
+        summary: "Determines\u0020whether\u0020the\u0020current\u0020request\u0020is\u0020a\u0020WordPress\u0020cron\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_doing_cron"
+    },{
+        fqsen: "\\wcs_doing_ajax\u0028\u0029",
+        name: "wcs_doing_ajax",
+        summary: "Determines\u0020whether\u0020the\u0020current\u0020request\u0020is\u0020a\u0020WordPress\u0020Ajax\u0020request.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_doing_ajax"
+    },{
+        fqsen: "\\wcs_get_used_coupon_codes\u0028\u0029",
+        name: "wcs_get_used_coupon_codes",
+        summary: "A\u0020wrapper\u0020function\u0020for\u0020getting\u0020an\u0020order\u0027s\u0020used\u0020coupon\u0020codes.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_used_coupon_codes"
+    },{
+        fqsen: "\\wcs_add_woocommerce_dependent_action\u0028\u0029",
+        name: "wcs_add_woocommerce_dependent_action",
+        summary: "Attach\u0020a\u0020function\u0020callback\u0020for\u0020a\u0020certain\u0020WooCommerce\u0020versions.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_add_woocommerce_dependent_action"
+    },{
+        fqsen: "\\wcs_is_woocommerce_pre\u0028\u0029",
+        name: "wcs_is_woocommerce_pre",
+        summary: "Checks\u0020if\u0020the\u0020installed\u0020version\u0020of\u0020WooCommerce\u0020is\u0020older\u0020than\u0020a\u0020specified\u0020version.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_woocommerce_pre"
+    },{
+        fqsen: "\\wcs_is_order_received_page\u0028\u0029",
+        name: "wcs_is_order_received_page",
+        summary: "Check\u0020if\u0020the\u0020\u0024_SERVER\u0020global\u0020has\u0020order\u0020received\u0020URL\u0020slug\u0020in\u0020its\u0020\u0027REQUEST_URI\u0027\u0020value",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_order_received_page"
+    },{
+        fqsen: "\\wcs_doing_it_wrong\u0028\u0029",
+        name: "wcs_doing_it_wrong",
+        summary: "Wrapper\u0020for\u0020wc_doing_it_wrong.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_doing_it_wrong"
+    },{
+        fqsen: "\\wcs_deprecated_function\u0028\u0029",
+        name: "wcs_deprecated_function",
+        summary: "Wrapper\u0020for\u0020wcs_deprecated_function\u0020to\u0020improve\u0020handling\u0020of\u0020ajax\u0020requests,\u0020even\u0020when\nWooCommerce\u00203.0\u0027s\u0020wcs_deprecated_function\u0020method\u0020is\u0020not\u0020available.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_deprecated_function"
+    },{
+        fqsen: "\\wcs_deprecated_argument\u0028\u0029",
+        name: "wcs_deprecated_argument",
+        summary: "Reimplement\u0020similar\u0020logic\u0020to\u0020wc_deprecated_argument\u0028\u0029\u0020without\u0020the\u0020first\u0020parameter\u0020confusion.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_deprecated_argument"
+    },{
+        fqsen: "\\wcs_get_old_subscription_key\u0028\u0029",
+        name: "wcs_get_old_subscription_key",
+        summary: "Get\u0020the\u0020string\u0020key\u0020for\u0020a\u0020subscription\u0020used\u0020in\u0020Subscriptions\u0020prior\u0020to\u00202.0.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_old_subscription_key"
+    },{
+        fqsen: "\\wcs_get_subscription_id_from_key\u0028\u0029",
+        name: "wcs_get_subscription_id_from_key",
+        summary: "Return\u0020the\u0020post\u0020ID\u0020of\u0020a\u0020WC_Subscription\u0020object\u0020for\u0020the\u0020given\u0020subscription\u0020key\u0020\u0028if\u0020one\u0020exists\u0029.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_id_from_key"
+    },{
+        fqsen: "\\wcs_get_subscription_from_key\u0028\u0029",
+        name: "wcs_get_subscription_from_key",
+        summary: "Return\u0020an\u0020instance\u0020of\u0020a\u0020WC_Subscription\u0020object\u0020for\u0020the\u0020given\u0020subscription\u0020key\u0020\u0028if\u0020one\u0020exists\u0029.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_from_key"
+    },{
+        fqsen: "\\wcs_get_subscription_in_deprecated_structure\u0028\u0029",
+        name: "wcs_get_subscription_in_deprecated_structure",
+        summary: "Return\u0020an\u0020associative\u0020array\u0020of\u0020a\u0020given\u0020subscriptions\u0020details\u0020\u0028if\u0020it\u0020exists\u0029\u0020in\u0020the\u0020pre\u0020v2.0\u0020data\u0020structure.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_in_deprecated_structure"
+    },{
+        fqsen: "\\wcs_deprecated_hook\u0028\u0029",
+        name: "wcs_deprecated_hook",
+        summary: "Wrapper\u0020for\u0020wc_deprecated_hook\u0020to\u0020improve\u0020handling\u0020of\u0020ajax\u0020requests,\u0020even\u0020when\nWooCommerce\u00203.3.0\u0027s\u0020wc_deprecated_hook\u0020method\u0020is\u0020not\u0020available.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_deprecated_hook"
+    },{
+        fqsen: "\\wcs_price_string\u0028\u0029",
+        name: "wcs_price_string",
+        summary: "Creates\u0020a\u0020subscription\u0020price\u0020string\u0020from\u0020an\u0020array\u0020of\u0020subscription\u0020details.\u0020For\u0020example,\u0020\u0022\u00245\u0020\/\u0020month\u0020for\u002012\u0020months\u0022.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_price_string"
+    },{
+        fqsen: "\\wcs_get_human_time_diff\u0028\u0029",
+        name: "wcs_get_human_time_diff",
+        summary: "Display\u0020a\u0020human\u0020friendly\u0020time\u0020diff\u0020for\u0020a\u0020given\u0020timestamp,\u0020e.g.\u0020\u0022in\u002012\u0020hours\u0022\u0020or\u0020\u002212\u0020hours\u0020ago\u0022.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_human_time_diff"
+    },{
+        fqsen: "\\wp_kses_allow_underscores\u0028\u0029",
+        name: "wp_kses_allow_underscores",
+        summary: "Works\u0020around\u0020the\u0020wp_kses\u0028\u0029\u0020limitation\u0020of\u0020not\u0020accepting\u0020attribute\u0020names\u0020with\u0020underscores.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wp_kses_allow_underscores"
+    },{
+        fqsen: "\\wcs_append_numeral_suffix\u0028\u0029",
+        name: "wcs_append_numeral_suffix",
+        summary: "Appends\u0020the\u0020ordinal\u0020suffix\u0020to\u0020a\u0020given\u0020number.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_append_numeral_suffix"
+    },{
+        fqsen: "\\wcs_date_input\u0028\u0029",
+        name: "wcs_date_input",
+        summary: "Display\u0020date\/time\u0020input\u0020fields",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_date_input"
+    },{
+        fqsen: "\\wcs_get_edit_post_link\u0028\u0029",
+        name: "wcs_get_edit_post_link",
+        summary: "Get\u0020the\u0020edit\u0020post\u0020link\u0020without\u0020checking\u0020if\u0020the\u0020user\u0020can\u0020edit\u0020that\u0020post\u0020or\u0020not.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_edit_post_link"
+    },{
+        fqsen: "\\wcs_str_to_ascii\u0028\u0029",
+        name: "wcs_str_to_ascii",
+        summary: "Returns\u0020a\u0020string\u0020with\u0020all\u0020non\u002DASCII\u0020characters\u0020removed.\u0020This\u0020is\u0020useful\u0020for\u0020any\u0020string\u0020functions\u0020that\u0020expect\u0020only\nASCII\u0020chars\u0020and\u0020can\u0027t\u0020safely\u0020handle\u0020UTF\u002D8",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_str_to_ascii"
+    },{
+        fqsen: "\\wcs_json_encode\u0028\u0029",
+        name: "wcs_json_encode",
+        summary: "wp_json_encode\u0020exists\u0020since\u0020WP\u00204.1,\u0020but\u0020because\u0020we\u0020can\u0027t\u0020be\u0020sure\u0020that\u0020stores\u0020will\u0020actually\u0020use\u0020at\u0020least\u00204.1,\u0020we\u0020need\nto\u0020have\u0020this\u0020wrapper.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_json_encode"
+    },{
+        fqsen: "\\wcs_array_insert_after\u0028\u0029",
+        name: "wcs_array_insert_after",
+        summary: "Inserts\u0020a\u0020new\u0020key\/value\u0020after\u0020the\u0020key\u0020in\u0020the\u0020array.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_array_insert_after"
+    },{
+        fqsen: "\\wcs_get_rounding_precision\u0028\u0029",
+        name: "wcs_get_rounding_precision",
+        summary: "Helper\u0020function\u0020to\u0020get\u0020around\u0020WooCommerce\u0020version\u00202.6.3\u0020which\u0020removed\u0020the\u0020constant\u0020WC_ROUNDING_PRECISION\u0020and\nintroduced\u0020the\u0020function\u0020wc_get_rounding_precision.\u0020Every\u0020version\u00202.6.2\u0020and\u0020earlier\u0020has\u0020the\u0020constant.\u0020Every\u0020version\n2.6.4\u0020and\u0020later\u0020\u0028hopefully\u0029\u0020will\u0020also\u0020have\u0020the\u0020constant\u0020AND\u0020the\u0020wc_get_rounding_precision\u0020function.\u00202.6.3\u0020only\u0020has\nthe\u0020function\u0020however.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_rounding_precision"
+    },{
+        fqsen: "\\wcs_maybe_prefix_key\u0028\u0029",
+        name: "wcs_maybe_prefix_key",
+        summary: "Add\u0020a\u0020prefix\u0020to\u0020a\u0020string\u0020if\u0020it\u0020doesn\u0027t\u0020already\u0020have\u0020it",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_maybe_prefix_key"
+    },{
+        fqsen: "\\wcs_maybe_unprefix_key\u0028\u0029",
+        name: "wcs_maybe_unprefix_key",
+        summary: "Remove\u0020a\u0020prefix\u0020from\u0020a\u0020string\u0020if\u0020has\u0020it",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_maybe_unprefix_key"
+    },{
+        fqsen: "\\wcs_get_calling_function_name\u0028\u0029",
+        name: "wcs_get_calling_function_name",
+        summary: "Find\u0020the\u0020name\u0020of\u0020the\u0020function\u0020which\u0020called\u0020the\u0020function\u0020which\u0020called\u0020this\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_calling_function_name"
+    },{
+        fqsen: "\\wcs_get_transient_even_if_expired\u0028\u0029",
+        name: "wcs_get_transient_even_if_expired",
+        summary: "Get\u0020the\u0020value\u0020of\u0020a\u0020transient,\u0020even\u0020if\u0020it\u0020has\u0020expired.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_transient_even_if_expired"
+    },{
+        fqsen: "\\wcs_get_minor_version_string\u0028\u0029",
+        name: "wcs_get_minor_version_string",
+        summary: "Get\u0020a\u0020minor\u0020version\u0020string\u0020from\u0020a\u0020full\u0020version\u0020string.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_minor_version_string"
+    },{
+        fqsen: "\\wcs_is_frontend_request\u0028\u0029",
+        name: "wcs_is_frontend_request",
+        summary: "Determines\u0020if\u0020the\u0020current\u0020request\u0020is\u0020for\u0020the\u0020frontend.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_frontend_request"
+    },{
+        fqsen: "\\wcs_sort_objects\u0028\u0029",
+        name: "wcs_sort_objects",
+        summary: "Sorts\u0020an\u0020array\u0020of\u0020objects\u0020by\u0020a\u0020given\u0020property\u0020in\u0020a\u0020given\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_sort_objects"
+    },{
+        fqsen: "\\wcs_trial_has_passed\u0028\u0029",
+        name: "wcs_trial_has_passed",
+        summary: "Has\u0020the\u0020trial\u0020for\u0020the\u0020Subscription\u0020passed\u003F\u0020If\u0020the\u0020Subscription\u0020is\u0020invalid,\u0020will\u0020return\u0020a\u0020WP_Error",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_trial_has_passed"
+    },{
+        fqsen: "\\wcs_apply_array_filter\u0028\u0029",
+        name: "wcs_apply_array_filter",
+        summary: "Filters\u0020an\u0020array\u0020using\u0020a\u0020WP\u0020filter.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_apply_array_filter"
+    },{
+        fqsen: "\\wcs_get_product_limitation\u0028\u0029",
+        name: "wcs_get_product_limitation",
+        summary: "Get\u0020the\u0020subscription\u0027s\u0020limit\u0020type.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_product_limitation"
+    },{
+        fqsen: "\\wcs_is_product_limited_for_user\u0028\u0029",
+        name: "wcs_is_product_limited_for_user",
+        summary: "Returns\u0020true\u0020if\u0020product\u0020is\u0020limited\u0020to\u0020one\u0020active\u0020subscription\u0020and\u0020user\u0020currently\u0020has\u0020this\u0020product\u0020on\u002Dhold.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_product_limited_for_user"
+    },{
+        fqsen: "\\wcs_get_subscriptions_for_order\u0028\u0029",
+        name: "wcs_get_subscriptions_for_order",
+        summary: "Get\u0020the\u0020subscription\u0020related\u0020to\u0020an\u0020order,\u0020if\u0020any.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscriptions_for_order"
+    },{
+        fqsen: "\\wcs_copy_order_address\u0028\u0029",
+        name: "wcs_copy_order_address",
+        summary: "Copy\u0020the\u0020billing,\u0020shipping\u0020or\u0020all\u0020addresses\u0020from\u0020one\u0020order\u0020to\u0020another\u0020\u0028including\u0020custom\u0020order\u0020types,\u0020like\u0020the\nWC_Subscription\u0020order\u0020type\u0029.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_copy_order_address"
+    },{
+        fqsen: "\\wcs_copy_order_meta\u0028\u0029",
+        name: "wcs_copy_order_meta",
+        summary: "Utility\u0020function\u0020to\u0020copy\u0020order\u0020meta\u0020between\u0020two\u0020orders.\u0020Originally\u0020intended\u0020to\u0020copy\u0020meta\u0020between\nfirst\u0020order\u0020and\u0020subscription\u0020object,\u0020then\u0020between\u0020subscription\u0020and\u0020renewal\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_copy_order_meta"
+    },{
+        fqsen: "\\wcs_create_order_from_subscription\u0028\u0029",
+        name: "wcs_create_order_from_subscription",
+        summary: "Function\u0020to\u0020create\u0020an\u0020order\u0020from\u0020a\u0020subscription.\u0020It\u0020can\u0020be\u0020used\u0020for\u0020a\u0020renewal\u0020or\u0020for\u0020a\u0020resubscribe\norder\u0020creation.\u0020It\u0020is\u0020the\u0020common\u0020in\u0020both\u0020of\u0020those\u0020instances.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_create_order_from_subscription"
+    },{
+        fqsen: "\\wcs_get_new_order_title\u0028\u0029",
+        name: "wcs_get_new_order_title",
+        summary: "Function\u0020to\u0020create\u0020a\u0020post\u0020title\u0020based\u0020on\u0020the\u0020type\u0020and\u0020the\u0020current\u0020date\u0020and\u0020time\u0020for\u0020new\u0020orders.\u0020By\ndefault\u0020it\u0027s\u0020either\u0020renewal\u0020or\u0020resubscribe\u0020orders.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_new_order_title"
+    },{
+        fqsen: "\\wcs_validate_new_order_type\u0028\u0029",
+        name: "wcs_validate_new_order_type",
+        summary: "Utility\u0020function\u0020to\u0020check\u0020type.\u0020Filterable.\u0020Rejects\u0020if\u0020not\u0020in\u0020allowed\u0020new\u0020order\u0020types,\u0020rejects\nif\u0020not\u0020actually\u0020string.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_validate_new_order_type"
+    },{
+        fqsen: "\\wcs_get_order_address\u0028\u0029",
+        name: "wcs_get_order_address",
+        summary: "Wrapper\u0020function\u0020to\u0020get\u0020the\u0020address\u0020from\u0020an\u0020order\u0020\/\u0020subscription\u0020in\u0020array\u0020format",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_order_address"
+    },{
+        fqsen: "\\wcs_order_contains_subscription\u0028\u0029",
+        name: "wcs_order_contains_subscription",
+        summary: "Checks\u0020an\u0020order\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_order_contains_subscription"
+    },{
+        fqsen: "\\wcs_get_subscription_orders\u0028\u0029",
+        name: "wcs_get_subscription_orders",
+        summary: "Get\u0020all\u0020the\u0020orders\u0020that\u0020relate\u0020to\u0020a\u0020subscription\u0020in\u0020some\u0020form\u0020\u0028rather\u0020than\u0020only\u0020the\u0020orders\u0020associated\u0020with\na\u0020specific\u0020subscription\u0029.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_orders"
+    },{
+        fqsen: "\\wcs_get_order_item\u0028\u0029",
+        name: "wcs_get_order_item",
+        summary: "A\u0020wrapper\u0020for\u0020getting\u0020a\u0020specific\u0020item\u0020from\u0020an\u0020order\u0020or\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_order_item"
+    },{
+        fqsen: "\\wcs_update_order_item_type\u0028\u0029",
+        name: "wcs_update_order_item_type",
+        summary: "A\u0020wrapper\u0020for\u0020wc_update_order_item\u0028\u0029\u0020which\u0020consistently\u0020deletes\u0020the\u0020cached\u0020item\u0020after\u0020update,\u0020unlike\u0020WC.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_update_order_item_type"
+    },{
+        fqsen: "\\wcs_get_order_item_meta\u0028\u0029",
+        name: "wcs_get_order_item_meta",
+        summary: "Get\u0020an\u0020instance\u0020of\u0020WC_Order_Item_Meta\u0020for\u0020an\u0020order\u0020item",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_order_item_meta"
+    },{
+        fqsen: "\\wcs_get_order_item_name\u0028\u0029",
+        name: "wcs_get_order_item_name",
+        summary: "Create\u0020a\u0020string\u0020representing\u0020an\u0020order\u0020item\u0027s\u0020name\u0020and\u0020optionally\u0020include\u0020attributes.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_order_item_name"
+    },{
+        fqsen: "\\wcs_get_line_item_name\u0028\u0029",
+        name: "wcs_get_line_item_name",
+        summary: "Get\u0020the\u0020full\u0020name\u0020for\u0020a\u0020order\/subscription\u0020line\u0020item,\u0020including\u0020the\u0020items\u0020non\u0020hidden\u0020meta\n\u0028i.e.\u0020attributes\u0029,\u0020as\u0020a\u0020flat\u0020string.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_line_item_name"
+    },{
+        fqsen: "\\wcs_display_item_meta\u0028\u0029",
+        name: "wcs_display_item_meta",
+        summary: "Display\u0020item\u0020meta\u0020data\u0020in\u0020a\u0020version\u0020compatible\u0020way.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_display_item_meta"
+    },{
+        fqsen: "\\wcs_display_item_downloads\u0028\u0029",
+        name: "wcs_display_item_downloads",
+        summary: "Display\u0020item\u0020download\u0020links\u0020in\u0020a\u0020version\u0020compatible\u0020way.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_display_item_downloads"
+    },{
+        fqsen: "\\wcs_copy_order_item\u0028\u0029",
+        name: "wcs_copy_order_item",
+        summary: "Copy\u0020the\u0020order\u0020item\u0020data\u0020and\u0020meta\u0020data\u0020from\u0020one\u0020item\u0020to\u0020another.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_copy_order_item"
+    },{
+        fqsen: "\\wcs_order_contains_manual_subscription\u0028\u0029",
+        name: "wcs_order_contains_manual_subscription",
+        summary: "Checks\u0020an\u0020order\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020manual\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_order_contains_manual_subscription"
+    },{
+        fqsen: "\\wcs_copy_payment_method_to_order\u0028\u0029",
+        name: "wcs_copy_payment_method_to_order",
+        summary: "Copy\u0020payment\u0020method\u0020from\u0020a\u0020subscription\u0020to\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_copy_payment_method_to_order"
+    },{
+        fqsen: "\\wcs_minutes_since_order_created\u0028\u0029",
+        name: "wcs_minutes_since_order_created",
+        summary: "Returns\u0020how\u0020many\u0020minutes\u0020ago\u0020the\u0020order\u0020was\u0020created.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_minutes_since_order_created"
+    },{
+        fqsen: "\\wcs_seconds_since_order_created\u0028\u0029",
+        name: "wcs_seconds_since_order_created",
+        summary: "Returns\u0020how\u0020many\u0020seconds\u0020ago\u0020the\u0020order\u0020was\u0020created.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_seconds_since_order_created"
+    },{
+        fqsen: "\\wcs_find_matching_line_item\u0028\u0029",
+        name: "wcs_find_matching_line_item",
+        summary: "Finds\u0020a\u0020corresponding\u0020subscription\u0020line\u0020item\u0020on\u0020an\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_find_matching_line_item"
+    },{
+        fqsen: "\\wcs_order_contains_product\u0028\u0029",
+        name: "wcs_order_contains_product",
+        summary: "Checks\u0020if\u0020an\u0020order\u0020contains\u0020a\u0020product.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_order_contains_product"
+    },{
+        fqsen: "\\wcs_order_contains_early_renewal\u0028\u0029",
+        name: "wcs_order_contains_early_renewal",
+        summary: "Check\u0020if\u0020a\u0020given\u0020order\u0020is\u0020a\u0020subscription\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_order_contains_early_renewal"
+    },{
+        fqsen: "\\wcs_get_price_including_tax\u0028\u0029",
+        name: "wcs_get_price_including_tax",
+        summary: "For\u0020a\u0020given\u0020product,\u0020and\u0020optionally\u0020price\/qty,\u0020work\u0020out\u0020the\u0020sign\u002Dup\u0020with\u0020tax\u0020included,\u0020based\u0020on\u0020store\u0020settings.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_price_including_tax"
+    },{
+        fqsen: "\\wcs_get_price_excluding_tax\u0028\u0029",
+        name: "wcs_get_price_excluding_tax",
+        summary: "For\u0020a\u0020given\u0020product,\u0020and\u0020optionally\u0020price\/qty,\u0020work\u0020out\u0020the\u0020sign\u002Dup\u0020fee\u0020with\u0020tax\u0020excluded,\u0020based\u0020on\u0020store\u0020settings.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_price_excluding_tax"
+    },{
+        fqsen: "\\wcs_get_price_html_from_text\u0028\u0029",
+        name: "wcs_get_price_html_from_text",
+        summary: "Returns\u0020a\u0020\u0027from\u0027\u0020prefix\u0020if\u0020you\u0020want\u0020to\u0020show\u0020where\u0020prices\u0020start\u0020at.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_price_html_from_text"
+    },{
+        fqsen: "\\wcs_get_variation_prices\u0028\u0029",
+        name: "wcs_get_variation_prices",
+        summary: "Get\u0020an\u0020array\u0020of\u0020the\u0020prices,\u0020used\u0020to\u0020help\u0020determine\u0020min\/max\u0020values.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_variation_prices"
+    },{
+        fqsen: "\\wcs_get_min_max_variation_data\u0028\u0029",
+        name: "wcs_get_min_max_variation_data",
+        summary: "Get\u0020an\u0020array\u0020of\u0020the\u0020minimum\u0020and\u0020maximum\u0020priced\u0020variations\u0020based\u0020on\u0020subscription\u0020billing\u0020terms.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_min_max_variation_data"
+    },{
+        fqsen: "\\wcs_calculate_min_max_variations\u0028\u0029",
+        name: "wcs_calculate_min_max_variations",
+        summary: "Determine\u0020the\u0020minimum\u0020and\u0020maximum\u0020values\u0020for\u0020a\u0020set\u0020of\u0020structured\u0020subscription\nprice\u0020data\u0020in\u0020a\u0020form\u0020created\u0020by\u0020\u0040see\u0020wcs_get_min_max_variation_data\u0028\u0029",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_calculate_min_max_variations"
+    },{
+        fqsen: "\\wcs_create_renewal_order\u0028\u0029",
+        name: "wcs_create_renewal_order",
+        summary: "Create\u0020a\u0020renewal\u0020order\u0020to\u0020record\u0020a\u0020scheduled\u0020subscription\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_create_renewal_order"
+    },{
+        fqsen: "\\wcs_order_contains_renewal\u0028\u0029",
+        name: "wcs_order_contains_renewal",
+        summary: "Check\u0020if\u0020a\u0020given\u0020order\u0020is\u0020a\u0020subscription\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_order_contains_renewal"
+    },{
+        fqsen: "\\wcs_cart_contains_renewal\u0028\u0029",
+        name: "wcs_cart_contains_renewal",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020product\u0020renewal.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_contains_renewal"
+    },{
+        fqsen: "\\wcs_cart_contains_failed_renewal_order_payment\u0028\u0029",
+        name: "wcs_cart_contains_failed_renewal_order_payment",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020product\u0020renewal\u0020for\u0020a\u0020failed\u0020renewal\u0020payment.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_contains_failed_renewal_order_payment"
+    },{
+        fqsen: "\\wcs_get_subscriptions_for_renewal_order\u0028\u0029",
+        name: "wcs_get_subscriptions_for_renewal_order",
+        summary: "Get\u0020the\u0020subscription\/s\u0020to\u0020which\u0020a\u0020resubscribe\u0020order\u0020relates.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscriptions_for_renewal_order"
+    },{
+        fqsen: "\\wcs_get_last_non_early_renewal_order\u0028\u0029",
+        name: "wcs_get_last_non_early_renewal_order",
+        summary: "Get\u0020the\u0020last\u0020renewal\u0020order\u0020which\u0020isn\u0027t\u0020an\u0020early\u0020renewal\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_last_non_early_renewal_order"
+    },{
+        fqsen: "\\wcs_is_manual_renewal_required\u0028\u0029",
+        name: "wcs_is_manual_renewal_required",
+        summary: "Checks\u0020if\u0020manual\u0020renewals\u0020are\u0020required\u0020\u002D\u0020automatic\u0020renewals\u0020are\u0020disabled.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_manual_renewal_required"
+    },{
+        fqsen: "\\wcs_is_manual_renewal_enabled\u0028\u0029",
+        name: "wcs_is_manual_renewal_enabled",
+        summary: "Checks\u0020if\u0020manual\u0020renewals\u0020are\u0020enabled.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_manual_renewal_enabled"
+    },{
+        fqsen: "\\wcs_order_contains_resubscribe\u0028\u0029",
+        name: "wcs_order_contains_resubscribe",
+        summary: "Check\u0020if\u0020a\u0020given\u0020order\u0020was\u0020created\u0020to\u0020resubscribe\u0020to\u0020a\u0020cancelled\u0020or\u0020expired\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_order_contains_resubscribe"
+    },{
+        fqsen: "\\wcs_create_resubscribe_order\u0028\u0029",
+        name: "wcs_create_resubscribe_order",
+        summary: "Create\u0020a\u0020resubscribe\u0020order\u0020to\u0020record\u0020a\u0020customer\u0020resubscribing\u0020to\u0020an\u0020expired\u0020or\u0020cancelled\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_create_resubscribe_order"
+    },{
+        fqsen: "\\wcs_get_users_resubscribe_link\u0028\u0029",
+        name: "wcs_get_users_resubscribe_link",
+        summary: "Returns\u0020a\u0020URL\u0020including\u0020required\u0020parameters\u0020for\u0020an\u0020authenticated\u0020user\u0020to\u0020renew\u0020a\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_users_resubscribe_link"
+    },{
+        fqsen: "\\wcs_get_users_resubscribe_link_for_product\u0028\u0029",
+        name: "wcs_get_users_resubscribe_link_for_product",
+        summary: "Returns\u0020a\u0020URL\u0020including\u0020required\u0020parameters\u0020for\u0020an\u0020authenticated\u0020user\u0020to\u0020renew\u0020a\u0020subscription\u0020by\u0020product\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_users_resubscribe_link_for_product"
+    },{
+        fqsen: "\\wcs_cart_contains_resubscribe\u0028\u0029",
+        name: "wcs_cart_contains_resubscribe",
+        summary: "Checks\u0020the\u0020cart\u0020to\u0020see\u0020if\u0020it\u0020contains\u0020a\u0020subscription\u0020product\u0020renewal.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_contains_resubscribe"
+    },{
+        fqsen: "\\wcs_get_subscriptions_for_resubscribe_order\u0028\u0029",
+        name: "wcs_get_subscriptions_for_resubscribe_order",
+        summary: "Get\u0020the\u0020subscription\u0020to\u0020which\u0020a\u0020renewal\u0020order\u0020relates.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscriptions_for_resubscribe_order"
+    },{
+        fqsen: "\\wcs_can_user_resubscribe_to\u0028\u0029",
+        name: "wcs_can_user_resubscribe_to",
+        summary: "Check\u0020if\u0020a\u0020user\u0020can\u0020resubscribe\u0020to\u0020an\u0020expired\u0020or\u0020cancelled\u0020subscription\u0020by\u0020creating\u0020a\nnew\u0020subscription\u0020with\u0020the\u0020same\u0020terms.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_can_user_resubscribe_to"
+    },{
+        fqsen: "\\wcs_order_contains_switch\u0028\u0029",
+        name: "wcs_order_contains_switch",
+        summary: "Check\u0020if\u0020a\u0020given\u0020order\u0020was\u0020to\u0020switch\u0020a\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_order_contains_switch"
+    },{
+        fqsen: "\\wcs_get_subscriptions_for_switch_order\u0028\u0029",
+        name: "wcs_get_subscriptions_for_switch_order",
+        summary: "Get\u0020the\u0020subscriptions\u0020that\u0020had\u0020an\u0020item\u0020switch\u0020for\u0020a\u0020given\u0020order\u0020\u0028if\u0020any\u0029.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscriptions_for_switch_order"
+    },{
+        fqsen: "\\wcs_get_switch_orders_for_subscription\u0028\u0029",
+        name: "wcs_get_switch_orders_for_subscription",
+        summary: "Get\u0020all\u0020the\u0020orders\u0020which\u0020have\u0020recorded\u0020a\u0020switch\u0020for\u0020a\u0020given\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_switch_orders_for_subscription"
+    },{
+        fqsen: "\\wcs_is_product_switchable_type\u0028\u0029",
+        name: "wcs_is_product_switchable_type",
+        summary: "Checks\u0020if\u0020a\u0020given\u0020product\u0020is\u0020of\u0020a\u0020switchable\u0020type",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_product_switchable_type"
+    },{
+        fqsen: "\\wcs_cart_contains_switches\u0028\u0029",
+        name: "wcs_cart_contains_switches",
+        summary: "Check\u0020if\u0020the\u0020cart\u0020includes\u0020any\u0020items\u0020which\u0020are\u0020to\u0020switch\u0020an\u0020existing\u0020subscription\u0027s\u0020contents.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_cart_contains_switches"
+    },{
+        fqsen: "\\wcs_get_cart_item_switch_type\u0028\u0029",
+        name: "wcs_get_cart_item_switch_type",
+        summary: "Gets\u0020the\u0020switch\u0020direction\u0020of\u0020a\u0020cart\u0020item.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_cart_item_switch_type"
+    },{
+        fqsen: "\\wcs_get_subscription_period_strings\u0028\u0029",
+        name: "wcs_get_subscription_period_strings",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020possible\u0020subscription\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_period_strings"
+    },{
+        fqsen: "\\wcs_get_subscription_trial_period_strings\u0028\u0029",
+        name: "wcs_get_subscription_trial_period_strings",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020possible\u0020subscription\u0020trial\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_trial_period_strings"
+    },{
+        fqsen: "\\wcs_get_non_cached_subscription_ranges\u0028\u0029",
+        name: "wcs_get_non_cached_subscription_ranges",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020subscription\u0020lengths.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_non_cached_subscription_ranges"
+    },{
+        fqsen: "\\wcs_get_subscription_ranges\u0028\u0029",
+        name: "wcs_get_subscription_ranges",
+        summary: "Retaining\u0020the\u0020API,\u0020it\u0020makes\u0020use\u0020of\u0020the\u0020transient\u0020functionality.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_ranges"
+    },{
+        fqsen: "\\wcs_get_subscription_period_interval_strings\u0028\u0029",
+        name: "wcs_get_subscription_period_interval_strings",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020possible\u0020subscription\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_period_interval_strings"
+    },{
+        fqsen: "\\wcs_get_available_time_periods\u0028\u0029",
+        name: "wcs_get_available_time_periods",
+        summary: "Return\u0020an\u0020i18n\u0027ified\u0020associative\u0020array\u0020of\u0020all\u0020time\u0020periods\u0020allowed\u0020for\u0020subscriptions.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_available_time_periods"
+    },{
+        fqsen: "\\wcs_get_subscription_trial_lengths\u0028\u0029",
+        name: "wcs_get_subscription_trial_lengths",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020allowed\u0020trial\u0020period\u0020lengths.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_trial_lengths"
+    },{
+        fqsen: "\\wcs_add_time\u0028\u0029",
+        name: "wcs_add_time",
+        summary: "Convenience\u0020wrapper\u0020for\u0020adding\u0020\u0022\u007Bn\u007D\u0020\u007Bperiods\u007D\u0022\u0020to\u0020a\u0020timestamp\u0020\u0028e.g.\u00202\u0020months\u0020or\u00205\u0020days\u0029.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_add_time"
+    },{
+        fqsen: "\\wcs_add_months\u0028\u0029",
+        name: "wcs_add_months",
+        summary: "Workaround\u0020the\u0020last\u0020day\u0020of\u0020month\u0020quirk\u0020in\u0020PHP\u0027s\u0020strtotime\u0020function.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_add_months"
+    },{
+        fqsen: "\\wcs_estimate_periods_between\u0028\u0029",
+        name: "wcs_estimate_periods_between",
+        summary: "Estimate\u0020how\u0020many\u0020days,\u0020weeks,\u0020months\u0020or\u0020years\u0020there\u0020are\u0020between\u0020now\u0020and\u0020a\u0020given\ndate\u0020in\u0020the\u0020future.\u0020Estimates\u0020the\u0020minimum\u0020total\u0020of\u0020periods.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_estimate_periods_between"
+    },{
+        fqsen: "\\wcs_number_of_leap_days\u0028\u0029",
+        name: "wcs_number_of_leap_days",
+        summary: "Utility\u0020function\u0020to\u0020find\u0020out\u0020how\u0020many\u0020leap\u0020days\u0020are\u0020there\u0020between\u0020two\u0020given\u0020dates.\u0020The\u0020reason\u0020we\u0020need\u0020this\u0020is\u0020because\nthe\u0020constant\u0020YEAR_IN_SECONDS\u0020assumes\u0020a\u0020365\u0020year,\u0020which\u0020means\u0020some\u0020of\u0020the\u0020calculations\u0020are\u0020going\u0020to\u0020be\u0020off\u0020by\u0020a\u0020day.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_number_of_leap_days"
+    },{
+        fqsen: "\\wcs_is_leap_year\u0028\u0029",
+        name: "wcs_is_leap_year",
+        summary: "Filter\u0020function\u0020used\u0020in\u0020wcs_number_of_leap_days",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_leap_year"
+    },{
+        fqsen: "\\wcs_estimate_period_between\u0028\u0029",
+        name: "wcs_estimate_period_between",
+        summary: "Method\u0020to\u0020try\u0020to\u0020determine\u0020the\u0020period\u0020of\u0020subscriptions\u0020if\u0020data\u0020is\u0020missing.\u0020It\u0020tries\u0020the\u0020following,\u0020in\u0020order\u003A",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_estimate_period_between"
+    },{
+        fqsen: "\\wcs_find_full_months_between\u0028\u0029",
+        name: "wcs_find_full_months_between",
+        summary: "Finds\u0020full\u0020months\u0020between\u0020two\u0020dates\u0020and\u0020the\u0020remaining\u0020seconds\u0020after\u0020the\u0020end\u0020of\u0020the\u0020last\u0020full\u0020month.\u0020Takes\u0020into\u0020account\nleap\u0020years\u0020and\u0020variable\u0020number\u0020of\u0020days\u0020in\u0020months.\u0020Uses\u0020wcs_add_months",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_find_full_months_between"
+    },{
+        fqsen: "\\wcs_discard_zero_intervals\u0028\u0029",
+        name: "wcs_discard_zero_intervals",
+        summary: "Used\u0020in\u0020an\u0020array_filter,\u0020removes\u0020elements\u0020where\u0020intervals\u0020are\u0020less\u0020than\u00200",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_discard_zero_intervals"
+    },{
+        fqsen: "\\wcs_discard_high_deviations\u0028\u0029",
+        name: "wcs_discard_high_deviations",
+        summary: "Used\u0020in\u0020an\u0020array_filter,\u0020discards\u0020high\u0020deviation\u0020elements.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_discard_high_deviations"
+    },{
+        fqsen: "\\wcs_match_intervals\u0028\u0029",
+        name: "wcs_match_intervals",
+        summary: "Used\u0020in\u0020an\u0020array_filter,\u0020tries\u0020to\u0020match\u0020intervals\u0020against\u0020passed\u0020in\u0020interval",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_match_intervals"
+    },{
+        fqsen: "\\wcs_sort_by_intervals\u0028\u0029",
+        name: "wcs_sort_by_intervals",
+        summary: "Used\u0020in\u0020a\u0020usort,\u0020responsible\u0020for\u0020making\u0020sure\u0020the\u0020array\u0020is\u0020sorted\u0020in\u0020ascending\u0020order\u0020by\u0020intervals",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_sort_by_intervals"
+    },{
+        fqsen: "\\wcs_sort_by_fractions\u0028\u0029",
+        name: "wcs_sort_by_fractions",
+        summary: "Used\u0020in\u0020a\u0020usort,\u0020responsible\u0020for\u0020making\u0020sure\u0020the\u0020array\u0020is\u0020sorted\u0020in\u0020descending\u0020order\u0020by\u0020fraction.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_sort_by_fractions"
+    },{
+        fqsen: "\\wcs_is_datetime_mysql_format\u0028\u0029",
+        name: "wcs_is_datetime_mysql_format",
+        summary: "PHP\u0020on\u0020Windows\u0020does\u0020not\u0020have\u0020strptime\u0020function.\u0020Therefore\u0020this\u0020is\u0020what\u0020we\u0027re\u0020using\u0020to\u0020check\nwhether\u0020the\u0020given\u0020time\u0020is\u0020of\u0020a\u0020specific\u0020format.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_datetime_mysql_format"
+    },{
+        fqsen: "\\wcs_date_to_time\u0028\u0029",
+        name: "wcs_date_to_time",
+        summary: "Convert\u0020a\u0020date\u0020string\u0020into\u0020a\u0020timestamp\u0020without\u0020ever\u0020adding\u0020or\u0020deducting\u0020time.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_date_to_time"
+    },{
+        fqsen: "\\wcs_strtotime_dark_knight\u0028\u0029",
+        name: "wcs_strtotime_dark_knight",
+        summary: "A\u0020wrapper\u0020for\u0020strtotime\u0028\u0029\u0020designed\u0020to\u0020stand\u0020up\u0020against\u0020those\u0020who\u0020want\u0020to\u0020watch\u0020the\u0020WordPress\u0020burn.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_strtotime_dark_knight"
+    },{
+        fqsen: "\\wcs_get_days_in_cycle\u0028\u0029",
+        name: "wcs_get_days_in_cycle",
+        summary: "Find\u0020the\u0020average\u0020number\u0020of\u0020days\u0020for\u0020a\u0020given\u0020billing\u0020period\u0020and\u0020interval.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_days_in_cycle"
+    },{
+        fqsen: "\\wcs_set_local_timezone\u0028\u0029",
+        name: "wcs_set_local_timezone",
+        summary: "Set\u0020a\u0020DateTime\u0027s\u0020timezone\u0020to\u0020the\u0020WordPress\u0020site\u0027s\u0020timezone,\u0020or\u0020a\u0020UTC\u0020offset\nif\u0020no\u0020timezone\u0020string\u0020is\u0020available.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_set_local_timezone"
+    },{
+        fqsen: "\\wcs_get_sites_timezone\u0028\u0029",
+        name: "wcs_get_sites_timezone",
+        summary: "Get\u0020an\u0020instance\u0020of\u0020the\u0020site\u0027s\u0020timezone.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_sites_timezone"
+    },{
+        fqsen: "\\wcs_get_subscription_ranges_tlc\u0028\u0029",
+        name: "wcs_get_subscription_ranges_tlc",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020subscription\u0020lengths.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_ranges_tlc"
+    },{
+        fqsen: "\\wcs_get_datetime_from\u0028\u0029",
+        name: "wcs_get_datetime_from",
+        summary: "Take\u0020a\u0020date\u0020in\u0020the\u0020form\u0020of\u0020a\u0020timestamp,\u0020MySQL\u0020date\/time\u0020string\u0020or\u0020DateTime\u0020object\u0020\u0028or\u0020perhaps\na\u0020WC_Datetime\u0020object\u0020when\u0020WC\u0020\u003E\u00203.0\u0020is\u0020active\u0029\u0020and\u0020create\u0020a\u0020WC_DateTime\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_datetime_from"
+    },{
+        fqsen: "\\wcs_get_datetime_utc_string\u0028\u0029",
+        name: "wcs_get_datetime_utc_string",
+        summary: "Get\u0020a\u0020MySQL\u0020date\/time\u0020string\u0020in\u0020UTC\u0020timezone\u0020from\u0020a\u0020WC_Datetime\u0020object.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_datetime_utc_string"
+    },{
+        fqsen: "\\wcs_format_datetime\u0028\u0029",
+        name: "wcs_format_datetime",
+        summary: "Format\u0020a\u0020date\u0020for\u0020output,\u0020a\u0020wrapper\u0020for\u0020wcs_format_datetime\u0028\u0029\u0020introduced\u0020with\u0020WC\u00203.0.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_format_datetime"
+    },{
+        fqsen: "\\wcs_get_longest_period\u0028\u0029",
+        name: "wcs_get_longest_period",
+        summary: "Compares\u0020two\u0020periods\u0020and\u0020returns\u0020the\u0020longest\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_longest_period"
+    },{
+        fqsen: "\\wcs_get_shortest_period\u0028\u0029",
+        name: "wcs_get_shortest_period",
+        summary: "Compares\u0020two\u0020periods\u0020and\u0020returns\u0020the\u0020shortest\u0020period.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_shortest_period"
+    },{
+        fqsen: "\\wcs_make_user_active\u0028\u0029",
+        name: "wcs_make_user_active",
+        summary: "Give\u0020a\u0020user\u0020the\u0020Subscription\u0027s\u0020default\u0020subscriber\u0020role",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_make_user_active"
+    },{
+        fqsen: "\\wcs_make_user_inactive\u0028\u0029",
+        name: "wcs_make_user_inactive",
+        summary: "Give\u0020a\u0020user\u0020the\u0020Subscription\u0027s\u0020default\u0020subscriber\u0027s\u0020inactive\u0020role",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_make_user_inactive"
+    },{
+        fqsen: "\\wcs_maybe_make_user_inactive\u0028\u0029",
+        name: "wcs_maybe_make_user_inactive",
+        summary: "Give\u0020a\u0020user\u0020the\u0020Subscription\u0027s\u0020default\u0020subscriber\u0027s\u0020inactive\u0020role\u0020if\u0020they\u0020do\u0020not\u0020have\u0020an\u0020active\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_maybe_make_user_inactive"
+    },{
+        fqsen: "\\wcs_maybe_make_user_inactive_for\u0028\u0029",
+        name: "wcs_maybe_make_user_inactive_for",
+        summary: "Wrapper\u0020for\u0020wcs_maybe_make_user_inactive\u0028\u0029\u0020that\u0020accepts\u0020a\u0020subscription\u0020instead\u0020of\u0020a\u0020user\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_maybe_make_user_inactive_for"
+    },{
+        fqsen: "\\wcs_update_users_role\u0028\u0029",
+        name: "wcs_update_users_role",
+        summary: "Update\u0020a\u0020user\u0027s\u0020role\u0020to\u0020a\u0020special\u0020subscription\u0027s\u0020role",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_update_users_role"
+    },{
+        fqsen: "\\wcs_get_new_user_role_names\u0028\u0029",
+        name: "wcs_get_new_user_role_names",
+        summary: "Gets\u0020default\u0020new\u0020and\u0020old\u0020role\u0020names\u0020if\u0020the\u0020new\u0020role\u0020is\u0020\u0027default_subscriber_role\u0027.\u0020Otherwise\u0020returns\u0020role_new\u0020and\u0020an\nempty\u0020string.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_new_user_role_names"
+    },{
+        fqsen: "\\wcs_user_has_subscription\u0028\u0029",
+        name: "wcs_user_has_subscription",
+        summary: "Check\u0020if\u0020a\u0020user\u0020has\u0020a\u0020subscription,\u0020optionally\u0020to\u0020a\u0020specific\u0020product\u0020and\/or\u0020with\u0020a\u0020certain\u0020status.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_user_has_subscription"
+    },{
+        fqsen: "\\wcs_get_users_subscriptions\u0028\u0029",
+        name: "wcs_get_users_subscriptions",
+        summary: "Gets\u0020all\u0020the\u0020active\u0020and\u0020inactive\u0020subscriptions\u0020for\u0020a\u0020user,\u0020as\u0020specified\u0020by\u0020\u0024user_id",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_users_subscriptions"
+    },{
+        fqsen: "\\wcs_get_users_subscription_ids\u0028\u0029",
+        name: "wcs_get_users_subscription_ids",
+        summary: "Get\u0020subscription\u0020IDs\u0020for\u0020the\u0020given\u0020user.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_users_subscription_ids"
+    },{
+        fqsen: "\\wcs_get_cached_user_subscription_ids\u0028\u0029",
+        name: "wcs_get_cached_user_subscription_ids",
+        summary: "Get\u0020subscription\u0020IDs\u0020for\u0020a\u0020user\u0020using\u0020caching.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_cached_user_subscription_ids"
+    },{
+        fqsen: "\\wcs_get_users_change_status_link\u0028\u0029",
+        name: "wcs_get_users_change_status_link",
+        summary: "Return\u0020a\u0020link\u0020for\u0020subscribers\u0020to\u0020change\u0020the\u0020status\u0020of\u0020their\u0020subscription,\u0020as\u0020specified\u0020with\u0020\u0024status\u0020parameter",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_users_change_status_link"
+    },{
+        fqsen: "\\wcs_can_user_put_subscription_on_hold\u0028\u0029",
+        name: "wcs_can_user_put_subscription_on_hold",
+        summary: "Check\u0020if\u0020a\u0020given\u0020user\u0020\u0028or\u0020the\u0020currently\u0020logged\u0020in\u0020user\u0029\u0020has\u0020permission\u0020to\u0020put\u0020a\u0020subscription\u0020on\u0020hold.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_can_user_put_subscription_on_hold"
+    },{
+        fqsen: "\\wcs_get_all_user_actions_for_subscription\u0028\u0029",
+        name: "wcs_get_all_user_actions_for_subscription",
+        summary: "Retrieve\u0020available\u0020actions\u0020that\u0020a\u0020user\u0020can\u0020perform\u0020on\u0020the\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_all_user_actions_for_subscription"
+    },{
+        fqsen: "\\wcs_user_has_capability\u0028\u0029",
+        name: "wcs_user_has_capability",
+        summary: "Checks\u0020if\u0020a\u0020user\u0020has\u0020a\u0020certain\u0020capability",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_user_has_capability"
+    },{
+        fqsen: "\\wcs_grant_shop_manager_editable_roles\u0028\u0029",
+        name: "wcs_grant_shop_manager_editable_roles",
+        summary: "Grants\u0020shop\u0020managers\u0020the\u0020capability\u0020to\u0020edit\u0020subscribers.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_grant_shop_manager_editable_roles"
+    },{
+        fqsen: "\\wcs_get_subscriber_role\u0028\u0029",
+        name: "wcs_get_subscriber_role",
+        summary: "Gets\u0020the\u0020subscriber\u0020role.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscriber_role"
+    },{
+        fqsen: "\\wcs_get_inactive_subscriber_role\u0028\u0029",
+        name: "wcs_get_inactive_subscriber_role",
+        summary: "Gets\u0020the\u0020inactive\u0020subscriber\u0020role.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_inactive_subscriber_role"
+    },{
+        fqsen: "\\wcs_is_subscription\u0028\u0029",
+        name: "wcs_is_subscription",
+        summary: "Check\u0020if\u0020a\u0020given\u0020object\u0020is\u0020a\u0020WC_Subscription\u0020\u0028or\u0020child\u0020class\u0020of\u0020WC_Subscription\u0029,\u0020or\u0020if\u0020a\u0020given\u0020ID\nbelongs\u0020to\u0020a\u0020post\u0020with\u0020the\u0020subscription\u0020post\u0020type\u0020\u0028\u0027shop_subscription\u0027\u0029",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_subscription"
+    },{
+        fqsen: "\\wcs_do_subscriptions_exist\u0028\u0029",
+        name: "wcs_do_subscriptions_exist",
+        summary: "A\u0020very\u0020simple\u0020check.\u0020Basically\u0020if\u0020we\u0020have\u0020ANY\u0020subscriptions\u0020in\u0020the\u0020database,\u0020then\u0020the\u0020user\u0020has\u0020probably\u0020set\u0020at\nleast\u0020one\u0020up,\u0020so\u0020we\u0020can\u0020give\u0020them\u0020the\u0020standard\u0020message.\u0020Otherwise",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_do_subscriptions_exist"
+    },{
+        fqsen: "\\wcs_get_subscription\u0028\u0029",
+        name: "wcs_get_subscription",
+        summary: "Main\u0020function\u0020for\u0020returning\u0020subscriptions.\u0020Wrapper\u0020for\u0020the\u0020wc_get_order\u0028\u0029\u0020method.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription"
+    },{
+        fqsen: "\\wcs_create_subscription\u0028\u0029",
+        name: "wcs_create_subscription",
+        summary: "Create\u0020a\u0020new\u0020subscription",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_create_subscription"
+    },{
+        fqsen: "\\wcs_get_subscription_statuses\u0028\u0029",
+        name: "wcs_get_subscription_statuses",
+        summary: "Return\u0020an\u0020array\u0020of\u0020subscription\u0020status\u0020types,\u0020similar\u0020to\u0020\u0040see\u0020wc_get_order_statuses\u0028\u0029",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_statuses"
+    },{
+        fqsen: "\\wcs_get_subscription_status_name\u0028\u0029",
+        name: "wcs_get_subscription_status_name",
+        summary: "Get\u0020the\u0020nice\u0020name\u0020for\u0020a\u0020subscription\u0027s\u0020status",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_status_name"
+    },{
+        fqsen: "\\wcs_get_address_type_to_display\u0028\u0029",
+        name: "wcs_get_address_type_to_display",
+        summary: "Helper\u0020function\u0020to\u0020return\u0020a\u0020localised\u0020display\u0020name\u0020for\u0020an\u0020address\u0020type",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_address_type_to_display"
+    },{
+        fqsen: "\\wcs_get_subscription_date_types\u0028\u0029",
+        name: "wcs_get_subscription_date_types",
+        summary: "Returns\u0020an\u0020array\u0020of\u0020subscription\u0020dates",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_date_types"
+    },{
+        fqsen: "\\wcs_display_date_type\u0028\u0029",
+        name: "wcs_display_date_type",
+        summary: "Find\u0020whether\u0020to\u0020display\u0020a\u0020specific\u0020date\u0020type\u0020in\u0020the\u0020admin\u0020area",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_display_date_type"
+    },{
+        fqsen: "\\wcs_get_date_meta_key\u0028\u0029",
+        name: "wcs_get_date_meta_key",
+        summary: "Get\u0020the\u0020meta\u0020key\u0020value\u0020for\u0020storing\u0020a\u0020date\u0020in\u0020the\u0020subscription\u0027s\u0020post\u0020meta\u0020table.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_date_meta_key"
+    },{
+        fqsen: "\\wcs_normalise_date_type_key\u0028\u0029",
+        name: "wcs_normalise_date_type_key",
+        summary: "Accept\u0020a\u0020variety\u0020of\u0020date\u0020type\u0020keys\u0020and\u0020normalise\u0020them\u0020to\u0020current\u0020canonical\u0020key.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_normalise_date_type_key"
+    },{
+        fqsen: "\\wcs_sanitize_subscription_status_key\u0028\u0029",
+        name: "wcs_sanitize_subscription_status_key",
+        summary: "Utility\u0020function\u0020to\u0020standardise\u0020status\u0020keys\u003A\n\u002D\u0020turns\u0020\u0027pending\u0027\u0020into\u0020\u0027wc\u002Dpending\u0027.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_sanitize_subscription_status_key"
+    },{
+        fqsen: "\\wcs_get_subscriptions\u0028\u0029",
+        name: "wcs_get_subscriptions",
+        summary: "A\u0020general\u0020purpose\u0020function\u0020for\u0020grabbing\u0020an\u0020array\u0020of\u0020subscriptions\u0020in\u0020form\u0020of\u0020post_id\u0020\u003D\u003E\u0020WC_Subscription",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscriptions"
+    },{
+        fqsen: "\\wcs_get_subscriptions_for_product\u0028\u0029",
+        name: "wcs_get_subscriptions_for_product",
+        summary: "Get\u0020subscriptions\u0020that\u0020contain\u0020a\u0020certain\u0020product,\u0020specified\u0020by\u0020ID.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscriptions_for_product"
+    },{
+        fqsen: "\\wcs_get_line_items_with_a_trial\u0028\u0029",
+        name: "wcs_get_line_items_with_a_trial",
+        summary: "Get\u0020all\u0020subscription\u0020items\u0020which\u0020have\u0020a\u0020trial.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_line_items_with_a_trial"
+    },{
+        fqsen: "\\wcs_can_items_be_removed\u0028\u0029",
+        name: "wcs_can_items_be_removed",
+        summary: "Checks\u0020if\u0020the\u0020user\u0020can\u0020be\u0020granted\u0020the\u0020permission\u0020to\u0020remove\u0020a\u0020line\u0020item\u0020from\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_can_items_be_removed"
+    },{
+        fqsen: "\\wcs_can_item_be_removed\u0028\u0029",
+        name: "wcs_can_item_be_removed",
+        summary: "Checks\u0020if\u0020the\u0020user\u0020can\u0020be\u0020granted\u0020the\u0020permission\u0020to\u0020remove\u0020a\u0020particular\u0020line\u0020item\u0020from\u0020the\u0020subscription.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_can_item_be_removed"
+    },{
+        fqsen: "\\wcs_get_order_items_product_id\u0028\u0029",
+        name: "wcs_get_order_items_product_id",
+        summary: "Get\u0020the\u0020Product\u0020ID\u0020for\u0020an\u0020order\u0027s\u0020line\u0020item\u0020\u0028only\u0020the\u0020product\u0020ID,\u0020not\u0020the\u0020variation\u0020ID,\u0020even\u0020if\u0020the\u0020order\u0020item\nis\u0020for\u0020a\u0020variation\u0029.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_order_items_product_id"
+    },{
+        fqsen: "\\wcs_get_canonical_product_id\u0028\u0029",
+        name: "wcs_get_canonical_product_id",
+        summary: "Get\u0020the\u0020variation\u0020ID\u0020for\u0020variation\u0020items\u0020or\u0020the\u0020product\u0020ID\u0020for\u0020non\u002Dvariation\u0020items.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_canonical_product_id"
+    },{
+        fqsen: "\\wcs_get_subscription_ended_statuses\u0028\u0029",
+        name: "wcs_get_subscription_ended_statuses",
+        summary: "Return\u0020an\u0020array\u0020statuses\u0020used\u0020to\u0020describe\u0020when\u0020a\u0020subscriptions\u0020has\u0020been\u0020marked\u0020as\u0020ending\u0020or\u0020has\u0020ended.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_subscription_ended_statuses"
+    },{
+        fqsen: "\\wcs_is_view_subscription_page\u0028\u0029",
+        name: "wcs_is_view_subscription_page",
+        summary: "Returns\u0020true\u0020when\u0020on\u0020the\u0020My\u0020Account\u0020\u003E\u0020View\u0020Subscription\u0020front\u0020end\u0020page.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_view_subscription_page"
+    },{
+        fqsen: "\\wcs_get_image_asset_url\u0028\u0029",
+        name: "wcs_get_image_asset_url",
+        summary: "Get\u0020a\u0020WooCommerce\u0020Subscription\u0027s\u0020image\u0020asset\u0020url.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_image_asset_url"
+    },{
+        fqsen: "\\wcs_subscription_search\u0028\u0029",
+        name: "wcs_subscription_search",
+        summary: "Search\u0020subscriptions",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_subscription_search"
+    },{
+        fqsen: "\\wcs_set_payment_meta\u0028\u0029",
+        name: "wcs_set_payment_meta",
+        summary: "Set\u0020payment\u0020method\u0020meta\u0020data\u0020for\u0020a\u0020subscription\u0020or\u0020order.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_set_payment_meta"
+    },{
+        fqsen: "\\wcs_get_total_line_item_product_quantity\u0028\u0029",
+        name: "wcs_get_total_line_item_product_quantity",
+        summary: "Get\u0020total\u0020quantity\u0020of\u0020a\u0020product\u0020on\u0020a\u0020subscription\u0020or\u0020order,\u0020even\u0020across\u0020multiple\u0020line\u0020items.\u0020So\u0020we\u0020can\u0020determine\u0020if\u0020product\u0020has\u0020stock\u0020available.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_get_total_line_item_product_quantity"
+    },{
+        fqsen: "\\wcs_is_large_site\u0028\u0029",
+        name: "wcs_is_large_site",
+        summary: "Determines\u0020if\u0020a\u0020site\u0020can\u0020be\u0020considered\u0020large\u0020for\u0020the\u0020purposes\u0020of\u0020performance.",
+        url: "https://woocommerce.github.io/code-reference/namespaces/default.html#function_wcs_is_large_site"
     },{
         fqsen: "\\add_woocommerce_inbox_variant\u0028\u0029",
         name: "add_woocommerce_inbox_variant",

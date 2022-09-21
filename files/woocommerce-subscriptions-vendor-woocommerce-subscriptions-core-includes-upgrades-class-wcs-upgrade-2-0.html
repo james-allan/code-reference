@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html">WooCommerceSubscriptionsAdminUpgrades</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-upgrade-2-0.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Upgrade subscriptions data to v2.0
+ *
+ * @author      Prospress
+ * @category    Admin
+ * @package     WooCommerce Subscriptions/Admin/Upgrades
+ * @version     2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_Upgrade_2_0 {
+
+	/* Cache of order item meta keys that were used to store subscription data in v1.5 */
+	private static $subscription_item_meta_keys = array(
+		&#039;_recurring_line_total&#039;,
+		&#039;_recurring_line_tax&#039;,
+		&#039;_recurring_line_subtotal&#039;,
+		&#039;_recurring_line_subtotal_tax&#039;,
+		&#039;_recurring_line_tax_data&#039;,
+		&#039;_subscription_suspension_count&#039;,
+		&#039;_subscription_period&#039;,
+		&#039;_subscription_interval&#039;,
+		&#039;_subscription_trial_length&#039;,
+		&#039;_subscription_trial_period&#039;,
+		&#039;_subscription_length&#039;,
+		&#039;_subscription_sign_up_fee&#039;,
+		&#039;_subscription_failed_payments&#039;,
+		&#039;_subscription_recurring_amount&#039;,
+		&#039;_subscription_start_date&#039;,
+		&#039;_subscription_trial_expiry_date&#039;,
+		&#039;_subscription_expiry_date&#039;,
+		&#039;_subscription_end_date&#039;,
+		&#039;_subscription_status&#039;,
+		&#039;_subscription_completed_payments&#039;,
+	);
+
+	/**
+	 * Migrate subscriptions out of order item meta and into post/post meta tables for their own post type.
+	 *
+	 * @since 2.0
+	 */
+	public static function upgrade_subscriptions( $batch_size ) {
+		global $wpdb;
+
+		WC()-&gt;payment_gateways();
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;Upgrading batch of %d subscriptions&#039;, $batch_size ) );
+
+		$upgraded_subscription_count = 0;
+
+		$execution_time_start = time();
+
+		foreach ( self::get_subscriptions( $batch_size ) as $original_order_item_id =&gt; $old_subscription ) {
+
+			try {
+
+				$old_subscription = WCS_Repair_2_0::maybe_repair_subscription( $old_subscription, $original_order_item_id );
+
+				// don&#039;t allow data to be half upgraded on a subscription (but we need the subscription to be the atomic level, not the whole batch, to ensure that resubscribe and switch updates in the same batch have the new subscription available)
+				$wpdb-&gt;query( &#039;START TRANSACTION&#039; );
+
+				WCS_Upgrade_Logger::add( sprintf( &#039;For order %d: beginning subscription upgrade process&#039;, $old_subscription[&#039;order_id&#039;] ) );
+
+				$original_order = wc_get_order( $old_subscription[&#039;order_id&#039;] );
+
+				// If we&#039;re still in a prepaid term, the new subscription has the new pending cancellation status
+				if ( &#039;cancelled&#039; == $old_subscription[&#039;status&#039;] &amp;&amp; false != as_next_scheduled_action( &#039;scheduled_subscription_end_of_prepaid_term&#039;, array( &#039;user_id&#039; =&gt; $old_subscription[&#039;user_id&#039;], &#039;subscription_key&#039; =&gt; $old_subscription[&#039;subscription_key&#039;] ) ) ) { // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+					$subscription_status = &#039;pending-cancel&#039;;
+				} elseif ( &#039;trash&#039; == $old_subscription[&#039;status&#039;] ) {
+					$subscription_status = &#039;cancelled&#039;; // we&#039;ll trash it properly after migrating it
+				} else {
+					$subscription_status = $old_subscription[&#039;status&#039;];
+				}
+
+				// Create a new subscription for this user
+				$new_subscription = wcs_create_subscription( array(
+					&#039;status&#039;           =&gt; $subscription_status,
+					&#039;order_id&#039;         =&gt; $old_subscription[&#039;order_id&#039;],
+					&#039;customer_id&#039;      =&gt; $old_subscription[&#039;user_id&#039;],
+					&#039;start_date&#039;       =&gt; $old_subscription[&#039;start_date&#039;],
+					&#039;customer_note&#039;    =&gt; ( &#039;&#039; !== wcs_get_objects_property( $original_order, &#039;customer_note&#039; ) ) ? wcs_get_objects_property( $original_order, &#039;customer_note&#039; ) : &#039;&#039;,
+					&#039;billing_period&#039;   =&gt; $old_subscription[&#039;period&#039;],
+					&#039;billing_interval&#039; =&gt; $old_subscription[&#039;interval&#039;],
+					&#039;order_version&#039;    =&gt; ( &#039;&#039; !== wcs_get_objects_property( $original_order, &#039;version&#039; ) ) ? wcs_get_objects_property( $original_order, &#039;version&#039; ) : &#039;&#039;,  // Subscriptions will default to WC_Version if order&#039;s version is not set, but we want the version set at the time of the order
+				) );
+
+				if ( ! is_wp_error( $new_subscription ) ) {
+
+					WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: post created&#039;, $new_subscription-&gt;get_id() ) );
+
+					// Set the order to be manual
+					if ( isset( $original_order-&gt;wcs_requires_manual_renewal ) &amp;&amp; &#039;true&#039; == $original_order-&gt;wcs_requires_manual_renewal ) {
+						$new_subscription-&gt;set_requires_manual_renewal( true );
+					}
+
+					// Add the line item from the order
+					$subscription_item_id = self::add_product( $new_subscription, $original_order_item_id, wcs_get_order_item( $original_order_item_id, $original_order ) );
+
+					// Add the line item from the order
+					self::migrate_download_permissions( $new_subscription, $subscription_item_id, $original_order );
+
+					// Set dates on the subscription
+					self::migrate_dates( $new_subscription, $old_subscription );
+
+					// Set some meta from order meta
+					self::migrate_post_meta( $new_subscription-&gt;get_id(), $original_order );
+
+					// Copy over order notes which are now logged on the subscription
+					self::migrate_order_notes( $new_subscription-&gt;get_id(), wcs_get_objects_property( $original_order, &#039;id&#039; ) );
+
+					// Migrate recurring tax, shipping and coupon line items to be plain line items on the subscription
+					self::migrate_order_items( $new_subscription-&gt;get_id(), wcs_get_objects_property( $original_order, &#039;id&#039; ) );
+
+					// Update renewal orders to link via post meta key instead of post_parent column
+					self::migrate_renewal_orders( $new_subscription, wcs_get_objects_property( $original_order, &#039;id&#039; ) );
+
+					// Make sure the resubscribe meta data is migrated to use the new subscription ID + meta key
+					self::migrate_resubscribe_orders( $new_subscription, $original_order );
+
+					// If the order for this subscription contains a switch, make sure the switch meta data is migrated to use the new subscription ID + meta key
+					self::migrate_switch_meta( $new_subscription, $original_order, $subscription_item_id );
+
+					// If the subscription was in the trash, now that we&#039;ve set on the meta on it, we need to trash it
+					if ( &#039;trash&#039; == $old_subscription[&#039;status&#039;] ) {
+						wp_trash_post( $new_subscription-&gt;get_id() );
+					}
+
+					WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: upgrade complete&#039;, $new_subscription-&gt;get_id() ) );
+
+				} else {
+
+					self::deprecate_item_meta( $original_order_item_id );
+
+					self::deprecate_post_meta( $old_subscription[&#039;order_id&#039;] );
+
+					WCS_Upgrade_Logger::add( sprintf( &#039;!!! For order %d: unable to create subscription. Error: %s&#039;, $old_subscription[&#039;order_id&#039;], $new_subscription-&gt;get_error_message() ) );
+
+				}
+
+				// If we got here, the batch was upgraded without problems
+				$wpdb-&gt;query( &#039;COMMIT&#039; );
+
+				$upgraded_subscription_count++;
+
+			} catch ( Exception $e ) {
+
+				// We can still recover from here.
+				if ( 422 == $e-&gt;getCode() ) {
+
+					self::deprecate_item_meta( $original_order_item_id );
+
+					self::deprecate_post_meta( $old_subscription[&#039;order_id&#039;] );
+
+					WCS_Upgrade_Logger::add( sprintf( &#039;!!! For order %d: unable to create subscription. Error: %s&#039;, $old_subscription[&#039;order_id&#039;], $e-&gt;getMessage() ) );
+
+					$wpdb-&gt;query( &#039;COMMIT&#039; );
+
+					$upgraded_subscription_count++;
+
+				} else {
+					// we couldn&#039;t upgrade this subscription don&#039;t commit the query
+					$wpdb-&gt;query( &#039;ROLLBACK&#039; );
+
+					throw $e;
+				}
+			}
+
+			if ( $upgraded_subscription_count &gt;= $batch_size || ( array_key_exists( &#039;WPENGINE_ACCOUNT&#039;, $_SERVER ) &amp;&amp; ( time() - $execution_time_start ) &gt; 50 ) ) {
+				break;
+			}
+		}
+
+		// Double check we actually have no more subscriptions to upgrade as sometimes they can fall through the cracks
+		if ( $upgraded_subscription_count &lt; $batch_size &amp;&amp; $upgraded_subscription_count &gt; 0 &amp;&amp; ! array_key_exists( &#039;WPENGINE_ACCOUNT&#039;, $_SERVER ) ) {
+			$upgraded_subscription_count += self::upgrade_subscriptions( $batch_size );
+		}
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;Upgraded batch of %d subscriptions&#039;, $upgraded_subscription_count ) );
+
+		return $upgraded_subscription_count;
+	}
+
+	/**
+	 * Gets an array of subscriptions from the v1.5 database structure and returns them in the in the v1.5 structure of
+	 * &#039;order_item_id&#039; =&gt; subscription details array().
+	 *
+	 * The subscription will be orders from oldest to newest, which is important because self::migrate_resubscribe_orders()
+	 * method expects a subscription to exist in order to migrate the resubscribe meta data correctly.
+	 *
+	 * @param int $batch_size The number of subscriptions to return.
+	 * @return array Subscription details in the v1.5 structure of &#039;order_item_id&#039; =&gt; array()
+	 * @since 2.0
+	 */
+	private static function get_subscriptions( $batch_size ) {
+		global $wpdb;
+
+		$query = WC_Subscriptions_Upgrader::get_subscription_query( $batch_size );
+
+		$wpdb-&gt;query( &#039;SET SQL_BIG_SELECTS = 1;&#039; );
+
+		$raw_subscriptions = $wpdb-&gt;get_results( $query );
+
+		$subscriptions = array();
+
+		// Create a backward compatible structure
+		foreach ( $raw_subscriptions as $raw_subscription ) {
+
+			if ( ! isset( $raw_subscription-&gt;order_item_id ) ) {
+				continue;
+			}
+
+			if ( ! array_key_exists( $raw_subscription-&gt;order_item_id, $subscriptions ) ) {
+				$subscriptions[ $raw_subscription-&gt;order_item_id ] = array(
+					&#039;order_id&#039; =&gt; $raw_subscription-&gt;order_id,
+					&#039;name&#039;     =&gt; $raw_subscription-&gt;order_item_name,
+				);
+
+				$subscriptions[ $raw_subscription-&gt;order_item_id ][&#039;user_id&#039;] = (int) get_post_meta( $raw_subscription-&gt;order_id, &#039;_customer_user&#039;, true );
+			}
+
+			$meta_key = str_replace( &#039;_subscription&#039;, &#039;&#039;, $raw_subscription-&gt;meta_key );
+			$meta_key = wcs_maybe_unprefix_key( $meta_key );
+
+			if ( &#039;product_id&#039; === $meta_key ) {
+				$subscriptions[ $raw_subscription-&gt;order_item_id ][&#039;subscription_key&#039;] = $subscriptions[ $raw_subscription-&gt;order_item_id ][&#039;order_id&#039;] . &#039;_&#039; . $raw_subscription-&gt;meta_value;
+			}
+
+			$subscriptions[ $raw_subscription-&gt;order_item_id ][ $meta_key ] = maybe_unserialize( $raw_subscription-&gt;meta_value );
+		}
+
+		return $subscriptions;
+	}
+
+	/**
+	 * Add the details of an order item to a subscription as a product line item.
+	 *
+	 * When adding a product to a subscription, we can&#039;t use WC_Abstract_Order::add_product() because it requires a product object
+	 * and the details of the product may have changed since it was purchased so we can&#039;t simply instantiate an instance of the
+	 * product based on ID.
+	 *
+	 * @param WC_Subscription $new_subscription A subscription object
+	 * @param int $order_item_id ID of the subscription item on the original order
+	 * @param array $order_item An array of order item data in the form returned by WC_Abstract_Order::get_items()
+	 * @return int Subscription $item_id The order item id of the new line item added to the subscription.
+	 * @since 2.0
+	 */
+	private static function add_product( $new_subscription, $order_item_id, $order_item ) {
+		global $wpdb;
+
+		$item_id = wc_add_order_item( $new_subscription-&gt;get_id(), array(
+			&#039;order_item_name&#039; =&gt; $order_item[&#039;name&#039;],
+			&#039;order_item_type&#039; =&gt; &#039;line_item&#039;,
+		) );
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: new line item ID %d added&#039;, $new_subscription-&gt;get_id(), $item_id ) );
+
+		$order_item = WCS_Repair_2_0::maybe_repair_order_item( $order_item );
+
+		$wpdb-&gt;query( $wpdb-&gt;prepare(
+			&quot;INSERT INTO `{$wpdb-&gt;prefix}woocommerce_order_itemmeta` (`order_item_id`, `meta_key`, `meta_value`)
+			 VALUES
+				(%d, &#039;_qty&#039;, %s),
+				(%d, &#039;_tax_class&#039;, %s),
+				(%d, &#039;_product_id&#039;, %s),
+				(%d, &#039;_variation_id&#039;, %s),
+				(%d, &#039;_line_subtotal&#039;, %s),
+				(%d, &#039;_line_total&#039;, %s),
+				(%d, &#039;_line_subtotal_tax&#039;, %s),
+				(%d, &#039;_line_tax&#039;, %s)&quot;,
+			// The substitutions
+			$item_id, $order_item[&#039;qty&#039;],
+			$item_id, $order_item[&#039;tax_class&#039;],
+			$item_id, $order_item[&#039;product_id&#039;],
+			$item_id, $order_item[&#039;variation_id&#039;],
+			$item_id, $order_item[&#039;recurring_line_subtotal&#039;],
+			$item_id, $order_item[&#039;recurring_line_total&#039;],
+			$item_id, $order_item[&#039;recurring_line_subtotal_tax&#039;],
+			$item_id, $order_item[&#039;recurring_line_tax&#039;]
+		) );
+
+		// Save tax data array added in WC 2.2 (so it won&#039;t exist for all orders/subscriptions)
+		self::add_line_tax_data( $item_id, $order_item_id, $order_item );
+
+		if ( isset( $order_item[&#039;subscription_trial_length&#039;] ) &amp;&amp; $order_item[&#039;subscription_trial_length&#039;] &gt; 0 ) {
+			wc_add_order_item_meta( $item_id, &#039;_has_trial&#039;, &#039;true&#039; );
+		}
+
+		// Don&#039;t copy item meta already copied
+		$reserved_item_meta_keys = array(
+			&#039;_item_meta&#039;,
+			&#039;_qty&#039;,
+			&#039;_tax_class&#039;,
+			&#039;_product_id&#039;,
+			&#039;_variation_id&#039;,
+			&#039;_line_subtotal&#039;,
+			&#039;_line_total&#039;,
+			&#039;_line_tax&#039;,
+			&#039;_line_tax_data&#039;,
+			&#039;_line_subtotal_tax&#039;,
+		);
+
+		$meta_keys_to_copy = array_diff( array_keys( $order_item[&#039;item_meta&#039;] ), array_merge( $reserved_item_meta_keys, self::$subscription_item_meta_keys ) );
+
+		// Add variation and any other meta
+		foreach ( $meta_keys_to_copy as $meta_key ) {
+			foreach ( $order_item[&#039;item_meta&#039;][ $meta_key ] as $meta_value ) {
+				wc_add_order_item_meta( $item_id, $meta_key, $meta_value );
+			}
+		}
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: for item %d added %s&#039;, $new_subscription-&gt;get_id(), $item_id, implode( &#039;, &#039;, $meta_keys_to_copy ) ) );
+
+		// Now that we&#039;ve copied over the old data, prefix some the subscription meta keys with _wcs_migrated to deprecate it without deleting it (yet)
+		$rows_affected = self::deprecate_item_meta( $order_item_id );
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: %s rows of line item meta deprecated&#039;, $new_subscription-&gt;get_id(), $rows_affected ) );
+
+		return $item_id;
+	}
+
+	/**
+	 * Copy or recreate line tax data to the new subscription.
+	 *
+	 * @param int $new_order_item_id ID of the line item on the new subscription post type
+	 * @param int $old_order_item_id ID of the line item on the original order that in v1.5 represented the subscription
+	 * @param array $order_item The line item on the original order that in v1.5 represented the subscription
+	 * @since 2.0
+	 */
+	public static function add_line_tax_data( $new_order_item_id, $old_order_item_id, $order_item ) {
+
+		// If we have _recurring_line_tax_data, use that
+		if ( isset( $order_item[&#039;item_meta&#039;][&#039;_recurring_line_tax_data&#039;] ) ) {
+
+			$line_tax_data      = maybe_unserialize( $order_item[&#039;item_meta&#039;][&#039;_recurring_line_tax_data&#039;][0] );
+			$recurring_tax_data = array(
+				&#039;total&#039;    =&gt; array(),
+				&#039;subtotal&#039; =&gt; array(),
+			);
+			$tax_data_keys      = array( &#039;total&#039;, &#039;subtotal&#039; );
+
+			foreach ( $tax_data_keys as $tax_data_key ) {
+				foreach ( $line_tax_data[ $tax_data_key ] as $tax_index =&gt; $tax_value ) {
+					$recurring_tax_data[ $tax_data_key ][ $tax_index ] = wc_format_decimal( $tax_value );
+				}
+			}
+
+		// Otherwise try to calculate the recurring values from _line_tax_data
+		} elseif ( isset( $order_item[&#039;item_meta&#039;][&#039;_line_tax_data&#039;] ) ) {
+
+			// Copy line tax data if the order doesn&#039;t have a &#039;_recurring_line_tax_data&#039; (for backward compatibility)
+			$line_tax_data        = maybe_unserialize( $order_item[&#039;item_meta&#039;][&#039;_line_tax_data&#039;][0] );
+			$line_total           = maybe_unserialize( $order_item[&#039;item_meta&#039;][&#039;_line_total&#039;][0] );
+			$recurring_line_total = maybe_unserialize( $order_item[&#039;item_meta&#039;][&#039;_recurring_line_total&#039;][0] );
+
+			// There will only be recurring tax data if the recurring amount is &gt; 0 and we can only retroactively calculate recurring amount from initial amount if it is &gt; 0
+			if ( $line_total &gt; 0 &amp;&amp; $recurring_line_total &gt; 0 ) {
+
+				// Make sure we account for any sign-up fees by determining what proportion of the initial amount the recurring total represents
+				$recurring_ratio = $recurring_line_total / $line_total;
+
+				$recurring_tax_data = array(
+					&#039;total&#039;    =&gt; array(),
+					&#039;subtotal&#039; =&gt; array(),
+				);
+				$tax_data_keys      = array( &#039;total&#039;, &#039;subtotal&#039; );
+
+				foreach ( $tax_data_keys as $tax_data_key ) {
+					foreach ( $line_tax_data[ $tax_data_key ] as $tax_index =&gt; $tax_value ) {
+
+						if ( $line_total != $recurring_line_total ) {
+							// Use total tax amount for both total and subtotal because we don&#039;t want any initial discounts to be applied to recurring amounts
+							$total_tax_amount = $line_tax_data[&#039;total&#039;][ $tax_index ];
+						} else {
+							$total_tax_amount = $line_tax_data[ $tax_data_key ][ $tax_index ];
+						}
+
+						$recurring_tax_data[ $tax_data_key ][ $tax_index ] = wc_format_decimal( $recurring_ratio * $total_tax_amount );
+					}
+				}
+			} elseif ( 0 == $line_total &amp;&amp; $recurring_line_total &gt; 0 ) { // free trial, we don&#039;t have the tax data but we can use 100% of line taxes
+
+				// Can we derive the tax rate key from the line tax data?
+				if ( ! empty( $line_tax_data ) &amp;&amp; ! empty( $line_tax_data[&#039;total&#039;] ) ) {
+					$tax_rate_key = key( $line_tax_data[&#039;total&#039;] );
+				} else {
+					// we have no way of knowing what the tax rate key is
+					$tax_rate_key = 0;
+				}
+
+				$recurring_tax_data = array(
+					&#039;subtotal&#039; =&gt; array( $tax_rate_key =&gt; $order_item[&#039;item_meta&#039;][&#039;_recurring_line_subtotal_tax&#039;][0] ),
+					&#039;total&#039;    =&gt; array( $tax_rate_key =&gt; $order_item[&#039;item_meta&#039;][&#039;_recurring_line_tax&#039;][0] ),
+				);
+			} else {
+				$recurring_tax_data = array(
+					&#039;total&#039;    =&gt; array(),
+					&#039;subtotal&#039; =&gt; array(),
+				);
+			}
+		} else {
+			$recurring_tax_data = array(
+				&#039;total&#039;    =&gt; array(),
+				&#039;subtotal&#039; =&gt; array(),
+			);
+		}
+
+		return wc_add_order_item_meta( $new_order_item_id, &#039;_line_tax_data&#039;, $recurring_tax_data, true );
+	}
+
+	/**
+	 * Deprecate order item meta data stored on the original order that used to make up the subscription by prefixing it with with &#039;_wcs_migrated&#039;
+	 *
+	 * @param int $order_item_id ID of the subscription item on the original order
+	 * @since 2.0
+	 */
+	private static function deprecate_item_meta( $order_item_id ) {
+		global $wpdb;
+
+		// Now that we&#039;ve copied over the old data, prefix some the subscription meta keys with _wcs_migrated to deprecate it without deleting it (yet)
+		$subscription_item_meta_key_string = implode( &quot;&#039;,&#039;&quot;, esc_sql( self::$subscription_item_meta_keys ) );
+
+		$rows_affected = $wpdb-&gt;query( $wpdb-&gt;prepare(
+			&quot;UPDATE `{$wpdb-&gt;prefix}woocommerce_order_itemmeta` SET `meta_key` = concat( &#039;_wcs_migrated&#039;, `meta_key` )
+			WHERE `order_item_id` = %d AND `meta_key` IN (&#039;{$subscription_item_meta_key_string}&#039;)&quot;,
+			$order_item_id
+		) );
+
+		return $rows_affected;
+	}
+
+	/**
+	 * Move download permissions from original order to the new subscription created for the order.
+	 *
+	 * @param WC_Subscription $subscription A subscription object
+	 * @param int $subscription_item_id ID of the product line item on the subscription
+	 * @param WC_Order $original_order The original order that was created to purchase the subscription
+	 * @since 2.0
+	 */
+	private static function migrate_download_permissions( $subscription, $subscription_item_id, $order ) {
+		global $wpdb;
+
+		$product_id = wcs_get_canonical_product_id( wcs_get_order_item( $subscription_item_id, $subscription ) );
+
+		$rows_affected = $wpdb-&gt;update(
+			$wpdb-&gt;prefix . &#039;woocommerce_downloadable_product_permissions&#039;,
+			array(
+				&#039;order_id&#039;  =&gt; $subscription-&gt;get_id(),
+				&#039;order_key&#039; =&gt; $subscription-&gt;get_order_key(),
+			),
+			array(
+				&#039;order_id&#039;   =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+				&#039;order_key&#039;  =&gt; wcs_get_objects_property( $order, &#039;order_key&#039; ),
+				&#039;product_id&#039; =&gt; $product_id,
+				&#039;user_id&#039;    =&gt; absint( $subscription-&gt;get_user_id() ),
+			),
+			array( &#039;%d&#039;, &#039;%s&#039; ),
+			array( &#039;%d&#039;, &#039;%s&#039;, &#039;%d&#039;, &#039;%d&#039; )
+		);
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: migrated %d download permissions for product %d&#039;, $subscription-&gt;get_id(), $rows_affected, $product_id ) );
+	}
+
+	/**
+	 * Migrate the trial expiration, next payment and expiration/end dates to a new subscription.
+	 *
+	 * @since 2.0
+	 */
+	private static function migrate_dates( $new_subscription, $old_subscription ) {
+		global $wpdb;
+
+		$dates_to_update = array();
+
+		// old hook =&gt; new hook
+		$date_keys = array(
+			&#039;trial_end&#039;           =&gt; array(
+				&#039;old_subscription_key&#039; =&gt; &#039;trial_expiry_date&#039;,
+				&#039;old_scheduled_hook&#039;   =&gt; &#039;scheduled_subscription_trial_end&#039;,
+			),
+			&#039;end&#039;                 =&gt; array(
+				&#039;old_subscription_key&#039; =&gt; &#039;expiry_date&#039;,
+				&#039;old_scheduled_hook&#039;   =&gt; &#039;scheduled_subscription_expiration&#039;,
+			),
+			&#039;end_date&#039;            =&gt; array(
+				&#039;old_subscription_key&#039; =&gt; &#039;_subscription_end_date&#039;, // this is the actual end date, not just the date it was scheduled to expire
+				&#039;old_scheduled_hook&#039;   =&gt; &#039;&#039;,
+			),
+			&#039;next_payment&#039;        =&gt; array(
+				&#039;old_subscription_key&#039; =&gt; &#039;&#039;,
+				&#039;old_scheduled_hook&#039;   =&gt; &#039;scheduled_subscription_payment&#039;,
+			),
+			&#039;end_of_prepaid_term&#039; =&gt; array(
+				&#039;old_subscription_key&#039; =&gt; &#039;&#039;,
+				&#039;old_scheduled_hook&#039;   =&gt; &#039;scheduled_subscription_end_of_prepaid_term&#039;,
+			),
+		);
+
+		$old_hook_args = array(
+			&#039;user_id&#039;          =&gt; $old_subscription[&#039;user_id&#039;],
+			&#039;subscription_key&#039; =&gt; $old_subscription[&#039;subscription_key&#039;],
+		);
+
+		foreach ( $date_keys as $new_key =&gt; $old_keys ) {
+
+			// First check if there is a date stored on the subscription, and if so, use that
+			if ( ! empty( $old_keys[&#039;old_subscription_key&#039;] ) &amp;&amp; ( isset( $old_subscription[ $old_keys[&#039;old_subscription_key&#039;] ] ) &amp;&amp; 0 !== $old_subscription[ $old_keys[&#039;old_subscription_key&#039;] ] ) ) {
+
+				$dates_to_update[ $new_key ] = $old_subscription[ $old_keys[&#039;old_subscription_key&#039;] ];
+
+			} elseif ( ! empty( $old_keys[&#039;old_scheduled_hook&#039;] ) ) {
+
+				// Now check if there is a scheduled date, this is for next payment and end of prepaid term dates
+				$next_scheduled = as_next_scheduled_action( $old_keys[&#039;old_scheduled_hook&#039;], $old_hook_args );
+
+				if ( $next_scheduled &gt; 0 ) {
+
+					if ( &#039;end_of_prepaid_term&#039; == $new_key ) {
+						as_schedule_single_action( $next_scheduled, &#039;woocommerce_scheduled_subscription_end_of_prepaid_term&#039;, array( &#039;subscription_id&#039; =&gt; $new_subscription-&gt;get_id() ) );
+					} else {
+						$dates_to_update[ $new_key ] = gmdate( &#039;Y-m-d H:i:s&#039;, $next_scheduled );
+					}
+				}
+			}
+		}
+
+		// Trash all the hooks in one go to save write requests
+		$wpdb-&gt;update(
+			$wpdb-&gt;posts,
+			array(
+				&#039;post_status&#039; =&gt; &#039;trash&#039;,
+			),
+			array(
+				&#039;post_type&#039;    =&gt; ActionScheduler_wpPostStore::POST_TYPE,
+				&#039;post_content&#039; =&gt; wcs_json_encode( $old_hook_args ),
+			),
+			array( &#039;%s&#039;, &#039;%s&#039; )
+		);
+
+		$dates_to_update[&#039;date_created&#039;] = $new_subscription-&gt;post-&gt;post_date_gmt;
+
+		// v2.0 enforces new rules for dates when they are being set, so we need to massage the old data to conform to these new rules
+		foreach ( $dates_to_update as $date_type =&gt; $date ) {
+
+			if ( 0 == $date ) {
+				continue;
+			}
+
+			switch ( $date_type ) {
+				case &#039;end&#039;:
+					if ( array_key_exists( &#039;next_payment&#039;, $dates_to_update ) &amp;&amp; $date &lt;= $dates_to_update[&#039;next_payment&#039;] ) {
+						$dates_to_update[ $date_type ] = $date;
+					}
+				case &#039;next_payment&#039;:
+					if ( array_key_exists( &#039;trial_end&#039;, $dates_to_update ) &amp;&amp; $date &lt; $dates_to_update[&#039;trial_end&#039;] ) {
+						$dates_to_update[ $date_type ] = $date;
+					}
+				case &#039;trial_end&#039;:
+					if ( array_key_exists( &#039;date_created&#039;, $dates_to_update ) &amp;&amp; $date &lt;= $dates_to_update[&#039;date_created&#039;] ) {
+						$dates_to_update[ $date_type ] = $date;
+					}
+			}
+		}
+
+		try {
+
+			if ( ! empty( $dates_to_update ) ) {
+				$new_subscription-&gt;update_dates( $dates_to_update );
+			}
+
+			WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: updated dates = %s&#039;, $new_subscription-&gt;get_id(), str_replace( array( &#039;{&#039;, &#039;}&#039;, &#039;&quot;&#039; ), &#039;&#039;, wcs_json_encode( $dates_to_update ) ) ) );
+
+		} catch ( Exception $e ) {
+			WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: unable to update dates, exception &quot;%s&quot;&#039;, $new_subscription-&gt;get_id(), $e-&gt;getMessage() ) );
+		}
+	}
+
+	/**
+	 * Copy an assortment of meta data from the original order&#039;s post meta table to the new subscription&#039;s post meta table.
+	 *
+	 * @param int $subscription_id The ID of a &#039;shop_subscription&#039; post type
+	 * @param WC_Order $order The original order used to purchase a subscription
+	 * @return null
+	 * @since 2.0
+	 */
+	private static function migrate_post_meta( $subscription_id, $order ) {
+		global $wpdb;
+
+		// Form: new meta key =&gt; old meta key
+		$post_meta_with_new_key = array(
+			// Order totals
+			&#039;_order_total&#039;                  =&gt; &#039;_order_recurring_total&#039;,
+			&#039;_order_tax&#039;                    =&gt; &#039;_order_recurring_tax_total&#039;,
+			&#039;_order_shipping&#039;               =&gt; &#039;_order_recurring_shipping_total&#039;,
+			&#039;_order_shipping_tax&#039;           =&gt; &#039;_order_recurring_shipping_tax_total&#039;,
+			&#039;_cart_discount&#039;                =&gt; &#039;_order_recurring_discount_cart&#039;,
+			&#039;_cart_discount_tax&#039;            =&gt; &#039;_order_recurring_discount_cart_tax&#039;,
+			&#039;_order_discount&#039;               =&gt; &#039;_order_recurring_discount_total&#039;, // deprecated since WC 2.3
+
+			// Misc meta data
+			&#039;_payment_method&#039;               =&gt; &#039;_recurring_payment_method&#039;,
+			&#039;_payment_method_title&#039;         =&gt; &#039;_recurring_payment_method_title&#039;,
+			&#039;_suspension_count&#039;             =&gt; &#039;_subscription_suspension_count&#039;,
+			&#039;_contains_synced_subscription&#039; =&gt; &#039;_order_contains_synced_subscription&#039;,
+			&#039;_paypal_subscription_id&#039;       =&gt; &#039;PayPal Subscriber ID&#039;,
+		);
+
+		$order_meta = get_post_meta( wcs_get_objects_property( $order, &#039;id&#039; ) );
+
+		foreach ( $post_meta_with_new_key as $subscription_meta_key =&gt; $order_meta_key ) {
+
+			$order_meta_value = get_post_meta( wcs_get_objects_property( $order, &#039;id&#039; ), $order_meta_key, true );
+
+			if ( isset( $order_meta[ $order_meta_key ] ) &amp;&amp; &#039;&#039; !== $order_meta[ $order_meta_key ] ) {
+				update_post_meta( $subscription_id, $subscription_meta_key, $order_meta_value );
+			}
+		}
+
+		// Don&#039;t copy any of the data we&#039;ve already copied or known data which isn&#039;t relevant to a subscription
+		$meta_keys_to_ignore = array_merge( array_values( $post_meta_with_new_key ), array_keys( $post_meta_with_new_key ), array(
+			&#039;_completed_date&#039;,
+			&#039;_customer_ip_address&#039;,
+			&#039;_customer_user_agent&#039;,
+			&#039;_customer_user&#039;,
+			&#039;_order_currency&#039;,
+			&#039;_order_key&#039;,
+			&#039;_paid_date&#039;,
+			&#039;_recorded_sales&#039;,
+			&#039;_transaction_id&#039;,
+			&#039;_transaction_id_original&#039;,
+			&#039;_switched_subscription_first_payment_timestamp&#039;,
+			&#039;_switched_subscription_new_order&#039;,
+			&#039;_switched_subscription_key&#039;,
+			&#039;_old_recurring_payment_method&#039;,
+			&#039;_old_recurring_payment_method_title&#039;,
+			&#039;_wc_points_earned&#039;,
+			&#039;_wcs_requires_manual_renewal&#039;,
+		) );
+
+		// Also allow extensions to unset or modify data that will be copied
+		$order_meta = apply_filters( &#039;wcs_upgrade_subscription_meta_to_copy&#039;, $order_meta, $subscription_id, $order );
+
+		// Prepare the meta data for a bulk insert
+		$query_meta_values  = array();
+		$query_placeholders = array();
+
+		foreach ( $order_meta as $meta_key =&gt; $meta_value ) {
+			if ( ! in_array( $meta_key, $meta_keys_to_ignore ) ) {
+				$query_meta_values = array_merge( $query_meta_values, array(
+					$subscription_id,
+					$meta_key,
+					$meta_value[0],
+				) );
+				$query_placeholders[] = &#039;(%d, %s, %s)&#039;;
+			}
+		}
+
+		// Do a single bulk insert instead of using update_post_meta() to massively reduce query time
+		if ( ! empty( $query_meta_values ) ) {
+			$rows_affected = $wpdb-&gt;query( $wpdb-&gt;prepare(
+				&quot;INSERT INTO {$wpdb-&gt;postmeta} (post_id, meta_key, meta_value)
+				 VALUES &quot; . implode( &#039;, &#039;, $query_placeholders ),
+				$query_meta_values
+			) );
+
+			WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: %d rows of post meta added&#039;, $subscription_id, $rows_affected ) );
+		}
+
+		// Now that we&#039;ve copied over the old data, deprecate it
+		$rows_affected = self::deprecate_post_meta( wcs_get_objects_property( $order, &#039;id&#039; ) );
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: %d rows of post meta deprecated&#039;, $subscription_id, $rows_affected ) );
+	}
+
+	/**
+	 * Deprecate post meta data stored on the original order that used to make up the subscription by prefixing it with with &#039;_wcs_migrated&#039;
+	 *
+	 * @param int $subscription_id The ID of a &#039;shop_subscription&#039; post type
+	 * @param WC_Order $order The original order used to purchase a subscription
+	 * @return null
+	 * @since 2.0
+	 */
+	private static function deprecate_post_meta( $order_id ) {
+		global $wpdb;
+
+		$post_meta_to_deprecate = array(
+			// Order totals
+			&#039;_order_recurring_total&#039;,
+			&#039;_order_recurring_tax_total&#039;,
+			&#039;_order_recurring_shipping_total&#039;,
+			&#039;_order_recurring_shipping_tax_total&#039;,
+			&#039;_order_recurring_discount_cart&#039;,
+			&#039;_order_recurring_discount_cart_tax&#039;,
+			&#039;_order_recurring_discount_total&#039;,
+			&#039;_recurring_payment_method&#039;,
+			&#039;_recurring_payment_method_title&#039;,
+			&#039;_old_paypal_subscriber_id&#039;,
+			&#039;_old_payment_method&#039;,
+			&#039;_paypal_ipn_tracking_ids&#039;,
+			&#039;_paypal_transaction_ids&#039;,
+			&#039;_paypal_first_ipn_ignored_for_pdt&#039;,
+			&#039;_order_contains_synced_subscription&#039;,
+			&#039;_subscription_suspension_count&#039;,
+		);
+
+		$post_meta_to_deprecate = implode( &quot;&#039;,&#039;&quot;, esc_sql( $post_meta_to_deprecate ) );
+
+		$rows_affected = $wpdb-&gt;query( $wpdb-&gt;prepare(
+			&quot;UPDATE {$wpdb-&gt;postmeta} SET `meta_key` = concat( &#039;_wcs_migrated&#039;, `meta_key` )
+			WHERE `post_id` = %d AND `meta_key` IN (&#039;{$post_meta_to_deprecate}&#039;)&quot;,
+			$order_id
+		) );
+
+		return $rows_affected;
+	}
+
+	/**
+	 * Migrate order notes relating to subscription events to the new subscription as these are now logged on the subscription
+	 * not the order.
+	 *
+	 * @param int $subscription_id The ID of a &#039;shop_subscription&#039; post type
+	 * @param WC_Order $order The original order used to purchase a subscription
+	 * @return null
+	 * @since 2.0
+	 */
+	private static function migrate_order_notes( $subscription_id, $order_id ) {
+		global $wpdb;
+
+		$rows_affected = $wpdb-&gt;query( $wpdb-&gt;prepare(
+			&quot;UPDATE {$wpdb-&gt;comments} SET `comment_post_ID` = %d
+			WHERE `comment_post_id` = %d
+			AND (
+				`comment_content` LIKE &#039;%%subscription%%&#039;
+				OR `comment_content` LIKE &#039;%%Recurring%%&#039;
+				OR `comment_content` LIKE &#039;%%Renewal%%&#039;
+				OR `comment_content` LIKE &#039;%%Simplify payment error%%&#039;
+			)&quot;,
+			$subscription_id, $order_id
+		) );
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: migrated %d order notes&#039;, $subscription_id, $rows_affected ) );
+	}
+
+	/**
+	 * Migrate recurring_tax, recurring_shipping and recurring_coupon line items to be plain tax, shipping and coupon line
+	 * items on a subscription.
+	 *
+	 * @param int $subscription_id The ID of a &#039;shop_subscription&#039; post type
+	 * @param WC_Order $order The original order used to purchase a subscription
+	 * @return null
+	 * @since 2.0
+	 */
+	private static function migrate_order_items( $subscription_id, $order_id ) {
+		global $wpdb;
+
+		foreach ( array( &#039;tax&#039;, &#039;shipping&#039;, &#039;coupon&#039; ) as $line_item_type ) {
+			$rows_affected = $wpdb-&gt;update(
+				$wpdb-&gt;prefix . &#039;woocommerce_order_items&#039;,
+				array(
+					&#039;order_item_type&#039; =&gt; $line_item_type,
+					&#039;order_id&#039;        =&gt; $subscription_id,
+				),
+				array(
+					&#039;order_item_type&#039; =&gt; &#039;recurring_&#039; . $line_item_type,
+					&#039;order_id&#039;        =&gt; $order_id,
+				),
+				array( &#039;%s&#039;, &#039;%d&#039; ),
+				array( &#039;%s&#039;, &#039;%d&#039; )
+			);
+
+			WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: migrated %d %s item/s&#039;, $subscription_id, $rows_affected, $line_item_type ) );
+		}
+	}
+
+	/**
+	 * The &#039;post_parent&#039; column is no longer used to relate a renewal order with a subscription/order, instead, we use a
+	 * &#039;_subscription_renewal&#039; post meta value, so the &#039;post_parent&#039; of all renewal orders needs to be changed from the original
+	 * order&#039;s ID, to 0, and then the new subscription&#039;s ID should be set as the &#039;_subscription_renewal&#039; post meta value on
+	 * the renewal order.
+	 *
+	 * @param WC_Subscription $subscription An instance of a &#039;shop_subscription&#039; post type
+	 * @param int $order_id The ID of a &#039;shop_order&#039; which created this susbcription
+	 * @return null
+	 * @since 2.0
+	 */
+	private static function migrate_renewal_orders( $subscription, $order_id ) {
+		global $wpdb;
+
+		// Get the renewal order IDs
+		$renewal_order_ids = get_posts( array(
+			&#039;posts_per_page&#039; =&gt; -1,
+			&#039;post_status&#039;    =&gt; &#039;any&#039;,
+			&#039;post_type&#039;      =&gt; &#039;shop_order&#039;,
+			&#039;post_parent&#039;    =&gt; $order_id,
+			&#039;fields&#039;         =&gt; &#039;ids&#039;,
+		) );
+
+		// Set the post meta
+		foreach ( $renewal_order_ids as $renewal_order_id ) {
+			WCS_Related_Order_Store::instance()-&gt;add_relation( wc_get_order( $renewal_order_id ), $subscription, &#039;renewal&#039; );
+		}
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: migrated data for renewal orders %s&#039;, $subscription-&gt;get_id(), implode( &#039;, &#039;, $renewal_order_ids ) ) );
+
+		$rows_affected = $wpdb-&gt;update(
+			$wpdb-&gt;posts,
+			array(
+				&#039;post_parent&#039; =&gt; 0,
+			),
+			array(
+				&#039;post_parent&#039; =&gt; $order_id,
+				&#039;post_type&#039;   =&gt; &#039;shop_order&#039;,
+			),
+			array( &#039;%d&#039; ),
+			array( &#039;%d&#039;, &#039;%s&#039; )
+		);
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: %d rows of renewal order post_parent values changed&#039;, $subscription-&gt;get_id(), count( $renewal_order_ids ) ) );
+	}
+
+	/**
+	 * The &#039;_original_order&#039; post meta value is no longer used to relate a resubscribe order with a subscription/order, instead, we use
+	 * a &#039;_subscription_resubscribe&#039; post meta value, so the &#039;_original_order&#039; of all resubscribe orders needs to be changed from the
+	 * original order&#039;s ID, to 0, and then the new subscription&#039;s ID should be set as the &#039;_subscription_resubscribe&#039; post meta value
+	 * on the resubscribe order.
+	 *
+	 * @param WC_Subscription $new_subscription An instance of a &#039;shop_subscription&#039; post type
+	 * @param WC_Order $resubscribe_order An instance of a &#039;shop_order&#039; post type which created this subscription
+	 * @return null
+	 * @since 2.0
+	 */
+	private static function migrate_resubscribe_orders( $new_subscription, $resubscribe_order ) {
+		global $wpdb;
+
+		$resubscribe_order_id = wcs_get_objects_property( $resubscribe_order, &#039;id&#039; );
+		$new_subscription_id  = wcs_get_objects_property( $new_subscription, &#039;id&#039; );
+
+		// Set the post meta on the new subscription and old order
+		foreach ( get_post_meta( $resubscribe_order_id, &#039;_original_order&#039;, false ) as $original_order_id ) {
+
+			// Because self::get_subscriptions() orders by order ID, it&#039;s safe to use wcs_get_subscriptions_for_order() here because the subscription in the new format will have been created for the original order (because its ID will be &lt; the resubscribe order&#039;s ID)
+			foreach ( wcs_get_subscriptions_for_order( $original_order_id ) as $old_subscription ) {
+				WCS_Related_Order_Store::instance()-&gt;add_relation( $resubscribe_order, $old_subscription, &#039;resubscribe&#039; );
+				WCS_Related_Order_Store::instance()-&gt;add_relation( $new_subscription, $old_subscription, &#039;resubscribe&#039; );
+			}
+
+			$wpdb-&gt;query( $wpdb-&gt;prepare(
+				&quot;UPDATE {$wpdb-&gt;postmeta} SET `meta_key` = concat( &#039;_wcs_migrated&#039;, `meta_key` )
+				WHERE `post_id` = %d AND `meta_key` = &#039;_original_order&#039;&quot;,
+				$resubscribe_order_id
+			) );
+
+			WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: migrated data for resubscribe order %d&#039;, $new_subscription_id, $original_order_id ) );
+		}
+	}
+
+	/**
+	 * The &#039;_switched_subscription_key&#039; and &#039;_switched_subscription_new_order&#039; post meta values are no longer used to relate orders
+	 * and switched subscriptions, instead, we need to set a &#039;_subscription_switch&#039; value on the switch order and depreacted the old
+	 * meta keys by prefixing them with &#039;_wcs_migrated&#039;.
+	 *
+	 * Subscriptions also sets a &#039;_switched_subscription_item_id&#039; value on the new line item of for the switched item and a item meta
+	 * value of &#039;_switched_subscription_new_item_id&#039; on the old line item on the subscription, but the old switching process didn&#039;t
+	 * change order items, it just created a new order with the new item, so we won&#039;t bother setting this as it is purely for record
+	 * keeping.
+	 *
+	 * @param WC_Subscription $new_subscription A subscription object
+	 * @param WC_Order $switch_order The original order used to purchase the subscription
+	 * @param int $subscription_item_id The order item ID of the item added to the subscription by self::add_product()
+	 * @return null
+	 * @since 2.0
+	 */
+	private static function migrate_switch_meta( $new_subscription, $switch_order, $subscription_item_id ) {
+		global $wpdb;
+
+		// If the order doesn&#039;t contain a switch, we don&#039;t need to do anything
+		if ( &#039;&#039; == get_post_meta( wcs_get_objects_property( $switch_order, &#039;id&#039; ), &#039;_switched_subscription_key&#039;, true ) ) {
+			return;
+		}
+
+		$wpdb-&gt;query( $wpdb-&gt;prepare(
+			&quot;UPDATE {$wpdb-&gt;postmeta} SET `meta_key` = concat( &#039;_wcs_migrated&#039;, `meta_key` )
+			WHERE `post_id` = %d AND `meta_key` IN (&#039;_switched_subscription_first_payment_timestamp&#039;,&#039;_switched_subscription_key&#039;)&quot;,
+			wcs_get_objects_property( $switch_order, &#039;id&#039; )
+		) );
+
+		// Select the orders which had the items which were switched by this order
+		$previous_order_id = get_posts(
+			array(
+				&#039;post_type&#039;      =&gt; &#039;shop_order&#039;,
+				&#039;post_status&#039;    =&gt; &#039;any&#039;,
+				&#039;fields&#039;         =&gt; &#039;ids&#039;,
+				&#039;posts_per_page&#039; =&gt; -1,
+				&#039;meta_query&#039;     =&gt; array(
+					array(
+						&#039;key&#039;   =&gt; &#039;_switched_subscription_new_order&#039;,
+						&#039;value&#039; =&gt; wcs_get_objects_property( $switch_order, &#039;id&#039; ),
+					),
+				),
+			)
+		);
+
+		if ( ! empty( $previous_order_id ) ) {
+
+			$previous_order_id = $previous_order_id[0];
+
+			$wpdb-&gt;query( $wpdb-&gt;prepare(
+				&quot;UPDATE {$wpdb-&gt;postmeta} SET `meta_key` = concat( &#039;_wcs_migrated&#039;, `meta_key` )
+				WHERE `post_id` = %d AND `meta_key` = &#039;_switched_subscription_new_order&#039;&quot;,
+				$previous_order_id
+			) );
+
+			// Because self::get_subscriptions() orders by order ID, it&#039;s safe to use wcs_get_subscriptions_for_order() here because the subscription in the new format will have been created for the original order (because its ID will be &lt; the switch order&#039;s ID)
+			$old_subscriptions = wcs_get_subscriptions_for_order( $previous_order_id );
+			$old_subscription  = array_shift( $old_subscriptions ); // there can be only one
+
+			if ( wcs_is_subscription( $old_subscription ) ) {
+				// Link the old subscription&#039;s ID to the switch order using the new switch meta key
+
+				WCS_Related_Order_Store::instance()-&gt;add_relation( $switch_order, $old_subscription, &#039;switch&#039; );
+
+				// Now store the new/old item IDs for record keeping
+				foreach ( $old_subscription-&gt;get_items() as $item_id =&gt; $item ) {
+					wc_add_order_item_meta( $item_id, &#039;_switched_subscription_new_item_id&#039;, $subscription_item_id, true );
+					wc_add_order_item_meta( $subscription_item_id, &#039;_switched_subscription_item_id&#039;, $item_id, true );
+				}
+
+				WCS_Upgrade_Logger::add( sprintf( &#039;For subscription %d: migrated switch data for subscription %d purchased in order %d&#039;, $new_subscription-&gt;get_id(), $old_subscription-&gt;get_id(), $previous_order_id ) );
+			}
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

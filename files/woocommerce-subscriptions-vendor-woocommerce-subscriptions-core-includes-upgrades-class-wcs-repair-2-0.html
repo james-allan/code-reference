@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html">WooCommerceSubscriptionsAdminUpgrades</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-repair-2-0.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Repair subscriptions data to v2.0
+ *
+ * @author      Prospress
+ * @category    Admin
+ * @package     WooCommerce Subscriptions/Admin/Upgrades
+ * @version     2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_Repair_2_0 {
+
+	/**
+	 * Takes care of undefine notices in the upgrade process
+	 *
+	 * @param  array $order_item item meta
+	 * @return array             repaired item meta
+	 */
+	public static function maybe_repair_order_item( $order_item ) {
+		foreach ( array( &#039;qty&#039;, &#039;tax_class&#039;, &#039;product_id&#039;, &#039;variation_id&#039;, &#039;recurring_line_subtotal&#039;, &#039;recurring_line_total&#039;, &#039;recurring_line_subtotal_tax&#039;, &#039;recurring_line_tax&#039; ) as $key ) {
+			if ( ! array_key_exists( $key, $order_item ) ) {
+				$order_item[ $key ] = &#039;&#039;;
+			}
+		}
+
+		return $order_item;
+	}
+
+	/**
+	 * Does sanity check on every subscription, and repairs them as needed
+	 *
+	 * @param  array $subscription subscription data to be upgraded
+	 * @param  integer $item_id      id of order item meta
+	 * @return array               a repaired subscription array
+	 */
+	public static function maybe_repair_subscription( $subscription, $item_id ) {
+		global $wpdb;
+
+		$item_meta = get_metadata( &#039;order_item&#039;, $item_id );
+
+		foreach ( self::integrity_check( $subscription ) as $function ) {
+			$subscription = call_user_func( &#039;WCS_Repair_2_0::repair_&#039; . $function, $subscription, $item_id, $item_meta );
+		}
+
+		return $subscription;
+	}
+
+	/**
+	 * Checks for missing data on a subscription
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @return array               a list of repair functions to run on the subscription
+	 */
+	public static function integrity_check( $subscription ) {
+		$repairs_needed = array();
+
+		foreach (
+			array(
+				&#039;order_id&#039;,
+				&#039;product_id&#039;,
+				&#039;variation_id&#039;,
+				&#039;subscription_key&#039;,
+				&#039;status&#039;,
+				&#039;period&#039;,
+				&#039;interval&#039;,
+				&#039;length&#039;,
+				&#039;start_date&#039;,
+				&#039;trial_expiry_date&#039;,
+				&#039;expiry_date&#039;,
+				&#039;end_date&#039;,
+			) as $meta ) {
+				if ( ! array_key_exists( $meta, $subscription ) || &#039;&#039; === $subscription[ $meta ] ) {
+					$repairs_needed[] = $meta;
+				}
+		}
+
+		return $repairs_needed;
+	}
+
+	/**
+	 * &#039;order_id&#039;: a subscription can exist without an original order in v2.0, so technically the order ID is no longer required.
+	 * However, if some or all order item meta data that constitutes a subscription exists without a corresponding parent order,
+	 * we can deem the issue to be that the subscription meta data was not deleted, not that the subscription should exist. Meta
+	 * data could be orphaned in v1.n if the order row in the wp_posts table was deleted directly in the database, or the
+	 * subscription/order were for a customer that was deleted in WordPress administration interface prior to Subscriptions v1.3.8.
+	 * In both cases, the subscription, including meta data, should have been permanently deleted. However, deleting data is not a
+	 * good idea during an upgrade. So I propose instead that we create a subscription without a parent order, but move it to the trash.
+	 *
+	 * Additional idea was to check whether the given order_id exists, but since that&#039;s another database read, it would slow down a lot of things.
+	 *
+	 * A subscription will not make it to this point if it doesn&#039;t have an order id, so this function will practically never be run
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_order_id( $subscription ) {
+		WCS_Upgrade_Logger::add( &#039;-- Repairing order_id for subscription that is missing order id: Status changed to trash&#039; );
+		WCS_Upgrade_Logger::add( &#039;-- Shop owner: please review new trashed subscriptions. There is at least one with missing order id.&#039; );
+
+		$subscription[&#039;status&#039;] = &#039;trash&#039;;
+
+		return $subscription;
+	}
+
+	/**
+	 * Combined functionality for the following functions:
+	 * - repair_product_id
+	 * - repair_variation_id
+	 * - repair_recurring_line_total
+	 * - repair_recurring_line_tax
+	 * - repair_recurring_line_subtotal
+	 * - repair_recurring_line_subtotal_tax
+	 *
+	 * @param  array   $subscription          data about the subscription
+	 * @param  numeric $item_id               the id of the product we&#039;re missing the id for
+	 * @param  array   $item_meta             meta data about the product
+	 * @param  string  $item_meta_key         the meta key for the data on the item meta
+	 * @param  string  $subscription_meta_key the meta key for the data on the subscription
+	 * @return array                          repaired data about the subscription
+	 */
+	public static function repair_from_item_meta( array $subscription, $item_id, $item_meta, $subscription_meta_key = null, $item_meta_key = null, $default_value = &#039;&#039; ) {
+		if ( ! is_array( $subscription ) || ! is_numeric( $item_id ) || ! is_array( $item_meta ) || ! is_string( $subscription_meta_key ) || ! is_string( $item_meta_key ) || ( ! is_string( $default_value ) &amp;&amp; ! is_numeric( $default_value ) ) ) {
+			return $subscription;
+		}
+
+		if ( array_key_exists( $item_meta_key, $item_meta ) &amp;&amp; ! empty( $item_meta[ $item_meta_key ] ) ) {
+			// only do the copy if the value on item meta is actually different to what the subscription has
+			// otherwise it&#039;d be an extra line in the log file for no actual use
+			if ( ! array_key_exists( $subscription_meta_key, $subscription ) || $item_meta[ $item_meta_key ][0] != $subscription[ $subscription_meta_key ] ) {
+				WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: copying %s from item_meta to %s on subscription.&#039;, $subscription[&#039;order_id&#039;], $item_meta_key, $subscription_meta_key ) );
+				$subscription[ $subscription_meta_key ] = $item_meta[ $item_meta_key ][0];
+			}
+		} elseif ( ! array_key_exists( $item_meta_key, $item_meta ) ) {
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: setting an empty %s on old subscription, item meta was not helpful.&#039;, $subscription[&#039;order_id&#039;], $subscription_meta_key ) );
+			$subscription[ $subscription_meta_key ] = $default_value;
+		}
+
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_product_id&#039;: the only way to derive a order item&#039;s product ID would be to match the order item&#039;s name to a product name/title.
+	 * This is quite hacky, so we may be better copying the empty product ID to the new subscription. A subscription to a deleted
+	 * produced should be able to exist.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing the id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_product_id( $subscription, $item_id, $item_meta ) {
+		return self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;product_id&#039;, &#039;_product_id&#039; );
+	}
+
+	/**
+	 * &#039;_variation_id&#039;: the only way to derive a order item&#039;s product ID would be to match the order item&#039;s name to a product name/title.
+	 * This is quite hacky, so we may be better copying the empty product ID to the new subscription. A subscription to a deleted produced
+	 * should be able to exist.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_variation_id( $subscription, $item_id, $item_meta ) {
+		return self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;variation_id&#039;, &#039;_variation_id&#039; );
+	}
+
+	/**
+	 * If the subscription does not have a subscription key for whatever reason (probably becuase the product_id was missing), then this one
+	 * fills in the blank.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_subscription_key( $subscription, $item_id, $item_meta ) {
+		if ( ! is_numeric( $item_id ) ) {
+			// because item_id can be either product id or variation id, we can&#039;t use
+			// item meta to backfill this
+			$subscription[&#039;subscription_key&#039;] = &#039;&#039;;
+		} else {
+			$subscription[&#039;subscription_key&#039;] = $subscription[&#039;order_id&#039;] . &#039;_&#039; . $item_id;
+		}
+
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_subscription_status&#039;: we could default to cancelled (and then potentially trash) if no status exists because the cancelled status
+	 * is irreversible. But we can also take this a step further. If the subscription has a &#039;_subscription_expiry_date&#039; value and a
+	 * &#039;_subscription_end_date&#039; value, and they are within a few minutes of each other, we can assume the subscription&#039;s status should be
+	 * expired. If there is a &#039;_subscription_end_date&#039; value that is different to the &#039;_subscription_expiry_date&#039; value (either because the
+	 * expiration value is 0 or some other date), then we can assume the status should be cancelled). If there is no end date value, we&#039;re
+	 * a bit lost as technically the subscription hasn&#039;t ended, but we should make sure it is not active, so cancelled is still the best
+	 * default.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_status( $subscription, $item_id, $item_meta ) {
+		// only reset this if we didn&#039;t repair the order_id
+		if ( ! array_key_exists( &#039;order_id&#039;, $subscription ) || empty( $subscription[&#039;order_id&#039;] ) ) {
+			WCS_Upgrade_Logger::add( &#039;-- Tried to repair status. Previously set it to trash with order_id missing, bailing.&#039; );
+			return $subscription;
+		}
+		WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: repairing status for subscription.&#039;, $subscription[&#039;order_id&#039;] ) );
+
+		// if expiry_date and end_date are within 4 minutes (arbitrary), let it be expired
+		if ( array_key_exists( &#039;expiry_date&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;expiry_date&#039;] ) &amp;&amp; array_key_exists( &#039;end_date&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;end_date&#039;] ) &amp;&amp; ( 4 * MINUTE_IN_SECONDS ) &gt;= self::time_diff( $subscription[&#039;expiry_date&#039;], $subscription[&#039;end_date&#039;] ) ) {
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: there are end dates and expiry dates, they are close to each other, setting status to &quot;expired&quot; and returning.&#039;, $subscription[&#039;order_id&#039;] ) );
+			$subscription[&#039;status&#039;] = &#039;expired&#039;;
+		} else {
+			// default to cancelled
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: setting the default to &quot;cancelled&quot;.&#039;, $subscription[&#039;order_id&#039;] ) );
+			$subscription[&#039;status&#039;] = &#039;cancelled&#039;;
+		}
+		self::log_store_owner_review( $subscription );
+		WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: returning the status with %s&#039;, $subscription[&#039;order_id&#039;], $subscription[&#039;status&#039;] ) );
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_subscription_period&#039;: we can attempt to derive this from the time between renewal orders. For example, if there are two renewal
+	 * orders found 3 months apart, the billing period would be month. If there are not two or more renewal orders (we can&#039;t use a single
+	 * renewal order because that would account for the free trial) and a _product_id value , if the product still exists, we can use the
+	 * current value set on that product. It won&#039;t always be correct, but it&#039;s the closest we can get to an accurate estimate.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_period( $subscription, $item_id, $item_meta ) {
+		WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: repairing period for subscription&#039;, $subscription[&#039;order_id&#039;] ) );
+
+		// Get info from the product
+		$subscription = self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;period&#039;, &#039;_subscription_period&#039;, &#039;&#039; );
+
+		if ( &#039;&#039; !== $subscription[&#039;period&#039;] ) {
+			return $subscription;
+		}
+
+		// let&#039;s get the renewal orders
+		$renewal_orders = self::get_renewal_orders( $subscription );
+
+		if ( count( $renewal_orders ) &lt; 2 ) {
+			// default to month. Because we&#039;re defaulting, we also need to cancel this to avoid charging customers on a schedule they didn&#039;t
+			// agree to.
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: setting default subscription period to month.&#039;, $subscription[&#039;order_id&#039;] ) );
+			self::log_store_owner_review( $subscription );
+			$subscription[&#039;period&#039;] = &#039;month&#039;;
+			$subscription[&#039;status&#039;] = &#039;cancelled&#039;;
+			return $subscription;
+		}
+
+		// let&#039;s get the last 2 renewal orders
+		$last_renewal_order       = array_shift( $renewal_orders );
+		$last_renewal_date        = wcs_get_datetime_utc_string( wcs_get_objects_property( $last_renewal_order, &#039;date_created&#039; ) );
+		$last_renewal_timestamp   = wcs_date_to_time( $last_renewal_date );
+
+		$second_renewal_order     = array_shift( $renewal_orders );
+		$second_renewal_date      = wcs_get_datetime_utc_string( wcs_get_objects_property( $second_renewal_order, &#039;date_created&#039; ) );
+		$second_renewal_timestamp = wcs_date_to_time( $second_renewal_date );
+
+		$interval = 1;
+
+		// if we have an interval, let&#039;s pass this along too, because then it&#039;s a known variable
+		if ( array_key_exists( &#039;interval&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;interval&#039;] ) ) {
+			$interval = $subscription[&#039;interval&#039;];
+		}
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: calling wcs_estimate_period_between().&#039;, $subscription[&#039;order_id&#039;] ) );
+		$period = wcs_estimate_period_between( $last_renewal_date, $second_renewal_date, $interval );
+
+		// if we have 3 renewal orders, do a double check
+		if ( ! empty( $renewal_orders ) ) {
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: we have 3 renewal orders, trying to make sure we are right.&#039;, $subscription[&#039;order_id&#039;] ) );
+
+			$third_renewal_order = array_shift( $renewal_orders );
+			$third_renewal_date = wcs_get_datetime_utc_string( wcs_get_objects_property( $third_renewal_order, &#039;date_created&#039; ) );
+
+			$period2 = wcs_estimate_period_between( $second_renewal_date, $third_renewal_date, $interval );
+
+			if ( $period == $period2 ) {
+				WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: second check confirmed, we are very confident period is %s.&#039;, $subscription[&#039;order_id&#039;], $period ) );
+				$subscription[&#039;period&#039;] = $period;
+			}
+		}
+
+		$subscription[&#039;period&#039;] = $period;
+
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_subscription_interval&#039;: we can attempt to derive this from the time between renewal orders. For example, if there are two renewal
+	 * orders found 3 months apart, the billing period would be month. If there are not two or more renewal orders (we can&#039;t use a single
+	 * renewal order because that would account for the free trial) and a _product_id value , if the product still exists, we can use the
+	 * current value set on that product. It won&#039;t always be correct, but it&#039;s the closest we can get to an accurate estimate.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_interval( $subscription, $item_id, $item_meta ) {
+
+		// Get info from the product
+		if ( array_key_exists( &#039;_subscription_interval&#039;, $item_meta ) &amp;&amp; ! empty( $item_meta[&#039;_subscription_interval&#039;] ) ) {
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: getting interval from item meta and returning.&#039;, $subscription[&#039;order_id&#039;] ) );
+
+			$subscription[&#039;interval&#039;] = $item_meta[&#039;_subscription_interval&#039;][0];
+			return $subscription;
+		}
+
+		// by this time we already have a period on our hand
+		// let&#039;s get the renewal orders
+		$renewal_orders = self::get_renewal_orders( $subscription );
+
+		if ( count( $renewal_orders ) &lt; 2 ) {
+			// default to 1
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: setting default subscription interval to 1.&#039;, $subscription[&#039;order_id&#039;] ) );
+			self::log_store_owner_review( $subscription );
+			$subscription[&#039;interval&#039;] = 1;
+			$subscription[&#039;status&#039;]   = &#039;cancelled&#039;;
+			return $subscription;
+		}
+
+		// let&#039;s get the last 2 renewal orders
+		$last_renewal_order       = array_shift( $renewal_orders );
+		$last_renewal_date        = wcs_get_datetime_utc_string( wcs_get_objects_property( $last_renewal_order, &#039;date_created&#039; ) );
+		$last_renewal_timestamp   = wcs_date_to_time( $last_renewal_date );
+
+		$second_renewal_order     = array_shift( $renewal_orders );
+		$second_renewal_date      = wcs_get_datetime_utc_string( wcs_get_objects_property( $second_renewal_order, &#039;date_created&#039; ) );
+		$second_renewal_timestamp = wcs_date_to_time( $second_renewal_date );
+
+		$subscription[&#039;interval&#039;] = wcs_estimate_periods_between( $second_renewal_timestamp, $last_renewal_timestamp, $subscription[&#039;period&#039;] );
+
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_subscription_length&#039;: if there are &#039;_subscription_expiry_date&#039; and &#039;_subscription_start_date&#039; values, we can use those to
+	 * determine how many billing periods fall between them, and therefore, the length of the subscription. This data is low value however as
+	 * it is no longer stored in v2.0 and mainly used to determine the expiration date.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_length( $subscription, $item_id, $item_meta ) {
+		// Let&#039;s see if the item meta has that
+		$subscription = self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;length&#039;, &#039;_subscription_length&#039;, &#039;&#039; );
+
+		if ( &#039;&#039; !== $subscription[&#039;length&#039;] ) {
+			return $subscription;
+		}
+
+		$effective_start_date = self::get_effective_start_date( $subscription );
+
+		// If we can calculate it from the effective date and expiry date
+		if ( &#039;expired&#039; == $subscription[&#039;status&#039;] &amp;&amp; array_key_exists( &#039;expiry_date&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;expiry_date&#039;] ) &amp;&amp; null !== $effective_start_date &amp;&amp; array_key_exists( &#039;period&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;period&#039;] ) &amp;&amp; array_key_exists( &#039;interval&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;interval&#039;] ) ) {
+			$intervals = wcs_estimate_periods_between( wcs_date_to_time( $effective_start_date ), wcs_date_to_time( $subscription[&#039;expiry_date&#039;] ), $subscription[&#039;period&#039;], &#039;floor&#039; );
+			$subscription[&#039;length&#039;] = $intervals;
+		} else {
+			$subscription[&#039;length&#039;] = 0;
+		}
+
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_subscription_start_date&#039;: the original order&#039;s &#039;_paid_date&#039; value (stored in post meta) can be used as the subscription&#039;s start date.
+	 * If no &#039;_paid_date&#039; exists, because the order used a payment method that doesn&#039;t call $order-&gt;payment_complete(), like BACs or Cheque,
+	 * then we can use the post_date_gmt column in the wp_posts table of the original order.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_start_date( $subscription, $item_id, $item_meta ) {
+		global $wpdb;
+
+		$start_date = get_post_meta( $subscription[&#039;order_id&#039;], &#039;_paid_date&#039;, true );
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;Repairing start_date for order %d: Trying to use the _paid date for start date.&#039;, $subscription[&#039;order_id&#039;] ) );
+
+		if ( empty( $start_date ) ) {
+			WCS_Upgrade_Logger::add( &#039;-- start_date from _paid date failed. Using post_date_gmt&#039; );
+
+			$start_date = $wpdb-&gt;get_var( $wpdb-&gt;prepare( &quot;SELECT post_date_gmt FROM {$wpdb-&gt;posts} WHERE ID = %d&quot;, $subscription[&#039;order_id&#039;] ) );
+		}
+
+		$subscription[&#039;start_date&#039;] = $start_date;
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_subscription_trial_expiry_date&#039;: if the subscription has at least one renewal order, we can set the trial expiration date to the date
+	 * of the first renewal order. However, this is generally safe to default to 0 if it is not set. Especially if the subscription is
+	 * inactive and/or has 1 or more renewals (because its no longer used and is simply for record keeping).
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_trial_expiry_date( $subscription, $item_id, $item_meta ) {
+		$subscription[&#039;trial_expiry_date&#039;] = self::maybe_get_date_from_action_scheduler( &#039;scheduled_subscription_trial_end&#039;, $subscription );
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_subscription_expiry_date&#039;: if the subscription has a &#039;_subscription_length&#039; value, that can be used to calculate the expiration date
+	 * (from the &#039;_subscription_start_date&#039; or &#039;_subscription_trial_expiry_date&#039; if one is set). If no length is set, but the subscription has
+	 * an expired status, the &#039;_subscription_end_date&#039; can be used. In most other cases, this is generally safe to default to 0 if the
+	 * subscription is cancelled because its no longer used and is simply for record keeping.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_expiry_date( $subscription, $item_id, $item_meta ) {
+		$subscription[&#039;expiry_date&#039;] = self::maybe_get_date_from_action_scheduler( &#039;scheduled_subscription_expiration&#039;, $subscription );
+		return $subscription;
+	}
+
+	/**
+	 * &#039;_subscription_end_date&#039;: if the subscription has a &#039;_subscription_length&#039; value and status of expired, the length can be used to
+	 * calculate the end date as it will be the same as the expiration date. If no length is set, or the subscription has a cancelled status,
+	 * some time within 24 hours after the last renewal order&#039;s date can be used to provide a rough estimate.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_end_date( $subscription, $item_id, $item_meta ) {
+
+		$subscription = self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;end_date&#039;, &#039;_subscription_end_date&#039;, &#039;&#039; );
+
+		if ( &#039;&#039; !== $subscription[&#039;end_date&#039;] ) {
+			return $subscription;
+		}
+
+		if ( &#039;expired&#039; == $subscription[&#039;status&#039;] &amp;&amp; array_key_exists( &#039;expiry_date&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;expiry_date&#039;] ) ) {
+
+			$subscription[&#039;end_date&#039;] = $subscription[&#039;expiry_date&#039;];
+
+		} elseif ( &#039;cancelled&#039; == $subscription[&#039;status&#039;] || ! array_key_exists( &#039;length&#039;, $subscription ) || empty( $subscription[&#039;length&#039;] ) ) {
+
+			// get renewal orders
+			$renewal_orders = self::get_renewal_orders( $subscription );
+			$last_order = array_shift( $renewal_orders );
+
+			if ( empty( $last_order ) ) {
+
+				$subscription[&#039;end_date&#039;] = 0;
+
+			} else {
+
+				$subscription[&#039;end_date&#039;] = wcs_add_time( 5, &#039;hours&#039;, wcs_get_objects_property( $last_order, &#039;date_created&#039; )-&gt;getTimestamp() );
+
+			}
+		} else {
+
+			// if everything failed, let&#039;s have an empty one
+			$subscription[&#039;end_date&#039;] = 0;
+
+		}
+
+		return $subscription;
+	}
+
+	/**
+	 * _recurring_line_total&#039;: if the subscription has at least one renewal order, this value can be derived from the &#039;_line_total&#039; value of
+	 * that order. If no renewal orders exist, it can be derived roughly by deducting the &#039;_subscription_sign_up_fee&#039; value from the original
+	 * order&#039;s total if there is no trial expiration date.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_recurring_line_total( $subscription, $item_id, $item_meta ) {
+		return self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;recurring_line_total&#039;, &#039;_line_total&#039;, 0 );
+	}
+
+	/**
+	 * _recurring_line_total&#039;: if the subscription has at least one renewal order, this value can be derived from the &#039;_line_total&#039; value
+	 * of that order. If no renewal orders exist, it can be derived roughly by deducting the &#039;_subscription_sign_up_fee&#039; value from the
+	 * original order&#039;s total if there is no trial expiration date.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_recurring_line_tax( $subscription, $item_id, $item_meta ) {
+		return self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;recurring_line_tax&#039;, &#039;_line_tax&#039;, 0 );
+	}
+
+	/**
+	 * _recurring_line_total&#039;: if the subscription has at least one renewal order, this value can be derived from the &#039;_line_total&#039; value of
+	 * that order. If no renewal orders exist, it can be derived roughly by deducting the &#039;_subscription_sign_up_fee&#039; value from the original
+	 * order&#039;s total if there is no trial expiration date
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_recurring_line_subtotal( $subscription, $item_id, $item_meta ) {
+		return self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;recurring_line_subtotal&#039;, &#039;_line_subtotal&#039;, 0 );
+	}
+
+	/**
+	 * _recurring_line_total&#039;: if the subscription has at least one renewal order, this value can be derived from the &#039;_line_total&#039; value of
+	 * that order. If no renewal orders exist, it can be derived roughly by deducting the &#039;_subscription_sign_up_fee&#039; value from the original
+	 * order&#039;s total if there is no trial expiration date.
+	 *
+	 * @param  array $subscription data about the subscription
+	 * @param  numeric $item_id    the id of the product we&#039;re missing variation id for
+	 * @param  array $item_meta    meta data about the product
+	 * @return array               repaired data about the subscription
+	 */
+	public static function repair_recurring_line_subtotal_tax( $subscription, $item_id, $item_meta ) {
+		return self::repair_from_item_meta( $subscription, $item_id, $item_meta, &#039;recurring_line_subtotal_tax&#039;, &#039;_line_subtotal_tax&#039;, 0 );
+	}
+
+	/**
+	 * Utility function to calculate the seconds between two timestamps. Order is not important, it&#039;s just the difference.
+	 *
+	 * @param  string $to   mysql timestamp
+	 * @param  string $from mysql timestamp
+	 * @return integer       number of seconds between the two
+	 */
+	private static function time_diff( $to, $from ) {
+		$to   = wcs_date_to_time( $to );
+		$from = wcs_date_to_time( $from );
+
+		return abs( $to - $from );
+	}
+
+	/**
+	 * Utility function to get all renewal orders in the old structure.
+	 *
+	 * @param  array $subscription the sub we&#039;re looking for the renewal orders
+	 * @return array               of WC_Orders
+	 */
+	private static function get_renewal_orders( $subscription ) {
+		$related_orders = array();
+
+		$related_post_ids = get_posts( array(
+			&#039;posts_per_page&#039; =&gt; -1,
+			&#039;post_type&#039;      =&gt; &#039;shop_order&#039;,
+			&#039;post_status&#039;    =&gt; &#039;any&#039;,
+			&#039;fields&#039;         =&gt; &#039;ids&#039;,
+			&#039;orderby&#039;        =&gt; &#039;date&#039;,
+			&#039;order&#039;          =&gt; &#039;DESC&#039;,
+			&#039;post_parent&#039;    =&gt; $subscription[&#039;order_id&#039;],
+		) );
+
+		foreach ( $related_post_ids as $post_id ) {
+			$related_orders[ $post_id ] = wc_get_order( $post_id );
+		}
+
+		return $related_orders;
+	}
+
+	/**
+	 * Utility method to check the action scheduler for dates
+	 *
+	 * @param  string $type             the type of scheduled action
+	 * @param  string $subscription_key key of subscription in the format of order_id_item_id
+	 * @return string                   either 0 or mysql date
+	 */
+	private static function maybe_get_date_from_action_scheduler( $type, $subscription ) {
+		$action_args = array(
+			&#039;user_id&#039;          =&gt; intval( $subscription[&#039;user_id&#039;] ),
+			&#039;subscription_key&#039; =&gt; $subscription[&#039;subscription_key&#039;],
+		);
+
+		WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: Repairing date type &quot;%s&quot; from action scheduler...&#039;, $subscription[&#039;order_id&#039;], $type ) );
+		WCS_Upgrade_Logger::add( &#039;-- This is the arguments: &#039; . PHP_EOL . print_r( array( $action_args, &#039;hook&#039; =&gt; $type ), true ) . PHP_EOL ); // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+
+		$next_date_timestamp = as_next_scheduled_action( $type, $action_args );
+
+		if ( false === $next_date_timestamp ) {
+			// set it to 0 as default
+			$formatted_date = 0;
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: Repairing date type &quot;%s&quot;: fetch of date unsuccessfull: no action present. Date is 0.&#039;, $subscription[&#039;order_id&#039;], $type ) );
+		} else {
+			$formatted_date = gmdate( &#039;Y-m-d H:i:s&#039;, $next_date_timestamp );
+			WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: Repairing date type &quot;%s&quot;: fetch of date successfull. New date is %s&#039;, $subscription[&#039;order_id&#039;], $type, $formatted_date ) );
+		}
+
+		return $formatted_date;
+	}
+
+	/**
+	 * Utility function to return the effective start date for interval calculations (end of trial period -&gt; start date -&gt; null )
+	 *
+	 * @param  array $subscription subscription data
+	 * @return mixed               mysql formatted date, or null if none found
+	 */
+	public static function get_effective_start_date( $subscription ) {
+
+		if ( array_key_exists( &#039;trial_expiry_date&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;trial_expiry_date&#039;] ) ) {
+
+			$effective_date = $subscription[&#039;trial_expiry_date&#039;];
+
+		} elseif ( array_key_exists( &#039;trial_period&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;trial_period&#039;] ) &amp;&amp; array_key_exists( &#039;trial_length&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;trial_length&#039;] ) &amp;&amp; array_key_exists( &#039;start_date&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;start_date&#039;] ) ) {
+
+			// calculate the end of trial from interval, period and start date
+			$effective_date = gmdate( &#039;Y-m-d H:i:s&#039;, wcs_add_time( $subscription[&#039;trial_length&#039;], $subscription[&#039;trial_period&#039;], wcs_date_to_time( $subscription[&#039;start_date&#039;] ) ) );
+
+		} elseif ( array_key_exists( &#039;start_date&#039;, $subscription ) &amp;&amp; ! empty( $subscription[&#039;start_date&#039;] ) ) {
+
+			$effective_date = $subscription[&#039;start_date&#039;];
+
+		} else {
+
+			$effective_date = null;
+
+		}
+
+		return $effective_date;
+	}
+
+
+	/**
+	 * Logs an entry for the store owner to review an issue.
+	 *
+	 * @param array $subscription subscription data
+	 */
+	protected static function log_store_owner_review( $subscription ) {
+		WCS_Upgrade_Logger::add( sprintf( &#039;-- For order %d: shop owner please review subscription.&#039;, $subscription[&#039;order_id&#039;] ) );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

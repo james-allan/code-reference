@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html">WooCommerceSubscriptionsAdminUpgrades</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-about.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * About page for Subscriptions 2.1.0
+ *
+ * @author		Prospress
+ * @category	Admin
+ * @package		WooCommerce Subscriptions/Admin/Upgrades
+ * @version		2.1.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+?&gt;
+
+&lt;div class=&quot;wrap about-wrap&quot;&gt;
+
+	&lt;h1&gt;&lt;?php esc_html_e( &#039;Welcome to Subscriptions 2.1!&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h1&gt;
+
+	&lt;div class=&quot;about-text woocommerce-about-text&quot;&gt;
+		&lt;?php esc_html_e( &#039;Thank you for updating to the latest version of WooCommerce Subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+		&lt;?php printf( esc_html__( &#039;Version 2.1 introduces some great new features requested by store managers just like you (and possibly even by %syou%s).&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;em&gt;&#039;, &#039;&lt;/em&gt;&#039; ); ?&gt;
+		&lt;?php esc_html_e( &#039;We hope you enjoy it!&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;wcs-badge&quot;&gt;
+		&lt;?php
+		// translators: placeholder is version number
+		printf( esc_html__( &#039;Version %s&#039;, &#039;woocommerce-subscriptions&#039; ), esc_html( $active_version ) ); ?&gt;
+	&lt;/div&gt;
+
+	&lt;p class=&quot;woocommerce-actions&quot;&gt;
+		&lt;a href=&quot;&lt;?php echo esc_url( $settings_page ); ?&gt;&quot; class=&quot;button button-primary&quot;&gt;&lt;?php esc_html_e( &#039;Settings&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+		&lt;a class=&quot;docs button button-primary&quot; href=&quot;&lt;?php echo esc_url( apply_filters( &#039;woocommerce_docs_url&#039;, &#039;http://docs.woocommerce.com/document/subscriptions/&#039;, &#039;woocommerce-subscriptions&#039; ) ); ?&gt;&quot;&gt;&lt;?php echo esc_html_x( &#039;Documentation&#039;, &#039;short for documents&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+		&lt;a href=&quot;https://twitter.com/share&quot; class=&quot;twitter-share-button&quot; data-url=&quot;http://docs.woocommerce.com/document/subscriptions/version-2-1/&quot; data-text=&quot;I just updated to WooCommerce Subscriptions v2.1, woot!&quot; data-via=&quot;WooCommerce&quot; data-size=&quot;large&quot; data-hashtags=&quot;WooCommerce&quot;&gt;Tweet&lt;/a&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
+	&lt;/p&gt;
+
+	&lt;div class=&quot;changelog&quot;&gt;
+		&lt;h2&gt;&lt;?php esc_html_e( &quot;Check Out What&#039;s New&quot;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h2&gt;
+
+		&lt;div class=&quot;feature-section two-col&quot;&gt;
+			&lt;div class=&quot;feature-image col&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;subscription-reports.png&#039; ) ); ?&gt;&quot; /&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col last-feature feature-copy&quot;&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;Subscription Reports&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;How many customers stay subscribed for more than 6 months? What is the average lifetime value of your subscribers? How much renewal revenue will your store earn next month?&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;These are important questions for any subscription commerce business.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Prior to Subscriptions 2.1, they were not easy to answer. Subscriptions 2.1 introduces new reports to answer these questions, and many more.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p class=&quot;woocommerce-actions&quot;&gt;
+					&lt;a class=&quot;button button-primary&quot; href=&quot;&lt;?php echo esc_url( admin_url( &#039;admin.php?page=wc-reports&amp;tab=subscriptions&#039; ) ); ?&gt;&quot; &gt;&lt;?php esc_html_e( &#039;View Reports&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+					&lt;a class=&quot;button&quot; href=&quot;http://docs.woocommerce.com/document/subscriptions/reports/&quot;&gt;&lt;?php echo esc_html_x( &#039;Learn More&#039;, &#039;learn more link to subscription reports documentation&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;feature-section two-col&quot;&gt;
+
+			&lt;div class=&quot;col last-feature feature-right feature-image&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;renewal-retry-settings.png&#039; ) ); ?&gt;&quot; /&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col feature-copy&quot;&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;Automatic Failed Payment Retry&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Failed recurring payments can now be retried automatically. This helps recover revenue that would otherwise be lost due to payment methods being declined only temporarily.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;By default, Subscriptions will retry the payment 5 times over 7 days. The rules that control the retry system can be modified to customise:&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;?php esc_html_e( &#039;the total number of retry attempts&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;?php esc_html_e( &#039;how long to wait between retry attempts&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;?php esc_html_e( &#039;emails sent to the customer and store manager&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;?php esc_html_e( &#039;the status applied to the renewal order and subscription&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;The retry system is disabled by default. To enable it, visit the Subscriptions settings administration screen.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p class=&quot;woocommerce-actions&quot;&gt;
+					&lt;a class=&quot;button button-primary&quot; href=&quot;&lt;?php echo esc_url( $settings_page ); ?&gt;&quot; &gt;&lt;?php esc_html_e( &#039;Enable Automatic Retry&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+					&lt;a class=&quot;button&quot; href=&quot;http://docs.woocommerce.com/document/subscriptions/failed-payment-retry/&quot;&gt;&lt;?php echo esc_html_x( &#039;Learn More&#039;, &#039;learn more link to failed payment retry documentation&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;feature-section two-col&quot;&gt;
+			&lt;div class=&quot;col feature-image&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;subscription-suspended-email.jpg&#039; ) ); ?&gt;&quot; /&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col last-feature feature-copy&quot;&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;New Subscription Emails&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Subscriptions 2.1 also introduces a number of new emails to notify you when:&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;?php esc_html_e( &#039;a customer suspends a subscription&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;?php esc_html_e( &#039;an automatic payment fails&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;?php esc_html_e( &#039;a subscription expires&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;p&gt;&lt;?php printf( esc_html__( &#039;These emails can be enabled, disabled and customised under the %sWooCommerce &gt; Settings &gt; Emails%s administration screen.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039;, &#039;&lt;/strong&gt;&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p class=&quot;woocommerce-actions&quot;&gt;
+					&lt;a class=&quot;button button-primary&quot; href=&quot;&lt;?php echo esc_url( $settings_page ); ?&gt;&quot; &gt;&lt;?php esc_html_e( &#039;View Email Settings&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+					&lt;a class=&quot;button&quot; href=&quot;https://docs.woocommerce.com/document/subscriptions/store-manager-guide/#section-8&quot;&gt;&lt;?php echo esc_html_x( &#039;Learn More&#039;, &#039;learn more link to subscription emails documentation&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;changelog still-more&quot;&gt;
+
+		&lt;h2&gt;&lt;?php esc_html_e( &quot;But wait, there&#039;s more!&quot;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h2&gt;
+		&lt;p&gt;&lt;?php esc_html_e( &quot;That&#039;s not all we&#039;ve working on for the last 12 months when it comes to Subscriptions. We&#039;ve also released mini-extensions to help you get the most from your subscription store.&quot;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+
+		&lt;div class=&quot;feature-section three-col&quot;&gt;
+
+			&lt;div class=&quot;col&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;gift-subscription.png&#039; ) ); ?&gt;&quot; /&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;Subscription Gifting&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;What happens when a customer wants to purchase a subscription product for someone else?&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;The Gifting extension makes it possible for one person to purchase a subscription product for someone else. It then shares control of the subscription between the purchaser and recipient, allowing both to manage the subscription over its lifecycle.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are for opening and closing link (&lt;a&gt;) tags
+					printf( esc_html__( &#039;%sLearn more &amp;raquo;%s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;https://woocommerce.com/products/woocommerce-subscriptions-gifting/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;subscriptions-importer-exporter.png&#039; ) ); ?&gt;&quot; /&gt;
+				&lt;h3&gt;&lt;?php echo esc_html_x( &#039;Import/Export Subscriptions&#039;, &#039;h3 on the About Subscriptions page for this new feature&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Import subscriptions to WooCommerce via CSV, or export your subscriptions from WooCommerce to a CSV with the WooCommerce Subscriptions Importer/Exporter extension.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;This free extension makes it possible to migrate subscribers from 3rd party systems to WooCommerce. It also makes it possible to export your subscription data for analysis in spreadsheet tools or 3rd party apps.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are for opening and closing link (&lt;a&gt;) tags
+					printf( esc_html__( &#039;%sLearn more &amp;raquo;%s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;https://github.com/Prospress/woocommerce-subscriptions-importer-exporter#woocommerce-subscriptions-importer-and-exporter&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col last-feature&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;subscribe-all-the-things.png&#039; ) ); ?&gt;&quot; /&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;Subscribe All the Things&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Want your customers to be able to subscribe to non-subscription products?&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;With WooCommerce Subscribe All the Things, they can! This experimental extension is exploring how to convert any product, including Product Bundles and Composite Products, into a subscription product. It also offers customers a way to subscribe to a cart of non-subscription products.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are for opening and closing link (&lt;a&gt;) tags
+					printf( esc_html__( &#039;%sLearn more &amp;raquo;%s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;https://github.com/Prospress/woocommerce-subscribe-all-the-things#woocommerce-subscribe-all-the-things&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;changelog&quot;&gt;
+
+		&lt;h2&gt;&lt;?php esc_html_e( &#039;Peek Under the Hood for Developers&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h2&gt;
+
+		&lt;div class=&quot;feature-section under-the-hood three-col&quot;&gt;
+			&lt;div class=&quot;col&quot;&gt;
+				&lt;h3&gt;&lt;?php
+					// translators: placeholders are opening and closing &lt;code&gt; tags
+					printf( esc_html__( &#039;Customise Retry Rules&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;The best part about the new automatic retry system is that the retry rules are completely customisable.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: all placeholders are opening and closing &lt;code&gt; tags, no need to order them
+					printf( esc_html__( &#039;With the %s\&#039;wcs_default_retry_rules\&#039;%s filter, you can define a set of default rules to apply to all failed payments in your store.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: all placeholders are opening and closing &lt;code&gt; tags, no need to order them
+					printf( esc_html__( &#039;To apply a specific rule based on certain conditions, like high value orders or an infrequent renewal schedule, you can use the retry specific %s\&#039;wcs_get_retry_rule\&#039;%s filter. This provides the ID of the renewal order for the failed payment, which can be used to find information about the products, subscription and totals to which the failed payment relates.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing anchor tags linking to documentation
+					printf( esc_html__( &#039;%sLearn more &amp;raquo;%s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;http://docs.woocommerce.com/document/subscriptions/develop/failed-payment-retry/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col&quot;&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;WP REST API Endpoints&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php
+					// translators: $1: opening &lt;a&gt; tag linking to WC API docs, $2: closing &lt;a&gt; tag, $3: opening &lt;a&gt; tag linking to WP API docs, $4: closing &lt;a&gt; tag
+					printf( esc_html__( &#039;WooCommerce 2.6 added support for %1$sREST API%2$s endpoints built on WordPress core\&#039;s %3$sREST API%4$s infrastructure.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;http://woocommerce.github.io/woocommerce-rest-api-docs/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039;, &#039;&lt;a href=&quot;http://v2.wp-api.org/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Subscriptions 2.1 adds support for subscription data to this infrastructure.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Your applications can now create, read, update or delete subscriptions via RESTful API endpoints with the same design as the latest version of WooCommerce\&#039;s REST API endpoints.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: all placeholders are opening and closing &lt;code&gt; tags, no need to order them
+					printf( esc_html__( &#039;Want to list all the subscriptions on a site? Get %s/wp-json/wc/v1/subscriptions%s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: all placeholders are opening and closing &lt;code&gt; tags, no need to order them
+					printf( esc_html__( &#039;Want the details of a specific subscription? Get %s/wp-json/wc/v1/subscriptions/&lt;id&gt;/%s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing anchor tags linking to documentation
+					printf( esc_html__( &#039;%sLearn more &amp;raquo;%s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;https://prospress.github.io/subscriptions-rest-api-docs/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col last-feature&quot;&gt;
+				&lt;h3&gt;&lt;?php
+					// translators: placeholders are opening and closing code tags
+					printf( esc_html__( &#039;Honour Renewal Order Data&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;In previous versions of Subscriptions, the subscription total was passed to payment gateways as the amount to charge for automatic renewal payments. This made it unnecessarily complicated to add one-time fees or discounts to a renewal.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing &lt;code&gt; tags
+					printf( esc_html__( &#039;Subscriptions 2.1 now passes the renewal order\&#039;s total, making it possible to add a fee or discount to the renewal order with simple one-liners like %s$order-&gt;add_fee()%s or %s$order-&gt;add_coupon()%s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039;, &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing &lt;a&gt; tags
+					printf( esc_html__( &#039;Subscriptions also now uses the renewal order to setup the cart for %smanual renewals%s, making it easier to add products or discounts to a single renewal paid manually.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;https://docs.woocommerce.com/document/subscriptions/renewal-process/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;return-to-dashboard&quot;&gt;
+		&lt;p&gt;&lt;a href=&quot;&lt;?php echo esc_url( &#039;http://docs.woocommerce.com/document/subscriptions/version-2-1/&#039; ); ?&gt;&quot;&gt;&lt;?php esc_html_e( &#039;See the full guide to What\&#039;s New in Subscriptions version 2.1 &amp;raquo;&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&quot;&lt;?php echo esc_url( $settings_page ); ?&gt;&quot;&gt;&lt;?php esc_html_e( &#039;Go to WooCommerce Subscriptions Settings &amp;raquo;&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-deprecation-handler.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * A class for handling the WC_Subscriptions class&#039;s deprecated functions.
+ *
+ * @package  WooCommerce Subscriptions
+ * @category Class
+ * @author   WooCommerce
+ * @since    4.0.0
+ */
+
+defined( &#039;ABSPATH&#039; ) || exit;
+
+class WC_Subscriptions_Deprecation_Handler extends WCS_Deprecated_Functions_Handler {
+
+	/**
+	 * This class handles WC_Subscriptions.
+	 *
+	 * @var string
+	 */
+	protected $class = &#039;WC_Subscriptions&#039;;
+
+	/**
+	 * Deprecated WC_Subscriptions functions.
+	 *
+	 * @var array[]
+	 */
+	protected $deprecated_functions = array(
+		&#039;add_months&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wcs_add_months&#039;,
+			&#039;version&#039;     =&gt; &#039;2.0.0&#039;,
+		),
+		&#039;is_large_site&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( __CLASS__, &#039;_is_large_site&#039; ),
+			&#039;version&#039;     =&gt; &#039;2.0.0&#039;,
+		),
+		&#039;get_subscription_status_counts&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( __CLASS__, &#039;_get_subscription_status_counts&#039; ),
+			&#039;version&#039;     =&gt; &#039;2.0.0&#039;,
+		),
+		&#039;get_subscriptions&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( __CLASS__, &#039;_get_subscriptions&#039; ),
+			&#039;version&#039;     =&gt; &#039;2.0.0&#039;,
+		),
+		&#039;format_total&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wc_format_decimal&#039;,
+			&#039;version&#039;     =&gt; &#039;2.0.0&#039;,
+		),
+		&#039;woocommerce_dependancy_notice&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WC_Subscriptions&#039;, &#039;woocommerce_inactive_notice&#039; ),
+			&#039;version&#039;     =&gt; &#039;2.1.0&#039;,
+		),
+		&#039;add_notice&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wc_add_notice&#039;,
+			&#039;version&#039;     =&gt; &#039;2.2.16&#039;,
+		),
+		&#039;print_notices&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wc_print_notices&#039;,
+			&#039;version&#039;     =&gt; &#039;2.2.16&#039;,
+		),
+		&#039;get_product&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wc_get_product&#039;,
+			&#039;version&#039;     =&gt; &#039;2.4.0&#039;,
+		),
+		&#039;maybe_empty_cart&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WC_Subscriptions_Cart_Validator&#039;, &#039;maybe_empty_cart&#039; ),
+			&#039;version&#039;     =&gt; &#039;2.6.0&#039;,
+		),
+		&#039;remove_subscriptions_from_cart&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WC_Subscriptions_Cart&#039;, &#039;remove_subscriptions_from_cart&#039; ),
+			&#039;version&#039;     =&gt; &#039;2.6.0&#039;,
+		),
+		&#039;enqueue_styles&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WC_Subscriptions_Frontend_Scripts&#039;, &#039;enqueue_styles&#039; ),
+			&#039;version&#039;     =&gt; &#039;3.1.3&#039;,
+		),
+		&#039;enqueue_frontend_scripts&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WC_Subscriptions_Frontend_Scripts&#039;, &#039;enqueue_scripts&#039; ),
+			&#039;version&#039;     =&gt; &#039;3.1.3&#039;,
+		),
+		&#039;get_customer_orders&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Meta_Box_Subscription_Data&#039;, &#039;get_customer_orders&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;get_my_subscriptions_template&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Template_Loader&#039;, &#039;get_my_subscriptions&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;redirect_to_cart&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( __CLASS__, &#039;_redirect_to_cart&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;get_longest_period&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wcs_get_longest_period&#039;,
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;get_shortest_period&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wcs_get_shortest_period&#039;,
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;append_numeral_suffix&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wcs_append_numeral_suffix&#039;,
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;subscription_add_to_cart&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Template_Loader&#039;, &#039;get_subscription_add_to_cart&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;variable_subscription_add_to_cart&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Template_Loader&#039;, &#039;get_variable_subscription_add_to_cart&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;wcopc_subscription_add_to_cart&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Template_Loader&#039;, &#039;get_opc_subscription_add_to_cart&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;add_to_cart_redirect&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WC_Subscriptions_Cart&#039;, &#039;add_to_cart_redirect&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;is_woocommerce_pre&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; &#039;wcs_is_woocommerce_pre&#039;,
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;woocommerce_site_change_notice&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Staging&#039;, &#039;handle_site_change_notice&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;get_current_sites_duplicate_lock&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Staging&#039;, &#039;get_duplicate_site_lock_key&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;set_duplicate_site_url_lock&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Staging&#039;, &#039;set_duplicate_site_url_lock&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;is_duplicate_site&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Staging&#039;, &#039;is_duplicate_site&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;show_downgrade_notice&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( __CLASS__, &#039;_show_downgrade_notice&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;get_site_url&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Staging&#039;, &#039;get_live_site_url&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;get_site_url_from_source&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WCS_Staging&#039;, &#039;get_site_url_from_source&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;redirect_ajax_add_to_cart&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WC_Subscriptions_Cart_Validator&#039;, &#039;add_to_cart_ajax_redirect&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;order_button_text&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( &#039;WC_Subscriptions_Checkout&#039;, &#039;order_button_text&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;load_dependant_classes&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;init_version_dependant_classes&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;attach_dependant_hooks&#039; =&gt; array(
+			&#039;version&#039; =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;register_order_types&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;register_order_types&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;add_data_stores&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;add_data_stores&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;register_post_status&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;register_post_statuses&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;deactivate_woocommerce_subscriptions&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;deactivate_plugin&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;load_plugin_textdomain&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;load_plugin_textdomain&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;action_links&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;add_plugin_action_links&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;update_notice&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;update_notice&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;setup_blocks_integration&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;setup_blocks_integration&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;maybe_activate_woocommerce_subscriptions&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;activate_plugin&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+		&#039;action_scheduler_multisite_batch_size&#039; =&gt; array(
+			&#039;replacement&#039; =&gt; array( array( &#039;WC_Subscriptions_Core_Plugin&#039;, &#039;instance&#039; ), &#039;reduce_multisite_action_scheduler_batch_size&#039; ),
+			&#039;version&#039;     =&gt; &#039;4.0.0&#039;,
+		),
+	);
+
+	/**
+	 * Deprecated Function Replacements
+	 */
+
+	/**
+	 * Deprecation handling of the original WC_Subscriptions::is_large_site() function.
+	 *
+	 * Not to be called directly.
+	 *
+	 * @deprecated
+	 */
+	protected function _is_large_site() {
+		return apply_filters( &#039;woocommerce_subscriptions_is_large_site&#039;, false );
+	}
+
+	/**
+	 * Deprecation handling of the original WC_Subscriptions::get_subscription_status_counts() function.
+	 *
+	 * Not to be called directly.
+	 *
+	 * @deprecated
+	 */
+	protected function _get_subscription_status_counts() {
+		$results = wp_count_posts( &#039;shop_subscription&#039; );
+		$counts  = array();
+
+		foreach ( $results as $status =&gt; $count ) {
+
+			if ( in_array( $status, array_keys( wcs_get_subscription_statuses() ) ) || in_array( $status, array( &#039;trash&#039;, &#039;draft&#039; ) ) ) {
+				$counts[ $status ] = $count;
+			}
+		}
+
+		// Order with &#039;all&#039; at the beginning, then alphabetically
+		ksort( $counts );
+		$counts = array( &#039;all&#039; =&gt; array_sum( $counts ) ) + $counts;
+
+		return apply_filters( &#039;woocommerce_subscription_status_counts&#039;, $counts );
+	}
+
+	/**
+	 * Deprecation handling of the original WC_Subscriptions::redirect_to_cart() function.
+	 *
+	 * Not to be called directly.
+	 *
+	 * @deprecated
+	 */
+	protected function _redirect_to_cart( $permalink, $product_id ) {
+		return wc_get_cart_url();
+	}
+
+	/**
+	 * Deprecation handling of the original WC_Subscriptions::show_downgrade_notice() function.
+	 *
+	 * Not to be called directly.
+	 *
+	 * @deprecated
+	 */
+	public static function _show_downgrade_notice() {
+		if ( version_compare( get_option( WC_Subscriptions_Admin::$option_prefix . &#039;_active_version&#039;, &#039;0&#039; ), self::$version, &#039;&gt;&#039; ) ) {
+			echo &#039;&lt;div class=&quot;update-nag&quot;&gt;&#039;;
+			// translators: placeholder is Subscriptions version number.
+			echo sprintf( esc_html__( &#039;Warning! You are running version %s of WooCommerce Subscriptions plugin code but your database has been upgraded to Subscriptions version 2.0. This will cause major problems on your store.&#039;, &#039;woocommerce-subscriptions&#039; ), esc_html( self::$version ) ) . &#039;&lt;br /&gt;&#039;;
+			// translators: opening/closing &lt;a&gt; tags - linked to ticket form.
+			echo sprintf( esc_html__( &#039;Please upgrade the WooCommerce Subscriptions plugin to version 2.0 or newer immediately. If you need assistance, after upgrading to Subscriptions v2.0, please %1$sopen a support ticket%2$s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;https://woocommerce.com/my-account/marketplace-ticket-form/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; );
+			echo &#039;&lt;/div&gt; &#039;;
+		}
+	}
+
+	/**
+	 * Deprecation handling of the original WC_Subscriptions::show_downgrade_notice() function.
+	 *
+	 * Not to be called directly.
+	 *
+	 * @deprecated
+	 */
+	protected function _get_subscriptions( $args = array() ) {
+
+		if ( isset( $args[&#039;orderby&#039;] ) ) {
+			// Although most of these weren&#039;t public orderby values, they were used internally so may have been used by developers
+			switch ( $args[&#039;orderby&#039;] ) {
+				case &#039;_subscription_status&#039;:
+					_deprecated_argument( __METHOD__, &#039;2.0&#039;, &#039;The &quot;_subscription_status&quot; orderby value is deprecated. Use &quot;status&quot; instead.&#039; );
+					$args[&#039;orderby&#039;] = &#039;status&#039;;
+					break;
+				case &#039;_subscription_start_date&#039;:
+					_deprecated_argument( __METHOD__, &#039;2.0&#039;, &#039;The &quot;_subscription_start_date&quot; orderby value is deprecated. Use &quot;start_date&quot; instead.&#039; );
+					$args[&#039;orderby&#039;] = &#039;start_date&#039;;
+					break;
+				case &#039;expiry_date&#039;:
+				case &#039;_subscription_expiry_date&#039;:
+				case &#039;_subscription_end_date&#039;:
+					_deprecated_argument( __METHOD__, &#039;2.0&#039;, &#039;The expiry date orderby value is deprecated. Use &quot;end_date&quot; instead.&#039; );
+					$args[&#039;orderby&#039;] = &#039;end_date&#039;;
+					break;
+				case &#039;trial_expiry_date&#039;:
+				case &#039;_subscription_trial_expiry_date&#039;:
+					_deprecated_argument( __METHOD__, &#039;2.0&#039;, &#039;The trial expiry date orderby value is deprecated. Use &quot;trial_end_date&quot; instead.&#039; );
+					$args[&#039;orderby&#039;] = &#039;trial_end_date&#039;;
+					break;
+				case &#039;name&#039;:
+					_deprecated_argument( __METHOD__, &#039;2.0&#039;, &#039;The &quot;name&quot; orderby value is deprecated - subscriptions no longer have just one name as they may contain multiple items.&#039; );
+					break;
+			}
+		}
+
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_get_subscriptions( $args )&#039; );
+
+		$subscriptions = wcs_get_subscriptions( $args );
+
+		$subscriptions_in_deprecated_structure = array();
+
+		// Get the subscriptions in the backward compatible structure
+		foreach ( $subscriptions as $subscription ) {
+			$subscriptions_in_deprecated_structure[ wcs_get_old_subscription_key( $subscription ) ] = wcs_get_subscription_in_deprecated_structure( $subscription );
+		}
+
+		return apply_filters( &#039;woocommerce_get_subscriptions&#039;, $subscriptions_in_deprecated_structure, $args );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

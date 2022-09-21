@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-paypal-standard-subscriptions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_create_paypal_standard_subscriptions">
+        create_paypal_standard_subscriptions()
+        <a href="#function_create_paypal_standard_subscriptions" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/gateways/paypal/includes/deprecated/class-wc-paypal-standard-subscriptions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-gateways-paypal-includes-deprecated-class-wc-paypal-standard-subscriptions.html#source-view.278">woocommerce-subscriptions/vendor/subscriptions-core/includes/gateways/paypal/includes/deprecated/class-wc-paypal-standard-subscriptions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">278</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Needs to be called after init so that $woocommerce global is setup</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">create_paypal_standard_subscriptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * The old PayPal Standard Subscription Class.
+ *
+ * Filtered necessary functions in the WC_Paypal class to allow for subscriptions.
+ *
+ * Replaced by WCS_PayPal.
+ *
+ * @package     WooCommerce Subscriptions
+ * @subpackage  WC_PayPal_Standard_Subscriptions
+ * @category    Class
+ * @author      Brent Shepherd
+ * @since       1.0
+ */
+
+class WC_PayPal_Standard_Subscriptions {
+
+	public static $api_username;
+	public static $api_password;
+	public static $api_signature;
+	public static $api_endpoint;
+
+	private static $request_handler;
+
+	/**
+	 * Set the public properties to make sure  we don&#039;t trigger any fatal errors even though the class is deprecated.
+	 *
+	 * @since 1.0
+	 */
+	public static function init() {
+		self::$api_username  = WCS_PayPal::get_option( &#039;api_username&#039; );
+		self::$api_password  = WCS_PayPal::get_option( &#039;api_password&#039; );
+		self::$api_signature = WCS_PayPal::get_option( &#039;api_signature&#039; );
+		self::$api_endpoint  = ( &#039;no&#039; == WCS_PayPal::get_option( &#039;testmode&#039; ) ) ? &#039;https://api-3t.paypal.com/nvp&#039; : &#039;https://api-3t.sandbox.paypal.com/nvp&#039;;
+	}
+
+	/**
+	 * Checks if the PayPal API credentials are set.
+	 *
+	 * @since 1.0
+	 */
+	public static function are_credentials_set() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal::are_credentials_set()&#039; );
+		return WCS_PayPal::are_credentials_set();
+	}
+
+	/**
+	 * Add subscription support to the PayPal Standard gateway only when credentials are set
+	 *
+	 * @since 1.0
+	 */
+	public static function add_paypal_standard_subscription_support( $is_supported, $feature, $gateway ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal_Supports::add_feature_support( $is_supported, $feature, $gateway )&#039; );
+		return WCS_PayPal_Supports::add_feature_support( $is_supported, $feature, $gateway );
+	}
+
+	/**
+	 * When a PayPal IPN messaged is received for a subscription transaction,
+	 * check the transaction details and
+	 *
+	 * @since 1.0
+	 */
+	public static function process_paypal_ipn_request( $transaction_details ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal::process_ipn_request( $transaction_details )&#039; );
+		WCS_PayPal::process_ipn_request( $transaction_details );
+	}
+
+	/**
+	 * Override the default PayPal standard args in WooCommerce for subscription purchases when
+	 * automatic payments are enabled and when the recurring order totals is over $0.00 (because
+	 * PayPal doesn&#039;t support subscriptions with a $0 recurring total, we need to circumvent it and
+	 * manage it entirely ourselves.)
+	 *
+	 * @since 1.0
+	 */
+	public static function paypal_standard_subscription_args( $paypal_args, $order = &#039;&#039; ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal_Standard_Request::get_paypal_args( $paypal_args, $order )&#039; );
+		return WCS_PayPal_Standard_Request::get_paypal_args( $paypal_args, $order );
+	}
+
+	/**
+	 * Adds extra PayPal credential fields required to manage subscriptions.
+	 *
+	 * @since 1.0
+	 */
+	public static function add_subscription_form_fields() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal_Admin::add_form_fields()&#039; );
+		WCS_PayPal_Admin::add_form_fields();
+	}
+
+	/**
+	 * Returns a PayPal Subscription ID/Recurring Payment Profile ID based on a user ID and subscription key
+	 *
+	 * @param WC_Order|WC_Subscription A WC_Order object or child object (i.e. WC_Subscription)
+	 * @since 1.1
+	 */
+	public static function get_subscriptions_paypal_id( $order_id, $product_id = &#039;&#039; ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_get_paypal_id( $order_id )&#039; );
+		return wcs_get_paypal_id( $order_id );
+	}
+
+	/**
+	 * Performs an Express Checkout NVP API operation as passed in $api_method.
+	 *
+	 * Although the PayPal Standard API provides no facility for cancelling a subscription, the PayPal
+	 * Express Checkout NVP API can be used.
+	 *
+	 * @since 1.1
+	 */
+	public static function change_subscription_status( $profile_id, $new_status, $order = null ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal::get_api()-&gt;manage_recurring_payments_profile_status()&#039; );
+		return WCS_PayPal::get_api()-&gt;manage_recurring_payments_profile_status( $profile_id, $new_status, $order );
+	}
+
+	/**
+	 * Checks a set of args and derives an Order ID with backward compatibility for WC &lt; 1.7 where &#039;custom&#039; was the Order ID.
+	 *
+	 * @since 1.2
+	 */
+	public static function get_order_id_and_key( $args ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_Paypal_Standard_IPN_Handler::get_order_id_and_key()&#039; );
+		return WCS_Paypal_Standard_IPN_Handler::get_order_id_and_key( $args, &#039;shop_order&#039; );
+	}
+
+	/**
+	 * If changing a subscriptions payment method from and to PayPal, wait until an appropriate IPN message
+	 * has come in before deciding to cancel the old subscription.
+	 *
+	 * @since 2.0
+	 */
+	public static function maybe_remove_subscription_cancelled_callback( $subscription, $new_payment_method, $old_payment_method ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * If changing a subscriptions payment method from and to PayPal, the cancelled subscription hook was removed in
+	 * @see self::maybe_remove_cancelled_subscription_hook() so we want to add it again for other subscriptions.
+	 *
+	 * @since 2.0
+	 */
+	public static function maybe_reattach_subscription_cancelled_callback( $subscription, $new_payment_method, $old_payment_method ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Don&#039;t update the payment method on checkout when switching to PayPal - wait until we have the IPN message.
+	 *
+	 * @param  string $item_name
+	 * @return string
+	 * @since 1.5.14
+	 */
+	public static function maybe_dont_update_payment_method( $update, $new_payment_method ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+		return $update;
+	}
+
+	/**
+	 * In typical PayPal style, there are a couple of important limitations we need to work around:
+	 *
+	 * @since 1.4.3
+	 */
+	public static function scheduled_subscription_payment() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Prompt the store manager to enter their PayPal API credentials if they are using
+	 * PayPal and have yet not entered their API credentials.
+	 *
+	 * @return void
+	 */
+	public static function maybe_show_admin_notice() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * When a store manager or user cancels a subscription in the store, also cancel the subscription with PayPal.
+	 *
+	 * @since 1.1
+	 */
+	public static function cancel_subscription_with_paypal( $order, $product_id = &#039;&#039;, $profile_id = &#039;&#039; ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal_Status_Manager::cancel_subscription( $subscription )&#039; );
+		foreach ( wcs_get_subscriptions_for_order( $order, array( &#039;order_type&#039; =&gt; &#039;parent&#039; ) ) as $subscription ) {
+			self::change_subscription_status( $profile_id, &#039;Cancel&#039;, $subscription );
+		}
+	}
+
+	/**
+	 * When a store manager or user suspends a subscription in the store, also suspend the subscription with PayPal.
+	 *
+	 * @since 1.1
+	 */
+	public static function suspend_subscription_with_paypal( $order, $product_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal_Status_Manager::suspend_subscription( $subscription )&#039; );
+		foreach ( wcs_get_subscriptions_for_order( $order, array( &#039;order_type&#039; =&gt; &#039;parent&#039; ) ) as $subscription ) {
+			WCS_PayPal_Status_Manager::suspend_subscription( $subscription );
+		}
+	}
+
+	/**
+	 * When a store manager or user reactivates a subscription in the store, also reactivate the subscription with PayPal.
+	 *
+	 * How PayPal Handles suspension is discussed here: https://www.x.com/developers/paypal/forums/nvp/reactivate-recurring-profile
+	 *
+	 * @since 1.1
+	 */
+	public static function reactivate_subscription_with_paypal( $order, $product_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal::reactivate_subscription( $subscription )&#039; );
+		foreach ( wcs_get_subscriptions_for_order( $order, array( &#039;order_type&#039; =&gt; &#039;parent&#039; ) ) as $subscription ) {
+			WCS_PayPal_Status_Manager::reactivate_subscription( $subscription );
+		}
+	}
+
+	/**
+	 * Don&#039;t transfer PayPal customer/token meta when creating a parent renewal order.
+	 *
+	 * @access public
+	 * @param array $order_meta_query MySQL query for pulling the metadata
+	 * @param int $original_order_id Post ID of the order being used to purchased the subscription being renewed
+	 * @param int $renewal_order_id Post ID of the order created for renewing the subscription
+	 * @param string $new_order_role The role the renewal order is taking, one of &#039;parent&#039; or &#039;child&#039;
+	 * @return void
+	 */
+	public static function remove_renewal_order_meta( $order_meta_query, $original_order_id, $renewal_order_id, $new_order_role ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+
+		if ( &#039;parent&#039; == $new_order_role ) {
+			// phpcs:disable WordPress.WhiteSpace.PrecisionAlignment.Found
+			$order_meta_query .= &#039; AND `meta_key` NOT IN (&#039;
+				. &quot;&#039;Transaction ID&#039;, &quot;
+				. &quot;&#039;Payer first name&#039;, &quot;
+				. &quot;&#039;Payer last name&#039;, &quot;
+				. &quot;&#039;Payment type&#039;, &quot;
+				. &quot;&#039;Payer PayPal address&#039;, &quot;
+				. &quot;&#039;Payer PayPal first name&#039;, &quot;
+				. &quot;&#039;Payer PayPal last name&#039;, &quot;
+				. &quot;&#039;PayPal Subscriber ID&#039; )&quot;;
+			// phpcs:enable
+		}
+
+		return $order_meta_query;
+	}
+
+	/**
+	 * If changing a subscriptions payment method from and to PayPal, wait until an appropriate IPN message
+	 * has come in before deciding to cancel the old subscription.
+	 *
+	 * @since 1.4.6
+	 */
+	public static function maybe_remove_cancelled_subscription_hook( $order, $subscription_key, $new_payment_method, $old_payment_method ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * If changing a subscriptions payment method from and to PayPal, the cancelled subscription hook was removed in
+	 * @see self::maybe_remove_cancelled_subscription_hook() so we want to add it again for other subscriptions.
+	 *
+	 * @since 1.4.6
+	 */
+	public static function maybe_readd_cancelled_subscription_hook( $order, $subscription_key, $new_payment_method, $old_payment_method ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Takes a timestamp for a date in the future and calculates the number of days between now and then
+	 *
+	 * @since 1.4
+	 */
+	public static function calculate_trial_periods_until( $future_timestamp ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;wcs_calculate_paypal_trial_periods_until()&#039; );
+		return wcs_calculate_paypal_trial_periods_until( $future_timestamp );
+	}
+}
+
+/**
+ * Needs to be called after init so that $woocommerce global is setup
+ **/
+function create_paypal_standard_subscriptions() {
+	_deprecated_function( __METHOD__, &#039;2.0&#039;, &#039;WCS_PayPal::init()&#039; );
+	WC_PayPal_Standard_Subscriptions::init();
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

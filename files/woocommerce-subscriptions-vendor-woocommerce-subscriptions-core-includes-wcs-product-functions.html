@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-product-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_price_including_tax">
+        wcs_get_price_including_tax()
+        <a href="#function_wcs_get_price_including_tax" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-product-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-product-functions.html#source-view.21">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-product-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+</aside>
+
+        <p class="phpdocumentor-summary">For a given product, and optionally price/qty, work out the sign-up with tax included, based on store settings.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_price_including_tax</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Product">WC_Product</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$product</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$product</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Product">WC_Product</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$args</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_price_excluding_tax">
+        wcs_get_price_excluding_tax()
+        <a href="#function_wcs_get_price_excluding_tax" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-product-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-product-functions.html#source-view.45">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-product-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+</aside>
+
+        <p class="phpdocumentor-summary">For a given product, and optionally price/qty, work out the sign-up fee with tax excluded, based on store settings.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_price_excluding_tax</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Product">WC_Product</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$product</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$product</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Product">WC_Product</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$args</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_price_html_from_text">
+        wcs_get_price_html_from_text()
+        <a href="#function_wcs_get_price_html_from_text" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-product-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-product-functions.html#source-view.67">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-product-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns a &#039;from&#039; prefix if you want to show where prices start at.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_price_html_from_text</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$product</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$product</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_variation_prices">
+        wcs_get_variation_prices()
+        <a href="#function_wcs_get_variation_prices" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-product-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-product-functions.html#source-view.83">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-product-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get an array of the prices, used to help determine min/max values.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_variation_prices</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$variation</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$variable_product</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$variation</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$variable_product</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_min_max_variation_data">
+        wcs_get_min_max_variation_data()
+        <a href="#function_wcs_get_min_max_variation_data" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-product-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-product-functions.html#source-view.100">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-product-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get an array of the minimum and maximum priced variations based on subscription billing terms.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_min_max_variation_data</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$variable_product</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$child_variation_ids</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$variable_product</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$child_variation_ids</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the IDs of product variation children ids</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_calculate_min_max_variations">
+        wcs_calculate_min_max_variations()
+        <a href="#function_wcs_calculate_min_max_variations" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-product-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-product-functions.html#source-view.151">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-product-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Determine the minimum and maximum values for a set of structured subscription
+price data in a form created by @see wcs_get_min_max_variation_data()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_calculate_min_max_variations</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$variations_data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$variations_data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Product Functions
+ *
+ * Functions for managing renewal of a subscription.
+ *
+ * @author Prospress
+ * @category Core
+ * @package WooCommerce Subscriptions/Functions
+ * @version     2.2.0
+ */
+
+/**
+ * For a given product, and optionally price/qty, work out the sign-up with tax included, based on store settings.
+ *
+ * @since  2.2.0
+ * @param  WC_Product $product
+ * @param  array $args
+ * @return float
+ */
+function wcs_get_price_including_tax( $product, $args = array() ) {
+
+	$args = wp_parse_args( $args, array(
+		&#039;qty&#039;   =&gt; 1,
+		&#039;price&#039; =&gt; $product-&gt;get_price(),
+	) );
+
+	if ( function_exists( &#039;wc_get_price_including_tax&#039; ) ) { // WC 3.0+
+		$price = wc_get_price_including_tax( $product, $args );
+	} else { // WC &lt; 3.0
+		$price = $product-&gt;get_price_including_tax( $args[&#039;qty&#039;], $args[&#039;price&#039;] );
+	}
+
+	return $price;
+}
+
+/**
+ * For a given product, and optionally price/qty, work out the sign-up fee with tax excluded, based on store settings.
+ *
+ * @since  2.2.0
+ * @param  WC_Product $product
+ * @param  array $args
+ * @return float
+ */
+function wcs_get_price_excluding_tax( $product, $args = array() ) {
+
+	$args = wp_parse_args( $args, array(
+		&#039;qty&#039;   =&gt; 1,
+		&#039;price&#039; =&gt; $product-&gt;get_price(),
+	) );
+
+	if ( function_exists( &#039;wc_get_price_excluding_tax&#039; ) ) { // WC 3.0+
+		$price = wc_get_price_excluding_tax( $product, $args );
+	} else { // WC &lt; 3.0
+		$price = $product-&gt;get_price_excluding_tax( $args[&#039;qty&#039;], $args[&#039;price&#039;] );
+	}
+
+	return $price;
+}
+
+/**
+ * Returns a &#039;from&#039; prefix if you want to show where prices start at.
+ *
+ * @since  2.2.0
+ * @return string
+ */
+function wcs_get_price_html_from_text( $product = &#039;&#039; ) {
+
+	if ( function_exists( &#039;wc_get_price_html_from_text&#039; ) ) { // WC 3.0+
+		$price_html_from_text = wc_get_price_html_from_text();
+	} else { // WC &lt; 3.0
+		$price_html_from_text = $product-&gt;get_price_html_from_text();
+	}
+
+	return $price_html_from_text;
+}
+
+/**
+ * Get an array of the prices, used to help determine min/max values.
+ *
+ * @since 2.2.0
+ */
+function wcs_get_variation_prices( $variation, $variable_product ) {
+
+	return array(
+		&#039;price&#039;         =&gt; apply_filters( &#039;woocommerce_variation_prices_price&#039;, WC_Subscriptions_Product::get_price( $variation ), $variation, $variable_product ),
+		&#039;regular_price&#039; =&gt; apply_filters( &#039;woocommerce_variation_prices_regular_price&#039;, WC_Subscriptions_Product::get_regular_price( $variation, &#039;edit&#039; ), $variation, $variable_product ),
+		&#039;sale_price&#039;    =&gt; apply_filters( &#039;woocommerce_variation_prices_sale_price&#039;, WC_Subscriptions_Product::get_sale_price( $variation, &#039;edit&#039; ), $variation, $variable_product ),
+		&#039;sign_up_fee&#039;   =&gt; apply_filters( &#039;woocommerce_variation_prices_sign_up_fee&#039;, WC_Subscriptions_Product::get_sign_up_fee( $variation ), $variation, $variable_product ),
+	);
+}
+
+/**
+ * Get an array of the minimum and maximum priced variations based on subscription billing terms.
+ *
+ * @param array $child_variation_ids the IDs of product variation children ids
+ * @return array Array containing the min and max variation prices and billing data
+ * @since 2.2.0
+ */
+function wcs_get_min_max_variation_data( $variable_product, $child_variation_ids = array() ) {
+
+	if ( empty( $child_variation_ids ) ) {
+		$child_variation_ids = is_callable( array( $variable_product, &#039;get_visible_children&#039; ) ) ? $variable_product-&gt;get_visible_children() : $variable_product-&gt;get_children( true );
+	}
+
+	$variations_data = array();
+
+	foreach ( $child_variation_ids as $variation_id ) {
+
+		if ( $variation = wc_get_product( $variation_id ) ) {
+
+			$prices = wcs_get_variation_prices( $variation, $variable_product );
+
+			foreach ( $prices as $price_key =&gt; $amount ) {
+				if ( &#039;&#039; !== $amount ) {
+					if ( &#039;incl&#039; === get_option( &#039;woocommerce_tax_display_shop&#039; ) ) {
+						$prices[ $price_key ] = wcs_get_price_including_tax( $variable_product, array( &#039;price&#039; =&gt; $amount ) );
+					} else {
+						$prices[ $price_key ] = wcs_get_price_excluding_tax( $variable_product, array( &#039;price&#039; =&gt; $amount ) );
+					}
+				}
+			}
+
+			$variations_data[ $variation_id ] = array(
+				&#039;price&#039;         =&gt; $prices[&#039;price&#039;],
+				&#039;regular_price&#039; =&gt; $prices[&#039;regular_price&#039;],
+				&#039;sale_price&#039;    =&gt; $prices[&#039;sale_price&#039;],
+				&#039;subscription&#039;  =&gt; array(
+					&#039;sign_up_fee&#039;  =&gt; $prices[&#039;sign_up_fee&#039;],
+					&#039;period&#039;       =&gt; WC_Subscriptions_Product::get_period( $variation ),
+					&#039;interval&#039;     =&gt; WC_Subscriptions_Product::get_interval( $variation ),
+					&#039;trial_length&#039; =&gt; WC_Subscriptions_Product::get_trial_length( $variation ),
+					&#039;trial_period&#039; =&gt; WC_Subscriptions_Product::get_trial_period( $variation ),
+					&#039;length&#039;       =&gt; WC_Subscriptions_Product::get_length( $variation ),
+				),
+			);
+		}
+	}
+
+	return wcs_calculate_min_max_variations( $variations_data );
+}
+
+/**
+ * Determine the minimum and maximum values for a set of structured subscription
+ * price data in a form created by @see wcs_get_min_max_variation_data()
+ *
+ * @param array $child_variation_ids the IDs of product variation children ids
+ * @return array
+ * @since 2.2.0
+ */
+function wcs_calculate_min_max_variations( $variations_data ) {
+
+	$lowest_initial_amount             = $highest_initial_amount = $lowest_price = $highest_price = &#039;&#039;;
+	$shortest_initial_period           = $longest_initial_period = $shortest_trial_period = $longest_trial_period = $shortest_trial_length = $longest_trial_length = &#039;&#039;;
+	$longest_initial_interval          = $shortest_initial_interval = $variable_subscription_period = $variable_subscription_period_interval = &#039;&#039;;
+	$lowest_regular_price              = $highest_regular_price = $lowest_sale_price = $highest_sale_price = $max_subscription_period = $max_subscription_period_interval = &#039;&#039;;
+	$variable_subscription_sign_up_fee = $variable_subscription_trial_period = $variable_subscription_trial_length = $variable_subscription_length = $variable_subscription_sign_up_fee = $variable_subscription_trial_period = $variable_subscription_trial_length = $variable_subscription_length = &#039;&#039;;
+	$min_variation_id                  = $max_variation_id = null;
+
+	$variations_data_prices_list        = array();
+	$variations_data_sign_up_fees_list  = array();
+	$variations_data_periods_list       = array();
+	$variations_data_intervals_list     = array();
+	$variations_data_trial_lengths_list = array();
+	$variations_data_trial_periods_list = array();
+	$variations_data_lengths_list       = array();
+
+	foreach ( $variations_data as $variation_id =&gt; $variation_data ) {
+
+		$is_max = $is_min = false;
+
+		if ( &#039;&#039; === $variation_data[&#039;price&#039;] &amp;&amp; empty( $variation_data[&#039;subscription&#039;][&#039;sign_up_fee&#039;] ) ) {
+			continue;
+		}
+
+		$variations_data_prices_list        = array_unique( array_merge( $variations_data_prices_list, array( $variation_data[&#039;price&#039;] ) ) );
+		$variations_data_sign_up_fees_list  = array_unique( array_merge( $variations_data_sign_up_fees_list, array( empty( $variation_data[&#039;subscription&#039;][&#039;sign_up_fee&#039;] ) ? 0 : $variation_data[&#039;subscription&#039;][&#039;sign_up_fee&#039;] ) ) );
+		$variations_data_periods_list       = array_unique( array_merge( $variations_data_periods_list, array( $variation_data[&#039;subscription&#039;][&#039;period&#039;] ) ) );
+		$variations_data_intervals_list     = array_unique( array_merge( $variations_data_intervals_list, array( $variation_data[&#039;subscription&#039;][&#039;interval&#039;] ) ) );
+		$variations_data_trial_lengths_list = array_unique( array_merge( $variations_data_trial_lengths_list, array( empty( $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;] ) ? 0 : $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;] ) ) );
+		$variations_data_trial_periods_list = array_unique( array_merge( $variations_data_trial_periods_list, array( $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;] ) ) );
+		$variations_data_lengths_list       = array_unique( array_merge( $variations_data_lengths_list, array( $variation_data[&#039;subscription&#039;][&#039;length&#039;] ) ) );
+
+		$has_free_trial = &#039;&#039; !== $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;] &amp;&amp; $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;] &gt; 0;
+
+		// Determine some recurring price flags
+		$is_lowest_price     = $variation_data[&#039;price&#039;] &lt; $lowest_price || &#039;&#039; === $lowest_price;
+		$is_longest_period   = wcs_get_longest_period( $variable_subscription_period, $variation_data[&#039;subscription&#039;][&#039;period&#039;] ) === $variation_data[&#039;subscription&#039;][&#039;period&#039;];
+		$is_longest_interval = $variation_data[&#039;subscription&#039;][&#039;interval&#039;] &gt;= $variable_subscription_period_interval || &#039;&#039; === $variable_subscription_period_interval;
+
+		// Find the amount the subscriber will have to pay up-front
+		if ( $has_free_trial ) {
+			$initial_amount   = $variation_data[&#039;subscription&#039;][&#039;sign_up_fee&#039;];
+			$initial_period   = $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;];
+			$initial_interval = $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;];
+		} else {
+			$initial_amount   = (float) $variation_data[&#039;price&#039;] + (float) $variation_data[&#039;subscription&#039;][&#039;sign_up_fee&#039;];
+			$initial_period   = $variation_data[&#039;subscription&#039;][&#039;period&#039;];
+			$initial_interval = $variation_data[&#039;subscription&#039;][&#039;interval&#039;];
+		}
+
+		// We have a free trial &amp; no sign-up fee, so need to choose the longest free trial (and maybe the shortest)
+		if ( $has_free_trial &amp;&amp; 0 == $variation_data[&#039;subscription&#039;][&#039;sign_up_fee&#039;] ) {
+
+			// First variation
+			if ( &#039;&#039; === $longest_trial_period ) {
+
+				$is_min = true;
+
+			// If two variations have the same free trial, choose the variation with the lowest recurring price for the longest period
+			} elseif ( $variable_subscription_trial_period === $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;] &amp;&amp; $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;] === $variable_subscription_trial_length ) {
+
+				// If the variation has the lowest recurring price, it&#039;s the cheapest
+				if ( $is_lowest_price ) {
+
+					$is_min = true;
+
+				// When current variation&#039;s free trial is the same as the lowest, it&#039;s the cheaper if it has a longer billing schedule
+				} elseif ( $variation_data[&#039;price&#039;] === $lowest_price ) {
+
+					if ( $is_longest_period &amp;&amp; $is_longest_interval ) {
+
+						$is_min = true;
+
+					// Longest with a new billing period
+					} elseif ( $is_longest_period &amp;&amp; $variation_data[&#039;subscription&#039;][&#039;period&#039;] !== $variable_subscription_trial_period ) {
+
+						$is_min = true;
+
+					}
+				}
+
+			// Otherwise the cheapest variation is the one with the longer trial
+			} elseif ( $variable_subscription_trial_period === $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;] ) {
+
+				$is_min = $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;] &gt; $variable_subscription_trial_length;
+
+			// Otherwise just a longer trial period (that isn&#039;t equal to the longest period)
+			} elseif ( wcs_get_longest_period( $longest_trial_period, $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;] ) === $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;] ) {
+
+				$is_min = true;
+
+			}
+
+			if ( $is_min ) {
+				$longest_trial_period = $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;];
+				$longest_trial_length = $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;];
+			}
+
+			// If the current cheapest variation is also free, then the shortest trial period is the most expensive
+			if ( 0 == $lowest_price || &#039;&#039; === $lowest_price ) {
+
+				if ( &#039;&#039; === $shortest_trial_period ) {
+
+					$is_max = true;
+
+				// Need to check trial length
+				} elseif ( $shortest_trial_period === $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;] ) {
+
+					$is_max = $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;] &lt; $shortest_trial_length;
+
+				// Need to find shortest period
+				} elseif ( wcs_get_shortest_period( $shortest_trial_period, $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;] ) === $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;] ) {
+
+					$is_max = true;
+
+				}
+
+				if ( $is_max ) {
+					$shortest_trial_period = $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;];
+					$shortest_trial_length = $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;];
+				}
+			}
+		} else {
+
+			$longest_initial_period  = wcs_get_longest_period( $longest_initial_period, $initial_period );
+			$shortest_initial_period = wcs_get_shortest_period( $shortest_initial_period, $initial_period );
+
+			$is_lowest_initial_amount    = $initial_amount &lt; $lowest_initial_amount || &#039;&#039; === $lowest_initial_amount;
+			$is_longest_initial_period   = $initial_period === $longest_initial_period;
+			$is_longest_initial_interval = $initial_interval &gt;= $longest_initial_interval || &#039;&#039; === $longest_initial_interval;
+
+			$is_highest_initial   = $initial_amount &gt; $highest_initial_amount || &#039;&#039; === $highest_initial_amount;
+			$is_shortest_period   = $initial_period === $shortest_initial_period || &#039;&#039; === $shortest_initial_period;
+			$is_shortest_interval = $initial_interval &lt; $shortest_initial_interval || &#039;&#039; === $shortest_initial_interval;
+
+			// If we&#039;re not dealing with the lowest initial access amount, then ignore this variation
+			if ( ! $is_lowest_initial_amount &amp;&amp; $initial_amount !== $lowest_initial_amount ) {
+				continue;
+			}
+
+			// If the variation has the lowest price, it&#039;s the cheapest
+			if ( $is_lowest_initial_amount ) {
+
+				$is_min = true;
+
+			// When current variation&#039;s price is the same as the lowest, it&#039;s the cheapest only if it has a longer billing schedule
+			} elseif ( $initial_amount === $lowest_initial_amount ) {
+
+				// We need to check the recurring schedule when the sign-up fee &amp; free trial periods are equal
+				if ( $has_free_trial &amp;&amp; $initial_period == $longest_initial_period &amp;&amp; $initial_interval == $longest_initial_interval ) {
+
+					// If the variation has the lowest recurring price, it&#039;s the cheapest
+					if ( $is_lowest_price ) {
+
+						$is_min = true;
+
+					// When current variation&#039;s price is the same as the lowest, it&#039;s the cheapest only if it has a longer billing schedule
+					} elseif ( $variation_data[&#039;price&#039;] === $lowest_price ) {
+
+						if ( $is_longest_period &amp;&amp; $is_longest_interval ) {
+
+							$is_min = true;
+
+						// Longest with a new billing period
+						} elseif ( $is_longest_period &amp;&amp; $variation_data[&#039;subscription&#039;][&#039;period&#039;] !== $variable_subscription_period ) {
+
+							$is_min = true;
+
+						}
+					}
+				// Longest initial term is the cheapest
+				} elseif ( $is_longest_initial_period &amp;&amp; $is_longest_initial_interval ) {
+
+					$is_min = true;
+
+				// Longest with a new billing period
+				} elseif ( $is_longest_initial_period &amp;&amp; $initial_period !== $variable_subscription_period ) {
+
+					$is_min = true;
+
+				}
+			}
+
+			// If we have the highest price for the shortest period, we might have the maximum variation
+			if ( $is_highest_initial &amp;&amp; $is_shortest_period &amp;&amp; $is_shortest_interval ) {
+
+				$is_max = true;
+
+			// But only if its for the shortest billing period
+			} elseif ( $variation_data[&#039;price&#039;] === $highest_price ) {
+
+				if ( $is_shortest_period &amp;&amp; $is_shortest_interval ) {
+
+					$is_max = true;
+
+				} elseif ( $is_shortest_period ) {
+
+					$is_max = true;
+
+				}
+			}
+		}
+
+		// If it&#039;s the min subscription terms
+		if ( $is_min ) {
+
+			$min_variation_id      = $variation_id;
+
+			$lowest_price          = $variation_data[&#039;price&#039;];
+			$lowest_regular_price  = $variation_data[&#039;regular_price&#039;];
+			$lowest_sale_price     = $variation_data[&#039;sale_price&#039;];
+
+			$lowest_regular_price = ( &#039;&#039; === $lowest_regular_price ) ? 0 : $lowest_regular_price;
+			$lowest_sale_price    = ( &#039;&#039; === $lowest_sale_price ) ? 0 : $lowest_sale_price;
+
+			$lowest_initial_amount    = $initial_amount;
+			$longest_initial_period   = $initial_period;
+			$longest_initial_interval = $initial_interval;
+
+			$variable_subscription_sign_up_fee     = $variation_data[&#039;subscription&#039;][&#039;sign_up_fee&#039;];
+			$variable_subscription_period          = $variation_data[&#039;subscription&#039;][&#039;period&#039;];
+			$variable_subscription_period_interval = $variation_data[&#039;subscription&#039;][&#039;interval&#039;];
+			$variable_subscription_trial_length    = $variation_data[&#039;subscription&#039;][&#039;trial_length&#039;];
+			$variable_subscription_trial_period    = $variation_data[&#039;subscription&#039;][&#039;trial_period&#039;];
+			$variable_subscription_length          = $variation_data[&#039;subscription&#039;][&#039;length&#039;];
+		}
+
+		if ( $is_max ) {
+
+			$max_variation_id       = $variation_id;
+
+			$highest_price          = $variation_data[&#039;price&#039;];
+			$highest_regular_price  = $variation_data[&#039;regular_price&#039;];
+			$highest_sale_price     = $variation_data[&#039;sale_price&#039;];
+			$highest_initial_amount = $initial_amount;
+
+			$highest_regular_price = ( &#039;&#039; === $highest_regular_price ) ? 0 : $highest_regular_price;
+			$highest_sale_price    = ( &#039;&#039; === $highest_sale_price ) ? 0 : $highest_sale_price;
+
+			$max_subscription_period          = $variation_data[&#039;subscription&#039;][&#039;period&#039;];
+			$max_subscription_period_interval = $variation_data[&#039;subscription&#039;][&#039;interval&#039;];
+		}
+	}
+
+	if ( sizeof( array_unique( $variations_data_prices_list ) ) &gt; 1 ) {
+		$subscription_details_identical = false;
+	} elseif ( sizeof( array_unique( $variations_data_sign_up_fees_list ) ) &gt; 1 ) {
+		$subscription_details_identical = false;
+	} elseif ( sizeof( array_unique( $variations_data_periods_list ) ) &gt; 1 ) {
+		$subscription_details_identical = false;
+	} elseif ( sizeof( array_unique( $variations_data_intervals_list ) ) &gt; 1 ) {
+		$subscription_details_identical = false;
+	} elseif ( sizeof( array_unique( $variations_data_trial_lengths_list ) ) &gt; 1 ) {
+		$subscription_details_identical = false;
+	} elseif ( sizeof( array_unique( $variations_data_trial_periods_list ) ) &gt; 1 ) {
+		$subscription_details_identical = false;
+	} elseif ( sizeof( array_unique( $variations_data_lengths_list ) ) &gt; 1 ) {
+		$subscription_details_identical = false;
+	} else {
+		$subscription_details_identical = true;
+	}
+
+	return array(
+		&#039;min&#039;          =&gt; array(
+			&#039;variation_id&#039;  =&gt; $min_variation_id,
+			&#039;price&#039;         =&gt; $lowest_price,
+			&#039;regular_price&#039; =&gt; $lowest_regular_price,
+			&#039;sale_price&#039;    =&gt; $lowest_sale_price,
+			&#039;period&#039;        =&gt; $variable_subscription_period,
+			&#039;interval&#039;      =&gt; $variable_subscription_period_interval,
+		),
+		&#039;max&#039;          =&gt; array(
+			&#039;variation_id&#039;  =&gt; $max_variation_id,
+			&#039;price&#039;         =&gt; $highest_price,
+			&#039;regular_price&#039; =&gt; $highest_regular_price,
+			&#039;sale_price&#039;    =&gt; $highest_sale_price,
+			&#039;period&#039;        =&gt; $max_subscription_period,
+			&#039;interval&#039;      =&gt; $max_subscription_period_interval,
+		),
+		&#039;subscription&#039; =&gt; array(
+			&#039;signup-fee&#039;   =&gt; $variable_subscription_sign_up_fee,
+			&#039;trial_period&#039; =&gt; $variable_subscription_trial_period,
+			&#039;trial_length&#039; =&gt; $variable_subscription_trial_length,
+			&#039;length&#039;       =&gt; $variable_subscription_length,
+		),
+		&#039;identical&#039;    =&gt; $subscription_details_identical,
+	);
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-related-order-store-cpt.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+/**
+ * Related order data store for orders stored in Custom Post Types.
+ *
+ * Importantly, this class uses WC_Data API methods, like WC_Data::add_meta_data() and WC_Data::get_meta(), to manage the
+ * relationships instead of add_post_meta() or get_post_meta(). This ensures that the relationship is stored, regardless
+ * of the order data store being used. However, it also creates potential for relationships to fall out of sync if a
+ * custom order data store is active, because @see $this-&gt;get_related_order_ids() queries the posts table via wp_posts(),
+ * not the order&#039;s data store. This is unavoidable as wc_get_orders() and WC_Order_Query do not provide any way to query
+ * meta data abstracted from the data store. Instead, it relies on 3rd party code to add custom parameter support for meta.
+ * Source: https://github.com/woocommerce/woocommerce/wiki/wc_get_orders-and-WC_Order_Query#adding-custom-parameter-support
+ *
+ * Adding custom parameter support to order querying APIs won&#039;t help solve this issue, as the code would still directly
+ * query post meta by default, and require additional code for different order data stores.
+ *
+ * The solution will be to eventually move away from the use of meta data on the order to a standalone relationship table.
+ * This can be done already on sites running custom order data stores as WCS_Related_Order_Store::instance() is
+ * filterable. It will eventually also be the default implementation in a future version of Subscriptions.
+ *
+ * @version  2.3.0
+ * @category Class
+ * @author   Prospress
+ */
+class WCS_Related_Order_Store_CPT extends WCS_Related_Order_Store {
+
+	/**
+	 * Meta keys used to link an order with a subscription for each type of relationship.
+	 *
+	 * @since 2.3.0
+	 * @var array $meta_keys Relationship =&gt; Meta key
+	 */
+	private $meta_keys;
+
+	/**
+	 * Constructor: sets meta keys used for storing each order relation.
+	 */
+	public function __construct() {
+		foreach ( $this-&gt;get_relation_types() as $relation_type ) {
+			$this-&gt;meta_keys[ $relation_type ] = sprintf( &#039;_subscription_%s&#039;, $relation_type );
+		}
+	}
+
+	/**
+	 * Find orders related to a given subscription in a given way.
+	 *
+	 * This method uses the WordPress Posts API instead of the WooCommerce Order&#039;s API, because
+	 * order&#039;s can not be queried by meta data with either wc_get_orders() or WC_Order_Query, so
+	 * a custom query parameter would need to be added to WC_Order_Query to run that query, which
+	 * is not something we want to add public APIs for because in future, that relationship will
+	 * be moved out of order meta and into its own table and queries on it should come through
+	 * here instead of the order querying API.
+	 *
+	 * @param WC_Order $subscription The ID of the subscription for which calling code wants the related orders.
+	 * @param string $relation_type The relationship between the subscription and the orders. Must be &#039;renewal&#039;, &#039;switch&#039; or &#039;resubscribe.
+	 *
+	 * @return array
+	 */
+	public function get_related_order_ids( WC_Order $subscription, $relation_type ) {
+		$related_order_ids = get_posts( array(
+			&#039;posts_per_page&#039;         =&gt; -1,
+			&#039;post_type&#039;              =&gt; &#039;shop_order&#039;,
+			&#039;post_status&#039;            =&gt; &#039;any&#039;,
+			&#039;fields&#039;                 =&gt; &#039;ids&#039;,
+			&#039;meta_query&#039;             =&gt; array(
+				array(
+					&#039;key&#039;     =&gt; $this-&gt;get_meta_key( $relation_type ),
+					&#039;compare&#039; =&gt; &#039;=&#039;,
+					&#039;value&#039;   =&gt; wcs_get_objects_property( $subscription, &#039;id&#039; ), // We can&#039;t rely on get_id() being available here, because we only require a WC_Order, not a WC_Subscription, and WC_Order does not have get_id() available with WC &lt; 3.0
+					&#039;type&#039;    =&gt; &#039;numeric&#039;,
+				),
+			),
+			&#039;update_post_term_cache&#039; =&gt; false,
+		) );
+
+		rsort( $related_order_ids );
+
+		return $related_order_ids;
+	}
+
+	/**
+	 * Find subscriptions related to a given order in a given way, if any.
+	 *
+	 * @param WC_Order $order The ID of an order that may be linked with subscriptions.
+	 * @param string $relation_type The relationship between the subscription and the orders. Must be &#039;renewal&#039;, &#039;switch&#039; or &#039;resubscribe.
+	 *
+	 * @return array
+	 */
+	public function get_related_subscription_ids( WC_Order $order, $relation_type ) {
+		$related_order_meta_key = $this-&gt;get_meta_key( $relation_type );
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			$related_subscription_ids = get_post_meta( wcs_get_objects_property( $order, &#039;id&#039; ), $related_order_meta_key, false );
+		} else {
+			$related_subscription_ids = $order-&gt;get_meta( $related_order_meta_key, false );
+			// Normalise the return value: WooCommerce returns a set of WC_Meta_Data objects, with values cast to strings, even if they&#039;re integers
+			$related_subscription_ids = wp_list_pluck( $related_subscription_ids, &#039;value&#039; );
+			$related_subscription_ids = array_map( &#039;absint&#039;, $related_subscription_ids );
+			$related_subscription_ids = array_values( $related_subscription_ids );
+		}
+
+		$related_subscription_ids = $this-&gt;apply_deprecated_related_order_filter( $related_subscription_ids, $order, $relation_type );
+
+		return apply_filters( &#039;wcs_orders_related_subscription_ids&#039;, $related_subscription_ids, $order, $relation_type );
+	}
+
+	/**
+	 * Apply the deprecated &#039;wcs_subscriptions_for_renewal_order&#039; and &#039;wcs_subscriptions_for_resubscribe_order&#039; filters
+	 * to maintain backward compatibility.
+	 *
+	 * @param array $subscription_ids The IDs of subscription linked to the given order, if any.
+	 * @param WC_Order $order An instance of an order that may be linked with subscriptions.
+	 * @param string $relation_type The relationship between the subscription and the orders. Must be &#039;renewal&#039;, &#039;switch&#039; or &#039;resubscribe&#039;.
+	 *
+	 * @return array
+	 */
+	protected function apply_deprecated_related_order_filter( $subscription_ids, WC_Order $order, $relation_type ) {
+
+		$deprecated_filter_hook = &quot;wcs_subscriptions_for_{$relation_type}_order&quot;;
+
+		if ( has_filter( $deprecated_filter_hook ) ) {
+			wcs_deprecated_function( sprintf( &#039;&quot;%s&quot; hook should no longer be used and&#039;, esc_html( $deprecated_filter_hook ) ), &#039;2.3.2&#039;, &#039;&quot;wcs_orders_related_subscription_ids&quot; with a check on the 3rd param, to take advantage of the new persistent caching layer for related subscription IDs&#039; );
+
+			$subscriptions = array();
+
+			foreach ( $subscription_ids as $subscription_id ) {
+				if ( wcs_is_subscription( $subscription_id ) ) {
+					$subscriptions[ $subscription_id ] = wcs_get_subscription( $subscription_id );
+				}
+			}
+
+			$filtered_subscriptions = apply_filters( $deprecated_filter_hook, $subscriptions, $order );
+
+			// Although this array was previously ordered by ID =&gt; instance, that key requirement wasn&#039;t enforced so it&#039;s possible 3rd party code was not using the ID as the key, and instead, numerical indexes are being used, so its safest not to rely on IDs as keys
+			if ( $filtered_subscriptions != $subscriptions ) {
+
+				$subscription_ids = array();
+
+				foreach ( $filtered_subscriptions as $subscription ) {
+					$subscription_ids[] = $subscription-&gt;get_id();
+				}
+			}
+		}
+
+		return $subscription_ids;
+	}
+
+	/**
+	 * Helper function for linking an order to a subscription via a given relationship.
+	 *
+	 * Existing order relationships of the same type will not be overwritten. This only adds a relationship. To overwrite,
+	 * you must also remove any existing relationship with @see $this-&gt;delete_relation().
+	 *
+	 * This data store links the relationship for a renewal order and a subscription in meta data against the order.
+	 * That&#039;s inefficient for queries, so will be changed in future with a different data store. It also leads to potential
+	 * bugs when WooCommerce 3.0 or newer is running with a custom data store for order data, as related orders are queried
+	 * in $this-&gt;get_related_order_ids() using post meta directly, but set here using the CRUD WC_Data::add_meta_data() method.
+	 * This is unfortunately unavoidable. See the WCS_Related_Order_Store_CPT docblock for more details.
+	 *
+	 * @param WC_Order $order The order to link with the subscription.
+	 * @param WC_Order $subscription The order or subscription to link the order to.
+	 * @param string $relation_type The relationship between the subscription and the order. Must be &#039;renewal&#039;, &#039;switch&#039; or &#039;resubscribe&#039; unless custom relationships are implemented.
+	 */
+	public function add_relation( WC_Order $order, WC_Order $subscription, $relation_type ) {
+
+		// We can&#039;t rely on $subscription-&gt;get_id() being available here, because we only require a WC_Order, not a WC_Subscription, and WC_Order does not have get_id() available with WC &lt; 3.0
+		$subscription_id        = wcs_get_objects_property( $subscription, &#039;id&#039; );
+		$related_order_meta_key = $this-&gt;get_meta_key( $relation_type );
+
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			$order_id             = wcs_get_objects_property( $order, &#039;id&#039; );
+			$existing_related_ids = get_post_meta( $order_id, $related_order_meta_key, false );
+
+			if ( empty( $existing_related_ids ) || ! in_array( $subscription_id, $existing_related_ids ) ) {
+				add_post_meta( $order_id, $related_order_meta_key, $subscription_id, false );
+			}
+		} else {
+			// We want to allow more than one piece of meta per key on the order, but we don&#039;t want to duplicate the same meta key =&gt; value combination, so we need to check if it is set first
+			$existing_relations   = $order-&gt;get_meta( $related_order_meta_key, false );
+			$existing_related_ids = wp_list_pluck( $existing_relations, &#039;value&#039; );
+
+			if ( empty( $existing_relations ) || ! in_array( $subscription_id, $existing_related_ids ) ) {
+				$order-&gt;add_meta_data( $related_order_meta_key, $subscription_id, false );
+				$order-&gt;save_meta_data();
+			}
+		}
+	}
+
+	/**
+	 * Remove the relationship between a given order and subscription.
+	 *
+	 * This data store links the relationship for a renewal order and a subscription in meta data against the order.
+	 * That&#039;s inefficient for queries, so will be changed in future with a different data store. It also leads to bugs
+	 * with custom data stores for order data, as $this-&gt;get_related_order_ids() queries post meta directly. This is
+	 * unavoidable. See the WCS_Related_Order_Store_CPT docblock for more details.
+	 *
+	 * @param WC_Order $order An order that may be linked with subscriptions.
+	 * @param WC_Order $subscription A subscription or order to unlink the order with, if a relation exists.
+	 * @param string $relation_type The relationship between the subscription and the order. Must be &#039;renewal&#039;, &#039;switch&#039; or &#039;resubscribe&#039; unless custom relationships are implemented.
+	 */
+	public function delete_relation( WC_Order $order, WC_Order $subscription, $relation_type ) {
+		$related_order_meta_key = $this-&gt;get_meta_key( $relation_type );
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			delete_post_meta( wcs_get_objects_property( $order, &#039;id&#039; ), $related_order_meta_key, wcs_get_objects_property( $subscription, &#039;id&#039; ) );
+		} else {
+			foreach ( $order-&gt;get_meta_data() as $meta ) {
+				if ( $meta-&gt;key == $related_order_meta_key &amp;&amp; $meta-&gt;value == wcs_get_objects_property( $subscription, &#039;id&#039; ) ) { // we can&#039;t do strict comparison here, because WC_Meta_Data casts the subscription ID to be a string
+					$order-&gt;delete_meta_data_by_mid( $meta-&gt;id );
+				}
+			}
+			$order-&gt;save_meta_data();
+		}
+	}
+
+	/**
+	 * Remove all related orders/subscriptions of a given type from an order.
+	 *
+	 * @param WC_Order $order An order that may be linked with subscriptions.
+	 * @param string $relation_type The relationship between the subscription and the order. Must be &#039;renewal&#039;, &#039;switch&#039; or &#039;resubscribe&#039; unless custom relationships are implemented.
+	 */
+	public function delete_relations( WC_Order $order, $relation_type ) {
+		$related_order_meta_key = $this-&gt;get_meta_key( $relation_type );
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			delete_post_meta( wcs_get_objects_property( $order, &#039;id&#039; ), $related_order_meta_key, null );
+		} else {
+			$order-&gt;delete_meta_data( $related_order_meta_key );
+			$order-&gt;save_meta_data();
+		}
+	}
+
+	/**
+	 * Get the meta keys used to link orders with subscriptions.
+	 *
+	 * @return array
+	 */
+	protected function get_meta_keys() {
+		return $this-&gt;meta_keys;
+	}
+
+	/**
+	 * Get the meta key used to link an order with a subscription based on the type of relationship.
+	 *
+	 * @param string $relation_type The order&#039;s relationship with the subscription. Must be &#039;renewal&#039;, &#039;switch&#039; or &#039;resubscribe&#039;.
+	 * @param string $prefix_meta_key Whether to add the underscore prefix to the meta key or not. &#039;prefix&#039; to prefix the key. &#039;do_not_prefix&#039; to not prefix the key.
+	 * @return string
+	 */
+	protected function get_meta_key( $relation_type, $prefix_meta_key = &#039;prefix&#039; ) {
+
+		$this-&gt;check_relation_type( $relation_type );
+
+		$meta_key = $this-&gt;meta_keys[ $relation_type ];
+
+		if ( &#039;do_not_prefix&#039; === $prefix_meta_key ) {
+			$meta_key = wcs_maybe_unprefix_key( $meta_key );
+		}
+
+		return $meta_key;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

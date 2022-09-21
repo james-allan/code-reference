@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html">WooCommerceSubscriptionsAdminUpgrades</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">abstract-wcs-background-repairer.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WCS_Background_Repairer Class
+ *
+ * Provide APIs for a repair script to find objects which need repairing, schedule a separate background process for each object using Action Scheduler, and then in that background process update data for that object.
+ *
+ * @author   WooCommerce
+ * @category Admin
+ * @package  WooCommerce Subscriptions/Admin/Upgrades
+ * @since    2.6.0
+ */
+
+// Exit if accessed directly
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+abstract class WCS_Background_Repairer extends WCS_Background_Upgrader {
+
+	/**
+	 * @var string The hook used to schedule background repairs for a specific object.
+	 */
+	protected $repair_hook;
+
+	/**
+	 * An internal cache of items which need to be repaired. Used in cases where the updater runs out of processing time, so we can ensure remaining items are processed in the next request.
+	 *
+	 * @var array
+	 */
+	protected $items_to_repair = array();
+
+	/**
+	 * Attaches callbacks to hooks.
+	 *
+	 * @since 2.6.0
+	 * @see WCS_Background_Updater::init() for additional hooks and callbacks.
+	 */
+	public function init() {
+		parent::init();
+		add_action( $this-&gt;repair_hook, array( $this, &#039;repair_item&#039; ) );
+	}
+
+	/**
+	 * Schedules the @see $this-&gt;scheduled_hook action to run in
+	 * @see $this-&gt;time_limit seconds (60 seconds by default).
+	 *
+	 * Sets the page to 1.
+	 *
+	 * @since 2.6.0
+	 */
+	public function schedule_repair() {
+		$this-&gt;set_page( 1 );
+		parent::schedule_repair();
+	}
+
+	/**
+	 * Gets a batch of items which need to be repaired.
+	 *
+	 * @since 2.6.0
+	 * @return array An array of items which need to be repaired.
+	 */
+	protected function get_items_to_update() {
+		$items_to_repair = array();
+
+		// Check if there are items from the last request that we should process first.
+		$unprocessed_items = $this-&gt;get_unprocessed_items();
+
+		if ( ! empty( $unprocessed_items ) ) {
+			$items_to_repair = $unprocessed_items;
+			$this-&gt;clear_unprocessed_items_cache();
+		} elseif ( $page = $this-&gt;get_page() ) {
+			$items_to_repair = $this-&gt;get_items_to_repair( $page );
+			$this-&gt;set_page( $page + 1 );
+		}
+
+		// Store the items as array keys for more performant un-setting.
+		$this-&gt;items_to_repair = array_flip( $items_to_repair );
+
+		return $items_to_repair;
+	}
+
+	/**
+	 * Runs the update and save any items which didn&#039;t get processed.
+	 *
+	 * @since 2.6.0
+	 */
+	public function run_update() {
+		parent::run_update();
+
+		// After running the update, save any items which haven&#039;t processed so we can handle them in the next request.
+		$this-&gt;save_unprocessed_items();
+	}
+
+	/**
+	 * Schedules the repair event for this item.
+	 *
+	 * @since 2.6.0
+	 */
+	protected function update_item( $item ) {
+		// Schedule the individual repair actions to run in 1 hr to give us the best chance at scheduling all the actions before they start running and clogging up the queue.
+		as_schedule_single_action( gmdate( &#039;U&#039; ) + HOUR_IN_SECONDS, $this-&gt;repair_hook, array( &#039;repair_object&#039; =&gt; $item ) );
+		unset( $this-&gt;items_to_repair[ $item ] );
+	}
+
+	/**
+	 * Gets the current page number.
+	 *
+	 * @since 2.6.0
+	 * @return int
+	 */
+	protected function get_page() {
+		return absint( get_option( &quot;{$this-&gt;repair_hook}_page&quot;, 0 ) );
+	}
+
+	/**
+	 * Sets the current page number.
+	 *
+	 * @since 2.6.0
+	 * @param int $page.
+	 */
+	protected function set_page( $page ) {
+		update_option( &quot;{$this-&gt;repair_hook}_page&quot;, (string) $page );
+	}
+
+	/**
+	 * Gets items from the last request which weren&#039;t processed.
+	 *
+	 * @since 2.6.0
+	 * @return array
+	 */
+	protected function get_unprocessed_items() {
+		return get_option( &quot;{$this-&gt;repair_hook}_unprocessed&quot;, array() );
+	}
+
+	/**
+	 * Saves any items which haven&#039;t been handled.
+	 *
+	 * @since 2.6.0
+	 */
+	protected function save_unprocessed_items() {
+		if ( ! empty( $this-&gt;items_to_repair ) ) {
+			// The items_to_repair array will have been flipped by get_items_to_update() so flip them back before storing.
+			update_option( &quot;{$this-&gt;repair_hook}_unprocessed&quot;, array_flip( $this-&gt;items_to_repair ) );
+		}
+	}
+
+	/**
+	 * Deletes any items stored in the unprocessed cache stored in an option.
+	 *
+	 * @since 2.6.0
+	 */
+	protected function clear_unprocessed_items_cache() {
+		delete_option( &quot;{$this-&gt;repair_hook}_unprocessed&quot; );
+	}
+
+	/**
+	 * Unschedules the instance&#039;s hook in Action Scheduler and deletes the page counter.
+	 *
+	 * This function is called when there are no longer any items to update.
+	 *
+	 * @since 2.6.0
+	 */
+	protected function unschedule_background_updates() {
+		parent::unschedule_background_updates();
+		delete_option( &quot;{$this-&gt;repair_hook}_page&quot; );
+	}
+
+	/**
+	 * Repairs an item.
+	 */
+	abstract protected function repair_item( $item );
+
+	/**
+	 * Get a batch of items which need to be repaired.
+	 *
+	 * @param int $page The page number to return results from.
+	 * @return array The items to repair. Each item must be a string or int.
+	 */
+	abstract protected function get_items_to_repair( $page );
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

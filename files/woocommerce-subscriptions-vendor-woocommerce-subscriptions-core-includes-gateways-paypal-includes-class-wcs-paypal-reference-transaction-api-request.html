@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html">GatewaysPayPal</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-paypal-reference-transaction-api-request.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * PayPal Reference Transaction API Request Class
+ *
+ * Generates request data to send to the PayPal Express Checkout API for Reference Transaction related API calls
+ *
+ * Heavily inspired by the WC_Paypal_Express_API_Request class developed by the masterful SkyVerge team
+ *
+ * @package     WooCommerce Subscriptions
+ * @subpackage  Gateways/PayPal
+ * @category    Class
+ * @since       2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_PayPal_Reference_Transaction_API_Request {
+
+	/** auth/capture transaction type */
+	const AUTH_CAPTURE = &#039;Sale&#039;;
+
+	/** @var array the request parameters */
+	private $parameters = array();
+
+	/**
+	 * Construct an PayPal Express request object
+	 *
+	 * @param string $api_username the API username
+	 * @param string $api_password the API password
+	 * @param string $api_signature the API signature
+	 * @param string $api_version the API version
+	 * @since 2.0
+	 */
+	public function __construct( $api_username, $api_password, $api_signature, $api_version ) {
+
+		$this-&gt;add_parameters( array(
+			&#039;USER&#039;      =&gt; $api_username,
+			&#039;PWD&#039;       =&gt; $api_password,
+			&#039;SIGNATURE&#039; =&gt; $api_signature,
+			&#039;VERSION&#039;   =&gt; $api_version,
+		) );
+	}
+
+	/**
+	 * Sets up the express checkout transaction
+	 *
+	 * @link https://developer.paypal.com/docs/classic/express-checkout/integration-guide/ECGettingStarted/#id084RN060BPF
+	 * @link https://developer.paypal.com/webapps/developer/docs/classic/api/merchant/SetExpressCheckout_API_Operation_NVP/
+	 *
+	 * @param array $args {
+	 *     @type string &#039;currency&#039;              (Optional) A 3-character currency code (default is store&#039;s currency).
+	 *     @type string &#039;billing_type&#039;          (Optional) Type of billing agreement for reference transactions. You must have permission from PayPal to use this field. This field must be set to one of the following values: MerchantInitiatedBilling - PayPal creates a billing agreement for each transaction associated with buyer. You must specify version 54.0 or higher to use this option; MerchantInitiatedBillingSingleAgreement - PayPal creates a single billing agreement for all transactions associated with buyer. Use this value unless you need per-transaction billing agreements. You must specify version 58.0 or higher to use this option.
+	 *     @type string &#039;billing_description&#039;   (Optional) Description of goods or services associated with the billing agreement. This field is required for each recurring payment billing agreement if using MerchantInitiatedBilling as the billing type, that means you can use a different agreement for each subscription/order. PayPal recommends that the description contain a brief summary of the billing agreement terms and conditions (but this only makes sense when the billing type is MerchantInitiatedBilling, otherwise the terms will be incorrectly displayed for all agreements). For example, buyer is billed at &quot;9.99 per month for 2 years&quot;.
+	 *     @type string &#039;maximum_amount&#039;        (Optional) The expected maximum total amount of the complete order and future payments, including shipping cost and tax charges. If you pass the expected average transaction amount (default 25.00). PayPal uses this value to validate the buyer&#039;s funding source.
+	 *     @type string &#039;no_shipping&#039;           (Optional) Determines where or not PayPal displays shipping address fields on the PayPal pages. For digital goods, this field is required, and you must set it to 1. It is one of the following values: 0 – PayPal displays the shipping address on the PayPal pages; 1 – PayPal does not display shipping address fields whatsoever (default); 2 – If you do not pass the shipping address, PayPal obtains it from the buyer&#039;s account profile.
+	 *     @type string &#039;page_style&#039;            (Optional) Name of the Custom Payment Page Style for payment pages associated with this button or link. It corresponds to the HTML variable page_style for customizing payment pages. It is the same name as the Page Style Name you chose to add or edit the page style in your PayPal Account profile.
+	 *     @type string &#039;brand_name&#039;            (Optional) A label that overrides the business name in the PayPal account on the PayPal hosted checkout pages. Default: store name.
+	 *     @type string &#039;landing_page&#039;          (Optional) Type of PayPal page to display. It is one of the following values: &#039;login&#039; – PayPal account login (default); &#039;Billing&#039; – Non-PayPal account.
+	 *     @type string &#039;payment_action&#039;        (Optional) How you want to obtain payment. If the transaction does not include a one-time purchase, this field is ignored. Default &#039;Sale&#039; – This is a final sale for which you are requesting payment (default). Alternative: &#039;Authorization&#039; – This payment is a basic authorization subject to settlement with PayPal Authorization and Capture. You cannot set this field to Sale in SetExpressCheckout request and then change the value to Authorization or Order in the DoExpressCheckoutPayment request. If you set the field to Authorization or Order in SetExpressCheckout, you may set the field to Sale.
+	 *     @type string &#039;return_url&#039;            (Required) URL to which the buyer&#039;s browser is returned after choosing to pay with PayPal.
+	 *     @type string &#039;cancel_url&#039;            (Required) URL to which the buyer is returned if the buyer does not approve the use of PayPal to pay you.
+	 *     @type string &#039;custom&#039;                (Optional) A free-form field for up to 256 single-byte alphanumeric characters
+	 * }
+	 * @since 2.0
+	 */
+	public function set_express_checkout( $args ) {
+
+		// translators: placeholder is blogname
+		$default_description = sprintf( _x( &#039;Orders with %s&#039;, &#039;data sent to paypal&#039;, &#039;woocommerce-subscriptions&#039; ), get_bloginfo( &#039;name&#039; ) );
+
+		$defaults = array(
+			&#039;currency&#039;            =&gt; get_woocommerce_currency(),
+			&#039;billing_type&#039;        =&gt; apply_filters( &#039;woocommerce_subscriptions_paypal_billing_agreement_type&#039;, &#039;MerchantInitiatedBillingSingleAgreement&#039;, $args ),
+			// translators: placeholder is for blog name
+			&#039;billing_description&#039; =&gt; html_entity_decode( apply_filters( &#039;woocommerce_subscriptions_paypal_billing_agreement_description&#039;, $default_description, $args ), ENT_NOQUOTES, &#039;UTF-8&#039; ),
+			&#039;maximum_amount&#039;      =&gt; null,
+			&#039;no_shipping&#039;         =&gt; 1,
+			&#039;page_style&#039;          =&gt; null,
+			&#039;brand_name&#039;          =&gt; html_entity_decode( get_bloginfo( &#039;name&#039; ), ENT_NOQUOTES, &#039;UTF-8&#039; ),
+			&#039;landing_page&#039;        =&gt; &#039;login&#039;,
+			&#039;payment_action&#039;      =&gt; &#039;Sale&#039;,
+			&#039;custom&#039;              =&gt; &#039;&#039;,
+		);
+
+		$args = wp_parse_args( $args, $defaults );
+
+		$this-&gt;set_method( &#039;SetExpressCheckout&#039; );
+
+		$this-&gt;add_parameters( array(
+			&#039;L_BILLINGTYPE0&#039;                 =&gt; $args[&#039;billing_type&#039;],
+			&#039;L_BILLINGAGREEMENTDESCRIPTION0&#039; =&gt; wcs_get_paypal_item_name( $args[&#039;billing_description&#039;] ),
+			&#039;L_BILLINGAGREEMENTCUSTOM0&#039;      =&gt; $args[&#039;custom&#039;],
+
+			&#039;RETURNURL&#039;                      =&gt; $args[&#039;return_url&#039;],
+			&#039;CANCELURL&#039;                      =&gt; $args[&#039;cancel_url&#039;],
+			&#039;PAGESTYLE&#039;                      =&gt; $args[&#039;page_style&#039;],
+			&#039;BRANDNAME&#039;                      =&gt; $args[&#039;brand_name&#039;],
+			&#039;LANDINGPAGE&#039;                    =&gt; ( &#039;login&#039; == $args[&#039;landing_page&#039;] ) ? &#039;Login&#039; : &#039;Billing&#039;,
+			&#039;NOSHIPPING&#039;                     =&gt; $args[&#039;no_shipping&#039;],
+
+			&#039;MAXAMT&#039;                         =&gt; $args[&#039;maximum_amount&#039;],
+		) );
+
+		// if we have an order, the request is to create a subscription/process a payment (not just check if the PayPal account supports Reference Transactions)
+		if ( isset( $args[&#039;order&#039;] ) ) {
+
+			if ( 0 == $args[&#039;order&#039;]-&gt;get_total() ) {
+
+				$this-&gt;add_parameters( array(
+					&#039;PAYMENTREQUEST_0_AMT&#039;           =&gt; 0, // a zero amount is used so that no DoExpressCheckout action is required and instead CreateBillingAgreement is used to first create a billing agreement not attached to any order and then DoReferenceTransaction is used to charge both the initial order and renewal order amounts
+					&#039;PAYMENTREQUEST_0_ITEMAMT&#039;       =&gt; 0,
+					&#039;PAYMENTREQUEST_0_SHIPPINGAMT&#039;   =&gt; 0,
+					&#039;PAYMENTREQUEST_0_TAXAMT&#039;        =&gt; 0,
+					&#039;PAYMENTREQUEST_0_CURRENCYCODE&#039;  =&gt; $args[&#039;currency&#039;],
+					&#039;PAYMENTREQUEST_0_CUSTOM&#039;        =&gt; $args[&#039;custom&#039;],
+					&#039;PAYMENTREQUEST_0_PAYMENTACTION&#039; =&gt; $args[&#039;payment_action&#039;],
+				) );
+
+			} else {
+
+				$this-&gt;add_payment_details_parameters( $args[&#039;order&#039;], $args[&#039;payment_action&#039;] );
+
+			}
+		}
+	}
+
+	/**
+	 * Set up the DoExpressCheckoutPayment request
+	 *
+	 * @link https://developer.paypal.com/docs/classic/express-checkout/integration-guide/ECGettingStarted/#id084RN060BPF
+	 * @link https://developer.paypal.com/webapps/developer/docs/classic/api/merchant/DoExpressCheckoutPayment_API_Operation_NVP/
+	 *
+	 * @since 2.0.9
+	 * @param string $token PayPal Express Checkout token returned by SetExpressCheckout operation
+	 * @param WC_Order $order order object
+	 * @param string $type
+	 */
+	public function do_express_checkout( $token, WC_Order $order, $args ) {
+
+		$this-&gt;set_method( &#039;DoExpressCheckoutPayment&#039; );
+
+		// set base params
+		$this-&gt;add_parameters( array(
+			&#039;TOKEN&#039;            =&gt; $token,
+			&#039;PAYERID&#039;          =&gt; $args[&#039;payer_id&#039;],
+			&#039;BUTTONSOURCE&#039;     =&gt; &#039;WooThemes_Cart&#039;,
+			&#039;RETURNFMFDETAILS&#039; =&gt; 1,
+		) );
+
+		$this-&gt;add_payment_details_parameters( $order, $args[&#039;payment_action&#039;] );
+	}
+
+	/**
+	 * Get info about the buyer &amp; transaction from PayPal
+	 *
+	 * @link https://developer.paypal.com/docs/classic/express-checkout/integration-guide/ECGettingStarted/#id084RN060BPF
+	 * @link https://developer.paypal.com/webapps/developer/docs/classic/api/merchant/GetExpressCheckoutDetails_API_Operation_NVP/
+	 *
+	 * @param string $token token from SetExpressCheckout response
+	 * @since 2.0
+	 */
+	public function get_express_checkout_details( $token ) {
+
+		$this-&gt;set_method( &#039;GetExpressCheckoutDetails&#039; );
+		$this-&gt;add_parameter( &#039;TOKEN&#039;, $token );
+	}
+
+	/**
+	 * Create a billing agreement, required when a subscription sign-up has no initial payment
+	 *
+	 * @link https://developer.paypal.com/docs/classic/express-checkout/integration-guide/ECReferenceTxns/#id094TB0Y0J5Z__id094TB4003HS
+	 * @link https://developer.paypal.com/docs/classic/api/merchant/CreateBillingAgreement_API_Operation_NVP/
+	 *
+	 * @param string $token token from SetExpressCheckout response
+	 * @since 2.0
+	 */
+	public function create_billing_agreement( $token ) {
+
+		$this-&gt;set_method( &#039;CreateBillingAgreement&#039; );
+		$this-&gt;add_parameter( &#039;TOKEN&#039;, $token );
+	}
+
+	/**
+	 * Charge a payment against a reference token
+	 *
+	 * @link https://developer.paypal.com/docs/classic/express-checkout/integration-guide/ECReferenceTxns/#id094UM0DA0HS
+	 * @link https://developer.paypal.com/docs/classic/api/merchant/DoReferenceTransaction_API_Operation_NVP/
+	 *
+	 * @param string $reference_id the ID of a refrence object, e.g. billing agreement ID.
+	 * @param WC_Order $order order object
+	 * @param array $args {
+	 *     @type string &#039;payment_type&#039;         (Optional) Specifies type of PayPal payment you require for the billing agreement. It is one of the following values. &#039;Any&#039; or &#039;InstantOnly&#039;. Echeck is not supported for DoReferenceTransaction requests.
+	 *     @type string &#039;payment_action&#039;       How you want to obtain payment. It is one of the following values: &#039;Authorization&#039; - this payment is a basic authorization subject to settlement with PayPal Authorization and Capture; or &#039;Sale&#039; - This is a final sale for which you are requesting payment.
+	 *     @type string &#039;return_fraud_filters&#039; (Optional) Flag to indicate whether you want the results returned by Fraud Management Filters. By default, you do not receive this information.
+	 * }
+	 * @since 2.0
+	 */
+	public function do_reference_transaction( $reference_id, $order, $args = array() ) {
+
+		$defaults = array(
+			&#039;amount&#039;               =&gt; $order-&gt;get_total(),
+			&#039;payment_type&#039;         =&gt; &#039;Any&#039;,
+			&#039;payment_action&#039;       =&gt; &#039;Sale&#039;,
+			&#039;return_fraud_filters&#039; =&gt; 1,
+			&#039;notify_url&#039;           =&gt; WC()-&gt;api_request_url( &#039;WC_Gateway_Paypal&#039; ),
+			&#039;invoice_number&#039;       =&gt; WCS_PayPal::get_option( &#039;invoice_prefix&#039; ) . wcs_str_to_ascii( ltrim( $order-&gt;get_order_number(), _x( &#039;#&#039;, &#039;hash before the order number. Used as a character to remove from the actual order number&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+			&#039;custom&#039;               =&gt; wcs_json_encode(
+				array(
+					&#039;order_id&#039;  =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+					&#039;order_key&#039; =&gt; wcs_get_objects_property( $order, &#039;order_key&#039; ),
+				)
+			),
+		);
+
+		$args = wp_parse_args( $args, $defaults );
+
+		$this-&gt;set_method( &#039;DoReferenceTransaction&#039; );
+
+		// set base params
+		$this-&gt;add_parameters( array(
+			&#039;REFERENCEID&#039;      =&gt; $reference_id,
+			&#039;BUTTONSOURCE&#039;     =&gt; &#039;WooThemes_Cart&#039;,
+			&#039;RETURNFMFDETAILS&#039; =&gt; $args[&#039;return_fraud_filters&#039;],
+			&#039;NOTIFYURL&#039;        =&gt; $args[&#039;notify_url&#039;],
+		) );
+
+		$this-&gt;add_payment_details_parameters( $order, $args[&#039;payment_action&#039;], true );
+	}
+
+	/**
+	 * Set up the payment details for a DoExpressCheckoutPayment or DoReferenceTransaction request
+	 *
+	 * @since 2.0.9
+	 * @param WC_Order $order order object
+	 * @param string $type the type of transaction for the payment
+	 * @param bool $use_deprecated_params whether to use deprecated PayPal NVP parameters (required for DoReferenceTransaction API calls)
+	 */
+	protected function add_payment_details_parameters( WC_Order $order, $type, $use_deprecated_params = false ) {
+
+		$calculated_total = 0;
+		$order_subtotal   = 0;
+		$item_count       = 0;
+		$order_items      = array();
+
+		// add line items
+		foreach ( $order-&gt;get_items() as $item ) {
+
+			$product = new WC_Product( $item[&#039;product_id&#039;] );
+
+			$order_items[] = array(
+				&#039;NAME&#039;    =&gt; wcs_get_paypal_item_name( $product-&gt;get_title() ),
+				&#039;DESC&#039;    =&gt; $this-&gt;get_item_description( $item, $product ),
+				&#039;AMT&#039;     =&gt; $this-&gt;round( $order-&gt;get_item_subtotal( $item ) ),
+				&#039;QTY&#039;     =&gt; ( ! empty( $item[&#039;qty&#039;] ) ) ? absint( $item[&#039;qty&#039;] ) : 1,
+				&#039;ITEMURL&#039; =&gt; $product-&gt;get_permalink(),
+			);
+
+			$order_subtotal += $order-&gt;get_line_total( $item );
+		}
+
+		// add fees
+		foreach ( $order-&gt;get_fees() as $fee ) {
+
+			$order_items[] = array(
+				&#039;NAME&#039; =&gt; wcs_get_paypal_item_name( $fee[&#039;name&#039;] ),
+				&#039;AMT&#039;  =&gt; $this-&gt;round( $fee[&#039;line_total&#039;] ),
+				&#039;QTY&#039;  =&gt; 1,
+			);
+
+			$order_subtotal += $order-&gt;get_line_total( $fee );
+		}
+
+		// add discounts
+		if ( $order-&gt;get_total_discount() &gt; 0 ) {
+
+			$order_items[] = array(
+				&#039;NAME&#039; =&gt; __( &#039;Total Discount&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;QTY&#039;  =&gt; 1,
+				&#039;AMT&#039;  =&gt; - $this-&gt;round( $order-&gt;get_total_discount() ),
+			);
+		}
+
+		if ( $this-&gt;skip_line_items( $order, $order_items ) ) {
+
+			$total_amount = $this-&gt;round( $order-&gt;get_total() );
+
+			// calculate the total as PayPal would
+			$calculated_total += $this-&gt;round( $order_subtotal + $order-&gt;get_cart_tax() ) + $this-&gt;round( $order-&gt;get_total_shipping() + $order-&gt;get_shipping_tax() );
+
+			// offset the discrepancy between the WooCommerce cart total and PayPal&#039;s calculated total by adjusting the order subtotal
+			if ( $this-&gt;price_format( $total_amount ) !== $this-&gt;price_format( $calculated_total ) ) {
+				$order_subtotal = $order_subtotal - ( $calculated_total - $total_amount );
+			}
+
+			$item_names = array();
+
+			foreach ( $order_items as $item ) {
+				$item_names[] = sprintf( &#039;%1$s x %2$s&#039;, $item[&#039;NAME&#039;], $item[&#039;QTY&#039;] );
+			}
+
+			// add a single item for the entire order
+			$this-&gt;add_line_item_parameters( array(
+				// translators: placeholder is blogname
+				&#039;NAME&#039; =&gt; sprintf( __( &#039;%s - Order&#039;, &#039;woocommerce-subscriptions&#039; ), get_option( &#039;blogname&#039; ) ),
+				&#039;DESC&#039; =&gt; wcs_get_paypal_item_name( implode( &#039;, &#039;, $item_names ) ),
+				&#039;AMT&#039;  =&gt; $this-&gt;round( $order_subtotal + $order-&gt;get_cart_tax() ),
+				&#039;QTY&#039;  =&gt; 1,
+			), 0, $use_deprecated_params );
+
+			// add order-level parameters
+			//  - Do not send the TAXAMT due to rounding errors
+			if ( $use_deprecated_params ) {
+				$this-&gt;add_parameters( array(
+					&#039;AMT&#039;              =&gt; $total_amount,
+					&#039;CURRENCYCODE&#039;     =&gt; wcs_get_objects_property( $order, &#039;currency&#039; ),
+					&#039;ITEMAMT&#039;          =&gt; $this-&gt;round( $order_subtotal + $order-&gt;get_cart_tax() ),
+					&#039;SHIPPINGAMT&#039;      =&gt; $this-&gt;round( $order-&gt;get_total_shipping() + $order-&gt;get_shipping_tax() ),
+					&#039;INVNUM&#039;           =&gt; WCS_PayPal::get_option( &#039;invoice_prefix&#039; ) . wcs_str_to_ascii( ltrim( $order-&gt;get_order_number(), _x( &#039;#&#039;, &#039;hash before the order number. Used as a character to remove from the actual order number&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+					&#039;PAYMENTACTION&#039;    =&gt; $type,
+					&#039;PAYMENTREQUESTID&#039; =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+					&#039;CUSTOM&#039;           =&gt; json_encode(
+						array(
+							&#039;order_id&#039;  =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+							&#039;order_key&#039; =&gt; wcs_get_objects_property( $order, &#039;order_key&#039; ),
+						)
+					),
+				) );
+			} else {
+				$this-&gt;add_payment_parameters( array(
+					&#039;AMT&#039;              =&gt; $total_amount,
+					&#039;CURRENCYCODE&#039;     =&gt; wcs_get_objects_property( $order, &#039;currency&#039; ),
+					&#039;ITEMAMT&#039;          =&gt; $this-&gt;round( $order_subtotal + $order-&gt;get_cart_tax() ),
+					&#039;SHIPPINGAMT&#039;      =&gt; $this-&gt;round( $order-&gt;get_total_shipping() + $order-&gt;get_shipping_tax() ),
+					&#039;INVNUM&#039;           =&gt; WCS_PayPal::get_option( &#039;invoice_prefix&#039; ) . wcs_str_to_ascii( ltrim( $order-&gt;get_order_number(), _x( &#039;#&#039;, &#039;hash before the order number. Used as a character to remove from the actual order number&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+					&#039;PAYMENTACTION&#039;    =&gt; $type,
+					&#039;PAYMENTREQUESTID&#039; =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+					&#039;CUSTOM&#039;           =&gt; json_encode(
+						array(
+							&#039;order_id&#039;  =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+							&#039;order_key&#039; =&gt; wcs_get_objects_property( $order, &#039;order_key&#039; ),
+						)
+					),
+				) );
+			}
+		} else {
+
+			// add individual order items
+			foreach ( $order_items as $item ) {
+				$this-&gt;add_line_item_parameters( $item, $item_count++, $use_deprecated_params );
+			}
+
+			$total_amount = $this-&gt;round( $order-&gt;get_total() );
+
+			// add order-level parameters
+			if ( $use_deprecated_params ) {
+				$this-&gt;add_parameters(
+					array(
+						&#039;AMT&#039;              =&gt; $total_amount,
+						&#039;CURRENCYCODE&#039;     =&gt; wcs_get_objects_property( $order, &#039;currency&#039; ),
+						&#039;ITEMAMT&#039;          =&gt; $this-&gt;round( $order_subtotal ),
+						&#039;SHIPPINGAMT&#039;      =&gt; $this-&gt;round( $order-&gt;get_total_shipping() ),
+						&#039;TAXAMT&#039;           =&gt; $this-&gt;round( $order-&gt;get_total_tax() ),
+						&#039;INVNUM&#039;           =&gt; WCS_PayPal::get_option( &#039;invoice_prefix&#039; ) . wcs_str_to_ascii( ltrim( $order-&gt;get_order_number(), _x( &#039;#&#039;, &#039;hash before the order number. Used as a character to remove from the actual order number&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+						&#039;PAYMENTACTION&#039;    =&gt; $type,
+						&#039;PAYMENTREQUESTID&#039; =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+						&#039;CUSTOM&#039;           =&gt; json_encode(
+							array(
+								&#039;order_id&#039;  =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+								&#039;order_key&#039; =&gt; wcs_get_objects_property( $order, &#039;order_key&#039; ),
+							)
+						),
+					)
+				);
+			} else {
+				$this-&gt;add_payment_parameters(
+					array(
+						&#039;AMT&#039;              =&gt; $total_amount,
+						&#039;CURRENCYCODE&#039;     =&gt; wcs_get_objects_property( $order, &#039;currency&#039; ),
+						&#039;ITEMAMT&#039;          =&gt; $this-&gt;round( $order_subtotal ),
+						&#039;SHIPPINGAMT&#039;      =&gt; $this-&gt;round( $order-&gt;get_total_shipping() ),
+						&#039;TAXAMT&#039;           =&gt; $this-&gt;round( $order-&gt;get_total_tax() ),
+						&#039;INVNUM&#039;           =&gt; WCS_PayPal::get_option( &#039;invoice_prefix&#039; ) . wcs_str_to_ascii( ltrim( $order-&gt;get_order_number(), _x( &#039;#&#039;, &#039;hash before the order number. Used as a character to remove from the actual order number&#039;, &#039;woocommerce-subscriptions&#039; ) ) ),
+						&#039;PAYMENTACTION&#039;    =&gt; $type,
+						&#039;PAYMENTREQUESTID&#039; =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+						&#039;CUSTOM&#039;           =&gt; json_encode(
+							array(
+								&#039;order_id&#039;  =&gt; wcs_get_objects_property( $order, &#039;id&#039; ),
+								&#039;order_key&#039; =&gt; wcs_get_objects_property( $order, &#039;order_key&#039; ),
+							)
+						),
+					)
+				);
+			}
+		}
+	}
+
+	/**
+	 * Performs an Express Checkout NVP API operation as passed in $api_method.
+	 *
+	 * Although the PayPal Standard API provides no facility for cancelling a subscription, the PayPal
+	 * Express Checkout NVP API can be used.
+	 *
+	 * @since 2.0
+	 */
+	public function manage_recurring_payments_profile_status( $profile_id, $new_status, $order = null ) {
+
+		$this-&gt;set_method( &#039;ManageRecurringPaymentsProfileStatus&#039; );
+
+		// We need to get merge the existing params to ensure the method and API credentials are passed to the filter for backward compatibility
+		$this-&gt;add_parameters( apply_filters( &#039;woocommerce_subscriptions_paypal_change_status_data&#039;, array_merge( $this-&gt;get_parameters(), array(
+			&#039;PROFILEID&#039; =&gt; $profile_id,
+			&#039;ACTION&#039;    =&gt; $new_status,
+			// translators: 1$: new status (e.g. &quot;Cancel&quot;), 2$: blog name
+			&#039;NOTE&#039;      =&gt; html_entity_decode( sprintf( _x( &#039;%1$s subscription event triggered at %2$s&#039;, &#039;data sent to paypal&#039;, &#039;woocommerce-subscriptions&#039; ), $new_status, get_bloginfo( &#039;name&#039; ) ), ENT_NOQUOTES, &#039;UTF-8&#039; ),
+		) ), $new_status, $order, $profile_id ) );
+	}
+
+	/** Helper Methods ******************************************************/
+
+	/**
+	 * Add a parameter
+	 *
+	 * @param string $key
+	 * @param string|int $value
+	 * @since 2.0
+	 */
+	private function add_parameter( $key, $value ) {
+		$this-&gt;parameters[ $key ] = $value;
+	}
+
+	/**
+	 * Add multiple parameters
+	 *
+	 * @param array $params
+	 * @since 2.0
+	 */
+	private function add_parameters( array $params ) {
+		foreach ( $params as $key =&gt; $value ) {
+			$this-&gt;add_parameter( $key, $value );
+		}
+	}
+
+	/**
+	 * Set the method for the request, currently using:
+	 *
+	 * + `SetExpressCheckout` - setup transaction
+	 * + `GetExpressCheckout` - gets buyers info from PayPal
+	 * + `DoExpressCheckoutPayment` - completes the transaction
+	 * + `DoCapture` - captures a previously authorized transaction
+	 *
+	 * @param string $method
+	 * @since 2.0
+	 */
+	private function set_method( $method ) {
+		$this-&gt;add_parameter( &#039;METHOD&#039;, $method );
+	}
+
+	/**
+	 * Add payment parameters, auto-prefixes the parameter key with `PAYMENTREQUEST_0_`
+	 * for convenience and readability
+	 *
+	 * @param array $params
+	 * @since 2.0
+	 */
+	private function add_payment_parameters( array $params ) {
+		foreach ( $params as $key =&gt; $value ) {
+			$this-&gt;add_parameter( &quot;PAYMENTREQUEST_0_{$key}&quot;, $value );
+		}
+	}
+
+	/**
+	 * Adds a line item parameters to the request, auto-prefixes the parameter key
+	 * with `L_PAYMENTREQUEST_0_` for convenience and readability
+	 *
+	 * @param array $params
+	 * @param int $item_count current item count
+	 * @since 2.0
+	 */
+	private function add_line_item_parameters( array $params, $item_count, $use_deprecated_params = false ) {
+		foreach ( $params as $key =&gt; $value ) {
+			if ( $use_deprecated_params ) {
+				$this-&gt;add_parameter( &quot;L_{$key}{$item_count}&quot;, $value );
+			} else {
+				$this-&gt;add_parameter( &quot;L_PAYMENTREQUEST_0_{$key}{$item_count}&quot;, $value );
+			}
+		}
+	}
+
+	/**
+	 * Helper method to return the item description, which is composed of item
+	 * meta flattened into a comma-separated string, if available. Otherwise the
+	 * product SKU is included.
+	 *
+	 * The description is automatically truncated to the 127 char limit.
+	 *
+	 * @param array $item cart or order item
+	 * @param \WC_Product $product product data
+	 * @return string
+	 * @since 2.0
+	 */
+	private function get_item_description( $item, $product ) {
+
+		if ( ! empty( WC()-&gt;cart ) &amp;&amp; is_array( $item ) &amp;&amp; empty( $item[&#039;item_meta&#039;] ) ) {
+			// cart item
+			$item_desc = WC()-&gt;cart-&gt;get_item_data( $item, true );
+
+			$item_desc = str_replace( &quot;\n&quot;, &#039;, &#039;, rtrim( $item_desc ) );
+
+		} else {
+			// order item
+
+			$item_desc = array();
+
+			if ( is_callable( array( $item, &#039;get_formatted_meta_data&#039; ) ) ) { // WC 3.0+
+
+				foreach ( $item-&gt;get_formatted_meta_data() as $meta ) {
+					$item_desc[] = sprintf( &#039;%s: %s&#039;, $meta-&gt;display_key, $meta-&gt;display_value );
+				}
+			} else { // WC &lt; 3.0
+
+				$item_meta = new WC_Order_Item_Meta( $item );
+
+				foreach ( $item_meta-&gt;get_formatted() as $meta ) {
+					$item_desc[] = sprintf( &#039;%s: %s&#039;, $meta[&#039;label&#039;], $meta[&#039;value&#039;] );
+				}
+			}
+
+			if ( ! empty( $item_desc ) ) {
+
+				$item_desc = implode( &#039;, &#039;, $item_desc );
+
+			} else {
+				// translators: %s: product SKU.
+				$item_desc = is_callable( array( $product, &#039;get_sku&#039; ) ) &amp;&amp; $product-&gt;get_sku() ? sprintf( __( &#039;SKU: %s&#039;, &#039;woocommerce-subscriptions&#039; ), $product-&gt;get_sku() ) : null;
+			}
+		}
+
+		return wcs_get_paypal_item_name( $item_desc );
+	}
+
+	/**
+	 * Returns the string representation of this request
+	 *
+	 * @see SV_WC_Payment_Gateway_API_Request::to_string()
+	 * @return string the request query string
+	 * @since 2.0
+	 */
+	public function to_string() {
+		return http_build_query( $this-&gt;get_parameters(), &#039;&#039;, &#039;&amp;&#039; );
+	}
+
+	/**
+	 * Returns the string representation of this request with any and all
+	 * sensitive elements masked or removed
+	 *
+	 * @see SV_WC_Payment_Gateway_API_Request::to_string_safe()
+	 * @return string the pretty-printed request array string representation, safe for logging
+	 * @since 2.0
+	 */
+	public function to_string_safe() {
+
+		$request = $this-&gt;get_parameters();
+
+		$sensitive_fields = array( &#039;USER&#039;, &#039;PWD&#039;, &#039;SIGNATURE&#039; );
+
+		foreach ( $sensitive_fields as $field ) {
+
+			if ( isset( $request[ $field ] ) ) {
+
+				$request[ $field ] = str_repeat( &#039;*&#039;, strlen( $request[ $field ] ) );
+			}
+		}
+
+		return print_r( $request, true );
+	}
+
+	/**
+	 * Returns the request parameters after validation &amp; filtering
+	 *
+	 * @throws \Exception invalid amount
+	 * @return array request parameters
+	 * @since 2.0
+	 */
+	public function get_parameters() {
+		/**
+		 * Filter PPE request parameters.
+		 *
+		 * Use this to modify the PayPal request parameters prior to validation
+		 *
+		 * @param array                          $parameters
+		 * @param \WC_PayPal_Express_API_Request $this instance
+		 */
+		$this-&gt;parameters = apply_filters( &#039;wcs_paypal_request_params&#039;, $this-&gt;parameters, $this );
+
+		// validate parameters
+		foreach ( $this-&gt;parameters as $key =&gt; $value ) {
+
+			// remove unused params
+			if ( &#039;&#039; === $value || is_null( $value ) ) {
+				unset( $this-&gt;parameters[ $key ] );
+			}
+
+			// format and check amounts
+			if ( false !== strpos( $key, &#039;AMT&#039; ) ) {
+
+				// amounts must be 10,000.00 or less for USD
+				if ( isset( $this-&gt;parameters[&#039;PAYMENTREQUEST_0_CURRENCYCODE&#039;] ) &amp;&amp; &#039;USD&#039; == $this-&gt;parameters[&#039;PAYMENTREQUEST_0_CURRENCYCODE&#039;] &amp;&amp; $value &gt; 10000 ) {
+					throw new Exception( sprintf( &#039;%s amount of %s must be less than $10,000.00&#039;, $key, wc_price( $value ) ) );
+				}
+
+				// PayPal requires locale-specific number formats (e.g. USD is 123.45)
+				// PayPal requires the decimal separator to be a period (.)
+				$this-&gt;parameters[ $key ] = $this-&gt;price_format( $value );
+			}
+		}
+
+		return $this-&gt;parameters;
+	}
+
+	/**
+	 * Returns the method for this request. PPE uses the API default request
+	 * method (POST)
+	 *
+	 * @return null
+	 * @since 2.0
+	 */
+	public function get_method() { }
+
+	/**
+	 * Returns the request path for this request. PPE request paths do not
+	 * vary per request
+	 *
+	 * @return string
+	 * @since 2.0
+	 */
+	public function get_path() {
+		return &#039;&#039;;
+	}
+
+
+	/**
+	 * PayPal cannot properly calculate order totals when prices include tax (due
+	 * to rounding issues), so line items are skipped and the order is sent as
+	 * a single item
+	 *
+	 * @since 2.0.9
+	 * @param WC_Order $order Optional. The WC_Order object. Default null.
+	 * @return bool true if line items should be skipped, false otherwise
+	 */
+	private function skip_line_items( $order = null, $order_items = null ) {
+
+		$skip_line_items = wcs_get_objects_property( $order, &#039;prices_include_tax&#039; );
+
+		// Also check actual totals add up just in case totals have been manually modified to amounts that can not round correctly, see https://github.com/Prospress/woocommerce-subscriptions/issues/2213
+		if ( true != $skip_line_items &amp;&amp; ! is_null( $order ) &amp;&amp; ! is_null( $order_items ) ) {
+
+			$calculated_total = 0;
+
+			foreach ( $order_items as $item ) {
+				$calculated_total += $this-&gt;round( $item[&#039;AMT&#039;] * $item[&#039;QTY&#039;] );
+			}
+
+			$calculated_total += $this-&gt;round( $order-&gt;get_total_shipping() ) + $this-&gt;round( $order-&gt;get_total_tax() );
+			$total_amount      = $this-&gt;round( $order-&gt;get_total() );
+
+			if ( $this-&gt;price_format( $total_amount ) !== $this-&gt;price_format( $calculated_total ) ) {
+				$skip_line_items = true;
+			}
+		}
+
+		/**
+		 * Filter whether line items should be skipped or not
+		 *
+		 * @since 3.3.0
+		 * @param bool $skip_line_items True if line items should be skipped, false otherwise
+		 * @param WC_Order/null $order The WC_Order object or null.
+		 */
+		return apply_filters( &#039;wcs_paypal_reference_transaction_skip_line_items&#039;, $skip_line_items, $order );
+	}
+
+	/**
+	 * Round a float
+	 *
+	 * @since 2.0.9
+	 * @param float $number
+	 * @param int $precision Optional. The number of decimal digits to round to.
+	 */
+	private function round( $number, $precision = 2 ) {
+		return round( (float) $number, $precision );
+	}
+
+	/**
+	 * Format prices.
+	 *
+	 * @since 2.2.12
+	 * @param float|int $price
+	 * @param int $decimals Optional. The number of decimal points.
+	 * @return string
+	 */
+	private function price_format( $price, $decimals = 2 ) {
+		return number_format( $price, $decimals, &#039;.&#039;, &#039;&#039; );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

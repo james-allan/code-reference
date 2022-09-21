@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-filter-deprecator.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Handle deprecated filters.
+ *
+ * When triggering a filter which has a deprecated equivalient from Subscriptions v1.n, check if the old
+ * filter had any callbacks attached to it, and if so, log a notice and trigger the old filter with a set
+ * of parameters in the deprecated format so that the current return value also has the old filters applied
+ * (whereever possible that is).
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WCS_Hook_Deprecator
+ * @category   Class
+ * @author     Prospress
+ * @since      2.0
+ */
+
+class WCS_Filter_Deprecator extends WCS_Hook_Deprecator {
+
+	// phpcs:disable WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned,WordPress.Arrays.MultipleStatementAlignment.LongIndexSpaceBeforeDoubleArrow
+	/* The filters that have been deprecated, &#039;new_hook&#039; =&gt; &#039;old_hook&#039; */
+	protected $deprecated_hooks = array(
+
+		// Subscription Meta Filters
+		&#039;woocommerce_subscription_payment_failed_count&#039;              =&gt; &#039;woocommerce_subscription_failed_payment_count&#039;,
+		&#039;woocommerce_subscription_payment_completed_count&#039;           =&gt; &#039;woocommerce_subscription_completed_payment_count&#039;,
+		&#039;woocommerce_subscription_get_end_date&#039;                      =&gt; &#039;woocommerce_subscription_expiration_date&#039;,
+		&#039;woocommerce_subscription_get_trial_end_date&#039;                =&gt; &#039;woocommerce_subscription_trial_expiration_date&#039;,
+		&#039;woocommerce_subscriptions_product_expiration_date&#039;          =&gt; &#039;woocommerce_subscription_calculated_expiration_date&#039;,
+		&#039;woocommerce_subscription_get_last_payment_date&#039;             =&gt; &#039;woocommerce_subscription_last_payment_date&#039;,
+		&#039;woocommerce_subscription_calculated_next_payment_date&#039;      =&gt; &#039;woocommerce_subscriptions_calculated_next_payment_date&#039;,
+		&#039;woocommerce_subscription_date_updated&#039;                      =&gt; &#039;woocommerce_subscriptions_set_trial_expiration_date&#039;,
+		&#039;wcs_subscription_statuses&#039;                                  =&gt; array(
+			&#039;woocommerce_subscriptions_custom_status_string&#039;, //no replacement as Subscriptions now uses wcs_get_subscription_statuses() for everything (the deprecator could use &#039;wc_subscription_statuses&#039; and loop over all statuses to set it in the returned value)
+			&#039;woocommerce_subscriptions_status_string&#039;,
+		),
+
+		// Renewal Filters
+		&#039;wcs_renewal_order_items&#039;                                    =&gt; &#039;woocommerce_subscriptions_renewal_order_items&#039;,
+		&#039;wcs_renewal_order_meta_query&#039;                               =&gt; &#039;woocommerce_subscriptions_renewal_order_meta_query&#039;,
+		&#039;wcs_renewal_order_meta&#039;                                     =&gt; &#039;woocommerce_subscriptions_renewal_order_meta&#039;,
+		&#039;wcs_renewal_order_item_name&#039;                                =&gt; &#039;woocommerce_subscriptions_renewal_order_item_name&#039;,
+		&#039;wcs_users_resubscribe_link&#039;                                 =&gt; &#039;woocommerce_subscriptions_users_renewal_link&#039;,
+		&#039;wcs_can_user_resubscribe_to_subscription&#039;                   =&gt; &#039;woocommerce_can_subscription_be_renewed&#039;,
+		&#039;wcs_renewal_order_created&#039;                                  =&gt; array(
+			&#039;woocommerce_subscriptions_renewal_order_created&#039;, // Even though &#039;woocommerce_subscriptions_renewal_order_created&#039; is an action, as it is attached to a filter, we need to handle it in here
+			&#039;woocommerce_subscriptions_renewal_order_id&#039;,
+		),
+
+		// List Table Filters
+		&#039;woocommerce_subscription_list_table_actions&#039;                =&gt; &#039;woocommerce_subscriptions_list_table_actions&#039;,
+		&#039;woocommerce_subscription_list_table_column_status_content&#039;  =&gt; &#039;woocommerce_subscriptions_list_table_column_status_content&#039;,
+		&#039;woocommerce_subscription_list_table_column_content&#039;         =&gt; &#039;woocommerce_subscriptions_list_table_column_content&#039;,
+
+		// User Filters
+		&#039;wcs_can_user_put_subscription_on_hold&#039;                      =&gt; &#039;woocommerce_subscriptions_can_current_user_suspend&#039;,
+		&#039;wcs_view_subscription_actions&#039;                              =&gt; &#039;woocommerce_my_account_my_subscriptions_actions&#039;,
+		&#039;wcs_get_users_subscriptions&#039;                                =&gt; &#039;woocommerce_users_subscriptions&#039;,
+		&#039;wcs_users_change_status_link&#039;                               =&gt; &#039;woocommerce_subscriptions_users_action_link&#039;,
+		&#039;wcs_user_has_subscription&#039;                                  =&gt; &#039;woocommerce_user_has_subscription&#039;,
+
+		// Misc Filters
+		&#039;woocommerce_subscription_max_failed_payments_exceeded&#039;      =&gt; &#039;woocommerce_subscriptions_max_failed_payments_exceeded&#039;,
+		&#039;woocommerce_my_subscriptions_payment_method&#039;                =&gt; &#039;woocommerce_my_subscriptions_recurring_payment_method&#039;,
+		&#039;woocommerce_subscriptions_update_payment_via_pay_shortcode&#039; =&gt; &#039;woocommerce_subscriptions_update_recurring_payment_via_pay_shortcode&#039;,
+		&#039;woocommerce_can_subscription_be_updated_to&#039;                 =&gt; &#039;woocommerce_can_subscription_be_changed_to&#039;,
+	);
+	// phpcs:enable
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 *
+	 * @since 2.0
+	 */
+	public function __construct() {
+		parent::__construct();
+	}
+
+	/**
+	 * Trigger the old filter with the original callback parameters and make sure the return value is passed on (when possible).
+	 *
+	 * @since 2.0
+	 */
+	protected function trigger_hook( $old_hook, $new_callback_args ) {
+
+		// Return value is always the first param
+		$return_value = $new_callback_args[0];
+
+		switch ( $old_hook ) {
+
+			// New arg spec: $subscription_statuses
+			// Old arg spec: $status, $subscription_key, $user_id
+			case &#039;woocommerce_subscriptions_custom_status_string&#039;:
+				// Need to loop over the status and apply the old hook to each, we don&#039;t have a subscription or user for them anymore though
+				foreach ( $return_value as $status_key =&gt; $status_string ) {
+					$return_value[ $status_key ] = apply_filters( $old_hook, $status_string, &#039;&#039;, 0 );
+				}
+				break;
+
+			// New arg spec: $subscription_statuses
+			// Old arg spec: $status_string, $status, $subscription_key, $user_id
+			case &#039;woocommerce_subscriptions_status_string&#039;:
+				// Need to loop over the status and apply the old hook to each, we don&#039;t have a subscription or user for them anymore though
+				foreach ( $return_value as $status_key =&gt; $status_string ) {
+					$return_value[ $status_key ] = apply_filters( $old_hook, $status_string, $status_key, &#039;&#039;, 0 );
+				}
+				break;
+
+			// New arg spec: $count, $subscription
+			// Old arg spec: $count, $user_id, $subscription_key
+			case &#039;woocommerce_subscription_failed_payment_count&#039;:
+				$subscription = $new_callback_args[1];
+				$return_value = apply_filters( $old_hook, $return_value, $subscription-&gt;get_user_id(), wcs_get_old_subscription_key( $subscription ) );
+				break;
+
+			// New arg spec: $date, $subscription, $timezone
+			// Old arg spec: $date, $subscription_key, $user_id
+			case &#039;woocommerce_subscription_completed_payment_count&#039;:
+			case &#039;woocommerce_subscription_expiration_date&#039;:
+			case &#039;woocommerce_subscription_trial_expiration_date&#039;:
+			case &#039;woocommerce_subscription_last_payment_date&#039;:
+				$subscription = $new_callback_args[1];
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_old_subscription_key( $subscription ), $subscription-&gt;get_user_id(), &#039;mysql&#039; );
+				break;
+
+			// New arg spec: $expiration_date, $product_id, $from_date
+			// Old arg spec: $expiration_date, $subscription_key, $user_id
+			case &#039;woocommerce_subscription_calculated_expiration_date&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, &#039;&#039;, 0 );
+				break;
+
+			// New arg spec: $next_payment_date, $subscription
+			// Old arg spec: $next_payment_date, $order, $product_id, $type, $from_date, $from_date_arg
+			case &#039;woocommerce_subscriptions_calculated_next_payment_date&#039;:
+				$subscription = $new_callback_args[1];
+				$last_payment = $subscription-&gt;get_date( &#039;last_order_date_created&#039; );
+				$return_value = apply_filters( $old_hook, $return_value, self::get_order( $subscription ), self::get_product_id( $subscription ), &#039;mysql&#039;, $last_payment, $last_payment );
+				break;
+
+			// New arg spec: $subscription, $date_type, $datetime
+			// Old arg spec: $is_set, $expiration_date, $subscription_key, $user_id
+			case &#039;woocommerce_subscription_set_next_payment_date&#039;:
+			case &#039;woocommerce_subscriptions_set_trial_expiration_date&#039;:
+			case &#039;woocommerce_subscriptions_set_expiration_date&#039;:
+
+				$subscription = $new_callback_args[0];
+				$date_type    = $new_callback_args[1];
+
+				if ( ( &#039;next_payment&#039; == $date_type &amp;&amp; in_array( $old_hook, array( &#039;woocommerce_subscriptions_set_trial_expiration_date&#039;, &#039;woocommerce_subscription_set_next_payment_date&#039; ) ) ) || ( &#039;end_date&#039; == $date_type &amp;&amp; &#039;woocommerce_subscriptions_set_expiration_date&#039; == $old_hook ) ) {
+					// Here the old return value was a boolean where as now there is no equivalent filter, so we apply the filter to the action (which is only triggered when the old filter&#039;s value would have been true) and ignore the return value
+					apply_filters( $old_hook, true, wcs_get_old_subscription_key( $subscription ), $subscription-&gt;get_user_id() );
+				}
+
+				break;
+
+			// New arg spec: $order_items, $renewal_order, $subscription
+			// Old arg spec: $order_meta_query, $original_order_id, $renewal_order_id, $new_order_role
+			case &#039;woocommerce_subscriptions_renewal_order_meta&#039;:
+			case &#039;woocommerce_subscriptions_renewal_order_meta_query&#039;:
+			// Old arg spec: $order_items, $original_order_id, $renewal_order_id, $product_id, $new_order_role
+			case &#039;woocommerce_subscriptions_renewal_order_items&#039;:
+				$renewal_order = $new_callback_args[1];
+				$subscription  = $new_callback_args[2];
+				$original_id   = self::get_order_id( $subscription );
+
+				// Now we need to find the new orders role, if the calling function is wcs_create_resubscribe_order(), the role is parent, otherwise it&#039;s child
+				$backtrace  = debug_backtrace();
+				$order_role = ( &#039;wcs_create_resubscribe_order&#039; == $backtrace[1][&#039;function&#039;] ) ? &#039;parent&#039; : &#039;child&#039;;
+
+				// Old arg spec: $order_items, $original_order_id, $renewal_order_id, $product_id, $new_order_role
+				if ( &#039;woocommerce_subscriptions_renewal_order_items&#039; == $old_hook ) {
+					$return_value = apply_filters( $old_hook, $return_value, $original_id, wcs_get_objects_property( $renewal_order, &#039;id&#039; ), self::get_product_id( $subscription ), $order_role );
+				} else {
+					// Old arg spec: $order_meta_query, $original_order_id, $renewal_order_id, $new_order_role
+					$return_value = apply_filters( $old_hook, $return_value, $original_id, wcs_get_objects_property( $renewal_order, &#039;id&#039; ), $order_role );
+				}
+
+				break;
+
+			// New arg spec: $item_name, $order_item, $subscription
+			// Old arg spec: $item_name, $order_item, $original_order
+			case &#039;woocommerce_subscriptions_renewal_order_item_name&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, $new_callback_args[1], self::get_order( $new_callback_args[2] ) );
+				break;
+
+			// New arg spec: $renewal_order, $subscription
+			// Old arg spec: $renewal_order, $original_order, $product_id, $new_order_role
+			case &#039;woocommerce_subscriptions_renewal_order_created&#039;:
+				do_action( $old_hook, $return_value, self::get_order( $new_callback_args[1] ), self::get_product_id( $new_callback_args[1] ), &#039;child&#039; );
+				break;
+
+			// New arg spec: $renewal_order, $subscription
+			// Old arg spec: $renewal_order_id, $original_order, $product_id, $new_order_role
+			case &#039;woocommerce_subscriptions_renewal_order_id&#039;:
+
+				$renewal_order = $new_callback_args[0];
+				$subscription  = $new_callback_args[1];
+
+				// Now we need to find the new orders role, if the calling function is wcs_create_resubscribe_order(), the role is parent, otherwise it&#039;s child
+				$backtrace  = debug_backtrace();
+				$order_role = ( &#039;wcs_create_resubscribe_order&#039; == $backtrace[1][&#039;function&#039;] ) ? &#039;parent&#039; : &#039;child&#039;;
+
+				$renewal_order_id = apply_filters( $old_hook, $return_value-&gt;id, self::get_order( $subscription ), self::get_product_id( $subscription ), $order_role );
+
+				// Only change the return value if a new filter was returned by the hook
+				if ( wcs_get_objects_property( $renewal_order, &#039;id&#039; ) !== $renewal_order_id ) {
+					$return_value = wc_get_order( $renewal_order_id );
+				}
+				break;
+
+			// New arg spec: $resubscribe_link, $subscription_id
+			// Old arg spec: $renewal_url, $subscription_key
+			case &#039;woocommerce_subscriptions_users_renewal_link&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_old_subscription_key( wcs_get_subscription( $new_callback_args[1] ) ) );
+				break;
+
+			// New arg spec: $can_user_resubscribe, $subscription, $user_id
+			// Old arg spec: $subscription_can_be_renewed, $subscription, $subscription_key, $user_id
+			case &#039;woocommerce_can_subscription_be_renewed&#039;:
+				$subscription = $new_callback_args[1];
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_subscription_in_deprecated_structure( $subscription ), wcs_get_old_subscription_key( $subscription ), $subscription-&gt;get_user_id() );
+				break;
+
+			// New arg spec: $actions, $subscription
+			// Old arg spec: $actions, $subscription_array
+			case &#039;woocommerce_subscriptions_list_table_actions&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_subscription_in_deprecated_structure( $new_callback_args[1] ) );
+				break;
+
+			// New arg spec: $column_content, $subscription, $actions
+			// Old arg spec: $column_content, $subscription_array, $actions, $list_table
+			case &#039;woocommerce_subscriptions_list_table_column_status_content&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_subscription_in_deprecated_structure( $new_callback_args[1] ) );
+				break;
+
+			// New arg spec: $column_content, $the_subscription, $column
+			// Old arg spec: $column_content, $subscription_array, $column
+			case &#039;woocommerce_subscriptions_list_table_column_content&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_subscription_in_deprecated_structure( $new_callback_args[1] ), $new_callback_args[2] );
+				break;
+
+			// New arg spec: $user_can_suspend, $subscription
+			// Old arg spec: $user_can_suspend, $subscription_key
+			case &#039;woocommerce_subscriptions_can_current_user_suspend&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_old_subscription_key( $new_callback_args[1] ) );
+				break;
+
+			// New arg spec: $actions, $subscription (individual subscription object)
+			// Old arg spec: $all_actions, $subscriptions (array of subscription arrays)
+			case &#039;woocommerce_my_account_my_subscriptions_actions&#039;:
+
+				$subscription = $new_callback_args[1];
+				$old_key      = wcs_get_old_subscription_key( $subscription );
+
+				$subscription_in_deprecated_structure = array(
+					$old_key =&gt; wcs_get_subscription_in_deprecated_structure( $subscription ),
+				);
+
+				$all_actions = apply_filters( $old_hook, $return_value, $subscription_in_deprecated_structure );
+
+				// Only change the return value if a new value was returned by the filter
+				if ( $all_actions !== $return_value ) {
+					$return_value = $all_actions[ $old_key ];
+				}
+				break;
+
+			// New arg spec: $action_link, $subscription_id, $status
+			// Old arg spec: $action_link, $subscription_key, $status
+			case &#039;woocommerce_subscriptions_users_action_link&#039;:
+				$subscription = $new_callback_args[1];
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_old_subscription_key( wcs_get_subscription( $new_callback_args[1] ) ), $new_callback_args[2] );
+				break;
+
+			// New arg spec: failed_payments_exceeded, $subscription
+			// Old arg spec: $failed_payments_exceeded, $user_id, $subscription_key
+			case &#039;woocommerce_subscriptions_max_failed_payments_exceeded&#039;:
+				$subscription = $new_callback_args[1];
+				$return_value = apply_filters( $old_hook, $return_value, $subscription-&gt;get_user_id(), wcs_get_old_subscription_key( $subscription ) );
+				break;
+
+			// New arg spec: $payment_method_to_display, $subscription
+			// Old arg spec: $payment_method_to_display, $subscription_details, $order
+			case &#039;woocommerce_my_subscriptions_recurring_payment_method&#039;:
+				$subscription = $new_callback_args[1];
+				$return_value = apply_filters( $old_hook, $return_value, wcs_get_subscription_in_deprecated_structure( $subscription ), self::get_order( $subscription ) );
+				break;
+
+			// New arg spec: $allow_update, $new_payment_method, $subscription
+			// Old arg spec: $allow_update, $new_payment_method
+			case &#039;woocommerce_subscriptions_update_recurring_payment_via_pay_shortcode&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, $new_callback_args[1] );
+				break;
+
+			// New arg spec: $has_subscription, $user_id, $product_id, $status
+			// Old arg spec: $has_subscription, $user_id, $product_id
+			case &#039;woocommerce_user_has_subscription&#039;:
+				$return_value = apply_filters( $old_hook, $return_value, $new_callback_args[0], $new_callback_args[1] );
+				break;
+
+			// New arg spec: $subscriptions (array of objects), $user_id
+			// Old arg spec: $subscriptions (array of arrays), $user_id
+			case &#039;woocommerce_users_subscriptions&#039;:
+
+				// For this hook, the old return value is incompatible with the new return value, so we will trigger another, more urgent notice
+				trigger_error( &#039;Callbacks on the &quot;woocommerce_users_subscriptions&quot; filter must be updated immediately. Attach callbacks to the new &quot;wcs_get_users_subscriptions&quot; filter instead. Since version 2.0 of WooCommerce Subscriptions, the &quot;woocommerce_users_subscriptions&quot; filter does not affect the list of a user\&#039;s subscriptions as the subscription data structure has changed.&#039; );
+
+				// But still trigger the old hook, even if we can&#039;t map the old data to the new return value
+				$subscriptions     = $new_callback_args[0];
+				$old_subscriptions = array();
+
+				foreach ( $subscriptions as $subscription ) {
+					$old_subscriptions[ wcs_get_old_subscription_key( $subscription ) ] = wcs_get_subscription_in_deprecated_structure( $subscription );
+				}
+
+				apply_filters( $old_hook, $old_subscriptions, $new_callback_args[1] );
+				break;
+
+			// New arg spec: $can_be_updated, $new_status_or_meta, $subscription
+			// Old arg spec: $can_be_changed, $new_status_or_meta, $args
+			case &#039;woocommerce_can_subscription_be_changed_to&#039;:
+
+				$subscription = $new_callback_args[2];
+
+				// Build the old $arg object
+				$args = new stdClass();
+				$args-&gt;subscription_key           = wcs_get_old_subscription_key( $subscription );
+				$args-&gt;subscription               = wcs_get_subscription_in_deprecated_structure( $subscription );
+				$args-&gt;user_id                    = $subscription-&gt;get_user_id();
+				$args-&gt;order                      = self::get_order( $subscription );
+				$args-&gt;payment_gateway            = $subscription-&gt;get_payment_method();
+				$args-&gt;order_uses_manual_payments = $subscription-&gt;is_manual();
+				$return_value = apply_filters( $old_hook, $return_value, $args );
+				break;
+		}
+
+		return $return_value;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html">WooCommerceSubscriptionsAdminUpgrades</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-about-2-0.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * About page for Subscriptions 2.0.0
+ *
+ * @author		Prospress
+ * @category	Admin
+ * @package		WooCommerce Subscriptions/Admin/Upgrades
+ * @version		2.0.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit;
+}
+
+$settings_page = admin_url( &#039;admin.php?page=wc-settings&amp;tab=subscriptions&#039; );
+?&gt;
+
+&lt;div class=&quot;wrap about-wrap&quot;&gt;
+
+	&lt;h1&gt;&lt;?php esc_html_e( &#039;Welcome to Subscriptions 2.0&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h1&gt;
+
+	&lt;div class=&quot;about-text woocommerce-about-text&quot;&gt;
+		&lt;?php esc_html_e( &#039;Thank you for updating to the latest version of WooCommerce Subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+		&lt;?php esc_html_e( &#039;Version 2.0 has been in development for more than a year. We\&#039;ve reinvented the extension to take into account 3 years of feedback from store managers.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+		&lt;?php esc_html_e( &#039;We hope you enjoy it!&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;wcs-badge&quot;&gt;
+		&lt;?php
+		// translators: placeholder is version number
+		printf( esc_html__( &#039;Version %s&#039;, &#039;woocommerce-subscriptions&#039; ), esc_html( $active_version ) ); ?&gt;
+	&lt;/div&gt;
+
+	&lt;p class=&quot;woocommerce-actions&quot;&gt;
+		&lt;a href=&quot;&lt;?php echo esc_url( $settings_page ); ?&gt;&quot; class=&quot;button button-primary&quot;&gt;&lt;?php esc_html_e( &#039;Settings&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+		&lt;a class=&quot;docs button button-primary&quot; href=&quot;&lt;?php echo esc_url( apply_filters( &#039;woocommerce_docs_url&#039;, &#039;http://docs.woocommerce.com/documentation/subscriptions/&#039;, &#039;woocommerce-subscriptions&#039; ) ); ?&gt;&quot;&gt;&lt;?php echo esc_html_x( &#039;Docs&#039;, &#039;short for documents&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+		&lt;a href=&quot;https://twitter.com/share&quot; class=&quot;twitter-share-button&quot; data-url=&quot;http://www.woocommerce.com/products/woocommerce-subscriptions/&quot; data-text=&quot;I just upgraded to WooCommerce Subscriptions v2.0, woot!&quot; data-via=&quot;WooCommerce&quot; data-size=&quot;large&quot; data-hashtags=&quot;WooCommerce&quot;&gt;Tweet&lt;/a&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=&quot;//platform.twitter.com/widgets.js&quot;;fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);&lt;/script&gt;
+	&lt;/p&gt;
+
+	&lt;div class=&quot;changelog&quot;&gt;
+		&lt;h2&gt;&lt;?php esc_html_e( &quot;Check Out What&#039;s New&quot;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h2&gt;
+		&lt;hr/&gt;
+
+		&lt;div class=&quot;feature-section two-col&quot;&gt;
+			&lt;div class=&quot;feature-image col&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;checkout-recurring-totals.png&#039; ) ); ?&gt;&quot; /&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col last-feature feature-copy&quot;&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;Multiple Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;It\&#039;s now easier for your customers to buy more subscriptions!&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Customers can now purchase different subscription products in one transaction. The products can bill on any schedule and have any combination of sign-up fees and/or free trials.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing link tags
+					printf( esc_html__( &#039;Learn more about the new %smultiple subscriptions%s feature.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;&#039; .  esc_url( &#039;http://docs.woocommerce.com/document/subscriptions/multiple-subscriptions/&#039; ) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;feature-section two-col&quot;&gt;
+
+			&lt;div class=&quot;col last-feature feature-right feature-image&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;add-edit-subscription-screen.png&#039; ) ); ?&gt;&quot; /&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col feature-copy&quot;&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;New Add/Edit Subscription Screen&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Subscriptions v2.0 introduces a new administration interface to add or edit a subscription. You can make all the familiar changes, like modifying recurring totals or subscription status. You can also make some new modifications, like changing the expiration date, adding a shipping cost or adding a product line item.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing &lt;strong&gt; tags
+					printf( esc_html__( &#039;The new interface is also built on the existing %sEdit Order%s screen. If you\&#039;ve ever modified an order, you already know how to modify a subscription.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039;, &#039;&lt;/strong&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholers are link tags: 1$-2$ new subscription page, 3$-4$: docs on woocommerce.com
+					printf( esc_html__( &#039;%1$sAdd a subscription%2$s now or %3$slearn more%4$s about the new interface.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;&#039; . esc_url( admin_url( &#039;post-new.php?post_type=shop_subscription&#039; ) ) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039;, &#039;&lt;a href=&quot;&#039; . esc_url( &#039;http://docs.woocommerce.com/document/subscriptions/version-2/#section-3&#039; ) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;feature-section two-col&quot;&gt;
+			&lt;div class=&quot;col feature-image&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;view-subscription.png&#039; ) ); ?&gt;&quot; /&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col last-feature feature-copy&quot;&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;New View Subscription Page&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;
+					&lt;?php
+					// translators: placeholders are opening and closing &lt;strong&gt; tags
+					printf( esc_html__( &#039;Your customers can now view the full details of a subscription, including line items, billing and shipping address, billing schedule and renewal orders, from a special %sMy Account &gt; View Subscription%s page.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039;, &#039;&lt;/strong&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;This new page is also where the customer can suspend or cancel their subscription, change payment method, change shipping address or upgrade/downgrade an item.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;
+					&lt;?php
+					// translators: placeholders are opening and closing link tags
+					printf( esc_html__( &#039;Learn more about the new %sView Subscription page%s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;&#039; .  esc_url( &#039;http://docs.woocommerce.com/document/subscriptions/version-2/#section-5&#039; ) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;changelog&quot;&gt;
+
+		&lt;div class=&quot;feature-section three-col&quot;&gt;
+
+			&lt;div class=&quot;col&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;drip-downloadable-content.jpg&#039; ) ); ?&gt;&quot; /&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;Drip Downloadable Content&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are for opening and closing link (&lt;a&gt;) tags
+					printf( esc_html__( &#039;By default, adding new files to an existing subscription product will automatically provide active subscribers with access to the new files. However, now you can enable a %snew content dripping setting%s to provide subscribers with access to new files only after the next renewal payment.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;&#039; . esc_url( $settings_page ) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are for opening and closing link (&lt;a&gt;) tags
+					printf( esc_html__( &#039;%sLearn more &amp;raquo;%s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;http://docs.woocommerce.com/document/subscriptions/version-2/#section-4&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;admin-change-payment-method.jpg&#039; ) ); ?&gt;&quot; /&gt;
+				&lt;h3&gt;&lt;?php echo esc_html_x( &#039;Change Payment Method&#039;, &#039;h3 on the About Subscriptions page for this new feature&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing &lt;strong&gt; tags
+					printf( esc_html__( &#039;For a store manager to change a subscription from automatic to manual renewal payments (or manual to automatic) with Subscriptions v1.5, the database needed to be modified directly. Subscriptions now provides a way for payment gateways to allow you to change that from the new %sEdit Subscription%s interface.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039;, &#039;&lt;/strong&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are for opening and closing link (&lt;a&gt;) tags
+					printf( esc_html__( &#039;%sLearn more &amp;raquo;%s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;http://docs.woocommerce.com/document/subscriptions/version-2/#change-payment-method-admin&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;col last-feature&quot;&gt;
+				&lt;img src=&quot;&lt;?php echo esc_url( wcs_get_image_asset_url( &#039;billing-schedules-meta-box.png&#039; ) ); ?&gt;&quot; /&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;Change Trial and End Dates&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing &lt;strong&gt; tags
+					printf( esc_html__( &#039;It was already possible to change a subscription\&#039;s next payment date, but some store managers wanted to provide a customer with an extended free trial or add an extra month to the expiration date. Now you can change all of these dates from the %sEdit Subscription%s screen.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;strong&gt;&#039;, &#039;&lt;/strong&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are for opening and closing link (&lt;a&gt;) tags
+					printf( esc_html__( &#039;%sLearn more &amp;raquo;%s&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;http://docs.woocommerce.com/document/subscriptions/version-2/#change-billing-schedule&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;changelog&quot;&gt;
+		&lt;div class=&quot;feature-section&quot;&gt;
+			&lt;h2&gt;&lt;?php esc_html_e( &#039;And much more...&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h2&gt;
+			&lt;p&gt;&lt;?php printf( esc_html( &#039;Learn about all the great new features in the guide to %sWhat\&#039;s new in Subscriptions version 2%s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;http://docs.woocommerce.com/document/subscriptions/version-2/&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ); ?&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;changelog&quot;&gt;
+
+		&lt;h2&gt;&lt;?php esc_html_e( &#039;Peek Under the Hood for Developers&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h2&gt;
+		&lt;p&gt;&lt;?php esc_html_e( &#039;Subscriptions 2.0 introduces a new architecture built on the WooCommerce Custom Order Types API.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+
+		&lt;div class=&quot;feature-section under-the-hood three-col&quot;&gt;
+			&lt;div class=&quot;col&quot;&gt;
+				&lt;h3&gt;&lt;?php
+					// translators: placeholders are opening and closing code tags
+					printf( esc_html__( &#039;New %sshop_subscription%s Post Type&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;By making a subscription a Custom Order Type, a subscription is also now a custom post type. This makes it faster to query subscriptions and it uses a database schema that is as scalable as WordPress posts and pages.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: placeholders are opening and closing &lt;code&gt; tags
+					printf( esc_html__( &#039;Developers can also now use all the familiar WordPress functions, like %sget_posts()%s, to query or modify subscription data.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col&quot;&gt;
+				&lt;h3&gt;&lt;?php
+					// translators: placeholders are opening and closing &lt;code&gt; tags
+					printf( esc_html__( &#039;New %sWC_Subscription%s Object&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;Subscriptions 2.0 introduces a new object for working with a subscription at the application level. The cumbersome APIs for retrieving or modifying a subscription\&#039;s data are gone!&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: all placeholders are opening and closing &lt;code&gt; tags, no need to order them
+					printf( esc_html__( &#039;Because the %sWC_Subscription%s class extends %sWC_Order%s, you can use its familiar methods, like %s$subscription-&gt;update_status()%s or %s$subscription-&gt;get_total()%s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039;, &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039;, &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039;, &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col last-feature&quot;&gt;
+				&lt;h3&gt;&lt;?php esc_html_e( &#039;REST API Endpoints&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+				&lt;p&gt;&lt;?php esc_html_e( &#039;We didn\&#039;t just improve interfaces for humans, we also improved them for computers. Your applications can now create, read, update or delete subscriptions via RESTful API endpoints.&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/p&gt;
+				&lt;p&gt;&lt;?php
+					// translators: all placeholders are opening and closing &lt;code&gt; tags, no need to order them
+					printf( esc_html__( &#039;Want to list all the subscriptions on a site? Get %sexample.com/wc-api/v2/subscriptions/%s. Want the details of a specific subscription? Get %s/wc-api/v2/subscriptions/&lt;id&gt;/%s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039;, &#039;&lt;code&gt;&#039;, &#039;&lt;/code&gt;&#039; ); ?&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;hr/&gt;
+	&lt;div class=&quot;return-to-dashboard&quot;&gt;
+		&lt;a href=&quot;&lt;?php echo esc_url( $settings_page ); ?&gt;&quot;&gt;&lt;?php esc_html_e( &#039;Go to WooCommerce Subscriptions Settings&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

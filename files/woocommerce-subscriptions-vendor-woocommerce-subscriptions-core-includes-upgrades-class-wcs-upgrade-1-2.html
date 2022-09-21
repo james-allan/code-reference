@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html">WooCommerceSubscriptionsAdminUpgrades</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-upgrade-1-2.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Update Subscriptions to 1.2.0
+ *
+ * Version 1.2 introduced a massive change to the order meta data schema. This goes through
+ * and upgrades the existing data on all orders to the new schema.
+ *
+ * The upgrade process is timeout safe as it keeps a record of the orders upgraded and only
+ * deletes this record once all orders have been upgraded successfully. If operating on a huge
+ * number of orders and the upgrade process times out, only the orders not already upgraded
+ * will be upgraded in future requests that trigger this function.
+ *
+ * @author      Prospress
+ * @category    Admin
+ * @package     WooCommerce Subscriptions/Admin/Upgrades
+ * @version     1.2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_Upgrade_1_2 {
+
+	public static function init() {
+		global $wpdb;
+
+		// Get IDs only and use a direct DB query for efficiency
+		$orders_to_upgrade = $wpdb-&gt;get_col( &quot;SELECT ID FROM $wpdb-&gt;posts WHERE post_type = &#039;shop_order&#039; AND post_parent = 0&quot; );
+
+		$upgraded_orders = get_option( &#039;wcs_1_2_upgraded_order_ids&#039;, array() );
+
+		// Transition deprecated subscription status if we aren&#039;t in the middle of updating orders
+		if ( empty( $upgraded_orders ) ) {
+			$wpdb-&gt;query( $wpdb-&gt;prepare( &quot;UPDATE $wpdb-&gt;usermeta SET meta_value = replace( meta_value, &#039;s:9:\&quot;suspended\&quot;&#039;, &#039;s:7:\&quot;on-hold\&quot;&#039; ) WHERE meta_key LIKE %s&quot;, &#039;%_woocommerce_subscriptions&#039; ) );
+			$wpdb-&gt;query( $wpdb-&gt;prepare( &quot;UPDATE $wpdb-&gt;usermeta SET meta_value = replace( meta_value, &#039;s:6:\&quot;failed\&quot;&#039;, &#039;s:9:\&quot;cancelled\&quot;&#039; ) WHERE meta_key LIKE %s&quot;, &#039;%_woocommerce_subscriptions&#039; ) );
+		}
+
+		$orders_to_upgrade = array_diff( $orders_to_upgrade, $upgraded_orders );
+
+		// Upgrade all _sign_up_{field} order meta to new order data format
+		foreach ( $orders_to_upgrade as $order_id ) {
+
+			$order = wc_get_order( $order_id );
+
+			// Manually check if a product in an order is a subscription, we can&#039;t use wcs_order_contains_subscription( $order ) because it relies on the new data structure
+			$contains_subscription = false;
+			foreach ( $order-&gt;get_items() as $order_item ) {
+				if ( WC_Subscriptions_Product::is_subscription( WC_Subscriptions_Order::get_items_product_id( $order_item ) ) ) {
+					$contains_subscription = true;
+					break;
+				}
+			}
+
+			if ( ! $contains_subscription ) {
+				continue;
+			}
+
+			$trial_lengths = WC_Subscriptions_Order::get_meta( $order, &#039;_order_subscription_trial_lengths&#039;, array() );
+			$trial_length = array_pop( $trial_lengths );
+
+			$has_trial = ! empty( $trial_length ) &amp;&amp; $trial_length &gt; 0;
+
+			$sign_up_fee_total = WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_total&#039;, 0 );
+
+			// Create recurring_* meta data from existing cart totals
+			$cart_discount = $order-&gt;get_total_discount();
+			update_post_meta( $order_id, &#039;_order_recurring_discount_cart&#039;, $cart_discount );
+
+			$order_discount = $order-&gt;get_total_discount();
+			update_post_meta( $order_id, &#039;_order_recurring_discount_total&#039;, $order_discount );
+
+			$order_shipping_tax = get_post_meta( $order_id, &#039;_order_shipping_tax&#039;, true );
+			update_post_meta( $order_id, &#039;_order_recurring_shipping_tax_total&#039;, $order_shipping_tax );
+
+			$order_tax = get_post_meta( $order_id, &#039;_order_tax&#039;, true ); // $order-&gt;get_total_tax() includes shipping tax
+			update_post_meta( $order_id, &#039;_order_recurring_tax_total&#039;, $order_tax );
+
+			$order_total = $order-&gt;get_total();
+			update_post_meta( $order_id, &#039;_order_recurring_total&#039;, $order_total );
+
+			// Set order totals to include sign up fee fields, if there was a sign up fee on the order and a trial period (other wise, the recurring totals are correct)
+			if ( $sign_up_fee_total &gt; 0 ) {
+
+				// Order totals need to be changed to be equal to sign up fee totals
+				if ( $has_trial ) {
+
+					$cart_discount  = WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_discount_cart&#039;, 0 );
+					$order_discount = WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_discount_total&#039;, 0 );
+					$order_tax      = WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_tax_total&#039;, 0 );
+					$order_total    = $sign_up_fee_total;
+
+				} else { // No trial, sign up fees need to be added to order totals
+
+					$cart_discount  += WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_discount_cart&#039;, 0 );
+					$order_discount += WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_discount_total&#039;, 0 );
+					$order_tax      += WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_tax_total&#039;, 0 );
+					$order_total    += $sign_up_fee_total;
+
+				}
+
+				update_post_meta( $order_id, &#039;_order_total&#039;, $order_total );
+				update_post_meta( $order_id, &#039;_cart_discount&#039;, $cart_discount );
+				update_post_meta( $order_id, &#039;_order_discount&#039;, $order_discount );
+				update_post_meta( $order_id, &#039;_order_tax&#039;, $order_tax );
+
+			}
+
+			// Make sure we get order taxes in WC 1.x format
+			if ( false == WC_Subscriptions_Upgrader::$is_wc_version_2 ) {
+
+				$order_taxes = $order-&gt;get_taxes();
+
+			} else {
+
+				$order_tax_row = $wpdb-&gt;get_row( $wpdb-&gt;prepare( &quot;
+					SELECT * FROM {$wpdb-&gt;postmeta}
+					WHERE meta_key = &#039;_order_taxes_old&#039;
+					AND post_id = %s
+					&quot;, $order_id )
+				);
+
+				$order_taxes = (array) maybe_unserialize( $order_tax_row-&gt;meta_value );
+			}
+
+			// Set recurring taxes to order taxes, if using WC 2.0, this will be migrated to the new format in @see WC_Subscriptions_Upgrader::upgrade_to_latest_wc()
+			update_post_meta( $order_id, &#039;_order_recurring_taxes&#039;, $order_taxes );
+
+			$sign_up_fee_taxes = WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_taxes&#039;, array() );
+
+			// Update order taxes to include sign up fee taxes
+			foreach ( $sign_up_fee_taxes as $index =&gt; $sign_up_tax ) {
+
+				if ( $has_trial &amp;&amp; $sign_up_fee_total &gt; 0 ) { // Order taxes need to be set to the same as the sign up fee taxes
+
+					if ( isset( $sign_up_tax[&#039;cart_tax&#039;] ) &amp;&amp; $sign_up_tax[&#039;cart_tax&#039;] &gt; 0 ) {
+						$order_taxes[ $index ][&#039;cart_tax&#039;] = $sign_up_tax[&#039;cart_tax&#039;];
+					}
+				} elseif ( ! $has_trial &amp;&amp; $sign_up_fee_total &gt; 0 ) { // Sign up fee taxes need to be added to order taxes
+
+					if ( isset( $sign_up_tax[&#039;cart_tax&#039;] ) &amp;&amp; $sign_up_tax[&#039;cart_tax&#039;] &gt; 0 ) {
+						$order_taxes[ $index ][&#039;cart_tax&#039;] += $sign_up_tax[&#039;cart_tax&#039;];
+					}
+				}
+			}
+
+			if ( false == WC_Subscriptions_Upgrader::$is_wc_version_2 ) { // Doing it right: updated Subs *before* updating WooCommerce, the WooCommerce updater will take care of data migration
+
+				update_post_meta( $order_id, &#039;_order_taxes&#039;, $order_taxes );
+
+			} else { // Doing it wrong: updated Subs *after* updating WooCommerce, need to store in WC2.0 tax structure
+
+				$index = 0;
+				$new_order_taxes = $order-&gt;get_taxes();
+
+				foreach ( $new_order_taxes as $item_id =&gt; $order_tax ) {
+
+					$index = $index + 1;
+
+					if ( ! isset( $order_taxes[ $index ][&#039;label&#039;] ) || ! isset( $order_taxes[ $index ][&#039;cart_tax&#039;] ) || ! isset( $order_taxes[ $index ][&#039;shipping_tax&#039;] ) ) {
+						continue;
+					}
+
+					// Add line item meta
+					if ( $item_id ) {
+						wc_update_order_item_meta( $item_id, &#039;compound&#039;, absint( isset( $order_taxes[ $index ][&#039;compound&#039;] ) ? $order_taxes[ $index ][&#039;compound&#039;] : 0 ) );
+						wc_update_order_item_meta( $item_id, &#039;tax_amount&#039;, wc_format_decimal( $order_taxes[ $index ][&#039;cart_tax&#039;] ) );
+						wc_update_order_item_meta( $item_id, &#039;shipping_tax_amount&#039;, wc_format_decimal( $order_taxes[ $index ][&#039;shipping_tax&#039;] ) );
+					}
+				}
+			}
+
+			/* Upgrade each order item to use new Item Meta schema */
+			$order_subscription_periods       = WC_Subscriptions_Order::get_meta( $order_id, &#039;_order_subscription_periods&#039;, array() );
+			$order_subscription_intervals     = WC_Subscriptions_Order::get_meta( $order_id, &#039;_order_subscription_intervals&#039;, array() );
+			$order_subscription_lengths       = WC_Subscriptions_Order::get_meta( $order_id, &#039;_order_subscription_lengths&#039;, array() );
+			$order_subscription_trial_lengths = WC_Subscriptions_Order::get_meta( $order_id, &#039;_order_subscription_trial_lengths&#039;, array() );
+
+			$order_items = $order-&gt;get_items();
+
+			foreach ( $order_items as $index =&gt; $order_item ) {
+
+				$product_id = WC_Subscriptions_Order::get_items_product_id( $order_item );
+				$item_meta  = new WC_Order_Item_Meta( $order_item[&#039;item_meta&#039;] );
+
+				$subscription_interval     = ( isset( $order_subscription_intervals[ $product_id ] ) ) ? $order_subscription_intervals[ $product_id ] : 1;
+				$subscription_length       = ( isset( $order_subscription_lengths[ $product_id ] ) ) ? $order_subscription_lengths[ $product_id ] : 0;
+				$subscription_trial_length = ( isset( $order_subscription_trial_lengths[ $product_id ] ) ) ? $order_subscription_trial_lengths[ $product_id ] : 0;
+
+				$subscription_sign_up_fee  = WC_Subscriptions_Order::get_meta( $order, &#039;_cart_contents_sign_up_fee_total&#039;, 0 );
+
+				if ( $sign_up_fee_total &gt; 0 ) {
+
+					// Discounted price * Quantity
+					$sign_up_fee_line_total = WC_Subscriptions_Order::get_meta( $order, &#039;_cart_contents_sign_up_fee_total&#039;, 0 );
+					$sign_up_fee_line_tax   = WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_tax_total&#039;, 0 );
+
+					// Base price * Quantity
+					$sign_up_fee_line_subtotal     = WC_Subscriptions_Order::get_meta( $order, &#039;_cart_contents_sign_up_fee_total&#039;, 0 ) + WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_discount_cart&#039;, 0 );
+					$sign_up_fee_propotion         = ( $sign_up_fee_line_total &gt; 0 ) ? $sign_up_fee_line_subtotal / $sign_up_fee_line_total : 0;
+					$sign_up_fee_line_subtotal_tax = WC_Subscriptions_Manager::get_amount_from_proportion( WC_Subscriptions_Order::get_meta( $order, &#039;_sign_up_fee_tax_total&#039;, 0 ), $sign_up_fee_propotion );
+
+					if ( $has_trial ) { // Set line item totals equal to sign up fee totals
+
+						$order_item[&#039;line_subtotal&#039;]     = $sign_up_fee_line_subtotal;
+						$order_item[&#039;line_subtotal_tax&#039;] = $sign_up_fee_line_subtotal_tax;
+						$order_item[&#039;line_total&#039;]        = $sign_up_fee_line_total;
+						$order_item[&#039;line_tax&#039;]          = $sign_up_fee_line_tax;
+
+					} else { // No trial period, sign up fees need to be added to order totals
+
+						$order_item[&#039;line_subtotal&#039;]     += $sign_up_fee_line_subtotal;
+						$order_item[&#039;line_subtotal_tax&#039;] += $sign_up_fee_line_subtotal_tax;
+						$order_item[&#039;line_total&#039;]        += $sign_up_fee_line_total;
+						$order_item[&#039;line_tax&#039;]          += $sign_up_fee_line_tax;
+
+					}
+				}
+
+				// Upgrading with WC 1.x
+				if ( is_callable( array( $item_meta, &#039;add&#039; ) ) ) {
+
+					$item_meta-&gt;add( &#039;_subscription_period&#039;, $order_subscription_periods[ $product_id ] );
+					$item_meta-&gt;add( &#039;_subscription_interval&#039;, $subscription_interval );
+					$item_meta-&gt;add( &#039;_subscription_length&#039;, $subscription_length );
+					$item_meta-&gt;add( &#039;_subscription_trial_length&#039;, $subscription_trial_length );
+
+					$item_meta-&gt;add( &#039;_subscription_recurring_amount&#039;, $order_item[&#039;line_subtotal&#039;] ); // WC_Subscriptions_Product::get_price() would return a price without filters applied
+					$item_meta-&gt;add( &#039;_subscription_sign_up_fee&#039;, $subscription_sign_up_fee );
+
+					// Set recurring amounts for the item
+					$item_meta-&gt;add( &#039;_recurring_line_total&#039;, $order_item[&#039;line_total&#039;] );
+					$item_meta-&gt;add( &#039;_recurring_line_tax&#039;, $order_item[&#039;line_tax&#039;] );
+					$item_meta-&gt;add( &#039;_recurring_line_subtotal&#039;, $order_item[&#039;line_subtotal&#039;] );
+					$item_meta-&gt;add( &#039;_recurring_line_subtotal_tax&#039;, $order_item[&#039;line_subtotal_tax&#039;] );
+
+					$order_item[&#039;item_meta&#039;] = $item_meta-&gt;meta;
+
+					$order_items[ $index ] = $order_item;
+
+				} else { // Ignoring all advice, upgrading 4 months after version 1.2 was released, and doing it with WC 2.0 installed
+
+					wc_add_order_item_meta( $index, &#039;_subscription_period&#039;, $order_subscription_periods[ $product_id ] );
+					wc_add_order_item_meta( $index, &#039;_subscription_interval&#039;, $subscription_interval );
+					wc_add_order_item_meta( $index, &#039;_subscription_length&#039;, $subscription_length );
+					wc_add_order_item_meta( $index, &#039;_subscription_trial_length&#039;, $subscription_trial_length );
+					wc_add_order_item_meta( $index, &#039;_subscription_trial_period&#039;, $order_subscription_periods[ $product_id ] );
+
+					wc_add_order_item_meta( $index, &#039;_subscription_recurring_amount&#039;, $order_item[&#039;line_subtotal&#039;] );
+					wc_add_order_item_meta( $index, &#039;_subscription_sign_up_fee&#039;, $subscription_sign_up_fee );
+
+					// Calculated recurring amounts for the item
+					wc_add_order_item_meta( $index, &#039;_recurring_line_total&#039;, $order_item[&#039;line_total&#039;] );
+					wc_add_order_item_meta( $index, &#039;_recurring_line_tax&#039;, $order_item[&#039;line_tax&#039;] );
+					wc_add_order_item_meta( $index, &#039;_recurring_line_subtotal&#039;, $order_item[&#039;line_subtotal&#039;] );
+					wc_add_order_item_meta( $index, &#039;_recurring_line_subtotal_tax&#039;, $order_item[&#039;line_subtotal_tax&#039;] );
+
+					if ( $sign_up_fee_total &gt; 0 ) { // Order totals have changed
+						wc_update_order_item_meta( $index, &#039;_line_subtotal&#039;, wc_format_decimalw( $order_item[&#039;line_subtotal&#039;] ) );
+						wc_update_order_item_meta( $index, &#039;_line_subtotal_tax&#039;, wc_format_decimal( $order_item[&#039;line_subtotal_tax&#039;] ) );
+						wc_update_order_item_meta( $index, &#039;_line_total&#039;, wc_format_decimal( $order_item[&#039;line_total&#039;] ) );
+						wc_update_order_item_meta( $index, &#039;_line_tax&#039;, wc_format_decimal( $order_item[&#039;line_tax&#039;] ) );
+					}
+				}
+			}
+
+			// Save the new meta on the order items for WC 1.x (the API functions already saved the data for WC2.x)
+			if ( false == WC_Subscriptions_Upgrader::$is_wc_version_2 ) {
+				update_post_meta( $order_id, &#039;_order_items&#039;, $order_items );
+			}
+
+			$upgraded_orders[] = $order_id;
+
+			update_option( &#039;wcs_1_2_upgraded_order_ids&#039;, $upgraded_orders );
+
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

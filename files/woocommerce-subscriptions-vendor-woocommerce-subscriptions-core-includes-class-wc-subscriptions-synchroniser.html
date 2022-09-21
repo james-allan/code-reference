@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-synchroniser.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Allow for payment dates to be synchronised to a specific day of the week, month or year.
+ *
+ * @package WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Sync
+ * @category Class
+ * @author Brent Shepherd
+ * @since 1.5
+ */
+class WC_Subscriptions_Synchroniser {
+
+	public static $setting_id;
+	public static $setting_id_proration;
+	public static $setting_id_days_no_fee;
+
+	public static $post_meta_key       = &#039;_subscription_payment_sync_date&#039;;
+	public static $post_meta_key_day   = &#039;_subscription_payment_sync_date_day&#039;;
+	public static $post_meta_key_month = &#039;_subscription_payment_sync_date_month&#039;;
+
+	public static $sync_field_label;
+	public static $sync_description;
+	public static $sync_description_year;
+
+	public static $billing_period_ranges;
+
+	// strtotime() only handles English, so can&#039;t use $wp_locale-&gt;weekday in some places
+	protected static $weekdays = array(
+		1 =&gt; &#039;Monday&#039;,
+		2 =&gt; &#039;Tuesday&#039;,
+		3 =&gt; &#039;Wednesday&#039;,
+		4 =&gt; &#039;Thursday&#039;,
+		5 =&gt; &#039;Friday&#039;,
+		6 =&gt; &#039;Saturday&#039;,
+		7 =&gt; &#039;Sunday&#039;,
+	);
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 *
+	 * @since 1.5
+	 */
+	public static function init() {
+		self::$setting_id             = WC_Subscriptions_Admin::$option_prefix . &#039;_sync_payments&#039;;
+		self::$setting_id_proration   = WC_Subscriptions_Admin::$option_prefix . &#039;_prorate_synced_payments&#039;;
+		self::$setting_id_days_no_fee = WC_Subscriptions_Admin::$option_prefix . &#039;_days_no_fee&#039;;
+
+		self::$sync_field_label      = __( &#039;Synchronise renewals&#039;, &#039;woocommerce-subscriptions&#039; );
+		self::$sync_description      = __( &#039;Align the payment date for all customers who purchase this subscription to a specific day of the week or month.&#039;, &#039;woocommerce-subscriptions&#039; );
+		// translators: placeholder is a year (e.g. &quot;2016&quot;)
+		self::$sync_description_year = sprintf( _x( &#039;Align the payment date for this subscription to a specific day of the year. If the date has already taken place this year, the first payment will be processed in %s. Set the day to 0 to disable payment syncing for this product.&#039;, &#039;used in subscription product edit screen&#039;, &#039;woocommerce-subscriptions&#039; ), gmdate( &#039;Y&#039;, wcs_date_to_time( &#039;+1 year&#039; ) ) );
+
+		// Add the settings to control whether syncing is enabled and how it will behave
+		add_filter( &#039;woocommerce_subscription_settings&#039;, __CLASS__ . &#039;::add_settings&#039; );
+
+		// When enabled, add the sync selection fields to the Edit Product screen
+		add_action( &#039;woocommerce_subscriptions_product_options_pricing&#039;, __CLASS__ . &#039;::subscription_product_fields&#039; );
+		add_action( &#039;woocommerce_variable_subscription_pricing&#039;, __CLASS__ . &#039;::variable_subscription_product_fields&#039;, 10, 3 );
+
+		// Add the translated fields to the Subscriptions admin script
+		add_filter( &#039;woocommerce_subscriptions_admin_script_parameters&#039;, __CLASS__ . &#039;::admin_script_parameters&#039;, 10 );
+
+		// Save sync options when a subscription product is saved
+		add_action( &#039;woocommerce_process_product_meta_subscription&#039;, __CLASS__ . &#039;::save_subscription_meta&#039;, 10 );
+
+		// Save sync options when a variable subscription product is saved
+		add_action( &#039;woocommerce_process_product_meta_variable-subscription&#039;, __CLASS__ . &#039;::process_product_meta_variable_subscription&#039; );
+		add_action( &#039;woocommerce_save_product_variation&#039;, __CLASS__ . &#039;::save_product_variation&#039;, 20, 2 );
+
+		// Make sure the expiration dates are calculated from the synced start date
+		add_filter( &#039;woocommerce_subscriptions_product_trial_expiration_date&#039;, __CLASS__ . &#039;::recalculate_product_trial_expiration_date&#039;, 10, 2 );
+		add_filter( &#039;woocommerce_subscriptions_product_expiration_date&#039;, __CLASS__ . &#039;::recalculate_product_expiration_date&#039;, 10, 3 );
+
+		// Display a product&#039;s first payment date on the product&#039;s page to make sure it&#039;s obvious to the customer when payments will start
+		add_action( &#039;woocommerce_single_product_summary&#039;, __CLASS__ . &#039;::products_first_payment_date&#039;, 31 );
+
+		// Display a product&#039;s first payment date on the product&#039;s page to make sure it&#039;s obvious to the customer when payments will start
+		add_action( &#039;woocommerce_subscriptions_product_first_renewal_payment_time&#039;, __CLASS__ . &#039;::products_first_renewal_payment_time&#039;, 10, 4 );
+
+		// Maybe mock a free trial on the product for calculating totals and displaying correct shipping costs
+		add_action( &#039;woocommerce_before_calculate_totals&#039;, __CLASS__ . &#039;::maybe_set_free_trial&#039;, 0, 1 );
+		add_action( &#039;woocommerce_subscription_cart_before_grouping&#039;, __CLASS__ . &#039;::maybe_unset_free_trial&#039; );
+		add_action( &#039;woocommerce_subscription_cart_after_grouping&#039;, __CLASS__ . &#039;::maybe_set_free_trial&#039; );
+		add_filter( &#039;wcs_recurring_cart_start_date&#039;, __CLASS__ . &#039;::maybe_unset_free_trial&#039;, 0, 1 );
+		add_filter( &#039;wcs_recurring_cart_end_date&#039;, __CLASS__ . &#039;::maybe_set_free_trial&#039;, 100, 1 );
+		add_filter( &#039;woocommerce_subscriptions_calculated_total&#039;, __CLASS__ . &#039;::maybe_unset_free_trial&#039;, 10000, 1 );
+		add_action( &#039;woocommerce_cart_totals_before_shipping&#039;, __CLASS__ . &#039;::maybe_set_free_trial&#039; );
+		add_action( &#039;woocommerce_cart_totals_after_shipping&#039;, __CLASS__ . &#039;::maybe_unset_free_trial&#039; );
+		add_action( &#039;woocommerce_review_order_before_shipping&#039;, __CLASS__ . &#039;::maybe_set_free_trial&#039; );
+		add_action( &#039;woocommerce_review_order_after_shipping&#039;, __CLASS__ . &#039;::maybe_unset_free_trial&#039; );
+
+		// Set prorated initial amount when calculating initial total
+		add_filter( &#039;woocommerce_subscriptions_cart_get_price&#039;, __CLASS__ . &#039;::set_prorated_price_for_calculation&#039;, 10, 2 );
+
+		// When creating a subscription check if it contains a synced product and make sure the correct meta is set on the subscription
+		add_action( &#039;save_post&#039;, __CLASS__ . &#039;::maybe_add_subscription_meta&#039;, 10, 1 );
+
+		// When adding an item to a subscription, check if it is for a synced product to make sure the sync meta is set on the subscription. We can&#039;t attach to just the &#039;woocommerce_new_order_item&#039; here because the &#039;_product_id&#039; and &#039;_variation_id&#039; meta are not set before it fires
+		add_action( &#039;woocommerce_ajax_add_order_item_meta&#039;, __CLASS__ . &#039;::ajax_maybe_add_meta_for_item&#039;, 10, 2 );
+
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			add_action( &#039;woocommerce_order_add_product&#039;, __CLASS__ . &#039;::maybe_add_meta_for_new_product&#039;, 10, 3 );
+			add_action( &#039;woocommerce_add_order_item_meta&#039;, array( __CLASS__, &#039;maybe_add_order_item_meta&#039; ), 10, 2 );
+		} else {
+			add_action( &#039;woocommerce_new_order_item&#039;, __CLASS__ . &#039;::maybe_add_meta_for_new_line_item&#039;, 10, 3 );
+			add_action( &#039;woocommerce_checkout_create_order_line_item&#039;, array( __CLASS__, &#039;maybe_add_line_item_meta&#039; ), 10, 3 );
+		}
+
+		// Make sure the sign-up fee for a synchronised subscription is correct
+		add_filter( &#039;woocommerce_subscriptions_sign_up_fee&#039;, __CLASS__ . &#039;::get_synced_sign_up_fee&#039;, 1, 3 );
+
+		// If it&#039;s an initial sync order and the total is zero, and nothing needs to be shipped, do not reduce stock
+		add_filter( &#039;woocommerce_order_item_quantity&#039;, __CLASS__ . &#039;::maybe_do_not_reduce_stock&#039;, 10, 3 );
+
+		add_filter( &#039;woocommerce_subscriptions_recurring_cart_key&#039;, __CLASS__ . &#039;::add_to_recurring_cart_key&#039;, 10, 2 );
+
+		// Add defaults for our options.
+		add_filter( &#039;default_option_&#039; . self::$setting_id_days_no_fee, array( __CLASS__, &#039;option_default&#039; ), 10, 3 );
+
+		// Sanitize options when saving.
+		add_filter( &#039;woocommerce_admin_settings_sanitize_option_&#039; . self::$setting_id_days_no_fee, array( __CLASS__, &#039;sanitize_option&#039; ), 10, 2 );
+
+		// Ensure options are the proper type.
+		add_filter( &#039;option_&#039; . self::$setting_id_days_no_fee, &#039;intval&#039; );
+
+		// Don&#039;t display migrated order item meta on the Edit Order screen
+		add_filter( &#039;woocommerce_hidden_order_itemmeta&#039;, array( __CLASS__, &#039;hide_order_itemmeta&#039; ) );
+	}
+
+	/**
+	 * Set default value of &#039;no&#039; for our options.
+	 *
+	 * This only sets the default
+	 *
+	 * @author Jeremy Pry
+	 *
+	 * @param mixed  $default        The default value for the option.
+	 * @param string $option         The option name.
+	 * @param bool   $passed_default Whether get_option() was passed a default value.
+	 *
+	 * @return mixed The default option value.
+	 */
+	public static function option_default( $default, $option, $passed_default = null ) {
+		switch ( $option ) {
+			case self::$setting_id_days_no_fee:
+				$default = $passed_default ? $default : 0;
+				break;
+		}
+
+		return $default;
+	}
+
+	/**
+	 * Sanitize our options when they are saved in the admin area.
+	 *
+	 * @author Jeremy Pry
+	 *
+	 * @param mixed $value  The value being saved.
+	 * @param array $option The option data array.
+	 *
+	 * @return mixed The sanitized option value.
+	 */
+	public static function sanitize_option( $value, $option ) {
+		switch ( $option[&#039;id&#039;] ) {
+			case self::$setting_id_days_no_fee:
+				$value = absint( $value );
+				break;
+		}
+
+		return $value;
+	}
+
+	/**
+	 * Check if payment syncing is enabled on the store.
+	 *
+	 * @since 1.5
+	 */
+	public static function is_syncing_enabled() {
+		return &#039;yes&#039; === get_option( self::$setting_id, &#039;no&#039; );
+	}
+
+	/**
+	 * Check if payments can be prorated on the store.
+	 *
+	 * @since 1.5
+	 */
+	public static function is_sync_proration_enabled() {
+		return &#039;no&#039; !== get_option( self::$setting_id_proration, &#039;no&#039; );
+	}
+
+	/**
+	 * Add sync settings to the Subscription&#039;s settings page.
+	 *
+	 * @since 1.5
+	 */
+	public static function add_settings( $settings ) {
+		$synchronisation_settings = array(
+			array(
+				&#039;name&#039; =&gt; __( &#039;Synchronisation&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;type&#039; =&gt; &#039;title&#039;,
+				// translators: placeholders are opening and closing link tags
+				&#039;desc&#039; =&gt; sprintf( _x( &#039;Align subscription renewal to a specific day of the week, month or year. For example, the first day of the month. %1$sLearn more%2$s.&#039;, &#039;used in the general subscription options page&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;&#039; . esc_url( &#039;http://docs.woocommerce.com/document/subscriptions/renewal-synchronisation/&#039; ) . &#039;&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ),
+				&#039;id&#039;   =&gt; self::$setting_id . &#039;_title&#039;,
+			),
+
+			array(
+				&#039;name&#039;    =&gt; self::$sync_field_label,
+				&#039;desc&#039;    =&gt; __( &#039;Align Subscription Renewal Day&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;id&#039;      =&gt; self::$setting_id,
+				&#039;default&#039; =&gt; &#039;no&#039;,
+				&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+			),
+
+			array(
+				&#039;name&#039;     =&gt; __( &#039;Prorate First Renewal&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;desc&#039;     =&gt; __( &#039;If a subscription is synchronised to a specific day of the week, month or year, charge a prorated amount for the subscription at the time of sign up.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;id&#039;       =&gt; self::$setting_id_proration,
+				&#039;css&#039;      =&gt; &#039;min-width:150px;&#039;,
+				&#039;default&#039;  =&gt; &#039;no&#039;,
+				&#039;type&#039;     =&gt; &#039;select&#039;,
+				&#039;options&#039;  =&gt; array(
+					&#039;no&#039;        =&gt; _x( &#039;Never (do not charge any recurring amount)&#039;, &#039;when to prorate first payment / subscription length&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;recurring&#039; =&gt; _x( &#039;Never (charge the full recurring amount at sign-up)&#039;, &#039;when to prorate first payment / subscription length&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;virtual&#039;   =&gt; _x( &#039;For Virtual Subscription Products Only&#039;, &#039;when to prorate first payment / subscription length&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;yes&#039;       =&gt; _x( &#039;For All Subscription Products&#039;, &#039;when to prorate first payment / subscription length&#039;, &#039;woocommerce-subscriptions&#039; ),
+				),
+				&#039;desc_tip&#039; =&gt; true,
+			),
+
+			array(
+				&#039;name&#039;     =&gt; __( &#039;Sign-up grace period&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;desc&#039;     =&gt; _x( &#039;days prior to Renewal Day&#039;, &quot;there&#039;s a number immediately in front of this text&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;id&#039;       =&gt; self::$setting_id_days_no_fee,
+				&#039;default&#039;  =&gt; 0,
+				&#039;type&#039;     =&gt; &#039;number&#039;,
+				&#039;desc_tip&#039; =&gt; __( &#039;Subscriptions created within this many days prior to the Renewal Day will not be charged at sign-up. Set to zero for all new Subscriptions to be charged the full recurring amount. Must be a positive number.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			),
+
+			array(
+				&#039;type&#039; =&gt; &#039;sectionend&#039;,
+				&#039;id&#039;   =&gt; self::$setting_id . &#039;_title&#039;,
+			),
+		);
+
+		// Insert the switch settings in after the Roles section otherwise add the settings to the end.
+		if ( ! WC_Subscriptions_Admin::insert_setting_after( $settings, WC_Subscriptions_Admin::$option_prefix . &#039;_role_options&#039;, $synchronisation_settings, &#039;multiple-settings&#039;, &#039;sectionend&#039; ) ) {
+			$settings = array_merge( $settings, $synchronisation_settings );
+		}
+
+		return $settings;
+	}
+
+	/**
+	 * Add the sync setting fields to the Edit Product screen
+	 *
+	 * @since 1.5
+	 */
+	public static function subscription_product_fields() {
+		global $post, $wp_locale;
+
+		if ( self::is_syncing_enabled() ) {
+
+			// Set month as the default billing period
+			if ( ! $subscription_period = get_post_meta( $post-&gt;ID, &#039;_subscription_period&#039;, true ) ) {
+				$subscription_period = &#039;month&#039;;
+			}
+
+			// Determine whether to display the week/month sync fields or the annual sync fields
+			$display_week_month_select = ( ! in_array( $subscription_period, array( &#039;month&#039;, &#039;week&#039; ) ) ) ? &#039;display: none;&#039; : &#039;&#039;;
+			$display_annual_select     = ( &#039;year&#039; != $subscription_period ) ? &#039;display: none;&#039; : &#039;&#039;;
+
+			$payment_day = self::get_products_payment_day( $post-&gt;ID );
+
+			// An annual sync date is already set in the form: array( &#039;day&#039; =&gt; &#039;nn&#039;, &#039;month&#039; =&gt; &#039;nn&#039; ), create a MySQL string from those values (year and time are irrelvent as they are ignored)
+			if ( is_array( $payment_day ) ) {
+				$payment_month = ( 0 === (int) $payment_day[&#039;day&#039;] ) ? 0 : $payment_day[&#039;month&#039;];
+				$payment_day   = $payment_day[&#039;day&#039;];
+			} else {
+				$payment_month = 0;
+			}
+
+			echo &#039;&lt;div class=&quot;options_group subscription_pricing subscription_sync show_if_subscription hidden&quot;&gt;&#039;;
+			echo &#039;&lt;div class=&quot;subscription_sync_week_month&quot; style=&quot;&#039; . esc_attr( $display_week_month_select ) . &#039;&quot;&gt;&#039;;
+
+			woocommerce_wp_select(
+				array(
+					&#039;id&#039;          =&gt; self::$post_meta_key,
+					&#039;class&#039;       =&gt; &#039;wc_input_subscription_payment_sync select short&#039;,
+					&#039;label&#039;       =&gt; self::$sync_field_label,
+					&#039;options&#039;     =&gt; self::get_billing_period_ranges( $subscription_period ),
+					&#039;description&#039; =&gt; self::$sync_description,
+					&#039;desc_tip&#039;    =&gt; true,
+					&#039;value&#039;       =&gt; $payment_day, // Explicity set value in to ensure backward compatibility
+				)
+			);
+
+			echo &#039;&lt;/div&gt;&#039;;
+
+			echo &#039;&lt;div class=&quot;subscription_sync_annual&quot; style=&quot;&#039; . esc_attr( $display_annual_select ) . &#039;&quot;&gt;&#039;;
+
+			?&gt;&lt;p class=&quot;form-field _subscription_payment_sync_date_day_field&quot;&gt;
+				&lt;label for=&quot;_subscription_payment_sync_date_day&quot;&gt;&lt;?php echo esc_html( self::$sync_field_label ); ?&gt;&lt;/label&gt;
+				&lt;span class=&quot;wrap&quot;&gt;
+
+					&lt;label for=&quot;&lt;?php echo esc_attr( self::$post_meta_key_month ); ?&gt;&quot; class=&quot;wcs_hidden_label&quot;&gt;&lt;?php esc_html_e( &#039;Month for Synchronisation&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/label&gt;
+					&lt;select id=&quot;&lt;?php echo esc_attr( self::$post_meta_key_month ); ?&gt;&quot; name=&quot;&lt;?php echo esc_attr( self::$post_meta_key_month ); ?&gt;&quot; class=&quot;wc_input_subscription_payment_sync last&quot; &gt;
+						&lt;?php foreach ( self::get_year_sync_options() as $value =&gt; $label ) { ?&gt;
+							&lt;option value=&quot;&lt;?php echo esc_attr( $value ); ?&gt;&quot; &lt;?php selected( $value, $payment_month, true ) ?&gt;&gt;&lt;?php echo esc_html( $label ); ?&gt;&lt;/option&gt;
+						&lt;?php } ?&gt;
+					&lt;/select&gt;
+
+					&lt;?php $daysInMonth = $payment_month ? gmdate( &#039;t&#039;, wc_string_to_timestamp( &quot;2001-{$payment_month}-01&quot; ) ) : 0; ?&gt;
+					&lt;input type=&quot;number&quot; id=&quot;&lt;?php echo esc_attr( self::$post_meta_key_day ); ?&gt;&quot; name=&quot;&lt;?php echo esc_attr( self::$post_meta_key_day ); ?&gt;&quot; class=&quot;wc_input_subscription_payment_sync&quot; value=&quot;&lt;?php echo esc_attr( $payment_day ); ?&gt;&quot; placeholder=&quot;&lt;?php echo esc_attr_x( &#039;Day&#039;, &#039;input field placeholder for day field for annual subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&quot; step=&quot;1&quot; min=&quot;&lt;?php echo esc_attr( min( 1, $daysInMonth ) ); ?&gt;&quot; max=&quot;&lt;?php echo esc_attr( $daysInMonth ); ?&gt;&quot; &lt;?php disabled( 0, $payment_month, true ); ?&gt; /&gt;
+				&lt;/span&gt;
+				&lt;?php echo wcs_help_tip( self::$sync_description_year ); ?&gt;
+			&lt;/p&gt;&lt;?php
+
+			echo &#039;&lt;/div&gt;&#039;;
+			echo &#039;&lt;/div&gt;&#039;;
+
+		}
+	}
+
+	/**
+	 * Add the sync setting fields to the variation section of the Edit Product screen
+	 *
+	 * @since 1.5
+	 */
+	public static function variable_subscription_product_fields( $loop, $variation_data, $variation ) {
+
+		if ( self::is_syncing_enabled() ) {
+
+			// Set month as the default billing period
+			$subscription_period = WC_Subscriptions_Product::get_period( $variation );
+
+			if ( empty( $subscription_period ) ) {
+				$subscription_period = &#039;month&#039;;
+			}
+
+			$display_week_month_select = ( ! in_array( $subscription_period, array( &#039;month&#039;, &#039;week&#039; ) ) ) ? &#039;display: none;&#039; : &#039;&#039;;
+			$display_annual_select     = ( &#039;year&#039; != $subscription_period ) ? &#039;display: none;&#039; : &#039;&#039;;
+
+			$payment_day = self::get_products_payment_day( $variation );
+
+			// An annual sync date is already set in the form: array( &#039;day&#039; =&gt; &#039;nn&#039;, &#039;month&#039; =&gt; &#039;nn&#039; ), create a MySQL string from those values (year and time are irrelvent as they are ignored)
+			if ( is_array( $payment_day ) ) {
+				$payment_month = ( 0 === (int) $payment_day[&#039;day&#039;] ) ? 0 : $payment_day[&#039;month&#039;];
+				$payment_day   = $payment_day[&#039;day&#039;];
+			} else {
+				$payment_month = 0;
+			}
+
+			include( WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/admin/html-variation-synchronisation.php&#039; ) );
+		}
+	}
+
+	/**
+	 * Save sync options when a subscription product is saved
+	 *
+	 * @since 1.5
+	 */
+	public static function save_subscription_meta( $post_id ) {
+
+		if ( empty( $_POST[&#039;_wcsnonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_subscription_meta&#039; ) ) {
+			return;
+		}
+
+		// Set month as the default billing period
+		if ( ! isset( $_POST[&#039;_subscription_period&#039;] ) ) {
+			$_POST[&#039;_subscription_period&#039;] = &#039;month&#039;;
+		}
+
+		if ( &#039;year&#039; == $_POST[&#039;_subscription_period&#039;] ) { // save the day &amp; month for the date rather than just the day
+
+			$_POST[ self::$post_meta_key ] = array(
+				&#039;day&#039;   =&gt; isset( $_POST[ self::$post_meta_key_day ] ) ? $_POST[ self::$post_meta_key_day ] : 0,
+				&#039;month&#039; =&gt; isset( $_POST[ self::$post_meta_key_month ] ) ? $_POST[ self::$post_meta_key_month ] : &#039;01&#039;,
+			);
+
+		} else {
+
+			if ( ! isset( $_POST[ self::$post_meta_key ] ) ) {
+				$_POST[ self::$post_meta_key ] = 0;
+			}
+		}
+
+		update_post_meta( $post_id, self::$post_meta_key, $_POST[ self::$post_meta_key ] );
+	}
+
+	/**
+	 * Save sync options when a variable subscription product is saved
+	 *
+	 * @since 1.5
+	 */
+	public static function process_product_meta_variable_subscription( $post_id ) {
+
+		if ( empty( $_POST[&#039;_wcsnonce_save_variations&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce_save_variations&#039;], &#039;wcs_subscription_variations&#039; ) || ! isset( $_POST[&#039;variable_post_id&#039;] ) || ! is_array( $_POST[&#039;variable_post_id&#039;] ) ) {
+			return;
+		}
+
+		// Make sure the parent product doesn&#039;t have a sync value (in case it was once a simple subscription)
+		update_post_meta( $post_id, self::$post_meta_key, 0 );
+	}
+
+	/**
+	 * Save sync options when a variable subscription product is saved
+	 *
+	 * @since 1.5
+	 */
+	public static function save_product_variation( $variation_id, $index ) {
+
+		if ( empty( $_POST[&#039;_wcsnonce_save_variations&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce_save_variations&#039;], &#039;wcs_subscription_variations&#039; ) || ! isset( $_POST[&#039;variable_post_id&#039;] ) || ! is_array( $_POST[&#039;variable_post_id&#039;] ) ) {
+			return;
+		}
+
+		$day_field   = &#039;variable&#039; . self::$post_meta_key_day;
+		$month_field = &#039;variable&#039; . self::$post_meta_key_month;
+
+		if ( &#039;year&#039; == $_POST[&#039;variable_subscription_period&#039;][ $index ] ) { // save the day &amp; month for the date rather than just the day
+
+			$_POST[ &#039;variable&#039; . self::$post_meta_key ][ $index ] = array(
+				&#039;day&#039;   =&gt; isset( $_POST[ $day_field ][ $index ] ) ? $_POST[ $day_field ][ $index ] : 0,
+				&#039;month&#039; =&gt; isset( $_POST[ $month_field ][ $index ] ) ? $_POST[ $month_field ][ $index ] : 0,
+			);
+
+		} elseif ( ! isset( $_POST[ &#039;variable&#039; . self::$post_meta_key ][ $index ] ) ) {
+			$_POST[ &#039;variable&#039; . self::$post_meta_key ][ $index ] = 0;
+		}
+
+		update_post_meta( $variation_id, self::$post_meta_key, $_POST[ &#039;variable&#039; . self::$post_meta_key ][ $index ] );
+	}
+
+	/**
+	 * Add translated syncing options for our client side script
+	 *
+	 * @since 1.5
+	 */
+	public static function admin_script_parameters( $script_parameters ) {
+
+		// Get admin screen id
+		$screen = get_current_screen();
+
+		if ( &#039;product&#039; == $screen-&gt;id ) {
+
+			$billing_period_strings = self::get_billing_period_ranges();
+
+			$script_parameters[&#039;syncOptions&#039;] = array(
+				&#039;week&#039;  =&gt; $billing_period_strings[&#039;week&#039;],
+				&#039;month&#039; =&gt; $billing_period_strings[&#039;month&#039;],
+				&#039;year&#039;  =&gt; self::get_year_sync_options(),
+			);
+		}
+
+		return $script_parameters;
+	}
+
+	/**
+	 * Determine whether a product, specified with $product, needs to have its first payment processed on a
+	 * specific day (instead of at the time of sign-up).
+	 *
+	 * @return (bool) True is the product&#039;s first payment will be synced to a certain day.
+	 * @since 1.5
+	 */
+	public static function is_product_synced( $product ) {
+
+		if ( ! is_object( $product ) ) {
+			$product = wc_get_product( $product );
+		}
+
+		if ( ! is_object( $product ) || ! self::is_syncing_enabled() || &#039;day&#039; == WC_Subscriptions_Product::get_period( $product ) || ! WC_Subscriptions_Product::is_subscription( $product ) ) {
+			return false;
+		}
+
+		$payment_date = self::get_products_payment_day( $product );
+
+		return ( ! is_array( $payment_date ) &amp;&amp; $payment_date &gt; 0 ) || ( isset( $payment_date[&#039;day&#039;] ) &amp;&amp; $payment_date[&#039;day&#039;] &gt; 0 );
+	}
+
+	/**
+	 * Determine whether a product, specified with $product, should have its first payment processed on a
+	 * at the time of sign-up but prorated to the sync day.
+	 *
+	 * @since 1.5.10
+	 *
+	 * @param WC_Product $product
+	 *
+	 * @return bool
+	 */
+	public static function is_product_prorated( $product ) {
+		if ( false === self::is_sync_proration_enabled() || false === self::is_product_synced( $product ) ) {
+			$is_product_prorated = false;
+		} elseif ( &#039;yes&#039; == get_option( self::$setting_id_proration, &#039;no&#039; ) &amp;&amp; 0 == WC_Subscriptions_Product::get_trial_length( $product ) ) {
+			$is_product_prorated = true;
+		} elseif ( &#039;virtual&#039; == get_option( self::$setting_id_proration, &#039;no&#039; ) &amp;&amp; $product-&gt;is_virtual() &amp;&amp; 0 == WC_Subscriptions_Product::get_trial_length( $product ) ) {
+			$is_product_prorated = true;
+		} else {
+			$is_product_prorated = false;
+		}
+
+		return $is_product_prorated;
+	}
+
+	/**
+	 * Determine whether the payment for a subscription should be the full price upfront.
+	 *
+	 * This method is particularly concerned with synchronized subscriptions. It will only return
+	 * true when the following conditions are met:
+	 *
+	 * - There is no free trial
+	 * - The subscription is synchronized
+	 * - The store owner has determined that new subscribers need to pay for their subscription upfront.
+	 *
+	 * Additionally, if the store owner sets a number of days prior to the synchronization day that do not
+	 * require an upfront payment, this method will check to see whether the current date falls within that
+	 * period for the given product.
+	 *
+	 * @author Jeremy Pry
+	 *
+	 * @param WC_Product $product The product to check.
+	 * @param string     $from_date Optional. A MySQL formatted date/time string from which to calculate from. The default is an empty string which is today&#039;s date/time.
+	 *
+	 * @return bool Whether an upfront payment is required for the product.
+	 */
+	public static function is_payment_upfront( $product, $from_date = &#039;&#039; ) {
+		static $results = array();
+		$is_upfront     = null;
+
+		if ( array_key_exists( $product-&gt;get_id(), $results ) ) {
+			return $results[ $product-&gt;get_id() ];
+		}
+
+		// Normal cases where we aren&#039;t concerned with an upfront payment.
+		if (
+			0 !== WC_Subscriptions_Product::get_trial_length( $product ) ||
+			! self::is_product_synced( $product )
+		) {
+			$is_upfront = false;
+		}
+
+		// Maybe account for number of days without a fee.
+		if ( null === $is_upfront ) {
+			$no_fee_days    = self::get_number_of_grace_period_days();
+			$payment_date   = self::calculate_first_payment_date( $product, &#039;timestamp&#039;, $from_date );
+			$from_timestamp = $from_date ? wcs_date_to_time( $from_date ) : gmdate( &#039;U&#039; );
+			$site_offset    = (int) ( get_option( &#039;gmt_offset&#039; ) * HOUR_IN_SECONDS );
+
+			// The payment date is today - check for it in site time.
+			if ( gmdate( &#039;Ymd&#039;, $payment_date + $site_offset ) === gmdate( &#039;Ymd&#039;, $from_timestamp + $site_offset ) ) {
+				$is_upfront = true;
+			} elseif ( &#039;recurring&#039; !== get_option( self::$setting_id_proration, &#039;no&#039; ) ) {
+				$is_upfront = false;
+			} elseif ( $no_fee_days &gt; 0 ) {
+				// When proration setting is &#039;recurring&#039; and there is a grace period.
+				$buffer_date = $payment_date - ( $no_fee_days * DAY_IN_SECONDS );
+
+				$is_upfront = $from_timestamp &lt; wcs_date_to_time( gmdate( &#039;Y-m-d 23:59:59&#039;, $buffer_date ) );
+			} else {
+				$is_upfront = true;
+			}
+		}
+
+		/**
+		 * Filter whether payment is upfront for a given product.
+		 *
+		 * @param bool       $is_upfront Whether the product needs to be paid upfront.
+		 * @param WC_Product $product    The current product.
+		 */
+		$results[ $product-&gt;get_id() ] = apply_filters( &#039;woocommerce_subscriptions_payment_upfront&#039;, $is_upfront, $product );
+
+		return $results[ $product-&gt;get_id() ];
+	}
+
+	/**
+	 * Get the day of the week, month or year on which a subscription&#039;s payments should be
+	 * synchronised to.
+	 *
+	 * @return int The day the products payments should be processed, or 0 if the payments should not be sync&#039;d to a specific day.
+	 * @since 1.5
+	 */
+	public static function get_products_payment_day( $product ) {
+
+		if ( ! self::is_syncing_enabled() ) {
+			$payment_date = 0;
+		} else {
+			$payment_date = WC_Subscriptions_Product::get_meta_data( $product, &#039;subscription_payment_sync_date&#039;, 0 );
+		}
+
+		return apply_filters( &#039;woocommerce_subscriptions_product_sync_date&#039;, $payment_date, $product );
+	}
+
+	/**
+	 * Calculate the first payment date for a synced subscription.
+	 *
+	 * The date is calculated in UTC timezone.
+	 *
+	 * @param WC_Product $product A subscription product.
+	 * @param string $type (optional) The format to return the first payment date in, either &#039;mysql&#039; or &#039;timestamp&#039;. Default &#039;mysql&#039;.
+	 * @param string $from_date (optional) The date to calculate the first payment from in GMT/UTC timzeone. If not set, it will use the current date. This should not include any trial period on the product.
+	 * @since 1.5
+	 */
+	public static function calculate_first_payment_date( $product, $type = &#039;mysql&#039;, $from_date = &#039;&#039; ) {
+
+		if ( ! is_object( $product ) ) {
+			$product = wc_get_product( $product );
+		}
+
+		if ( ! self::is_product_synced( $product ) ) {
+			return 0;
+		}
+
+		$period       = WC_Subscriptions_Product::get_period( $product );
+		$trial_length = WC_Subscriptions_Product::get_trial_length( $product );
+
+		// For billing intervals &gt; 1:
+		// When the proration setting is &#039;recurring&#039;, there is a full upfront payment for the entire billing interval
+		// So, the first payment date should be calculated after the entire interval
+		// When the proration setting is &#039;no&#039; or &#039;yes&#039;, the upfront payment is until the next date occurrence (1 week/month/year).
+		// So, the first payment date should be calculated with 1 as the interval
+		$interval = get_option( self::$setting_id_proration, &#039;no&#039; ) === &#039;recurring&#039; ? WC_Subscriptions_Product::get_interval( $product ) : 1;
+
+		$from_date_param = $from_date;
+
+		if ( empty( $from_date ) ) {
+			$from_date = gmdate( &#039;Y-m-d H:i:s&#039; );
+		}
+
+		// If the subscription has a free trial period, the first payment should be synced to a day after the free trial
+		if ( $trial_length &gt; 0 ) {
+			$from_date = WC_Subscriptions_Product::get_trial_expiration_date( $product, $from_date );
+		}
+
+		$from_timestamp = wcs_date_to_time( $from_date ) + ( (int) ( get_option( &#039;gmt_offset&#039; ) * HOUR_IN_SECONDS ) ); // Site time
+		$payment_day    = self::get_products_payment_day( $product );
+		$no_fee_days    = self::get_number_of_grace_period_days();
+
+		if ( &#039;week&#039; == $period ) {
+
+			// Get the day of the week for the from date
+			$from_day = gmdate( &#039;N&#039;, $from_timestamp );
+
+			// To account for rollover of the weekdays. For example, if from day is Saturday and the payment date is Monday,
+			// and the grace period is 2, Saturday is day 6 and Monday is day 1.
+			$add_days = $payment_day &lt; $from_day ? 0 : 7;
+
+			// Calculate difference between the the two days after adding number of weekdays and compare against grace period
+			if ( ( $payment_day + $add_days - $from_day ) &lt;= $no_fee_days ) {
+				$from_timestamp = wcs_add_time( $interval - 1, $period, $from_timestamp );
+			}
+
+			// strtotime() will figure out if the day is in the future or today (see: https://gist.github.com/thenbrent/9698083)
+			$first_payment_timestamp = wcs_strtotime_dark_knight( self::$weekdays[ $payment_day ], $from_timestamp );
+		} elseif ( &#039;month&#039; == $period ) {
+
+			// strtotime() needs to know the month, so we need to determine if the payment day has occurred this month yet or if we want the last day of the month (see: https://gist.github.com/thenbrent/9698083)
+			if ( $payment_day &gt; 27 ) { // we actually want the last day of the month
+				$payment_day = gmdate( &#039;t&#039;, $from_timestamp ); // the number of days in the month
+			}
+
+			$from_day = gmdate( &#039;j&#039;, $from_timestamp );
+
+			// If &#039;from day&#039; is before &#039;sync day&#039; in the month
+			if ( $from_day &lt;= $payment_day ) {
+				if ( $from_day + $no_fee_days &gt;= $payment_day ) { // In grace period
+					$month        = gmdate( &#039;F&#039;, $from_timestamp );
+					$month_number = gmdate( &#039;m&#039;, $from_timestamp );
+				} else { // If not in grace period, then the sync day has passed by. So, reduce interval by 1.
+					$month        = gmdate( &#039;F&#039;, wcs_add_months( $from_timestamp, $interval - 1 ) );
+					$month_number = gmdate( &#039;m&#039;, wcs_add_months( $from_timestamp, $interval - 1 ) );
+				}
+			} else { // If &#039;from day&#039; is after &#039;sync day&#039; in the month
+				$days_in_month = gmdate( &#039;t&#039;, $from_timestamp );
+				// Use &#039;days in month&#039; to account for end of month dates
+				if ( $from_day + $no_fee_days - $days_in_month &gt;= $payment_day ) { // In grace period
+					$month        = gmdate( &#039;F&#039;, wcs_add_months( $from_timestamp, 1 ) );
+					$month_number = gmdate( &#039;m&#039;, wcs_add_months( $from_timestamp, 1 ) );
+				} else { // Not in grace period, so add interval number of months
+					$month        = gmdate( &#039;F&#039;, wcs_add_months( $from_timestamp, $interval ) );
+					$month_number = gmdate( &#039;m&#039;, wcs_add_months( $from_timestamp, $interval ) );
+				}
+			}
+			// when a certain number of months are added and the first payment date moves to next year
+			if ( $month_number &lt; gmdate( &#039;m&#039;, $from_timestamp ) ) {
+				$year       = gmdate( &#039;Y&#039;, $from_timestamp );
+				$year++;
+				$first_payment_timestamp = wcs_strtotime_dark_knight( &quot;{$payment_day} {$month} {$year}&quot;, $from_timestamp );
+			} else {
+				$first_payment_timestamp = wcs_strtotime_dark_knight( &quot;{$payment_day} {$month}&quot;, $from_timestamp );
+			}
+		} elseif ( &#039;year&#039; == $period ) {
+
+			// We can&#039;t use $wp_locale here because it is translated
+			$month_map = array(
+				&#039;01&#039; =&gt; &#039;January&#039;,
+				&#039;02&#039; =&gt; &#039;February&#039;,
+				&#039;03&#039; =&gt; &#039;March&#039;,
+				&#039;04&#039; =&gt; &#039;April&#039;,
+				&#039;05&#039; =&gt; &#039;May&#039;,
+				&#039;06&#039; =&gt; &#039;June&#039;,
+				&#039;07&#039; =&gt; &#039;July&#039;,
+				&#039;08&#039; =&gt; &#039;August&#039;,
+				&#039;09&#039; =&gt; &#039;September&#039;,
+				&#039;10&#039; =&gt; &#039;October&#039;,
+				&#039;11&#039; =&gt; &#039;November&#039;,
+				&#039;12&#039; =&gt; &#039;December&#039;,
+			);
+
+			$month             = $month_map[ $payment_day[&#039;month&#039;] ];
+			$payment_month_day = sprintf( &#039;%02d%02d&#039;, $payment_day[&#039;month&#039;], $payment_day[&#039;day&#039;] );
+			$year              = gmdate( &#039;Y&#039;, $from_timestamp );
+			$from_month_day    = gmdate( &#039;md&#039;, $from_timestamp );
+
+			if ( $from_month_day &gt; $payment_month_day ) { // If &#039;from day&#039; is after &#039;sync day&#039; in the year
+				$year++;
+			}
+
+			if ( $from_timestamp + ( $no_fee_days * DAY_IN_SECONDS ) &gt;=
+				wcs_strtotime_dark_knight( &quot;{$payment_day[&#039;day&#039;]} {$month} {$year}&quot; ) ) { // In grace period
+				$first_payment_timestamp = wcs_strtotime_dark_knight( &quot;{$payment_day[&#039;day&#039;]} {$month} {$year}&quot;, $from_timestamp );
+			} else { // If not in grace period, then the sync day has passed by. So, reduce interval by 1.
+				$year += $interval - 1;
+				$first_payment_timestamp = wcs_strtotime_dark_knight( &quot;{$payment_day[&#039;day&#039;]} {$month} {$year}&quot;, wcs_add_time( $interval - 1, $period, $from_timestamp ) );
+			}
+		}
+
+		// We calculated a timestamp for midnight on the specific day in the site&#039;s timezone, let&#039;s push it to 3am to account for any daylight savings changes
+		$first_payment_timestamp += 3 * HOUR_IN_SECONDS;
+
+		// And convert it to the UTC equivalent of 3am on that day
+		$first_payment_timestamp -= ( (int) ( get_option( &#039;gmt_offset&#039; ) * HOUR_IN_SECONDS ) );
+
+		$first_payment = ( &#039;mysql&#039; == $type &amp;&amp; 0 != $first_payment_timestamp ) ? gmdate( &#039;Y-m-d H:i:s&#039;, $first_payment_timestamp ) : $first_payment_timestamp;
+
+		return apply_filters( &#039;woocommerce_subscriptions_synced_first_payment_date&#039;, $first_payment, $product, $type, $from_date, $from_date_param );
+	}
+
+	/**
+	 * Return an i18n&#039;ified associative array of sync options for &#039;year&#039; as billing period
+	 *
+	 * @since 3.0.0
+	 */
+	public static function get_year_sync_options() {
+		global $wp_locale;
+
+		$year_sync_options[0] = __( &#039;Do not synchronise&#039;, &#039;woocommerce-subscriptions&#039; );
+		$year_sync_options   += $wp_locale-&gt;month;
+
+		return $year_sync_options;
+	}
+
+	/**
+	 * Return an i18n&#039;ified associative array of all possible subscription periods.
+	 *
+	 * @since 1.5
+	 */
+	public static function get_billing_period_ranges( $billing_period = &#039;&#039; ) {
+		global $wp_locale;
+
+		if ( empty( self::$billing_period_ranges ) ) {
+
+			foreach ( array( &#039;week&#039;, &#039;month&#039; ) as $key ) {
+				self::$billing_period_ranges[ $key ][0] = __( &#039;Do not synchronise&#039;, &#039;woocommerce-subscriptions&#039; );
+			}
+
+			// Week
+			$weekdays = array_merge( $wp_locale-&gt;weekday, array( $wp_locale-&gt;weekday[0] ) );
+			unset( $weekdays[0] );
+			foreach ( $weekdays as $i =&gt; $weekly_billing_period ) {
+				// translators: placeholder is a day of the week
+				self::$billing_period_ranges[&#039;week&#039;][ $i ] = sprintf( __( &#039;%s each week&#039;, &#039;woocommerce-subscriptions&#039; ), $weekly_billing_period );
+			}
+
+			// Month
+			foreach ( range( 1, 27 ) as $i ) {
+				// translators: placeholder is a number of day with language specific suffix applied (e.g. &quot;1st&quot;, &quot;3rd&quot;, &quot;5th&quot;, etc...)
+				self::$billing_period_ranges[&#039;month&#039;][ $i ] = sprintf( __( &#039;%s day of the month&#039;, &#039;woocommerce-subscriptions&#039; ), wcs_append_numeral_suffix( $i ) );
+			}
+			self::$billing_period_ranges[&#039;month&#039;][28] = __( &#039;Last day of the month&#039;, &#039;woocommerce-subscriptions&#039; );
+
+			self::$billing_period_ranges = apply_filters( &#039;woocommerce_subscription_billing_period_ranges&#039;, self::$billing_period_ranges );
+		}
+
+		if ( empty( $billing_period ) ) {
+			return self::$billing_period_ranges;
+		} elseif ( isset( self::$billing_period_ranges[ $billing_period ] ) ) {
+			return self::$billing_period_ranges[ $billing_period ];
+		} else {
+			return array();
+		}
+	}
+
+	/**
+	 * Add the first payment date to a products summary section
+	 *
+	 * @since 1.5
+	 */
+	public static function products_first_payment_date( $echo = false ) {
+		global $product;
+
+		$first_payment_date = &#039;&lt;p class=&quot;first-payment-date&quot;&gt;&lt;small&gt;&#039; . self::get_products_first_payment_date( $product ) . &#039;&lt;/small&gt;&lt;/p&gt;&#039;;
+
+		if ( false !== $echo ) {
+			echo wp_kses( $first_payment_date, array( &#039;p&#039; =&gt; array( &#039;class&#039; =&gt; array() ), &#039;small&#039; =&gt; array() ) ); // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+		}
+
+		return $first_payment_date;
+	}
+
+	/**
+	 * Return a string explaining when the first payment will be completed for the subscription.
+	 *
+	 * @since 1.5
+	 */
+	public static function get_products_first_payment_date( $product ) {
+
+		$first_payment_date = &#039;&#039;;
+
+		if ( self::is_product_synced( $product ) ) {
+			$first_payment_timestamp = self::calculate_first_payment_date( $product-&gt;get_id(), &#039;timestamp&#039; );
+
+			if ( 0 != $first_payment_timestamp ) {
+
+				$is_first_payment_today  = self::is_today( $first_payment_timestamp );
+
+				if ( $is_first_payment_today ) {
+					$payment_date_string = __( &#039;Today!&#039;, &#039;woocommerce-subscriptions&#039; );
+				} else {
+					$payment_date_string = date_i18n( wc_date_format(), $first_payment_timestamp + ( (int) ( get_option( &#039;gmt_offset&#039; ) * HOUR_IN_SECONDS ) ) );
+				}
+
+				if ( self::is_product_prorated( $product ) &amp;&amp; ! $is_first_payment_today ) {
+					// translators: placeholder is a date
+					$first_payment_date = sprintf( __( &#039;First payment prorated. Next payment: %s&#039;, &#039;woocommerce-subscriptions&#039; ), $payment_date_string );
+				} else {
+					// translators: placeholder is a date
+					$first_payment_date = sprintf( __( &#039;First payment: %s&#039;, &#039;woocommerce-subscriptions&#039; ), $payment_date_string );
+				}
+
+				$first_payment_date = &#039;&lt;small&gt;&#039; . $first_payment_date . &#039;&lt;/small&gt;&#039;;
+			}
+		}
+
+		return apply_filters( &#039;woocommerce_subscriptions_synced_first_payment_date_string&#039;, $first_payment_date, $product );
+	}
+
+	/**
+	 * If a product is synchronised to a date in the future, make sure that is set as the product&#039;s first payment date
+	 *
+	 * @since 2.0
+	 */
+	public static function products_first_renewal_payment_time( $first_renewal_timestamp, $product_id, $from_date, $timezone ) {
+
+		if ( self::is_product_synced( $product_id ) ) {
+
+			$next_renewal_timestamp = self::calculate_first_payment_date( $product_id, &#039;timestamp&#039;, $from_date );
+
+			if ( ! self::is_today( $next_renewal_timestamp ) ) {
+
+				if ( &#039;site&#039; == $timezone ) {
+					$next_renewal_timestamp += ( (int) ( get_option( &#039;gmt_offset&#039; ) * HOUR_IN_SECONDS ) );
+				}
+				$first_renewal_timestamp = $next_renewal_timestamp;
+			}
+		}
+
+		return $first_renewal_timestamp;
+	}
+
+	/**
+	 * Make sure a synchronised subscription&#039;s price includes a free trial, unless it&#039;s first payment is today.
+	 *
+	 * @since 1.5
+	 */
+	public static function maybe_set_free_trial( $total = &#039;&#039; ) {
+
+		foreach ( WC()-&gt;cart-&gt;get_cart() as $cart_item_key =&gt; $cart_item ) {
+			if (
+				self::is_product_synced( $cart_item[&#039;data&#039;] ) &amp;&amp;
+				! self::is_payment_upfront( $cart_item[&#039;data&#039;] ) &amp;&amp;
+				! self::is_product_prorated( $cart_item[&#039;data&#039;] ) &amp;&amp;
+				! self::is_today( self::calculate_first_payment_date( $cart_item[&#039;data&#039;], &#039;timestamp&#039; ) ) &amp;&amp;
+				( ! isset( $cart_item[&#039;subscription_resubscribe&#039;] ) || ! self::is_sync_proration_enabled() ) // Dont override trial length set while resubscribing unless proration is disabled.
+			) {
+				$current_trial_length = WC_Subscriptions_Product::get_trial_length( WC()-&gt;cart-&gt;cart_contents[ $cart_item_key ][&#039;data&#039;] );
+				$new_trial_length     = ( $current_trial_length &gt; 1 ) ? $current_trial_length : 1;
+				wcs_set_objects_property( WC()-&gt;cart-&gt;cart_contents[ $cart_item_key ][&#039;data&#039;], &#039;subscription_trial_length&#039;, $new_trial_length, &#039;set_prop_only&#039; );
+			}
+		}
+
+		return $total;
+	}
+
+	/**
+	 * Make sure a synchronised subscription&#039;s price includes a free trial, unless it&#039;s first payment is today.
+	 *
+	 * @since 1.5
+	 */
+	public static function maybe_unset_free_trial( $total = &#039;&#039; ) {
+
+		foreach ( WC()-&gt;cart-&gt;get_cart() as $cart_item_key =&gt; $cart_item ) {
+			// Dont override trial length set while resubscribing, unless proration is disabled.
+			if ( self::is_product_synced( $cart_item[&#039;data&#039;] ) &amp;&amp; ( ! isset( $cart_item[&#039;subscription_resubscribe&#039;] ) || ! self::is_sync_proration_enabled() ) ) {
+
+				// When reinstating the trial length, set resubscribes trial length to 0 so we don&#039;t grant a second trial period.
+				if ( isset( $cart_item[&#039;subscription_resubscribe&#039;] ) ) {
+					$trial_length = 0;
+				} else {
+					$trial_length = WC_Subscriptions_Product::get_trial_length( wcs_get_canonical_product_id( $cart_item ) );
+				}
+
+				wcs_set_objects_property( WC()-&gt;cart-&gt;cart_contents[ $cart_item_key ][&#039;data&#039;], &#039;subscription_trial_length&#039;, $trial_length, &#039;set_prop_only&#039; );
+			}
+		}
+		return $total;
+	}
+
+	/**
+	 * Check if the cart includes a subscription that needs to be synced.
+	 *
+	 * @return bool Returns true if any item in the cart is a subscription sync request, otherwise, false.
+	 * @since 1.5
+	 */
+	public static function cart_contains_synced_subscription( $cart = null ) {
+		$cart            = ( empty( $cart ) &amp;&amp; isset( WC()-&gt;cart ) ) ? WC()-&gt;cart : $cart;
+		$contains_synced = false;
+
+		if ( self::is_syncing_enabled() &amp;&amp; ! empty( $cart ) &amp;&amp; ! wcs_cart_contains_renewal() ) {
+
+			foreach ( $cart-&gt;cart_contents as $cart_item_key =&gt; $cart_item ) {
+				if ( self::is_product_synced( $cart_item[&#039;data&#039;] ) ) {
+					$contains_synced = $cart_item;
+					break;
+				}
+			}
+		}
+
+		return $contains_synced;
+	}
+
+	/**
+	 * Maybe set the time of a product&#039;s trial expiration to be the same as the synced first payment date for products where the first
+	 * renewal payment date falls on the same day as the trial expiration date, but the trial expiration time is later in the day.
+	 *
+	 * When making sure the first payment is after the trial expiration in @see self::calculate_first_payment_date() we only check
+	 * whether the first payment day comes after the trial expiration day, because we don&#039;t want to pushing the first payment date
+	 * a month or year in the future because of a few hours difference between it and the trial expiration. However, this means we
+	 * could still end up with a trial end time after the first payment time, even though they are both on the same day because the
+	 * trial end time is normally calculated from the start time, which can be any time of day, but the first renewal time is always
+	 * set to be 3am in the site&#039;s timezone. For example, the first payment date might be calculate to be 3:00 on the 21st April 2017,
+	 * while the trial end date is on the same day at 3:01 (or any time after that on the same day). So we need to check both the time and day. We also don&#039;t want to make the first payment date/time skip a year because of a few hours difference. That means we need to either modify the trial end time to be 3:00am or make the first payment time occur at the same time as the trial end time. The former is pretty hard to change, but the later will sync&#039;d payments will be at a different times if there is a free trial ending on the same day, which could be confusing. o_0
+	 *
+	 * Fixes #1328
+	 *
+	 * @param mixed $trial_expiration_date MySQL formatted date on which the subscription&#039;s trial will end, or 0 if it has no trial
+	 * @param mixed $product_id The product object or post ID of the subscription product
+	 * @return mixed MySQL formatted date on which the subscription&#039;s trial is set to end, or 0 if it has no trial
+	 * @since 2.0.13
+	 */
+	public static function recalculate_product_trial_expiration_date( $trial_expiration_date, $product_id ) {
+
+		if ( $trial_expiration_date &gt; 0 &amp;&amp; self::is_product_synced( $product_id ) ) {
+
+			$trial_expiration_timestamp = wcs_date_to_time( $trial_expiration_date );
+			remove_filter( &#039;woocommerce_subscriptions_product_trial_expiration_date&#039;, __METHOD__ ); // avoid infinite loop
+			$first_payment_timestamp    = self::calculate_first_payment_date( $product_id, &#039;timestamp&#039; );
+			add_filter( &#039;woocommerce_subscriptions_product_trial_expiration_date&#039;, __METHOD__, 10, 2 ); // avoid infinite loop
+
+			// First make sure the day is in the past so that we don&#039;t end up jumping a month or year because of a few hours difference between now and the billing date
+			// Use site time to check if the trial expiration and first payment fall on the same day
+			$site_offset = (int) ( get_option( &#039;gmt_offset&#039; ) * HOUR_IN_SECONDS );
+
+			if ( $trial_expiration_timestamp &gt; $first_payment_timestamp &amp;&amp; gmdate( &#039;Ymd&#039;, $first_payment_timestamp + $site_offset ) === gmdate( &#039;Ymd&#039;, $trial_expiration_timestamp + $site_offset ) ) {
+				$trial_expiration_date = date( &#039;Y-m-d H:i:s&#039;, $first_payment_timestamp );
+			}
+		}
+
+		return $trial_expiration_date;
+	}
+
+	/**
+	 * Make sure the expiration date is calculated from the synced start date for products where the start date
+	 * will be synced.
+	 *
+	 * @param string $expiration_date MySQL formatted date on which the subscription is set to expire
+	 * @param mixed $product_id The product/post ID of the subscription
+	 * @param mixed $from_date A MySQL formatted date/time string from which to calculate the expiration date, or empty (default), which will use today&#039;s date/time.
+	 * @since 1.5
+	 */
+	public static function recalculate_product_expiration_date( $expiration_date, $product_id, $from_date ) {
+
+		if ( self::is_product_synced( $product_id ) &amp;&amp; ( $subscription_length = WC_Subscriptions_Product::get_length( $product_id ) ) &gt; 0 ) {
+
+				$subscription_period = WC_Subscriptions_Product::get_period( $product_id );
+				$first_payment_date  = self::calculate_first_payment_date( $product_id, &#039;timestamp&#039; );
+
+				$expiration_date = date( &#039;Y-m-d H:i:s&#039;, wcs_add_time( $subscription_length, $subscription_period, $first_payment_date ) );
+		}
+
+		return $expiration_date;
+	}
+
+	/**
+	 * Check if a given timestamp (in the UTC timezone) is equivalent to today in the site&#039;s time.
+	 *
+	 * @param int $timestamp A time in UTC timezone to compare to today.
+	 */
+	public static function is_today( $timestamp ) {
+
+		// Convert timestamp to site&#039;s time
+		$timestamp += (int) ( get_option( &#039;gmt_offset&#039; ) * HOUR_IN_SECONDS );
+
+		return gmdate( &#039;Y-m-d&#039;, current_time( &#039;timestamp&#039; ) ) == gmdate( &#039;Y-m-d&#039;, $timestamp );
+	}
+
+	/**
+	 * Filters WC_Subscriptions_Order::get_sign_up_fee() to make sure the sign-up fee for a subscription product
+	 * that is synchronised is returned correctly.
+	 *
+	 * @param float The initial sign-up fee charged when the subscription product in the order was first purchased, if any.
+	 * @param mixed $order A WC_Order object or the ID of the order which the subscription was purchased in.
+	 * @param int $product_id The post ID of the subscription WC_Product object purchased in the order. Defaults to the ID of the first product purchased in the order.
+	 * @return float The initial sign-up fee charged when the subscription product in the order was first purchased, if any.
+	 * @since 2.0
+	 */
+	public static function get_synced_sign_up_fee( $sign_up_fee, $subscription, $product_id ) {
+
+		if ( wcs_is_subscription( $subscription ) &amp;&amp; self::subscription_contains_synced_product( $subscription ) &amp;&amp; count( wcs_get_line_items_with_a_trial( $subscription-&gt;get_id() ) ) &lt; 0 ) {
+			$sign_up_fee = max( $subscription-&gt;get_total_initial_payment() - $subscription-&gt;get_total(), 0 );
+		}
+
+		return $sign_up_fee;
+	}
+
+	/**
+	 * Removes the &quot;set_subscription_prices_for_calculation&quot; filter from the WC Product&#039;s woocommerce_get_price hook once
+	 *
+	 * @since 1.5.10
+	 *
+	 * @param int        $price   The current price.
+	 * @param WC_Product $product The product object.
+	 *
+	 * @return int
+	 */
+	public static function set_prorated_price_for_calculation( $price, $product ) {
+
+		if ( WC_Subscriptions_Product::is_subscription( $product ) &amp;&amp; self::is_product_prorated( $product ) &amp;&amp; &#039;none&#039; == WC_Subscriptions_Cart::get_calculation_type() ) {
+
+			$next_payment_date = self::calculate_first_payment_date( $product, &#039;timestamp&#039; );
+
+			if ( self::is_today( $next_payment_date ) ) {
+				return $price;
+			}
+
+			switch ( WC_Subscriptions_Product::get_period( $product ) ) {
+				case &#039;week&#039;:
+					$days_in_cycle = 7 * WC_Subscriptions_Product::get_interval( $product );
+					break;
+				case &#039;month&#039;:
+					$days_in_cycle = gmdate( &#039;t&#039; ) * WC_Subscriptions_Product::get_interval( $product );
+					break;
+				case &#039;year&#039;:
+					$days_in_cycle = ( 365 + gmdate( &#039;L&#039; ) ) * WC_Subscriptions_Product::get_interval( $product );
+					break;
+			}
+
+			$days_until_next_payment = ceil( ( $next_payment_date - gmdate( &#039;U&#039; ) ) / ( 60 * 60 * 24 ) );
+
+			$sign_up_fee = WC_Subscriptions_Product::get_sign_up_fee( $product );
+
+			if ( $sign_up_fee &gt; 0 &amp;&amp; 0 == WC_Subscriptions_Product::get_trial_length( $product ) ) {
+				$price = $sign_up_fee + ( $days_until_next_payment * ( ( $price - $sign_up_fee ) / $days_in_cycle ) );
+			} else {
+				$price = $days_until_next_payment * ( $price / $days_in_cycle );
+			}
+
+			// Now round the amount to the number of decimals displayed for prices to avoid rounding errors in the total calculations (we don&#039;t want to use WC_DISCOUNT_ROUNDING_PRECISION here because it can still lead to rounding errors). For full details, see: https://github.com/Prospress/woocommerce-subscriptions/pull/1134#issuecomment-178395062
+			$price = round( $price, wc_get_price_decimals() );
+		}
+
+		return $price;
+	}
+
+	/**
+	 * Retrieve the full translated weekday word.
+	 *
+	 * Week starts on translated Monday and can be fetched
+	 * by using 1 (one). So the week starts with 1 (one)
+	 * and ends on Sunday with is fetched by using 7 (seven).
+	 *
+	 * @since 1.5.8
+	 * @access public
+	 *
+	 * @param int $weekday_number 1 for Monday through 7 Sunday
+	 * @return string Full translated weekday
+	 */
+	public static function get_weekday( $weekday_number ) {
+		global $wp_locale;
+
+		if ( 7 == $weekday_number ) {
+			$weekday = $wp_locale-&gt;get_weekday( 0 );
+		} else {
+			$weekday = $wp_locale-&gt;get_weekday( $weekday_number );
+		}
+
+		return $weekday;
+	}
+
+	/**
+	 * Override quantities used to lower stock levels by when using synced subscriptions. If it&#039;s a synced product
+	 * that does not have proration enabled and the payment date is not today, do not lower stock levels.
+	 *
+	 * @param integer $qty the original quantity that would be taken out of the stock level
+	 * @param array $order order data
+	 * @param array $item item data for each item in the order
+	 *
+	 * @return int
+	 */
+	public static function maybe_do_not_reduce_stock( $qty, $order, $order_item ) {
+		if ( wcs_order_contains_subscription( $order, array( &#039;parent&#039;, &#039;resubscribe&#039; ) ) &amp;&amp; 0 == $order_item[&#039;line_total&#039;] ) {
+			$subscriptions = wcs_get_subscriptions_for_order( $order );
+			$product_id    = wcs_get_canonical_product_id( $order_item );
+
+			foreach ( $subscriptions as $subscription ) {
+				if ( self::subscription_contains_synced_product( $subscription ) &amp;&amp; $subscription-&gt;has_product( $product_id ) ) {
+					foreach ( $subscription-&gt;get_items() as $subscription_item ) {
+						if ( wcs_get_canonical_product_id( $subscription_item ) == $product_id &amp;&amp; 0 &lt; $subscription_item[&#039;line_total&#039;] ) {
+							$qty = 0;
+						}
+					}
+				}
+			}
+		}
+		return $qty;
+	}
+
+	/**
+	 * Add subscription meta for subscription that contains a synced product.
+	 *
+	 * @param WC_Order Parent order for the subscription
+	 * @param WC_Subscription new subscription
+	 * @since 2.0
+	 */
+	public static function maybe_add_subscription_meta( $post_id ) {
+
+		if ( &#039;shop_subscription&#039; == get_post_type( $post_id ) &amp;&amp; ! self::subscription_contains_synced_product( $post_id ) ) {
+
+			$subscription = wcs_get_subscription( $post_id );
+
+			foreach ( $subscription-&gt;get_items() as $item ) {
+				$product = $item-&gt;get_product();
+
+				if ( self::is_product_synced( $product ) ) {
+					update_post_meta( $subscription-&gt;get_id(), &#039;_contains_synced_subscription&#039;, &#039;true&#039; );
+					break;
+				}
+			}
+		}
+	}
+
+	/**
+	 * When adding an item to an order/subscription via the Add/Edit Subscription administration interface, check if we should be setting
+	 * the sync meta on the subscription.
+	 *
+	 * @param int The order item ID of an item that was just added to the order
+	 * @param array The order item details
+	 * @since 2.0
+	 */
+	public static function ajax_maybe_add_meta_for_item( $item_id, $item ) {
+
+		check_ajax_referer( &#039;order-item&#039;, &#039;security&#039; );
+
+		if ( self::is_product_synced( wcs_get_canonical_product_id( $item ) ) ) {
+			self::maybe_add_subscription_meta( absint( $_POST[&#039;order_id&#039;] ) );
+		}
+	}
+
+	/**
+	 * When adding a product to an order/subscription via the WC_Subscription::add_product() method, check if we should be setting
+	 * the sync meta on the subscription.
+	 *
+	 * @param int The post ID of a WC_Order or child object
+	 * @param int The order item ID of an item that was just added to the order
+	 * @param object The WC_Product for which an item was just added
+	 * @since 2.0
+	 */
+	public static function maybe_add_meta_for_new_product( $subscription_id, $item_id, $product ) {
+		if ( self::is_product_synced( $product ) ) {
+			self::maybe_add_subscription_meta( $subscription_id );
+		}
+	}
+
+	/**
+	 * Check if a given subscription is synced to a certain day.
+	 *
+	 * @param int|WC_Subscription Accepts either a subscription object of post id
+	 * @return bool
+	 * @since 2.0
+	 */
+	public static function subscription_contains_synced_product( $subscription_id ) {
+
+		if ( is_object( $subscription_id ) ) {
+			$subscription_id = $subscription_id-&gt;get_id();
+		}
+
+		return &#039;true&#039; == get_post_meta( $subscription_id, &#039;_contains_synced_subscription&#039;, true );
+	}
+
+	/**
+	 * If the cart item is synced, add a &#039;_synced&#039; string to the recurring cart key.
+	 *
+	 * @since 2.0
+	 */
+	public static function add_to_recurring_cart_key( $cart_key, $cart_item ) {
+		$product = $cart_item[&#039;data&#039;];
+
+		if ( false === strpos( $cart_key, &#039;_synced&#039; ) &amp;&amp; self::is_product_synced( $product ) ) {
+			$cart_key .= &#039;_synced&#039;;
+		}
+
+		return $cart_key;
+	}
+
+	/**
+	 * When adding a product line item to an order/subscription via the WC_Abstract_Order::add_product() method, check if we should be setting
+	 * the sync meta on the subscription.
+	 *
+	 * Attached to WC 3.0+ hooks and uses WC 3.0 methods.
+	 *
+	 * @param int The new line item id
+	 * @param WC_Order_Item
+	 * @param int The post ID of a WC_Subscription
+	 * @since 2.2.3
+	 */
+	public static function maybe_add_meta_for_new_line_item( $item_id, $item, $subscription_id ) {
+		if ( is_callable( array( $item, &#039;get_product&#039; ) ) ) {
+			$product = $item-&gt;get_product();
+
+			if ( self::is_product_synced( $product ) ) {
+				self::maybe_add_subscription_meta( $subscription_id );
+			}
+		}
+	}
+
+	/**
+	 * Store a synced product&#039;s signup fee on the line item on the subscription and order.
+	 *
+	 * When calculating prorated sign up fees during switches it&#039;s necessary to get the sign-up fee paid.
+	 * For synced product purchases we cannot rely on the order line item price as that might include a prorated recurring price or no recurring price all.
+	 *
+	 * Attached to WC 3.0+ hooks and uses WC 3.0 methods.
+	 *
+	 * @param WC_Order_Item_Product $item The order item object.
+	 * @param string $cart_item_key The hash used to identify the item in the cart
+	 * @param array $cart_item The cart item&#039;s data.
+	 * @since 2.3.0
+	 */
+	public static function maybe_add_line_item_meta( $item, $cart_item_key, $cart_item ) {
+		if ( self::is_product_synced( $cart_item[&#039;data&#039;] ) &amp;&amp; ! self::is_today( self::calculate_first_payment_date( $cart_item[&#039;data&#039;], &#039;timestamp&#039; ) ) ) {
+			$item-&gt;add_meta_data( &#039;_synced_sign_up_fee&#039;, WC_Subscriptions_Product::get_sign_up_fee( $cart_item[&#039;data&#039;] ) );
+		}
+	}
+
+	/**
+	 * Store a synced product&#039;s signup fee on the line item on the subscription and order.
+	 *
+	 * This function is a pre WooCommerce 3.0 version of @see WC_Subscriptions_Synchroniser::maybe_add_line_item_meta()
+	 *
+	 * @param int $item_id The order item ID.
+	 * @param array $cart_item The cart item&#039;s data.
+	 * @since 2.3.0
+	 */
+	public static function maybe_add_order_item_meta( $item_id, $cart_item ) {
+		if ( self::is_product_synced( $cart_item[&#039;data&#039;] ) &amp;&amp; ! self::is_today( self::calculate_first_payment_date( $cart_item[&#039;data&#039;], &#039;timestamp&#039; ) ) ) {
+			wc_update_order_item_meta( $item_id, &#039;_synced_sign_up_fee&#039;, WC_Subscriptions_Product::get_sign_up_fee( $cart_item[&#039;data&#039;] ) );
+		}
+	}
+
+	/**
+	 * Hides synced subscription meta on the edit order and subscription screen on non-debug sites.
+	 *
+	 * @since 2.6.2
+	 * @param array $hidden_meta_keys the list of meta keys hidden on the edit order and subscription screen.
+	 * @return array $hidden_meta_keys
+	 */
+	public static function hide_order_itemmeta( $hidden_meta_keys ) {
+		if ( apply_filters( &#039;woocommerce_subscriptions_hide_synchronization_itemmeta&#039;, ! defined( &#039;WCS_DEBUG&#039; ) || true !== WCS_DEBUG ) ) {
+			$hidden_meta_keys[] = &#039;_synced_sign_up_fee&#039;;
+		}
+
+		return $hidden_meta_keys;
+
+	}
+
+	/**
+	 * Gets the number of sign-up grace period days.
+	 *
+	 * @since 3.0.6
+	 * @return int The number of days in the grace period. 0 will be returned if the stroe isn&#039;t charging the full recurring price on sign-up -- a prerequiste for setting a grace period.
+	 */
+	private static function get_number_of_grace_period_days() {
+		return get_option( self::$setting_id_proration, &#039;no&#039; ) === &#039;recurring&#039; ? get_option( self::$setting_id_days_no_fee ) : 0;
+	}
+
+	/* Deprecated Functions */
+
+	/**
+	 * Automatically set the order&#039;s status to complete if all the subscriptions in an order
+	 * are synced and the order total is zero.
+	 *
+	 * @since 1.5.17
+	 */
+	public static function order_autocomplete( $new_order_status, $order_id ) {
+		_deprecated_function( __METHOD__, &#039;2.1.3&#039;, &#039;WC_Subscriptions_Order::maybe_autocomplete_order&#039; );
+		return WC_Subscriptions_Order::maybe_autocomplete_order( $new_order_status, $order_id );
+	}
+
+	/**
+	 * Add the first payment date to the end of the subscription to clarify when the first payment will be processed
+	 *
+	 * Deprecated because the first renewal date is displayed by default now on recurring totals.
+	 *
+	 * @since 1.5
+	 * @deprecated 2.0
+	 */
+	public static function customise_subscription_price_string( $subscription_string ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+
+		$cart_item = self::cart_contains_synced_subscription();
+
+		if ( false !== $cart_item &amp;&amp; &#039;&#039; !== WC_Subscriptions_Product::get_period( $cart_item[&#039;data&#039;] ) &amp;&amp; ( &#039;year&#039; != WC_Subscriptions_Product::get_period( $cart_item[&#039;data&#039;] ) || WC_Subscriptions_Product::get_trial_length( $cart_item[&#039;data&#039;] ) &gt; 0 ) ) {
+
+			$first_payment_date = self::get_products_first_payment_date( $cart_item[&#039;data&#039;] );
+
+			if ( &#039;&#039; != $first_payment_date ) {
+
+				$price_and_start_date = sprintf( &#039;%s &lt;br/&gt;&lt;span class=&quot;first-payment-date&quot;&gt;%s&lt;/span&gt;&#039;, $subscription_string, $first_payment_date );
+
+				$subscription_string  = apply_filters( &#039;woocommerce_subscriptions_synced_start_date_string&#039;, $price_and_start_date, $subscription_string, $cart_item );
+			}
+		}
+
+		return $subscription_string;
+	}
+
+	/**
+	 * Hid the trial period for a synchronised subscription unless the related product actually has a trial period (because
+	 * we use a trial period to set the original order totals to 0).
+	 *
+	 * Deprecated because free trials are no longer displayed on cart totals, only the first renewal date is displayed.
+	 *
+	 * @since 1.5
+	 * @deprecated 2.0
+	 */
+	public static function maybe_hide_free_trial( $subscription_details ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+
+		$cart_item = self::cart_contains_synced_subscription();
+
+		if ( false !== $cart_item &amp;&amp; ! self::is_product_prorated( $cart_item[&#039;data&#039;] ) ) { // cart contains a sync
+
+			$product_id = WC_Subscriptions_Cart::get_items_product_id( $cart_item );
+
+			if ( wc_price( 0 ) == $subscription_details[&#039;initial_amount&#039;] &amp;&amp; 0 == $subscription_details[&#039;trial_length&#039;] ) {
+				$subscription_details[&#039;initial_amount&#039;] = &#039;&#039;;
+			}
+		}
+
+		return $subscription_details;
+	}
+
+	/**
+	 * Let other functions know shipping should not be charged on the initial order when
+	 * the cart contains a synchronised subscription and no other items which need shipping.
+	 *
+	 * @since 1.5.8
+	 * @deprecated 2.0
+	 */
+	public static function charge_shipping_up_front( $charge_shipping_up_front ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+
+		// the cart contains only the synchronised subscription
+		if ( true === $charge_shipping_up_front &amp;&amp; self::cart_contains_synced_subscription() ) {
+
+			// the cart contains only a subscription, see if the payment date is today and if not, then it doesn&#039;t need shipping
+			if ( 1 == count( WC()-&gt;cart-&gt;cart_contents ) ) {
+
+				foreach ( WC()-&gt;cart-&gt;get_cart() as $cart_item_key =&gt; $cart_item ) {
+					if ( self::is_product_synced( $cart_item[&#039;data&#039;] ) &amp;&amp; ! self::is_product_prorated( $cart_item[&#039;data&#039;] ) &amp;&amp; ! self::is_today( self::calculate_first_payment_date( $cart_item[&#039;data&#039;], &#039;timestamp&#039; ) ) ) {
+						$charge_shipping_up_front = false;
+						break;
+					}
+				}
+
+			// cart contains other items, see if any require shipping
+			} else {
+
+				$other_items_need_shipping = false;
+
+				foreach ( WC()-&gt;cart-&gt;cart_contents as $cart_item_key =&gt; $cart_item ) {
+					if ( ( ! WC_Subscriptions_Product::is_subscription( $cart_item[&#039;data&#039;] ) || self::is_product_prorated( $cart_item[&#039;data&#039;] ) ) &amp;&amp; $cart_item[&#039;data&#039;]-&gt;needs_shipping() ) {
+						$other_items_need_shipping = true;
+					}
+				}
+
+				if ( false === $other_items_need_shipping ) {
+					$charge_shipping_up_front = false;
+				}
+			}
+		}
+
+		return $charge_shipping_up_front;
+	}
+
+	/**
+	 * Make sure anything requesting the first payment date for a synced subscription on the front-end receives
+	 * a date which takes into account the day on which payments should be processed.
+	 *
+	 * This is necessary as the self::calculate_first_payment_date() is not called when the subscription is active
+	 * (which it isn&#039;t until the first payment is completed and the subscription is activated).
+	 *
+	 * @since 1.5
+	 * @deprecated 2.0
+	 */
+	public static function get_first_payment_date( $first_payment_date, $order, $product_id, $type ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+
+		$subscription = wcs_get_subscription_from_key( $order . &#039;_&#039; . $product_id );
+
+		if ( self::order_contains_synced_subscription( wcs_get_objects_property( $order, &#039;id&#039; ) ) &amp;&amp; 1 &gt;= $subscription-&gt;get_payment_count() ) {
+
+			// Don&#039;t prematurely set the first payment date when manually adding a subscription from the admin
+			if ( ! is_admin() || &#039;active&#039; == $subscription-&gt;get_status() ) {
+
+				$first_payment_timestamp = self::calculate_first_payment_date( $product_id, &#039;timestamp&#039;, wcs_get_datetime_utc_string( wcs_get_objects_property( $order, &#039;date_created&#039; ) ) );
+
+				if ( 0 != $first_payment_timestamp ) {
+					$first_payment_date = ( &#039;mysql&#039; == $type ) ? gmdate( &#039;Y-m-d H:i:s&#039;, $first_payment_timestamp ) : $first_payment_timestamp;
+				}
+			}
+		}
+
+		return $first_payment_date;
+	}
+
+	/**
+	 * Tell anything hooking to &#039;woocommerce_subscriptions_calculated_next_payment_date&#039;
+	 * to use the synchronised first payment date as the next payment date (if the first
+	 * payment date isn&#039;t today, meaning the first payment won&#039;t be charged today).
+	 *
+	 * @since 1.5.14
+	 * @deprecated 2.0
+	 */
+	public static function maybe_set_payment_date( $payment_date, $order, $product_id, $type ) {
+
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+
+		$first_payment_date = self::get_first_payment_date( $payment_date, $order, $product_id, &#039;timestamp&#039; );
+
+		if ( ! self::is_today( $first_payment_date ) ) {
+			$payment_date = ( &#039;timestamp&#039; == $type ) ? $first_payment_date : gmdate( &#039;Y-m-d H:i:s&#039;, $first_payment_date );
+		}
+
+		return $payment_date;
+	}
+
+	/**
+	 * Check if a given order included a subscription that is synced to a certain day.
+	 *
+	 * Deprecated becasuse _order_contains_synced_subscription is no longer stored on the order @see self::subscription_contains_synced_product
+	 *
+	 * @param int $order_id The ID or a WC_Order item to check.
+	 * @return bool Returns true if the order contains a synced subscription, otherwise, false.
+	 * @since 1.5
+	 * @deprecated 2.0
+	 */
+	public static function order_contains_synced_subscription( $order_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, __CLASS__ . &#039;::subscription_contains_synced_product()&#039; );
+
+		if ( is_object( $order_id ) ) {
+			$order_id = wcs_get_objects_property( $order_id, &#039;id&#039; );
+		}
+
+		return &#039;true&#039; == get_post_meta( $order_id, &#039;_order_contains_synced_subscription&#039;, true );
+	}
+
+	/**
+	 * If the order being generated is for a synced subscription, keep a record of the syncing related meta data.
+	 *
+	 * Deprecated because _order_contains_synced_subscription is no longer stored on the order @see self::add_subscription_sync_meta
+	 *
+	 * @since 1.5
+	 * @deprecated 2.0
+	 */
+	public static function add_order_meta( $order_id, $posted ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+		global $woocommerce;
+
+		if ( $cart_item = self::cart_contains_synced_subscription() ) {
+			update_post_meta( $order_id, &#039;_order_contains_synced_subscription&#039;, &#039;true&#039; );
+		}
+	}
+
+	/**
+	 * If the subscription being generated is synced, set the syncing related meta data correctly.
+	 *
+	 * Deprecated because editing a subscription&#039;s values is now done from the Edit Subscription screen.
+	 *
+	 * @since 1.5
+	 * @deprecated 2.0
+	 */
+	public static function prefill_order_item_meta( $item, $item_id ) {
+
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+
+		return $item;
+	}
+
+	/**
+	 * Filters WC_Subscriptions_Order::get_sign_up_fee() to make sure the sign-up fee for a subscription product
+	 * that is synchronised is returned correctly.
+	 *
+	 * @param float The initial sign-up fee charged when the subscription product in the order was first purchased, if any.
+	 * @param mixed $order A WC_Order object or the ID of the order which the subscription was purchased in.
+	 * @param int $product_id The post ID of the subscription WC_Product object purchased in the order. Defaults to the ID of the first product purchased in the order.
+	 * @return float The initial sign-up fee charged when the subscription product in the order was first purchased, if any.
+	 * @since 1.5.3
+	 * @deprecated 2.0
+	 */
+	public static function get_sign_up_fee( $sign_up_fee, $order, $product_id, $non_subscription_total ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, __CLASS__ . &#039;::get_synced_sign_up_fee&#039; );
+
+		if ( &#039;shop_order&#039; == get_post_type( $order ) &amp;&amp; self::order_contains_synced_subscription( wcs_get_objects_property( $order, &#039;id&#039; ) ) &amp;&amp; WC_Subscriptions_Order::get_subscription_trial_length( $order ) &lt; 1 ) {
+			$sign_up_fee = max( WC_Subscriptions_Order::get_total_initial_payment( $order ) - $non_subscription_total, 0 );
+		}
+
+		return $sign_up_fee;
+	}
+
+	/**
+	 * Check if the cart includes a subscription that needs to be prorated.
+	 *
+	 * @return bool Returns any item in the cart that is synced and requires proration, otherwise, false.
+	 * @since 1.5
+	 * @deprecated 2.0
+	 */
+	public static function cart_contains_prorated_subscription() {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+		$cart_contains_prorated_subscription = false;
+
+		$synced_cart_item = self::cart_contains_synced_subscription();
+
+		if ( false !== $synced_cart_item &amp;&amp; self::is_product_prorated( $synced_cart_item[&#039;data&#039;] ) ) {
+			$cart_contains_prorated_subscription = $synced_cart_item;
+		}
+
+		return $cart_contains_prorated_subscription;
+	}
+
+	/**
+	 * Maybe recalculate the trial end date for synced subscription products that contain the unnecessary
+	 * &quot;one day trial&quot; period.
+	 *
+	 * @since 2.0
+	 * @deprecated 2.0.14
+	 */
+	public static function recalculate_trial_end_date( $trial_end_date, $recurring_cart, $product ) {
+		_deprecated_function( __METHOD__, &#039;2.0.14&#039; );
+		if ( self::is_product_synced( $product ) ) {
+			$product_id  = wcs_get_canonical_product_id( $product );
+			$trial_end_date = WC_Subscriptions_Product::get_trial_expiration_date( $product_id );
+		}
+
+		return $trial_end_date;
+	}
+
+	/**
+	 * Maybe recalculate the end date for synced subscription products that contain the unnecessary
+	 * &quot;one day trial&quot; period.
+	 *
+	 * @since 2.0.9
+	 * @deprecated 2.0.14
+	 */
+	public static function recalculate_end_date( $end_date, $recurring_cart, $product ) {
+		_deprecated_function( __METHOD__, &#039;2.0.14&#039; );
+		if ( self::is_product_synced( $product ) ) {
+			$product_id  = wcs_get_canonical_product_id( $product );
+			$end_date = WC_Subscriptions_Product::get_expiration_date( $product_id );
+		}
+
+		return $end_date;
+	}
+
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

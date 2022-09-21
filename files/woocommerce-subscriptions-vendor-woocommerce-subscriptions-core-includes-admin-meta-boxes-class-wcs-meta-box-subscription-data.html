@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html">WooCommerceSubscriptionsAdminMetaBoxes</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-meta-box-subscription-data.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Order Data
+ *
+ * Functions for displaying the order data meta box.
+ *
+ * @author   Prospress
+ * @category Admin
+ * @package  WooCommerce Subscriptions/Admin/Meta Boxes
+ * @version  3.0.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * WCS_Meta_Box_Subscription_Data Class
+ */
+class WCS_Meta_Box_Subscription_Data extends WC_Meta_Box_Order_Data {
+
+	/**
+	 * Output the metabox
+	 */
+	public static function output( $post ) {
+		global $the_subscription;
+
+		if ( ! is_object( $the_subscription ) || $the_subscription-&gt;get_id() !== $post-&gt;ID ) {
+			$the_subscription = wc_get_order( $post-&gt;ID );
+		}
+
+		$subscription = $the_subscription;
+
+		self::init_address_fields();
+
+		wp_nonce_field( &#039;woocommerce_save_data&#039;, &#039;woocommerce_meta_nonce&#039; );
+		?&gt;
+		&lt;style type=&quot;text/css&quot;&gt;
+			#post-body-content, #titlediv, #major-publishing-actions, #minor-publishing-actions, #visibility, #submitdiv { display:none }
+		&lt;/style&gt;
+		&lt;div class=&quot;panel-wrap woocommerce&quot;&gt;
+			&lt;input name=&quot;post_title&quot; type=&quot;hidden&quot; value=&quot;&lt;?php echo empty( $post-&gt;post_title ) ? esc_attr( get_post_type_object( $post-&gt;post_type )-&gt;labels-&gt;singular_name ) : esc_attr( $post-&gt;post_title ); ?&gt;&quot; /&gt;
+			&lt;input name=&quot;post_status&quot; type=&quot;hidden&quot; value=&quot;&lt;?php echo esc_attr( &#039;wc-&#039; . $subscription-&gt;get_status() ); ?&gt;&quot; /&gt;
+			&lt;div id=&quot;order_data&quot; class=&quot;panel&quot;&gt;
+
+				&lt;h2&gt;&lt;?php
+				// translators: placeholder is the ID of the subscription
+				printf( esc_html_x( &#039;Subscription #%s details&#039;, &#039;edit subscription header&#039;, &#039;woocommerce-subscriptions&#039; ), esc_html( $subscription-&gt;get_order_number() ) ); ?&gt;&lt;/h2&gt;
+
+				&lt;div class=&quot;order_data_column_container&quot;&gt;
+					&lt;div class=&quot;order_data_column&quot;&gt;
+						&lt;h3&gt;&lt;?php esc_html_e( &#039;General&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/h3&gt;
+
+						&lt;p class=&quot;form-field form-field-wide wc-customer-user&quot;&gt;
+							&lt;label for=&quot;customer_user&quot;&gt;&lt;?php esc_html_e( &#039;Customer:&#039;, &#039;woocommerce-subscriptions&#039; ) ?&gt; &lt;?php
+							if ( $subscription-&gt;get_user_id() ) {
+								$args = array(
+									&#039;post_status&#039;    =&gt; &#039;all&#039;,
+									&#039;post_type&#039;      =&gt; &#039;shop_subscription&#039;,
+									&#039;_customer_user&#039; =&gt; absint( $subscription-&gt;get_user_id() ),
+								);
+								printf( &#039;&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;&#039;,
+									esc_url( add_query_arg( $args, admin_url( &#039;edit.php&#039; ) ) ),
+									esc_html__( &#039;View other subscriptions &amp;rarr;&#039;, &#039;woocommerce-subscriptions&#039; )
+								);
+								printf(
+									&#039;&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;&#039;,
+									esc_url( add_query_arg( &#039;user_id&#039;, $subscription-&gt;get_user_id(), admin_url( &#039;user-edit.php&#039; ) ) ),
+									esc_html__( &#039;Profile &amp;rarr;&#039;, &#039;woocommerce-subscriptions&#039; )
+								);
+							}
+							?&gt;&lt;/label&gt;
+							&lt;?php
+							$user_string = &#039;&#039;;
+							$user_id     = &#039;&#039;;
+							if ( $subscription-&gt;get_user_id() &amp;&amp; ( false !== get_userdata( $subscription-&gt;get_user_id() ) ) ) {
+								$user_id     = absint( $subscription-&gt;get_user_id() );
+								$user        = get_user_by( &#039;id&#039;, $user_id );
+								$user_string = esc_html( $user-&gt;display_name ) . &#039; (#&#039; . absint( $user-&gt;ID ) . &#039; &amp;ndash; &#039; . esc_html( $user-&gt;user_email ) . &#039;)&#039;;
+							}
+							WCS_Select2::render( array(
+								&#039;class&#039;       =&gt; &#039;wc-customer-search&#039;,
+								&#039;name&#039;        =&gt; &#039;customer_user&#039;,
+								&#039;id&#039;          =&gt; &#039;customer_user&#039;,
+								&#039;placeholder&#039; =&gt; esc_attr__( &#039;Search for a customer&amp;hellip;&#039;, &#039;woocommerce-subscriptions&#039; ),
+								&#039;selected&#039;    =&gt; $user_string,
+								&#039;value&#039;       =&gt; $user_id,
+							) );
+							?&gt;
+						&lt;/p&gt;
+
+						&lt;p class=&quot;form-field form-field-wide&quot;&gt;
+							&lt;label for=&quot;order_status&quot;&gt;&lt;?php esc_html_e( &#039;Subscription status:&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/label&gt;
+							&lt;select id=&quot;order_status&quot; name=&quot;order_status&quot; class=&quot;wc-enhanced-select&quot;&gt;
+								&lt;?php
+								$statuses = wcs_get_subscription_statuses();
+								foreach ( $statuses as $status =&gt; $status_name ) {
+									if ( ! $subscription-&gt;can_be_updated_to( $status ) &amp;&amp; ! $subscription-&gt;has_status( str_replace( &#039;wc-&#039;, &#039;&#039;, $status ) ) ) {
+										continue;
+									}
+									echo &#039;&lt;option value=&quot;&#039; . esc_attr( $status ) . &#039;&quot; &#039; . selected( $status, &#039;wc-&#039; . $subscription-&gt;get_status(), false ) . &#039;&gt;&#039; . esc_html( $status_name ) . &#039;&lt;/option&gt;&#039;;
+								}
+								?&gt;
+							&lt;/select&gt;
+						&lt;/p&gt;
+						&lt;?php
+						$parent_order = $subscription-&gt;get_parent();
+						if ( $parent_order ) { ?&gt;
+						&lt;p class=&quot;form-field form-field-wide&quot;&gt;
+						&lt;?php echo esc_html__( &#039;Parent order: &#039;, &#039;woocommerce-subscriptions&#039; ) ?&gt;
+						&lt;a href=&quot;&lt;?php echo esc_url( get_edit_post_link( $subscription-&gt;get_parent_id() ) ); ?&gt;&quot;&gt;
+						&lt;?php
+						// translators: placeholder is an order number.
+						echo sprintf( esc_html__( &#039;#%1$s&#039;, &#039;woocommerce-subscriptions&#039; ), esc_html( $parent_order-&gt;get_order_number() ) );
+						?&gt;
+						&lt;/a&gt;
+						&lt;/p&gt;
+						&lt;?php } else {
+						?&gt;
+						&lt;p class=&quot;form-field form-field-wide&quot;&gt;
+							&lt;label for=&quot;parent-order-id&quot;&gt;&lt;?php esc_html_e( &#039;Parent order:&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt; &lt;/label&gt;
+							&lt;?php
+							WCS_Select2::render( array(
+								&#039;class&#039;       =&gt; &#039;wc-enhanced-select&#039;,
+								&#039;name&#039;        =&gt; &#039;parent-order-id&#039;,
+								&#039;id&#039;          =&gt; &#039;parent-order-id&#039;,
+								&#039;placeholder&#039; =&gt; esc_attr__( &#039;Select an order&amp;hellip;&#039;, &#039;woocommerce-subscriptions&#039; ),
+							) );
+							?&gt;
+						&lt;/p&gt;
+						&lt;?php }
+						do_action( &#039;woocommerce_admin_order_data_after_order_details&#039;, $subscription ); ?&gt;
+
+					&lt;/div&gt;
+					&lt;div class=&quot;order_data_column&quot;&gt;
+						&lt;h3&gt;
+							&lt;?php esc_html_e( &#039;Billing&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+							&lt;a href=&quot;#&quot; class=&quot;edit_address&quot;&gt;&lt;?php esc_html_e( &#039;Edit&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+							&lt;span&gt;
+								&lt;a href=&quot;#&quot; class=&quot;load_customer_billing&quot; style=&quot;display:none;&quot;&gt;&lt;?php esc_html_e( &#039;Load billing address&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+							&lt;/span&gt;
+						&lt;/h3&gt;
+						&lt;?php
+						// Display values
+						echo &#039;&lt;div class=&quot;address&quot;&gt;&#039;;
+
+						if ( $subscription-&gt;get_formatted_billing_address() ) {
+							echo &#039;&lt;p&gt;&lt;strong&gt;&#039; . esc_html__( &#039;Address&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;:&lt;/strong&gt;&#039; . wp_kses( $subscription-&gt;get_formatted_billing_address(), array( &#039;br&#039; =&gt; array() ) ) . &#039;&lt;/p&gt;&#039;;
+						} else {
+							echo &#039;&lt;p class=&quot;none_set&quot;&gt;&lt;strong&gt;&#039; . esc_html__( &#039;Address&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;:&lt;/strong&gt; &#039; . esc_html__( &#039;No billing address set.&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/p&gt;&#039;;
+						}
+
+						foreach ( self::$billing_fields as $key =&gt; $field ) {
+
+							if ( isset( $field[&#039;show&#039;] ) &amp;&amp; false === $field[&#039;show&#039;] ) {
+								continue;
+							}
+
+							$function_name = &#039;get_billing_&#039; . $key;
+
+							if ( is_callable( array( $subscription, $function_name ) ) ) {
+								$field_value = $subscription-&gt;$function_name( &#039;edit&#039; );
+							} else {
+								$field_value = $subscription-&gt;get_meta( &#039;_billing_&#039; . $key );
+							}
+
+							echo &#039;&lt;p&gt;&lt;strong&gt;&#039; . esc_html( $field[&#039;label&#039;] ) . &#039;:&lt;/strong&gt; &#039; . wp_kses_post( make_clickable( esc_html( $field_value ) ) ) . &#039;&lt;/p&gt;&#039;;
+						}
+
+						echo &#039;&lt;p&#039; . ( ( &#039;&#039; != $subscription-&gt;get_payment_method() ) ? &#039; class=&quot;&#039; . esc_attr( $subscription-&gt;get_payment_method() ) . &#039;&quot;&#039; : &#039;&#039; ) . &#039;&gt;&lt;strong&gt;&#039; . esc_html__( &#039;Payment Method&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;:&lt;/strong&gt;&#039; . wp_kses_post( nl2br( $subscription-&gt;get_payment_method_to_display() ) );
+
+						// Display help tip
+						if ( &#039;&#039; != $subscription-&gt;get_payment_method() &amp;&amp; ! $subscription-&gt;is_manual() ) {
+							// translators: %s: gateway ID.
+							echo wcs_help_tip( sprintf( _x( &#039;Gateway ID: [%s]&#039;, &#039;The gateway ID displayed on the Edit Subscriptions screen when editing payment method.&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription-&gt;get_payment_method() ) );
+						}
+
+						echo &#039;&lt;/p&gt;&#039;;
+
+						echo &#039;&lt;/div&gt;&#039;;
+
+						// Display form
+						echo &#039;&lt;div class=&quot;edit_address&quot;&gt;&#039;;
+
+						foreach ( self::$billing_fields as $key =&gt; $field ) {
+							if ( ! isset( $field[&#039;type&#039;] ) ) {
+								$field[&#039;type&#039;] = &#039;text&#039;;
+							}
+							if ( ! isset( $field[&#039;id&#039;] ) ) {
+								$field[&#039;id&#039;] = &#039;_billing_&#039; . $key;
+							}
+							switch ( $field[&#039;type&#039;] ) {
+								case &#039;select&#039;:
+									woocommerce_wp_select( $field );
+								break;
+								default:
+									woocommerce_wp_text_input( $field );
+								break;
+							}
+						}
+
+						WCS_Change_Payment_Method_Admin::display_fields( $subscription );
+
+						echo &#039;&lt;/div&gt;&#039;;
+
+						do_action( &#039;woocommerce_admin_order_data_after_billing_address&#039;, $subscription );
+
+						// Display a link to the customer&#039;s add/change payment method screen.
+						if ( $subscription-&gt;can_be_updated_to( &#039;new-payment-method&#039; ) ) {
+
+							if ( $subscription-&gt;has_payment_gateway() ) {
+								$link_text = __( &#039;Customer change payment method page &amp;rarr;&#039;, &#039;woocommerce-subscriptions&#039; );
+							} else {
+								$link_text = __( &#039;Customer add payment method page &amp;rarr;&#039;, &#039;woocommerce-subscriptions&#039; );
+							}
+
+							printf(
+								&#039;&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;&#039;,
+								esc_url( $subscription-&gt;get_change_payment_method_url() ),
+								esc_html( $link_text )
+							);
+						}
+						?&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;order_data_column&quot;&gt;
+
+						&lt;h3&gt;
+							&lt;?php esc_html_e( &#039;Shipping&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;
+							&lt;a href=&quot;#&quot; class=&quot;edit_address&quot;&gt;&lt;?php esc_html_e( &#039;Edit&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+							&lt;span&gt;
+								&lt;a href=&quot;#&quot; class=&quot;load_customer_shipping&quot; style=&quot;display:none;&quot;&gt;&lt;?php esc_html_e( &#039;Load shipping address&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+								&lt;a href=&quot;#&quot; class=&quot;billing-same-as-shipping&quot; style=&quot;display:none;&quot;&gt;&lt;?php esc_html_e( &#039;Copy billing address&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&lt;/a&gt;
+							&lt;/span&gt;
+						&lt;/h3&gt;
+						&lt;?php
+						// Display values
+						echo &#039;&lt;div class=&quot;address&quot;&gt;&#039;;
+
+						if ( $subscription-&gt;get_formatted_shipping_address() ) {
+							echo &#039;&lt;p&gt;&lt;strong&gt;&#039; . esc_html__( &#039;Address&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;:&lt;/strong&gt;&#039; . wp_kses( $subscription-&gt;get_formatted_shipping_address(), array( &#039;br&#039; =&gt; array() ) ) . &#039;&lt;/p&gt;&#039;;
+						} else {
+							echo &#039;&lt;p class=&quot;none_set&quot;&gt;&lt;strong&gt;&#039; . esc_html__( &#039;Address&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;:&lt;/strong&gt; &#039; . esc_html__( &#039;No shipping address set.&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/p&gt;&#039;;
+						}
+
+						if ( ! empty( self::$shipping_fields ) ) {
+							foreach ( self::$shipping_fields as $key =&gt; $field ) {
+								if ( isset( $field[&#039;show&#039;] ) &amp;&amp; false === $field[&#039;show&#039;] ) {
+									continue;
+								}
+
+								$function_name = &#039;get_shipping_&#039; . $key;
+
+								if ( is_callable( array( $subscription, $function_name ) ) ) {
+									$field_value = $subscription-&gt;$function_name( &#039;edit&#039; );
+								} else {
+									$field_value = $subscription-&gt;get_meta( &#039;_shipping_&#039; . $key );
+								}
+
+								echo &#039;&lt;p&gt;&lt;strong&gt;&#039; . esc_html( $field[&#039;label&#039;] ) . &#039;:&lt;/strong&gt; &#039; . wp_kses_post( make_clickable( esc_html( $field_value ) ) ) . &#039;&lt;/p&gt;&#039;;
+							}
+						}
+
+						if ( apply_filters( &#039;woocommerce_enable_order_notes_field&#039;, &#039;yes&#039; == get_option( &#039;woocommerce_enable_order_comments&#039;, &#039;yes&#039; ) ) &amp;&amp; $post-&gt;post_excerpt ) {
+							echo &#039;&lt;p&gt;&lt;strong&gt;&#039; . esc_html__( &#039;Customer Provided Note&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;:&lt;/strong&gt; &#039; . wp_kses_post( nl2br( $post-&gt;post_excerpt ) ) . &#039;&lt;/p&gt;&#039;;
+						}
+
+						echo &#039;&lt;/div&gt;&#039;;
+
+						// Display form
+						echo &#039;&lt;div class=&quot;edit_address&quot;&gt;&#039;;
+
+						if ( ! empty( self::$shipping_fields ) ) {
+							foreach ( self::$shipping_fields as $key =&gt; $field ) {
+								if ( ! isset( $field[&#039;type&#039;] ) ) {
+									$field[&#039;type&#039;] = &#039;text&#039;;
+								}
+								if ( ! isset( $field[&#039;id&#039;] ) ) {
+									$field[&#039;id&#039;] = &#039;_shipping_&#039; . $key;
+								}
+
+								switch ( $field[&#039;type&#039;] ) {
+									case &#039;select&#039;:
+										woocommerce_wp_select( $field );
+									break;
+									default:
+										woocommerce_wp_text_input( $field );
+									break;
+								}
+							}
+						}
+
+						if ( apply_filters( &#039;woocommerce_enable_order_notes_field&#039;, &#039;yes&#039; == get_option( &#039;woocommerce_enable_order_comments&#039;, &#039;yes&#039; ) ) ) {
+							?&gt;
+							&lt;p class=&quot;form-field form-field-wide&quot;&gt;&lt;label for=&quot;excerpt&quot;&gt;&lt;?php esc_html_e( &#039;Customer Provided Note&#039;, &#039;woocommerce-subscriptions&#039; ) ?&gt;:&lt;/label&gt;
+								&lt;textarea rows=&quot;1&quot; cols=&quot;40&quot; name=&quot;excerpt&quot; tabindex=&quot;6&quot; id=&quot;excerpt&quot; placeholder=&quot;&lt;?php esc_attr_e( &#039;Customer\&#039;s notes about the order&#039;, &#039;woocommerce-subscriptions&#039; ); ?&gt;&quot;&gt;&lt;?php echo wp_kses_post( $post-&gt;post_excerpt ); ?&gt;&lt;/textarea&gt;
+							&lt;/p&gt;
+							&lt;?php
+						}
+
+						echo &#039;&lt;/div&gt;&#039;;
+
+						do_action( &#039;woocommerce_admin_order_data_after_shipping_address&#039;, $subscription );
+						?&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;?php
+	}
+
+	/**
+	 * Save meta box data
+	 *
+	 * @param int     $post_id
+	 * @param WP_Post $post
+	 */
+	public static function save( $post_id, $post = null ) {
+		if ( &#039;shop_subscription&#039; != $post-&gt;post_type || empty( $_POST[&#039;woocommerce_meta_nonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;woocommerce_meta_nonce&#039;], &#039;woocommerce_save_data&#039; ) ) {
+			return;
+		}
+
+		self::init_address_fields();
+
+		// Get subscription object.
+		$subscription = wcs_get_subscription( $post_id );
+		$props        = array();
+
+		// Ensure there is an order key.
+		if ( ! $subscription-&gt;get_order_key() ) {
+			$props[&#039;order_key&#039;] = wcs_generate_order_key();
+		}
+
+		// Update meta
+		$customer_id = isset( $_POST[&#039;customer_user&#039;] ) ? absint( $_POST[&#039;customer_user&#039;] ) : 0;
+		if ( $customer_id !== $subscription-&gt;get_customer_id() ) {
+			$props[&#039;customer_id&#039;] = $customer_id;
+		}
+
+		// Update billing fields.
+		foreach ( self::$billing_fields as $key =&gt; $field ) {
+			$field[&#039;id&#039;] = isset( $field[&#039;id&#039;] ) ? $field[&#039;id&#039;] : &quot;_billing_{$key}&quot;;
+
+			if ( ! isset( $_POST[ $field[&#039;id&#039;] ] ) ) {
+				continue;
+			}
+
+			$value = wc_clean( wp_unslash( $_POST[ $field[&#039;id&#039;] ] ) );
+
+			if ( is_callable( array( $subscription, &#039;set_billing_&#039; . $key ) ) ) {
+				$props[ &quot;billing_{$key}&quot; ] = $value;
+			} else {
+				$subscription-&gt;update_meta_data( $field[&#039;id&#039;], $value );
+			}
+		}
+
+		// Update shipping fields.
+		foreach ( self::$shipping_fields as $key =&gt; $field ) {
+			$field[&#039;id&#039;] = isset( $field[&#039;id&#039;] ) ? $field[&#039;id&#039;] : &quot;_shipping_{$key}&quot;;
+
+			if ( ! isset( $_POST[ $field[&#039;id&#039;] ] ) ) {
+				continue;
+			}
+
+			$value = wc_clean( wp_unslash( $_POST[ $field[&#039;id&#039;] ] ) );
+
+			if ( is_callable( array( $subscription, &#039;set_shipping_&#039; . $key ) ) ) {
+				$props[ &quot;shipping_{$key}&quot; ] = $value;
+			} else {
+				$subscription-&gt;update_meta_data( $field[&#039;id&#039;], $value );
+			}
+		}
+
+		$subscription-&gt;set_props( $props );
+		$subscription-&gt;save();
+
+		// Save the linked parent order id
+		if ( ! empty( $_POST[&#039;parent-order-id&#039;] ) ) {
+			// if the parent order to be set is a renewal order
+			if ( wcs_order_contains_renewal( $_POST[&#039;parent-order-id&#039;] ) ) {
+				// remove renewal meta
+				$parent = wc_get_order( $_POST[&#039;parent-order-id&#039;] );
+				wcs_delete_objects_property( $parent, &#039;subscription_renewal&#039; );
+			}
+			$subscription-&gt;set_parent_id( wc_clean( $_POST[&#039;parent-order-id&#039;] ) );
+			// translators: %s: parent order number (linked to its details screen).
+			$subscription-&gt;add_order_note( sprintf( _x( &#039;Subscription linked to parent order %s via admin.&#039;, &#039;subscription note after linking to a parent order&#039;, &#039;woocommerce-subscriptions&#039; ), sprintf( &#039;&lt;a href=&quot;%1$s&quot;&gt;#%2$s&lt;/a&gt; &#039;, esc_url( wcs_get_edit_post_link( $subscription-&gt;get_parent_id() ) ), $subscription-&gt;get_parent()-&gt;get_order_number() ) ), false, true );
+			$subscription-&gt;save();
+		}
+
+		try {
+			WCS_Change_Payment_Method_Admin::save_meta( $subscription );
+
+			if ( &#039;cancelled&#039; == $_POST[&#039;order_status&#039;] ) {
+				$subscription-&gt;cancel_order();
+			} else {
+				$subscription-&gt;update_status( $_POST[&#039;order_status&#039;], &#039;&#039;, true );
+			}
+		} catch ( Exception $e ) {
+			// translators: placeholder is error message from the payment gateway or subscriptions when updating the status
+			wcs_add_admin_notice( sprintf( __( &#039;Error updating some information: %s&#039;, &#039;woocommerce-subscriptions&#039; ), $e-&gt;getMessage() ), &#039;error&#039; );
+		}
+
+		if ( isset( $_POST[&#039;original_post_status&#039;] ) &amp;&amp; &#039;auto-draft&#039; === $_POST[&#039;original_post_status&#039;] ) {
+			$subscription-&gt;set_created_via( &#039;admin&#039; );
+			$subscription-&gt;save();
+
+			/**
+			 * Fire an action after a subscription is created via the admin screen.
+			 *
+			 * @since 2.4.1
+			 * @param WC_Subscription $subscription The subscription object.
+			 */
+			do_action( &#039;woocommerce_admin_created_subscription&#039;, $subscription );
+		}
+
+		do_action( &#039;woocommerce_process_shop_subscription_meta&#039;, $post_id, $post );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-change-payment-method-admin.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Class to handle everything to do with changing a payment method for a subscription on the
+ * edit subscription admin page.
+ *
+ * @class    WCS_Change_Payment_Method_Admin
+ * @version  2.0
+ * @package  WooCommerce Subscriptions/Includes
+ * @category Class
+ * @author   Prospress
+ */
+
+class WCS_Change_Payment_Method_Admin {
+
+	/**
+	 * Display the edit payment gateway option under
+	 *
+	 * @since 2.0
+	 */
+	public static function display_fields( $subscription ) {
+
+		$payment_method        = $subscription-&gt;get_payment_method();
+		$valid_payment_methods = self::get_valid_payment_methods( $subscription );
+
+		if ( ! $subscription-&gt;is_manual() &amp;&amp; ! isset( $valid_payment_methods[ $payment_method ] ) ) {
+			$payment_gateways_handler     = WC_Subscriptions_Core_Plugin::instance()-&gt;get_gateways_handler_class();
+			$subscription_payment_gateway = $payment_gateways_handler::get_payment_gateway( $payment_method );
+
+			if ( false != $subscription_payment_gateway ) {
+				$valid_payment_methods[ $payment_method ] = $subscription_payment_gateway-&gt;title;
+			}
+		}
+
+		echo &#039;&lt;p class=&quot;form-field form-field-wide&quot;&gt;&#039;;
+
+		if ( count( $valid_payment_methods ) &gt; 1 ) {
+
+			$found_method = false;
+			echo &#039;&lt;label&gt;&#039; . esc_html__( &#039;Payment Method&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;:&lt;/label&gt;&#039;;
+			echo &#039;&lt;select class=&quot;wcs_payment_method_selector&quot; name=&quot;_payment_method&quot; id=&quot;_payment_method&quot; class=&quot;first&quot;&gt;&#039;;
+
+			foreach ( $valid_payment_methods as $gateway_id =&gt; $gateway_title ) {
+
+				echo &#039;&lt;option value=&quot;&#039; . esc_attr( $gateway_id ) . &#039;&quot; &#039; . selected( $payment_method, $gateway_id, false ) . &#039;&gt;&#039; . esc_html( $gateway_title ) . &#039;&lt;/option&gt;&#039;;
+				if ( $payment_method == $gateway_id ) {
+					$found_method = true;
+				}
+			}
+			echo &#039;&lt;/select&gt;&#039;;
+
+		} elseif ( count( $valid_payment_methods ) == 1 ) {
+			echo &#039;&lt;strong&gt;&#039; . esc_html__( &#039;Payment Method&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;:&lt;/strong&gt;&lt;br/&gt;&#039; . esc_html( current( $valid_payment_methods ) );
+			// translators: %s: gateway ID.
+			echo wcs_help_tip( sprintf( _x( &#039;Gateway ID: [%s]&#039;, &#039;The gateway ID displayed on the Edit Subscriptions screen when editing payment method.&#039;, &#039;woocommerce-subscriptions&#039; ), key( $valid_payment_methods ) ) );
+			echo &#039;&lt;input type=&quot;hidden&quot; value=&quot;&#039; . esc_attr( key( $valid_payment_methods ) ) . &#039;&quot; id=&quot;_payment_method&quot; name=&quot;_payment_method&quot;&gt;&#039;;
+		}
+
+		echo &#039;&lt;/p&gt;&#039;;
+
+		$payment_method_table = apply_filters( &#039;woocommerce_subscription_payment_meta&#039;, array(), $subscription );
+
+		if ( is_array( $payment_method_table ) ) {
+
+			foreach ( $payment_method_table as $payment_method_id =&gt; $payment_method_meta ) {
+
+				echo &#039;&lt;div class=&quot;wcs_payment_method_meta_fields&quot; id=&quot;wcs_&#039; . esc_attr( $payment_method_id ) . &#039;_fields&quot; &#039; . ( ( $payment_method_id != $payment_method || $subscription-&gt;is_manual() ) ? &#039;style=&quot;display:none;&quot;&#039; : &#039;&#039; ) . &#039; &gt;&#039;;
+
+				foreach ( $payment_method_meta as $meta_table =&gt; $meta ) {
+
+					foreach ( $meta as $meta_key =&gt; $meta_data ) {
+
+						$field_id       = sprintf( &#039;_payment_method_meta[%s][%s][%s]&#039;, $payment_method_id, $meta_table, $meta_key );
+						$field_label    = ( ! empty( $meta_data[&#039;label&#039;] ) ) ? $meta_data[&#039;label&#039;] : $meta_key;
+						$field_value    = ( ! empty( $meta_data[&#039;value&#039;] ) ) ? $meta_data[&#039;value&#039;] : null;
+						$field_disabled = ( isset( $meta_data[&#039;disabled&#039;] ) &amp;&amp; true == $meta_data[&#039;disabled&#039;] ) ? &#039; readonly&#039; : &#039;&#039;;
+
+						echo &#039;&lt;p class=&quot;form-field form-field-wide&quot;&gt;&#039;;
+						echo &#039;&lt;label for=&quot;&#039; . esc_attr( $field_id ) . &#039;&quot;&gt;&#039; . esc_html( $field_label ) . &#039;&lt;/label&gt;&#039;;
+
+						$payment_meta_input_action_name = sprintf( &#039;woocommerce_subscription_payment_meta_input_%s_%s_%s&#039;, $payment_method_id, $meta_table, $meta_key );
+
+						// Allow third parties to display their own custom meta input fields.
+						if ( has_action( $payment_meta_input_action_name ) ) {
+							do_action( $payment_meta_input_action_name, $subscription, $field_id, $field_value, $meta_data );
+						} else {
+							echo &#039;&lt;input type=&quot;text&quot; class=&quot;short&quot; name=&quot;&#039; . esc_attr( $field_id ) . &#039;&quot; id=&quot;&#039; . esc_attr( $field_id ) . &#039;&quot; value=&quot;&#039; . esc_attr( $field_value ) . &#039;&quot; placeholder=&quot;&quot; &#039; . esc_attr( $field_disabled ) . &#039;&gt;&#039;;
+						}
+
+						echo &#039;&lt;/p&gt;&#039;;
+					}
+				}
+
+				echo &#039;&lt;/div&gt;&#039;;
+
+			}
+		}
+
+		wp_nonce_field( &#039;wcs_change_payment_method_admin&#039;, &#039;_wcsnonce&#039; );
+
+	}
+
+	/**
+	 * Get the new payment data from POST and check the new payment method supports
+	 * the new admin change hook.
+	 *
+	 * @since 2.0
+	 * @param $subscription WC_Subscription
+	 */
+	public static function save_meta( $subscription ) {
+
+		if ( empty( $_POST[&#039;_wcsnonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_change_payment_method_admin&#039; ) ) {
+			return;
+		}
+
+		$payment_gateways    = WC()-&gt;payment_gateways-&gt;payment_gateways();
+		$payment_method      = isset( $_POST[&#039;_payment_method&#039;] ) ? wc_clean( $_POST[&#039;_payment_method&#039;] ) : &#039;&#039;;
+		$payment_method_meta = apply_filters( &#039;woocommerce_subscription_payment_meta&#039;, array(), $subscription );
+		$payment_method_meta = ( ! empty( $payment_method_meta[ $payment_method ] ) ) ? $payment_method_meta[ $payment_method ] : array();
+
+		$valid_payment_methods = self::get_valid_payment_methods( $subscription );
+
+		if ( ! isset( $valid_payment_methods[ $payment_method ] ) &amp;&amp; ! ( isset( $payment_gateways[ $payment_method ] ) &amp;&amp; $subscription-&gt;get_payment_method() == $payment_gateways[ $payment_method ]-&gt;id ) ) {
+			throw new Exception( __( &#039;Please choose a valid payment gateway to change to.&#039;, &#039;woocommerce-subscriptions&#039; ) );
+		}
+
+		if ( ! empty( $payment_method_meta ) ) {
+
+			foreach ( $payment_method_meta as $meta_table =&gt; $meta ) {
+
+				if ( ! is_array( $meta ) ) {
+					continue;
+				}
+
+				foreach ( $meta as $meta_key =&gt; $meta_data ) {
+					$payment_method_meta[ $meta_table ][ $meta_key ][&#039;value&#039;] = isset( $_POST[&#039;_payment_method_meta&#039;][ $payment_method ][ $meta_table ][ $meta_key ] ) ? $_POST[&#039;_payment_method_meta&#039;][ $payment_method ][ $meta_table ][ $meta_key ] : &#039;&#039;;
+				}
+			}
+		}
+
+		$payment_gateway = ( &#039;manual&#039; != $payment_method ) ? $payment_gateways[ $payment_method ] : &#039;&#039;;
+
+		if ( ! $subscription-&gt;is_manual() &amp;&amp; ( &#039;&#039; == $payment_gateway || $subscription-&gt;get_payment_method() != $payment_gateway-&gt;id ) ) {
+			// Before updating to a new payment gateway make sure the subscription status is updated with the current gateway
+			$gateway_status           = apply_filters( &#039;wcs_gateway_status_payment_changed&#039;, &#039;cancelled&#039;, $subscription, $payment_gateway );
+			$payment_gateways_handler = WC_Subscriptions_Core_Plugin::instance()-&gt;get_gateways_handler_class();
+
+			$payment_gateways_handler::trigger_gateway_status_updated_hook( $subscription, $gateway_status );
+		}
+
+		// Update the payment method for manual only if it has changed.
+		if ( ! $subscription-&gt;is_manual() || &#039;manual&#039; !== $payment_method ) {
+			$subscription-&gt;set_payment_method( $payment_gateway, $payment_method_meta );
+			$subscription-&gt;save();
+		}
+	}
+
+	/**
+	 * Get a list of possible gateways that a subscription could be changed to by admins.
+	 *
+	 * @since 2.0
+	 * @param $subscription int | WC_Subscription
+	 * @return
+	 */
+	public static function get_valid_payment_methods( $subscription ) {
+
+		if ( ! $subscription instanceof WC_Subscription ) {
+			$subscription = wcs_get_subscription( $subscription );
+		}
+
+		$valid_gateways = array( &#039;manual&#039; =&gt; __( &#039;Manual Renewal&#039;, &#039;woocommerce-subscriptions&#039; ) );
+
+		$available_gateways = WC()-&gt;payment_gateways-&gt;get_available_payment_gateways();
+
+		foreach ( $available_gateways as $gateway_id =&gt; $gateway ) {
+
+			if ( $gateway-&gt;supports( &#039;subscription_payment_method_change_admin&#039; ) &amp;&amp; ! wcs_is_manual_renewal_required() || ( ! $subscription-&gt;is_manual() &amp;&amp; $gateway_id == $subscription-&gt;get_payment_method() ) ) {
+				$valid_gateways[ $gateway_id ] = $gateway-&gt;get_title();
+			}
+		}
+
+		return $valid_gateways;
+
+	}
+
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

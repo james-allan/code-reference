@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-template-loader.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WC Subscriptions Template Loader
+ *
+ * @version 2.0
+ * @author  Prospress
+ */
+class WCS_Template_Loader {
+
+	/**
+	 * Relocated templates from WooCommerce Subscriptions.
+	 *
+	 * @var array[] Array of file names and their directory found in templates/
+	 */
+	private static $relocated_templates = [
+		&#039;html-variation-price.php&#039;                =&gt; &#039;admin/deprecated/&#039;,
+		&#039;html-variation-synchronisation.php&#039;      =&gt; &#039;admin/deprecated/&#039;,
+		&#039;order-shipping-html.php&#039;                 =&gt; &#039;admin/deprecated/&#039;,
+		&#039;order-tax-html.php&#039;                      =&gt; &#039;admin/deprecated/&#039;,
+		&#039;html-admin-notice.php&#039;                   =&gt; &#039;admin/&#039;,
+		&#039;html-failed-scheduled-action-notice.php&#039; =&gt; &#039;admin/&#039;,
+		&#039;html-variation-price.php&#039;                =&gt; &#039;admin/&#039;,
+		&#039;html-variation-synchronisation.php&#039;      =&gt; &#039;admin/&#039;,
+		&#039;status.php&#039;                              =&gt; &#039;admin/&#039;,
+		&#039;cart-recurring-shipping.php&#039;             =&gt; &#039;cart/&#039;,
+		&#039;form-change-payment-method.php&#039;          =&gt; &#039;checkout/&#039;,
+		&#039;recurring-coupon-totals.php&#039;             =&gt; &#039;checkout/&#039;,
+		&#039;recurring-fee-totals.php&#039;                =&gt; &#039;checkout/&#039;,
+		&#039;recurring-itemized-tax-totals.php&#039;       =&gt; &#039;checkout/&#039;,
+		&#039;recurring-subscription-totals.php&#039;       =&gt; &#039;checkout/&#039;,
+		&#039;recurring-subtotals.php&#039;                 =&gt; &#039;checkout/&#039;,
+		&#039;recurring-tax-totals.php&#039;                =&gt; &#039;checkout/&#039;,
+		&#039;recurring-totals.php&#039;                    =&gt; &#039;checkout/&#039;,
+		&#039;subscription-receipt.php&#039;                =&gt; &#039;checkout/&#039;,
+		&#039;admin-new-renewal-order.php&#039;             =&gt; &#039;emails/&#039;,
+		&#039;admin-new-switch-order.php&#039;              =&gt; &#039;emails/&#039;,
+		&#039;admin-payment-retry.php&#039;                 =&gt; &#039;emails/&#039;,
+		&#039;cancelled-subscription.php&#039;              =&gt; &#039;emails/&#039;,
+		&#039;customer-completed-renewal-order.php&#039;    =&gt; &#039;emails/&#039;,
+		&#039;customer-completed-switch-order.php&#039;     =&gt; &#039;emails/&#039;,
+		&#039;customer-on-hold-renewal-order.php&#039;      =&gt; &#039;emails/&#039;,
+		&#039;customer-payment-retry.php&#039;              =&gt; &#039;emails/&#039;,
+		&#039;customer-processing-renewal-order.php&#039;   =&gt; &#039;emails/&#039;,
+		&#039;customer-renewal-invoice.php&#039;            =&gt; &#039;emails/&#039;,
+		&#039;email-order-details.php&#039;                 =&gt; &#039;emails/&#039;,
+		&#039;expired-subscription.php&#039;                =&gt; &#039;emails/&#039;,
+		&#039;on-hold-subscription.php&#039;                =&gt; &#039;emails/&#039;,
+		&#039;admin-new-renewal-order.php&#039;             =&gt; &#039;emails/plain/&#039;,
+		&#039;admin-new-switch-order.php&#039;              =&gt; &#039;emails/plain/&#039;,
+		&#039;admin-payment-retry.php&#039;                 =&gt; &#039;emails/plain/&#039;,
+		&#039;cancelled-subscription.php&#039;              =&gt; &#039;emails/plain/&#039;,
+		&#039;customer-completed-renewal-order.php&#039;    =&gt; &#039;emails/plain/&#039;,
+		&#039;customer-completed-switch-order.php&#039;     =&gt; &#039;emails/plain/&#039;,
+		&#039;customer-on-hold-renewal-order.php&#039;      =&gt; &#039;emails/plain/&#039;,
+		&#039;customer-payment-retry.php&#039;              =&gt; &#039;emails/plain/&#039;,
+		&#039;customer-processing-renewal-order.php&#039;   =&gt; &#039;emails/plain/&#039;,
+		&#039;customer-renewal-invoice.php&#039;            =&gt; &#039;emails/plain/&#039;,
+		&#039;email-order-details.php&#039;                 =&gt; &#039;emails/plain/&#039;,
+		&#039;expired-subscription.php&#039;                =&gt; &#039;emails/plain/&#039;,
+		&#039;on-hold-subscription.php&#039;                =&gt; &#039;emails/plain/&#039;,
+		&#039;subscription-info.php&#039;                   =&gt; &#039;emails/plain/&#039;,
+		&#039;subscription-info.php&#039;                   =&gt; &#039;emails/&#039;,
+		&#039;html-modal.php&#039;                          =&gt; &#039;&#039;,
+		&#039;my-subscriptions.php&#039;                    =&gt; &#039;myaccount/&#039;,
+		&#039;related-orders.php&#039;                      =&gt; &#039;myaccount/&#039;,
+		&#039;related-subscriptions.php&#039;               =&gt; &#039;myaccount/&#039;,
+		&#039;subscription-details.php&#039;                =&gt; &#039;myaccount/&#039;,
+		&#039;subscription-totals-table.php&#039;           =&gt; &#039;myaccount/&#039;,
+		&#039;subscription-totals.php&#039;                 =&gt; &#039;myaccount/&#039;,
+		&#039;subscriptions.php&#039;                       =&gt; &#039;myaccount/&#039;,
+		&#039;view-subscription.php&#039;                   =&gt; &#039;myaccount/&#039;,
+		&#039;subscription.php&#039;                        =&gt; &#039;single-product/add-to-cart/&#039;,
+		&#039;variable-subscription.php&#039;               =&gt; &#039;single-product/add-to-cart/&#039;,
+	];
+
+	public static function init() {
+		add_action( &#039;woocommerce_account_view-subscription_endpoint&#039;, array( __CLASS__, &#039;get_view_subscription_template&#039; ) );
+		add_action( &#039;woocommerce_subscription_details_table&#039;, array( __CLASS__, &#039;get_subscription_details_template&#039; ) );
+		add_action( &#039;woocommerce_subscription_totals_table&#039;, array( __CLASS__, &#039;get_subscription_totals_template&#039; ) );
+		add_action( &#039;woocommerce_subscription_totals_table&#039;, array( __CLASS__, &#039;get_order_downloads_template&#039; ), 20 );
+		add_action( &#039;woocommerce_subscription_totals&#039;, array( __CLASS__, &#039;get_subscription_totals_table_template&#039; ), 10, 4 );
+		add_action( &#039;woocommerce_subscriptions_recurring_totals_subtotals&#039;, array( __CLASS__, &#039;get_recurring_cart_subtotals&#039; ) );
+		add_action( &#039;woocommerce_subscriptions_recurring_totals_coupons&#039;, array( __CLASS__, &#039;get_recurring_cart_coupons&#039; ) );
+		add_action( &#039;woocommerce_subscriptions_recurring_totals_shipping&#039;, array( __CLASS__, &#039;get_recurring_cart_shipping&#039; ) );
+		add_action( &#039;woocommerce_subscriptions_recurring_totals_fees&#039;, array( __CLASS__, &#039;get_recurring_cart_fees&#039; ) );
+		add_action( &#039;woocommerce_subscriptions_recurring_totals_taxes&#039;, array( __CLASS__, &#039;get_recurring_cart_taxes&#039; ) );
+		add_action( &#039;woocommerce_subscriptions_recurring_subscription_totals&#039;, array( __CLASS__, &#039;get_recurring_subscription_totals&#039; ) );
+		add_action( &#039;woocommerce_subscription_add_to_cart&#039;, array( __CLASS__, &#039;get_subscription_add_to_cart&#039; ), 30 );
+		add_action( &#039;woocommerce_variable-subscription_add_to_cart&#039;, array( __CLASS__, &#039;get_variable_subscription_add_to_cart&#039; ), 30 );
+		add_action( &#039;wcopc_subscription_add_to_cart&#039;, array( __CLASS__, &#039;get_opc_subscription_add_to_cart&#039; ) ); // One Page Checkout compatibility
+
+		add_filter( &#039;wc_get_template&#039;, array( __CLASS__, &#039;handle_relocated_templates&#039; ), 10, 5 );
+	}
+
+	/**
+	 * Get the view subscription template.
+	 *
+	 * @param int $subscription_id Subscription ID.
+	 * @since 2.0.17
+	 */
+	public static function get_view_subscription_template( $subscription_id ) {
+		$subscription = wcs_get_subscription( absint( $subscription_id ) );
+
+		if ( ! $subscription || ! current_user_can( &#039;view_order&#039;, $subscription-&gt;get_id() ) ) {
+			echo &#039;&lt;div class=&quot;woocommerce-error&quot;&gt;&#039; . esc_html__( &#039;Invalid Subscription.&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039; &lt;a href=&quot;&#039; . esc_url( wc_get_page_permalink( &#039;myaccount&#039; ) ) . &#039;&quot; class=&quot;wc-forward&quot;&gt;&#039; . esc_html__( &#039;My Account&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/a&gt;&#039; . &#039;&lt;/div&gt;&#039;;
+			return;
+		}
+
+		wc_get_template( &#039;myaccount/view-subscription.php&#039;, compact( &#039;subscription&#039; ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Get the subscription details template, which is part of the view subscription page.
+	 *
+	 * @param WC_Subscription $subscription Subscription object
+	 * @since 2.2.19
+	 */
+	public static function get_subscription_details_template( $subscription ) {
+		wc_get_template( &#039;myaccount/subscription-details.php&#039;, array( &#039;subscription&#039; =&gt; $subscription ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Get the subscription totals template, which is part of the view subscription page.
+	 *
+	 * @param WC_Subscription $subscription Subscription object
+	 * @since 2.2.19
+	 */
+	public static function get_subscription_totals_template( $subscription ) {
+		wc_get_template( &#039;myaccount/subscription-totals.php&#039;, array( &#039;subscription&#039; =&gt; $subscription ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Get the order downloads template, which is part of the view subscription page.
+	 *
+	 * @param WC_Subscription $subscription Subscription object
+	 * @since 2.5.0
+	 */
+	public static function get_order_downloads_template( $subscription ) {
+		if ( $subscription-&gt;has_downloadable_item() &amp;&amp; $subscription-&gt;is_download_permitted() ) {
+			wc_get_template(
+				&#039;order/order-downloads.php&#039;,
+				array(
+					&#039;downloads&#039;  =&gt; $subscription-&gt;get_downloadable_items(),
+					&#039;show_title&#039; =&gt; true,
+				)
+			);
+		}
+	}
+
+	/**
+	 * Gets the subscription totals table.
+	 *
+	 * @since 2.6.0
+	 *
+	 * @param WC_Subscription $subscription     The subscription to print the totals table for.
+	 * @param bool  $include_item_removal_links Whether the remove line item links should be included.
+	 * @param array $totals                     The subscription totals rows to be displayed.
+	 * @param bool  $include_switch_links       Whether the line item switch links should be included.
+	 */
+	public static function get_subscription_totals_table_template( $subscription, $include_item_removal_links, $totals, $include_switch_links = true ) {
+
+		// If the switch links shouldn&#039;t be printed, remove the callback which prints them.
+		if ( false === $include_switch_links ) {
+			$callback_detached = remove_action( &#039;woocommerce_order_item_meta_end&#039;, &#039;WC_Subscriptions_Switcher::print_switch_link&#039; );
+		}
+
+		wc_get_template(
+			&#039;myaccount/subscription-totals-table.php&#039;,
+			array(
+				&#039;subscription&#039;       =&gt; $subscription,
+				&#039;allow_item_removal&#039; =&gt; $include_item_removal_links,
+				&#039;totals&#039;             =&gt; $totals,
+			),
+			&#039;&#039;,
+			WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; )
+		);
+
+		// Reattach the callback if it was successfully removed.
+		if ( false === $include_switch_links &amp;&amp; $callback_detached ) {
+			add_action( &#039;woocommerce_order_item_meta_end&#039;, &#039;WC_Subscriptions_Switcher::print_switch_link&#039;, 10, 3 );
+		}
+	}
+
+	/**
+	 * Gets the subscription receipt template content.
+	 *
+	 * @since 3.0.0
+	 *
+	 * @param WC_Subscription $subscription The subscription to display the receipt for.
+	 */
+	public static function get_subscription_receipt_template( $subscription ) {
+		wc_get_template( &#039;checkout/subscription-receipt.php&#039;, array( &#039;subscription&#039; =&gt; $subscription ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Gets the recurring totals subtotal rows content.
+	 *
+	 * @since 3.1.0
+	 *
+	 * @param array $recurring_carts The recurring carts.
+	 */
+	public static function get_recurring_cart_subtotals( $recurring_carts ) {
+		$recurring_carts = wcs_apply_array_filter( &#039;woocommerce_subscriptions_display_recurring_subtotals&#039;, $recurring_carts, &#039;next_payment_date&#039; );
+		wc_get_template( &#039;checkout/recurring-subtotals.php&#039;, array( &#039;recurring_carts&#039; =&gt; $recurring_carts ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Gets the recurring totals coupon rows content.
+	 *
+	 * @since 3.1.0
+	 *
+	 * @param array $recurring_carts The recurring carts.
+	 */
+	public static function get_recurring_cart_coupons( $recurring_carts ) {
+		// Filter out all recurring carts without a next payment date.
+		$recurring_carts = wcs_apply_array_filter( &#039;woocommerce_subscriptions_display_recurring_coupon_totals&#039;, $recurring_carts, &#039;next_payment_date&#039; );
+		wc_get_template( &#039;checkout/recurring-coupon-totals.php&#039;, array( &#039;recurring_carts&#039; =&gt; $recurring_carts ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Gets the recurring totals shipping rows content.
+	 *
+	 * @since 3.1.0
+	 */
+	public static function get_recurring_cart_shipping() {
+		if ( WC()-&gt;cart-&gt;show_shipping() &amp;&amp; WC_Subscriptions_Cart::cart_contains_subscriptions_needing_shipping() ) {
+			wcs_cart_totals_shipping_html();
+		}
+	}
+
+	/**
+	 * Gets the recurring totals fee rows content.
+	 *
+	 * @since 3.1.0
+	 *
+	 * @param array $recurring_carts The recurring carts.
+	 */
+	public static function get_recurring_cart_fees( $recurring_carts ) {
+		// Filter out all recurring carts without a next payment date.
+		$recurring_carts = wcs_apply_array_filter( &#039;woocommerce_subscriptions_display_recurring_fee_totals&#039;, $recurring_carts, &#039;next_payment_date&#039; );
+		wc_get_template( &#039;checkout/recurring-fee-totals.php&#039;, array( &#039;recurring_carts&#039; =&gt; $recurring_carts ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Gets the recurring totals tax rows content.
+	 *
+	 * @since 3.1.0
+	 *
+	 * @param array $recurring_carts The recurring carts.
+	 */
+	public static function get_recurring_cart_taxes( $recurring_carts ) {
+		$tax_display_mode = wcs_is_woocommerce_pre( &#039;4.4&#039; ) ? WC()-&gt;cart-&gt;tax_display_cart : WC()-&gt;cart-&gt;get_tax_price_display_mode();
+
+		if ( ! wc_tax_enabled() || &#039;excl&#039; !== $tax_display_mode ) {
+			return;
+		}
+
+		// Filter out all recurring carts without a next payment date.
+		$recurring_carts = wcs_apply_array_filter( &#039;woocommerce_subscriptions_display_recurring_tax_totals&#039;, $recurring_carts, &#039;next_payment_date&#039; );
+
+		if ( &#039;itemized&#039; === get_option( &#039;woocommerce_tax_total_display&#039; ) ) {
+			wc_get_template( &#039;checkout/recurring-itemized-tax-totals.php&#039;, array( &#039;recurring_carts&#039; =&gt; $recurring_carts ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+		} else {
+			wc_get_template( &#039;checkout/recurring-tax-totals.php&#039;, array( &#039;recurring_carts&#039; =&gt; $recurring_carts ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+		}
+	}
+
+	/**
+	 * Gets the recurring subscription total rows content.
+	 *
+	 * @since 3.1.0
+	 *
+	 * @param array $recurring_carts The recurring carts.
+	 */
+	public static function get_recurring_subscription_totals( $recurring_carts ) {
+		// Filter out all recurring carts without a next payment date.
+		$recurring_carts = wcs_apply_array_filter( &#039;woocommerce_subscriptions_display_recurring_subscription_totals&#039;, $recurring_carts, &#039;next_payment_date&#039; );
+		wc_get_template( &#039;checkout/recurring-subscription-totals.php&#039;, array( &#039;recurring_carts&#039; =&gt; $recurring_carts ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Loads the my-subscriptions.php template on the My Account page.
+	 *
+	 * @since 4.0.0
+	 * @param int $current_page The My Account Subscriptions page.
+	 */
+	public static function get_my_subscriptions( $current_page = 1 ) {
+		$all_subscriptions = wcs_get_users_subscriptions();
+		$current_page      = empty( $current_page ) ? 1 : absint( $current_page );
+		$posts_per_page    = get_option( &#039;posts_per_page&#039; );
+		$max_num_pages     = ceil( count( $all_subscriptions ) / $posts_per_page );
+		$subscriptions     = array_slice( $all_subscriptions, ( $current_page - 1 ) * $posts_per_page, $posts_per_page );
+
+		wc_get_template(
+			&#039;myaccount/my-subscriptions.php&#039;,
+			array(
+				&#039;subscriptions&#039; =&gt; $subscriptions,
+				&#039;current_page&#039;  =&gt; $current_page,
+				&#039;max_num_pages&#039; =&gt; $max_num_pages,
+				&#039;paginate&#039;      =&gt; true,
+			),
+			&#039;&#039;,
+			WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; )
+		);
+	}
+
+	/**
+	 * Gets the subscription add_to_cart template.
+	 *
+	 * Use the same cart template for subscription as that which is used for simple products. Reduce code duplication
+	 * and is made possible by the friendly actions &amp; filters found through WC.
+	 *
+	 * @since 4.0.0
+	 */
+	public static function get_subscription_add_to_cart() {
+		wc_get_template( &#039;single-product/add-to-cart/subscription.php&#039;, array(), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+	}
+
+	/**
+	 * Gets the variable subscription add_to_cart template.
+	 *
+	 * Use a very similar cart template as that of a variable product with added functionality.
+	 *
+	 * @since 4.0.0
+	 */
+	public static function get_variable_subscription_add_to_cart() {
+		global $product;
+
+		// Enqueue variation scripts
+		wp_enqueue_script( &#039;wc-add-to-cart-variation&#039; );
+
+		// Get Available variations?
+		$get_variations = count( $product-&gt;get_children() ) &lt;= apply_filters( &#039;woocommerce_ajax_variation_threshold&#039;, 30, $product );
+
+		// Load the template
+		wc_get_template(
+			&#039;single-product/add-to-cart/variable-subscription.php&#039;,
+			array(
+				&#039;available_variations&#039; =&gt; $get_variations ? $product-&gt;get_available_variations() : false,
+				&#039;attributes&#039;           =&gt; $product-&gt;get_variation_attributes(),
+				&#039;selected_attributes&#039;  =&gt; $product-&gt;get_default_attributes(),
+			),
+			&#039;&#039;,
+			WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; )
+		);
+	}
+
+	/**
+	 * Gets OPC&#039;s simple add to cart template for simple subscription products (to ensure data attributes required by OPC are added).
+	 *
+	 * Variable subscription products will be handled automatically because they identify as &quot;variable&quot; in response to is_type() method calls,
+	 * which OPC uses.
+	 *
+	 * @since 4.0.0
+	 */
+	public static function get_opc_subscription_add_to_cart() {
+		global $product;
+		wc_get_template( &#039;checkout/add-to-cart/simple.php&#039;, array( &#039;product&#039; =&gt; $product ), &#039;&#039;, PP_One_Page_Checkout::$template_path );
+	}
+
+	/**
+	 * Handles relocated subscription templates.
+	 *
+	 * Hooked onto &#039;wc_get_template&#039;.
+	 *
+	 * @since 1.4.0
+	 *
+	 * @param string $template
+	 * @param string $tempalte_name
+	 * @param array  $args
+	 * @param string $template_path
+	 * @param
+	 */
+	public static function handle_relocated_templates( $template, $template_name, $args, $template_path, $default_path ) {
+		// We only want to relocate subscription template files that can&#039;t be found.
+		if ( file_exists( $template ) ) {
+			return $template;
+		}
+
+		$subscriptions_core_path = WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory();
+		$template_file           = basename( $template_name );
+
+		if ( ! $default_path || strpos( $default_path, $subscriptions_core_path ) !== false || ! self::is_deprecated_default_path( $template_file, $default_path ) ) {
+			return $template;
+		}
+
+		return $subscriptions_core_path . &#039;/templates/&#039; . self::$relocated_templates[ $template_file ] . $template_file;
+	}
+
+	/**
+	 * Determine if the given template file and default path is sourcing the template
+	 * from a outdated location.
+	 *
+	 * @since 1.4.0
+	 *
+	 * @param string $template_file Template file name.
+	 * @param string $default_path  Default path passed to `wc_get_template()`.
+	 *
+	 * @return bool
+	 */
+	public static function is_deprecated_default_path( $template_file, $default_path ) {
+		$is_default_path_wcs = false;
+
+		if ( isset( self::$relocated_templates[ $template_file ] ) ) {
+			if ( class_exists( &#039;WC_Subscriptions_Plugin&#039; ) ) {
+				// WCS 4+ is active.
+				$wcs_templates_path  = WC_Subscriptions_Plugin::instance()-&gt;get_plugin_directory();
+				$is_default_path_wcs = strpos( $default_path, $wcs_templates_path ) !== false;
+			} elseif ( file_exists( dirname( $default_path ) . &#039;/woocommerce-subscriptions.php&#039; ) ) {
+				// WCS is installed but not active.
+				$is_default_path_wcs = true;
+			} elseif ( preg_match( &#039;/woocommerce-subscriptions(|[A-Za-z0-9\-\_ ]+)\/templates/&#039;, $default_path ) ) {
+				$maybe_a_plugin_name = basename( dirname( $default_path ) );
+				// Avoid the case where $default_path is referring to some other plugin like woocommerce-subscriptions-extension.
+				if ( ! file_exists( dirname( $default_path ) . &quot;/$maybe_a_plugin_name.php&quot; ) ) {
+					$is_default_path_wcs = true;
+				}
+			}
+		}
+
+		return $is_default_path_wcs;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

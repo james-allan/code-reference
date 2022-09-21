@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-deprecated-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_doing_it_wrong">
+        wcs_doing_it_wrong()
+        <a href="#function_wcs_doing_it_wrong" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-deprecated-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-deprecated-functions.html#source-view.27">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-deprecated-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Wrapper for wc_doing_it_wrong.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_doing_it_wrong</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$function</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$function</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_deprecated_function">
+        wcs_deprecated_function()
+        <a href="#function_wcs_deprecated_function" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-deprecated-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-deprecated-functions.html#source-view.52">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-deprecated-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Wrapper for wcs_deprecated_function to improve handling of ajax requests, even when
+WooCommerce 3.0&#039;s wcs_deprecated_function method is not available.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_deprecated_function</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$function</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$replacement</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$function</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$replacement</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_deprecated_argument">
+        wcs_deprecated_argument()
+        <a href="#function_wcs_deprecated_argument" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-deprecated-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-deprecated-functions.html#source-view.77">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-deprecated-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">77</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Reimplement similar logic to wc_deprecated_argument() without the first parameter confusion.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_deprecated_argument</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$function</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$function</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_old_subscription_key">
+        wcs_get_old_subscription_key()
+        <a href="#function_wcs_get_old_subscription_key" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-deprecated-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-deprecated-functions.html#source-view.104">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-deprecated-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get the string key for a subscription used in Subscriptions prior to 2.0.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_old_subscription_key</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>Previously, a subscription key was made up of the ID of the order used to purchase the subscription, and
+the product to which the subscription relates; however, in Subscriptions 2.0, subscriptions can actually
+relate to multiple products (because they can contain multiple line items) and they also no longer need
+to have an original order associated with them, to make manually adding subscriptions more accurate.</p>
+<p>Therefore, although the return value of this method is a string matching the key form used  inSubscriptions
+prior to 2.0, the actual value represented is not a perfect analogue. Specifically,</p>
+<ul>
+<li>if the subscription contains more than one product, only the ID of the first line item will be used in the ID</li>
+<li>if the subscription does not contain any products, the key still be missing that component of the</li>
+<li>if the subscription does not have an initial order, then the order ID used will be the WC_Subscription object's ID</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An instance of WC_Subscription</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_id_from_key">
+        wcs_get_subscription_id_from_key()
+        <a href="#function_wcs_get_subscription_id_from_key" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-deprecated-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-deprecated-functions.html#source-view.123">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-deprecated-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return the post ID of a WC_Subscription object for the given subscription key (if one exists).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_id_from_key</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription_key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription_key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A subscription key in the deprecated form created by @see WC_Subscriptions_Manager::get_subscription_key()</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_from_key">
+        wcs_get_subscription_from_key()
+        <a href="#function_wcs_get_subscription_from_key" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-deprecated-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-deprecated-functions.html#source-view.170">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-deprecated-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">170</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return an instance of a WC_Subscription object for the given subscription key (if one exists).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_from_key</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription_key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription_key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A subscription key in the deprecated form created by @see self::get_subscription_key()</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_in_deprecated_structure">
+        wcs_get_subscription_in_deprecated_structure()
+        <a href="#function_wcs_get_subscription_in_deprecated_structure" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-deprecated-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-deprecated-functions.html#source-view.193">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-deprecated-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">193</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return an associative array of a given subscriptions details (if it exists) in the pre v2.0 data structure.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_in_deprecated_structure</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An instance of WC_Subscription</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_deprecated_hook">
+        wcs_deprecated_hook()
+        <a href="#function_wcs_deprecated_hook" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-deprecated-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-deprecated-functions.html#source-view.271">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-deprecated-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">271</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Wrapper for wc_deprecated_hook to improve handling of ajax requests, even when
+WooCommerce 3.3.0&#039;s wc_deprecated_hook method is not available.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_deprecated_hook</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hook</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$replacement</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$hook</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The hook that was used.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The version that deprecated the hook.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$replacement</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The hook that should have been used.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A message regarding the change.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.6.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Deprecated Functions
+ *
+ * Functions for handling backward compatibility with the Subscription 1.n
+ * data structure and reference system (i.e. $subscription_key instead of a
+ * post ID)
+ *
+ * @author   Prospress
+ * @category Core
+ * @package  WooCommerce Subscriptions/Functions
+ * @version  2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * Wrapper for wc_doing_it_wrong.
+ *
+ * @since  2.2.0
+ * @param  string $function
+ * @param  string $version
+ * @param  string $replacement
+ */
+function wcs_doing_it_wrong( $function, $message, $version ) {
+
+	if ( function_exists( &#039;wc_doing_it_wrong&#039; ) ) {
+		wc_doing_it_wrong( $function, $message, $version );
+	} else {
+		// Reimplement wc_doing_it_wrong() when WC 3.0 is not active
+		if ( wp_doing_ajax() ) {
+			do_action( &#039;doing_it_wrong_run&#039;, $function, $message, $version );
+			error_log( &quot;{$function} was called incorrectly. {$message}. This message was added in version {$version}.&quot; );
+		} else {
+			_doing_it_wrong( esc_attr( $function ), esc_attr( $message ), esc_attr( $version ) );
+		}
+	}
+}
+
+
+/**
+ * Wrapper for wcs_deprecated_function to improve handling of ajax requests, even when
+ * WooCommerce 3.0&#039;s wcs_deprecated_function method is not available.
+ *
+ * @since  2.2.0
+ * @param  string $function
+ * @param  string $version
+ * @param  string $replacement
+ */
+function wcs_deprecated_function( $function, $version, $replacement = null ) {
+
+	if ( function_exists( &#039;wc_deprecated_function&#039; ) ) {
+		wc_deprecated_function( $function, $version, $replacement );
+	} else {
+		// Reimplement wcs_deprecated_function() when WC 3.0 is not active
+		if ( wp_doing_ajax() ) {
+			do_action( &#039;deprecated_function_run&#039;, $function, $replacement, $version );
+			$log_string  = &quot;The {$function} function is deprecated since version {$version}.&quot;;
+			$log_string .= $replacement ? &quot; Replace with {$replacement}.&quot; : &#039;&#039;;
+			error_log( $log_string );
+		} else {
+			_deprecated_function( esc_attr( $function ), esc_attr( $version ), esc_attr( $replacement ) );
+		}
+	}
+}
+
+/**
+ * Reimplement similar logic to wc_deprecated_argument() without the first parameter confusion.
+ *
+ * @since  2.2.0
+ * @param  string $argument
+ * @param  string $version
+ * @param  string $message
+ */
+function wcs_deprecated_argument( $function, $version, $message = null ) {
+	if ( wp_doing_ajax() ) {
+		do_action( &#039;deprecated_argument_run&#039;, $function, $message, $version );
+		error_log( &quot;{$function} was called with an argument that is deprecated since version {$version}. {$message}&quot; );
+	} else {
+		_deprecated_argument( esc_attr( $function ), esc_attr( $version ), esc_attr( $message ) );
+	}
+}
+
+/**
+ * Get the string key for a subscription used in Subscriptions prior to 2.0.
+ *
+ * Previously, a subscription key was made up of the ID of the order used to purchase the subscription, and
+ * the product to which the subscription relates; however, in Subscriptions 2.0, subscriptions can actually
+ * relate to multiple products (because they can contain multiple line items) and they also no longer need
+ * to have an original order associated with them, to make manually adding subscriptions more accurate.
+ *
+ * Therefore, although the return value of this method is a string matching the key form used  inSubscriptions
+ * prior to 2.0, the actual value represented is not a perfect analogue. Specifically,
+ *  - if the subscription contains more than one product, only the ID of the first line item will be used in the ID
+ *  - if the subscription does not contain any products, the key still be missing that component of the
+ *  - if the subscription does not have an initial order, then the order ID used will be the WC_Subscription object&#039;s ID
+ *
+ * @param WC_Subscription $subscription An instance of WC_Subscription
+ * @return string $subscription_key A subscription key in the deprecated form previously created by @see self::get_subscription_key()
+ * @since 2.0
+ */
+function wcs_get_old_subscription_key( WC_Subscription $subscription ) {
+
+	// Get an ID to use as the order ID
+	$order_id = ( false == $subscription-&gt;get_parent_id() ) ? $subscription-&gt;get_id() : $subscription-&gt;get_parent_id();
+
+	// Get an ID to use as the product ID
+	$subscription_items = $subscription-&gt;get_items();
+	$first_item         = reset( $subscription_items );
+
+	return $order_id . &#039;_&#039; . WC_Subscriptions_Order::get_items_product_id( $first_item );
+}
+
+/**
+ * Return the post ID of a WC_Subscription object for the given subscription key (if one exists).
+ *
+ * @param string $subscription_key A subscription key in the deprecated form created by @see WC_Subscriptions_Manager::get_subscription_key()
+ * @return int|null The post ID for the subscription if it can be found (i.e. an order exists) or null if no order exists for the subscription.
+ * @since 2.0
+ */
+function wcs_get_subscription_id_from_key( $subscription_key ) {
+	global $wpdb;
+
+	// it can be either 8_13 or just 8. If it&#039;s 8, it&#039;ll be an integer
+	if ( ! is_string( $subscription_key ) &amp;&amp; ! is_int( $subscription_key ) ) {
+		return null;
+	}
+
+	$order_and_product_id = explode( &#039;_&#039;, $subscription_key );
+
+	$subscription_ids = array();
+
+	// If we have an order ID and product ID, query based on that
+	if ( ! empty( $order_and_product_id[0] ) &amp;&amp; ! empty( $order_and_product_id[1] ) ) {
+
+		$subscription_ids = $wpdb-&gt;get_col( $wpdb-&gt;prepare( &quot;
+			SELECT DISTINCT order_items.order_id FROM {$wpdb-&gt;prefix}woocommerce_order_items as order_items
+				LEFT JOIN {$wpdb-&gt;prefix}woocommerce_order_itemmeta AS itemmeta ON order_items.order_item_id = itemmeta.order_item_id
+				LEFT JOIN {$wpdb-&gt;posts} AS posts ON order_items.order_id = posts.ID
+			WHERE posts.post_type = &#039;shop_subscription&#039;
+				AND posts.post_parent = %d
+				AND itemmeta.meta_value = %d
+				AND itemmeta.meta_key IN ( &#039;_variation_id&#039;, &#039;_product_id&#039; )&quot;,
+		$order_and_product_id[0], $order_and_product_id[1] ) );
+
+	} elseif ( ! empty( $order_and_product_id[0] ) ) {
+
+		$subscription_ids = get_posts( array(
+			&#039;posts_per_page&#039; =&gt; 1,
+			&#039;post_parent&#039;    =&gt; $order_and_product_id[0],
+			&#039;post_status&#039;    =&gt; &#039;any&#039;,
+			&#039;post_type&#039;      =&gt; &#039;shop_subscription&#039;,
+			&#039;fields&#039;         =&gt; &#039;ids&#039;,
+		) );
+
+	}
+
+	return ( ! empty( $subscription_ids ) ) ? $subscription_ids[0] : null;
+}
+
+/**
+ * Return an instance of a WC_Subscription object for the given subscription key (if one exists).
+ *
+ * @param string $subscription_key A subscription key in the deprecated form created by @see self::get_subscription_key()
+ * @return WC_Subscription|null The subscription object if it can be found (i.e. an order exists) or null if no order exists for the subscription (i.e. it was manually created).
+ * @since 2.0
+ */
+function wcs_get_subscription_from_key( $subscription_key ) {
+
+	$subscription_id = wcs_get_subscription_id_from_key( $subscription_key );
+
+	if ( null !== $subscription_id &amp;&amp; is_numeric( $subscription_id ) ) {
+		$subscription = wcs_get_subscription( $subscription_id );
+	}
+
+	if ( ! is_object( $subscription ) ) {
+		// translators: placeholder is either subscription key or a subscription id, or, failing that, empty (e.g. &quot;145_21&quot; or &quot;145&quot;)
+		throw new InvalidArgumentException( sprintf( __( &#039;Could not get subscription. Most likely the subscription key does not refer to a subscription. The key was: &quot;%s&quot;.&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription_key ) );
+	}
+
+	return $subscription;
+}
+
+/**
+ * Return an associative array of a given subscriptions details (if it exists) in the pre v2.0 data structure.
+ *
+ * @param WC_Subscription $subscription An instance of WC_Subscription
+ * @return array Subscription details
+ * @since 2.0
+ */
+function wcs_get_subscription_in_deprecated_structure( WC_Subscription $subscription ) {
+
+	$completed_payments = array();
+
+	if ( $subscription-&gt;get_payment_count() ) {
+
+		$order = $subscription-&gt;get_parent();
+
+		if ( ! empty( $order ) ) {
+			$parent_order_created_date = wcs_get_objects_property( $order, &#039;date_created&#039; );
+
+			if ( ! is_null( $parent_order_created_date ) ) {
+				$completed_payments[] = wcs_get_datetime_utc_string( $parent_order_created_date );
+			}
+		}
+
+		foreach ( $subscription-&gt;get_related_orders( &#039;all&#039;, &#039;renewal&#039; ) as $renewal_order ) {
+
+			// Not all gateways would call $order-&gt;payment_complete() with WC &lt; 3.0, so we need to find renewal orders with a paid status or a paid date (WC 3.0+ takes care of setting the paid date when payment_complete() wasn&#039;t called)
+			if ( null !== wcs_get_objects_property( $renewal_order, &#039;date_paid&#039; ) || $renewal_order-&gt;has_status( $subscription-&gt;get_paid_order_statuses() ) ) {
+
+				$date_created = wcs_get_objects_property( $renewal_order, &#039;date_created&#039; );
+
+				if ( ! is_null( $date_created ) ) {
+					$completed_payments[] = wcs_get_datetime_utc_string( $date_created );
+				}
+			}
+		}
+	}
+
+	$items = $subscription-&gt;get_items();
+	$item  = array_pop( $items );
+
+	if ( ! empty( $item ) ) {
+
+		$deprecated_subscription_object = array(
+			&#039;order_id&#039;           =&gt; $subscription-&gt;get_parent_id(),
+			&#039;product_id&#039;         =&gt; isset( $item[&#039;product_id&#039;] ) ? $item[&#039;product_id&#039;] : 0,
+			&#039;variation_id&#039;       =&gt; isset( $item[&#039;variation_id&#039;] ) ? $item[&#039;variation_id&#039;] : 0,
+			&#039;status&#039;             =&gt; $subscription-&gt;get_status(),
+
+			// Subscription billing details
+			&#039;period&#039;             =&gt; $subscription-&gt;get_billing_period(),
+			&#039;interval&#039;           =&gt; $subscription-&gt;get_billing_interval(),
+			&#039;length&#039;             =&gt; wcs_estimate_periods_between( ( 0 == $subscription-&gt;get_time( &#039;trial_end&#039; ) ) ? $subscription-&gt;get_time( &#039;date_created&#039; ) : $subscription-&gt;get_time( &#039;trial_end&#039; ), $subscription-&gt;get_time( &#039;end&#039; ) + 120, $subscription-&gt;get_billing_period(), &#039;floor&#039; ) / $subscription-&gt;get_billing_interval(), // Since subscriptions no longer have a length, we need to calculate the length given the start and end dates and the period.
+
+			// Subscription dates
+			&#039;start_date&#039;         =&gt; $subscription-&gt;get_date( &#039;start&#039; ),
+			&#039;expiry_date&#039;        =&gt; $subscription-&gt;get_date( &#039;end&#039; ),
+			&#039;end_date&#039;           =&gt; $subscription-&gt;has_status( wcs_get_subscription_ended_statuses() ) ? $subscription-&gt;get_date( &#039;end&#039; ) : 0,
+			&#039;trial_expiry_date&#039;  =&gt; $subscription-&gt;get_date( &#039;trial_end&#039; ),
+
+			// Payment &amp; status change history
+			&#039;failed_payments&#039;    =&gt; $subscription-&gt;get_failed_payment_count(),
+			&#039;completed_payments&#039; =&gt; $completed_payments,
+			&#039;suspension_count&#039;   =&gt; $subscription-&gt;get_suspension_count(),
+			&#039;last_payment_date&#039;  =&gt; $subscription-&gt;get_date( &#039;last_order_date_created&#039; ),
+		);
+
+	} else {
+
+		$deprecated_subscription_object = array();
+
+	}
+
+	return $deprecated_subscription_object;
+}
+
+/**
+ * Wrapper for wc_deprecated_hook to improve handling of ajax requests, even when
+ * WooCommerce 3.3.0&#039;s wc_deprecated_hook method is not available.
+ *
+ * @since 2.6.0
+ * @param string $hook        The hook that was used.
+ * @param string $version     The version that deprecated the hook.
+ * @param string $replacement The hook that should have been used.
+ * @param string $message     A message regarding the change.
+ */
+function wcs_deprecated_hook( $hook, $version, $replacement = null, $message = null ) {
+
+	if ( function_exists( &#039;wc_deprecated_hook&#039; ) ) {
+		wc_deprecated_hook( $hook, $version, $replacement, $message );
+	} else {
+		// Reimplement wcs_deprecated_function() when WC 3.0 is not active
+		if ( wp_doing_ajax() ) {
+			do_action( &#039;deprecated_hook_run&#039;, $hook, $replacement, $version, $message );
+
+			$message    = empty( $message ) ? &#039;&#039; : &#039; &#039; . $message;
+			$log_string = &quot;{$hook} is deprecated since version {$version}&quot;;
+			$log_string .= $replacement ? &quot;! Use {$replacement} instead.&quot; : &#039; with no alternative available.&#039;;
+
+			error_log( $log_string . $message );
+		} else {
+			_deprecated_hook( $hook, $version, $replacement, $message );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

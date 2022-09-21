@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html">WooCommerceSubscriptionsAdminUpgrades</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-repair-subtracted-base-tax-line-item-meta.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Between WCS 3.0.10 and WCS 3.1.0 purchases outside the store&#039;s base location where prices are entered exclusive of tax, we have stored the amount of tax subtracted
+ * from the product price to account for the taxes that apply to the store&#039;s base location. We stored those taxes taking into account the line item qty. In 3.0.14 we
+ * fixed a bug that caused manual changes to the line item qty to not update the tax amount and so the tax amounts stored in `_subtracted_base_location_tax` line item
+ * meta may be incorrect.
+ *
+ * This script will repair that data by:
+ *   1. Getting all line items with `_subtracted_base_location_tax` meta. This meta is only present on stores and for purchases where this data is applicable
+ *      (prices inclusive of tax and purchased outside the store&#039;s tax jurisdiction).
+ *   2. Schedule a background job, via Action Scheduler, to repair each of those line items.
+ *   3. For each line item get the tax rates that were subtracted at the time of purchase and reverse engineer the product&#039;s price from the subtotal and current tax rates.
+ *      - for these sites, the line item&#039;s subtotal is the standard price - (minus) base location taxes.
+ *      - therefore it&#039;s possible to add back the taxes, to get back to the base price.
+ *      - this approach assumes the base location&#039;s tax rates haven&#039;t changed since the store upgraded to 3.0.10. New rates are fine, just changes to the existing rates which existed at the time.
+ *   4. This repair deletes the existing &#039;_subtracted_base_location_tax&#039; meta, and calculates the base tax rates not including of quantity so changes to the line item quantity doesn&#039;t affect the value.
+ *
+ * @see https://github.com/woocommerce/woocommerce-subscriptions/pull/4039
+ *
+ * @author   WooCommerce
+ * @category Admin
+ * @package  WooCommerce Subscriptions/Admin/Upgrades
+ * @version  3.1.0
+ */
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+class WCS_Repair_Subtracted_Base_Tax_Line_Item_Meta extends WCS_Background_Repairer {
+
+	/**
+	 * Constructor
+	 *
+	 * @param WC_Logger_Interface $logger The WC_Logger instance.
+	 *
+	 * @since 3.1.0
+	 */
+	public function __construct( WC_Logger_Interface $logger ) {
+		$this-&gt;scheduled_hook = &#039;wcs_schedule_subtracted_base_line_item_tax_repairs&#039;;
+		$this-&gt;repair_hook    = &#039;wcs_subtracted_base_line_item_meta_tax_repair&#039;;
+		$this-&gt;log_handle     = &#039;wcs-repair-subtracted-line-item-base-tax-meta&#039;;
+		$this-&gt;logger         = $logger;
+	}
+
+	/**
+	 * Get a batch of line items with _subtracted_base_location_tax meta to repair.
+	 *
+	 * @param int $page The page number to get results from. Base 1 - the first page is 1.
+	 * @return array    A list of line item ids.
+	 *
+	 * @since 3.1.0
+	 */
+	protected function get_items_to_repair( $page ) {
+		global $wpdb;
+		$limit  = 20;
+		$offset = ( $page - 1 ) * $limit;
+
+		return $wpdb-&gt;get_col(
+			&quot;SELECT DISTINCT order_item_id
+			FROM {$wpdb-&gt;prefix}woocommerce_order_itemmeta
+			WHERE `meta_key` = &#039;_subtracted_base_location_tax&#039;
+			LIMIT {$offset}, {$limit}&quot;
+		);
+	}
+
+	/**
+	 * Repair the line item meta for a given line item.
+	 *
+	 * @param int $line_item_id The ID for the line item to repair.
+	 *
+	 * @since 3.1.0
+	 */
+	public function repair_item( $line_item_id ) {
+		try {
+			$item = WC_Order_Factory::get_order_item( $line_item_id );
+
+			if ( ! $item ) {
+				$this-&gt;log( sprintf( &#039;WARNING: The item (%d) could not be loaded from the database.&#039;, $line_item_id ) );
+				return;
+			}
+
+			if ( ! $item-&gt;meta_exists( &#039;_subtracted_base_location_tax&#039; ) ) {
+				// The meta might have been deleted after the repair was scheduled so there&#039;s no need to warn against this.
+				return;
+			}
+
+			$current_base_location_taxes = $item-&gt;get_meta( &#039;_subtracted_base_location_tax&#039; );
+
+			// Regenerate the base tax rates that applied at the time of purchase from the rate IDs.
+			$base_rates = array();
+			foreach ( $current_base_location_taxes as $rate_id =&gt; $tax_amount ) {
+				$rate = WC_Tax::_get_tax_rate( $rate_id );
+
+				if ( empty( $rate ) ) {
+					$this-&gt;log( sprintf( &#039;WARNING: The line item %d (#%s) could not be repaired because the tax rate (#%d) applicable at the time of purchase no longer exists.&#039;, $line_item_id, $item-&gt;get_order_id(), $rate_id ) );
+					return;
+				}
+
+				$base_rates[ $rate_id ] = array(
+					&#039;rate&#039;     =&gt; (float) $rate[&#039;tax_rate&#039;],
+					&#039;label&#039;    =&gt; $rate[&#039;tax_rate_name&#039;],
+					&#039;shipping&#039; =&gt; $rate[&#039;tax_rate_shipping&#039;] ? &#039;yes&#039; : &#039;no&#039;,
+					&#039;compound&#039; =&gt; $rate[&#039;tax_rate_compound&#039;] ? &#039;yes&#039; : &#039;no&#039;,
+				);
+			}
+
+			// Reverse engineer the original product&#039;s base price from the base rates and the item&#039;s subtotal.
+			$product_price = ( $item-&gt;get_subtotal() + array_sum( WC_Tax::calc_exclusive_tax( $item-&gt;get_subtotal(), $base_rates ) ) ) / $item-&gt;get_quantity();
+
+			// Delete the old meta, store the new tax figures and store the full set of rates for completeness.
+			$item-&gt;update_meta_data( &#039;_subtracted_base_location_taxes&#039;, WC_Tax::calc_tax( $product_price, $base_rates, true ) );
+			$item-&gt;update_meta_data( &#039;_subtracted_base_location_rates&#039;, $base_rates );
+			$item-&gt;delete_meta_data( &#039;_subtracted_base_location_tax&#039; );
+			$item-&gt;save();
+
+			$this-&gt;log( sprintf( &#039;The &quot;_subtracted_base_location_tax&quot; line item meta for %d (#%s) was repaired. Original product price assumed: $%s.&#039;, $line_item_id, $item-&gt;get_order_id(), $product_price ) );
+		} catch ( Exception $e ) {
+			$this-&gt;log( sprintf( &#039;ERROR: Exception caught trying to repair the subtracted base tax data for line item: %d - exception message: %s ---&#039;, $line_item_id, $e-&gt;getMessage() ) );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

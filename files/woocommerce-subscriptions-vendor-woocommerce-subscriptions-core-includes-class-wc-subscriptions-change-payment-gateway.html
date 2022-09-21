@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wc-subscriptions-change-payment-gateway.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Make it possible for customers to change the payment gateway used for an existing subscription.
+ *
+ * @package WooCommerce Subscriptions
+ * @subpackage WC_Subscriptions_Change_Payment_Gateway
+ * @category Class
+ * @author Brent Shepherd
+ * @since 1.4
+ */
+class WC_Subscriptions_Change_Payment_Gateway {
+
+	public static $is_request_to_change_payment = false;
+
+	/**
+	 * An internal cache of WooCommerce customer notices.
+	 *
+	 * @var array
+	 */
+	private static $notices = array();
+
+	/**
+	 * Bootstraps the class and hooks required actions &amp; filters.
+	 *
+	 * @since 1.4
+	 */
+	public static function init() {
+
+		// Maybe allow for a recurring payment method to be changed
+		add_action( &#039;plugins_loaded&#039;, __CLASS__ . &#039;::set_change_payment_method_flag&#039; );
+
+		// If we&#039;re changing the payment method, we want to make sure a number of totals return $0 (to prevent payments being processed now)
+		add_filter( &#039;woocommerce_subscription_get_total&#039;, __CLASS__ . &#039;::maybe_zero_total&#039;, 11, 2 );
+
+		// Keep a record of any messages or errors that should be displayed
+		add_action( &#039;before_woocommerce_pay&#039;, __CLASS__ . &#039;::store_pay_shortcode_messages&#039;, 5 );
+
+		// Hijack the default pay shortcode
+		add_action( &#039;after_woocommerce_pay&#039;, __CLASS__ . &#039;::maybe_replace_pay_shortcode&#039;, 100 );
+
+		// Maybe allow for a recurring payment method to be changed
+		add_filter( &#039;wcs_view_subscription_actions&#039;, __CLASS__ . &#039;::change_payment_method_button&#039;, 10, 2 );
+
+		// Maybe allow for a recurring payment method to be changed
+		add_action( &#039;wp_loaded&#039;, __CLASS__ . &#039;::change_payment_method_via_pay_shortcode&#039;, 20 );
+
+		// Filter the available payment gateways to only show those which support acting as the new payment method
+		add_filter( &#039;woocommerce_available_payment_gateways&#039;, __CLASS__ . &#039;::get_available_payment_gateways&#039; );
+
+		// If we&#039;re changing the payment method, we want to make sure a number of totals return $0 (to prevent payments being processed now)
+		add_filter( &#039;woocommerce_subscriptions_total_initial_payment&#039;, __CLASS__ . &#039;::maybe_zero_total&#039;, 11, 2 );
+		add_filter( &#039;woocommerce_subscriptions_sign_up_fee&#039;, __CLASS__ . &#039;::maybe_zero_total&#039;, 11, 2 );
+
+		// Redirect to My Account page after changing payment method
+		add_filter( &#039;woocommerce_get_return_url&#039;, __CLASS__ . &#039;::get_return_url&#039;, 11 );
+
+		// Update the recurring payment method when a customer has completed the payment for a renewal payment which previously failed
+		add_action( &#039;woocommerce_subscriptions_paid_for_failed_renewal_order&#039;, __CLASS__ . &#039;::change_failing_payment_method&#039;, 10, 2 );
+
+		// Add a &#039;new-payment-method&#039; handler to the WC_Subscription::can_be_updated_to() function
+		add_filter( &#039;woocommerce_can_subscription_be_updated_to_new-payment-method&#039;, __CLASS__ . &#039;::can_subscription_be_updated_to_new_payment_method&#039;, 10, 2 );
+
+		// Change the &quot;Pay for Order&quot; page title to &quot;Change Payment Method&quot;
+		add_filter( &#039;the_title&#039;, __CLASS__ . &#039;::change_payment_method_page_title&#039;, 100 );
+
+		// Change the &quot;Pay for Order&quot; breadcrumb to &quot;Change Payment Method&quot;
+		add_filter( &#039;woocommerce_get_breadcrumb&#039;, __CLASS__ . &#039;::change_payment_method_breadcrumb&#039;, 10, 1 );
+
+		// Maybe filter subscriptions_needs_payment to return false when processing change-payment-gateway requests
+		add_filter( &#039;woocommerce_subscription_needs_payment&#039;, __CLASS__ . &#039;::maybe_override_needs_payment&#039;, 10, 1 );
+
+		// Display a login form if the customer is requesting to change their payment method but aren&#039;t logged in.
+		add_filter( &#039;the_content&#039;, array( __CLASS__, &#039;maybe_request_log_in&#039; ) );
+
+	}
+
+	/**
+	 * Set a flag to indicate that the current request is for changing payment. Better than requiring other extensions
+	 * to check the $_GET global as it allows for the flag to be overridden.
+	 *
+	 * @since 1.4
+	 */
+	public static function set_change_payment_method_flag() {
+		if ( isset( $_GET[&#039;change_payment_method&#039;] ) ) {
+			self::$is_request_to_change_payment = true;
+		}
+	}
+
+	/**
+	 * Store any messages or errors added by other plugins.
+	 *
+	 * This is particularly important for those occasions when the new payment method caused and error or failure.
+	 *
+	 * @since 2.3.6
+	 */
+	public static function store_pay_shortcode_messages() {
+		self::$notices = wc_get_notices();
+	}
+
+	/**
+	 * Store messages ore errors added by other plugins.
+	 *
+	 * @since 1.4
+	 * @since 2.3.6 Deprecated in favor of the method with proper spelling.
+	 * @deprecated
+	 */
+	public static function store_pay_shortcode_mesages() {
+		wcs_deprecated_function( __METHOD__, &#039;2.3.6&#039;, __CLASS__ . &#039;::store_pay_shortcode_messages&#039; );
+		self::store_pay_shortcode_messages();
+	}
+
+	/**
+	 * If requesting a payment method change, replace the woocommerce_pay_shortcode() with a change payment form.
+	 *
+	 * @since 1.4
+	 */
+	public static function maybe_replace_pay_shortcode() {
+		global $wp;
+		$valid_request = false;
+
+		// Exit early if this isn&#039;t a change payment request and it&#039;s not a order-pay page for a subscription
+		if ( ! self::$is_request_to_change_payment &amp;&amp; ( ! isset( $wp-&gt;query_vars[&#039;order-pay&#039;] ) || ! wcs_is_subscription( absint( $wp-&gt;query_vars[&#039;order-pay&#039;] ) ) ) ) {
+			return;
+		}
+
+		/*
+		 * Clear the output buffer.
+		 *
+		 * Because this function is hooked onto &#039;after_woocommerce_pay&#039;, WC would have started outputting
+		 * the core order pay shortcode. Clearing the output buffer removes that partially outputted template.
+		 */
+		ob_clean();
+
+		// Because we&#039;ve cleared the buffer, we need to re-include the opening container div.
+		echo &#039;&lt;div class=&quot;woocommerce&quot;&gt;&#039;;
+
+		// If the request to pay for the order belongs to a subscription but there&#039;s no GET params for changing payment method, show receipt page.
+		if ( ! self::$is_request_to_change_payment ) {
+			$valid_request    = true;
+			$subscription     = wcs_get_subscription( absint( $wp-&gt;query_vars[&#039;order-pay&#039;] ) );
+			$subscription_key = isset( $_GET[&#039;key&#039;] ) ? wc_clean( $_GET[&#039;key&#039;] ) : &#039;&#039;;
+
+			do_action( &#039;before_woocommerce_pay&#039; );
+
+			/**
+			 * wcs_before_replace_pay_shortcode
+			 *
+			 * Action that allows payment methods to modify the subscription object so, for example,
+			 * if the new payment method still hasn&#039;t been set, they can set it temporarily (without saving).
+			 *
+			 * @since 2.4.0
+			 *
+			 * @param WC_Subscription $subscription
+			 */
+			do_action( &#039;wcs_before_replace_pay_shortcode&#039;, $subscription );
+
+			if ( $subscription &amp;&amp; $subscription-&gt;get_id() === absint( $wp-&gt;query_vars[&#039;order-pay&#039;] ) &amp;&amp; $subscription-&gt;get_order_key() === $subscription_key ) {
+				WCS_Template_Loader::get_subscription_receipt_template( $subscription );
+			} else {
+				// The before_woocommerce_pay action would have printed all the notices so we need to print the notice directly.
+				wc_print_notice( __( &#039;Sorry, this subscription change payment method request is invalid and cannot be processed.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+			}
+		} else {
+
+			// Re-add all the notices that would have been displayed but have now been cleared from the output.
+			foreach ( self::$notices as $notice_type =&gt; $notices ) {
+				foreach ( $notices as $notice ) {
+					if ( wcs_is_woocommerce_pre( &#039;3.9&#039; ) ) {
+						wc_add_notice( $notice, $notice_type );
+					} else {
+						wc_add_notice( $notice[&#039;notice&#039;], $notice_type, $notice[&#039;data&#039;] );
+					}
+				}
+			}
+
+			$subscription  = wcs_get_subscription( absint( $_GET[&#039;change_payment_method&#039;] ) );
+			$valid_request = self::validate_change_payment_request( $subscription );
+
+			// WC display notices on this hook so trigger it after all notices have been added,
+			do_action( &#039;before_woocommerce_pay&#039; );
+
+			if ( $valid_request ) {
+				if ( $subscription-&gt;get_time( &#039;next_payment&#039; ) &gt; 0 ) {
+					// translators: placeholder is next payment&#039;s date
+					$next_payment_string = sprintf( __( &#039; Next payment is due %s.&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription-&gt;get_date_to_display( &#039;next_payment&#039; ) );
+				} else {
+					$next_payment_string = &#039;&#039;;
+				}
+
+				// translators: placeholder is either empty or &quot;Next payment is due...&quot;
+				wc_print_notice( apply_filters( &#039;woocommerce_subscriptions_change_payment_method_page_notice_message&#039;, sprintf( __( &#039;Choose a new payment method.%s&#039;, &#039;woocommerce-subscriptions&#039; ), $next_payment_string ), $subscription ), &#039;notice&#039; );
+
+				// Set the customer location to subscription billing location
+				foreach ( array( &#039;country&#039;, &#039;state&#039;, &#039;postcode&#039; ) as $address_property ) {
+					$subscription_address = $subscription-&gt;{&quot;get_billing_$address_property&quot;}();
+
+					if ( $subscription_address ) {
+						WC()-&gt;customer-&gt;{&quot;set_billing_$address_property&quot;}( $subscription_address );
+					}
+				}
+
+				wc_get_template( &#039;checkout/form-change-payment-method.php&#039;, array( &#039;subscription&#039; =&gt; $subscription ), &#039;&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory( &#039;templates/&#039; ) );
+			}
+		}
+
+		if ( false === $valid_request ) {
+			wc_print_notices();
+		}
+	}
+
+
+	/**
+	 * Validates the request to change a subscription&#039;s payment method.
+	 *
+	 * Will display a customer facing notice if the request is invalid.
+	 *
+	 * @since 3.0.0
+	 *
+	 * @param WC_Subscription $subscription
+	 * @return bool Whether the request is valid or not.
+	 */
+	private static function validate_change_payment_request( $subscription ) {
+		$is_valid = true;
+
+		if ( wp_verify_nonce( $_GET[&#039;_wpnonce&#039;] ) === false ) {
+			$is_valid = false;
+			wc_add_notice( __( &#039;There was an error with your request. Please try again.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+		} elseif ( empty( $subscription ) ) {
+			$is_valid = false;
+			wc_add_notice( __( &#039;Invalid Subscription.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+		} elseif ( ! current_user_can( &#039;edit_shop_subscription_payment_method&#039;, $subscription-&gt;get_id() ) ) {
+			$is_valid = false;
+			wc_add_notice( __( &#039;That doesn\&#039;t appear to be one of your subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+		} elseif ( ! $subscription-&gt;can_be_updated_to( &#039;new-payment-method&#039; ) ) {
+			$is_valid = false;
+			wc_add_notice( __( &#039;The payment method can not be changed for that subscription.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+		} elseif ( $subscription-&gt;get_order_key() !== $_GET[&#039;key&#039;] ) {
+			$is_valid = false;
+			wc_add_notice( __( &#039;Invalid order.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;error&#039; );
+		}
+
+		return $is_valid;
+	}
+
+	/**
+	 * Add a &quot;Change Payment Method&quot; button to the &quot;My Subscriptions&quot; table.
+	 *
+	 * @param array $all_actions The $subscription_key =&gt; $actions array with all actions that will be displayed for a subscription on the &quot;My Subscriptions&quot; table
+	 * @param array $subscriptions All of a given users subscriptions that will be displayed on the &quot;My Subscriptions&quot; table
+	 * @since 1.4
+	 */
+	public static function change_payment_method_button( $actions, $subscription ) {
+
+		if ( $subscription-&gt;can_be_updated_to( &#039;new-payment-method&#039; ) ) {
+
+			if ( $subscription-&gt;has_payment_gateway() &amp;&amp; wc_get_payment_gateway_by_order( $subscription )-&gt;supports( &#039;subscriptions&#039; ) ) {
+				$action_name = _x( &#039;Change payment&#039;, &#039;label on button, imperative&#039;, &#039;woocommerce-subscriptions&#039; );
+			} else {
+				$action_name = _x( &#039;Add payment&#039;, &#039;label on button, imperative&#039;, &#039;woocommerce-subscriptions&#039; );
+			}
+
+			$actions[&#039;change_payment_method&#039;] = array(
+				&#039;url&#039;  =&gt; wp_nonce_url( add_query_arg( array( &#039;change_payment_method&#039; =&gt; $subscription-&gt;get_id() ), $subscription-&gt;get_checkout_payment_url() ) ),
+				&#039;name&#039; =&gt; $action_name,
+			);
+		}
+
+		return $actions;
+	}
+
+	/**
+	 * Process the change payment form.
+	 *
+	 * Based on the @see woocommerce_pay_action() function.
+	 *
+	 * @access public
+	 * @return void
+	 * @since 1.4
+	 */
+	public static function change_payment_method_via_pay_shortcode() {
+
+		if ( ! isset( $_POST[&#039;_wcsnonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_change_payment_method&#039; ) ) {
+			return;
+		}
+
+		$subscription_id = absint( $_POST[&#039;woocommerce_change_payment&#039;] );
+		$subscription = wcs_get_subscription( $subscription_id );
+
+		do_action( &#039;woocommerce_subscription_change_payment_method_via_pay_shortcode&#039;, $subscription );
+
+		ob_start();
+
+		if ( $subscription-&gt;get_order_key() == $_GET[&#039;key&#039;] ) {
+
+			$subscription_billing_country  = $subscription-&gt;get_billing_country();
+			$subscription_billing_state    = $subscription-&gt;get_billing_state();
+			$subscription_billing_postcode = $subscription-&gt;get_billing_postcode();
+			$subscription_billing_city     = $subscription-&gt;get_billing_postcode();
+
+			// Set customer location to order location
+			if ( $subscription_billing_country ) {
+				$setter = is_callable( array( WC()-&gt;customer, &#039;set_billing_country&#039; ) ) ? &#039;set_billing_country&#039; : &#039;set_country&#039;;
+				WC()-&gt;customer-&gt;$setter( $subscription_billing_country );
+			}
+			if ( $subscription_billing_state ) {
+				$setter = is_callable( array( WC()-&gt;customer, &#039;set_billing_state&#039; ) ) ? &#039;set_billing_state&#039; : &#039;set_state&#039;;
+				WC()-&gt;customer-&gt;$setter( $subscription_billing_state );
+			}
+			if ( $subscription_billing_postcode ) {
+				$setter = is_callable( array( WC()-&gt;customer, &#039;set_billing_postcode&#039; ) ) ? &#039;set_billing_postcode&#039; : &#039;set_postcode&#039;;
+				WC()-&gt;customer-&gt;$setter( $subscription_billing_postcode );
+			}
+			if ( $subscription_billing_city ) {
+				$setter = is_callable( array( WC()-&gt;customer, &#039;set_billing_city&#039; ) ) ? &#039;set_billing_city&#039; : &#039;set_city&#039;;
+				WC()-&gt;customer-&gt;$setter( $subscription_billing_city );
+			}
+
+			// Update payment method
+			$new_payment_method = wc_clean( $_POST[&#039;payment_method&#039;] );
+			$notice = $subscription-&gt;has_payment_gateway() ? __( &#039;Payment method updated.&#039;, &#039;woocommerce-subscriptions&#039; ) : __( &#039;Payment method added.&#039;, &#039;woocommerce-subscriptions&#039; );
+
+			// Allow some payment gateways which can&#039;t process the payment immediately, like PayPal, to do it later after the payment/sign-up is confirmed
+			if ( apply_filters( &#039;woocommerce_subscriptions_update_payment_via_pay_shortcode&#039;, true, $new_payment_method, $subscription ) ) {
+				self::update_payment_method( $subscription, $new_payment_method );
+			}
+
+			$available_gateways = WC()-&gt;payment_gateways-&gt;get_available_payment_gateways();
+
+			// Validate
+			$available_gateways[ $new_payment_method ]-&gt;validate_fields();
+
+			// Process payment for the new method (with a $0 order total)
+			if ( wc_notice_count( &#039;error&#039; ) == 0 ) {
+
+				$result = $available_gateways[ $new_payment_method ]-&gt;process_payment( $subscription-&gt;get_id() );
+
+				if ( &#039;success&#039; == $result[&#039;result&#039;] &amp;&amp; wc_get_page_permalink( &#039;myaccount&#039; ) == $result[&#039;redirect&#039;] ) {
+					$result[&#039;redirect&#039;] = $subscription-&gt;get_view_order_url();
+				}
+
+				$result = apply_filters( &#039;woocommerce_subscriptions_process_payment_for_change_method_via_pay_shortcode&#039;, $result, $subscription );
+
+				if ( &#039;success&#039; != $result[&#039;result&#039;] ) {
+					return;
+				}
+
+				$subscription-&gt;set_requires_manual_renewal( false );
+				$subscription-&gt;save();
+
+				// Does the customer want all current subscriptions to be updated to this payment method?
+				if (
+					isset( $_POST[&#039;update_all_subscriptions_payment_method&#039;] )
+					&amp;&amp; $_POST[&#039;update_all_subscriptions_payment_method&#039;]
+					&amp;&amp; WC_Subscriptions_Change_Payment_Gateway::can_update_all_subscription_payment_methods( $available_gateways[ $new_payment_method ], $subscription )
+				) {
+					// Allow some payment gateways which can&#039;t process the payment immediately, like PayPal, to do it later after the payment/sign-up is confirmed
+					if ( ! apply_filters( &#039;woocommerce_subscriptions_update_payment_via_pay_shortcode&#039;, true, $new_payment_method, $subscription ) ) {
+						$subscription-&gt;update_meta_data( &#039;_delayed_update_payment_method_all&#039;, $new_payment_method );
+						$subscription-&gt;save();
+						$notice = __( &#039;Payment method updated for all your current subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; );
+					} elseif ( self::update_all_payment_methods_from_subscription( $subscription, $new_payment_method ) ) {
+						$notice = __( &#039;Payment method updated for all your current subscriptions.&#039;, &#039;woocommerce-subscriptions&#039; );
+					}
+				}
+
+				// Redirect to success/confirmation/payment page
+				wc_add_notice( $notice );
+				wp_redirect( $result[&#039;redirect&#039;] );
+				exit;
+			}
+		}
+
+		ob_get_clean();
+	}
+
+	/**
+	 * Update the recurring payment method on all current subscriptions to the payment method on this subscription.
+	 *
+	 * @param  WC_Subscription $subscription An instance of a WC_Subscription object.
+	 * @param  string $new_payment_method The ID of the new payment method.
+	 * @return bool Were other subscriptions updated.
+	 * @since 2.5.0
+	 */
+	public static function update_all_payment_methods_from_subscription( $subscription, $new_payment_method ) {
+
+		// Require the delayed payment update method to match the current gateway if it is set
+		if ( self::will_subscription_update_all_payment_methods( $subscription ) ) {
+			if ( $subscription-&gt;get_meta( &#039;_delayed_update_payment_method_all&#039; ) != $new_payment_method ) {
+				return false;
+			}
+
+			$subscription-&gt;delete_meta_data( &#039;_delayed_update_payment_method_all&#039; );
+			$subscription-&gt;save_meta_data();
+		}
+
+		$payment_meta_table = WCS_Payment_tokens::get_subscription_payment_meta( $subscription, $new_payment_method );
+		if ( ! is_array( $payment_meta_table ) ) {
+			return false;
+		}
+
+		$subscription_ids = WCS_Customer_Store::instance()-&gt;get_users_subscription_ids( $subscription-&gt;get_customer_id() );
+
+		foreach ( $subscription_ids as $subscription_id ) {
+			// Skip the subscription providing the new payment meta.
+			if ( $subscription-&gt;get_id() == $subscription_id ) {
+				continue;
+			}
+
+			$user_subscription = wcs_get_subscription( $subscription_id );
+			// Skip if subscription&#039;s current payment method is not supported
+			if ( ! $user_subscription-&gt;payment_method_supports( &#039;subscription_cancellation&#039; ) ) {
+				continue;
+			}
+
+			// Skip if there are no remaining payments or the subscription is not current.
+			if ( $user_subscription-&gt;get_time( &#039;next_payment&#039; ) &lt;= 0 || ! $user_subscription-&gt;has_status( array( &#039;active&#039;, &#039;on-hold&#039; ) ) ) {
+				continue;
+			}
+
+			self::update_payment_method( $user_subscription, $new_payment_method, $payment_meta_table );
+
+			$user_subscription-&gt;set_requires_manual_renewal( false );
+			$user_subscription-&gt;save();
+		}
+
+		return true;
+	}
+
+	/**
+	 * Check whether a payment method supports updating all current subscriptions&#039; payment method.
+	 *
+	 * @param  WC_Payment_Gateway $gateway The payment gateway to check.
+	 * @param  WC_Subscription $subscription An instance of a WC_Subscription object.
+	 * @return bool Gateway supports updating all current subscriptions.
+	 * @since 2.5.0
+	 */
+	public static function can_update_all_subscription_payment_methods( $gateway, $subscription ) {
+
+		if ( $gateway-&gt;supports( &#039;subscription_payment_method_delayed_change&#039; ) ) {
+			return true;
+		}
+
+		if ( ! $gateway-&gt;supports( &#039;subscription_payment_method_change_admin&#039; ) ) {
+			return false;
+		}
+
+		if ( apply_filters( &#039;woocommerce_subscriptions_update_payment_via_pay_shortcode&#039;, true, $gateway-&gt;id, $subscription ) ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Check whether a subscription will update all current subscriptions&#039; payment method.
+	 *
+	 * @param  WC_Subscription $subscription An instance of a WC_Subscription object.
+	 * @return bool Subscription will update all current subscriptions.
+	 * @since 2.5.0
+	 */
+	public static function will_subscription_update_all_payment_methods( $subscription ) {
+		if ( ! wcs_is_subscription( $subscription ) ) {
+			return false;
+		}
+
+		return (bool) $subscription-&gt;get_meta( &#039;_delayed_update_payment_method_all&#039; );
+	}
+
+	/**
+	 * Update the recurring payment method on a subscription order.
+	 *
+	 * @param WC_Subscription $subscription An instance of a WC_Subscription object.
+	 * @param string $new_payment_method The ID of the new payment method.
+	 * @param array  $new_payment_method_meta The meta for the new payment method. Optional. Default false.
+	 * @since 1.4
+	 */
+	public static function update_payment_method( $subscription, $new_payment_method, $new_payment_method_meta = false ) {
+
+		$old_payment_method       = $subscription-&gt;get_payment_method();
+		$old_payment_method_title = $subscription-&gt;get_payment_method_title();
+		$available_gateways       = WC()-&gt;payment_gateways-&gt;get_available_payment_gateways(); // Also inits all payment gateways to make sure that hooks are attached correctly
+		$payment_gateways_handler = WC_Subscriptions_Core_Plugin::instance()-&gt;get_gateways_handler_class();
+
+		do_action( &#039;woocommerce_subscriptions_pre_update_payment_method&#039;, $subscription, $new_payment_method, $old_payment_method );
+
+		// Make sure the subscription is cancelled with the current gateway
+		$payment_gateways_handler::trigger_gateway_status_updated_hook( $subscription, &#039;cancelled&#039; );
+
+		// Update meta
+		if ( isset( $available_gateways[ $new_payment_method ] ) ) {
+			$new_payment_method_title = $available_gateways[ $new_payment_method ]-&gt;get_title();
+		} else {
+			$new_payment_method_title = &#039;&#039;;
+		}
+
+		if ( empty( $old_payment_method_title ) ) {
+			$old_payment_method_title = $old_payment_method;
+		}
+
+		if ( empty( $new_payment_method_title ) ) {
+			$new_payment_method_title = $new_payment_method;
+		}
+
+		// Changing the payment method can throw an exception via set_payment_method() -&gt; set_payment_method_meta(). Catch it and display an error.
+		try {
+			$subscription-&gt;set_payment_method( $new_payment_method, $new_payment_method_meta );
+			$subscription-&gt;set_payment_method_title( $new_payment_method_title );
+			$subscription-&gt;update_meta_data( &#039;_old_payment_method&#039;, $old_payment_method );
+			$subscription-&gt;update_meta_data( &#039;_old_payment_method_title&#039;, $old_payment_method_title );
+
+			// Allow third-parties to filter the payment method titles used in the subscription note.
+			$old_payment_method_title = (string) apply_filters( &#039;woocommerce_subscription_note_old_payment_method_title&#039;, $old_payment_method_title, $old_payment_method, $subscription );
+			$new_payment_method_title = (string) apply_filters( &#039;woocommerce_subscription_note_new_payment_method_title&#039;, $new_payment_method_title, $new_payment_method, $subscription );
+
+			// Log change on order
+			// translators: 1: old payment title, 2: new payment title.
+			$subscription-&gt;add_order_note( sprintf( _x( &#039;Payment method changed from &quot;%1$s&quot; to &quot;%2$s&quot; by the subscriber.&#039;, &#039;%1$s: old payment title, %2$s: new payment title&#039;, &#039;woocommerce-subscriptions&#039; ), $old_payment_method_title, $new_payment_method_title ) );
+
+			$subscription-&gt;save();
+
+			do_action( &#039;woocommerce_subscription_payment_method_updated&#039;, $subscription, $new_payment_method, $old_payment_method );
+			do_action( &#039;woocommerce_subscription_payment_method_updated_to_&#039; . $new_payment_method, $subscription, $old_payment_method );
+
+			if ( $old_payment_method ) {
+				do_action( &#039;woocommerce_subscription_payment_method_updated_from_&#039; . $old_payment_method, $subscription, $new_payment_method );
+			}
+		} catch ( Exception $e ) {
+			$message = __( &quot;An error occurred updating your subscription&#039;s payment method. Please contact us for assistance.&quot;, &#039;woocommerce-subscriptions&#039; );
+
+			if ( ! wc_has_notice( $message, &#039;error&#039; ) ) {
+				wc_add_notice( $message, &#039;error&#039; );
+			}
+
+			// Add an error notice specific to this error if it hasn&#039;t been added yet. This will generate the unique list of errors which occured.
+			$error_message = sprintf(
+				__( &#039;%1$sError:%2$s %3$s&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;&lt;strong&gt;&#039;,
+				&#039;&lt;/strong&gt;&#039;,
+				$e-&gt;getMessage()
+			);
+
+			if ( ! wc_has_notice( $error_message, &#039;error&#039; ) ) {
+				wc_add_notice( $error_message, &#039;error&#039; );
+			}
+		}
+	}
+
+	/**
+	 * Only display gateways which support changing payment method when paying for a failed renewal order or
+	 * when requesting to change the payment method.
+	 *
+	 * @param array $available_gateways The payment gateways which are currently being allowed.
+	 * @since 1.4
+	 */
+	public static function get_available_payment_gateways( $available_gateways ) {
+		$is_change_payment_method_request = isset( $_GET[&#039;change_payment_method&#039;] );
+
+		// If we&#039;re on a order-pay page but not changing a subscription&#039;s payment method, exit early - we don&#039;t want to filter the available payment gateways while the customer pays for an order.
+		if ( ! $is_change_payment_method_request &amp;&amp; is_wc_endpoint_url( &#039;order-pay&#039; ) ) {
+			return $available_gateways;
+		}
+
+		$renewal_order_cart_item             = wcs_cart_contains_failed_renewal_order_payment();
+		$cart_contains_failed_renewal        = (bool) $renewal_order_cart_item;
+		$cart_contains_failed_manual_renewal = false;
+
+		/**
+		 * If there&#039;s no change payment request and the cart contains a failed renewal order, check if the subscription is manual.
+		 *
+		 * We update failing, non-manual subscriptions in @see WC_Subscriptions_Change_Payment_Gateway::change_failing_payment_method() so we
+		 * don&#039;t need to apply our available payment gateways filter if the subscription is manual.
+		 */
+		if ( ! $is_change_payment_method_request &amp;&amp; $cart_contains_failed_renewal ) {
+			$subscription = wcs_get_subscription( $renewal_order_cart_item[&#039;subscription_renewal&#039;][&#039;subscription_id&#039;] );
+			$cart_contains_failed_manual_renewal = $subscription-&gt;is_manual();
+		}
+
+		if ( apply_filters( &#039;wcs_payment_gateways_change_payment_method&#039;, $is_change_payment_method_request || ( $cart_contains_failed_renewal &amp;&amp; ! $cart_contains_failed_manual_renewal ) ) ) {
+			foreach ( $available_gateways as $gateway_id =&gt; $gateway ) {
+				if ( true !== $gateway-&gt;supports( &#039;subscription_payment_method_change_customer&#039; ) ) {
+					unset( $available_gateways[ $gateway_id ] );
+				}
+			}
+		}
+
+		return $available_gateways;
+	}
+
+	/**
+	 * Make sure certain totals are set to 0 when the request is to change the payment method without charging anything.
+	 *
+	 * @since 1.4
+	 */
+	public static function maybe_zero_total( $total, $subscription ) {
+		global $wp;
+
+		if ( ! empty( $_POST[&#039;_wcsnonce&#039;] ) &amp;&amp; wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_change_payment_method&#039; ) &amp;&amp; isset( $_POST[&#039;woocommerce_change_payment&#039;] ) &amp;&amp; wcs_is_subscription( $subscription ) &amp;&amp; $subscription-&gt;get_order_key() == $_GET[&#039;key&#039;] &amp;&amp; $subscription-&gt;get_id() == absint( $_POST[&#039;woocommerce_change_payment&#039;] ) ) {
+			$total = 0;
+		} elseif ( ! self::$is_request_to_change_payment &amp;&amp; isset( $wp-&gt;query_vars[&#039;order-pay&#039;] ) &amp;&amp; wcs_is_subscription( absint( $wp-&gt;query_vars[&#039;order-pay&#039;] ) ) ) {
+			// if the request to pay for the order belongs to a subscription but there&#039;s no GET params for changing payment method, the receipt page is being used to collect credit card details so we still need to $0 the total
+			$total = 0;
+		}
+
+		return $total;
+	}
+
+	/**
+	 * Redirect back to the &quot;My Account&quot; page instead of the &quot;Thank You&quot; page after changing the payment method.
+	 *
+	 * @since 1.4
+	 */
+	public static function get_return_url( $return_url ) {
+
+		if ( ! empty( $_POST[&#039;_wcsnonce&#039;] ) &amp;&amp; wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_change_payment_method&#039; ) &amp;&amp; isset( $_POST[&#039;woocommerce_change_payment&#039;] ) ) {
+			$return_url = get_permalink( wc_get_page_id( &#039;myaccount&#039; ) );
+		}
+
+		return $return_url;
+	}
+
+	/**
+	 * Update the recurring payment method for a subscription after a customer has paid for a failed renewal order
+	 * (which usually failed because of an issue with the existing payment, like an expired card or token).
+	 *
+	 * Also trigger a hook for payment gateways to update any meta on the original order for a subscription.
+	 *
+	 * @param WC_Order $renewal_order The order which recorded the successful payment (to make up for the failed automatic payment).
+	 * @param WC_Order $original_order The original order in which the subscription was purchased.
+	 * @since 1.4
+	 */
+	public static function change_failing_payment_method( $renewal_order, $subscription ) {
+
+		if ( ! $subscription-&gt;is_manual() ) {
+
+			if ( ! empty( $_POST[&#039;_wcsnonce&#039;] ) &amp;&amp; wp_verify_nonce( $_POST[&#039;_wcsnonce&#039;], &#039;wcs_change_payment_method&#039; ) &amp;&amp; isset( $_POST[&#039;payment_method&#039;] ) ) {
+				$new_payment_method = wc_clean( $_POST[&#039;payment_method&#039;] );
+			} else {
+				$new_payment_method = wcs_get_objects_property( $renewal_order, &#039;payment_method&#039; );
+			}
+
+			self::update_payment_method( $subscription, $new_payment_method );
+
+			do_action( &#039;woocommerce_subscription_failing_payment_method_updated&#039;, $subscription, $renewal_order );
+			do_action( &#039;woocommerce_subscription_failing_payment_method_updated_&#039; . $new_payment_method, $subscription, $renewal_order );
+		}
+	}
+
+	/**
+	 * Add a &#039;new-payment-method&#039; handler to the @see WC_Subscription::can_be_updated_to() function
+	 * to determine whether the recurring payment method on a subscription can be changed.
+	 *
+	 * For the recurring payment method to be changeable, the subscription must be active, have future (automatic) payments
+	 * and use a payment gateway which allows the subscription to be cancelled.
+	 *
+	 * @param bool            $subscription_can_be_changed Flag of whether the subscription can be changed.
+	 * @param WC_Subscription $subscription The subscription to check.
+	 * @return bool Flag indicating whether the subscription payment method can be updated.
+	 * @since 1.4
+	 */
+	public static function can_subscription_be_updated_to_new_payment_method( $subscription_can_be_changed, $subscription ) {
+
+		// Don&#039;t allow if automatic payments are disabled and the toggle is also disabled.
+		if ( wcs_is_manual_renewal_required() &amp;&amp; ! WCS_My_Account_Auto_Renew_Toggle::is_enabled() ) {
+			return false;
+		}
+
+		// If there&#039;s no recurring payment, there&#039;s no need to add or update the payment method. Use the &#039;edit&#039; context so we check the unfiltered total.
+		if ( $subscription-&gt;get_total( &#039;edit&#039; ) == 0 ) {
+			return false;
+		}
+
+		// Don&#039;t allow if no gateways support changing methods.
+		$payment_gateways_handler = WC_Subscriptions_Core_Plugin::instance()-&gt;get_gateways_handler_class();
+		if ( ! $payment_gateways_handler::one_gateway_supports( &#039;subscription_payment_method_change_customer&#039; ) ) {
+			return false;
+		}
+
+		// Don&#039;t allow if there are no remaining payments or the subscription is not active.
+		if ( $subscription-&gt;get_time( &#039;next_payment&#039; ) &lt;= 0 || ! $subscription-&gt;has_status( &#039;active&#039; ) ) {
+			return false;
+		}
+
+		// Don&#039;t allow on subscription that doesn&#039;t support changing methods.
+		if ( ! $subscription-&gt;payment_method_supports( &#039;subscription_cancellation&#039; ) ) {
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * Replace a page title with the endpoint title
+	 *
+	 * @param  string $title
+	 * @return string
+	 * @since 2.0
+	 */
+	public static function change_payment_method_page_title( $title ) {
+
+		global $wp;
+
+		// Skip if not on checkout pay page or not a payment change request.
+		if ( ! self::$is_request_to_change_payment || ! is_main_query() || ! in_the_loop() || ! is_page() || ! is_checkout_pay_page() ) {
+			return $title;
+		}
+
+		$subscription = wcs_get_subscription( absint( $wp-&gt;query_vars[&#039;order-pay&#039;] ) );
+		if ( ! $subscription ) {
+			return $title;
+		}
+
+		return self::get_change_payment_method_page_title( $subscription );
+	}
+
+	/**
+	 * Replace the breadcrumbs structure to add a link to the subscription page and change the current page to &quot;Change Payment Method&quot;
+	 *
+	 * @param  array $crumbs
+	 * @return array
+	 * @since 2.4.2
+	 */
+	public static function change_payment_method_breadcrumb( $crumbs ) {
+
+		if ( is_main_query() &amp;&amp; is_page() &amp;&amp; is_checkout_pay_page() &amp;&amp; self::$is_request_to_change_payment ) {
+			global $wp_query;
+			$subscription = wcs_get_subscription( absint( $wp_query-&gt;query_vars[&#039;order-pay&#039;] ) );
+
+			if ( ! $subscription ) {
+				return $crumbs;
+			}
+
+			$crumbs[1] = array(
+				get_the_title( wc_get_page_id( &#039;myaccount&#039; ) ),
+				get_permalink( wc_get_page_id( &#039;myaccount&#039; ) ),
+			);
+
+			$crumbs[2] = array(
+				// translators: %s: order number.
+				sprintf( _x( &#039;Subscription #%s&#039;, &#039;hash before order number&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription-&gt;get_order_number() ),
+				esc_url( $subscription-&gt;get_view_order_url() ),
+			);
+
+			$crumbs[3] = array(
+				self::get_change_payment_method_page_title( $subscription ),
+				&#039;&#039;,
+			);
+		}
+
+		return $crumbs;
+	}
+
+	/**
+	 * Get the Change Payment Method page title (also used for the page breadcrumb)
+	 *
+	 * @since 4.0.0
+	 * @param WC_Subscription $subscription
+	 * @return string
+	 */
+	public static function get_change_payment_method_page_title( $subscription ) {
+		if ( $subscription-&gt;has_payment_gateway() ) {
+			$title = _x( &#039;Change payment method&#039;, &#039;the page title of the change payment method form&#039;, &#039;woocommerce-subscriptions&#039; );
+		} else {
+			$title = _x( &#039;Add payment method&#039;, &#039;the page title of the add payment method form&#039;, &#039;woocommerce-subscriptions&#039; );
+		}
+
+		return apply_filters( &#039;woocommerce_subscriptions_change_payment_method_page_title&#039;, $title, $subscription );
+	}
+
+	/**
+	 * When processing a change_payment_method request on a subscription that has a failed or pending renewal,
+	 * we don&#039;t want the `$order-&gt;needs_payment()` check inside WC_Shortcode_Checkout::order_pay() to pass.
+	 * This is causing `$gateway-&gt;payment_fields()` to be called multiple times.
+	 *
+	 * @param bool $needs_payment
+	 * @param WC_Subscription $subscription
+	 * @return bool
+	 * @since 2.0.7
+	 */
+	public static function maybe_override_needs_payment( $needs_payment ) {
+
+		if ( $needs_payment &amp;&amp; self::$is_request_to_change_payment ) {
+			$needs_payment = false;
+		}
+
+		return $needs_payment;
+	}
+
+	/**
+	 * Display a login form on the change payment method page if the customer isn&#039;t logged in.
+	 *
+	 * @param string $content The default HTML page content.
+	 * @return string $content.
+	 * @since 2.5.0
+	 */
+	public static function maybe_request_log_in( $content ) {
+		global $wp;
+
+		if ( ! self::$is_request_to_change_payment || is_user_logged_in() || ! isset( $wp-&gt;query_vars[&#039;order-pay&#039;] ) ) {
+			return $content;
+		}
+
+		$subscription = wcs_get_subscription( absint( $wp-&gt;query_vars[&#039;order-pay&#039;] ) );
+
+		if ( $subscription ) {
+			wc_add_notice( __( &#039;Please log in to your account below to choose a new payment method for your subscription.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;notice&#039; );
+
+			ob_start();
+			woocommerce_login_form( array(
+				&#039;redirect&#039; =&gt; $subscription-&gt;get_change_payment_method_url(),
+				&#039;message&#039;  =&gt; wc_print_notices( true ),
+			) );
+
+			$content = ob_get_clean();
+		}
+
+		return $content;
+	}
+
+	/** Deprecated Functions **/
+
+	/**
+	 * Update the recurring payment method on a subscription order.
+	 *
+	 * @param array $available_gateways The payment gateways which are currently being allowed.
+	 * @since 1.4
+	 * @deprecated 2.0
+	 */
+	public static function update_recurring_payment_method( $subscription_key, $order, $new_payment_method ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, __CLASS__ . &#039;::update_payment_method()&#039; );
+		self::update_payment_method( wcs_get_subscription_from_key( $subscription_key ), $new_payment_method );
+	}
+
+	/**
+	 * Keep a record of an order&#039;s dates if we&#039;re marking it as completed during a request to change the payment method.
+	 *
+	 * Deprecated as we now operate on a WC_Subscription object instead of the parent order, so we don&#039;t need to hack around date changes.
+	 *
+	 * @since 1.4
+	 * @deprecated 2.0
+	 */
+	public static function store_original_order_dates( $new_order_status, $subscription_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Restore an order&#039;s dates if we marked it as completed during a request to change the payment method.
+	 *
+	 * Deprecated as we now operate on a WC_Subscription object instead of the parent order, so we don&#039;t need to hack around date changes.
+	 *
+	 * @since 1.4
+	 * @deprecated 2.0
+	 */
+	public static function restore_original_order_dates( $order_id ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039; );
+	}
+
+	/**
+	 * Add a &#039;new-payment-method&#039; handler to the @see WC_Subscription::can_be_updated_to() function
+	 * to determine whether the recurring payment method on a subscription can be changed.
+	 *
+	 * For the recurring payment method to be changeable, the subscription must be active, have future (automatic) payments
+	 * and use a payment gateway which allows the subscription to be cancelled.
+	 *
+	 * @param bool $subscription_can_be_changed Flag of whether the subscription can be changed to
+	 * @param string $new_status_or_meta The status or meta data you want to change th subscription to. Can be &#039;active&#039;, &#039;on-hold&#039;, &#039;cancelled&#039;, &#039;expired&#039;, &#039;trash&#039;, &#039;deleted&#039;, &#039;failed&#039;, &#039;new-payment-date&#039; or some other value attached to the &#039;woocommerce_can_subscription_be_changed_to&#039; filter.
+	 * @param object $args Set of values used in @see WC_Subscriptions_Manager::can_subscription_be_changed_to() for determining if a subscription can be changes, include:
+	 *    &#039;subscription_key&#039;           string A subscription key of the form created by @see WC_Subscriptions_Manager::get_subscription_key()
+	 *    &#039;subscription&#039;               array Subscription of the form returned by @see WC_Subscriptions_Manager::get_subscription()
+	 *    &#039;user_id&#039;                    int The ID of the subscriber.
+	 *    &#039;order&#039;                      WC_Order The order which recorded the successful payment (to make up for the failed automatic payment).
+	 *    &#039;payment_gateway&#039;            WC_Payment_Gateway The subscription&#039;s recurring payment gateway
+	 *    &#039;order_uses_manual_payments&#039; bool A boolean flag indicating whether the subscription requires manual renewal payment.
+	 * @since 1.4
+	 */
+	public static function can_subscription_be_changed_to( $subscription_can_be_changed, $new_status_or_meta, $args ) {
+		_deprecated_function( __METHOD__, &#039;2.0&#039;, __CLASS__ . &#039;::can_subscription_be_updated_to_new_payment_method()&#039; );
+
+		if ( &#039;new-payment-method&#039; === $new_status_or_meta ) {
+			$subscription_can_be_changed = wcs_get_subscription_from_key( $args-&gt;subscription_key )-&gt;can_be_updated_to( &#039;new-payment-method&#039; );
+		}
+
+		return $subscription_can_be_changed;
+	}
+
+	/**
+	 * Attach WooCommerce version dependent hooks
+	 *
+	 * @since 1.0.0
+	 *
+	 * @deprecated 1.6.4
+	 */
+	public static function attach_dependant_hooks() {
+		_deprecated_function( __METHOD__, &#039;1.6.4&#039; );
+
+		if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+			// If we&#039;re changing the payment method, we want to make sure a number of totals return $0 (to prevent payments being processed now)
+			add_filter( &#039;woocommerce_order_amount_total&#039;, __CLASS__ . &#039;::maybe_zero_total&#039;, 11, 2 );
+		} else {
+			// If we&#039;re changing the payment method, we want to make sure a number of totals return $0 (to prevent payments being processed now)
+			add_filter( &#039;woocommerce_subscription_get_total&#039;, __CLASS__ . &#039;::maybe_zero_total&#039;, 11, 2 );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

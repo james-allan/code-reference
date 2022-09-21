@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerce.html">WooCommerce</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-limiter.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * A class to make it possible to limit a subscription product.
+ *
+ * @package WooCommerce Subscriptions
+ * @category Class
+ * @since 2.1
+ */
+class WCS_Limiter {
+
+	/* cache whether a given product is purchasable or not to save running lots of queries for the same product in the same request */
+	protected static $is_purchasable_cache = array();
+
+	/* cache the check on whether the session has an order awaiting payment for a given product */
+	protected static $order_awaiting_payment_for_product = array();
+
+	public static function init() {
+
+		// Add limiting subscriptions options on edit product page
+		add_action( &#039;woocommerce_product_options_advanced&#039;, __CLASS__ . &#039;::admin_edit_product_fields&#039; );
+
+		// Only attach limited subscription purchasability logic on the front end or during checkout block requests.
+		if ( wcs_is_frontend_request() || wcs_is_checkout_blocks_api_request() ) {
+			add_filter( &#039;woocommerce_subscription_is_purchasable&#039;, __CLASS__ . &#039;::is_purchasable_switch&#039;, 12, 2 );
+			add_filter( &#039;woocommerce_subscription_variation_is_purchasable&#039;, __CLASS__ . &#039;::is_purchasable_switch&#039;, 12, 2 );
+			add_filter( &#039;woocommerce_subscription_is_purchasable&#039;, __CLASS__ . &#039;::is_purchasable_renewal&#039;, 12, 2 );
+			add_filter( &#039;woocommerce_subscription_variation_is_purchasable&#039;, __CLASS__ . &#039;::is_purchasable_renewal&#039;, 12, 2 );
+			add_filter( &#039;woocommerce_valid_order_statuses_for_order_again&#039;, array( __CLASS__, &#039;filter_order_again_statuses_for_limited_subscriptions&#039; ) );
+		}
+	}
+
+	/**
+	 * Adds limit options to &#039;Edit Product&#039; screen.
+	 *
+	 * @since 2.1 Moved from WC_Subscriptions_Admin
+	 */
+	public static function admin_edit_product_fields() {
+		global $post;
+
+		echo &#039;&lt;div class=&quot;options_group limit_subscription show_if_subscription show_if_variable-subscription hidden&quot;&gt;&#039;;
+
+		// Only one Subscription per customer
+		woocommerce_wp_select(
+			array(
+				&#039;id&#039;          =&gt; &#039;_subscription_limit&#039;,
+				&#039;label&#039;       =&gt; __( &#039;Limit subscription&#039;, &#039;woocommerce-subscriptions&#039; ),
+				// translators: placeholders are opening and closing link tags
+				&#039;description&#039; =&gt; sprintf( __( &#039;Only allow a customer to have one subscription to this product. %1$sLearn more%2$s.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;http://docs.woocommerce.com/document/subscriptions/store-manager-guide/#limit-subscription&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ),
+				&#039;options&#039;     =&gt; array(
+					&#039;no&#039;     =&gt; __( &#039;Do not limit&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;active&#039; =&gt; __( &#039;Limit to one active subscription&#039;, &#039;woocommerce-subscriptions&#039; ),
+					&#039;any&#039;    =&gt; __( &#039;Limit to one of any status&#039;, &#039;woocommerce-subscriptions&#039; ),
+				),
+			)
+		);
+		echo &#039;&lt;/div&gt;&#039;;
+
+		do_action( &#039;woocommerce_subscriptions_product_options_advanced&#039; );
+	}
+
+	/**
+	 * Canonical is_purchasable method to be called by product classes.
+	 *
+	 * @since 2.1
+	 * @param bool $purchasable Whether the product is purchasable as determined by parent class
+	 * @param mixed $product The product in question to be checked if it is purchasable.
+	 *
+	 * @return bool
+	 */
+	public static function is_purchasable( $purchasable, $product ) {
+		switch ( $product-&gt;get_type() ) {
+			case &#039;subscription&#039;:
+			case &#039;variable-subscription&#039;:
+				if ( true === $purchasable &amp;&amp; false === self::is_purchasable_product( $purchasable, $product ) ) {
+					$purchasable = false;
+				}
+				break;
+			case &#039;subscription_variation&#039;:
+				$variable_product = wc_get_product( $product-&gt;get_parent_id() );
+
+				if ( &#039;no&#039; != wcs_get_product_limitation( $variable_product ) &amp;&amp; ! empty( WC()-&gt;cart-&gt;cart_contents ) &amp;&amp; ! wcs_is_order_received_page() &amp;&amp; ! wcs_is_paypal_api_page() ) {
+
+					// When mixed checkout is disabled, the variation is replaceable
+					if ( &#039;no&#039; === get_option( WC_Subscriptions_Admin::$option_prefix . &#039;_multiple_purchase&#039;, &#039;no&#039; ) ) {
+						$purchasable = true;
+					} else { // When mixed checkout is enabled
+						foreach ( WC()-&gt;cart-&gt;cart_contents as $cart_item ) {
+							// If the variable product is limited, it can&#039;t be purchased if it is the same variation
+							if ( $product-&gt;get_parent_id() == wcs_get_objects_property( $cart_item[&#039;data&#039;], &#039;parent_id&#039; ) &amp;&amp; $product-&gt;get_id() != $cart_item[&#039;data&#039;]-&gt;get_id() ) {
+								$purchasable = false;
+								break;
+							}
+						}
+					}
+				}
+				break;
+		}
+		return $purchasable;
+	}
+
+
+	/**
+	 * If a product is limited and the customer already has a subscription, mark it as not purchasable.
+	 *
+	 * @since 2.1 Moved from WC_Subscriptions_Product
+	 * @return bool
+	 */
+	public static function is_purchasable_product( $is_purchasable, $product ) {
+
+		// Set up cache
+		if ( ! isset( self::$is_purchasable_cache[ $product-&gt;get_id() ] ) ) {
+			self::$is_purchasable_cache[ $product-&gt;get_id() ] = array();
+		}
+
+		// Populate the cache if it hasn&#039;t been set yet.
+		if ( ! isset( self::$is_purchasable_cache[ $product-&gt;get_id() ][&#039;standard&#039;] ) ) {
+			self::$is_purchasable_cache[ $product-&gt;get_id() ][&#039;standard&#039;] = $is_purchasable;
+
+			if ( WC_Subscriptions_Product::is_subscription( $product-&gt;get_id() ) &amp;&amp; &#039;no&#039; != wcs_get_product_limitation( $product ) &amp;&amp; ! wcs_is_order_received_page() &amp;&amp; ! wcs_is_paypal_api_page() ) {
+
+				if ( wcs_is_product_limited_for_user( $product ) &amp;&amp; ! self::order_awaiting_payment_for_product( $product-&gt;get_id() ) ) {
+					self::$is_purchasable_cache[ $product-&gt;get_id() ][&#039;standard&#039;] = false;
+				}
+			}
+		}
+
+		return self::$is_purchasable_cache[ $product-&gt;get_id() ][&#039;standard&#039;];
+	}
+
+	/**
+	 * If a product is being marked as not purchasable because it is limited and the customer has a subscription,
+	 * but the current request is to switch the subscription, then mark it as purchasable.
+	 *
+	 * @since 2.1 Moved from WC_Subscriptions_Switcher::is_purchasable
+	 * @return bool
+	 */
+	public static function is_purchasable_switch( $is_purchasable, $product ) {
+		$product_key = wcs_get_canonical_product_id( $product );
+
+		// Set an empty cache if one isn&#039;t set yet.
+		if ( ! isset( self::$is_purchasable_cache[ $product_key ] ) ) {
+			self::$is_purchasable_cache[ $product_key ] = array();
+		}
+
+		// Exit early if we&#039;ve already determined this product&#039;s purchasability via switching.
+		if ( isset( self::$is_purchasable_cache[ $product_key ][&#039;switch&#039;] ) ) {
+			return self::$is_purchasable_cache[ $product_key ][&#039;switch&#039;];
+		}
+
+		// If the product is already purchasble, we don&#039;t need to determine it&#039;s purchasibility via switching/auto-switching.
+		if ( true === $is_purchasable || ! is_user_logged_in() || ! wcs_is_product_switchable_type( $product ) || ! WC_Subscriptions_Product::is_subscription( $product-&gt;get_id() ) ) {
+			self::$is_purchasable_cache[ $product_key ][&#039;switch&#039;] = $is_purchasable;
+			return self::$is_purchasable_cache[ $product_key ][&#039;switch&#039;];
+		}
+
+		$user_id            = get_current_user_id();
+		$product_limitation = wcs_get_product_limitation( $product );
+
+		if ( &#039;no&#039; == $product_limitation || ! wcs_user_has_subscription( $user_id, $product-&gt;get_id(), wcs_get_product_limitation( $product ) ) ) {
+			self::$is_purchasable_cache[ $product_key ][&#039;switch&#039;] = $is_purchasable;
+			return self::$is_purchasable_cache[ $product_key ][&#039;switch&#039;];
+		}
+
+		// Adding to cart
+		if ( isset( $_GET[&#039;switch-subscription&#039;] ) &amp;&amp; array_key_exists( $_GET[&#039;switch-subscription&#039;], self::get_user_subscriptions_to_product( $product, $user_id, $product_limitation ) ) ) {
+			$is_purchasable = true;
+		} else {
+			// If we have a variation product get the variable product&#039;s ID. We can&#039;t use the variation ID for comparison because this function sometimes receives a variable product.
+			$product_id    = $product-&gt;is_type( &#039;variation&#039; ) ? $product-&gt;get_parent_id() : $product-&gt;get_id();
+			$cart_contents = array();
+
+			// Use the version of the cart we have access to. We may need to look for switches in the cart being loaded from the session.
+			if ( wcs_cart_contains_switches() ) {
+				$cart_contents = WC()-&gt;cart-&gt;cart_contents;
+			} elseif ( isset( WC()-&gt;session-&gt;cart ) ) {
+				$cart_contents = WC()-&gt;session-&gt;cart;
+			}
+
+			// Check if the cart contains a switch for this specific product.
+			foreach ( $cart_contents as $cart_item ) {
+				if ( $product_id === $cart_item[&#039;product_id&#039;] &amp;&amp; isset( $cart_item[&#039;subscription_switch&#039;][&#039;subscription_id&#039;] ) &amp;&amp; array_key_exists( $cart_item[&#039;subscription_switch&#039;][&#039;subscription_id&#039;], self::get_user_subscriptions_to_product( $product, $user_id, $product_limitation ) ) ) {
+					$is_purchasable = true;
+					break;
+				}
+			}
+		}
+
+		self::$is_purchasable_cache[ $product_key ][&#039;switch&#039;] = $is_purchasable;
+		return self::$is_purchasable_cache[ $product_key ][&#039;switch&#039;];
+	}
+
+	/**
+	 * Determines whether a product is purchasable based on whether the cart is to resubscribe or renew.
+	 *
+	 * @since 2.1 Combines WCS_Cart_Renewal::is_purchasable and WCS_Cart_Resubscribe::is_purchasable
+	 * @return bool
+	 */
+	public static function is_purchasable_renewal( $is_purchasable, $product ) {
+		if ( false === $is_purchasable &amp;&amp; false === self::is_purchasable_product( $is_purchasable, $product ) ) {
+
+			// Resubscribe logic
+			if ( isset( $_GET[&#039;resubscribe&#039;] ) || false !== ( $resubscribe_cart_item = wcs_cart_contains_resubscribe() ) ) {
+				$subscription_id       = ( isset( $_GET[&#039;resubscribe&#039;] ) ) ? absint( $_GET[&#039;resubscribe&#039;] ) : $resubscribe_cart_item[&#039;subscription_resubscribe&#039;][&#039;subscription_id&#039;];
+				$subscription          = wcs_get_subscription( $subscription_id );
+
+				if ( false != $subscription &amp;&amp; $subscription-&gt;has_product( $product-&gt;get_id() ) &amp;&amp; wcs_can_user_resubscribe_to( $subscription ) ) {
+					$is_purchasable = true;
+				}
+
+			// Renewal logic
+			} elseif ( isset( $_GET[&#039;subscription_renewal&#039;] ) || wcs_cart_contains_renewal() ) {
+				$is_purchasable = true;
+
+			// Restoring cart from session, so need to check the cart in the session (wcs_cart_contains_renewal() only checks the cart)
+			} elseif ( ! empty( WC()-&gt;session-&gt;cart ) ) {
+				foreach ( WC()-&gt;session-&gt;cart as $cart_item_key =&gt; $cart_item ) {
+					if ( $product-&gt;get_id() == $cart_item[&#039;product_id&#039;] &amp;&amp; ( isset( $cart_item[&#039;subscription_renewal&#039;] ) || isset( $cart_item[&#039;subscription_resubscribe&#039;] ) ) ) {
+						$is_purchasable = true;
+						break;
+					}
+				}
+			}
+		}
+		return $is_purchasable;
+	}
+
+	/**
+	 * Check if the current session has an order awaiting payment for a subscription to a specific product line item.
+	 *
+	 * @since 2.1.0
+	 * @param int $product_id The product to look for a subscription awaiting payment.
+	 * @return bool
+	 **/
+	protected static function order_awaiting_payment_for_product( $product_id ) {
+		global $wp;
+
+		if ( isset( self::$order_awaiting_payment_for_product[ $product_id ] ) ) {
+			return self::$order_awaiting_payment_for_product[ $product_id ];
+		}
+
+		// Set up the cache with a default value.
+		self::$order_awaiting_payment_for_product[ $product_id ] = false;
+
+		// If there&#039;s no order waiting payment, exit early.
+		if ( empty( WC()-&gt;session-&gt;order_awaiting_payment ) &amp;&amp; ! isset( $_GET[&#039;pay_for_order&#039;] ) ) {
+			return self::$order_awaiting_payment_for_product[ $product_id ];
+		}
+
+		$order_id = ! empty( WC()-&gt;session-&gt;order_awaiting_payment ) ? WC()-&gt;session-&gt;order_awaiting_payment : $wp-&gt;query_vars[&#039;order-pay&#039;];
+		$order    = wc_get_order( absint( $order_id ) );
+
+		if ( is_object( $order ) &amp;&amp; $order-&gt;has_status( array( &#039;pending&#039;, &#039;failed&#039; ) ) ) {
+			foreach ( $order-&gt;get_items() as $item ) {
+
+				// If this order contains the product we&#039;re interested in, continue finding a related subscription.
+				if ( $item[&#039;product_id&#039;] == $product_id || $item[&#039;variation_id&#039;] == $product_id ) {
+					$subscriptions = wcs_get_subscriptions(
+						array(
+							&#039;order_id&#039;            =&gt; $order-&gt;get_id(),
+							&#039;subscription_status&#039; =&gt; array( &#039;active&#039;, &#039;pending&#039;, &#039;on-hold&#039; ),
+						)
+					);
+
+					foreach ( $subscriptions as $subscription ) {
+						// Check that the subscription has the product we&#039;re interested in.
+						if ( $subscription-&gt;has_product( $product_id ) &amp;&amp; $subscription-&gt;needs_payment() ) {
+							self::$order_awaiting_payment_for_product[ $product_id ] = true;
+							break 2; // break out of the $subscriptions and order line item loops - we&#039;ve found at least 1 subscription pending payment for the product.
+						}
+					}
+				}
+			}
+		}
+
+		return self::$order_awaiting_payment_for_product[ $product_id ];
+	}
+
+	/**
+	 * Filters the order statuses that enable the order again button and functionality.
+	 *
+	 * This function will return no statuses if the order contains non purchasable or limited products.
+	 *
+	 * @since 3.0.2
+	 *
+	 * @param array $statuses The order statuses that enable the order again button.
+	 * @return array $statuses An empty array if the order contains limited products, otherwise the default statuses are returned.
+	 */
+	public static function filter_order_again_statuses_for_limited_subscriptions( $statuses ) {
+		global $wp;
+
+		if ( is_view_order_page() ) {
+			$order = wc_get_order( absint( $wp-&gt;query_vars[&#039;view-order&#039;] ) );
+		} elseif ( is_order_received_page() ) {
+			$order = wc_get_order( absint( $wp-&gt;query_vars[&#039;order-received&#039;] ) );
+		}
+
+		if ( empty( $order ) ) {
+			return $statuses;
+		}
+
+		$is_purchasable = true;
+
+		foreach ( $order-&gt;get_items() as $line_item ) {
+			$product = $line_item-&gt;get_product();
+
+			if ( WC_Subscriptions_Product::is_subscription( $product ) &amp;&amp; wcs_is_product_limited_for_user( $product ) ) {
+				$is_purchasable = false;
+				break;
+			}
+		}
+
+		// If all products are purchasable, return the default statuses, otherwise return no statuses.
+		if ( $is_purchasable ) {
+			return $statuses;
+		} else {
+			return array();
+		}
+	}
+
+	/**
+	 * Gets a list of the customer subscriptions to a product with a particular limited status.
+	 *
+	 * @param WC_Product|int $product      The product object or product ID.
+	 * @param int            $user_id      The user&#039;s ID.
+	 * @param string         $limit_status The limit status.
+	 *
+	 * @return WC_Subscription[] An array of a customer&#039;s subscriptions with a specific status and product.
+	 */
+	protected static function get_user_subscriptions_to_product( $product, $user_id, $limit_status ) {
+		static $user_subscriptions_to_product = array();
+		$product_id = is_object( $product ) ? $product-&gt;get_id() : $product;
+		$cache_key  = &quot;{$product_id}_{$user_id}_{$limit_status}&quot;;
+
+		if ( ! isset( $user_subscriptions_to_product[ $cache_key ] ) ) {
+			// Getting all the customers subscriptions and removing ones without the product is more performant than querying for subscriptions with the product.
+			$subscriptions = wcs_get_subscriptions(
+				array(
+					&#039;customer_id&#039; =&gt; $user_id,
+					&#039;status&#039;      =&gt; $limit_status,
+				)
+			);
+
+			foreach ( $subscriptions as $subscription_id =&gt; $subscription ) {
+				if ( ! $subscription-&gt;has_product( $product_id ) ) {
+					unset( $subscriptions[ $subscription_id ] );
+				}
+			}
+
+			$user_subscriptions_to_product[ $cache_key ] = $subscriptions;
+		}
+
+		return $user_subscriptions_to_product[ $cache_key ];
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-compatibility-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_help_tip">
+        wcs_help_tip()
+        <a href="#function_wcs_help_tip" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.29">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Display a tooltip in the WordPress administration area.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_help_tip</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tip</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allow_html</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;woocommerce-help-tip&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$tip</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The content to display in the tooltip.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$allow_html</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Allow sanitized HTML if true or escape. Optional. False by default.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$class</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;woocommerce-help-tip&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The help tip's class attribute. Optional. Default is 'woocommerce-help-tip'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.1.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_objects_property">
+        wcs_get_objects_property()
+        <a href="#function_wcs_get_objects_property" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.57">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Access an object&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_objects_property</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|<abbr title="\WC_Product">WC_Product</abbr>|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$object</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$single</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;single&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>We don't want to force the use of a custom legacy class for orders, similar to WC_Subscription_Legacy, because 3rd party
+code may expect the object type to be WC_Order with strict type checks.</p>
+<p>A note on dates: in WC 3.0+, dates are returned a timestamps in the site's timezone :upside_down_face:. In WC &lt; 3.0, they were
+returned as MySQL strings in the site's timezone. We return them from here as MySQL strings in UTC timezone because that's how
+dates are used in Subscriptions in almost all cases, for sanity's sake.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$object</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|<abbr title="\WC_Product">WC_Product</abbr>|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The object whose property we want to access.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The property name.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$single</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;single&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Whether to return just the first piece of meta data with the given property key, or all meta data.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>(optional) The value to return if no value is found - defaults to single -&gt; null, multiple -&gt; array().</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_set_objects_property">
+        wcs_set_objects_property()
+        <a href="#function_wcs_set_objects_property" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.141">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">141</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Set an object&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_set_objects_property</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|<abbr title="\WC_Product">WC_Product</abbr>|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$object</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$save</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;save&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta_id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix_meta_key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;prefix_meta_key&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$object</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|<abbr title="\WC_Product">WC_Product</abbr>|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The object whose property we want to access.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The meta key name without '_' prefix</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The data to set as the value of the meta</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$save</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;save&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Whether to write the data to the database or not. Use 'save' to write to the database, anything else to only update it in memory.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The meta ID of existing meta data if you wish to overwrite an existing piece of meta.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$prefix_meta_key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;prefix_meta_key&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Whether the key should be prefixed with an '_' when stored in meta. Defaulted to 'prefix_meta_key', pass any other value to bypass automatic prefixing (optional)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_delete_objects_property">
+        wcs_delete_objects_property()
+        <a href="#function_wcs_delete_objects_property" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.200">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">200</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Delete an object&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_delete_objects_property</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|<abbr title="\WC_Product">WC_Product</abbr>|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$object</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$save</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;save&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta_id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$object</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>|<abbr title="\WC_Product">WC_Product</abbr>|<a href="../classes/WC-Subscription.html"><abbr title="\WC_Subscription">WC_Subscription</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The object whose property we want to access.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The meta key name without '_' prefix</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$save</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;save&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Whether to save the data or not, 'save' to save the data, otherwise it won't be saved.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_is_order">
+        wcs_is_order()
+        <a href="#function_wcs_is_order" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.234">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">234</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check whether an order is a standard order (i.e. not a refund or subscription) in version compatible way.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_is_order</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>WC 3.0 has the $order-&gt;get_type() API which returns 'shop_order', while WC &lt; 3.0 provided the $order-&gt;order_type
+property which returned 'simple', so we need to check for both.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Order">WC_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_product_deprecated_property_handler">
+        wcs_product_deprecated_property_handler()
+        <a href="#function_wcs_product_deprecated_property_handler" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.258">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">258</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Find and return the value for a deprecated property property.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_product_deprecated_property_handler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Product">WC_Product</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$product</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Product properties should not be accessed directly with WooCommerce 3.0+, because of that, a lot of properties
+have been deprecated/removed in the subscription product type classes. This function centralises the handling
+of deriving deprecated properties. This saves duplicating the __get() method in WC_Product_Subscription,
+WC_Product_Variable_Subscription and WC_Product_Subscription_Variation.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$product</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Product">WC_Product</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_coupon_property">
+        wcs_get_coupon_property()
+        <a href="#function_wcs_get_coupon_property" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.331">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">331</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Access a coupon&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_coupon_property</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Coupon">WC_Coupon</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$coupon</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Similar to @see wcs_get_objects_property</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$coupon</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Coupon">WC_Coupon</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The coupon whose property we want to access.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The property name.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_set_coupon_property">
+        wcs_set_coupon_property()
+        <a href="#function_wcs_set_coupon_property" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.376">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">376</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Set a coupon&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_set_coupon_property</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Coupon">WC_Coupon</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$coupon</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Similar to @see wcs_set_objects_property</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$coupon</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Coupon">WC_Coupon</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The coupon whose property we want to set.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The property name.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The data to set as the value</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_generate_order_key">
+        wcs_generate_order_key()
+        <a href="#function_wcs_generate_order_key" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.421">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">421</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Generate an order/subscription key.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_generate_order_key</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>This is a compatibility wrapper for @see wc_generate_order_key() which was introduced in WC 3.5.4.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.5.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_update_settings_option">
+        wcs_update_settings_option()
+        <a href="#function_wcs_update_settings_option" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.442">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">442</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Update a single option for a WC_Settings_API object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_update_settings_option</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Settings_API">WC_Settings_API</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$settings_api</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>This is a compatibility wrapper for @see WC_Settings_API::update_option() which was introduced in WC 3.4.0.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$settings_api</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Settings_API">WC_Settings_API</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The object to update the option for.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Option key.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Value to set.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.5.1</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_is_rest_api_request">
+        wcs_is_rest_api_request()
+        <a href="#function_wcs_is_rest_api_request" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.467">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">467</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Determines if the request is a non-legacy REST API request.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_is_rest_api_request</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>This function is a compatibility wrapper for WC()-&gt;is_rest_api_request() which was introduced in WC 3.6.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.5.7</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_is_checkout_blocks_api_request">
+        wcs_is_checkout_blocks_api_request()
+        <a href="#function_wcs_is_checkout_blocks_api_request" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.492">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">492</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Determines if the current request is to any or a specific Checkout blocks REST API endpoint.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_is_checkout_blocks_api_request</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endpoint</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$endpoint</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The checkout/checkout blocks endpoint. Optional. Can be empty (any checkout blocks API) or a specific endpoint ('checkout', 'cart', 'products' etc)</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Automattic\WooCommerce\Blocks\StoreApi\RoutesController::initialize()">RoutesController::initialize()</abbr></span>
+                                                                <section class="phpdocumentor-description"><p>for a list of routes.</p>
+</section>
+
+                </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.7.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_doing_cron">
+        wcs_doing_cron()
+        <a href="#function_wcs_doing_cron" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.514">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">514</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Determines whether the current request is a WordPress cron request.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_doing_cron</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>This function is a compatibility wrapper for wp_doing_cron() which was introduced in WP 4.8.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.5.7</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_doing_ajax">
+        wcs_doing_ajax()
+        <a href="#function_wcs_doing_ajax" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.525">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">525</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Determines whether the current request is a WordPress Ajax request.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_doing_ajax</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.5.7</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_used_coupon_codes">
+        wcs_get_used_coupon_codes()
+        <a href="#function_wcs_get_used_coupon_codes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.539">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">539</span>
+</aside>
+
+        <p class="phpdocumentor-summary">A wrapper function for getting an order&#039;s used coupon codes.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_used_coupon_codes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Abstract_Order">WC_Abstract_Order</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>WC 3.7 deprecated @see WC_Abstract_Order::get_used_coupons() in favour of WC_Abstract_Order::get_coupon_codes().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$order</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_Abstract_Order">WC_Abstract_Order</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>An order or subscription object to get the coupon codes for.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.6.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_add_woocommerce_dependent_action">
+        wcs_add_woocommerce_dependent_action()
+        <a href="#function_wcs_add_woocommerce_dependent_action" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.558">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">558</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Attach a function callback for a certain WooCommerce versions.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_add_woocommerce_dependent_action</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tag</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$function</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$woocommerce_version</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$operator</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$priority</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">10</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number_of_args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Enables attaching a callback if WooCommerce is before, after, equal or not equal to a given version.
+This function is a wrapper for @see WCS_Dependent_Hook_Manager::add_woocommerce_dependent_action().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$tag</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The action or filter tag to attach the callback too.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$function</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The callable function to attach to the hook.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$woocommerce_version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The WooCommerce version to do a compare on. For example '3.0.0'.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$operator</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The version compare operator to use. @see https://www.php.net/manual/en/function.version-compare.php</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$priority</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">10</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The priority to attach this callback to.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$number_of_args</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The number of arguments to pass to the callback function</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.6.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_is_woocommerce_pre">
+        wcs_is_woocommerce_pre()
+        <a href="#function_wcs_is_woocommerce_pre" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-compatibility-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-compatibility-functions.html#source-view.570">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-compatibility-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">570</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks if the installed version of WooCommerce is older than a specified version.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_is_woocommerce_pre</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">4.0.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Compatibility functions
+ *
+ * Functions to take advantage of APIs added to new versions of WooCommerce while maintaining backward compatibility.
+ *
+ * @author Prospress
+ * @category Core
+ * @package WooCommerce Subscriptions/Functions
+ * @version     2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+
+/**
+ * Display a tooltip in the WordPress administration area.
+ *
+ * @since 2.1.0
+ *
+ * @param string $tip        The content to display in the tooltip.
+ * @param bool   $allow_html Allow sanitized HTML if true or escape. Optional. False by default.
+ * @param string $class      The help tip&#039;s class attribute. Optional. Default is &#039;woocommerce-help-tip&#039;.
+ *
+ * @return string The helptip HTML.
+ */
+function wcs_help_tip( $tip, $allow_html = false, $class = &#039;woocommerce-help-tip&#039; ) {
+	$help_tip = wc_help_tip( $tip, $allow_html );
+
+	if ( &#039;woocommerce-help-tip&#039; !== $class ) {
+		$help_tip = str_replace( &#039;woocommerce-help-tip&#039;, esc_attr( $class ), $help_tip );
+	}
+
+	return $help_tip;
+}
+
+/**
+ * Access an object&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.
+ *
+ * We don&#039;t want to force the use of a custom legacy class for orders, similar to WC_Subscription_Legacy, because 3rd party
+ * code may expect the object type to be WC_Order with strict type checks.
+ *
+ * A note on dates: in WC 3.0+, dates are returned a timestamps in the site&#039;s timezone :upside_down_face:. In WC &lt; 3.0, they were
+ * returned as MySQL strings in the site&#039;s timezone. We return them from here as MySQL strings in UTC timezone because that&#039;s how
+ * dates are used in Subscriptions in almost all cases, for sanity&#039;s sake.
+ *
+ * @param WC_Order|WC_Product|WC_Subscription $object   The object whose property we want to access.
+ * @param string                              $property The property name.
+ * @param string                              $single   Whether to return just the first piece of meta data with the given property key, or all meta data.
+ * @param mixed                               $default  (optional) The value to return if no value is found - defaults to single -&gt; null, multiple -&gt; array().
+ *
+ * @since  2.2.0
+ * @return mixed
+ */
+function wcs_get_objects_property( $object, $property, $single = &#039;single&#039;, $default = null ) {
+	$value = ! is_null( $default ) ? $default : ( ( &#039;single&#039; === $single ) ? null : array() );
+
+	if ( ! is_object( $object ) ) {
+		return $value;
+	}
+
+	$prefixed_key          = wcs_maybe_prefix_key( $property );
+	$property_function_map = array(
+		&#039;order_version&#039;  =&gt; &#039;version&#039;,
+		&#039;order_currency&#039; =&gt; &#039;currency&#039;,
+		&#039;order_date&#039;     =&gt; &#039;date_created&#039;,
+		&#039;date&#039;           =&gt; &#039;date_created&#039;,
+		&#039;cart_discount&#039;  =&gt; &#039;total_discount&#039;,
+	);
+
+	if ( isset( $property_function_map[ $property ] ) ) {
+		$property = $property_function_map[ $property ];
+	}
+
+	switch ( $property ) {
+		case &#039;post&#039;:
+			// In order to keep backwards compatibility it&#039;s required to use the parent data for variations.
+			if ( method_exists( $object, &#039;is_type&#039; ) &amp;&amp; $object-&gt;is_type( &#039;variation&#039; ) ) {
+				$value = get_post( wcs_get_objects_property( $object, &#039;parent_id&#039; ) );
+			} else {
+				$value = get_post( wcs_get_objects_property( $object, &#039;id&#039; ) );
+			}
+			break;
+
+		case &#039;post_status&#039;:
+			$value = wcs_get_objects_property( $object, &#039;post&#039; )-&gt;post_status;
+			break;
+
+		case &#039;variation_data&#039;:
+			$value = wc_get_product_variation_attributes( wcs_get_objects_property( $object, &#039;id&#039; ) );
+			break;
+
+		default:
+			$function_name = &#039;get_&#039; . $property;
+
+			if ( is_callable( array( $object, $function_name ) ) ) {
+				$value = $object-&gt;$function_name();
+			} else {
+				// If we don&#039;t have a method for this specific property, but we are using WC 3.0, use $object-&gt;get_meta().
+				if ( method_exists( $object, &#039;get_meta&#039; ) ) {
+					if ( $object-&gt;meta_exists( $prefixed_key ) ) {
+						if ( &#039;single&#039; === $single ) {
+							$value = $object-&gt;get_meta( $prefixed_key, true );
+						} else {
+							// WC_Data::get_meta() returns an array of stdClass objects with id, key &amp; value properties when meta is available.
+							$value = wp_list_pluck( $object-&gt;get_meta( $prefixed_key, false ), &#039;value&#039; );
+						}
+					}
+				} elseif ( &#039;single&#039; === $single &amp;&amp; isset( $object-&gt;$property ) ) { // WC &lt; 3.0.
+					$value = $object-&gt;$property;
+				} elseif ( strtolower( $property ) !== &#039;id&#039; &amp;&amp; metadata_exists( &#039;post&#039;, wcs_get_objects_property( $object, &#039;id&#039; ), $prefixed_key ) ) {
+					// If we couldn&#039;t find a property or function, fallback to using post meta as that&#039;s what many __get() methods in WC &lt; 3.0 did.
+					if ( &#039;single&#039; === $single ) {
+						$value = get_post_meta( wcs_get_objects_property( $object, &#039;id&#039; ), $prefixed_key, true );
+					} else {
+						// Get all the meta values.
+						$value = get_post_meta( wcs_get_objects_property( $object, &#039;id&#039; ), $prefixed_key, false );
+					}
+				}
+			}
+			break;
+	}
+
+	return $value;
+}
+
+/**
+ * Set an object&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.
+ *
+ * @param WC_Order|WC_Product|WC_Subscription $object The object whose property we want to access.
+ * @param string $key The meta key name without &#039;_&#039; prefix
+ * @param mixed $value The data to set as the value of the meta
+ * @param string $save Whether to write the data to the database or not. Use &#039;save&#039; to write to the database, anything else to only update it in memory.
+ * @param int $meta_id The meta ID of existing meta data if you wish to overwrite an existing piece of meta.
+ * @param string $prefix_meta_key Whether the key should be prefixed with an &#039;_&#039; when stored in meta. Defaulted to &#039;prefix_meta_key&#039;, pass any other value to bypass automatic prefixing (optional)
+ * @since  2.2.0
+ * @return mixed
+ */
+function wcs_set_objects_property( &amp;$object, $key, $value, $save = &#039;save&#039;, $meta_id = &#039;&#039;, $prefix_meta_key = &#039;prefix_meta_key&#039; ) {
+
+	$prefixed_key = wcs_maybe_prefix_key( $key );
+
+	// WC will automatically set/update these keys when a shipping/billing address attribute changes so we can ignore these keys
+	if ( in_array( $prefixed_key, array( &#039;_shipping_address_index&#039;, &#039;_billing_address_index&#039; ) ) ) {
+		return;
+	}
+
+	// Special cases where properties with setters which don&#039;t map nicely to their function names
+	$meta_setters_map = array(
+		&#039;_cart_discount&#039;         =&gt; &#039;set_discount_total&#039;,
+		&#039;_cart_discount_tax&#039;     =&gt; &#039;set_discount_tax&#039;,
+		&#039;_customer_user&#039;         =&gt; &#039;set_customer_id&#039;,
+		&#039;_order_tax&#039;             =&gt; &#039;set_cart_tax&#039;,
+		&#039;_order_shipping&#039;        =&gt; &#039;set_shipping_total&#039;,
+		&#039;_sale_price_dates_from&#039; =&gt; &#039;set_date_on_sale_from&#039;,
+		&#039;_sale_price_dates_to&#039;   =&gt; &#039;set_date_on_sale_to&#039;,
+	);
+
+	// If we have an object with a predefined setter function, use it
+	if ( isset( $meta_setters_map[ $prefixed_key ] ) &amp;&amp; is_callable( array( $object, $meta_setters_map[ $prefixed_key ] ) ) ) {
+		$function = $meta_setters_map[ $prefixed_key ];
+		$object-&gt;$function( $value );
+
+	} elseif ( is_callable( array( $object, &#039;set&#039; . $prefixed_key ) ) ) { // If we have an object, use the setter if available
+		// Prices include tax is stored as a boolean in props but saved in the database as a string yes/no, so we need to normalise it here to make sure if we have a string (which can be passed to it by things like wcs_copy_order_meta()) that it&#039;s converted to a boolean before being set
+		if ( &#039;_prices_include_tax&#039; === $prefixed_key &amp;&amp; ! is_bool( $value ) ) {
+			$value = &#039;yes&#039; === $value;
+		}
+
+		$object-&gt;{ &quot;set$prefixed_key&quot; }( $value );
+
+	// If there is a setter without the order prefix (eg set_order_total -&gt; set_total)
+	} elseif ( is_callable( array( $object, &#039;set&#039; . str_replace( &#039;_order&#039;, &#039;&#039;, $prefixed_key ) ) ) ) {
+		$function_name = &#039;set&#039; . str_replace( &#039;_order&#039;, &#039;&#039;, $prefixed_key );
+		$object-&gt;$function_name( $value );
+
+	} else { // If there is no setter, treat as meta within the data object
+		$meta_key = ( &#039;prefix_meta_key&#039; === $prefix_meta_key ) ? $prefixed_key : $key;
+		$object-&gt;update_meta_data( $meta_key, $value, $meta_id );
+	}
+
+	// Save the data
+	if ( &#039;save&#039; === $save ) {
+		$object-&gt;save();
+	}
+}
+
+/**
+ * Delete an object&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.
+ *
+ * @param WC_Order|WC_Product|WC_Subscription $object The object whose property we want to access.
+ * @param string $key The meta key name without &#039;_&#039; prefix
+ * @param mixed $value The data to set as the value of the meta
+ * @param string $save Whether to save the data or not, &#039;save&#039; to save the data, otherwise it won&#039;t be saved.
+ * @since  2.2.0
+ * @return mixed
+ */
+function wcs_delete_objects_property( &amp;$object, $key, $save = &#039;save&#039;, $meta_id = &#039;&#039; ) {
+
+	$prefixed_key = wcs_maybe_prefix_key( $key );
+
+	if ( ! empty( $meta_id ) &amp;&amp; is_callable( array( $object, &#039;delete_meta_data_by_mid&#039; ) ) ) {
+		$object-&gt;delete_meta_data_by_mid( $meta_id );
+	} elseif ( is_callable( array( $object, &#039;delete_meta_data&#039; ) ) ) {
+		$object-&gt;delete_meta_data( $prefixed_key );
+	} elseif ( isset( $object-&gt;$key ) ) {
+		unset( $object-&gt;$key );
+	}
+
+	// Save the data
+	if ( &#039;save&#039; === $save ) {
+		if ( is_callable( array( $object, &#039;save&#039; ) ) ) { // WC 3.0+
+			$object-&gt;save();
+		} elseif ( ! empty( $meta_id ) ) {
+			delete_metadata_by_mid( &#039;post&#039;, $meta_id );
+		} else {
+			delete_post_meta( wcs_get_objects_property( $object, &#039;id&#039; ), $prefixed_key );
+		}
+	}
+}
+
+/**
+ * Check whether an order is a standard order (i.e. not a refund or subscription) in version compatible way.
+ *
+ * WC 3.0 has the $order-&gt;get_type() API which returns &#039;shop_order&#039;, while WC &lt; 3.0 provided the $order-&gt;order_type
+ * property which returned &#039;simple&#039;, so we need to check for both.
+ *
+ * @param WC_Order $order
+ * @since  2.2.0
+ * @return bool
+ */
+function wcs_is_order( $order ) {
+
+	if ( is_callable( array( $order, &#039;get_type&#039; ) ) ) {
+		$is_order = ( &#039;shop_order&#039; === $order-&gt;get_type() );
+	} else {
+		$is_order = ( isset( $order-&gt;order_type ) &amp;&amp; &#039;simple&#039; === $order-&gt;order_type );
+	}
+
+	return $is_order;
+}
+
+/**
+ * Find and return the value for a deprecated property property.
+ *
+ * Product properties should not be accessed directly with WooCommerce 3.0+, because of that, a lot of properties
+ * have been deprecated/removed in the subscription product type classes. This function centralises the handling
+ * of deriving deprecated properties. This saves duplicating the __get() method in WC_Product_Subscription,
+ * WC_Product_Variable_Subscription and WC_Product_Subscription_Variation.
+ *
+ * @param string $property
+ * @param WC_Product $product
+ * @since  2.2.0
+ * @return mixed
+ */
+function wcs_product_deprecated_property_handler( $property, $product ) {
+
+	$message_prefix = &#039;Product properties should not be accessed directly with WooCommerce 3.0+.&#039;;
+	$function_name  = &#039;get_&#039; . str_replace( &#039;subscription_&#039;, &#039;&#039;, str_replace( &#039;subscription_period_&#039;, &#039;&#039;, $property ) );
+	$class_name     = get_class( $product );
+	$value          = null;
+
+	if ( in_array( $property, array( &#039;product_type&#039;, &#039;parent_product_type&#039;, &#039;limit_subscriptions&#039;, &#039;subscription_limit&#039;, &#039;subscription_payment_sync_date&#039;, &#039;subscription_one_time_shipping&#039; ) ) || ( is_callable( array( &#039;WC_Subscriptions_Product&#039;, $function_name ) ) &amp;&amp; false !== strpos( $property, &#039;subscription&#039; ) ) ) {
+
+		switch ( $property ) {
+			case &#039;product_type&#039;:
+				$value       = $product-&gt;get_type();
+				$alternative = $class_name . &#039;::get_type()&#039;;
+				break;
+
+			case &#039;parent_product_type&#039;:
+				if ( $product-&gt;is_type( &#039;subscription_variation&#039; ) ) {
+					$value       = &#039;variation&#039;;
+					$alternative = &#039;WC_Product_Variation::get_type()&#039;;
+				} else {
+					$value       = &#039;variable&#039;;
+					$alternative = &#039;WC_Product_Variable::get_type()&#039;;
+				}
+				break;
+
+			case &#039;limit_subscriptions&#039;:
+			case &#039;subscription_limit&#039;:
+				$value       = wcs_get_product_limitation( $product );
+				$alternative = &#039;wcs_get_product_limitation( $product )&#039;;
+				break;
+
+			case &#039;subscription_one_time_shipping&#039;:
+				$value       = WC_Subscriptions_Product::needs_one_time_shipping( $product );
+				$alternative = &#039;WC_Subscriptions_Product::needs_one_time_shipping( $product )&#039;;
+				break;
+
+			case &#039;subscription_payment_sync_date&#039;:
+				$value       = WC_Subscriptions_Synchroniser::get_products_payment_day( $product );
+				$alternative = &#039;WC_Subscriptions_Synchroniser::get_products_payment_day( $product )&#039;;
+				break;
+
+			case &#039;max_variation_period&#039;:
+			case &#039;max_variation_period_interval&#039;:
+				$meta_key = &#039;_&#039; . $property;
+				if ( &#039;&#039; === $product-&gt;get_meta( $meta_key ) ) {
+					WC_Product_Variable::sync( $product-&gt;get_id() );
+				}
+				$value       = $product-&gt;get_meta( $meta_key );
+				$alternative = $class_name . &#039;::get_meta( &#039; . $meta_key . &#039; ) or wcs_get_min_max_variation_data( $product )&#039;;
+				break;
+
+			default:
+				$value       = call_user_func( array( &#039;WC_Subscriptions_Product&#039;, $function_name ), $product );
+				$alternative = sprintf( &#039;WC_Subscriptions_Product::%s( $product )&#039;, $function_name );
+				break;
+		}
+
+		wcs_deprecated_argument( $class_name . &#039;::$&#039; . $property, &#039;2.2.0&#039;, sprintf( &#039;%s Use %s&#039;, $message_prefix, $alternative ) );
+	}
+
+	return $value;
+}
+
+/**
+ * Access a coupon&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.
+ *
+ * Similar to @see wcs_get_objects_property
+ *
+ * @param WC_Coupon $coupon The coupon whose property we want to access.
+ * @param string $property The property name.
+ * @since  2.2
+ * @return mixed
+ */
+function wcs_get_coupon_property( $coupon, $property ) {
+
+	$value = &#039;&#039;;
+
+	if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+		$value = $coupon-&gt;$property;
+	} else {
+		// Some coupon properties don&#039;t map nicely to their corresponding getter function. This array contains those exceptions.
+		$property_to_getter_map = array(
+			&#039;type&#039;                       =&gt; &#039;get_discount_type&#039;,
+			&#039;exclude_product_ids&#039;        =&gt; &#039;get_excluded_product_ids&#039;,
+			&#039;expiry_date&#039;                =&gt; &#039;get_date_expires&#039;,
+			&#039;exclude_product_categories&#039; =&gt; &#039;get_excluded_product_categories&#039;,
+			&#039;customer_email&#039;             =&gt; &#039;get_email_restrictions&#039;,
+			&#039;enable_free_shipping&#039;       =&gt; &#039;get_free_shipping&#039;,
+			&#039;coupon_amount&#039;              =&gt; &#039;get_amount&#039;,
+		);
+
+		switch ( true ) {
+			case &#039;exists&#039; == $property:
+				$value = $coupon-&gt;get_id() &gt; 0;
+				break;
+			case isset( $property_to_getter_map[ $property ] ) &amp;&amp; is_callable( array( $coupon, $property_to_getter_map[ $property ] ) ):
+				$function = $property_to_getter_map[ $property ];
+				$value    = $coupon-&gt;$function();
+				break;
+			case is_callable( array( $coupon, &#039;get_&#039; . $property ) ):
+				$value = $coupon-&gt;{ &quot;get_$property&quot; }();
+				break;
+		}
+	}
+
+	return $value;
+}
+
+/**
+ * Set a coupon&#039;s property in a way that is compatible with CRUD and non-CRUD APIs for different versions of WooCommerce.
+ *
+ * Similar to @see wcs_set_objects_property
+ *
+ * @param WC_Coupon $coupon The coupon whose property we want to set.
+ * @param string $property The property name.
+ * @param mixed $value The data to set as the value
+ * @since  2.2
+ */
+function wcs_set_coupon_property( &amp;$coupon, $property, $value ) {
+
+	if ( wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+		$coupon-&gt;$property = $value;
+	} else {
+		// Some coupon properties don&#039;t map nicely to their corresponding setter function. This array contains those exceptions.
+		$property_to_setter_map = array(
+			&#039;type&#039;                       =&gt; &#039;set_discount_type&#039;,
+			&#039;exclude_product_ids&#039;        =&gt; &#039;set_excluded_product_ids&#039;,
+			&#039;expiry_date&#039;                =&gt; &#039;set_date_expires&#039;,
+			&#039;exclude_product_categories&#039; =&gt; &#039;set_excluded_product_categories&#039;,
+			&#039;customer_email&#039;             =&gt; &#039;set_email_restrictions&#039;,
+			&#039;enable_free_shipping&#039;       =&gt; &#039;set_free_shipping&#039;,
+			&#039;coupon_amount&#039;              =&gt; &#039;set_amount&#039;,
+		);
+
+		switch ( true ) {
+			case &#039;individual_use&#039; == $property:
+				// set_individual_use expects a boolean, the individual_use property use to be either &#039;yes&#039; or &#039;no&#039; so we need to accept both types
+				if ( ! is_bool( $value ) ) {
+					$value = &#039;yes&#039; === $value;
+				}
+
+				$coupon-&gt;set_individual_use( $value );
+				break;
+			case isset( $property_to_setter_map[ $property ] ) &amp;&amp; is_callable( array( $coupon, $property_to_setter_map[ $property ] ) ):
+				$function = $property_to_setter_map[ $property ];
+				$coupon-&gt;$function( $value );
+
+				break;
+			case is_callable( array( $coupon, &#039;set_&#039; . $property ) ):
+				$coupon-&gt;{ &quot;set_$property&quot; }( $value );
+				break;
+		}
+	}
+}
+
+/**
+ * Generate an order/subscription key.
+ *
+ * This is a compatibility wrapper for @see wc_generate_order_key() which was introduced in WC 3.5.4.
+ *
+ * @return string $order_key.
+ * @since 2.5.0
+ */
+function wcs_generate_order_key() {
+
+	if ( function_exists( &#039;wc_generate_order_key&#039; ) ) {
+		$order_key = wc_generate_order_key();
+	} else {
+		$order_key = &#039;wc_&#039; . apply_filters( &#039;woocommerce_generate_order_key&#039;, &#039;order_&#039; . wp_generate_password( 13, false ) );
+	}
+
+	return $order_key;
+}
+
+/**
+ * Update a single option for a WC_Settings_API object.
+ *
+ * This is a compatibility wrapper for @see WC_Settings_API::update_option() which was introduced in WC 3.4.0.
+ *
+ * @param WC_Settings_API $settings_api The object to update the option for.
+ * @param string $key Option key.
+ * @param mixed $value Value to set.
+ * @since 2.5.1
+ */
+function wcs_update_settings_option( $settings_api, $key, $value ) {
+
+	// WooCommerce 3.4+
+	if ( is_callable( array( $settings_api, &#039;update_option&#039; ) ) ) {
+		$settings_api-&gt;update_option( $key, $value );
+	} else {
+		if ( empty( $settings_api-&gt;settings ) ) {
+			$settings_api-&gt;init_settings();
+		}
+
+		$settings_api-&gt;settings[ $key ] = $value;
+
+		return update_option( $settings_api-&gt;get_option_key(), apply_filters( &#039;woocommerce_settings_api_sanitized_fields_&#039; . $settings_api-&gt;id, $settings_api-&gt;settings ), &#039;yes&#039; );
+	}
+}
+
+/**
+ * Determines if the request is a non-legacy REST API request.
+ *
+ * This function is a compatibility wrapper for WC()-&gt;is_rest_api_request() which was introduced in WC 3.6.
+ *
+ * @since 2.5.7
+ *
+ * @return bool True if it&#039;s a REST API request, false otherwise.
+ */
+function wcs_is_rest_api_request() {
+
+	if ( function_exists( &#039;WC&#039; ) &amp;&amp; is_callable( array( WC(), &#039;is_rest_api_request&#039; ) ) ) {
+		return WC()-&gt;is_rest_api_request();
+	}
+
+	if ( empty( $_SERVER[&#039;REQUEST_URI&#039;] ) ) {
+		return false;
+	}
+
+	$rest_prefix         = trailingslashit( rest_get_url_prefix() );
+	$is_rest_api_request = ( false !== strpos( $_SERVER[&#039;REQUEST_URI&#039;], $rest_prefix ) );
+
+	return apply_filters( &#039;woocommerce_is_rest_api_request&#039;, $is_rest_api_request );
+}
+
+/**
+ * Determines if the current request is to any or a specific Checkout blocks REST API endpoint.
+ *
+ * @see Automattic\WooCommerce\Blocks\StoreApi\RoutesController::initialize() for a list of routes.
+ *
+ * @since 1.7.0
+ * @param string $endpoint The checkout/checkout blocks endpoint. Optional. Can be empty (any checkout blocks API) or a specific endpoint (&#039;checkout&#039;, &#039;cart&#039;, &#039;products&#039; etc)
+ * @return bool Whether the current request is for a cart/checkout blocks REST API endpoint.
+ */
+function wcs_is_checkout_blocks_api_request( $endpoint = &#039;&#039; ) {
+
+	if ( ! wcs_is_rest_api_request() || empty( $_SERVER[&#039;REQUEST_URI&#039;] ) ) {
+		return false;
+	}
+
+	$endpoint    = empty( $endpoint ) ? &#039;&#039; : &#039;/&#039; . $endpoint;
+	$rest_prefix = trailingslashit( rest_get_url_prefix() );
+	$request_uri = esc_url_raw( wp_unslash( $_SERVER[&#039;REQUEST_URI&#039;] ) );
+
+	return false !== strpos( $request_uri, $rest_prefix . &#039;wc/store&#039; . $endpoint );
+}
+
+/**
+ * Determines whether the current request is a WordPress cron request.
+ *
+ * This function is a compatibility wrapper for wp_doing_cron() which was introduced in WP 4.8.
+ *
+ * @since 2.5.7
+ *
+ * @return bool True if it&#039;s a WordPress cron request, false otherwise.
+ */
+function wcs_doing_cron() {
+	return function_exists( &#039;wp_doing_cron&#039; ) ? wp_doing_cron() : defined( &#039;DOING_CRON&#039; ) &amp;&amp; DOING_CRON;
+}
+
+/**
+ * Determines whether the current request is a WordPress Ajax request.
+ *
+ * @since 2.5.7
+ *
+ * @return bool True if it&#039;s a WordPress Ajax request, false otherwise.
+ */
+function wcs_doing_ajax() {
+	return function_exists( &#039;wp_doing_ajax&#039; ) ? wp_doing_ajax() : defined( &#039;DOING_AJAX&#039; ) &amp;&amp; DOING_AJAX;
+}
+
+/**
+ * A wrapper function for getting an order&#039;s used coupon codes.
+ *
+ * WC 3.7 deprecated @see WC_Abstract_Order::get_used_coupons() in favour of WC_Abstract_Order::get_coupon_codes().
+ *
+ * @since 2.6.0
+ *
+ * @param WC_Abstract_Order $order An order or subscription object to get the coupon codes for.
+ * @return array The coupon codes applied to the $order.
+ */
+function wcs_get_used_coupon_codes( $order ) {
+	return is_callable( array( $order, &#039;get_coupon_codes&#039; ) ) ? $order-&gt;get_coupon_codes() : $order-&gt;get_used_coupons();
+}
+
+/**
+ * Attach a function callback for a certain WooCommerce versions.
+ *
+ * Enables attaching a callback if WooCommerce is before, after, equal or not equal to a given version.
+ * This function is a wrapper for @see WCS_Dependent_Hook_Manager::add_woocommerce_dependent_action().
+ *
+ * @since 2.6.0
+ *
+ * @param string $tag The action or filter tag to attach the callback too.
+ * @param string|array $function The callable function to attach to the hook.
+ * @param string $woocommerce_version The WooCommerce version to do a compare on. For example &#039;3.0.0&#039;.
+ * @param string $operator The version compare operator to use. @see https://www.php.net/manual/en/function.version-compare.php
+ * @param integer $priority The priority to attach this callback to.
+ * @param integer $number_of_args The number of arguments to pass to the callback function
+ */
+function wcs_add_woocommerce_dependent_action( $tag, $function, $woocommerce_version, $operator, $priority = 10, $number_of_args = 1 ) {
+	WCS_Dependent_Hook_Manager::add_woocommerce_dependent_action( $tag, $function, $woocommerce_version, $operator, $priority, $number_of_args );
+}
+
+/**
+ * Checks if the installed version of WooCommerce is older than a specified version.
+ *
+ * @since 4.0.0
+ *
+ * @param  string The version string to check in a version_compare() compatible format.
+ * @return bool   Whether the installed version of WC is prior to the given version string.
+ */
+function wcs_is_woocommerce_pre( $version ) {
+	return ! defined( &#039;WC_VERSION&#039; ) || version_compare( WC_VERSION, $version, &#039;&lt;&#039; );
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

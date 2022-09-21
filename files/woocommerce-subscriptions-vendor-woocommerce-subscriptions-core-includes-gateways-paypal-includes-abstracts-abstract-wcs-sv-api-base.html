@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/SkyVergeWooCommerceAPI.html">SkyVergeWooCommerceAPI</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">abstract-wcs-sv-api-base.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Plugin Framework API Base Class
+ *
+ * This class provides a standardized framework for constructing an API wrapper
+ * to external services. It is designed to be extremely flexible.
+ *
+ * Namespaced copy of the SV_WC_API_Base class developed by the masterful SkyVerge team
+ *
+ * This source file is subject to the GNU General Public License v3.0
+ * that is bundled with this package in the file license.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.gnu.org/licenses/gpl-3.0.html
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@skyverge.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the plugin to newer
+ * versions in the future. If you wish to customize the plugin for your
+ * needs please refer to http://www.skyverge.com
+ *
+ * @package   SkyVerge/WooCommerce/API
+ * @author    SkyVerge
+ * @copyright Copyright (c) 2013-2015, SkyVerge, Inc.
+ * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * @version 2.2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * # WooCommerce Plugin Framework API Base Class
+ *
+ * This class provides a standardized framework for constructing an API wrapper
+ * to external services. It is designed to be extremely flexible.
+ *
+ * @version 2.2.0
+ */
+abstract class WCS_SV_API_Base {
+
+
+	/** @var string request method, defaults to POST */
+	protected $request_method = &#039;POST&#039;;
+
+	/** @var string URI used for the request */
+	protected $request_uri;
+
+	/** @var array request headers */
+	protected $request_headers = array();
+
+	/** @var string request user-agent */
+	protected $request_user_agent;
+
+	/** @var string request HTTP version, defaults to 1.0 */
+	protected $request_http_version = &#039;1.0&#039;;
+
+	/** @var string request duration */
+	protected $request_duration;
+
+	/** @var object request */
+	protected $request;
+
+	/** @var string response code */
+	protected $response_code;
+
+	/** @var string response message */
+	protected $response_message;
+
+	/** @var array response headers */
+	protected $response_headers;
+
+	/** @var string raw response body */
+	protected $raw_response_body;
+
+	/** @var string response handler class name */
+	protected $response_handler;
+
+	/** @var object response */
+	protected $response;
+
+
+	/**
+	 * Perform the request and return the parsed response
+	 *
+	 * @since 2.2.0
+	 * @param object $request class instance which implements \SV_WC_API_Request
+	 * @throws Exception
+	 * @return object class instance which implements \SV_WC_API_Response
+	 */
+	protected function perform_request( $request ) {
+
+		// ensure API is in its default state
+		$this-&gt;reset_response();
+
+		// save the request object
+		$this-&gt;request = $request;
+
+		$start_time = microtime( true );
+
+		// perform the request
+		$response = $this-&gt;do_remote_request( $this-&gt;get_request_uri(), $this-&gt;get_request_args() );
+
+		// calculate request duration
+		$this-&gt;request_duration = round( microtime( true ) - $start_time, 5 );
+
+		try {
+
+			// parse &amp; validate response
+			$response = $this-&gt;handle_response( $response );
+
+		} catch ( Exception $e ) {
+
+			// alert other actors that a request has been made
+			$this-&gt;broadcast_request();
+
+			throw $e;
+		}
+
+		return $response;
+	}
+
+
+	/**
+	 * Simple wrapper for wp_remote_request() so child classes can override this
+	 * and provide their own transport mechanism if needed, e.g. a custom
+	 * cURL implementation
+	 *
+	 * @since 2.2.0
+	 * @param string $request_uri
+	 * @param string $request_args
+	 * @return array|WP_Error
+	 */
+	protected function do_remote_request( $request_uri, $request_args ) {
+		return wp_safe_remote_request( $request_uri, $request_args );
+	}
+
+
+	/**
+	 * Handle and parse the response
+	 *
+	 * @since 2.2.0
+	 * @param array|WP_Error $response response data
+	 * @throws Exception network issues, timeouts, API errors, etc
+	 * @return object request class instance that implements SV_WC_API_Request
+	 */
+	protected function handle_response( $response ) {
+
+		// check for WP HTTP API specific errors (network timeout, etc)
+		if ( is_wp_error( $response ) ) {
+			throw new Exception( $response-&gt;get_error_message(), (int) $response-&gt;get_error_code() );
+		}
+
+		// set response data
+		$this-&gt;response_code     = wp_remote_retrieve_response_code( $response );
+		$this-&gt;response_message  = wp_remote_retrieve_response_message( $response );
+		$this-&gt;response_headers  = wp_remote_retrieve_headers( $response );
+		$this-&gt;raw_response_body = wp_remote_retrieve_body( $response );
+
+		// allow child classes to validate response prior to parsing -- this is useful
+		// for checking HTTP status codes, etc.
+		$this-&gt;do_pre_parse_response_validation();
+
+		// parse the response body and tie it to the request
+		$this-&gt;response = $this-&gt;get_parsed_response( $this-&gt;raw_response_body );
+
+		// allow child classes to validate response after parsing -- this is useful
+		// for checking error codes/messages included in a parsed response
+		$this-&gt;do_post_parse_response_validation();
+
+		// fire do_action() so other actors can act on request/response data,
+		// primarily used for logging
+		$this-&gt;broadcast_request();
+
+		return $this-&gt;response;
+	}
+
+
+	/**
+	 * Allow child classes to validate a response prior to instantiating the
+	 * response object. Useful for checking response codes or messages, e.g.
+	 * throw an exception if the response code is not 200.
+	 *
+	 * A child class implementing this method should simply return true if the response
+	 * processing should continue, or throw a \SV_WC_API_Exception with a
+	 * relevant error message &amp; code to stop processing.
+	 *
+	 * Note: Child classes *must* sanitize the raw response body before throwing
+	 * an exception, as it will be included in the broadcast_request() method
+	 * which is typically used to log requests.
+	 *
+	 * @since 2.2.0
+	 */
+	protected function do_pre_parse_response_validation() {
+		// stub method
+	}
+
+
+	/**
+	 * Allow child classes to validate a response after it has been parsed
+	 * and instantiated. This is useful for check error codes or messages that
+	 * exist in the parsed response.
+	 *
+	 * A child class implementing this method should simply return true if the response
+	 * processing should continue, or throw an Exception with a
+	 * relevant error message &amp; code to stop processing.
+	 *
+	 * Note: Response body sanitization is handled automatically
+	 *
+	 * @since 2.2.0
+	 */
+	protected function do_post_parse_response_validation() {
+		// stub method
+	}
+
+
+	/**
+	 * Return the parsed response object for the request
+	 *
+	 * @since 2.2.0
+	 * @param string $raw_response_body
+	 * @return object response class instance which implements SV_WC_API_Request
+	 */
+	protected function get_parsed_response( $raw_response_body ) {
+
+		$handler_class = $this-&gt;get_response_handler();
+
+		return new $handler_class( $raw_response_body );
+	}
+
+
+	/**
+	 * Alert other actors that a request has been performed. This is primarily used
+	 * for request logging.
+	 *
+	 * @since 2.2.0
+	 */
+	protected function broadcast_request() {
+
+		$request_data = array(
+			&#039;method&#039;     =&gt; $this-&gt;get_request_method(),
+			&#039;uri&#039;        =&gt; $this-&gt;get_request_uri(),
+			&#039;user-agent&#039; =&gt; $this-&gt;get_request_user_agent(),
+			&#039;headers&#039;    =&gt; $this-&gt;get_sanitized_request_headers(),
+			&#039;body&#039;       =&gt; $this-&gt;request-&gt;to_string_safe(),
+			&#039;duration&#039;   =&gt; $this-&gt;get_request_duration() . &#039;s&#039;, // seconds
+		);
+
+		$response_data = array(
+			&#039;code&#039;    =&gt; $this-&gt;get_response_code(),
+			&#039;message&#039; =&gt; $this-&gt;get_response_message(),
+			&#039;headers&#039; =&gt; $this-&gt;get_response_headers(),
+			&#039;body&#039;    =&gt; $this-&gt;get_sanitized_response_body() ? $this-&gt;get_sanitized_response_body() : $this-&gt;get_raw_response_body(),
+		);
+
+		do_action( &#039;wc_&#039; . $this-&gt;get_api_id() . &#039;_api_request_performed&#039;, $request_data, $response_data, $this );
+	}
+
+
+	/**
+	 * Reset the API response members to their
+	 *
+	 * @since 1.0.0
+	 */
+	protected function reset_response() {
+
+		$this-&gt;response_code     = null;
+		$this-&gt;response_message  = null;
+		$this-&gt;response_headers  = null;
+		$this-&gt;raw_response_body = null;
+		$this-&gt;response          = null;
+		$this-&gt;request_duration  = null;
+	}
+
+
+	/** Request Getters *******************************************************/
+
+
+	/**
+	 * Get the request URI
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_request_uri() {
+
+		// API base request URI + any request-specific path
+		$uri = $this-&gt;request_uri . ( $this-&gt;get_request() ? $this-&gt;get_request()-&gt;get_path() : &#039;&#039; );
+
+		/**
+		 * Request URI Filter.
+		 *
+		 * Allow actors to filter the request URI. Note that child classes can override
+		 * this method, which means this filter may be invoked prior to the overridden
+		 * method.
+		 *
+		 * @since 4.1.0
+		 * @param string $uri current request URI
+		 * @param \WCS_SV_API_Base class instance
+		 */
+		return apply_filters( &#039;wc_&#039; . $this-&gt;get_api_id() . &#039;_api_request_uri&#039;, $uri, $this );
+	}
+
+
+	/**
+	 * Get the request arguments in the format required by wp_remote_request()
+	 *
+	 * @since 2.2.0
+	 * @return mixed|void
+	 */
+	protected function get_request_args() {
+
+		$args = array(
+			&#039;method&#039;      =&gt; $this-&gt;get_request_method(),
+			&#039;timeout&#039;     =&gt; MINUTE_IN_SECONDS,
+			&#039;redirection&#039; =&gt; 0,
+			&#039;httpversion&#039; =&gt; $this-&gt;get_request_http_version(),
+			&#039;sslverify&#039;   =&gt; true,
+			&#039;blocking&#039;    =&gt; true,
+			&#039;user-agent&#039;  =&gt; $this-&gt;get_request_user_agent(),
+			&#039;headers&#039;     =&gt; $this-&gt;get_request_headers(),
+			&#039;body&#039;        =&gt; $this-&gt;get_request()-&gt;to_string(),
+			&#039;cookies&#039;     =&gt; array(),
+		);
+
+		/**
+		 * Request arguments.
+		 *
+		 * Allow other actors to filter the request arguments. Note that
+		 * child classes can override this method, which means this filter may
+		 * not be invoked, or may be invoked prior to the overridden method
+		 *
+		 * @since 2.2.0
+		 * @param array $args request arguments
+		 * @param \WCS_SV_API_Base class instance
+		 */
+		return apply_filters( &#039;wc_&#039; . $this-&gt;get_api_id() . &#039;_http_request_args&#039;, $args, $this );
+	}
+
+
+	/**
+	 * Get the request method, POST by default
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_request_method() {
+		// if the request object specifies the method to use, use that, otherwise use the API default
+		return $this-&gt;get_request() &amp;&amp; $this-&gt;get_request()-&gt;get_method() ? $this-&gt;get_request()-&gt;get_method() : $this-&gt;request_method;
+	}
+
+
+	/**
+	 * Get the request HTTP version, 1.1 by default
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_request_http_version() {
+
+		return $this-&gt;request_http_version;
+	}
+
+
+	/**
+	 * Get the request headers
+	 *
+	 * @since 2.2.0
+	 * @return array
+	 */
+	protected function get_request_headers() {
+		return $this-&gt;request_headers;
+	}
+
+
+	/**
+	 * Get sanitized request headers suitable for logging, stripped of any
+	 * confidential information
+	 *
+	 * The `Authorization` header is sanitized automatically.
+	 *
+	 * Child classes that implement any custom authorization headers should
+	 * override this method to perform sanitization.
+	 *
+	 * @since 2.2.0
+	 * @return array
+	 */
+	protected function get_sanitized_request_headers() {
+
+		$headers = $this-&gt;get_request_headers();
+
+		if ( ! empty( $headers[&#039;Authorization&#039;] ) ) {
+			$headers[&#039;Authorization&#039;] = str_repeat( &#039;*&#039;, strlen( $headers[&#039;Authorization&#039;] ) );
+		}
+
+		return $headers;
+	}
+
+
+	/**
+	 * Get the request user agent, defaults to:
+	 *
+	 * Dasherized-Plugin-Name/Plugin-Version (WooCommerce/WC-Version; WordPress/WP-Version)
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_request_user_agent() {
+
+		return sprintf( &#039;%s/%s (WooCommerce/%s; WordPress/%s)&#039;, str_replace( &#039; &#039;, &#039;-&#039;, $this-&gt;get_plugin()-&gt;get_plugin_name() ), $this-&gt;get_plugin()-&gt;get_version(), WC_VERSION, $GLOBALS[&#039;wp_version&#039;] );
+	}
+
+
+	/**
+	 * Get the request duration in seconds, rounded to the 5th decimal place
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_request_duration() {
+		return $this-&gt;request_duration;
+	}
+
+
+	/** Response Getters ******************************************************/
+
+
+	/**
+	 * Get the response handler class name
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_response_handler() {
+		return $this-&gt;response_handler;
+	}
+
+
+	/**
+	 * Get the response code
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_response_code() {
+		return $this-&gt;response_code;
+	}
+
+
+	/**
+	 * Get the response message
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_response_message() {
+		return $this-&gt;response_message;
+	}
+
+
+	/**
+	 * Get the response headers
+	 *
+	 * @since 2.2.0
+	 * @return array
+	 */
+	protected function get_response_headers() {
+		return $this-&gt;response_headers;
+	}
+
+
+	/**
+	 * Get the raw response body, prior to any parsing or sanitization
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_raw_response_body() {
+		return $this-&gt;raw_response_body;
+	}
+
+
+	/**
+	 * Get the sanitized response body, provided by the response class
+	 * to_string_safe() method
+	 *
+	 * @since 2.2.0
+	 * @return string|null
+	 */
+	protected function get_sanitized_response_body() {
+		return is_callable( array( $this-&gt;get_response(), &#039;to_string_safe&#039; ) ) ? $this-&gt;get_response()-&gt;to_string_safe() : null;
+	}
+
+
+	/** Misc Getters ******************************************************/
+
+
+	/**
+	 * Returns the most recent request object
+	 *
+	 * @since 2.2.0
+	 * @see \SV_WC_API_Request
+	 * @return object the most recent request object
+	 */
+	public function get_request() {
+		return $this-&gt;request;
+	}
+
+
+	/**
+	 * Returns the most recent response object
+	 *
+	 * @since 2.2.0
+	 * @see \SV_WC_API_Response
+	 * @return object the most recent response object
+	 */
+	public function get_response() {
+		return $this-&gt;response;
+	}
+
+
+	/**
+	 * Get the ID for the API, used primarily to namespace the action name
+	 * for broadcasting requests
+	 *
+	 * @since 2.2.0
+	 * @return string
+	 */
+	protected function get_api_id() {
+
+		return $this-&gt;get_plugin()-&gt;get_id();
+	}
+
+
+	/**
+	 * Return a new request object
+	 *
+	 * Child classes must implement this to return an object that implements
+	 * \SV_WC_API_Request which should be used in the child class API methods
+	 * to build the request. The returned SV_WC_API_Request should be passed
+	 * to self::perform_request() by your concrete API methods
+	 *
+	 * @since 2.2.0
+	 * @param array $args optional request arguments
+	 * @return SV_WC_API_Request
+	 */
+	abstract protected function get_new_request( $args = array() );
+
+
+	/**
+	 * Return the plugin class instance associated with this API
+	 *
+	 * Child classes must implement this to return their plugin class instance
+	 *
+	 * This is used for defining the plugin ID used in filter names, as well
+	 * as the plugin name used for the default user agent.
+	 *
+	 * @since 2.2.0
+	 * @return SV_WC_Plugin
+	 */
+	abstract protected function get_plugin();
+
+
+	/** Setters ***************************************************************/
+
+
+	/**
+	 * Set a header request
+	 *
+	 * @since 2.2.0
+	 * @param string $name header name
+	 * @param string $value header value
+	 * @return string
+	 */
+	protected function set_request_header( $name, $value ) {
+
+		$this-&gt;request_headers[ $name ] = $value;
+	}
+
+
+	/**
+	 * Set HTTP basic auth for the request
+	 *
+	 * Since 2.2.0
+	 * @param string $username
+	 * @param string $password
+	 */
+	protected function set_http_basic_auth( $username, $password ) {
+
+		$this-&gt;request_headers[&#039;Authorization&#039;] = sprintf( &#039;Basic %s&#039;, base64_encode( &quot;{$username}:{$password}&quot; ) );
+	}
+
+
+	/**
+	 * Set the Content-Type request header
+	 *
+	 * @since 2.2.0
+	 * @param string $content_type
+	 */
+	protected function set_request_content_type_header( $content_type ) {
+		$this-&gt;request_headers[&#039;content-type&#039;] = $content_type;
+	}
+
+
+	/**
+	 * Set the Accept request header
+	 *
+	 * @since 2.2.0
+	 * @param string $type the request accept type
+	 */
+	protected function set_request_accept_header( $type ) {
+		$this-&gt;request_headers[&#039;accept&#039;] = $type;
+	}
+
+
+	/**
+	 * Set the response handler class name. This class will be instantiated
+	 * to parse the response for the request.
+	 *
+	 * Note the class should implement SV_WC_API
+	 *
+	 * @since 2.2.0
+	 * @param string $handler handle class name
+	 * @return array
+	 */
+	protected function set_response_handler( $handler ) {
+		$this-&gt;response_handler = $handler;
+	}
+
+
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-time-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_period_strings">
+        wcs_get_subscription_period_strings()
+        <a href="#function_wcs_get_subscription_period_strings" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.25">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return an i18n&#039;ified associative array of all possible subscription periods.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_period_strings</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$period</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$number</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_trial_period_strings">
+        wcs_get_subscription_trial_period_strings()
+        <a href="#function_wcs_get_subscription_trial_period_strings" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.53">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return an i18n&#039;ified associative array of all possible subscription trial periods.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_trial_period_strings</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$period</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$number</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_non_cached_subscription_ranges">
+        wcs_get_non_cached_subscription_ranges()
+        <a href="#function_wcs_get_non_cached_subscription_ranges" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.83">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns an array of subscription lengths.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_non_cached_subscription_ranges</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>PayPal Standard Allowable Ranges
+D – for days; allowable range is 1 to 90
+W – for weeks; allowable range is 1 to 52
+M – for months; allowable range is 1 to 24
+Y – for years; allowable range is 1 to 5</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.1.2</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_ranges">
+        wcs_get_subscription_ranges()
+        <a href="#function_wcs_get_subscription_ranges" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.129">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">129</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Retaining the API, it makes use of the transient functionality.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_ranges</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription_period</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription_period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_period_interval_strings">
+        wcs_get_subscription_period_interval_strings()
+        <a href="#function_wcs_get_subscription_period_interval_strings" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.157">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">157</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return an i18n&#039;ified associative array of all possible subscription periods.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_period_interval_strings</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interval</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$interval</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_available_time_periods">
+        wcs_get_available_time_periods()
+        <a href="#function_wcs_get_available_time_periods" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.181">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">181</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return an i18n&#039;ified associative array of all time periods allowed for subscriptions.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_available_time_periods</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$form</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;singular&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$form</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;singular&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_trial_lengths">
+        wcs_get_subscription_trial_lengths()
+        <a href="#function_wcs_get_subscription_trial_lengths" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.205">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">205</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns an array of allowed trial period lengths.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_trial_lengths</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription_period</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription_period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_add_time">
+        wcs_add_time()
+        <a href="#function_wcs_add_time" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.229">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">229</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Convenience wrapper for adding &quot;{n} {periods}&quot; to a timestamp (e.g. 2 months or 5 days).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_add_time</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number_of_periods</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$period</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_timestamp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezone_behaviour</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;no_offset&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$number_of_periods</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The number of periods to add to the timestamp</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>One of day, week, month or year.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A Unix timestamp to add the time too.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timezone_behaviour</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;no_offset&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional. If the $from_timestamp parameter should be offset to the site time or not, either 'offset_site_time' or 'no_offset'. Default 'no_offset'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_add_months">
+        wcs_add_months()
+        <a href="#function_wcs_add_months" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.259">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">259</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Workaround the last day of month quirk in PHP&#039;s strtotime function.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_add_months</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_timestamp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$months_to_add</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezone_behaviour</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;no_offset&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Adding +1 month to the last day of the month can yield unexpected results with strtotime().
+For example:</p>
+<ul>
+<li>30 Jan 2013 + 1 month = 3rd March 2013</li>
+<li>28 Feb 2013 + 1 month = 28th March 2013</li>
+</ul>
+<p>What humans usually want is for the date to continue on the last day of the month.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A Unix timestamp to add the months too.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$months_to_add</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The number of months to add to the timestamp.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timezone_behaviour</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;no_offset&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Optional. If the $from_timestamp parameter should be offset to the site time or not, either 'offset_site_time' or 'no_offset'. Default 'no_offset'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_estimate_periods_between">
+        wcs_estimate_periods_between()
+        <a href="#function_wcs_estimate_periods_between" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.295">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">295</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Estimate how many days, weeks, months or years there are between now and a given
+date in the future. Estimates the minimum total of periods.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_estimate_periods_between</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_timestamp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_timestamp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$unit_of_time</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;month&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rounding_method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;ceil&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A Unix timestamp</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A Unix timestamp at some time in the future</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$unit_of_time</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;month&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A unit of time, either day, week month or year.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$rounding_method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;ceil&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A rounding method, either ceil (default) or floor for anything else</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_number_of_leap_days">
+        wcs_number_of_leap_days()
+        <a href="#function_wcs_number_of_leap_days" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.353">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">353</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Utility function to find out how many leap days are there between two given dates. The reason we need this is because
+the constant YEAR_IN_SECONDS assumes a 365 year, which means some of the calculations are going to be off by a day.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_number_of_leap_days</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_timestamp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_timestamp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"><p>This has caused problems where if there's a leap year, wcs_estimate_periods_between would return 2 years instead of
+1, making certain payments wildly inaccurate.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A unix timestamp</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A unix timestamp</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_is_leap_year">
+        wcs_is_leap_year()
+        <a href="#function_wcs_is_leap_year" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.393">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">393</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Filter function used in wcs_number_of_leap_days</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_is_leap_year</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$year</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$year</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>int A four digit year, eg 2017</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_estimate_period_between">
+        wcs_estimate_period_between()
+        <a href="#function_wcs_estimate_period_between" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.413">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">413</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Method to try to determine the period of subscriptions if data is missing. It tries the following, in order:</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_estimate_period_between</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$last_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$second_date</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interval</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><ul>
+<li>defaults to month</li>
+<li>comes up with an array of possible values given the standard time spans (day / week / month / year)</li>
+<li>ranks them</li>
+<li>discards 0 interval values</li>
+<li>discards high deviation values</li>
+<li>tries to match with passed in interval</li>
+<li>if all else fails, sorts by interval and returns the one having the lowest interval, or the first, if equal (that should
+not happen though)</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$last_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>mysql date string</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$second_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>mysql date string</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$interval</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>potential interval</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_find_full_months_between">
+        wcs_find_full_months_between()
+        <a href="#function_wcs_find_full_months_between" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.503">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">503</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Finds full months between two dates and the remaining seconds after the end of the last full month. Takes into account
+leap years and variable number of days in months. Uses wcs_add_months</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_find_full_months_between</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">numeric-string|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_timestamp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">numeric-string|int|float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_timestamp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interval</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">numeric-string|int|float</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>unix timestamp of a start date</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">numeric-string|int|float</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>unix timestamp of an end date</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$interval</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_discard_zero_intervals">
+        wcs_discard_zero_intervals()
+        <a href="#function_wcs_discard_zero_intervals" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.546">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">546</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Used in an array_filter, removes elements where intervals are less than 0</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_discard_zero_intervals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$array</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$array</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>elements of an array</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_discard_high_deviations">
+        wcs_discard_high_deviations()
+        <a href="#function_wcs_discard_high_deviations" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.560">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">560</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Used in an array_filter, discards high deviation elements.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_discard_high_deviations</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$array</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><ul>
+<li>10 days for a year (10/365th)</li>
+<li>4 days for a month (4/(days_in_month))</li>
+<li>1 day for week (i.e. 1/7th)</li>
+<li>1 hour for days (i.e. 1/24th)</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$array</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>elements of the filtered array</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_match_intervals">
+        wcs_match_intervals()
+        <a href="#function_wcs_match_intervals" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.584">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">584</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Used in an array_filter, tries to match intervals against passed in interval</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_match_intervals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$array</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$array</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>elements of filtered array</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_sort_by_intervals">
+        wcs_sort_by_intervals()
+        <a href="#function_wcs_sort_by_intervals" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.595">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">595</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Used in a usort, responsible for making sure the array is sorted in ascending order by intervals</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_sort_by_intervals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$a</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>one element of the sorted array</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$b</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>different element of the sorted array</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_sort_by_fractions">
+        wcs_sort_by_fractions()
+        <a href="#function_wcs_sort_by_fractions" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.613">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">613</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Used in a usort, responsible for making sure the array is sorted in descending order by fraction.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_sort_by_fractions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$a</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>one element of the sorted array</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$b</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>different element of the sorted array</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_is_datetime_mysql_format">
+        wcs_is_datetime_mysql_format()
+        <a href="#function_wcs_is_datetime_mysql_format" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.627">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">627</span>
+</aside>
+
+        <p class="phpdocumentor-summary">PHP on Windows does not have strptime function. Therefore this is what we&#039;re using to check
+whether the given time is of a specific format.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_is_datetime_mysql_format</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$time</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$time</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>the mysql time string</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_date_to_time">
+        wcs_date_to_time()
+        <a href="#function_wcs_date_to_time" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.663">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">663</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Convert a date string into a timestamp without ever adding or deducting time.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_date_to_time</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date_string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"><p>strtotime() would be handy for this purpose, but alas, if other code running on the server
+is calling date_default_timezone_set() to change the timezone, strtotime() will assume the
+date is in that timezone unless the timezone is specific on the string (which it isn't for
+any MySQL formatted date) and attempt to convert it to UTC time by adding or deducting the
+GMT/UTC offset for that timezone, so for example, when 3rd party code has set the servers
+timezone using date_default_timezone_set( 'America/Los_Angeles' ) doing something like
+gmdate( &quot;Y-m-d H:i:s&quot;, strtotime( gmdate( &quot;Y-m-d H:i:s&quot; ) ) ) will actually add 7 hours to
+the date even though it is a date in UTC timezone because the timezone wasn't specificed.</p>
+<p>This makes sure the date is never converted.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$date_string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A date string formatted in MySQl or similar format that will map correctly when instantiating an instance of DateTime()</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_strtotime_dark_knight">
+        wcs_strtotime_dark_knight()
+        <a href="#function_wcs_strtotime_dark_knight" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.684">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">684</span>
+</aside>
+
+        <p class="phpdocumentor-summary">A wrapper for strtotime() designed to stand up against those who want to watch the WordPress burn.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_strtotime_dark_knight</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$time_string</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from_timestamp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"><p>One day WordPress will require Harvey Dent (aka PHP 5.3) then we can use DateTime::add() instead,
+but for now, this ensures when using strtotime() to add time to a timestamp, there are no additional
+changes for server specific timezone additions or deductions.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$time_string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A string representation of a date in any format that can be parsed by strtotime()</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from_timestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_days_in_cycle">
+        wcs_get_days_in_cycle()
+        <a href="#function_wcs_get_days_in_cycle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.709">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">709</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Find the average number of days for a given billing period and interval.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_days_in_cycle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$period</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$interval</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>a billing period: day, week, month or year.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$interval</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>a billing interval</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_set_local_timezone">
+        wcs_set_local_timezone()
+        <a href="#function_wcs_set_local_timezone" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.737">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">737</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Set a DateTime&#039;s timezone to the WordPress site&#039;s timezone, or a UTC offset
+if no timezone string is available.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_set_local_timezone</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_DateTime">WC_DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\WC_DateTime">WC_DateTime</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$date</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_DateTime">WC_DateTime</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.4.2</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - -deprecated">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_sites_timezone">
+        wcs_get_sites_timezone()
+        <a href="#function_wcs_get_sites_timezone" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.756">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">756</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get an instance of the site&#039;s timezone.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_sites_timezone</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateTimeZone">DateTimeZone</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.4.2</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_subscription_ranges_tlc">
+        wcs_get_subscription_ranges_tlc()
+        <a href="#function_wcs_get_subscription_ranges_tlc" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.812">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">812</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns an array of subscription lengths.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_subscription_ranges_tlc</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>PayPal Standard Allowable Ranges
+D – for days; allowable range is 1 to 90
+W – for weeks; allowable range is 1 to 52
+M – for months; allowable range is 1 to 24
+Y – for years; allowable range is 1 to 5</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_datetime_from">
+        wcs_get_datetime_from()
+        <a href="#function_wcs_get_datetime_from" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.826">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">826</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Take a date in the form of a timestamp, MySQL date/time string or DateTime object (or perhaps
+a WC_Datetime object when WC &gt; 3.0 is active) and create a WC_DateTime object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_datetime_from</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$variable_date_type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<abbr title="\WC_DateTime">WC_DateTime</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$variable_date_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_datetime_utc_string">
+        wcs_get_datetime_utc_string()
+        <a href="#function_wcs_get_datetime_utc_string" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.853">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">853</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get a MySQL date/time string in UTC timezone from a WC_Datetime object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_datetime_utc_string</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$datetime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$datetime</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_format_datetime">
+        wcs_format_datetime()
+        <a href="#function_wcs_format_datetime" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.867">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">867</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Format a date for output, a wrapper for wcs_format_datetime() introduced with WC 3.0.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_format_datetime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_DateTime">WC_DateTime</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$date</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WC_DateTime">WC_DateTime</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Defaults to the wc_date_format function if not set.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_longest_period">
+        wcs_get_longest_period()
+        <a href="#function_wcs_get_longest_period" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.895">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">895</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Compares two periods and returns the longest period.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_longest_period</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$current_period</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$new_period</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$current_period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Period string. Can be 'day', 'week', 'month', 'year'.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$new_period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Period string. Can be 'day', 'week', 'month', 'year'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">4.0.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_shortest_period">
+        wcs_get_shortest_period()
+        <a href="#function_wcs_get_shortest_period" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-time-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-time-functions.html#source-view.920">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-time-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">920</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Compares two periods and returns the shortest period.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_shortest_period</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$current_period</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$new_period</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$current_period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A period string. Can be 'day', 'week', 'month', 'year'.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$new_period</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A period string. Can be 'day', 'week', 'month', 'year'.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">4.0.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Temporal Functions
+ *
+ * Functions for time values and ranges
+ *
+ * @author   Prospress
+ * @category Core
+ * @package  WooCommerce Subscriptions/Functions
+ * @version  2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+
+/**
+ * Return an i18n&#039;ified associative array of all possible subscription periods.
+ *
+ * @param int (optional) An interval in the range 1-6
+ * @param string (optional) One of day, week, month or year. If empty, all subscription ranges are returned.
+ * @since 2.0
+ */
+function wcs_get_subscription_period_strings( $number = 1, $period = &#039;&#039; ) {
+
+	// phpcs:disable Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma
+	$translated_periods = apply_filters( &#039;woocommerce_subscription_periods&#039;,
+		array(
+			// translators: placeholder is number of days. (e.g. &quot;Bill this every day / 4 days&quot;)
+			&#039;day&#039;   =&gt; sprintf( _nx( &#039;day&#039;,   &#039;%s days&#039;,   $number, &#039;Subscription billing period.&#039;, &#039;woocommerce-subscriptions&#039; ), $number ), // phpcs:ignore WordPress.WP.I18n.MissingSingularPlaceholder,WordPress.WP.I18n.MismatchedPlaceholders
+			// translators: placeholder is number of weeks. (e.g. &quot;Bill this every week / 4 weeks&quot;)
+			&#039;week&#039;  =&gt; sprintf( _nx( &#039;week&#039;,  &#039;%s weeks&#039;,  $number, &#039;Subscription billing period.&#039;, &#039;woocommerce-subscriptions&#039; ), $number ), // phpcs:ignore WordPress.WP.I18n.MissingSingularPlaceholder,WordPress.WP.I18n.MismatchedPlaceholders
+			// translators: placeholder is number of months. (e.g. &quot;Bill this every month / 4 months&quot;)
+			&#039;month&#039; =&gt; sprintf( _nx( &#039;month&#039;, &#039;%s months&#039;, $number, &#039;Subscription billing period.&#039;, &#039;woocommerce-subscriptions&#039; ), $number ), // phpcs:ignore WordPress.WP.I18n.MissingSingularPlaceholder,WordPress.WP.I18n.MismatchedPlaceholders
+			// translators: placeholder is number of years. (e.g. &quot;Bill this every year / 4 years&quot;)
+			&#039;year&#039;  =&gt; sprintf( _nx( &#039;year&#039;,  &#039;%s years&#039;,  $number, &#039;Subscription billing period.&#039;, &#039;woocommerce-subscriptions&#039; ), $number ), // phpcs:ignore WordPress.WP.I18n.MissingSingularPlaceholder,WordPress.WP.I18n.MismatchedPlaceholders
+		),
+		$number
+	);
+	// phpcs:enable
+
+	return ( ! empty( $period ) ) ? $translated_periods[ $period ] : $translated_periods;
+}
+
+/**
+ * Return an i18n&#039;ified associative array of all possible subscription trial periods.
+ *
+ * @param int (optional) An interval in the range 1-6
+ * @param string (optional) One of day, week, month or year. If empty, all subscription ranges are returned.
+ * @since 2.0
+ */
+function wcs_get_subscription_trial_period_strings( $number = 1, $period = &#039;&#039; ) {
+
+	$translated_periods = apply_filters( &#039;woocommerce_subscription_trial_periods&#039;,
+		array(
+			// translators: placeholder is a number of days.
+			&#039;day&#039;   =&gt; sprintf( _n( &#039;%s day&#039;, &#039;a %s-day&#039;, $number, &#039;woocommerce-subscriptions&#039; ), $number ),
+			// translators: placeholder is a number of weeks.
+			&#039;week&#039;  =&gt; sprintf( _n( &#039;%s week&#039;, &#039;a %s-week&#039;, $number, &#039;woocommerce-subscriptions&#039; ), $number ),
+			// translators: placeholder is a number of months.
+			&#039;month&#039; =&gt; sprintf( _n( &#039;%s month&#039;, &#039;a %s-month&#039;, $number, &#039;woocommerce-subscriptions&#039; ), $number ),
+			// translators: placeholder is a number of years.
+			&#039;year&#039;  =&gt; sprintf( _n( &#039;%s year&#039;, &#039;a %s-year&#039;, $number, &#039;woocommerce-subscriptions&#039; ), $number ),
+		),
+		$number
+	);
+
+	return ( ! empty( $period ) ) ? $translated_periods[ $period ] : $translated_periods;
+}
+
+/**
+ * Returns an array of subscription lengths.
+ *
+ * PayPal Standard Allowable Ranges
+ * D – for days; allowable range is 1 to 90
+ * W – for weeks; allowable range is 1 to 52
+ * M – for months; allowable range is 1 to 24
+ * Y – for years; allowable range is 1 to 5
+ *
+ * @since 2.1.2
+ */
+function wcs_get_non_cached_subscription_ranges() {
+
+	foreach ( array( &#039;day&#039;, &#039;week&#039;, &#039;month&#039;, &#039;year&#039; ) as $period ) {
+
+		$subscription_lengths = array(
+			_x( &#039;Never expire&#039;, &#039;Subscription length&#039;, &#039;woocommerce-subscriptions&#039; ),
+		);
+
+		switch ( $period ) {
+			case &#039;day&#039;:
+				$subscription_lengths[] = _x( &#039;1 day&#039;, &#039;Subscription lengths. e.g. &quot;For 1 day...&quot;&#039;, &#039;woocommerce-subscriptions&#039; );
+				$subscription_range = range( 2, 90 );
+				break;
+			case &#039;week&#039;:
+				$subscription_lengths[] = _x( &#039;1 week&#039;, &#039;Subscription lengths. e.g. &quot;For 1 week...&quot;&#039;, &#039;woocommerce-subscriptions&#039; );
+				$subscription_range = range( 2, 52 );
+				break;
+			case &#039;month&#039;:
+				$subscription_lengths[] = _x( &#039;1 month&#039;, &#039;Subscription lengths. e.g. &quot;For 1 month...&quot;&#039;, &#039;woocommerce-subscriptions&#039; );
+				$subscription_range = range( 2, 24 );
+				break;
+			case &#039;year&#039;:
+				$subscription_lengths[] = _x( &#039;1 year&#039;, &#039;Subscription lengths. e.g. &quot;For 1 year...&quot;&#039;, &#039;woocommerce-subscriptions&#039; );
+				$subscription_range = range( 2, 5 );
+				break;
+		}
+
+		foreach ( $subscription_range as $number ) {
+			$subscription_range[ $number ] = wcs_get_subscription_period_strings( $number, $period );
+		}
+
+		// Add the possible range to all time range
+		$subscription_lengths += $subscription_range;
+
+		$subscription_ranges[ $period ] = $subscription_lengths;
+	}
+
+	return $subscription_ranges;
+}
+
+/**
+ * Retaining the API, it makes use of the transient functionality.
+ *
+ * @param string $period
+ * @return bool|mixed
+ */
+function wcs_get_subscription_ranges( $subscription_period = &#039;&#039; ) {
+	static $subscription_locale_ranges = array();
+
+	if ( ! is_string( $subscription_period ) ) {
+		$subscription_period = &#039;&#039;;
+	}
+
+	$locale = function_exists( &#039;get_user_locale&#039; ) ? get_user_locale() : get_locale();
+
+	if ( ! isset( $subscription_locale_ranges[ $locale ] ) ) {
+		$subscription_locale_ranges[ $locale ] = wcs_get_non_cached_subscription_ranges();
+	}
+
+	$subscription_ranges = apply_filters( &#039;woocommerce_subscription_lengths&#039;, $subscription_locale_ranges[ $locale ], $subscription_period );
+
+	if ( ! empty( $subscription_period ) ) {
+		return $subscription_ranges[ $subscription_period ];
+	} else {
+		return $subscription_ranges;
+	}
+}
+
+/**
+ * Return an i18n&#039;ified associative array of all possible subscription periods.
+ *
+ * @param int (optional) An interval in the range 1-6
+ * @since 2.0
+ */
+function wcs_get_subscription_period_interval_strings( $interval = &#039;&#039; ) {
+
+	$intervals = array( 1 =&gt; _x( &#039;every&#039;, &#039;period interval (eg &quot;$10 _every_ 2 weeks&quot;)&#039;, &#039;woocommerce-subscriptions&#039; ) );
+
+	foreach ( range( 2, 6 ) as $i ) {
+		// translators: period interval, placeholder is ordinal (eg &quot;$10 every _2nd/3rd/4th_&quot;, etc)
+		$intervals[ $i ] = sprintf( _x( &#039;every %s&#039;, &#039;period interval with ordinal number (e.g. &quot;every 2nd&quot;&#039;, &#039;woocommerce-subscriptions&#039; ), wcs_append_numeral_suffix( $i ) );
+	}
+
+	$intervals = apply_filters( &#039;woocommerce_subscription_period_interval_strings&#039;, $intervals );
+
+	if ( empty( $interval ) ) {
+		return $intervals;
+	} else {
+		return $intervals[ $interval ];
+	}
+}
+
+/**
+ * Return an i18n&#039;ified associative array of all time periods allowed for subscriptions.
+ *
+ * @param string (Optional) Either &#039;singular&#039; for singular trial periods or &#039;plural&#039;.
+ * @since 2.0
+ */
+function wcs_get_available_time_periods( $form = &#039;singular&#039; ) {
+
+	$number = ( &#039;singular&#039; === $form ) ? 1 : 2;
+
+	// phpcs:disable Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma
+	$translated_periods = apply_filters( &#039;woocommerce_subscription_available_time_periods&#039;,
+		array(
+			&#039;day&#039;   =&gt; _nx( &#039;day&#039;,   &#039;days&#039;,   $number, &#039;Used in the trial period dropdown. Number is in text field. 0, 2+ will need plural, 1 will need singular.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;week&#039;  =&gt; _nx( &#039;week&#039;,  &#039;weeks&#039;,  $number, &#039;Used in the trial period dropdown. Number is in text field. 0, 2+ will need plural, 1 will need singular.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;month&#039; =&gt; _nx( &#039;month&#039;, &#039;months&#039;, $number, &#039;Used in the trial period dropdown. Number is in text field. 0, 2+ will need plural, 1 will need singular.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;year&#039;  =&gt; _nx( &#039;year&#039;,  &#039;years&#039;,  $number, &#039;Used in the trial period dropdown. Number is in text field. 0, 2+ will need plural, 1 will need singular.&#039;, &#039;woocommerce-subscriptions&#039; ),
+		)
+	);
+	// phpcs:enable
+
+	return $translated_periods;
+}
+
+/**
+ * Returns an array of allowed trial period lengths.
+ *
+ * @param string (optional) One of day, week, month or year. If empty, all subscription trial period lengths are returned.
+ * @since 2.0
+ */
+function wcs_get_subscription_trial_lengths( $subscription_period = &#039;&#039; ) {
+
+	$all_trial_periods = wcs_get_subscription_ranges();
+
+	foreach ( $all_trial_periods as $period =&gt; $trial_periods ) {
+		$all_trial_periods[ $period ][0] = _x( &#039;no&#039;, &#039;no trial period&#039;, &#039;woocommerce-subscriptions&#039; );
+	}
+
+	if ( ! empty( $subscription_period ) ) {
+		return $all_trial_periods[ $subscription_period ];
+	} else {
+		return $all_trial_periods;
+	}
+}
+
+/**
+ * Convenience wrapper for adding &quot;{n} {periods}&quot; to a timestamp (e.g. 2 months or 5 days).
+ *
+ * @param int    $number_of_periods  The number of periods to add to the timestamp
+ * @param string $period             One of day, week, month or year.
+ * @param int    $from_timestamp     A Unix timestamp to add the time too.
+ * @param string $timezone_behaviour Optional. If the $from_timestamp parameter should be offset to the site time or not, either &#039;offset_site_time&#039; or &#039;no_offset&#039;. Default &#039;no_offset&#039;.
+ * @since 2.0
+ */
+function wcs_add_time( $number_of_periods, $period, $from_timestamp, $timezone_behaviour = &#039;no_offset&#039; ) {
+
+	if ( $number_of_periods &gt; 0 ) {
+		if ( &#039;month&#039; == $period ) {
+			$next_timestamp = wcs_add_months( $from_timestamp, $number_of_periods, $timezone_behaviour );
+		} else {
+			$next_timestamp = wcs_strtotime_dark_knight( &quot;+ {$number_of_periods} {$period}&quot;, $from_timestamp );
+		}
+	} else {
+		$next_timestamp = $from_timestamp;
+	}
+
+	return $next_timestamp;
+}
+
+/**
+ * Workaround the last day of month quirk in PHP&#039;s strtotime function.
+ *
+ * Adding +1 month to the last day of the month can yield unexpected results with strtotime().
+ * For example:
+ * - 30 Jan 2013 + 1 month = 3rd March 2013
+ * - 28 Feb 2013 + 1 month = 28th March 2013
+ *
+ * What humans usually want is for the date to continue on the last day of the month.
+ *
+ * @param int $from_timestamp        A Unix timestamp to add the months too.
+ * @param int $months_to_add         The number of months to add to the timestamp.
+ * @param string $timezone_behaviour Optional. If the $from_timestamp parameter should be offset to the site time or not, either &#039;offset_site_time&#039; or &#039;no_offset&#039;. Default &#039;no_offset&#039;.
+ * @since 2.0
+ */
+function wcs_add_months( $from_timestamp, $months_to_add, $timezone_behaviour = &#039;no_offset&#039; ) {
+
+	if ( &#039;offset_site_time&#039; === $timezone_behaviour ) {
+		$from_timestamp += wc_timezone_offset();
+	}
+
+	$first_day_of_month = gmdate( &#039;Y-m&#039;, $from_timestamp ) . &#039;-1&#039;;
+	$days_in_next_month = gmdate( &#039;t&#039;, wcs_strtotime_dark_knight( &quot;+ {$months_to_add} month&quot;, wcs_date_to_time( $first_day_of_month ) ) );
+
+	// Payment is on the last day of the month OR number of days in next billing month is less than the the day of this month (i.e. current billing date is 30th January, next billing date can&#039;t be 30th February)
+	if ( gmdate( &#039;d m Y&#039;, $from_timestamp ) === gmdate( &#039;t m Y&#039;, $from_timestamp ) || gmdate( &#039;d&#039;, $from_timestamp ) &gt; $days_in_next_month ) {
+		for ( $i = 1; $i &lt;= $months_to_add; $i++ ) {
+			$next_month = wcs_add_time( 3, &#039;days&#039;, $from_timestamp, $timezone_behaviour ); // Add 3 days to make sure we get to the next month, even when it&#039;s the 29th day of a month with 31 days
+			$next_timestamp = $from_timestamp = wcs_date_to_time( gmdate( &#039;Y-m-t H:i:s&#039;, $next_month ) ); // NB the &quot;t&quot; to get last day of next month
+		}
+	} else { // Safe to just add a month
+		$next_timestamp = wcs_strtotime_dark_knight( &quot;+ {$months_to_add} month&quot;, $from_timestamp );
+	}
+
+	if ( &#039;offset_site_time&#039; === $timezone_behaviour ) {
+		$next_timestamp -= wc_timezone_offset();
+	}
+
+	return $next_timestamp;
+}
+
+/**
+ * Estimate how many days, weeks, months or years there are between now and a given
+ * date in the future. Estimates the minimum total of periods.
+ *
+ * @param int $start_timestamp A Unix timestamp
+ * @param int $end_timestamp A Unix timestamp at some time in the future
+ * @param string $unit_of_time A unit of time, either day, week month or year.
+ * @param string $rounding_method A rounding method, either ceil (default) or floor for anything else
+ * @since 2.0
+ */
+function wcs_estimate_periods_between( $start_timestamp, $end_timestamp, $unit_of_time = &#039;month&#039;, $rounding_method = &#039;ceil&#039; ) {
+
+	if ( $end_timestamp &lt;= $start_timestamp ) {
+
+		$periods_until = 0;
+
+	} elseif ( &#039;month&#039; == $unit_of_time ) {
+
+		// Calculate the number of times this day will occur until we&#039;ll be in a time after the given timestamp
+		$timestamp = $start_timestamp;
+
+		if ( &#039;ceil&#039; == $rounding_method ) {
+			for ( $periods_until = 0; $timestamp &lt; $end_timestamp; $periods_until++ ) {
+				$timestamp = wcs_add_months( $timestamp, 1 );
+			}
+		} else {
+			for ( $periods_until = -1; $timestamp &lt;= $end_timestamp; $periods_until++ ) {
+				$timestamp = wcs_add_months( $timestamp, 1 );
+			}
+		}
+	} else {
+
+		$seconds_until_timestamp = $end_timestamp - $start_timestamp;
+
+		switch ( $unit_of_time ) {
+
+			case &#039;day&#039;:
+				$denominator = DAY_IN_SECONDS;
+				break;
+
+			case &#039;week&#039;:
+				$denominator = WEEK_IN_SECONDS;
+				break;
+
+			case &#039;year&#039;:
+				$denominator = YEAR_IN_SECONDS;
+				// we need to adjust this because YEAR_IN_SECONDS assumes a 365 day year. See notes on wcs_number_of_leap_days
+				$seconds_until_timestamp = $seconds_until_timestamp - wcs_number_of_leap_days( $start_timestamp, $end_timestamp ) * DAY_IN_SECONDS;
+				break;
+		}
+
+		$periods_until = ( &#039;ceil&#039; == $rounding_method ) ? ceil( $seconds_until_timestamp / $denominator ) : floor( $seconds_until_timestamp / $denominator );
+	}
+
+	return $periods_until;
+}
+
+/**
+ * Utility function to find out how many leap days are there between two given dates. The reason we need this is because
+ * the constant YEAR_IN_SECONDS assumes a 365 year, which means some of the calculations are going to be off by a day.
+ * This has caused problems where if there&#039;s a leap year, wcs_estimate_periods_between would return 2 years instead of
+ * 1, making certain payments wildly inaccurate.
+ *
+ * @param int $start_timestamp A unix timestamp
+ * @param int $end_timestamp A unix timestamp
+ *
+ * @return int number of leap days between the start and end timstamps
+ */
+function wcs_number_of_leap_days( $start_timestamp, $end_timestamp ) {
+	if ( ! is_numeric( $start_timestamp ) || ! is_numeric( $end_timestamp ) ) {
+		throw new InvalidArgumentException( &#039;Start or end times are not integers&#039; );
+	}
+	// save the date! ;)
+	$default_tz = date_default_timezone_get();
+	date_default_timezone_set( &#039;UTC&#039; );
+
+	// Years to check
+	$years = range( date( &#039;Y&#039;, $start_timestamp ), date( &#039;Y&#039;, $end_timestamp ) );
+	$leap_years = array_filter( $years, &#039;wcs_is_leap_year&#039; );
+	$total_feb_29s = 0;
+
+	if ( ! empty( $leap_years ) ) {
+		// Let&#039;s get the first feb 29 in the list
+		$first_feb_29 = mktime( 23, 59, 59, 2, 29, reset( $leap_years ) );
+		$last_feb_29 = mktime( 0, 0, 0, 2, 29, end( $leap_years ) );
+
+		$is_first_feb_covered = ( $first_feb_29 &gt;= $start_timestamp ) ? 1 : 0;
+		$is_last_feb_covered = ( $last_feb_29 &lt;= $end_timestamp ) ? 1 : 0;
+
+		if ( count( $leap_years ) &gt; 1 ) {
+			// the feb 29s are in different years
+			$total_feb_29s = count( $leap_years ) - 2 + $is_first_feb_covered + $is_last_feb_covered;
+		} else {
+			$total_feb_29s = ( $first_feb_29 &gt;= $start_timestamp &amp;&amp; $last_feb_29 &lt;= $end_timestamp ) ? 1 : 0;
+		}
+	}
+	date_default_timezone_set( $default_tz );
+
+	return $total_feb_29s;
+}
+
+/**
+ * Filter function used in wcs_number_of_leap_days
+ *
+ * @param $year int A four digit year, eg 2017
+ *
+ * @return bool|string
+ */
+function wcs_is_leap_year( $year ) {
+	return date( &#039;L&#039;, mktime( 0, 0, 0, 1, 1, $year ) );
+}
+/**
+ * Method to try to determine the period of subscriptions if data is missing. It tries the following, in order:
+ *
+ * - defaults to month
+ * - comes up with an array of possible values given the standard time spans (day / week / month / year)
+ * - ranks them
+ * - discards 0 interval values
+ * - discards high deviation values
+ * - tries to match with passed in interval
+ * - if all else fails, sorts by interval and returns the one having the lowest interval, or the first, if equal (that should
+ *   not happen though)
+ *
+ * @param  string  $last_date   mysql date string
+ * @param  string  $second_date mysql date string
+ * @param  integer $interval    potential interval
+ * @return string               period string
+ */
+function wcs_estimate_period_between( $last_date, $second_date, $interval = 1 ) {
+
+	if ( ! is_int( $interval ) ) {
+		$interval = 1;
+	}
+
+	$last_timestamp    = wcs_date_to_time( $last_date );
+	$second_timestamp  = wcs_date_to_time( $second_date );
+
+	$earlier_timestamp = min( $last_timestamp, $second_timestamp );
+	$later_timestamp   = max( $last_timestamp, $second_timestamp );
+
+	$days_in_month     = gmdate( &#039;t&#039;, $earlier_timestamp );
+	$difference        = absint( $last_timestamp - $second_timestamp );
+	$period_in_seconds = round( $difference / $interval );
+	$possible_periods  = array();
+
+	// check for months
+	$full_months = wcs_find_full_months_between( $earlier_timestamp, $later_timestamp, $interval );
+
+	$possible_periods[&#039;month&#039;] = array(
+		&#039;intervals&#039;         =&gt; floor( $full_months[&#039;months&#039;] / $interval ),
+		&#039;remainder&#039;         =&gt; $full_months[&#039;remainder&#039;],
+		&#039;fraction&#039;          =&gt; $full_months[&#039;remainder&#039;] / ( 30 * DAY_IN_SECONDS ),
+		&#039;period&#039;            =&gt; &#039;month&#039;,
+		&#039;days_in_month&#039;     =&gt; $days_in_month,
+		&#039;original_interval&#039; =&gt; $interval,
+	);
+
+	// check for different time spans
+	foreach ( array( &#039;year&#039; =&gt; YEAR_IN_SECONDS, &#039;week&#039; =&gt; WEEK_IN_SECONDS, &#039;day&#039; =&gt; DAY_IN_SECONDS ) as $time =&gt; $seconds ) { // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+		$possible_periods[ $time ] = array(
+			&#039;intervals&#039;         =&gt; floor( $period_in_seconds / $seconds ),
+			&#039;remainder&#039;         =&gt; $period_in_seconds % $seconds,
+			&#039;fraction&#039;          =&gt; ( $period_in_seconds % $seconds ) / $seconds,
+			&#039;period&#039;            =&gt; $time,
+			&#039;days_in_month&#039;     =&gt; $days_in_month,
+			&#039;original_interval&#039; =&gt; $interval,
+		);
+	}
+
+	// filter out ones that are less than one period
+	$possible_periods_zero_filtered = array_filter( $possible_periods, &#039;wcs_discard_zero_intervals&#039; );
+	if ( empty( $possible_periods_zero_filtered ) ) {
+		// fall back if the difference is less than a day and return default &#039;day&#039;
+		return &#039;day&#039;;
+	} else {
+		$possible_periods = $possible_periods_zero_filtered;
+	}
+
+	// filter out ones that have too high of a deviation
+	$possible_periods_no_hd = array_filter( $possible_periods, &#039;wcs_discard_high_deviations&#039; );
+
+	if ( count( $possible_periods_no_hd ) == 1 ) {
+		// only one matched, let&#039;s return that as our best guess
+		$possible_periods_no_hd = array_shift( $possible_periods_no_hd );
+		return $possible_periods_no_hd[&#039;period&#039;];
+	} elseif ( count( $possible_periods_no_hd ) &gt; 1 ) {
+		$possible_periods = $possible_periods_no_hd;
+	}
+
+	// check for interval equality
+	$possible_periods_interval_match = array_filter( $possible_periods, &#039;wcs_match_intervals&#039; );
+
+	if ( count( $possible_periods_interval_match ) == 1 ) {
+		foreach ( $possible_periods_interval_match as $period_data ) {
+			// only one matched the interval as our best guess
+			return $period_data[&#039;period&#039;];
+		}
+	} elseif ( count( $possible_periods_interval_match ) &gt; 1 ) {
+		$possible_periods = $possible_periods_interval_match;
+	}
+
+	// order by number of intervals and return the lowest
+
+	usort( $possible_periods, &#039;wcs_sort_by_intervals&#039; );
+
+	$least_interval = array_shift( $possible_periods );
+
+	return $least_interval[&#039;period&#039;];
+}
+
+/**
+ * Finds full months between two dates and the remaining seconds after the end of the last full month. Takes into account
+ * leap years and variable number of days in months. Uses wcs_add_months
+ *
+ * @param  numeric $start_timestamp unix timestamp of a start date
+ * @param  numeric $end_timestamp   unix timestamp of an end date
+ * @return array                    with keys &#039;months&#039; (integer) and &#039;remainder&#039; (seconds, integer)
+ */
+function wcs_find_full_months_between( $start_timestamp, $end_timestamp, $interval = 1 ) {
+	$number_of_months = 0;
+	$remainder = 0;
+	$previous_remainder = 0;
+	$months_in_period = 0;
+	$remainder_in_period = 0;
+
+	while ( 0 &lt;= $remainder ) {
+		$previous_timestamp = $start_timestamp;
+		$start_timestamp = wcs_add_months( $start_timestamp, 1 );
+		$previous_remainder = $remainder;
+		$remainder = $end_timestamp - $start_timestamp;
+		$remainder_in_period += $start_timestamp - $previous_timestamp;
+
+		if ( $remainder &gt;= 0 ) {
+			$number_of_months++;
+			$months_in_period++;
+		} elseif ( 0 === $previous_remainder ) {
+			$previous_remainder = $end_timestamp - $previous_timestamp;
+		}
+
+		if ( $months_in_period &gt;= $interval ) {
+			$months_in_period = 0;
+			$remainder_in_period = 0;
+		}
+	}
+
+	$remainder_in_period += $remainder;
+
+	$time_difference = array(
+		&#039;months&#039;    =&gt; $number_of_months,
+		&#039;remainder&#039; =&gt; $remainder_in_period,
+	);
+
+	return $time_difference;
+}
+
+/**
+ * Used in an array_filter, removes elements where intervals are less than 0
+ *
+ * @param  array $array elements of an array
+ * @return bool        true if at least 1 interval
+ */
+function wcs_discard_zero_intervals( $array ) {
+	return $array[&#039;intervals&#039;] &gt; 0;
+}
+
+/**
+ * Used in an array_filter, discards high deviation elements.
+ * - 10 days for a year (10/365th)
+ * - 4 days for a month (4/(days_in_month))
+ * - 1 day for week (i.e. 1/7th)
+ * - 1 hour for days (i.e. 1/24th)
+ *
+ * @param  array $array elements of the filtered array
+ * @return bool        true if value is within deviation limit
+ */
+function wcs_discard_high_deviations( $array ) {
+	switch ( $array[&#039;period&#039;] ) {
+		case &#039;year&#039;:
+			return $array[&#039;fraction&#039;] &lt; ( 10 / 365 );
+			break;
+		case &#039;month&#039;:
+			return $array[&#039;fraction&#039;] &lt; ( 4 / $array[&#039;days_in_month&#039;] );
+			break;
+		case &#039;week&#039;:
+			return $array[&#039;fraction&#039;] &lt; ( 1 / 7 );
+			break;
+		case &#039;day&#039;:
+			return $array[&#039;fraction&#039;] &lt; ( 1 / 24 );
+			break;
+		default:
+			return false;
+	}
+}
+
+/**
+ * Used in an array_filter, tries to match intervals against passed in interval
+ * @param  array $array elements of filtered array
+ * @return bool        true if intervals match
+ */
+function wcs_match_intervals( $array ) {
+	return $array[&#039;intervals&#039;] == $array[&#039;original_interval&#039;];
+}
+
+/**
+ * Used in a usort, responsible for making sure the array is sorted in ascending order by intervals
+ *
+ * @param  array $a one element of the sorted array
+ * @param  array $b different element of the sorted array
+ * @return int    0 if equal, -1 if $b is larger, 1 if $a is larger
+ */
+function wcs_sort_by_intervals( $a, $b ) {
+	if ( $a[&#039;intervals&#039;] == $b[&#039;intervals&#039;] ) {
+		if ( $a[&#039;fraction&#039;] == $b[&#039;fraction&#039;] ) {
+			return 0;
+		}
+		return ( $a[&#039;fraction&#039;] &lt; $b[&#039;fraction&#039;] ) ? -1 : 1;
+
+	}
+	return ( $a[&#039;intervals&#039;] &lt; $b[&#039;intervals&#039;] ) ? -1 : 1;
+}
+
+/**
+ * Used in a usort, responsible for making sure the array is sorted in descending order by fraction.
+ *
+ * @param  array $a one element of the sorted array
+ * @param  array $b different element of the sorted array
+ * @return int    0 if equal, -1 if $b is larger, 1 if $a is larger
+ */
+function wcs_sort_by_fractions( $a, $b ) {
+	if ( $a[&#039;fraction&#039;] == $b[&#039;fraction&#039;] ) {
+		return 0;
+	}
+	return ( $a[&#039;fraction&#039;] &gt; $b[&#039;fraction&#039;] ) ? -1 : 1;
+}
+
+/**
+ * PHP on Windows does not have strptime function. Therefore this is what we&#039;re using to check
+ * whether the given time is of a specific format.
+ *
+ * @param  string $time the mysql time string
+ * @return boolean      true if it matches our mysql pattern of YYYY-MM-DD HH:MM:SS
+ */
+function wcs_is_datetime_mysql_format( $time ) {
+	if ( ! is_string( $time ) ) {
+		return false;
+	}
+
+	if ( function_exists( &#039;strptime&#039; ) ) {
+		$valid_time = $match = ( false !== strptime( $time, &#039;%Y-%m-%d %H:%M:%S&#039; ) );
+	} else {
+		// parses for the pattern of YYYY-MM-DD HH:MM:SS, but won&#039;t check whether it&#039;s a valid timedate
+		$match = preg_match( &#039;/\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/&#039;, $time );
+
+		// parses time, returns false for invalid dates
+		$valid_time = wcs_date_to_time( $time );
+	}
+
+	// magic number -2209078800 is strtotime( &#039;1900-01-00 00:00:00&#039; ). Needed to achieve parity with strptime
+	return $match &amp;&amp; false !== $valid_time &amp;&amp; -2209078800 &lt;= $valid_time;
+}
+
+/**
+ * Convert a date string into a timestamp without ever adding or deducting time.
+ *
+ * strtotime() would be handy for this purpose, but alas, if other code running on the server
+ * is calling date_default_timezone_set() to change the timezone, strtotime() will assume the
+ * date is in that timezone unless the timezone is specific on the string (which it isn&#039;t for
+ * any MySQL formatted date) and attempt to convert it to UTC time by adding or deducting the
+ * GMT/UTC offset for that timezone, so for example, when 3rd party code has set the servers
+ * timezone using date_default_timezone_set( &#039;America/Los_Angeles&#039; ) doing something like
+ * gmdate( &quot;Y-m-d H:i:s&quot;, strtotime( gmdate( &quot;Y-m-d H:i:s&quot; ) ) ) will actually add 7 hours to
+ * the date even though it is a date in UTC timezone because the timezone wasn&#039;t specificed.
+ *
+ * This makes sure the date is never converted.
+ *
+ * @param string $date_string A date string formatted in MySQl or similar format that will map correctly when instantiating an instance of DateTime()
+ * @return int Unix timestamp representation of the timestamp passed in without any changes for timezones
+ */
+function wcs_date_to_time( $date_string ) {
+
+	if ( 0 == $date_string ) {
+		return 0;
+	}
+
+	$date_time = new WC_DateTime( $date_string, new DateTimeZone( &#039;UTC&#039; ) );
+
+	return intval( $date_time-&gt;getTimestamp() );
+}
+
+/**
+ * A wrapper for strtotime() designed to stand up against those who want to watch the WordPress burn.
+ *
+ * One day WordPress will require Harvey Dent (aka PHP 5.3) then we can use DateTime::add() instead,
+ * but for now, this ensures when using strtotime() to add time to a timestamp, there are no additional
+ * changes for server specific timezone additions or deductions.
+ *
+ * @param string $time_string A string representation of a date in any format that can be parsed by strtotime()
+ * @return int Unix timestamp representation of the timestamp passed in without any changes for timezones
+ */
+function wcs_strtotime_dark_knight( $time_string, $from_timestamp = null ) {
+
+	$original_timezone = date_default_timezone_get();
+
+	// this should be UTC anyway as WordPress sets it to that, but some plugins and l33t h4xors just want to watch the world burn and set it to something else
+	date_default_timezone_set( &#039;UTC&#039; );
+
+	if ( null === $from_timestamp ) {
+		$next_timestamp = strtotime( $time_string );
+	} else {
+		$next_timestamp = strtotime( $time_string, $from_timestamp );
+	}
+
+	date_default_timezone_set( $original_timezone );
+
+	return $next_timestamp;
+}
+
+/**
+ * Find the average number of days for a given billing period and interval.
+ *
+ * @param  string $period a billing period: day, week, month or year.
+ * @param  int $interval a billing interval
+ * @return int the number of days in that billing cycle
+ */
+function wcs_get_days_in_cycle( $period, $interval ) {
+
+	switch ( $period ) {
+		case &#039;day&#039;:
+			$days_in_cycle = $interval;
+			break;
+		case &#039;week&#039;:
+			$days_in_cycle = $interval * 7;
+			break;
+		case &#039;month&#039;:
+			$days_in_cycle = $interval * 30.4375; // Average days per month over 4 year period
+			break;
+		case &#039;year&#039;:
+			$days_in_cycle = $interval * 365.25; // Average days per year over 4 year period
+			break;
+	}
+
+	return apply_filters( &#039;wcs_get_days_in_cycle&#039;, $days_in_cycle, $period, $interval );
+}
+
+/**
+ * Set a DateTime&#039;s timezone to the WordPress site&#039;s timezone, or a UTC offset
+ * if no timezone string is available.
+ *
+ * @since 2.4.2
+ * @param WC_DateTime $date
+ * @return WC_DateTime
+ */
+function wcs_set_local_timezone( WC_DateTime $date ) {
+
+	if ( get_option( &#039;timezone_string&#039; ) ) {
+		$date-&gt;setTimezone( new DateTimeZone( wc_timezone_string() ) );
+	} else {
+		$date-&gt;set_utc_offset( wc_timezone_offset() );
+	}
+
+	return $date;
+}
+
+/* Deprecated Functions */
+
+/**
+ * Get an instance of the site&#039;s timezone.
+ *
+ * @return DateTimeZone Timezone object for the timezone the site is using.
+ * @deprecated 2.4.2
+ */
+function wcs_get_sites_timezone() {
+	_deprecated_function( __FUNCTION__, &#039;2.4.2&#039; );
+
+	$tzstring = get_option( &#039;timezone_string&#039; );
+
+	if ( empty( $tzstring ) ) {
+
+		$gmt_offset = get_option( &#039;gmt_offset&#039; );
+
+		if ( 0 == $gmt_offset ) {
+
+			$tzstring = &#039;UTC&#039;;
+
+		} else {
+
+			$gmt_offset *= HOUR_IN_SECONDS;
+			$tzstring    = timezone_name_from_abbr( &#039;&#039;, $gmt_offset );
+
+			if ( false === $tzstring ) {
+
+				$is_dst = date( &#039;I&#039; );
+
+				foreach ( timezone_abbreviations_list() as $abbr ) {
+
+					foreach ( $abbr as $city ) {
+						if ( $city[&#039;dst&#039;] == $is_dst &amp;&amp; $city[&#039;offset&#039;] == $gmt_offset ) {
+							$tzstring = $city[&#039;timezone_id&#039;];
+							break 2;
+						}
+					}
+				}
+			}
+
+			if ( false === $tzstring ) {
+				$tzstring = &#039;UTC&#039;;
+			}
+		}
+	}
+
+	$local_timezone = new DateTimeZone( $tzstring );
+
+	return $local_timezone;
+}
+
+/**
+ * Returns an array of subscription lengths.
+ *
+ * PayPal Standard Allowable Ranges
+ * D – for days; allowable range is 1 to 90
+ * W – for weeks; allowable range is 1 to 52
+ * M – for months; allowable range is 1 to 24
+ * Y – for years; allowable range is 1 to 5
+ *
+ * @param string (optional) One of day, week, month or year. If empty, all subscription ranges are returned.
+ * @since 2.0
+ */
+function wcs_get_subscription_ranges_tlc() {
+	_deprecated_function( __FUNCTION__, &#039;2.1.2&#039;, &#039;wcs_get_non_cached_subscription_ranges&#039; );
+
+	return wcs_get_non_cached_subscription_ranges();
+}
+
+/**
+ * Take a date in the form of a timestamp, MySQL date/time string or DateTime object (or perhaps
+ * a WC_Datetime object when WC &gt; 3.0 is active) and create a WC_DateTime object.
+ *
+ * @since  2.2.0
+ * @param  string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
+ * @return null|WC_DateTime in site&#039;s timezone
+ */
+function wcs_get_datetime_from( $variable_date_type ) {
+
+	try {
+		if ( empty( $variable_date_type ) ) {
+			$datetime = null;
+		} elseif ( is_a( $variable_date_type, &#039;WC_DateTime&#039; ) ) {
+			$datetime = $variable_date_type;
+		} elseif ( is_numeric( $variable_date_type ) ) {
+			$datetime = new WC_DateTime( &quot;@{$variable_date_type}&quot;, new DateTimeZone( &#039;UTC&#039; ) );
+			$datetime-&gt;setTimezone( new DateTimeZone( wc_timezone_string() ) );
+		} else {
+			$datetime = new WC_DateTime( $variable_date_type, new DateTimeZone( wc_timezone_string() ) );
+		}
+	} catch ( Exception $e ) {
+		$datetime = null;
+	}
+
+	return $datetime;
+}
+
+/**
+ * Get a MySQL date/time string in UTC timezone from a WC_Datetime object.
+ *
+ * @since  2.2.0
+ * @param WC_DateTime
+ * @return string MySQL date/time string representation of the DateTime object in UTC timezone
+ */
+function wcs_get_datetime_utc_string( $datetime ) {
+	$date = clone $datetime; // Don&#039;t change the original date object&#039;s timezone
+	$date-&gt;setTimezone( new DateTimeZone( &#039;UTC&#039; ) );
+	return $date-&gt;format( &#039;Y-m-d H:i:s&#039; );
+}
+
+/**
+ * Format a date for output, a wrapper for wcs_format_datetime() introduced with WC 3.0.
+ *
+ * @since  2.2.0
+ * @param  WC_DateTime $date
+ * @param  string $format Defaults to the wc_date_format function if not set.
+ * @return string
+ */
+function wcs_format_datetime( $date, $format = &#039;&#039; ) {
+
+	if ( function_exists( &#039;wc_format_datetime&#039; ) ) { // WC 3.0+
+		$formatted_datetime = wc_format_datetime( $date, $format );
+	} else { // WC &lt; 3.0
+		if ( ! $format ) {
+			$format = wc_date_format();
+		}
+		if ( ! is_a( $date, &#039;WC_DateTime&#039; ) ) {
+			return &#039;&#039;;
+		}
+
+		$formatted_datetime = $date-&gt;date_i18n( $format );
+	}
+
+	return $formatted_datetime;
+}
+
+/**
+ * Compares two periods and returns the longest period.
+ *
+ * @since 4.0.0
+ *
+ * @param string $current_period Period string. Can be &#039;day&#039;, &#039;week&#039;, &#039;month&#039;, &#039;year&#039;.
+ * @param string $new_period     Period string. Can be &#039;day&#039;, &#039;week&#039;, &#039;month&#039;, &#039;year&#039;.
+ *
+ * @return string The longest period between the two provided.
+ */
+function wcs_get_longest_period( $current_period, $new_period ) {
+
+	if ( empty( $current_period ) || &#039;year&#039; == $new_period ) {
+		$longest_period = $new_period;
+	} elseif ( &#039;month&#039; === $new_period &amp;&amp; in_array( $current_period, array( &#039;week&#039;, &#039;day&#039; ) ) ) {
+		$longest_period = $new_period;
+	} elseif ( &#039;week&#039; === $new_period &amp;&amp; &#039;day&#039; === $current_period ) {
+		$longest_period = $new_period;
+	} else {
+		$longest_period = $current_period;
+	}
+
+	return $longest_period;
+}
+
+/**
+ * Compares two periods and returns the shortest period.
+ *
+ * @since 4.0.0
+ *
+ * @param string $current_period A period string. Can be &#039;day&#039;, &#039;week&#039;, &#039;month&#039;, &#039;year&#039;.
+ * @param string $new_period     A period string. Can be &#039;day&#039;, &#039;week&#039;, &#039;month&#039;, &#039;year&#039;.
+ *
+ * @return string The shortest period between the two provided.
+ */
+function wcs_get_shortest_period( $current_period, $new_period ) {
+
+	if ( empty( $current_period ) || &#039;day&#039; == $new_period ) {
+		$shortest_period = $new_period;
+	} elseif ( &#039;week&#039; === $new_period &amp;&amp; in_array( $current_period, array( &#039;month&#039;, &#039;year&#039; ) ) ) {
+		$shortest_period = $new_period;
+	} elseif ( &#039;month&#039; === $new_period &amp;&amp; &#039;year&#039; === $current_period ) {
+		$shortest_period = $new_period;
+	} else {
+		$shortest_period = $current_period;
+	}
+
+	return $shortest_period;
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

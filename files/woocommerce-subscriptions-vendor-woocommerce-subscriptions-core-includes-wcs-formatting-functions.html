@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsFunctions.html">WooCommerceSubscriptionsFunctions</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">wcs-formatting-functions.php</h2>
+
+                
+
+            <section class="phpdocumentor-functions">
+        <h3 class="phpdocumentor-elements__header" id="functions">
+            Functions
+            <a href="#functions" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_price_string">
+        wcs_price_string()
+        <a href="#function_wcs_price_string" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-formatting-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-formatting-functions.html#source-view.33">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-formatting-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Creates a subscription price string from an array of subscription details. For example, &quot;$5 / month for 12 months&quot;.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_price_string</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$subscription_details</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$subscription_details</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>A set of name =&gt; value pairs for the subscription details to include in the string. Available keys:
+'initial_amount': The upfront payment for the subscription, including sign up fees, as a string from the @see wc_price(). Default empty string (no initial payment)
+'initial_description': The word after the initial payment amount to describe the amount. Examples include &quot;now&quot; or &quot;initial payment&quot;. Defaults to &quot;up front&quot;.
+'recurring_amount': The amount charged per period. Default 0 (no recurring payment).
+'subscription_interval': How regularly the subscription payments are charged. Default 1, meaning each period e.g. per month.
+'subscription_period': The temporal period of the subscription. Should be one of {day|week|month|year} as used by @see wcs_get_subscription_period_strings()
+'subscription_length': The total number of periods the subscription should continue for. Default 0, meaning continue indefinitely.
+'trial_length': The total number of periods the subscription trial period should continue for.  Default 0, meaning no trial period.
+'trial_period': The temporal period for the subscription's trial period. Should be one of {day|week|month|year} as used by @see wcs_get_subscription_period_strings()
+'use_per_slash': Allow calling code to determine if they want the shorter price string using a slash for singular billing intervals, e.g. $5 / month, or the longer form, e.g. $5 every month, which is normally reserved for intervals &gt; 1</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_get_human_time_diff">
+        wcs_get_human_time_diff()
+        <a href="#function_wcs_get_human_time_diff" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-formatting-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-formatting-functions.html#source-view.237">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-formatting-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">237</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Display a human friendly time diff for a given timestamp, e.g. &quot;in 12 hours&quot; or &quot;12 hours ago&quot;.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_get_human_time_diff</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timestamp_gmt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timestamp_gmt</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.1</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wp_kses_allow_underscores">
+        wp_kses_allow_underscores()
+        <a href="#function_wp_kses_allow_underscores" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-formatting-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-formatting-functions.html#source-view.265">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-formatting-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">265</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Works around the wp_kses() limitation of not accepting attribute names with underscores.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wp_kses_allow_underscores</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowed_html</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$content</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Content to filter through kses.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$allowed_html</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>List of allowed HTML elements.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">2.2.17</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_wcs_append_numeral_suffix">
+        wcs_append_numeral_suffix()
+        <a href="#function_wcs_append_numeral_suffix" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/includes/wcs-formatting-functions.php"><a href="../files/woocommerce-subscriptions-vendor-woocommerce-subscriptions-core-includes-wcs-formatting-functions.html#source-view.291">woocommerce-subscriptions/vendor/subscriptions-core/includes/wcs-formatting-functions.php</a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">291</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Appends the ordinal suffix to a given number.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">wcs_append_numeral_suffix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$number</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>eg. Given 2, the function returns 2nd.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$number</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">4.0.0</span>
+                                                                                                        <section class="phpdocumentor-description"></section>
+
+                </dd>
+                        </dl>
+
+    
+</article>
+            </section>
+
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Formatting
+ *
+ * Functions for formatting subscription data.
+ *
+ * @author Prospress
+ * @category Core
+ * @package WooCommerce Subscriptions/Functions
+ * @version     2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * Creates a subscription price string from an array of subscription details. For example, &quot;$5 / month for 12 months&quot;.
+ *
+ * @param array $subscription_details A set of name =&gt; value pairs for the subscription details to include in the string. Available keys:
+ *    &#039;initial_amount&#039;: The upfront payment for the subscription, including sign up fees, as a string from the @see wc_price(). Default empty string (no initial payment)
+ *    &#039;initial_description&#039;: The word after the initial payment amount to describe the amount. Examples include &quot;now&quot; or &quot;initial payment&quot;. Defaults to &quot;up front&quot;.
+ *    &#039;recurring_amount&#039;: The amount charged per period. Default 0 (no recurring payment).
+ *    &#039;subscription_interval&#039;: How regularly the subscription payments are charged. Default 1, meaning each period e.g. per month.
+ *    &#039;subscription_period&#039;: The temporal period of the subscription. Should be one of {day|week|month|year} as used by @see wcs_get_subscription_period_strings()
+ *    &#039;subscription_length&#039;: The total number of periods the subscription should continue for. Default 0, meaning continue indefinitely.
+ *    &#039;trial_length&#039;: The total number of periods the subscription trial period should continue for.  Default 0, meaning no trial period.
+ *    &#039;trial_period&#039;: The temporal period for the subscription&#039;s trial period. Should be one of {day|week|month|year} as used by @see wcs_get_subscription_period_strings()
+ *    &#039;use_per_slash&#039;: Allow calling code to determine if they want the shorter price string using a slash for singular billing intervals, e.g. $5 / month, or the longer form, e.g. $5 every month, which is normally reserved for intervals &gt; 1
+ * @since 2.0
+ * @return string The price string with translated and billing periods included
+ */
+function wcs_price_string( $subscription_details ) {
+	global $wp_locale;
+
+	$subscription_details = wp_parse_args(
+		$subscription_details,
+		array(
+			&#039;currency&#039;                    =&gt; &#039;&#039;,
+			&#039;initial_amount&#039;              =&gt; &#039;&#039;,
+			&#039;initial_description&#039;         =&gt; _x( &#039;up front&#039;, &#039;initial payment on a subscription&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;recurring_amount&#039;            =&gt; &#039;&#039;,
+
+			// Schedule details
+			&#039;subscription_interval&#039;       =&gt; 1,
+			&#039;subscription_period&#039;         =&gt; &#039;&#039;,
+			&#039;subscription_length&#039;         =&gt; 0,
+			&#039;trial_length&#039;                =&gt; 0,
+			&#039;trial_period&#039;                =&gt; &#039;&#039;,
+
+			// Syncing details
+			&#039;is_synced&#039;                   =&gt; false,
+			&#039;synchronised_payment_day&#039;    =&gt; 0,
+
+			// Params for wc_price()
+			&#039;display_excluding_tax_label&#039; =&gt; false,
+
+			// Params for formatting customisation
+			&#039;use_per_slash&#039;               =&gt; true,
+		)
+	);
+
+	$subscription_details[&#039;subscription_period&#039;] = strtolower( $subscription_details[&#039;subscription_period&#039;] );
+
+	// Make sure prices have been through wc_price()
+	if ( is_numeric( $subscription_details[&#039;initial_amount&#039;] ) ) {
+		$initial_amount_string = wc_price(
+			$subscription_details[&#039;initial_amount&#039;],
+			array(
+				&#039;currency&#039;     =&gt; $subscription_details[&#039;currency&#039;],
+				&#039;ex_tax_label&#039; =&gt; $subscription_details[&#039;display_excluding_tax_label&#039;],
+			)
+		);
+	} else {
+		$initial_amount_string = $subscription_details[&#039;initial_amount&#039;];
+	}
+
+	if ( is_numeric( $subscription_details[&#039;recurring_amount&#039;] ) ) {
+		$recurring_amount_string = wc_price(
+			$subscription_details[&#039;recurring_amount&#039;],
+			array(
+				&#039;currency&#039;     =&gt; $subscription_details[&#039;currency&#039;],
+				&#039;ex_tax_label&#039; =&gt; $subscription_details[&#039;display_excluding_tax_label&#039;],
+			)
+		);
+	} else {
+		$recurring_amount_string = $subscription_details[&#039;recurring_amount&#039;];
+	}
+
+	$subscription_period_string = wcs_get_subscription_period_strings( $subscription_details[&#039;subscription_interval&#039;], $subscription_details[&#039;subscription_period&#039;] );
+	$subscription_ranges = wcs_get_subscription_ranges();
+
+	if ( $subscription_details[&#039;subscription_length&#039;] &gt; 0 &amp;&amp; $subscription_details[&#039;subscription_length&#039;] == $subscription_details[&#039;subscription_interval&#039;] ) {
+		if ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+			if ( $subscription_details[&#039;subscription_interval&#039;] == $subscription_details[&#039;subscription_length&#039;] &amp;&amp; 0 == $subscription_details[&#039;trial_length&#039;] ) {
+				$subscription_string = $initial_amount_string;
+			} else {
+				// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount string (e.g. &quot;£10 / month&quot; )
+				$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string );
+			}
+		} else {
+			$subscription_string = $recurring_amount_string;
+		}
+	} elseif ( true === $subscription_details[&#039;is_synced&#039;] &amp;&amp; in_array( $subscription_details[&#039;subscription_period&#039;], array( &#039;week&#039;, &#039;month&#039;, &#039;year&#039; ) ) ) {
+		// Verbosity is important here to enable translation
+		$payment_day = $subscription_details[&#039;synchronised_payment_day&#039;];
+		switch ( $subscription_details[&#039;subscription_period&#039;] ) {
+			case &#039;week&#039;:
+				$payment_day_of_week = WC_Subscriptions_Synchroniser::get_weekday( $payment_day );
+				if ( 1 == $subscription_details[&#039;subscription_interval&#039;] ) {
+					if ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+						// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount string, 4$: payment day of the week (e.g. &quot;$15 up front, then $10 every Wednesday&quot;)
+						$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s every %4$s&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string, $payment_day_of_week );
+					} else {
+						// translators: 1$: recurring amount string, 2$: day of the week (e.g. &quot;$10 every Wednesday&quot;)
+						$subscription_string = sprintf( __( &#039;%1$s every %2$s&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, $payment_day_of_week );
+					}
+				} else {
+					// e.g. $5 every 2 weeks on Wednesday
+					if ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+						// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot; ), 3$: recurring amount, 4$: interval (e.g. &quot;2nd week&quot;), 5$: day of the week (e.g. &quot;Thursday&quot;); (e.g. &quot;$10 up front, then $20 every 2nd week on Wednesday&quot;)
+						$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s every %4$s on %5$s&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string, wcs_get_subscription_period_strings( $subscription_details[&#039;subscription_interval&#039;], $subscription_details[&#039;subscription_period&#039;] ), $payment_day_of_week );
+					} else {
+						// translators: 1$: recurring amount string, 2$: period, 3$: day of the week (e.g. &quot;$10 every 2nd week on Wednesday&quot;)
+						$subscription_string = sprintf( __( &#039;%1$s every %2$s on %3$s&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, wcs_get_subscription_period_strings( $subscription_details[&#039;subscription_interval&#039;], $subscription_details[&#039;subscription_period&#039;] ), $payment_day_of_week );
+					}
+				}
+				break;
+			case &#039;month&#039;:
+				if ( 1 == $subscription_details[&#039;subscription_interval&#039;] ) {
+					// e.g. $15 on the 15th of each month
+					if ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+						if ( $payment_day &gt; 27 ) {
+							// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount; (e.g. &quot;$10 up front then $30 on the last day of each month&quot;)
+							$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s on the last day of each month&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string );
+						} else {
+							// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount, 4$: day of the month (e.g. &quot;23rd&quot;); (e.g. &quot;$10 up front then $40 on the 23rd of each month&quot;)
+							$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s on the %4$s of each month&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string, wcs_append_numeral_suffix( $payment_day ) );
+						}
+					} else {
+						if ( $payment_day &gt; 27 ) {
+							// translators: placeholder is recurring amount
+							$subscription_string = sprintf( __( &#039;%s on the last day of each month&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string );
+						} else {
+							// translators: 1$: recurring amount, 2$: day of the month (e.g. &quot;23rd&quot;) (e.g. &quot;$5 every 23rd of each month&quot;)
+							$subscription_string = sprintf( __( &#039;%1$s on the %2$s of each month&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, wcs_append_numeral_suffix( $payment_day ) );
+						}
+					}
+				} else {
+					// e.g. $15 on the 15th of every 3rd month
+					if ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+						if ( $payment_day &gt; 27 ) {
+							// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount, 4$: interval (e.g. &quot;3rd&quot;)
+							$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s on the last day of every %4$s month&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string, wcs_append_numeral_suffix( $subscription_details[&#039;subscription_interval&#039;] ) );
+						} else {
+							// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount, 4$: day of the month (e.g. &quot;23rd&quot;), 5$: interval (e.g. &quot;3rd&quot;)
+							$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s on the %4$s day of every %5$s month&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string, wcs_append_numeral_suffix( $payment_day ), wcs_append_numeral_suffix( $subscription_details[&#039;subscription_interval&#039;] ) );
+						}
+					} else {
+						if ( $payment_day &gt; 27 ) {
+							// translators: 1$: recurring amount, 2$: interval (e.g. &quot;3rd&quot;) (e.g. &quot;$10 on the last day of every 3rd month&quot;)
+							$subscription_string = sprintf( __( &#039;%1$s on the last day of every %2$s month&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, wcs_append_numeral_suffix( $subscription_details[&#039;subscription_interval&#039;] ) );
+						} else {
+							// translators: 1$: recurring amount, 2$: day of the month (e.g. &quot;23rd&quot;) (e.g. &quot;$5 every 23rd of each month&quot;)
+							$subscription_string = sprintf( __( &#039;%1$s on the %2$s day of every %3$s month&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, wcs_append_numeral_suffix( $payment_day ), wcs_append_numeral_suffix( $subscription_details[&#039;subscription_interval&#039;] ) );
+						}
+					}
+				}
+				break;
+			case &#039;year&#039;:
+				if ( 1 == $subscription_details[&#039;subscription_interval&#039;] ) {
+					// e.g. $15 on March 15th each year
+					if ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+						// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount, 4$: month of year (e.g. &quot;March&quot;), 5$: day of the month (e.g. &quot;23rd&quot;)
+						$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s on %4$s %5$s each year&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string, $wp_locale-&gt;month[ $payment_day[&#039;month&#039;] ], wcs_append_numeral_suffix( $payment_day[&#039;day&#039;] ) );
+					} else {
+						// translators: 1$: recurring amount, 2$: month (e.g. &quot;March&quot;), 3$: day of the month (e.g. &quot;23rd&quot;) (e.g. &quot;$15 on March 15th every 3rd year&quot;)
+						$subscription_string = sprintf( __( &#039;%1$s on %2$s %3$s each year&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, $wp_locale-&gt;month[ $payment_day[&#039;month&#039;] ], wcs_append_numeral_suffix( $payment_day[&#039;day&#039;] ) );
+					}
+				} else {
+					// e.g. $15 on March 15th every 3rd year
+					if ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+						// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount, 4$: month (e.g. &quot;March&quot;), 5$: day of the month (e.g. &quot;23rd&quot;), 6$: interval (e.g. &quot;3rd&quot;)
+						$subscription_string = sprintf( __( &#039;%1$s %2$s then %3$s on %4$s %5$s every %6$s year&#039;, &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string, $wp_locale-&gt;month[ $payment_day[&#039;month&#039;] ], wcs_append_numeral_suffix( $payment_day[&#039;day&#039;] ), wcs_append_numeral_suffix( $subscription_details[&#039;subscription_interval&#039;] ) );
+					} else {
+						// translators: 1$: recurring amount, 2$: month (e.g. &quot;March&quot;), 3$: day of the month (e.g. &quot;23rd&quot;) (e.g. &quot;$15 on March 15th every 3rd year&quot;)
+						$subscription_string = sprintf( __( &#039;%1$s on %2$s %3$s every %4$s year&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, $wp_locale-&gt;month[ $payment_day[&#039;month&#039;] ], wcs_append_numeral_suffix( $payment_day[&#039;day&#039;] ), wcs_append_numeral_suffix( $subscription_details[&#039;subscription_interval&#039;] ) );
+					}
+				}
+				break;
+		}
+	} elseif ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+		// translators: 1$: initial amount, 2$: initial description (e.g. &quot;up front&quot;), 3$: recurring amount, 4$: subscription period (e.g. &quot;month&quot; or &quot;3 months&quot;)
+		$subscription_string = sprintf( _n( &#039;%1$s %2$s then %3$s / %4$s&#039;, &#039;%1$s %2$s then %3$s every %4$s&#039;, $subscription_details[&#039;subscription_interval&#039;], &#039;woocommerce-subscriptions&#039; ), $initial_amount_string, $subscription_details[&#039;initial_description&#039;], $recurring_amount_string, $subscription_period_string );
+	} elseif ( ! empty( $subscription_details[&#039;recurring_amount&#039;] ) || intval( $subscription_details[&#039;recurring_amount&#039;] ) === 0 ) {
+		if ( true === $subscription_details[&#039;use_per_slash&#039;] ) {
+			// translators: 1$: recurring amount, 2$: subscription period (e.g. &quot;month&quot; or &quot;3 months&quot;) (e.g. &quot;$15 / month&quot; or &quot;$15 every 2nd month&quot;)
+			$subscription_string = sprintf( _n( &#039;%1$s / %2$s&#039;, &#039;%1$s every %2$s&#039;, $subscription_details[&#039;subscription_interval&#039;], &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, $subscription_period_string );
+		} else {
+			// translators: %1$: recurring amount (e.g. &quot;$15&quot;), %2$: subscription period (e.g. &quot;month&quot;) (e.g. &quot;$15 every 2nd month&quot;)
+			$subscription_string = sprintf( __( &#039;%1$s every %2$s&#039;, &#039;woocommerce-subscriptions&#039; ), $recurring_amount_string, $subscription_period_string );
+		}
+	} else {
+		$subscription_string = &#039;&#039;;
+	}
+
+	if ( $subscription_details[&#039;subscription_length&#039;] &gt; 0 ) {
+		// translators: 1$: subscription string (e.g. &quot;$10 up front then $5 on March 23rd every 3rd year&quot;), 2$: length (e.g. &quot;4 years&quot;)
+		$subscription_string = sprintf( __( &#039;%1$s for %2$s&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription_string, $subscription_ranges[ $subscription_details[&#039;subscription_period&#039;] ][ $subscription_details[&#039;subscription_length&#039;] ] );
+	}
+
+	if ( $subscription_details[&#039;trial_length&#039;] &gt; 0 ) {
+		$trial_length = wcs_get_subscription_trial_period_strings( $subscription_details[&#039;trial_length&#039;], $subscription_details[&#039;trial_period&#039;] );
+		if ( ! empty( $subscription_details[&#039;initial_amount&#039;] ) ) {
+			// translators: 1$: subscription string (e.g. &quot;$10 up front then $5 on March 23rd every 3rd year&quot;), 2$: trial length (e.g. &quot;3 weeks&quot;)
+			$subscription_string = sprintf( __( &#039;%1$s after %2$s free trial&#039;, &#039;woocommerce-subscriptions&#039; ), $subscription_string, $trial_length );
+		} else {
+			// translators: 1$: trial length (e.g. &quot;3 weeks&quot;), 2$: subscription string (e.g. &quot;$10 up front then $5 on March 23rd every 3rd year&quot;)
+			$subscription_string = sprintf( __( &#039;%1$s free trial then %2$s&#039;, &#039;woocommerce-subscriptions&#039; ), ucfirst( $trial_length ), $subscription_string );
+		}
+	}
+
+	if ( $subscription_details[&#039;display_excluding_tax_label&#039;] &amp;&amp; wc_tax_enabled() ) {
+		$subscription_string .= &#039; &lt;small&gt;&#039; . WC()-&gt;countries-&gt;ex_tax_or_vat() . &#039;&lt;/small&gt;&#039;;
+	}
+
+	return apply_filters( &#039;woocommerce_subscription_price_string&#039;, $subscription_string, $subscription_details );
+}
+
+/**
+ * Display a human friendly time diff for a given timestamp, e.g. &quot;in 12 hours&quot; or &quot;12 hours ago&quot;.
+ *
+ * @param int $timestamp_gmt
+ * @return string A human friendly string to display for the timestamp&#039;s date
+ * @since 2.1
+ */
+function wcs_get_human_time_diff( $timestamp_gmt ) {
+
+	$time_diff = $timestamp_gmt - current_time( &#039;timestamp&#039;, true );
+
+	if ( $time_diff &gt; 0 &amp;&amp; $time_diff &lt; WEEK_IN_SECONDS ) {
+		// translators: placeholder is human time diff (e.g. &quot;3 weeks&quot;)
+		$date_to_display = sprintf( __( &#039;in %s&#039;, &#039;woocommerce-subscriptions&#039; ), human_time_diff( current_time( &#039;timestamp&#039;, true ), $timestamp_gmt ) );
+	} elseif ( $time_diff &lt; 0 &amp;&amp; absint( $time_diff ) &lt; WEEK_IN_SECONDS ) {
+		// translators: placeholder is human time diff (e.g. &quot;3 weeks&quot;)
+		$date_to_display = sprintf( __( &#039;%s ago&#039;, &#039;woocommerce-subscriptions&#039; ), human_time_diff( current_time( &#039;timestamp&#039;, true ), $timestamp_gmt ) );
+	} else {
+		$timestamp_site  = wcs_date_to_time( get_date_from_gmt( gmdate( &#039;Y-m-d H:i:s&#039;, $timestamp_gmt ) ) );
+		$date_to_display = date_i18n( wc_date_format(), $timestamp_site ) . &#039; &#039; . date_i18n( wc_time_format(), $timestamp_site );
+		// translators: placeholder is a localized date and time (e.g. &quot;February 1, 2018 10:20 PM&quot;)
+		$date_to_display = sprintf( _x( &#039;%s&#039;, &#039;wcs_get_human_time_diff&#039;, &#039;woocommerce-subscriptions&#039; ), $date_to_display ); // phpcs:ignore WordPress.WP.I18n.NoEmptyStrings
+	}
+
+	return $date_to_display;
+}
+
+/**
+ * Works around the wp_kses() limitation of not accepting attribute names with underscores.
+ *
+ * @param string $content Content to filter through kses.
+ * @param array $allowed_html List of allowed HTML elements.
+ * @return string Filtered string of HTML.
+ * @since 2.2.17
+ */
+function wp_kses_allow_underscores( $content, $allowed_html ) {
+
+	/* Replace the underscore _ with a double hyphen -- in the attribute names */
+	foreach ( $allowed_html as $tag =&gt; &amp;$attributes ) {
+		$attribute_names = array_keys( $attributes );
+		$attribute_values = array_values( $attributes );
+		$attributes = array_combine( preg_replace( &#039;/_/&#039;, &#039;--&#039;, $attribute_names ), $attribute_values );
+	}
+
+	/* Replace  the underscore _ with a double hyphen -- in the content as well.
+	   The assumption is that such an attribute name would be followed by a = */
+	$content = preg_replace( &#039;/\b([-A-Za-z]+)_([-A-Za-z]+)=/&#039;, &#039;$1--$2=&#039;, $content );
+	$content = wp_kses( $content, $allowed_html ); // Now pass through wp_kses the attribute name with --
+	return preg_replace( &#039;/\b([-A-Za-z]+)--([-A-Za-z]+)=/&#039;, &#039;$1_$2=&#039;, $content ); // Replace the _ back
+}
+
+/**
+ * Appends the ordinal suffix to a given number.
+ *
+ * eg. Given 2, the function returns 2nd.
+ *
+ * @since 4.0.0
+ *
+ * @param string The number to append the ordinal suffix to.
+ * @return string
+ */
+function wcs_append_numeral_suffix( $number ) {
+
+	// Handle teens: if the tens digit of a number is 1, then write &quot;th&quot; after the number. For example: 11th, 13th, 19th, 112th, 9311th. http://en.wikipedia.org/wiki/English_numerals
+	if ( strlen( $number ) &gt; 1 &amp;&amp; 1 == substr( $number, -2, 1 ) ) {
+		// translators: placeholder is a number, this is for the teens
+		$number_string = sprintf( __( &#039;%sth&#039;, &#039;woocommerce-subscriptions&#039; ), $number );
+	} else { // Append relevant suffix
+		switch ( substr( $number, -1 ) ) {
+			case 1:
+				// translators: placeholder is a number, numbers ending in 1
+				$number_string = sprintf( __( &#039;%sst&#039;, &#039;woocommerce-subscriptions&#039; ), $number );
+				break;
+			case 2:
+				// translators: placeholder is a number, numbers ending in 2
+				$number_string = sprintf( __( &#039;%snd&#039;, &#039;woocommerce-subscriptions&#039; ), $number );
+				break;
+			case 3:
+				// translators: placeholder is a number, numbers ending in 3
+				$number_string = sprintf( __( &#039;%srd&#039;, &#039;woocommerce-subscriptions&#039; ), $number );
+				break;
+			default:
+				// translators: placeholder is a number, numbers ending in 4-9, 0
+				$number_string = sprintf( __( &#039;%sth&#039;, &#039;woocommerce-subscriptions&#039; ), $number );
+				break;
+		}
+	}
+
+	return apply_filters( &#039;woocommerce_numeral_suffix&#039;, $number_string, $number );
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

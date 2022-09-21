@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptionsAdmin.html">WooCommerceSubscriptionsAdmin</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-admin-meta-boxes.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce Subscriptions Admin Meta Boxes
+ *
+ * Sets up the write panels used by the subscription custom order/post type
+ *
+ * @author   Prospress
+ * @category Admin
+ * @package  WooCommerce Subscriptions/Admin
+ * @version  2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+/**
+ * WC_Admin_Meta_Boxes
+ */
+class WCS_Admin_Meta_Boxes {
+
+	/**
+	 * Constructor
+	 */
+	public function __construct() {
+
+		add_action( &#039;add_meta_boxes&#039;, array( $this, &#039;add_meta_boxes&#039; ), 25 );
+
+		add_action( &#039;add_meta_boxes&#039;, array( $this, &#039;remove_meta_boxes&#039; ), 35 );
+
+		// We need to remove core WC save methods for meta boxes we don&#039;t use
+		add_action( &#039;woocommerce_process_shop_order_meta&#039;, array( $this, &#039;remove_meta_box_save&#039; ), -1, 2 );
+
+		add_action( &#039;admin_enqueue_scripts&#039;, array( $this, &#039;enqueue_styles_scripts&#039; ), 20 );
+
+		// We need to hook to the &#039;shop_order&#039; rather than &#039;shop_subscription&#039; because we declared that the &#039;shop_susbcription&#039; order type supports &#039;order-meta-boxes&#039;
+		add_action( &#039;woocommerce_process_shop_order_meta&#039;, &#039;WCS_Meta_Box_Schedule::save&#039;, 10, 2 );
+		add_action( &#039;woocommerce_process_shop_order_meta&#039;, &#039;WCS_Meta_Box_Subscription_Data::save&#039;, 10, 2 );
+
+		add_filter( &#039;woocommerce_order_actions&#039;, array( __CLASS__, &#039;add_subscription_actions&#039; ), 10, 1 );
+
+		add_action( &#039;woocommerce_order_action_wcs_process_renewal&#039;, array( __CLASS__, &#039;process_renewal_action_request&#039; ), 10, 1 );
+		add_action( &#039;woocommerce_order_action_wcs_create_pending_renewal&#039;, array( __CLASS__, &#039;create_pending_renewal_action_request&#039; ), 10, 1 );
+		add_action( &#039;woocommerce_order_action_wcs_create_pending_parent&#039;, array( __CLASS__, &#039;create_pending_parent_action_request&#039; ), 10, 1 );
+
+		if ( wcs_is_woocommerce_pre( &#039;3.2&#039; ) ) {
+			add_filter( &#039;woocommerce_resend_order_emails_available&#039;, array( __CLASS__, &#039;remove_order_email_actions&#039; ), 0, 1 );
+		}
+
+		add_action( &#039;woocommerce_order_action_wcs_retry_renewal_payment&#039;, array( __CLASS__, &#039;process_retry_renewal_payment_action_request&#039; ), 10, 1 );
+
+		// Disable stock managment while adding line items to a subscription via AJAX.
+		add_action( &#039;option_woocommerce_manage_stock&#039;, array( __CLASS__, &#039;override_stock_management&#039; ) );
+
+		// Parent order line item price lock option.
+		add_action( &#039;woocommerce_order_item_add_action_buttons&#039;, array( __CLASS__, &#039;output_price_lock_html&#039; ) );
+		add_action( &#039;woocommerce_process_shop_order_meta&#039;, array( __CLASS__, &#039;save_increased_price_lock&#039; ) );
+		add_action( &#039;wp_ajax_wcs_order_price_lock&#039; , array( __CLASS__, &#039;save_increased_price_lock&#039; ) );
+
+		// After calculating subscription/renewal order line item taxes, update base location tax item meta.
+		add_action( &#039;woocommerce_ajax_add_order_item_meta&#039;, array( __CLASS__, &#039;store_item_base_location_tax&#039; ), 10, 3 );
+
+		// Prevent WC core&#039;s stock handling when saving the line item meta box for subscriptions.
+		add_filter( &#039;woocommerce_prevent_adjust_line_item_product_stock&#039;, array( __CLASS__, &#039;prevent_subscription_line_item_stock_handling&#039; ), 10, 2 );
+
+		add_action( &#039;woocommerce_before_save_order_items&#039;, array( __CLASS__, &#039;update_subtracted_base_location_tax_meta&#039; ), 10, 2 );
+
+		add_action( &#039;woocommerce_before_save_order_items&#039;, array( __CLASS__, &#039;update_subtracted_base_location_taxes_amount&#039; ), 10, 2 );
+
+		add_action( &#039;wp_ajax_wcs_get_customer_orders&#039;, array( __CLASS__, &#039;get_customer_orders&#039; ) );
+	}
+
+	/**
+	 * Add WC Meta boxes
+	 */
+	public function add_meta_boxes() {
+		global $post_ID;
+
+		add_meta_box( &#039;woocommerce-subscription-data&#039;, _x( &#039;Subscription Data&#039;, &#039;meta box title&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;WCS_Meta_Box_Subscription_Data::output&#039;, &#039;shop_subscription&#039;, &#039;normal&#039;, &#039;high&#039; );
+
+		add_meta_box( &#039;woocommerce-subscription-schedule&#039;, _x( &#039;Schedule&#039;, &#039;meta box title&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;WCS_Meta_Box_Schedule::output&#039;, &#039;shop_subscription&#039;, &#039;side&#039;, &#039;default&#039; );
+
+		remove_meta_box( &#039;woocommerce-order-data&#039;, &#039;shop_subscription&#039;, &#039;normal&#039; );
+
+		add_meta_box( &#039;subscription_renewal_orders&#039;, __( &#039;Related Orders&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;WCS_Meta_Box_Related_Orders::output&#039;, &#039;shop_subscription&#039;, &#039;normal&#039;, &#039;low&#039; );
+
+		// Only display the meta box if an order relates to a subscription
+		if ( &#039;shop_order&#039; === WC_Data_Store::load( &#039;order&#039; )-&gt;get_order_type( $post_ID ) &amp;&amp; wcs_order_contains_subscription( $post_ID, &#039;any&#039; ) ) {
+			add_meta_box( &#039;subscription_renewal_orders&#039;, __( &#039;Related Orders&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;WCS_Meta_Box_Related_Orders::output&#039;, &#039;shop_order&#039;, &#039;normal&#039;, &#039;low&#039; );
+		}
+	}
+
+	/**
+	 * Removes the core Order Data meta box as we add our own Subscription Data meta box
+	 */
+	public function remove_meta_boxes() {
+		remove_meta_box( &#039;woocommerce-order-data&#039;, &#039;shop_subscription&#039;, &#039;normal&#039; );
+	}
+
+	/**
+	 * Don&#039;t save save some order related meta boxes
+	 */
+	public function remove_meta_box_save( $post_id, $post ) {
+
+		if ( &#039;shop_subscription&#039; == $post-&gt;post_type ) {
+			remove_action( &#039;woocommerce_process_shop_order_meta&#039;, &#039;WC_Meta_Box_Order_Data::save&#039;, 40 );
+		}
+	}
+
+	/**
+	 * Print admin styles/scripts
+	 */
+	public function enqueue_styles_scripts() {
+		global $post;
+
+		// Get admin screen id
+		$screen    = get_current_screen();
+		$screen_id = isset( $screen-&gt;id ) ? $screen-&gt;id : &#039;&#039;;
+
+		if ( &#039;shop_subscription&#039; == $screen_id ) {
+
+			wp_register_script( &#039;jstz&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/js/admin/jstz.min.js&#039; ) );
+
+			wp_register_script( &#039;momentjs&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/js/admin/moment.min.js&#039; ) );
+
+			wp_enqueue_script( &#039;wcs-admin-meta-boxes-subscription&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/js/admin/meta-boxes-subscription.js&#039; ), array( &#039;wc-admin-meta-boxes&#039;, &#039;jstz&#039;, &#039;momentjs&#039; ), WC_VERSION );
+
+			wp_localize_script( &#039;wcs-admin-meta-boxes-subscription&#039;, &#039;wcs_admin_meta_boxes&#039;, apply_filters( &#039;woocommerce_subscriptions_admin_meta_boxes_script_parameters&#039;, array(
+				&#039;i18n_start_date_notice&#039;         =&gt; __( &#039;Please enter a start date in the past.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;i18n_past_date_notice&#039;          =&gt; WCS_Staging::is_duplicate_site() ? __( &#039;Please enter a date at least 2 minutes into the future.&#039;, &#039;woocommerce-subscriptions&#039; ) : __( &#039;Please enter a date at least one hour into the future.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;i18n_next_payment_start_notice&#039; =&gt; __( &#039;Please enter a date after the trial end.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;i18n_next_payment_trial_notice&#039; =&gt; __( &#039;Please enter a date after the start date.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;i18n_trial_end_start_notice&#039;    =&gt; __( &#039;Please enter a date after the start date.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;i18n_trial_end_next_notice&#039;     =&gt; __( &#039;Please enter a date before the next payment.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;i18n_end_date_notice&#039;           =&gt; __( &#039;Please enter a date after the next payment.&#039;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;process_renewal_action_warning&#039; =&gt; __( &quot;Are you sure you want to process a renewal?\n\nThis will charge the customer and email them the renewal order (if emails are enabled).&quot;, &#039;woocommerce-subscriptions&#039; ),
+				&#039;payment_method&#039;                 =&gt; wcs_get_subscription( $post )-&gt;get_payment_method(),
+				&#039;search_customers_nonce&#039;         =&gt; wp_create_nonce( &#039;search-customers&#039; ),
+				&#039;get_customer_orders_nonce&#039;      =&gt; wp_create_nonce( &#039;get-customer-orders&#039; ),
+				&#039;is_duplicate_site&#039;              =&gt; WCS_Staging::is_duplicate_site(),
+			) ) );
+		} else if ( &#039;shop_order&#039; == $screen_id ) {
+
+			wp_enqueue_script( &#039;wcs-admin-meta-boxes-order&#039;, WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/js/admin/wcs-meta-boxes-order.js&#039; ) );
+
+			wp_localize_script(
+				&#039;wcs-admin-meta-boxes-order&#039;,
+				&#039;wcs_admin_order_meta_boxes&#039;,
+				array(
+					&#039;retry_renewal_payment_action_warning&#039; =&gt; __( &quot;Are you sure you want to retry payment for this renewal order?\n\nThis will attempt to charge the customer and send renewal order emails (if emails are enabled).&quot;, &#039;woocommerce-subscriptions&#039; ),
+				)
+			);
+		}
+
+		// Enqueue the metabox script for coupons.
+		if ( ! wcs_is_woocommerce_pre( &#039;3.2&#039; ) &amp;&amp; in_array( $screen_id, array( &#039;shop_coupon&#039;, &#039;edit-shop_coupon&#039; ) ) ) {
+			wp_enqueue_script(
+				&#039;wcs-admin-coupon-meta-boxes&#039;,
+				WC_Subscriptions_Core_Plugin::instance()-&gt;get_subscriptions_core_directory_url( &#039;assets/js/admin/meta-boxes-coupon.js&#039; ),
+				array( &#039;jquery&#039;, &#039;wc-admin-meta-boxes&#039; ),
+				WC_Subscriptions_Core_Plugin::instance()-&gt;get_plugin_version()
+			);
+		}
+	}
+
+	/**
+	 * Adds actions to the admin edit subscriptions page, if the subscription hasn&#039;t ended and the payment method supports them.
+	 *
+	 * @param array $actions An array of available actions
+	 * @return array An array of updated actions
+	 * @since 2.0
+	 */
+	public static function add_subscription_actions( $actions ) {
+		global $theorder;
+
+		if ( wcs_is_subscription( $theorder ) ) {
+			if ( ! wcs_is_woocommerce_pre( &#039;3.2&#039; ) ) {
+				unset( $actions[&#039;send_order_details&#039;], $actions[&#039;send_order_details_admin&#039;] );
+			}
+
+			if ( ! $theorder-&gt;has_status( wcs_get_subscription_ended_statuses() ) ) {
+				if ( $theorder-&gt;payment_method_supports( &#039;subscription_date_changes&#039; ) &amp;&amp; $theorder-&gt;has_status( &#039;active&#039; ) ) {
+					$actions[&#039;wcs_process_renewal&#039;] = esc_html__( &#039;Process renewal&#039;, &#039;woocommerce-subscriptions&#039; );
+				}
+
+				if ( count( $theorder-&gt;get_related_orders() ) &gt; 0 ) {
+					$actions[&#039;wcs_create_pending_renewal&#039;] = esc_html__( &#039;Create pending renewal order&#039;, &#039;woocommerce-subscriptions&#039; );
+				} else {
+					$actions[&#039;wcs_create_pending_parent&#039;] = esc_html__( &#039;Create pending parent order&#039;, &#039;woocommerce-subscriptions&#039; );
+				}
+			}
+		} else if ( self::can_renewal_order_be_retried( $theorder ) ) {
+			$actions[&#039;wcs_retry_renewal_payment&#039;] = esc_html__( &#039;Retry Renewal Payment&#039;, &#039;woocommerce-subscriptions&#039; );
+		}
+
+		return $actions;
+	}
+
+	/**
+	 * Handles the action request to process a renewal order.
+	 *
+	 * @param array $subscription
+	 * @since 2.0
+	 */
+	public static function process_renewal_action_request( $subscription ) {
+		$subscription-&gt;add_order_note( __( &#039;Process renewal order action requested by admin.&#039;, &#039;woocommerce-subscriptions&#039; ), false, true );
+		do_action( &#039;woocommerce_scheduled_subscription_payment&#039;, $subscription-&gt;get_id() );
+	}
+
+	/**
+	 * Handles the action request to create a pending renewal order.
+	 *
+	 * @param array $subscription
+	 * @since 2.0
+	 */
+	public static function create_pending_renewal_action_request( $subscription ) {
+		$subscription-&gt;add_order_note( __( &#039;Create pending renewal order requested by admin action.&#039;, &#039;woocommerce-subscriptions&#039; ), false, true );
+		$subscription-&gt;update_status( &#039;on-hold&#039; );
+
+		$renewal_order = wcs_create_renewal_order( $subscription );
+
+		if ( ! $subscription-&gt;is_manual() ) {
+
+			$renewal_order-&gt;set_payment_method( wc_get_payment_gateway_by_order( $subscription ) ); // We need to pass the payment gateway instance to be compatible with WC &lt; 3.0, only WC 3.0+ supports passing the string name
+
+			if ( is_callable( array( $renewal_order, &#039;save&#039; ) ) ) { // WC 3.0+
+				$renewal_order-&gt;save();
+			}
+		}
+	}
+
+	/**
+	 * Handles the action request to create a pending parent order.
+	 *
+	 * @param array $subscription
+	 * @since 2.3
+	 */
+	public static function create_pending_parent_action_request( $subscription ) {
+
+		if ( ! $subscription-&gt;has_status( array( &#039;pending&#039;, &#039;on-hold&#039; ) ) ) {
+			$subscription-&gt;update_status( &#039;on-hold&#039; );
+		}
+
+		$parent_order = wcs_create_order_from_subscription( $subscription, &#039;parent&#039; );
+
+		$subscription-&gt;set_parent_id( wcs_get_objects_property( $parent_order, &#039;id&#039; ) );
+		$subscription-&gt;save();
+
+		if ( ! $subscription-&gt;is_manual() ) {
+
+			$parent_order-&gt;set_payment_method( wc_get_payment_gateway_by_order( $subscription ) ); // We need to pass the payment gateway instance to be compatible with WC &lt; 3.0, only WC 3.0+ supports passing the string name
+
+			if ( is_callable( array( $parent_order, &#039;save&#039; ) ) ) { // WC 3.0+
+				$parent_order-&gt;save();
+			}
+		}
+
+		wc_maybe_reduce_stock_levels( $parent_order );
+		$subscription-&gt;add_order_note( __( &#039;Create pending parent order requested by admin action.&#039;, &#039;woocommerce-subscriptions&#039; ), false, true );
+	}
+
+	/**
+	 * Removes order related emails from the available actions.
+	 *
+	 * @param array $available_emails
+	 * @since 2.0
+	 */
+	public static function remove_order_email_actions( $email_actions ) {
+		global $theorder;
+
+		if ( wcs_is_subscription( $theorder ) ) {
+			$email_actions = array();
+		}
+
+		return $email_actions;
+	}
+
+	/**
+	 * Process the action request to retry renewal payment for failed renewal orders.
+	 *
+	 * @param WC_Order $order
+	 * @since 2.1
+	 */
+	public static function process_retry_renewal_payment_action_request( $order ) {
+
+		if ( self::can_renewal_order_be_retried( $order ) ) {
+			// init payment gateways
+			WC()-&gt;payment_gateways();
+
+			$order-&gt;add_order_note( __( &#039;Retry renewal payment action requested by admin.&#039;, &#039;woocommerce-subscriptions&#039; ), false, true );
+			do_action( &#039;woocommerce_scheduled_subscription_payment_&#039; . wcs_get_objects_property( $order, &#039;payment_method&#039; ), $order-&gt;get_total(), $order );
+		}
+	}
+
+	/**
+	 * Determines if a renewal order payment can be retried. A renewal order payment can only be retried when:
+	 *  - Order is a renewal order
+	 *  - Order status is failed
+	 *  - Order payment method isn&#039;t empty
+	 *  - Order total &gt; 0
+	 *  - Subscription/s aren&#039;t manual
+	 *  - Subscription payment method supports date changes
+	 *  - Order payment method has_action(&#039;woocommerce_scheduled_subscription_payment_..&#039;)
+	 *
+	 * @param WC_Order $order
+	 * @return bool
+	 * @since 2.1
+	 */
+	private static function can_renewal_order_be_retried( $order ) {
+
+		$can_be_retried = false;
+
+		if ( wcs_order_contains_renewal( $order ) &amp;&amp; $order-&gt;needs_payment() &amp;&amp; &#039;&#039; != wcs_get_objects_property( $order, &#039;payment_method&#039; ) ) {
+			$supports_date_changes          = false;
+			$order_payment_gateway          = wc_get_payment_gateway_by_order( $order );
+			$order_payment_gateway_supports = ( isset( $order_payment_gateway-&gt;id ) ) ? has_action( &#039;woocommerce_scheduled_subscription_payment_&#039; . $order_payment_gateway-&gt;id ) : false;
+
+			foreach ( wcs_get_subscriptions_for_renewal_order( $order ) as $subscription ) {
+				$supports_date_changes = $subscription-&gt;payment_method_supports( &#039;subscription_date_changes&#039; );
+				$is_automatic = ! $subscription-&gt;is_manual();
+				break;
+			}
+
+			$can_be_retried = $order_payment_gateway_supports &amp;&amp; $supports_date_changes &amp;&amp; $is_automatic;
+		}
+
+		return $can_be_retried;
+	}
+
+	/**
+	 * Disables stock managment while adding items to a subscription via the edit subscription screen.
+	 *
+	 * @since 3.0.6
+	 *
+	 * @param string $manage_stock The default manage stock setting.
+	 * @return string Whether the stock should be managed.
+	 */
+	public static function override_stock_management( $manage_stock ) {
+
+		// Override stock management while adding line items to a subscription via AJAX.
+		if ( isset( $_POST[&#039;order_id&#039;], $_REQUEST[&#039;security&#039;] ) &amp;&amp; wp_verify_nonce( $_REQUEST[&#039;security&#039;], &#039;order-item&#039; ) &amp;&amp; doing_action( &#039;wp_ajax_woocommerce_add_order_item&#039; ) &amp;&amp; wcs_is_subscription( absint( wp_unslash( $_POST[&#039;order_id&#039;] ) ) ) ) {
+			$manage_stock = &#039;no&#039;;
+		}
+
+		return $manage_stock;
+	}
+
+
+	/**
+	 * Displays a checkbox allowing admin to lock in prices increases in the edit order line items meta box.
+	 *
+	 * This checkbox is only displayed if the following criteria is met:
+	 * - The order is unpaid.
+	 * - The order is a subscription parent order. Renewal orders already lock in the subscription recurring price.
+	 * - The order&#039;s currency matches the base store currency.
+	 * - The order contains a line item with a subtotal greater than the product&#039;s current live price.
+	 *
+	 * @since 3.0.10
+	 *
+	 * @param WC_Order $order The order being edited.
+	 */
+	public static function output_price_lock_html( $order ) {
+
+		if ( ! $order-&gt;needs_payment() || ! wcs_order_contains_subscription( $order, &#039;parent&#039; ) ) {
+			return;
+		}
+
+		// If the order currency doesn&#039;t match the base currency we can&#039;t know if the order contains manually increased prices.
+		if ( $order-&gt;get_currency() !== get_woocommerce_currency() ) {
+			return;
+		}
+
+		$needs_price_lock = false;
+
+		foreach ( $order-&gt;get_items() as $line_item ) {
+			$product = $line_item-&gt;get_product();
+
+			// If the line item price is above the current live price.
+			if ( $product &amp;&amp; ( $line_item-&gt;get_subtotal() / $line_item-&gt;get_quantity() ) &gt; $product-&gt;get_price() ) {
+				$needs_price_lock = true;
+				break;
+			}
+		}
+
+		if ( $needs_price_lock ) {
+			$help_tip = __( &quot;This order contains line items with prices above the current product price. To override the product&#039;s live price when the customer pays for this order, lock in the manual price increases.&quot;, &#039;woocommerce-subscriptions&#039; );
+
+			printf(
+				&#039;&lt;div id=&quot;wcs_order_price_lock&quot;&gt;&lt;label for=&quot;wcs-order-price-lock&quot;&gt;%s&lt;/label&gt;%s&lt;input id=&quot;wcs-order-price-lock&quot; type=&quot;checkbox&quot; name=&quot;wcs_order_price_lock&quot; value=&quot;yes&quot; %s&gt;&lt;/div&gt;&#039;,
+				esc_html__( &#039;Lock manual price increases&#039;, &#039;woocommerce-subscriptions&#039; ),
+				// So the help tip is initialized when the line items are reloaded, we need to add the &#039;tips&#039; class to the element.
+				wcs_help_tip( $help_tip, false, &#039;woocommerce-help-tip tips&#039; ),
+				checked( $order-&gt;get_meta( &#039;_manual_price_increases_locked&#039; ), &#039;true&#039;, false )
+			);
+		}
+	}
+
+	/**
+	 * Saves the manual price increase lock via Edit order save and ajax request.
+	 *
+	 * @since 3.0.10
+	 *
+	 * @param string $order_id Optional. The order ID. For non-ajax requests, this parameter is required.
+	 */
+	public static function save_increased_price_lock( $order_id = &#039;&#039; ) {
+
+		if ( empty( $_POST[&#039;woocommerce_meta_nonce&#039;] ) || ! wp_verify_nonce( $_POST[&#039;woocommerce_meta_nonce&#039;], &#039;woocommerce_save_data&#039; ) ) {
+			return;
+		}
+
+		$order = wc_get_order( wp_doing_ajax() &amp;&amp; isset( $_POST[&#039;order_id&#039;] ) ? absint( $_POST[&#039;order_id&#039;] ) : $order_id );
+
+		if ( ! $order ) {
+			return;
+		}
+
+		if ( isset( $_POST[&#039;wcs_order_price_lock&#039;] ) &amp;&amp; &#039;yes&#039; === wc_clean( $_POST[&#039;wcs_order_price_lock&#039;] ) ) {
+			$order-&gt;update_meta_data( &#039;_manual_price_increases_locked&#039;, &#039;true&#039; );
+			$order-&gt;save();
+		} elseif ( $order-&gt;meta_exists( &#039;_manual_price_increases_locked&#039; ) ) {
+			$order-&gt;delete_meta_data( &#039;_manual_price_increases_locked&#039; );
+			$order-&gt;save();
+		}
+	}
+
+	/**
+	 * Stores the subtracted base location tax totals for subscription and renewal line items.
+	 *
+	 * @since 3.0.10
+	 *
+	 * @param int                   $item_id   The ID of the order item added.
+	 * @param WC_Order_Item_Product $line_item The line item added.
+	 * @param WC_Abstract_Order     $order     The order or subscription the product was added to.
+	 */
+	public static function store_item_base_location_tax( $item_id, $line_item, $order ) {
+		if ( ! apply_filters( &#039;woocommerce_adjust_non_base_location_prices&#039;, true ) ) {
+			return;
+		}
+
+		if ( ! wc_prices_include_tax() ) {
+			return;
+		}
+
+		if ( ! wcs_is_subscription( $order ) &amp;&amp; ! wcs_order_contains_renewal( $order ) ) {
+			return;
+		}
+
+		if ( &#039;0&#039; !== $line_item-&gt;get_tax_class() &amp;&amp; &#039;taxable&#039; === $line_item-&gt;get_tax_status() ) {
+			$base_tax_rates = WC_Tax::get_base_tax_rates( $line_item-&gt;get_tax_class() );
+
+			/**
+			 * Find the tax rates that apply to the line item given the current order&#039;s address and on what tax calculations are based off.
+			 */
+			$tax_based_on = get_option( &#039;woocommerce_tax_based_on&#039; );
+
+			// If tax calculations are based on the base store location, exit since we know the rates will match.
+			if ( &#039;base&#039; === $tax_based_on ) {
+				return;
+			}
+
+			if ( &#039;shipping&#039; === $tax_based_on &amp;&amp; ! $order-&gt;get_shipping_country() ) {
+				$tax_based_on = &#039;billing&#039;;
+			}
+
+			$applicable_tax_rates = WC_Tax::find_rates(
+				array(
+					&#039;country&#039;   =&gt; &#039;billing&#039; === $tax_based_on ? $order-&gt;get_billing_country() : $order-&gt;get_shipping_country(),
+					&#039;state&#039;     =&gt; &#039;billing&#039; === $tax_based_on ? $order-&gt;get_billing_state() : $order-&gt;get_shipping_state(),
+					&#039;postcode&#039;  =&gt; &#039;billing&#039; === $tax_based_on ? $order-&gt;get_billing_postcode() : $order-&gt;get_shipping_postcode(),
+					&#039;city&#039;      =&gt; &#039;billing&#039; === $tax_based_on ? $order-&gt;get_billing_city() : $order-&gt;get_shipping_city(),
+					&#039;tax_class&#039; =&gt; $line_item-&gt;get_tax_class(),
+				)
+			);
+
+			if ( $applicable_tax_rates === $base_tax_rates ) {
+				return;
+			}
+
+			$line_item-&gt;update_meta_data( &#039;_subtracted_base_location_taxes&#039;, WC_Tax::calc_tax( $line_item-&gt;get_product()-&gt;get_price(), $base_tax_rates, true ) );
+			$line_item-&gt;update_meta_data( &#039;_subtracted_base_location_rates&#039;, $base_tax_rates );
+			$line_item-&gt;save();
+		}
+	}
+
+	/**
+	 * Prevents WC core&#039;s handling of stock for subscriptions saved via the edit subscription screen.
+	 *
+	 * Hooked onto &#039;woocommerce_prevent_adjust_line_item_product_stock&#039; which is triggered in
+	 * wc_maybe_adjust_line_item_product_stock() via:
+	 *    - WC_AJAX::remove_order_item().
+	 *    - wc_save_order_items().
+	 *
+	 * @since 3.1.0
+	 *
+	 * @param WC_Order_Item $item The line item being saved/updated via the edit subscription screen.
+	 * @return bool Whether to reduce stock for the line item.
+	 */
+	public static function prevent_subscription_line_item_stock_handling( $prevent_stock_handling, $item ) {
+
+		if ( wcs_is_subscription( $item-&gt;get_order_id() ) ) {
+			$prevent_stock_handling = true;
+		}
+
+		return $prevent_stock_handling;
+	}
+
+	/**
+	 * Updates the `_subtracted_base_location_tax` meta when admin users update a line item&#039;s quantity.
+	 *
+	 * @since 3.0.14
+	 *
+	 * @param int   $order_id  The edited order or subscription ID.
+	 * @param array $item_data An array of data about all line item changes.
+	 */
+	public static function update_subtracted_base_location_tax_meta( $order_id, $item_data ) {
+
+		// We&#039;re only interested in item quantity changes.
+		if ( ! isset( $item_data[&#039;order_item_qty&#039;] ) ) {
+			return;
+		}
+
+		$is_subscription = wcs_is_subscription( $order_id );
+
+		// We only need to update subscription and renewal order `_subtracted_base_location_tax` meta data.
+		if ( ! $is_subscription &amp;&amp; ! wcs_order_contains_renewal( $order_id ) ) {
+			return;
+		}
+
+		$object = $is_subscription ? wcs_get_subscription( $order_id ) : wc_get_order( $order_id );
+
+		if ( ! $object ) {
+			return;
+		}
+
+		foreach ( $object-&gt;get_items() as $line_item ) {
+			// If the line item is tracking the base store location tax amount and the quantity has changed, hook in the function to update that item&#039;s meta.
+			if ( $line_item-&gt;meta_exists( &#039;_subtracted_base_location_tax&#039; ) ) {
+				if ( isset( $item_data[&#039;order_item_qty&#039;][ $line_item-&gt;get_id() ] ) &amp;&amp; $item_data[&#039;order_item_qty&#039;][ $line_item-&gt;get_id() ] !== $line_item-&gt;get_quantity() ) {
+					$current_base_location_taxes = $line_item-&gt;get_meta( &#039;_subtracted_base_location_tax&#039; );
+					$previous_quantity           = $line_item-&gt;get_quantity();
+					$new_quantity                = $item_data[&#039;order_item_qty&#039;][ $line_item-&gt;get_id() ];
+					$new_base_taxes              = array();
+
+					// Update all the base taxes for the new quantity.
+					foreach ( $current_base_location_taxes as $rate_id =&gt; $tax_amount ) {
+						$new_base_taxes[ $rate_id ] = ( $tax_amount / $previous_quantity ) * $new_quantity;
+					}
+
+					$line_item-&gt;update_meta_data( &#039;_subtracted_base_location_tax&#039;, $new_base_taxes );
+					$line_item-&gt;save();
+				}
+			}
+		}
+	}
+
+	/**
+	 * Updates the `_subtracted_base_location_taxes` meta when admin users update a line item&#039;s price.
+	 *
+	 * @since 3.1.0
+	 *
+	 * @param int   $order_id  The edited order or subscription ID.
+	 * @param array $item_data An array of data about all line item changes.
+	 */
+	public static function update_subtracted_base_location_taxes_amount( $order_id, $item_data ) {
+		// We&#039;re only interested in item subtotal changes.
+		if ( ! isset( $item_data[&#039;line_subtotal&#039;] ) || ! is_array( $item_data[&#039;line_subtotal&#039;] ) ) {
+			return;
+		}
+
+		$is_subscription = wcs_is_subscription( $order_id );
+
+		// We only need to update subscription and renewal order `_subtracted_base_location_taxes` meta data.
+		if ( ! $is_subscription &amp;&amp; ! wcs_order_contains_renewal( $order_id ) ) {
+			return;
+		}
+
+		$object = $is_subscription ? wcs_get_subscription( $order_id ) : wc_get_order( $order_id );
+
+		if ( ! $object ) {
+			return;
+		}
+
+		foreach ( $item_data[&#039;line_subtotal&#039;] as $line_item_id =&gt; $new_line_subtotal ) {
+			$line_item = WC_Order_Factory::get_order_item( $line_item_id );
+
+			// If this item&#039;s subtracted tax data hasn&#039;t been repaired, do that now.
+			if ( $line_item-&gt;meta_exists( &#039;_subtracted_base_location_tax&#039; ) ) {
+				WC_Subscriptions_Upgrader::repair_subtracted_base_taxes( $line_item-&gt;get_id() );
+				$line_item = WC_Order_Factory::get_order_item( $line_item-&gt;get_id() );
+			}
+
+			if ( ! $line_item-&gt;meta_exists( &#039;_subtracted_base_location_taxes&#039; ) ) {
+				continue;
+			}
+
+			$new_line_subtotal           = wc_format_decimal( $new_line_subtotal );
+			$current_base_location_taxes = $line_item-&gt;get_meta( &#039;_subtracted_base_location_taxes&#039; );
+			$old_line_subtotal           = $line_item-&gt;get_subtotal();
+			$old_line_quantity           = $line_item-&gt;get_quantity();
+			$new_line_quantity           = absint( $item_data[&#039;order_item_qty&#039;][ $line_item_id ] );
+
+			if ( $line_item-&gt;meta_exists( &#039;_subtracted_base_location_rates&#039; ) ) {
+				$base_tax_rates = $line_item-&gt;get_meta( &#039;_subtracted_base_location_rates&#039; );
+				$product_price  = ( $new_line_subtotal + array_sum( WC_Tax::calc_exclusive_tax( $new_line_subtotal, $base_tax_rates ) ) ) / $new_line_quantity;
+
+				$new_base_taxes = WC_Tax::calc_tax( $product_price, $base_tax_rates, true );
+			} else {
+				// Update all the base taxes for the new product subtotal.
+				foreach ( $current_base_location_taxes as $rate_id =&gt; $tax_amount ) {
+					$new_base_taxes[ $rate_id ] = ( ( $new_line_subtotal / $new_line_quantity ) / ( $old_line_subtotal / $old_line_quantity ) ) * $tax_amount;
+				}
+			}
+
+			$line_item-&gt;update_meta_data( &#039;_subtracted_base_location_taxes&#039;, $new_base_taxes );
+			$line_item-&gt;save();
+		}
+	}
+
+	/**
+	 * Gets a list of customer orders via ajax.
+	 *
+	 * Populates the parent order list on the edit subscription screen with orders belonging to the customer.
+	 *
+	 * @since 4.0.0
+	 */
+	public static function get_customer_orders() {
+		check_ajax_referer( &#039;get-customer-orders&#039;, &#039;security&#039; );
+
+		if ( ! current_user_can( &#039;edit_shop_orders&#039; ) ) {
+			wp_die( -1 );
+		}
+
+		$customer_orders = array();
+		$user_id         = absint( $_POST[&#039;user_id&#039;] );
+		$orders          = wc_get_orders(
+			array(
+				&#039;customer&#039;       =&gt; $user_id,
+				&#039;post_type&#039;      =&gt; &#039;shop_order&#039;,
+				&#039;posts_per_page&#039; =&gt; &#039;-1&#039;,
+			)
+		);
+
+
+		foreach ( $orders as $order ) {
+			$customer_orders[ $order-&gt;get_id() ] = $order-&gt;get_order_number();
+		}
+
+		wp_send_json( $customer_orders );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

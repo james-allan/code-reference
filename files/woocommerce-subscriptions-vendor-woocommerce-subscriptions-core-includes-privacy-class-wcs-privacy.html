@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-Privacy.html">Privacy</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-privacy.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Privacy/GDPR related functionality which ties into WordPress functionality.
+ *
+ * @author   Prospress
+ * @category Class
+ * @package  WooCommerce Subscriptions\Privacy
+ * @version  2.2.20
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_Privacy extends WC_Abstract_Privacy {
+
+	/**
+	 * Background updater to process personal data removal from subscriptions and related orders.
+	 *
+	 * @var WCS_Privacy_Background_Updater
+	 */
+	protected static $background_process;
+
+	/**
+	 * A flag which is set when WC is doing a user inactivity cleanup.
+	 * Used to exclude subscription customers from the inactive user query.
+	 *
+	 * @var bool
+	 */
+	protected static $doing_user_inactivity_query = false;
+
+	/**
+	 * WCS_Privacy constructor.
+	 */
+	public function __construct() {
+		if ( ! self::$background_process ) {
+			self::$background_process = new WCS_Privacy_Background_Updater();
+		}
+
+		parent::__construct( __( &#039;WooCommerce Subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ) );
+
+		// Add our exporters and erasers.
+		$this-&gt;add_exporter( &#039;woocommerce-subscriptions-data&#039;, __( &#039;Subscriptions Data&#039;, &#039;woocommerce-subscriptions&#039; ), array( &#039;WCS_Privacy_Exporters&#039;, &#039;subscription_data_exporter&#039; ) );
+		$this-&gt;add_eraser( &#039;woocommerce-subscriptions-data&#039;, __( &#039;Subscriptions Data&#039;, &#039;woocommerce-subscriptions&#039; ), array( &#039;WCS_Privacy_Erasers&#039;, &#039;subscription_data_eraser&#039; ) );
+	}
+
+	/**
+	 * Attach callbacks.
+	 */
+	public function init() {
+		parent::init();
+		self::$background_process-&gt;init();
+
+		add_filter( &#039;woocommerce_subscription_bulk_actions&#039;, array( __CLASS__, &#039;add_remove_personal_data_bulk_action&#039; ) );
+		add_action( &#039;load-edit.php&#039;, array( __CLASS__, &#039;process_bulk_action&#039; ) );
+		add_action( &#039;woocommerce_remove_subscription_personal_data&#039;, array( &#039;WCS_Privacy_Erasers&#039;, &#039;remove_subscription_personal_data&#039; ) );
+		add_action( &#039;admin_notices&#039;, array( __CLASS__, &#039;bulk_admin_notices&#039; ) );
+
+		add_filter( &#039;woocommerce_account_settings&#039;, array( __CLASS__, &#039;add_caveat_to_order_data_retention_settings&#039; ) );
+		add_filter( &#039;woocommerce_account_settings&#039;, array( __CLASS__, &#039;add_subscription_data_retention_settings&#039; ) );
+
+		// Attach callbacks to prevent subscription related orders being trashed or anonymized
+		add_filter( &#039;woocommerce_trash_pending_orders_query_args&#039;, array( __CLASS__, &#039;remove_subscription_orders_from_anonymization_query&#039; ), 10, 2 );
+		add_filter( &#039;woocommerce_trash_failed_orders_query_args&#039;, array( __CLASS__, &#039;remove_subscription_orders_from_anonymization_query&#039; ), 10, 2 );
+		add_filter( &#039;woocommerce_trash_cancelled_orders_query_args&#039;, array( __CLASS__, &#039;remove_subscription_orders_from_anonymization_query&#039; ), 10, 2 );
+		add_filter( &#039;woocommerce_anonymize_completed_orders_query_args&#039;, array( __CLASS__, &#039;remove_subscription_orders_from_anonymization_query&#039; ), 10, 2 );
+
+		add_action( &#039;woocommerce_cleanup_personal_data&#039;, array( $this, &#039;queue_cleanup_personal_data&#039; ) );
+
+		// Hook in late so there is less opportunity for our flag to affect other user queries called on this hook.
+		add_filter( &#039;woocommerce_delete_inactive_account_roles&#039;, array( __CLASS__, &#039;flag_subscription_user_exclusion_from_query&#039; ), 1000 );
+		add_action( &#039;pre_get_users&#039;, array( __CLASS__, &#039;maybe_exclude_subscription_customers&#039; ) );
+		add_filter( &#039;woocommerce_account_settings&#039;, array( __CLASS__, &#039;add_inactive_user_retention_note&#039; ) );
+	}
+
+	/**
+	 * Spawn events for subscription cleanup.
+	 *
+	 * @since 2.2.20
+	 */
+	public function queue_cleanup_personal_data() {
+		self::$background_process-&gt;schedule_ended_subscription_anonymization();
+	}
+
+	/**
+	 * Add privacy policy content for the privacy policy page.
+	 *
+	 * @since 2.2.20
+	 */
+	public function get_privacy_message() {
+		return &#039;&#039; .
+		&#039;&lt;p&gt;&#039; . __( &#039;By using WooCommerce Subscriptions, you may be storing personal data and depending on which third-party payment processors you’re using to take subscription payments, you may be sharing personal data with external sources.&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/p&gt;&#039; .
+		// translators: placeholders are opening and closing link tags, linking to additional privacy policy documentation.
+		&#039;&lt;h3&gt;&#039; . __( &#039;What we collect and store&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/h3&gt;&#039; .
+		&#039;&lt;p&gt;&#039; . __( &#039;For the purposes of processing recurring subscription payments, we store the customer\&#039;s name, billing address, shipping address, email address, phone number and credit card/payment details.&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/p&gt;&#039; .
+		&#039;&lt;h3&gt;&#039; . __( &#039;What we share with others&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/h3&gt;&#039; .
+		&#039;&lt;p&gt;&#039; . __( &#039;What personal information your store shares with external sources depends on which third-party payment processor plugins you are using to collect subscription payments. We recommend that you consult with their privacy policies to inform this section of your privacy policy.&#039;, &#039;woocommerce-subscriptions&#039; ) . &#039;&lt;/p&gt;&#039; .
+		// translators: placeholders are opening and closing link tags, linking to additional privacy policy documentation.
+		&#039;&lt;p&gt;&#039; . sprintf( __( &#039;If you are using PayPal Standard or PayPal Reference transactions please see the %1$sPayPal Privacy Policy%2$s for more details.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;a href=&quot;https://www.paypal.com/us/webapps/mpp/ua/privacy-full&quot;&gt;&#039;, &#039;&lt;/a&gt;&#039; ) . &#039;&lt;/p&gt;&#039;;
+	}
+
+	/**
+	 * Add the option to remove personal data from subscription via a bulk action.
+	 *
+	 * @since 2.2.20
+	 * @param array $bulk_actions Subscription bulk actions.
+	 */
+	public static function add_remove_personal_data_bulk_action( $bulk_actions ) {
+		$bulk_actions[&#039;remove_personal_data&#039;] = __( &#039;Cancel and remove personal data&#039;, &#039;woocommerce-subscriptions&#039; );
+		return $bulk_actions;
+	}
+
+	/**
+	 * Process the request to delete personal data from subscriptions via admin bulk action.
+	 *
+	 * @since 2.2.20
+	 */
+	public static function process_bulk_action() {
+
+		// We only want to deal with shop_subscription bulk actions.
+		if ( ! isset( $_REQUEST[&#039;post_type&#039;] ) || &#039;shop_subscription&#039; !== $_REQUEST[&#039;post_type&#039;] || ! isset( $_REQUEST[&#039;post&#039;] ) ) {
+			return;
+		}
+
+		$action = &#039;&#039;;
+
+		if ( isset( $_REQUEST[&#039;action&#039;] ) &amp;&amp; -1 != $_REQUEST[&#039;action&#039;] ) {
+			$action = $_REQUEST[&#039;action&#039;];
+		} else if ( isset( $_REQUEST[&#039;action2&#039;] ) &amp;&amp; -1 != $_REQUEST[&#039;action2&#039;] ) {
+			$action = $_REQUEST[&#039;action2&#039;];
+		}
+
+		if ( &#039;remove_personal_data&#039; !== $action ) {
+			return;
+		}
+
+		$subscription_ids = array_map( &#039;absint&#039;, (array) $_REQUEST[&#039;post&#039;] );
+		$changed          = 0;
+		$sendback_args    = array(
+			&#039;post_type&#039;   =&gt; &#039;shop_subscription&#039;,
+			&#039;bulk_action&#039; =&gt; &#039;remove_personal_data&#039;,
+			&#039;ids&#039;         =&gt; join( &#039;,&#039;, $subscription_ids ),
+			&#039;error_count&#039; =&gt; 0,
+		);
+
+		foreach ( $subscription_ids as $subscription_id ) {
+			$subscription = wcs_get_subscription( $subscription_id );
+
+			if ( is_a( $subscription, &#039;WC_Subscription&#039; ) ) {
+				do_action( &#039;woocommerce_remove_subscription_personal_data&#039;, $subscription );
+				$changed++;
+			}
+		}
+
+		$sendback_args[&#039;changed&#039;] = $changed;
+		$sendback = add_query_arg( $sendback_args, wp_get_referer() ? wp_get_referer() : &#039;&#039; );
+
+		wp_safe_redirect( esc_url_raw( $sendback ) );
+		exit();
+	}
+
+	/**
+	 * Add admin notice after processing personal data removal bulk action.
+	 *
+	 * @since 2.2.20
+	 */
+	public static function bulk_admin_notices() {
+		global $post_type, $pagenow;
+
+		if ( &#039;edit.php&#039; !== $pagenow || &#039;shop_subscription&#039; !== $post_type || ! isset( $_REQUEST[&#039;bulk_action&#039;] ) || &#039;remove_personal_data&#039; !== wc_clean( $_REQUEST[&#039;bulk_action&#039;] ) ) {
+			return;
+		}
+
+		$changed = isset( $_REQUEST[&#039;changed&#039;] ) ? absint( $_REQUEST[&#039;changed&#039;] ) : 0;
+		// translators: %d: number of subscriptions affected.
+		$message = sprintf( _n( &#039;Removed personal data from %d subscription.&#039;, &#039;Removed personal data from %d subscriptions.&#039;, $changed, &#039;woocommerce-subscriptions&#039; ), number_format_i18n( $changed ) );
+		echo &#039;&lt;div class=&quot;updated&quot;&gt;&lt;p&gt;&#039; . esc_html( $message ) . &#039;&lt;/p&gt;&lt;/div&gt;&#039;;
+	}
+
+	/**
+	 * Add a note to WC Personal Data Retention settings explaining that subscription orders aren&#039;t affected.
+	 *
+	 * @since 2.2.20
+	 * @param array $settings WooCommerce Account and Privacy settings.
+	 * @return array Account and Privacy settings.
+	 */
+	public static function add_caveat_to_order_data_retention_settings( $settings ) {
+		if ( ! is_array( $settings ) ) {
+			return $settings;
+		}
+
+		foreach ( $settings as &amp;$setting ) {
+			if ( isset( $setting[&#039;id&#039;], $setting[&#039;type&#039;] ) &amp;&amp; &#039;personal_data_retention&#039; === $setting[&#039;id&#039;] &amp;&amp; &#039;title&#039; === $setting[&#039;type&#039;] ) {
+				// translators: placeholders are opening and closing tags.
+				$note            = sprintf( __( &#039;%1$sNote:%2$s Orders which are related to subscriptions will not be included in the orders affected by these settings.&#039;, &#039;woocommerce-subscriptions&#039; ), &#039;&lt;b&gt;&#039;, &#039;&lt;/b&gt;&#039; );
+				$setting[&#039;desc&#039;] = isset( $setting[&#039;desc&#039;] ) ? $setting[&#039;desc&#039;] . &#039;&lt;br&gt;&#039; . $note : $note;
+			}
+		}
+
+		return $settings;
+	}
+
+	/**
+	 * Add admin setting to turn subscription data removal when processing erasure requests on or off.
+	 *
+	 * @since 2.2.20
+	 * @param array $settings WooCommerce Account and Privacy settings.
+	 * @return array Account and Privacy settings.
+	 */
+	public static function add_subscription_data_retention_settings( $settings ) {
+		if ( ! is_array( $settings ) ) {
+			return $settings;
+		}
+
+		$erasure_text = esc_html__( &#039;account erasure request&#039;, &#039;woocommerce-subscriptions&#039; );
+		if ( current_user_can( &#039;manage_privacy_options&#039; ) ) {
+			$erasure_text = sprintf( &#039;&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;&#039;, esc_url( admin_url( &#039;tools.php?page=remove_personal_data&#039; ) ), $erasure_text );
+		}
+
+		WC_Subscriptions_Admin::insert_setting_after( $settings, &#039;woocommerce_erasure_request_removes_order_data&#039;, array(
+			&#039;desc&#039;          =&gt; __( &#039;Remove personal data from subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+			/* Translators: %s URL to erasure request screen. */
+			&#039;desc_tip&#039;      =&gt; sprintf( __( &#039;When handling an %s, should personal data within subscriptions be retained or removed?&#039;, &#039;woocommerce-subscriptions&#039; ), $erasure_text ),
+			&#039;id&#039;            =&gt; &#039;woocommerce_erasure_request_removes_subscription_data&#039;,
+			&#039;type&#039;          =&gt; &#039;checkbox&#039;,
+			&#039;default&#039;       =&gt; &#039;no&#039;,
+			&#039;checkboxgroup&#039; =&gt; &#039;&#039;,
+			&#039;autoload&#039;      =&gt; false,
+		) );
+
+		WC_Subscriptions_Admin::insert_setting_after( $settings, &#039;woocommerce_anonymize_completed_orders&#039;, array(
+			&#039;title&#039;       =&gt; __( &#039;Retain ended subscriptions&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;desc_tip&#039;    =&gt; __( &#039;Retain ended subscriptions and their related orders for a specified duration before anonymizing the personal data within them.&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;id&#039;          =&gt; &#039;woocommerce_anonymize_ended_subscriptions&#039;,
+			&#039;type&#039;        =&gt; &#039;relative_date_selector&#039;,
+			&#039;placeholder&#039; =&gt; __( &#039;N/A&#039;, &#039;woocommerce-subscriptions&#039; ),
+			&#039;default&#039;     =&gt; array(
+				&#039;number&#039; =&gt; &#039;&#039;,
+				&#039;unit&#039;   =&gt; &#039;months&#039;,
+			),
+			&#039;autoload&#039;    =&gt; false,
+		) );
+
+		return $settings;
+	}
+
+	/**
+	 * Remove subscription related order types from the order anonymization query.
+	 *
+	 * @since 2.2.20
+	 * @param  array $query_args @see wc_get_orders() args.
+	 * @return array The args used to get orders to anonymize.
+	 */
+	public static function remove_subscription_orders_from_anonymization_query( $query_args ) {
+		if ( ! is_array( $query_args ) ) {
+			return $query_args;
+		}
+
+		$query_args[&#039;subscription_parent&#039;]      = false;
+		$query_args[&#039;subscription_renewal&#039;]     = false;
+		$query_args[&#039;subscription_switch&#039;]      = false;
+		$query_args[&#039;subscription_resubscribe&#039;] = false;
+
+		return $query_args;
+	}
+
+	/**
+	 * Add a note to the inactive user data retention setting noting that users with a subscription are excluded.
+	 *
+	 * @since 2.3.4
+	 * @param array $settings WooCommerce Account and Privacy settings.
+	 * @return array Account and Privacy settings.
+	 */
+	public static function add_inactive_user_retention_note( $settings ) {
+		foreach ( $settings as &amp;$setting ) {
+			if ( isset( $setting[&#039;id&#039;], $setting[&#039;desc_tip&#039;] ) &amp;&amp; &#039;woocommerce_delete_inactive_accounts&#039; === $setting[&#039;id&#039;] ) {
+				$setting[&#039;desc_tip&#039;] .= &#039; &#039; . __( &#039;Customers with a subscription are excluded from this setting.&#039;, &#039;woocommerce-subscriptions&#039; );
+				break;
+			}
+		}
+
+		return $settings;
+	}
+
+	/**
+	 * Set a flag to record inactive user account deletion.
+	 *
+	 * @since 2.3.4
+	 * @param  array $user_roles The user roles included in the inactive user query.
+	 * @return array
+	 */
+	public static function flag_subscription_user_exclusion_from_query( $user_roles ) {
+		self::$doing_user_inactivity_query = true;
+		return $user_roles;
+	}
+
+	/**
+	 * Exclude customers who have subscriptions from the inactive user cleanup query.
+	 *
+	 * @since 2.3.4
+	 * @param WP_User_Query $user_query
+	 */
+	public static function maybe_exclude_subscription_customers( $user_query ) {
+		if ( ! self::$doing_user_inactivity_query ) {
+			return;
+		}
+
+		$user_query-&gt;set( &#039;exclude&#039;, array_merge(
+			(array) $user_query-&gt;get( &#039;exclude&#039; ),
+			WC_Data_Store::load( &#039;subscription&#039; )-&gt;get_subscription_customer_ids()
+		) );
+
+		self::$doing_user_inactivity_query = false;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>

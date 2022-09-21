@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WooCommerce Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1663738776">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1663738776">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCYZ2CYMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KCYZ2CYMS', {
+		'content_group' : 'WooCommerce Core Code Reference',
+	});
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="../index.html"><img width="180" src="../images/logo.svg" alt="WooCommerce" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../hooks/hooks.html">Hooks Reference</a></li>
+                <li><a href="https://docs.woocommerce.com/">Documentation</a></li>
+                <li><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">REST API Docs</a></li>
+                <li><a href="https://woocommerce.com/careers/?utm_source=woocommerce+core+code+reference&utm_medium=devdocs&utm_campaign=woo+careers" target="_blank">We're hiring!</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">WooCommerce Code Reference</h1>
+        <section class="phpdocumentor-search">
+    <label class="phpdocumentor-label">
+        <span class="visually-hidden">Search (click ESC to close search results)</span>
+        <input id="autoComplete" tabindex="1" type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading..." disabled />
+    </label>
+</section>
+
+    </section>
+</div>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdmin.html"><abbr title="\WooCommerceSubscriptionsAdmin">WooCommerceSubscriptionsAdmin</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsClasses.html"><abbr title="\WooCommerceSubscriptionsClasses">WooCommerceSubscriptionsClasses</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptions.html"><abbr title="\WooCommerceSubscriptions">WooCommerceSubscriptions</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerceSubscriptions-WC.html"><abbr title="\WooCommerceSubscriptions\WC">WC</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-RestApi.html"><abbr title="\WooCommerceSubscriptions\RestApi">RestApi</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-WCS.html"><abbr title="\WooCommerceSubscriptions\WCS">WCS</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-GatewaysPayPal.html"><abbr title="\WooCommerceSubscriptions\GatewaysPayPal">GatewaysPayPal</abbr></a></li>
+                                    <li><a href="../packages/WooCommerceSubscriptions-Privacy.html"><abbr title="\WooCommerceSubscriptions\Privacy">Privacy</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerce.html"><abbr title="\WooCommerce">WooCommerce</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WooCommerce-SubscriptionsAPI.html"><abbr title="\WooCommerce\SubscriptionsAPI">SubscriptionsAPI</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsIncludesEmails.html"><abbr title="\WooCommerce\SubscriptionsIncludesEmails">SubscriptionsIncludesEmails</abbr></a></li>
+                                    <li><a href="../packages/WooCommerce-SubscriptionsClassesEmails.html"><abbr title="\WooCommerce\SubscriptionsClassesEmails">SubscriptionsClassesEmails</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WC.html"><abbr title="\WC">WC</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="../packages/WC-Subscriptions.html"><abbr title="\WC\Subscriptions">Subscriptions</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminUpgrades.html"><abbr title="\WooCommerceSubscriptionsAdminUpgrades">WooCommerceSubscriptionsAdminUpgrades</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsFunctions.html"><abbr title="\WooCommerceSubscriptionsFunctions">WooCommerceSubscriptionsFunctions</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAdminMetaBoxes.html"><abbr title="\WooCommerceSubscriptionsAdminMetaBoxes">WooCommerceSubscriptionsAdminMetaBoxes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsAbstracts.html"><abbr title="\WooCommerceSubscriptionsAbstracts">WooCommerceSubscriptionsAbstracts</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceSubscriptionsIncludes.html"><abbr title="\WooCommerceSubscriptionsIncludes">WooCommerceSubscriptionsIncludes</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/WooCommerceClassesEmails.html"><abbr title="\WooCommerceClassesEmails">WooCommerceClassesEmails</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="../packages/SkyVergeWooCommerceAPI.html"><abbr title="\SkyVergeWooCommerceAPI">SkyVergeWooCommerceAPI</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../hooks/hooks.html">Hooks Reference</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions.html">WooCommerceSubscriptions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS.html">WCS</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS-Download.html">Download</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="../packages/WooCommerceSubscriptions-WCS-Download-Handler.html">Handler</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-wcs-download-handler.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Download Handler for WooCommerce Subscriptions
+ *
+ * Functions for download related things within the Subscription Extension.
+ *
+ * @package    WooCommerce Subscriptions
+ * @subpackage WCS_Download_Handler
+ * @category   Class
+ * @author     Prospress
+ * @since      2.0
+ */
+
+if ( ! defined( &#039;ABSPATH&#039; ) ) {
+	exit; // Exit if accessed directly
+}
+
+class WCS_Download_Handler {
+
+	/**
+	 * Initialize filters and hooks for class.
+	 *
+	 * @since 2.0
+	 */
+	public static function init() {
+		add_action( &#039;woocommerce_grant_product_download_permissions&#039;, __CLASS__ . &#039;::save_downloadable_product_permissions&#039; );
+
+		add_filter( &#039;woocommerce_get_item_downloads&#039;, __CLASS__ . &#039;::get_item_downloads&#039;, 10, 3 );
+
+		add_action( &#039;woocommerce_process_shop_order_meta&#039;, __CLASS__ . &#039;::repair_permission_data&#039;, 60, 1 );
+
+		add_action( &#039;woocommerce_admin_created_subscription&#039;, array( __CLASS__, &#039;grant_download_permissions&#039; ) );
+
+		add_action( &#039;deleted_post&#039;, __CLASS__ . &#039;::delete_subscription_permissions&#039; );
+
+		add_action( &#039;woocommerce_process_product_file_download_paths&#039;, __CLASS__ . &#039;::grant_new_file_product_permissions&#039;, 11, 3 );
+	}
+
+	/**
+	 * Save the download permissions on the individual subscriptions as well as the order. Hooked into
+	 * &#039;woocommerce_grant_product_download_permissions&#039;, which is strictly after the order received all the info
+	 * it needed, so we don&#039;t need to play with priorities.
+	 *
+	 * @param integer $order_id the ID of the order. At this point it is guaranteed that it has files in it and that it hasn&#039;t been granted permissions before
+	 */
+	public static function save_downloadable_product_permissions( $order_id ) {
+		global $wpdb;
+		$order = wc_get_order( $order_id );
+
+		if ( wcs_order_contains_subscription( $order, &#039;any&#039; ) ) {
+			$subscriptions = wcs_get_subscriptions_for_order( $order, array( &#039;order_type&#039; =&gt; array( &#039;any&#039; ) ) );
+		} else {
+			return;
+		}
+
+		foreach ( $subscriptions as $subscription ) {
+			if ( sizeof( $subscription-&gt;get_items() ) &gt; 0 ) {
+				foreach ( $subscription-&gt;get_items() as $item ) {
+					$_product = $item-&gt;get_product();
+
+					if ( $_product &amp;&amp; $_product-&gt;exists() &amp;&amp; $_product-&gt;is_downloadable() ) {
+						$downloads  = wcs_get_objects_property( $_product, &#039;downloads&#039; );
+						$product_id = wcs_get_canonical_product_id( $item );
+
+						foreach ( array_keys( $downloads ) as $download_id ) {
+							// grant access on subscription if it does not already exist
+							if ( ! $wpdb-&gt;get_var( $wpdb-&gt;prepare( &quot;SELECT download_id FROM {$wpdb-&gt;prefix}woocommerce_downloadable_product_permissions WHERE `order_id` = %d AND `product_id` = %d AND `download_id` = &#039;%s&#039;&quot;, $subscription-&gt;get_id(), $product_id, $download_id ) ) ) {
+								wc_downloadable_file_permission( $download_id, $product_id, $subscription, $item[&#039;qty&#039;] );
+							}
+							self::revoke_downloadable_file_permission( $product_id, $order_id, $order-&gt;get_user_id() );
+						}
+					}
+				}
+			}
+			update_post_meta( $subscription-&gt;get_id(), &#039;_download_permissions_granted&#039;, 1 );
+		}
+	}
+
+	/**
+	 * Revokes download permissions from permissions table if a file has permissions on a subscription. If a product has
+	 * multiple files, all permissions will be revoked from the original order.
+	 *
+	 * @param int $product_id the ID for the product (the downloadable file)
+	 * @param int $order_id the ID for the original order
+	 * @param int $user_id the user we&#039;re removing the permissions from
+	 * @return boolean true on success, false on error
+	 */
+	public static function revoke_downloadable_file_permission( $product_id, $order_id, $user_id ) {
+		global $wpdb;
+
+		$table = $wpdb-&gt;prefix . &#039;woocommerce_downloadable_product_permissions&#039;;
+
+		$where = array(
+			&#039;product_id&#039; =&gt; $product_id,
+			&#039;order_id&#039;   =&gt; $order_id,
+			&#039;user_id&#039;    =&gt; $user_id,
+		);
+
+		$format = array( &#039;%d&#039;, &#039;%d&#039;, &#039;%d&#039; );
+
+		return $wpdb-&gt;delete( $table, $where, $format );
+	}
+
+	/**
+	 * WooCommerce&#039;s function receives the original order ID, the item and the list of files. This does not work for
+	 * download permissions stored on the subscription rather than the original order as the URL would have the wrong order
+	 * key. This function takes the same parameters, but queries the database again for download ids belonging to all the
+	 * subscriptions that were in the original order. Then for all subscriptions, it checks all items, and if the item
+	 * passed in here is in that subscription, it creates the correct download link to be passsed to the email.
+	 *
+	 * @param array $files List of files already included in the list
+	 * @param array $item An item (you get it by doing $order-&gt;get_items())
+	 * @param WC_Order $order The original order
+	 * @return array List of files with correct download urls
+	 */
+	public static function get_item_downloads( $files, $item, $order ) {
+		global $wpdb;
+
+		if ( wcs_order_contains_subscription( $order, array( &#039;parent&#039;, &#039;renewal&#039;, &#039;switch&#039; ) ) ) {
+			$subscriptions = wcs_get_subscriptions_for_order( $order, array( &#039;order_type&#039; =&gt; array( &#039;parent&#039;, &#039;renewal&#039;, &#039;switch&#039; ) ) );
+		} else {
+			return $files;
+		}
+
+		$product_id = wcs_get_canonical_product_id( $item );
+
+		foreach ( $subscriptions as $subscription ) {
+			foreach ( $subscription-&gt;get_items() as $subscription_item ) {
+				if ( wcs_get_canonical_product_id( $subscription_item ) === $product_id ) {
+					if ( is_callable( array( $subscription_item, &#039;get_item_downloads&#039; ) ) ) { // WC 3.0+
+						$files = $subscription_item-&gt;get_item_downloads( $subscription_item );
+					} else { // WC &lt; 3.0
+						$files = $subscription-&gt;get_item_downloads( $subscription_item );
+					}
+				}
+			}
+		}
+
+		return $files;
+	}
+
+	/**
+	 * Repairs a glitch in WordPress&#039;s save function. You cannot save a null value on update, see
+	 * https://github.com/woocommerce/woocommerce/issues/7861 for more info on this.
+	 *
+	 * @param integer $post_id The ID of the subscription
+	 */
+	public static function repair_permission_data( $post_id ) {
+		if ( absint( $post_id ) !== $post_id ) {
+			return;
+		}
+
+		if ( &#039;shop_subscription&#039; !== get_post_type( $post_id ) ) {
+			return;
+		}
+
+		global $wpdb;
+
+		$wpdb-&gt;query( $wpdb-&gt;prepare( &quot;
+			UPDATE {$wpdb-&gt;prefix}woocommerce_downloadable_product_permissions
+			SET access_expires = null
+			WHERE order_id = %d
+			AND access_expires = %s
+		&quot;, $post_id, &#039;0000-00-00 00:00:00&#039; ) );
+	}
+
+	/**
+	 * Gives customers access to downloadable products in a subscription.
+	 * Hooked into &#039;woocommerce_admin_created_subscription&#039; to grant permissions to admin created subscriptions.
+	 *
+	 * @param WC_Subscription $subscription
+	 * @since 2.4.2
+	 */
+	public static function grant_download_permissions( $subscription ) {
+		wc_downloadable_product_permissions( $subscription-&gt;get_id() );
+	}
+
+	/**
+	 * Remove download permissions attached to a subscription when it is permenantly deleted.
+	 *
+	 * @since 2.0
+	 */
+	public static function delete_subscription_permissions( $post_id ) {
+		global $wpdb;
+
+		if ( &#039;shop_subscription&#039; == get_post_type( $post_id ) ) {
+			$wpdb-&gt;query( $wpdb-&gt;prepare( &quot;DELETE FROM {$wpdb-&gt;prefix}woocommerce_downloadable_product_permissions WHERE order_id = %d&quot;, $post_id ) );
+		}
+	}
+
+	/**
+	 * Grant downloadable file access to any newly added files on any existing subscriptions
+	 * which don&#039;t have existing permissions pre WC3.0 and all subscriptions post WC3.0.
+	 *
+	 * @param int $product_id
+	 * @param int $variation_id
+	 * @param array $downloadable_files product downloadable files
+	 * @since 2.0.18
+	 */
+	public static function grant_new_file_product_permissions( $product_id, $variation_id, $downloadable_files ) {
+		global $wpdb;
+
+		$product_id            = ( $variation_id ) ? $variation_id : $product_id;
+		$product               = wc_get_product( $product_id );
+		$existing_download_ids = array_keys( (array) wcs_get_objects_property( $product, &#039;downloads&#039; ) );
+		$downloadable_ids      = array_keys( (array) $downloadable_files );
+		$new_download_ids      = array_filter( array_diff( $downloadable_ids, $existing_download_ids ) );
+
+		if ( ! empty( $new_download_ids ) ) {
+
+			$existing_permissions = $wpdb-&gt;get_results( $wpdb-&gt;prepare( &quot;SELECT order_id, download_id from {$wpdb-&gt;prefix}woocommerce_downloadable_product_permissions WHERE product_id = %d&quot;, $product_id ) );
+			$subscriptions        = wcs_get_subscriptions_for_product( $product_id );
+
+			// Arrange download id permissions by order id
+			$permissions_by_order_id = array();
+
+			foreach ( $existing_permissions as $permission_data ) {
+
+				$permissions_by_order_id[ $permission_data-&gt;order_id ][] = $permission_data-&gt;download_id;
+			}
+
+			foreach ( $subscriptions as $subscription_id ) {
+
+				// Grant permissions to subscriptions which have no permissions for this product, pre WC3.0, or all subscriptions, post WC3.0, as WC doesn&#039;t grant them retrospectively anymore.
+				if ( ! in_array( $subscription_id, array_keys( $permissions_by_order_id ) ) || false === wcs_is_woocommerce_pre( &#039;3.0&#039; ) ) {
+					$subscription = wcs_get_subscription( $subscription_id );
+
+					foreach ( $new_download_ids as $download_id ) {
+
+						$has_permission = isset( $permissions_by_order_id[ $subscription_id ] ) &amp;&amp; in_array( $download_id, $permissions_by_order_id[ $subscription_id ] );
+
+						if ( $subscription &amp;&amp; ! $has_permission &amp;&amp; apply_filters( &#039;woocommerce_process_product_file_download_paths_grant_access_to_new_file&#039;, true, $download_id, $product_id, $subscription ) ) {
+							wc_downloadable_file_permission( $download_id, $product_id, $subscription );
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * When adding new downloadable content to a subscription product, check if we don&#039;t
+	 * want to automatically add the new downloadable files to the subscription or initial and renewal orders.
+	 *
+	 * @deprecated 4.0.0
+	 *
+	 * @param bool $grant_access
+	 * @param string $download_id
+	 * @param int $product_id
+	 * @param WC_Order $order
+	 * @return bool
+	 * @since 2.0
+	 */
+	public static function maybe_revoke_immediate_access( $grant_access, $download_id, $product_id, $order ) {
+		wcs_deprecated_function( __METHOD__, &#039;4.0.0&#039;, &#039;WCS_Drip_Downloads_Manager::maybe_revoke_immediate_access() if available&#039; );
+
+		if ( class_exists( &#039;WCS_Drip_Downloads_Manager&#039; ) ) {
+			return WCS_Drip_Downloads_Manager::maybe_revoke_immediate_access( $grant_access, $download_id, $product_id, $order );
+		}
+
+		return $grant_access;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>WooCommerce Code Reference API documentation generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on September 21st, 2022 at 05:39 am.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+    <script>
+        var searchParams = {
+            'searchIndex': '..\/js\/searchIndex.json'
+        };
+    </script>
+    <script src="../js/searchIndex.js?updated=1663738776"></script>
+    <script src="../js/search.js?updated=1663738776"></script>
+</body>
+</html>
